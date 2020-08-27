@@ -1,0 +1,31 @@
+.help-block {
+	text-align: center;
+}
+
+#buttons {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.instr {
+	text-align: justify;
+}
+
+.itemsContainer {
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */ 
+   -moz-column-count: 3;    /* Firefox */ 
+   column-count: 3; 
+   -moz-column-fill: auto;
+   -column-fill: auto;  
+}
+
+.commentContainer {
+	margin-top: 30px;
+}
+
+h1 {
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
