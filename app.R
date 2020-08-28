@@ -21,7 +21,7 @@ ui <- fluidPage(
   ),
   
   theme = shinytheme("flatly"),
-  h1("Słowa"),
+  h1(texts$header),
   
   sidebarLayout(
     
@@ -72,18 +72,14 @@ server <- function(input, output, session) {
   if (file.exists("answers.csv")){
     answers = read.csv("answers.csv", encoding = "UTF-8")
   } else {
-    answers <- data.frame(category = categories, items_selected = NA, comment = "")
+    answers <- data.frame(category = categories, items_selected = NA, comment = NA)
   }
   
   #Save data
   saveData <- function(){
     
     answers[answers$category == currCat,"items_selected"] <<- paste(input$items, collapse =  " ")
-    
-    if (!is.na(input$comment)){
-      answers[answers$category == currCat,"comment"] <<- input$comment
-    }
-
+    answers[answers$category == currCat,"comment"] <<- input$comment
     write.csv(answers, file = "answers.csv", row.names = F)
     
   }
@@ -172,11 +168,16 @@ server <- function(input, output, session) {
       inputPage <<- TRUE
       currCat <<- categories[page()]
       selectedStr <- answers[answers$category == currCat, "items_selected"]
+      comment <- answers[answers$category == currCat, "comment"]
       
       if (!is.na(selectedStr)){
         selected <- strsplit(selectedStr, " ")[[1]]
       } else {
         selected <- NULL
+      }
+      
+      if (is.na(comment)){
+        comment = ""
       }
 
       list(
@@ -205,7 +206,7 @@ server <- function(input, output, session) {
           
           class = "commentContainer",
           
-          textAreaInput("comment", label = texts$comments, value = answers[answers$category == currCat, "comment"])
+          textAreaInput("comment", label = texts$comments, value = comment)
           
         )
         
