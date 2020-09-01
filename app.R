@@ -48,7 +48,8 @@ ui <- fluidPage(
     
     mainPanel(
       
-      uiOutput("main")
+      uiOutput("main"),
+      textOutput("url")
       
     )
     
@@ -67,20 +68,40 @@ server <- function(input, output, session) {
   
   #Create list of categories
   categories <- unique(items$category)
+  
+  #Read user ID from URL if given
+  userID <- "test"
+  observe({
+    
+    query <- parseQueryString(session$clientData$url_search)
+    if (!is.null(query[["id"]])){
+      userID <<- query[["id"]]
+    } 
+    
+  })
 
   #Load current input if it exists
-  if (file.exists("answers.csv")){
-    answers = read.csv("answers.csv", encoding = "UTF-8")
-  } else {
-    answers <- data.frame(category = categories, items_selected = NA, comment = NA)
-  }
-  
+  userAnswersFile <- reactive({paste0(userID, ".csv")})
+  observe({
+    
+    if (file.exists(userAnswersFile())){
+      answers <<- read.csv(userAnswersFile(), encoding = "UTF-8")
+    } else {
+      answers <<- data.frame(category = categories, items_selected = NA, comment = NA)
+    }
+    
+  })
+
   #Save data
   saveData <- function(){
     
-    answers[answers$category == currCat,"items_selected"] <<- paste(input$items, collapse =  " ")
-    answers[answers$category == currCat,"comment"] <<- input$comment
-    write.csv(answers, file = "answers.csv", row.names = F)
+    if (!is.null(answers)){
+      
+      answers[answers$category == currCat,"items_selected"] <<- paste(input$items, collapse =  " ")
+      answers[answers$category == currCat,"comment"] <<- input$comment
+      write.csv(answers, file = userAnswersFile(), row.names = F)
+      
+    }
     
   }
   
@@ -179,7 +200,7 @@ server <- function(input, output, session) {
       if (is.na(comment)){
         comment = ""
       }
-
+        
       list(
         
         createProgressBar(),
@@ -215,7 +236,6 @@ server <- function(input, output, session) {
     }
     
   })#end renderUI
-
   
 }#end server
 
