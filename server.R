@@ -1,0 +1,182 @@
+server <- function(input, output, session) {
+  
+  #Create reactive variable 'page'
+  page <- reactiveVal(0)
+  
+  #Load items from csv file
+  setwd(wd.datapath)
+  items = read.csv("items.csv", encoding = "UTF-8")
+  setwd(wd.init)
+  
+  #Create list of categories
+  categories <- unique(items$category)
+
+  #Read user ID from URL if given
+  userID <<- "test"
+  observe({
+    
+    query <- parseQueryString(session$clientData$url_search)
+    if (!is.null(query[["id"]])){
+      userID <<- query[["id"]]
+    } 
+    
+  })
+  
+  #Load current input if it exists
+  userAnswersFile <- reactive({paste0(userID, ".csv")})
+  observe({
+    
+    if (file.exists(userAnswersFile())){
+      answers <<- read.csv(userAnswersFile(), encoding = "UTF-8")
+    } else {
+      answers <<- data.frame(category = categories, items_selected = NA, comment = NA)
+    }
+    
+  })
+  
+  #Save data
+  saveData <- function(){
+    
+    if (!is.null(answers)){
+      
+      answers[answers$category == currCat,"items_selected"] <<- paste(input$items, collapse =  " ")
+      answers[answers$category == currCat,"comment"] <<- input$comment
+      write.csv(answers, file = userAnswersFile(), row.names = F)
+      
+    }
+    
+  }
+  
+  #Create progress bar
+  createProgressBar <- function(){
+    
+    percent <- paste0(as.character(round(page()/maxPage*100)),"%")
+    return(div(class="progress", div(class="progress-bar", style=paste0("width: ",percent), percent)))
+    
+  }
+  
+  #Add buttons service
+  observeEvent(input$nextB, {
+    
+    if (page() < maxPage){
+      
+      newPage <- page() + 1
+      page(newPage)
+      
+    }
+    
+    if (inputPage){
+      saveData()
+    }
+    
+  })
+  
+  observeEvent(input$prevB, {
+    
+    if (page() > 0){
+      newPage <- page() - 1
+      page(newPage)
+    }
+    
+    if(inputPage){
+      saveData()
+    }
+    
+  })
+  
+  #Create UI depends on page
+  inputPage <- FALSE
+  currCat <- NULL
+  maxPage <- length(categories) + 1
+  
+  output$main <- renderUI({
+    
+    #Welcome page
+    if (page() == 0){
+      
+      inputPage <<- FALSE
+      
+      list(
+        
+        createProgressBar(),
+        
+        p (
+          
+          class = "instr",
+          texts$instr
+          
+        )
+        
+      )
+      
+    }
+    
+    #Thanks page
+    else if (page() == maxPage) {
+      
+      inputPage <<- FALSE
+      
+      list (
+        
+        createProgressBar(),
+        p(texts$thanks)
+        
+      )
+      
+    }
+    
+    #Input page
+    else {
+      
+      inputPage <<- TRUE
+      currCat <<- categories[page()]
+      selectedStr <- as.character(answers[answers$category == currCat, "items_selected"])
+      comment <- answers[answers$category == currCat, "comment"]
+      
+      if (!is.na(selectedStr)){
+        selected <- strsplit(selectedStr, " ")[[1]]
+      } else {
+        selected <- NULL
+      }
+      
+      if (is.na(comment)){
+        comment = ""
+      }
+      
+      list(
+        
+        createProgressBar(),
+        
+        h4(texts[[currCat]]),
+        
+        br(),
+        
+        div(
+          
+          class = "itemsContainer",
+          
+          checkboxGroupInput(
+            "items",
+            selected = selected,
+            label = NULL,
+            choiceNames = as.character(items[items$category == currCat, ]$definition),
+            choiceValues = as.character(items[items$category == currCat, ]$item_id)
+          )
+          
+        ),
+        
+        div (
+          
+          class = "commentContainer",
+          
+          textAreaInput("comment", label = texts$comments, value = comment)
+          
+        )
+        
+      )#end list
+      
+    }
+    
+  })#end renderUI
+  
+}
