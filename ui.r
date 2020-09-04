@@ -13,22 +13,7 @@ ui <- fluidPage(
     
     sidebarPanel(
       
-      p(class = "help-block", texts$help_block),
-      
-      div(
-        
-        id = "buttons",
-        
-        actionButton(
-          inputId = "prevB", 
-          label = texts$prev_button
-        ),
-        
-        actionButton(
-          inputId = "nextB", 
-          label = texts$next_button
-        )
-      )
+      uiOutput("sidebar")
       
     ),
     
