@@ -1,15 +1,13 @@
-.help-block {
-	text-align: center;
-}
-
-#buttons {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-
-.instr {
+body {
 	text-align: justify;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+#sidebar {
+	text-align: center;
 }
 
 .itemsContainer {
@@ -24,8 +22,5 @@
 	margin-top: 30px;
 }
 
-h1 {
-	text-align: justify;
-	margin-bottom: 20px;
-}
+
 

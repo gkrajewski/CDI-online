@@ -7,7 +7,7 @@ ui <- fluidPage(
   ),
   
   theme = shinytheme("flatly"),
-  h1(texts$header),
+  h1(textOutput("header")),
   
   sidebarLayout(
     
@@ -19,7 +19,8 @@ ui <- fluidPage(
     
     mainPanel(
       
-      uiOutput("main")
+      uiOutput("main"),
+      textOutput("info")
       
     )
     
