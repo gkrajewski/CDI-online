@@ -6,226 +6,82 @@ server <- function(input, output, session) {
   wd.datapath = paste0(getwd(),"/www")
   wd.init = getwd()
   
+  #Load items and texts
+  setwd(wd.datapath)
+  texts <- read.csv("texts.csv", encoding = "UTF-8")
+  items <- read.csv("items.csv", encoding = "UTF-8")
+  setwd(wd.init)
+  
   #Specify available URL parameters
   availableForms <- c("WS")
-  availableTypes <- c("word")
+  availableTypes <- c("word", "combine")
   availableLanguages <- c("Polish")
   availableIDs <- c("1234", "5678")
   
   #Load functions
   source('functions.R')
   
-  #Variable to use for layouts with several pages
-  page <- reactiveVal(0)
+  #This variable can be made FALSE by lack of URL parameter or bad URL parameter
+  START <<- TRUE
+
+  #Read parameters values from URL (particular scale and version of CDI)
+  observe({
+    
+    FORM <<- readFromURL("form", session, availableForms)
+    TYPE <<- readFromURL("type", session, availableTypes)
+    LANG <<- readFromURL("lang", session, availableLanguages)
+    ID <<- readFromURL("id", session, availableIDs)
+    
+  })
   
   observe({
     
-    #This variable will be FALSE when there are some errors connected with URL parameters
-    CAN_START <<- TRUE
-    
-    #Read variables from URL
-    form <- readFromURL("form", session, availableForms)
-    type <- readFromURL("type", session, availableTypes)
-    lang <- readFromURL("lang", session, availableLanguages)
-    userID <- readFromURL("id", session, availableIDs)
-    
-    if (CAN_START){
-
-      setwd(wd.datapath)
-
-      #Read texts
-      texts <- read.csv("texts.csv", encoding = "UTF-8")
-      texts <- texts[texts$form == form & texts$item_type == type & texts$language == lang, ]
+    if (START){
       
-      #Read items
-      items <- read.csv("items.csv", encoding = "UTF-8")
-      items <- items[items$form == form & items$type == type & items$language == lang, ]
+      cat("\nApplication started correctly!")
       
-      setwd(wd.init)
-
+      #Take items and texts connected with concrete form, item type and language
+      texts <- texts[texts$form == FORM & texts$item_type == TYPE & texts$language == LANG, ]
+      items <- items[items$form == FORM & items$type == TYPE & items$language == LANG, ]
+      
+      #Specify path for answers saving
+      userAnswersFile <- paste0("answers/", FORM, "/", TYPE, "/", ID, ".csv")
+      
       #Render header
       output$header <- renderText({
         texts[texts$text_type == "header", "text"]
       })
       
-      if (form == "WS" & type == "word") {
+      #Adjust rest of UI for URL parameter values
+      if (FORM == "WS" & TYPE == "word"){
+        multiPageUI <- TRUE
+      } else {
+        multiPageUI <- FALSE
+      }
+
+      if (multiPageUI){
         
-        output$sidebar <- renderTwoButtonsSidebar(texts)
-        
+        #Create list of categories
         categories <- unique(items$category)
-        MAX_PAGE <<- length(categories) + 1
         
-        #Load current input if it exists
-        USER_ANSWERS_FILE <<- paste0("answers/", form, "/", type, "/", userID, ".csv")
-          
-        #Read answers from file if it exists
-        if (file.exists(USER_ANSWERS_FILE)){
-          ANSWERS <<- read.csv(USER_ANSWERS_FILE, encoding = "UTF-8")
+        #Read answers from file if they already exists
+        if (file.exists(userAnswersFile)){
+          ANSWERS <<- read.csv(userAnswersFile, encoding = "UTF-8")
           print("Plik istnieje")
         } else {
           ANSWERS <<- data.frame(category = categories, items_selected = NA, comment = NA)
           print("Plik nie istnieje")
         }
         
-        #Create UI depending on page
-        if (page() == 0){
-          
-          #Welcome page
-          INPUT_PAGE <<- FALSE
-          
-          output$main <- renderUI({
-            
-            list(
-              
-              createProgressBar(page()),
-              texts[texts$text_type == "instr", "text"]
-              
-            )
-            
-          })
-          
-        } else if (page() == MAX_PAGE) {
-          
-          #Thanks page
-          INPUT_PAGE <<- FALSE
-          
-          output$main <- renderUI({
-            
-            list(
-              
-              createProgressBar(page()),
-              texts[texts$text_type == "thanks", "text"]
-              
-            )
-            
-          })
-          
-        } else {
-          
-          #Input page
-          INPUT_PAGE <<- TRUE
-          CURR_CAT <<- categories[page()]
-          
-        }
+        #Render UI
+        renderMultiPageUI(texts, items, input, output, categories, userAnswersFile)
         
+      } else {
+        cat("\nNo UI specified yet for current combination of parameters")
       }
       
-    }#end big if
-
+    }#end if START
+    
   })#end observe
 
-  #Add buttons service
-  observeEvent(input$nextB, {
-
-    if (page() < MAX_PAGE){
-
-      newPage <- page() + 1
-      page(newPage)
-
-    }
-
-    if (INPUT_PAGE){
-      saveData()
-    }
-
-  })
-
-  observeEvent(input$prevB, {
-
-    if (page() > 0){
-      
-      newPage <- page() - 1
-      page(newPage)
-      
-    }
-
-    if(INPUT_PAGE){
-      saveData()
-    }
-
-  })
-
-  # output$main <- renderUI({
-  #   
-  #   #Welcome page
-  #   if (page() == 0){
-  #     
-  #     inputPage <<- FALSE
-  #     
-  #     list(
-  #       
-  #       createProgressBar(),
-  #       
-  #       p (
-  #         
-  #         class = "instr",
-  #         texts$instr
-  #         
-  #       )
-  #       
-  #     )
-  #     
-  #   }
-  #   
-  #   #Thanks page
-  #   else if (page() == maxPage) {
-  #     
-  #     inputPage <<- FALSE
-  #     
-  #   }
-  #   
-  #   #Input page
-  #   else {
-  #     
-  #     inputPage <<- TRUE
-  #     currCat <<- categories[page()]
-  #     selectedStr <- as.character(answers[answers$category == currCat, "items_selected"])
-  #     comment <- answers[answers$category == currCat, "comment"]
-  #     
-  #     if (!is.na(selectedStr)){
-  #       selected <- strsplit(selectedStr, " ")[[1]]
-  #     } else {
-  #       selected <- NULL
-  #     }
-  #     
-  #     if (is.na(comment)){
-  #       comment = ""
-  #     }
-  #     
-  #     list(
-  #       
-  #       createProgressBar(),
-  #       
-  #       h4(texts[[currCat]]),
-  #       
-  #       br(),
-  #       
-  #       div(
-  #         
-  #         class = "itemsContainer",
-  #         
-  #         checkboxGroupInput(
-  #           "items",
-  #           selected = selected,
-  #           label = NULL,
-  #           choiceNames = as.character(items[items$category == currCat, ]$definition),
-  #           choiceValues = as.character(items[items$category == currCat, ]$item_id)
-  #         )
-  #         
-  #       ),
-  #       
-  #       div (
-  #         
-  #         class = "commentContainer",
-  #         
-  #         textAreaInput("comment", label = texts$comments, value = comment)
-  #         
-  #       )
-  #       
-  #     )#end list
-  #     
-  #   }
-  #   
-  # })#end renderUI
-  
 }
