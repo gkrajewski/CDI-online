@@ -14,7 +14,7 @@ server <- function(input, output, session) {
   
   #Specify available URL parameters
   availableForms <- c("WS")
-  availableTypes <- c("word", "combine")
+  availableTypes <- c("word")
   availableLanguages <- c("Polish")
   availableIDs <- c("1234", "5678")
   
@@ -52,6 +52,7 @@ server <- function(input, output, session) {
         texts[texts$text_type == "header", "text"]
       })
       
+      #TODO: create UIs for other parameters
       #Adjust rest of UI for URL parameter values
       if (FORM == "WS" & TYPE == "word"){
         multiPageUI <- TRUE
@@ -77,7 +78,9 @@ server <- function(input, output, session) {
         renderMultiPageUI(texts, items, input, output, categories, userAnswersFile)
         
       } else {
-        cat("\nNo UI specified yet for current combination of parameters")
+        
+        #TODO
+        
       }
       
     }#end if START
