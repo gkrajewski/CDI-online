@@ -15,11 +15,8 @@ h1 {
    -moz-column-count: 3;    /* Firefox */ 
    column-count: 3; 
    -moz-column-fill: auto;
-   -column-fill: auto;  
-}
-
-.commentContainer {
-	margin-top: 30px;
+   -column-fill: auto; 
+	margin-bottom: 30px;
 }
 
 

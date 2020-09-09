@@ -2,10 +2,11 @@ server <- function(input, output, session) {
   
   options(stringsAsFactors = FALSE)
   
-  #Specify datapath and working directory path
-  wd.datapath = paste0(getwd(),"/www")
-  wd.init = getwd()
-  
+  #Specify data paths etc.
+  wd.datapath <- paste0(getwd(),"/www")
+  wd.functions <- paste0(wd.datapath,"/functions")
+  wd.init <- getwd()
+
   #Load items and texts
   setwd(wd.datapath)
   texts <- read.csv("texts.csv", encoding = "UTF-8")
@@ -14,17 +15,15 @@ server <- function(input, output, session) {
   
   #Specify available URL parameters
   availableForms <- c("WS")
-  availableTypes <- c("word")
+  availableTypes <- c("word", "combine")
   availableLanguages <- c("Polish")
   availableIDs <- c("1234", "5678")
-  
-  #Load functions
-  source('functions.R')
-  
+
   #This variable can be made FALSE by lack of URL parameter or bad URL parameter
   START <<- TRUE
 
-  #Read parameters values from URL (particular scale and version of CDI)
+  #Read parameters values from URL (particular scale, version of CDI, language and user ID)
+  source(paste0(wd.functions,"/readFromURL.R"))
   observe({
     
     FORM <<- readFromURL("form", session, availableForms)
@@ -38,9 +37,9 @@ server <- function(input, output, session) {
     
     if (START){
       
-      cat("\nApplication started correctly!")
+      cat("\nApplication started successfully!")
       
-      #Take items and texts connected with concrete form, item type and language
+      #Take items and texts connected with concrete CDI form, item type and language
       texts <- texts[texts$form == FORM & texts$item_type == TYPE & texts$language == LANG, ]
       items <- items[items$form == FORM & items$type == TYPE & items$language == LANG, ]
       
@@ -52,34 +51,28 @@ server <- function(input, output, session) {
         texts[texts$text_type == "header", "text"]
       })
       
-      #TODO: create UIs for other parameters
-      #Adjust rest of UI for URL parameter values
+      #Adjust rest of UI for URL parameters values
       if (FORM == "WS" & TYPE == "word"){
-        multiPageUI <- TRUE
-      } else {
-        multiPageUI <- FALSE
-      }
 
-      if (multiPageUI){
+        # #Create list of categories
+        # categories <- unique(items$category)
+        # 
+        # #Read answers
+        # ANSWERS <<- readAnswers(userAnswersFile, "categories")
+        # 
+        # #Render UI
+        # renderMultiPageUI(texts, items, input, output, categories, userAnswersFile)
         
-        #Create list of categories
-        categories <- unique(items$category)
+        #Render UI for type 'word'
+        source(paste0(wd.functions,"/renderMultiPageUI.R"))
+        renderMultiPageUI(input, userAnswersFile, items, texts, output)
         
-        #Read answers from file if they already exists
-        if (file.exists(userAnswersFile)){
-          ANSWERS <<- read.csv(userAnswersFile, encoding = "UTF-8")
-          print("Plik istnieje")
-        } else {
-          ANSWERS <<- data.frame(category = categories, items_selected = NA, comment = NA)
-          print("Plik nie istnieje")
-        }
-        
-        #Render UI
-        renderMultiPageUI(texts, items, input, output, categories, userAnswersFile)
         
       } else {
-        
-        #TODO
+  
+        #Render UI for type 'combine'
+        source(paste0(wd.functions,"/renderOnePageUI.R"))
+        renderOnePageUI(input, userAnswersFile, items, texts, output)        
         
       }
       
