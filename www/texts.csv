@@ -15,3 +15,13 @@ WS,combine,Polish,option3,Często
 WS,combine,Polish,submit,Zapisz
 WS,combine,Polish,help,Aby zapisać swoją odpowiedź użyj przycisku poniżej. 
 WS,combine,Polish,info,Twoja odpowiedź została zapisana!
+WS,wielowyrazowe,Polish,header,Przykłady wypowiedzeń wielowyrazowych
+WS,wielowyrazowe,Polish,submit,Zapisz
+WS,wielowyrazowe,Polish,help,Aby zapisać swoją odpowiedź użyj przycisku poniżej. 
+WS,wielowyrazowe,Polish,info,Twoja odpowiedź została zapisana!
+WS,wielowyrazowe,Polish,instr,Proszę podać przykłady rzeczywistych wypowiedzeń dziecka złożonych z dwu lub więcej wyrazów: 
+WS,najdluzsze,Polish,header,Trzy najdłuższe zdania
+WS,najdluzsze,Polish,submit,Zapisz
+WS,najdluzsze,Polish,help,Aby zapisać swoją odpowiedź użyj przycisku poniżej. 
+WS,najdluzsze,Polish,info,Twoja odpowiedź została zapisana!
+WS,najdluzsze,Polish,instr,"Proszę podać przykłady trzech najdłuższych zdań, jakie ostatnio słyszeli Państwo od swego dziecka. (Chodzi o wypowiedzi samodzielne, a nie wierszyki, piosenki itp.)"

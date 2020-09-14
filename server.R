@@ -13,71 +13,56 @@ server <- function(input, output, session) {
   items <- read.csv("items.csv", encoding = "UTF-8")
   setwd(wd.init)
   
-  #Specify available URL parameters
-  availableForms <- c("WS")
-  availableTypes <- c("word", "combine")
-  availableLanguages <- c("Polish")
+  #Specify available URL values for parameters 'id' and 'form'
   availableIDs <- c("1234", "5678")
+  availableForms <- unique(texts$form)
 
-  #This variable can be made FALSE by lack of URL parameter or bad URL parameter
-  START <<- TRUE
-
-  #Read parameters values from URL (particular scale, version of CDI, language and user ID)
+  #Read function
   source(paste0(wd.functions,"/readFromURL.R"))
+
   observe({
     
-    FORM <<- readFromURL("form", session, availableForms)
-    TYPE <<- readFromURL("type", session, availableTypes)
-    LANG <<- readFromURL("lang", session, availableLanguages)
-    ID <<- readFromURL("id", session, availableIDs)
+    #Read parameters values from URL
+    id <- readFromURL("id", session, availableIDs)
+    form <- readFromURL("form", session, availableForms)
     
-  })
-  
-  observe({
+    availableTypes <- unique(texts[texts$form == form, 'item_type'])
+    type <- readFromURL("type", session, availableTypes)
     
-    if (START){
-      
-      cat("\nApplication started successfully!")
+    availableLanguages <- unique(texts[texts$item_type == type & texts$form == form, 'language'])
+    lang <- readFromURL("lang", session, availableLanguages)
+    
+    #Render UI if all parameters values are correct
+    if (!is.null(form) & !is.null(type) & !is.null(lang) & !is.null(id)){
       
       #Take items and texts connected with concrete CDI form, item type and language
-      texts <- texts[texts$form == FORM & texts$item_type == TYPE & texts$language == LANG, ]
-      items <- items[items$form == FORM & items$type == TYPE & items$language == LANG, ]
+      texts <- texts[texts$form == form & texts$item_type == type & texts$language == lang, ]
+      items <- items[items$form == form & items$type == type & items$language == lang, ]
       
-      #Specify path for answers saving
-      userAnswersFile <- paste0("answers/", FORM, "/", TYPE, "/", ID, ".csv")
-      
+      #Specify path for file with answers
+      userAnswersFile <- paste0("answers/", form, "/", type, "/", id, ".csv")
+
       #Render header
       output$header <- renderText({
         texts[texts$text_type == "header", "text"]
       })
       
-      #Adjust rest of UI for URL parameters values
-      if (FORM == "WS" & TYPE == "word"){
+      #Read functions
+      source(paste0(wd.functions,"/renderSidebar.R"))
+      source(paste0(wd.functions,"/renderMain.R"))
 
-        # #Create list of categories
-        # categories <- unique(items$category)
-        # 
-        # #Read answers
-        # ANSWERS <<- readAnswers(userAnswersFile, "categories")
-        # 
-        # #Render UI
-        # renderMultiPageUI(texts, items, input, output, categories, userAnswersFile)
-        
-        #Render UI for type 'word'
-        source(paste0(wd.functions,"/renderMultiPageUI.R"))
-        renderMultiPageUI(input, userAnswersFile, items, texts, output)
-        
-        
-      } else {
-  
-        #Render UI for type 'combine'
-        source(paste0(wd.functions,"/renderOnePageUI.R"))
-        renderOnePageUI(input, userAnswersFile, items, texts, output)        
-        
-      }
+      #Render sidebar
+      output$sidebar <- renderSidebar(type, texts)
       
-    }#end if START
-    
+      #Render main panel
+      output$main <- renderMain(wd.functions, type, input, output, items, texts, userAnswersFile)
+
+    } else {
+      
+      output$sidebar <- renderText({"Error: No value of necessary URL parameter or bad value."})
+      
+    }
+
   })#end observe
 
 }
