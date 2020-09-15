@@ -1,32 +1,32 @@
 #Render one of two sidebars depending on input type
-renderSidebar <- function(type, texts){
+renderSidebar <- function(type, txtG){
   
   return (
     
     renderUI({
       
-      list(
+      #Multipage layout
+      if (type == "word"){
         
-        p(class = "help-block", texts[texts$text_type == "help", "text"]),
+        list(
+          
+          p(class = "help-block", txtG$helpMulti),
+          actionButton("prevB", label = txtG$prevB),
+          actionButton("nextB", label = txtG$nextB)
+          
+        )
         
-        #Multipage layout
-        if (type == "word"){
-          
-          list(
-            
-            actionButton("prevB", label = texts[texts$text_type == "prevB", "text"]),
-            actionButton("nextB", label = texts[texts$text_type == "nextB", "text"])
-            
-          )
-          
-        #Onepage layout
-        } else {
-          
-          actionButton("submit", label = texts[texts$text_type == "submit", "text"])
-          
-        }
+      #Onepage layout
+      } else {
         
-      )
+        list(
+          
+          p(class = "help-block", txtG$helpOne),
+          actionButton("submit", label = txtG$submit)
+          
+        )
+
+      }
       
     })    
     

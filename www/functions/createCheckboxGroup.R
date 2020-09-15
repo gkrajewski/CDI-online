@@ -14,7 +14,7 @@ prepComment <- function(comment){
 
 
 #Create page with multiple checkboxes, title and comment field
-createCheckboxGroup <- function(texts, selected, choiceNames, choiceValues, comment){
+createCheckboxGroup <- function(txtG, selected, choiceNames, choiceValues, comment){
   
   return(
     
@@ -38,7 +38,7 @@ createCheckboxGroup <- function(texts, selected, choiceNames, choiceValues, comm
       
       div(
         class = "comment",
-        textAreaInput("comment", label = texts[texts$text_type == "comment", "text"], value = comment)
+        textAreaInput("comment", label = txtG$comment, value = comment)
       )
       
       

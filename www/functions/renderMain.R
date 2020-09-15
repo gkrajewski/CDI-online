@@ -1,5 +1,5 @@
 #Render main panel
-renderMain <- function(wd.functions, type, input, output, items, texts, userAnswersFile){
+renderMain <- function(wd.functions, type, input, output, items, texts, userAnswersFile, txtG){
   
   source(paste0(wd.functions,"/saveData.R"))
   source(paste0(wd.functions,"/readAnswers.R"))
@@ -147,7 +147,7 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
     observeEvent(input$submit, {
       
       saveData(type, input, userAnswersFile, inputID = inputID, sentIDs = sentIDs)
-      output$info <- renderText({texts[texts$text_type == "info", "text"]})
+      output$info <- renderText({txtG$info})
       
     })
     
@@ -172,7 +172,7 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
           } else if (currPage() == pageNr) {
 
             #Render last page thanks
-            texts[texts$text_type == "thanks", "text"]
+            txtG$thanks
 
           } else {
 
@@ -196,7 +196,7 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
               list(
                 
                 h4(texts[texts$text_type == currCat, "text"]),
-                createCheckboxGroup(texts, selected, choiceNames, choiceValues, comment) 
+                createCheckboxGroup(txtG, selected, choiceNames, choiceValues, comment) 
                 
               )
              
@@ -253,7 +253,7 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
           list(
             
             texts[texts$text_type == "instr", "text"],
-            createCheckboxGroup(texts, selected, choiceNames, choiceValues, comment)
+            createCheckboxGroup(txtG, selected, choiceNames, choiceValues, comment)
             
           )
           

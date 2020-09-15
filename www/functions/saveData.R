@@ -10,7 +10,7 @@ saveData <- function(type, input, userAnswersFile, currCat, categories, inputID,
     
   } else if (type == "combine") {
     
-    answers$answer <- input[[inputID]]
+    answers$answer <- input[[inputID]] #TODO
  
   } else if (type == "wielowyrazowe" | type == "najdluzsze") {
     

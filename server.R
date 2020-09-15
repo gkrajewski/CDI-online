@@ -10,6 +10,7 @@ server <- function(input, output, session) {
   #Load items and texts
   setwd(wd.datapath)
   texts <- read.csv("texts.csv", encoding = "UTF-8")
+  textsGeneral <- read.csv("textsGeneral.csv", encoding = "UTF-8")
   items <- read.csv("items.csv", encoding = "UTF-8")
   setwd(wd.init)
   
@@ -36,6 +37,7 @@ server <- function(input, output, session) {
     if (!is.null(form) & !is.null(type) & !is.null(lang) & !is.null(id)){
       
       #Take items and texts connected with concrete CDI form, item type and language
+      txtG <- textsGeneral[textsGeneral$language == lang, ]
       texts <- texts[texts$form == form & texts$item_type == type & texts$language == lang, ]
       items <- items[items$form == form & items$type == type & items$language == lang, ]
       
@@ -52,10 +54,10 @@ server <- function(input, output, session) {
       source(paste0(wd.functions,"/renderMain.R"))
 
       #Render sidebar
-      output$sidebar <- renderSidebar(type, texts)
+      output$sidebar <- renderSidebar(type, txtG)
       
       #Render main panel
-      output$main <- renderMain(wd.functions, type, input, output, items, texts, userAnswersFile)
+      output$main <- renderMain(wd.functions, type, input, output, items, texts, userAnswersFile, txtG)
 
     } else {
       
