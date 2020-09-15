@@ -86,9 +86,19 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
       
     })
     
-  } else {
+  } else if (type == "phrases") {
     
-    #TODO: (gesty, naśladownictwo itd.)
+    source(paste0(wd.functions,"/createCheckboxGroup.R"))
+    multiPage <- FALSE
+    
+    #Add no info text when answer is changed
+    observeEvent(input$items, {
+      output$info <- renderText({})
+    })
+    
+    observeEvent(input$comment, {
+      output$info <- renderText({})
+    })
     
   }
   
@@ -175,24 +185,21 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
             answers <- readAnswers(type, userAnswersFile, categories)
 
             #Prepare answers so they can be used in output
-            selectedStr <- answers[answers$category == currCat, "items_selected"]
-            comment <- answers[answers$category == currCat, "comment"]
-
-            if (!is.na(selectedStr)){
-              selected <- strsplit(selectedStr, " ")[[1]]
-            } else {
-              selected <- NULL
-            }
-
-            if (is.na(comment)){
-              comment <- ""
-            }
+            comment <- prepComment(answers[answers$category == currCat, "comment"])
+            selected <- prepItems(answers[answers$category == currCat, "items_selected"])
+            choiceNames <- as.character(items[items$category == currCat, ]$definition)
+            choiceValues <- as.character(items[items$category == currCat, ]$item_id)
 
             #Create suitable input fields
             if (type == "word"){
               
-              createCheckboxGroup(texts, currCat, selected, items, comment)              
-              
+              list(
+                
+                h4(texts[texts$text_type == currCat, "text"]),
+                createCheckboxGroup(texts, selected, choiceNames, choiceValues, comment) 
+                
+              )
+             
             } else {
               
               #TODO (gesty)
@@ -235,9 +242,24 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
             
           )
           
+        } else if (type == "phrases") {
+          
+          answers <- readAnswers(type, userAnswersFile)
+          comment <- prepComment(answers$comment)
+          selected <- prepItems(answers$items_selected)
+          choiceNames <- as.character(items$definition)
+          choiceValues <- as.character(items$item_id)
+          
+          list(
+            
+            texts[texts$text_type == "instr", "text"],
+            createCheckboxGroup(texts, selected, choiceNames, choiceValues, comment)
+            
+          )
+          
         } else {
           
-          #TODO (naśladownictwo itp.)
+          #TODO
           
         }
 

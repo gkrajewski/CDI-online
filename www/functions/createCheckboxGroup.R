@@ -1,26 +1,39 @@
+prepItems <- function(selectedStr){
+  
+  if (!is.na(selectedStr)) return(strsplit(selectedStr, " ")[[1]])
+  return(NULL)
+  
+}
+
+prepComment <- function(comment){
+  
+  if (is.na(comment)) return("")
+  return(comment)
+  
+}
+
+
 #Create page with multiple checkboxes, title and comment field
-createCheckboxGroup <- function(texts, currCat, selected, items, comment){
+createCheckboxGroup <- function(texts, selected, choiceNames, choiceValues, comment){
   
   return(
     
     list(
       
-      h4(texts[texts$text_type == currCat, "text"]),
-      
-      br(),
+      br(), br(),
       
       div(
-        
+
         class = "itemsContainer",
-        
+
         checkboxGroupInput(
           "items",
           selected = selected,
           label = NULL,
-          choiceNames = as.character(items[items$category == currCat, ]$definition),
-          choiceValues = as.character(items[items$category == currCat, ]$item_id)
+          choiceNames = choiceNames,
+          choiceValues = choiceValues
         )
-        
+
       ),
       
       div(

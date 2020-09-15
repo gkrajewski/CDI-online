@@ -19,6 +19,10 @@ readAnswers <- function(type, userAnswersFile, categories, sentIDs){
       
       return(data.frame(sent_id = as.array(sentIDs), text = NA))
       
+    } else if (type == "phrases") {
+      
+      return(data.frame(items_selected = NA, comment = NA))
+      
     } else {
       
       #TODO

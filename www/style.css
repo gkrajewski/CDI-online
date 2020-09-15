@@ -6,6 +6,10 @@ h1 {
 	margin-bottom: 20px;
 }
 
+h4 {
+	margin-bottom: 0px;
+}
+
 #sidebar {
 	text-align: center;
 }

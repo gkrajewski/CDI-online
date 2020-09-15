@@ -25,3 +25,8 @@ WS,najdluzsze,Polish,submit,Zapisz
 WS,najdluzsze,Polish,help,Aby zapisać swoją odpowiedź użyj przycisku poniżej. 
 WS,najdluzsze,Polish,info,Twoja odpowiedź została zapisana!
 WS,najdluzsze,Polish,instr,"Proszę podać przykłady trzech najdłuższych zdań, jakie ostatnio słyszeli Państwo od swego dziecka. (Chodzi o wypowiedzi samodzielne, a nie wierszyki, piosenki itp.)"
+WG,phrases,Polish,header,Rozumienie wypowiedzi dorosłych
+WG,phrases,Polish,submit,Zapisz
+WG,phrases,Polish,help,Aby zapisać swoją odpowiedź użyj przycisku poniżej. 
+WG,phrases,Polish,info,Twoja odpowiedź została zapisana!
+WG,phrases,Polish,instr,"Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać."

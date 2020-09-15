@@ -19,6 +19,11 @@ saveData <- function(type, input, userAnswersFile, currCat, categories, inputID,
     answers$sent_id <- unlist(answers$sent_id)
     answers$text <- unlist(answers$text)
     
+  } else if (type == "phrases") {
+    
+    answers$items_selected <- paste(input$items, collapse =  " ")
+    answers$comment <- input$comment
+    
   } else {
     
     #TODO
