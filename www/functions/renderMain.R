@@ -1,13 +1,28 @@
 #Render main panel
-renderMain <- function(wd.functions, type, input, output, items, texts, userAnswersFile, txtG){
+renderMain <- function(wd.functions, type, input, output, items, texts, userAnswersFile, txtG, form){
   
   source(paste0(wd.functions,"/saveData.R"))
   source(paste0(wd.functions,"/readAnswers.R"))
   
-  if (type == "word"){
+  if (type == "word" & form == "WS"){
     
     source(paste0(wd.functions,"/createCheckboxGroup.R"))
     multiPage <- TRUE
+    
+  } else if (type == "word" & form == "WG"){
+    
+    source(paste0(wd.functions,"/createRadioGroup.R"))
+    source(paste0(wd.functions,"/createRadioQuestion.R"))
+    multiPage <- TRUE
+    
+    choiceNames = list(
+      texts[texts$text_type == "option1", "text"],
+      texts[texts$text_type == "option2", "text"]
+    )
+    
+    choiceValues = list("u", "s")
+    
+    currItems <- list()
     
   } else if (type == "combine"){
     
@@ -15,7 +30,7 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
     multiPage <- FALSE
     
     #Prepare answers df
-    answers <- readAnswers(type, userAnswersFile)
+    answers <- readAnswers(form, type, userAnswersFile)
     
     #Prepare input ID
     inputID <- items$item_id
@@ -55,7 +70,7 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
     for (i in 1:sentencesNr) sentIDs[[i]] <- paste0("s", i)
     
     #Prepare answers df
-    answers <- readAnswers(type, userAnswersFile, sentIDs = sentIDs)
+    answers <- readAnswers(form, type, userAnswersFile, sentIDs = sentIDs)
     
     #Read particular senteces and prepare text input fields
     sentences <- list()
@@ -116,7 +131,7 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
       if (nextPage <= pageNr){
         
         #Save data if on current page are input fields
-        if (currPage() != 0) saveData(type, input, userAnswersFile, categories[currPage()], categories)
+        if (currPage() != 0) saveData(form, type, input, userAnswersFile, categories[currPage()], categories, items)
         
         #Change page
         currPage(nextPage)
@@ -132,7 +147,7 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
       if (nextPage >= 0 ){
         
         #Save data if on current page are input fields
-        if (currPage() != pageNr) saveData(type, input, userAnswersFile, categories[currPage()], categories)
+        if (currPage() != pageNr) saveData(form, type, input, userAnswersFile, categories[currPage()], categories, items) 
         
         #Change page
         currPage(nextPage)
@@ -146,7 +161,7 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
     #Add submit button service
     observeEvent(input$submit, {
       
-      saveData(type, input, userAnswersFile, inputID = inputID, sentIDs = sentIDs)
+      saveData(form, type, input, userAnswersFile, inputID = inputID, sentIDs = sentIDs)
       output$info <- renderText({txtG$info})
       
     })
@@ -182,16 +197,18 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
             currCat <- categories[currPage()]
 
             #Prepare answers df
-            answers <- readAnswers(type, userAnswersFile, categories)
-
-            #Prepare answers so they can be used in output
+            answers <- readAnswers(form, type, userAnswersFile, categories)
+            
+            #Prepare comment so it can be used in rendering UI
             comment <- prepComment(answers[answers$category == currCat, "comment"])
-            selected <- prepItems(answers[answers$category == currCat, "items_selected"])
-            choiceNames <- as.character(items[items$category == currCat, ]$definition)
-            choiceValues <- as.character(items[items$category == currCat, ]$item_id)
 
             #Create suitable input fields
-            if (type == "word"){
+            if (form == "WS"){
+              
+              #Prepare info about items so it can be used in rendering UI
+              selected <- prepItems(answers[answers$category == currCat, "items_selected"])
+              choiceNames <- as.character(items[items$category == currCat, ]$definition)
+              choiceValues <- as.character(items[items$category == currCat, ]$item_id)
               
               list(
                 
@@ -202,7 +219,18 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
              
             } else {
               
-              #TODO (gesty)
+              currItems <- items[items$category == currCat, ]
+              answersPattern <- prepAnswersPattern(answers[answers$category == currCat, "answers_pattern"], currItems)
+              
+              list(
+                
+                h4(texts[texts$text_type == currCat, "text"]),
+                br(),
+                texts[texts$text_type == "instr2", "text"],
+                br(),
+                createRadioGroup(txtG, comment, currItems, answersPattern, choiceNames, choiceValues) 
+                
+              )
               
             }
 
@@ -214,7 +242,7 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
 
         if (type == "combine"){
           
-          #Create a question with radio buttons to answer
+          #Create a question with radio buttons
           createRadioQuestion(items$definition, inputID, selected, choiceNames, choiceValues)          
           
         } else if (type == "wielowyrazowe" | type == "najdluzsze") {
@@ -244,7 +272,7 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
           
         } else if (type == "phrases") {
           
-          answers <- readAnswers(type, userAnswersFile)
+          answers <- readAnswers(form, type, userAnswersFile)
           comment <- prepComment(answers$comment)
           selected <- prepItems(answers$items_selected)
           choiceNames <- as.character(items$definition)

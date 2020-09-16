@@ -12,8 +12,7 @@ prepComment <- function(comment){
   
 }
 
-
-#Create page with multiple checkboxes, title and comment field
+#Create page with multiple checkboxes and comment field
 createCheckboxGroup <- function(txtG, selected, choiceNames, choiceValues, comment){
   
   return(

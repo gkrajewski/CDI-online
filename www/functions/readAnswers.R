@@ -1,5 +1,5 @@
 #Read answers from file if they exists or prepare empty df      
-readAnswers <- function(type, userAnswersFile, categories, sentIDs){
+readAnswers <- function(form, type, userAnswersFile, categories, sentIDs){
   
   if (file.exists(userAnswersFile)){
     
@@ -7,9 +7,13 @@ readAnswers <- function(type, userAnswersFile, categories, sentIDs){
     
   } else {
     
-    if (type == "word"){
+    if (type == "word" & form == "WS"){
       
       return(data.frame(category = categories, items_selected = NA, comment = NA))      
+      
+    } else if (type == "word" & form == "WG"){
+      
+      return(data.frame(category = categories, answers_pattern = NA, comment = NA))       
       
     } else if (type == "combine") {
       

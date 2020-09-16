@@ -1,5 +1,3 @@
-UWAGA: Gdyby ktoś testował przed 15 września 10:55 to mogło nie działać bo nie było folderu answers (narazie wymaganego).
-
 Jak testować aplikację w RStudio?
 1. Uruchamiamy dowolny z plików - app.R, server.R bądź ui.r
 2. Klikamy Run App > Run External
@@ -12,7 +10,7 @@ Dostępne aktualnie wartości dla parametrów:
 - form: WS, WG
 - type:
   - Dla form WS: word, combine, wielowyrazowe, najdluzsze (te ostatnie są po PL bo nie znalazłem angielskich odpowiedników w wordbanku)
-  - Dla form WG: phrases
+  - Dla form WG: word, phrases
 - lang: Polish
 - id: 1234, 5678 (narazie wpisane w kodzie, zakładam, że będzie się skądś pobierała w przyszłości lista możliwych)
 

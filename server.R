@@ -57,7 +57,7 @@ server <- function(input, output, session) {
       output$sidebar <- renderSidebar(type, txtG)
       
       #Render main panel
-      output$main <- renderMain(wd.functions, type, input, output, items, texts, userAnswersFile, txtG)
+      output$main <- renderMain(wd.functions, type, input, output, items, texts, userAnswersFile, txtG, form)
 
     } else {
       

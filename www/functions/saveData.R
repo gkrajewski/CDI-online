@@ -1,11 +1,35 @@
 #Save data to file
-saveData <- function(type, input, userAnswersFile, currCat, categories, inputID, sentIDs){
+saveData <- function(form, type, input, userAnswersFile, currCat, categories, items, inputID, sentIDs){
   
-  answers <- readAnswers(type, userAnswersFile, categories, sentIDs)
+  answers <- readAnswers(form, type, userAnswersFile, categories, sentIDs)
   
-  if (type == "word"){
+  if (type == "word" & form == "WS"){
     
     answers[answers$category == currCat,"items_selected"] <- paste(input$items, collapse =  " ")
+    answers[answers$category == currCat,"comment"] <- input$comment
+    
+  } else if (type == "word" & form == "WG"){
+    
+    i <- 1
+    currAnswers <- list()
+    currItems <- items[items$category == currCat, "item_id"]
+    
+    for (item in currItems) {
+      
+      if (!is.null(input[[item]])){
+        
+        currAnswers[[i]] <- input[[item]]
+        
+      } else {
+        
+        currAnswers[[i]] <- "e"
+      }
+      
+      i <- i + 1
+      
+    }
+    
+    answers[answers$category == currCat,"answers_pattern"] <- paste0(currAnswers, collapse = "")
     answers[answers$category == currCat,"comment"] <- input$comment
     
   } else if (type == "combine") {
