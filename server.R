@@ -43,6 +43,11 @@ server <- function(input, output, session) {
       
       #Specify path for file with answers
       userAnswersFile <- paste0("answers/", form, "/", type, "/", id, ".csv")
+      
+      #Check existence of answers directories and create if necessary
+      ifelse(!dir.exists(file.path(wd.init, "answers")), dir.create(file.path(wd.init, "answers")), FALSE)
+      ifelse(!dir.exists(file.path(wd.init, "answers", form)), dir.create(file.path(wd.init, "answers", form)), FALSE)
+      ifelse(!dir.exists(file.path(wd.init, "answers", form, type)), dir.create(file.path(wd.init, "answers", form, type)), FALSE)
 
       #Render header
       output$header <- renderText({
