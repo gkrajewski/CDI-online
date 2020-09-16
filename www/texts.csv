@@ -20,3 +20,9 @@ WG,word,Polish,animals,Zwierzęta – prawdziwe lub zabawkowe
 WG,word,Polish,instr2,"R = tylko rozumie, M = rozumie i mówi "
 WG,word,Polish,option1,R
 WG,word,Polish,option2,M
+WG,combine,Polish,header,Łączenie wyrazów
+WG,combine,Polish,option1,Jeszcze nie
+WG,combine,Polish,option2,Czasem
+WG,combine,Polish,option3,Często
+WG,wielowyrazowe,Polish,header,Przykłady wypowiedzeń wielowyrazowych
+WG,wielowyrazowe,Polish,instr,Proszę podać przykłady rzeczywistych wypowiedzeń dziecka złożonych z dwu lub więcej wyrazów: 

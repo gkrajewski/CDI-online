@@ -55,6 +55,7 @@ item_53,żaba,Polish,WS,word,animals
 item_54,żółw,Polish,WS,word,animals
 item_55,żyrafa,Polish,WS,word,animals
 item_760,"Czy dziecko zaczęło już łączyć wyrazy? Czy tworzy takie zdania jak np. dzidzi am, da mleko, tu kotek, mama śpi?",Polish,WS,combine,
+Item_760,"Czy dziecko zaczęło już łączyć wyrazy? Czy tworzy takie zdania jak np. dzidzi am, da mleko, tu kotek, mama śpi?",Polish,WG,combine,
 Item_4,Chcesz jeść?,Polish,WG,phrases,
 Item_5,Chcesz spać?,Polish,WG,phrases,
 Item_6,Chcesz pić?,Polish,WG,phrases,
