@@ -53,7 +53,7 @@ createRadioGroup <- function(txtG, comment, items, answersPattern, choiceNames, 
       
       div(
         
-        class = "itemsContainer",
+        class = "multiItemsContainer",
         questions
         
       ),

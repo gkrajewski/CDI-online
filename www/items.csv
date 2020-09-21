@@ -133,3 +133,7 @@ n_item_3,"Łatwo uczy się wierszyków, piosenek, tekstów z książeczek.",Poli
 n_item_1,Dziecko samorzutnie powtarza zasłyszane wypowiedzi bądź ich fragmenty.,Polish,WG,nasladownictwo,
 n_item_2,"Poproszone o powtórzenie czegoś, chętnie powtarza.",Polish,WG,nasladownictwo,
 n_item_3,"Niektóre dzieci chętnie wymieniają nazwy przedmiotów, tak jakby chciały się pochwalić, że je znają. Czy Państwa dziecko chętnie nazywa przedmioty?",Polish,WG,nasladownictwo,
+item_1,"Reaguje, gdy zawołać je po imieniu (np. odwraca głowę i patrzy w kierunku głosu)?",Polish,WG,first_signs,
+item_2,"Reaguje na okrzyk Nie! (przerywając wykonywaną czynność choć na chwilę)? 
+",Polish,WG,first_signs,
+item_3,Reaguje na słowa Tu mama. lub Gdzie tata? (szukając matki lub ojca wzrokiem)? ,Polish,WG,first_signs,
