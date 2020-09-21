@@ -127,3 +127,9 @@ Item_77,zając,Polish,WG,word,animals
 Item_78,żaba,Polish,WG,word,animals
 Item_79,żółw,Polish,WG,word,animals
 Item_80,żyrafa,Polish,WG,word,animals
+n_item_1,Dziecko samorzutnie powtarza zasłyszane wypowiedzi bądź ich fragmenty.,Polish,WS,nasladownictwo,
+n_item_2,"Poproszone o powtórzenie czegoś, chętnie powtarza.",Polish,WS,nasladownictwo,
+n_item_3,"Łatwo uczy się wierszyków, piosenek, tekstów z książeczek.",Polish,WS,nasladownictwo,
+n_item_1,Dziecko samorzutnie powtarza zasłyszane wypowiedzi bądź ich fragmenty.,Polish,WG,nasladownictwo,
+n_item_2,"Poproszone o powtórzenie czegoś, chętnie powtarza.",Polish,WG,nasladownictwo,
+n_item_3,"Niektóre dzieci chętnie wymieniają nazwy przedmiotów, tak jakby chciały się pochwalić, że je znają. Czy Państwa dziecko chętnie nazywa przedmioty?",Polish,WG,nasladownictwo,

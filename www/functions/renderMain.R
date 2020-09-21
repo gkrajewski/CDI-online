@@ -101,7 +101,9 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
       
     })
     
-  } else if (type == "phrases") {
+  } else {
+    
+    ### Page with multiple checkboxes ###
     
     source(paste0(wd.functions,"/createCheckboxGroup.R"))
     multiPage <- FALSE
@@ -232,11 +234,11 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
                 
               )
               
-            }
+            }#end else
 
-          }
+          }#end else
 
-        )
+        )#end list
 
       } else {
 
@@ -270,7 +272,7 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
             
           )
           
-        } else if (type == "phrases") {
+        } else {
           
           answers <- readAnswers(form, type, userAnswersFile)
           comment <- prepComment(answers$comment)
@@ -285,11 +287,7 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
             
           )
           
-        } else {
-          
-          #TODO
-          
-        }
+        }#end else 
 
       }#end else
 

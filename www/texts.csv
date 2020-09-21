@@ -26,3 +26,7 @@ WG,combine,Polish,option2,Czasem
 WG,combine,Polish,option3,Często
 WG,wielowyrazowe,Polish,header,Przykłady wypowiedzeń wielowyrazowych
 WG,wielowyrazowe,Polish,instr,Proszę podać przykłady rzeczywistych wypowiedzeń dziecka złożonych z dwu lub więcej wyrazów: 
+WS,nasladownictwo,Polish,header,Naśladownictwo
+WS,nasladownictwo,Polish,instr,Zaznacz wszystkie zdania prawdziwe.
+WG,nasladownictwo,Polish,header,Naśladownictwo
+WG,nasladownictwo,Polish,instr,Zaznacz wszystkie zdania prawdziwe.

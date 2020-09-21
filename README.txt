@@ -9,8 +9,8 @@ Dostępne aktualnie wartości dla parametrów:
 
 - form: WS, WG
 - type:
-  - Dla form WS: word, combine, wielowyrazowe, najdluzsze (te ostatnie są po PL bo nie znalazłem angielskich odpowiedników w wordbanku)
-  - Dla form WG: word, phrases, combine, wielowyrazowe
+  - Dla form WS: word, combine, wielowyrazowe, najdluzsze, nasladownictwo (te ostatnie są po PL bo nie znalazłem angielskich odpowiedników w wordbanku)
+  - Dla form WG: word, phrases, combine, wielowyrazowe, nasladownictwo
 - lang: Polish
 - id: 1234, 5678 (narazie wpisane w kodzie, zakładam, że będzie się skądś pobierała w przyszłości lista możliwych)
 
