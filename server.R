@@ -1,7 +1,7 @@
 server <- function(input, output, session) {
   
   #Set working directory to source files location
-  #setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
   
   options(stringsAsFactors = FALSE)
   
