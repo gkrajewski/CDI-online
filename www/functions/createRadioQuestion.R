@@ -1,6 +1,8 @@
 #Create a row with question text on the left and radio buttons on the right
 createRadioQuestion <- function(question, inputID, selected, choiceNames, choiceValues){
   
+  if (selected == "e") selected <- character(0)
+    
   return(
   
     fluidRow(

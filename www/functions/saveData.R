@@ -34,7 +34,15 @@ saveData <- function(form, type, input, userAnswersFile, currCat, categories, it
     
   } else if (type == "combine") {
     
-    answers$answer <- input[[inputID]] #TODO
+    if (!is.null(input[[inputID]])){
+      
+      answers$answer <- input[[inputID]]
+      
+    } else {
+      
+      answers$answer <- "e"
+      
+    }
  
   } else if (type == "wielowyrazowe" | type == "najdluzsze") {
     

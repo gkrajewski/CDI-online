@@ -38,7 +38,7 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
     if(!is.na(answers$answer)){
       selected <- answers$answer
     } else {
-      selected <- character(0)
+      selected <- "e"
     }
     
     choiceNames = list(

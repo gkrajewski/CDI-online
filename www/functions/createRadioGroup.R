@@ -33,15 +33,7 @@ createRadioGroup <- function(txtG, comment, items, answersPattern, choiceNames, 
   
   for (i in 1:length(items$item_id)){
     
-    if (answersPattern[i] != "e"){
-     
-      questions[[i]] <- createRadioQuestion(items[i, "definition"], items[i, "item_id"], answersPattern[i], choiceNames, choiceValues)        
-       
-    } else {
-      
-      questions[[i]] <- createRadioQuestion(items[i, "definition"], items[i, "item_id"], character(0), choiceNames, choiceValues)      
-      
-    }
+    questions[[i]] <- createRadioQuestion(items[i, "definition"], items[i, "item_id"], answersPattern[i], choiceNames, choiceValues)        
 
   }
  
