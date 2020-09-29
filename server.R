@@ -52,6 +52,7 @@ server <- function(input, output, session) {
       ifelse(!dir.exists(file.path(wd.init, "answers", form)), dir.create(file.path(wd.init, "answers", form)), FALSE)
       ifelse(!dir.exists(file.path(wd.init, "answers", form, type)), dir.create(file.path(wd.init, "answers", form, type)), FALSE)
 
+
       #Render header
       output$header <- renderText({
         texts[texts$text_type == "header", "text"]
@@ -65,7 +66,7 @@ server <- function(input, output, session) {
       output$sidebar <- renderSidebar(type, txtG)
       
       #Render main panel
-      output$main <- renderMain(wd.functions, type, input, output, items, texts, userAnswersFile, txtG, form)
+      output$main <- renderMain(wd.functions, type, input, output, items, texts, userAnswersFile, txtG, form, session)
 
     } else {
       

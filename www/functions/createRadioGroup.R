@@ -26,14 +26,14 @@ prepComment <- function(comment){
 }
 
 #Create page with multiple questions and radio buttons for each question
-createRadioGroup <- function(txtG, comment, items, answersPattern, choiceNames, choiceValues){
+createRadioGroup <- function(txtG, comment, items, answersPattern, choiceNames, choiceValues, session){
   
   #Prepare questions
   questions <- list()
   
   for (i in 1:length(items$item_id)){
     
-    questions[[i]] <- createRadioQuestion(items[i, "definition"], items[i, "item_id"], answersPattern[i], choiceNames, choiceValues)        
+    questions[[i]] <- createRadioQuestion(items[i, "definition"], items[i, "item_id"], answersPattern[i], choiceNames, choiceValues, session)        
 
   }
  

@@ -1,5 +1,5 @@
 #Render main panel
-renderMain <- function(wd.functions, type, input, output, items, texts, userAnswersFile, txtG, form){
+renderMain <- function(wd.functions, type, input, output, items, texts, userAnswersFile, txtG, form, session){
   
   source(paste0(wd.functions,"/saveData.R"))
   source(paste0(wd.functions,"/readAnswers.R"))
@@ -230,7 +230,7 @@ renderMain <- function(wd.functions, type, input, output, items, texts, userAnsw
                 br(),
                 texts[texts$text_type == "instr2", "text"],
                 br(),
-                createRadioGroup(txtG, comment, currItems, answersPattern, choiceNames, choiceValues) 
+                createRadioGroup(txtG, comment, currItems, answersPattern, choiceNames, choiceValues, session) 
                 
               )
               

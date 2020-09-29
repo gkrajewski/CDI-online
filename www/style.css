@@ -37,3 +37,11 @@ h4 {
 .comment {
 	margin-top: 30px;
 }
+
+.radioQuestion:hover {
+	cursor: pointer;
+}
+
+.radioQuestion:active {
+	color: #ffffff;
+}
