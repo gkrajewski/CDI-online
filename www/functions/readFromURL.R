@@ -1,4 +1,4 @@
-#Read parameter value from URL and check if it is available value
+#Read parameter value from URL and check if it is available value (specified in global.R)
 readFromURL <- function(parameter, session, availableValues) {
   
   query <- parseQueryString(session$clientData$url_search)
@@ -6,7 +6,8 @@ readFromURL <- function(parameter, session, availableValues) {
   if (!is.null(query[[parameter]])){
     
     value <- query[[parameter]]
-    if (is.element(value, availableValues)) return(value)
+    #if (is.element(value, availableValues)) return(value)
+    return(value)
     
   } 
   

@@ -1,0 +1,9 @@
+language,form,type,initially_disabled,conditions,answers_to_enable
+Polish,WG,pierwsze,FALSE,none,
+Polish,WG,rozumienie,FALSE,none,
+Polish,WG,slowa,FALSE,none,
+Polish,WG,nasladownictwo,FALSE,none,
+Polish,WG,laczenie,FALSE,wypowiedzi,"2, 3"
+Polish,WG,wypowiedzi,TRUE,none,
+Polish,WG,gesty,FALSE,none,
+Polish,WG,end,TRUE,,

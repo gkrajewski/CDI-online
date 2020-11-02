@@ -1,0 +1,45 @@
+language,text_type,text,form,item_type,category
+Polish,backBtn,Cofnij,,,
+Polish,nextBtn,Dalej,,,
+Polish,saveBtn,Zapisz,,,
+Polish,commentLabel,Twoje uwagi,,,
+Polish,cdiNamePrefix,Inwentarz Rozwoju Mowy i Komunikacji,,,
+Polish,cdiNameSufix,Słowa i Zdania,WS,,
+Polish,cdiNameSufix,Słowa i Gesty,WG,,
+Polish,pierwszeBtn,Pierwsze przejawy rozumienia,WG,pierwsze,
+Polish,header,Pierwsze przejawy rozumienia,WG,pierwsze,
+Polish,instr,"Dzieci, zanim zaczną mówić, rozumieją wiele słów i wyrażeń. Można to stwierdzić obserwując ich reakcje na znane słowa lub zwroty. Czy Państwa dziecko wykazuje poniższe reakcje? (Proszę wybrać)",WG,pierwsze,
+Polish,rozumienieBtn,Rozumienie wypowiedzi,WG,rozumienie,
+Polish,header,Rozumienie wypowiedzi dorosłych,WG,rozumienie,
+Polish,instr,"Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać.",WG,rozumienie,
+Polish,slowaBtn,Lista wyrazów,WG,slowa,
+Polish,header,Lista wyrazów,WG,slowa,
+Polish,longText,"Na kolejnych stronach przedstawiamy listę typowych wyrazów znanych małym dzieciom. Przy tych wyrazach, które Państwa dziecko rozumie, ale samo ich jeszcze nie mówi, proszę postawić znaczek w pierwszej kolumnie (R = rozumie). Przy tych wyrazach, które dziecko nie tylko rozumie, ale i samo mówi, proszę postawić znaczek w drugiej kolumnie (M = rozumie i mówi). Jeżeli dziecko używa nieco innej formy, np. mówi piesek, a nie pies, proszę mimo to postawić znaczek przy słowie pies. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. lybka zamiast rybka lub wiójka zamiast wiewiórka). Proszę takie słowo także zaznaczyć plusem, można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa. Czasami dzieci wymyślają własne wyrazy, np. dzi zamiast piłka; także taką formę należy potraktować jako wyraz i zaznaczyć słowo „piłka”, wpisując przy nim dodatkowo „dzi”. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać właściwe określenie. Wszelkie wątpliwości można dopisać na kwestionariuszu. 
+  ",WG,slowa,none
+Polish,warning," UWAGA: Kwestionariusz przeznaczony jest dla dzieci w różnym wieku. Proszę się nie martwić, jeśli Państwa dziecko jeszcze nie używa wszystkich słów i gestów, o które pytamy!
+  ",WG,slowa,none
+Polish,help,"Przed zapisaniem proszę sprawdzić, czy nie pominęli Państwo jakiejś strony lub rubryki? Czy na pewno zaznaczone są wszystkie wyrazy, które Państwa dziecko rozumie / mówi?",WG,slowa,allInput
+Polish,instr,R = tylko rozumie M = rozumie i mówi ,WG,slowa,allInput
+Polish,choiceNames,"R, M",WG,slowa,allInput
+Polish,catHeader,Odgłosy i wykrzykniki,WG,slowa,sounds
+Polish,catHeader,Zwierzęta – prawdziwe lub zabawkowe,WG,slowa,animals
+Polish,nasladownictwoBtn,Naśladownictwo,WG,nasladownictwo,
+Polish,header,Naśladownictwo,WG,nasladownictwo,
+Polish,instr,Proszę zaznaczyć zdania prawdziwe:,WG,nasladownictwo,
+Polish,laczenieBtn,Łączenie wyrazów,WG,laczenie,
+Polish,header,Łączenie wyrazów,WG,laczenie,
+Polish,choiceNames,"Jeszcze nie, Czasem, Często",WG,laczenie,
+Polish,wypowiedziBtn,Wypowiedzi,WG,wypowiedzi,
+Polish,header,Przykłady wypowiedzi,WG,wypowiedzi,
+Polish,instr,Proszę podać przykłady rzeczywistych wypowiedzi dziecka:,WG,wypowiedzi,
+Polish,gestyBtn,Gesty,WG,gesty,
+Polish,header,Czynności i gesty,WG,gesty,
+Polish,longText,"Kiedy dzieci uczą się porozumiewać z innymi ludźmi, często posługują się gestami, aby wyrazić swoje pragnienia. Przy każdym z gestów na następnych stronach proszę postawić znaczek przy tym określeniu, które pasuje do tego, co Państwa dziecko aktualnie robi. ",WG,gesty,none
+Polish,catHeader,Pierwsze gesty komunikatywne,WG,gesty,pierwsze
+Polish,instr,Czy Państwa dziecko używa wymienionych niżej gestów? ,WG,gesty,pierwsze
+Polish,catHeader,Zabawy i rytuały,WG,gesty,zabawy
+Polish,instr,Czy Państwa dziecko wykonuje wymienione niżej czynności? ,WG,gesty,zabawy
+Polish,endBtn,Podsumowanie,WG,end,
+Polish,header,Podsumowanie,WG,end,
+Polish,instr,Tu będzie jakieś podsumowanie??,WG,end,
+Polish,help,Dziękujemy za wypełnienie inwentarza!,WG,end,

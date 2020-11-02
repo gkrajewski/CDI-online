@@ -1,139 +1,64 @@
 item_id,definition,language,form,type,category
-item_1,gę gę,Polish,WS,word,sounds
-item_2,hau hau,Polish,WS,word,sounds
-item_3,ko ko ko,Polish,WS,word,sounds
-item_4,kwa kwa,Polish,WS,word,sounds
-item_5,miau,Polish,WS,word,sounds
-item_6,mee/bee,Polish,WS,word,sounds
-item_7,muu [krowa],Polish,WS,word,sounds
-item_8,pi pi pi/ćwir ćwir,Polish,WS,word,sounds
-item_9,bam/bum/bęc,Polish,WS,word,sounds
-item_10,brrum brrum [auto],Polish,WS,word,sounds
-item_11,tik tak,Polish,WS,word,sounds
-item_12,tralala/lalala,Polish,WS,word,sounds
-item_13,baran,Polish,WS,word,animals
-item_14,biedronka,Polish,WS,word,animals
-item_15,bocian,Polish,WS,word,animals
-item_16,foka,Polish,WS,word,animals
-item_17,gęś,Polish,WS,word,animals
-item_18,gołąb,Polish,WS,word,animals
-item_19,jeż,Polish,WS,word,animals
-item_20,kaczka,Polish,WS,word,animals
-item_21,kogut,Polish,WS,word,animals
-item_22,koń,Polish,WS,word,animals
-item_23,kot,Polish,WS,word,animals
-item_24,koza,Polish,WS,word,animals
-item_25,krowa,Polish,WS,word,animals
-item_26,królik,Polish,WS,word,animals
-item_27,kura,Polish,WS,word,animals
-item_28,kurczątko,Polish,WS,word,animals
-item_29,lews,Polish,WS,word,animals
-item_30,lis,Polish,WS,word,animals
-item_31,małpa,Polish,WS,word,animals
-item_32,miś/niedźwiedź,Polish,WS,word,animals
-item_33,motylek,Polish,WS,word,animals
-item_34,mrówka,Polish,WS,word,animals
-item_35,mucha,Polish,WS,word,animals
-item_36,myszka,Polish,WS,word,animals
-item_37,pająk,Polish,WS,word,animals
-item_38,pies,Polish,WS,word,animals
-item_39,pingwin,Polish,WS,word,animals
-item_40,ptaszek,Polish,WS,word,animals
-item_41,robak,Polish,WS,word,animals
-item_42,ryba,Polish,WS,word,animals
-item_43,słoń,Polish,WS,word,animals
-item_44,sowa,Polish,WS,word,animals
-item_45,ślimak,Polish,WS,word,animals
-item_46,świnka,Polish,WS,word,animals
-item_47,tygrys,Polish,WS,word,animals
-item_48,wąż,Polish,WS,word,animals
-item_49,wiewiórka,Polish,WS,word,animals
-item_50,wilk,Polish,WS,word,animals
-item_51,zając,Polish,WS,word,animals
-item_52,zwierzątko,Polish,WS,word,animals
-item_53,żaba,Polish,WS,word,animals
-item_54,żółw,Polish,WS,word,animals
-item_55,żyrafa,Polish,WS,word,animals
-item_760,"Czy dziecko zaczęło już łączyć wyrazy? Czy tworzy takie zdania jak np. dzidzi am, da mleko, tu kotek, mama śpi?",Polish,WS,combine,
-Item_760,"Czy dziecko zaczęło już łączyć wyrazy? Czy tworzy takie zdania jak np. dzidzi am, da mleko, tu kotek, mama śpi?",Polish,WG,combine,
-Item_4,Chcesz jeść?,Polish,WG,phrases,
-Item_5,Chcesz spać?,Polish,WG,phrases,
-Item_6,Chcesz pić?,Polish,WG,phrases,
-Item_7,Cicho!,Polish,WG,phrases,
-Item_8,Uważaj!,Polish,WG,phrases,
-Item_9,Nie ruszaj!/Nie rusz!,Polish,WG,phrases,
-Item_10,Nie wolno!,Polish,WG,phrases,
-Item_11,Nie ruszaj się!,Polish,WG,phrases,
-Item_12,Wstań!,Polish,WG,phrases,
-Item_13,Siadaj!,Polish,WG,phrases,
-Item_14,Chodź!,Polish,WG,phrases,
-Item_15,Popatrz./Zobacz.,Polish,WG,phrases,
-Item_16,Otwórz buzię.,Polish,WG,phrases,
-Item_17,Daj mamusi __.,Polish,WG,phrases,
-Item_18,Przynieś __.,Polish,WG,phrases,
-Item_19,Rzuć piłkę.,Polish,WG,phrases,
-Item_20,Daj buzi/całuska!,Polish,WG,phrases,
-Item_21,Zrób babci „moja moja”.,Polish,WG,phrases,
-Item_22,Zrób „pa pa”.,Polish,WG,phrases,
-Item_23,Zrób brawo/kosi-kosi!,Polish,WG,phrases,
-Item_24,Idziemy na spacer.,Polish,WG,phrases,
-Item_25,Idziemy spać/lulać.,Polish,WG,phrases,
-Item_26,Kasia/Tomek cacy.,Polish,WG,phrases,
-Item_27,Mama jest w kuchni.,Polish,WG,phrases,
-Item_34,gę gę,Polish,WG,word,sounds
-Item_35,hau hau,Polish,WG,word,sounds
-Item_36,ko ko ko,Polish,WG,word,sounds
-Item_37,kwa kwa,Polish,WG,word,sounds
-Item_38,miau,Polish,WG,word,sounds
-Item_39,mee/bee,Polish,WG,word,sounds
-Item_40,muu [krowa],Polish,WG,word,sounds
-Item_41,pi pi pi/ćwir ćwir,Polish,WG,word,sounds
-Item_42,bam/bum/bęc,Polish,WG,word,sounds
-Item_43,brrum brrum [auto],Polish,WG,word,sounds
-Item_44,tik tak,Polish,WG,word,sounds
-Item_45,tralala/lalala,Polish,WG,word,sounds
-Item_46,baran,Polish,WG,word,animals
-Item_47,biedronka,Polish,WG,word,animals
-Item_48,bocian,Polish,WG,word,animals
-Item_49,gęś,Polish,WG,word,animals
-Item_50,jeż,Polish,WG,word,animals
-Item_51,kaczka,Polish,WG,word,animals
-Item_52,kogut,Polish,WG,word,animals
-Item_53,koń,Polish,WG,word,animals
-Item_54,kot,Polish,WG,word,animals
-Item_55,koza,Polish,WG,word,animals
-Item_56,krowa,Polish,WG,word,animals
-Item_57,królik,Polish,WG,word,animals
-Item_58,kura,Polish,WG,word,animals
-Item_59,lew,Polish,WG,word,animals
-Item_60,lis,Polish,WG,word,animals
-Item_61,małpa,Polish,WG,word,animals
-Item_62,miś/niedźwiedź,Polish,WG,word,animals
-Item_63,mucha,Polish,WG,word,animals
-Item_64,myszka,Polish,WG,word,animals
-Item_65,pies,Polish,WG,word,animals
-Item_66,pingwin,Polish,WG,word,animals
-Item_67,ptaszek,Polish,WG,word,animals
-Item_68,robak,Polish,WG,word,animals
-Item_69,ryba,Polish,WG,word,animals
-Item_70,słoń,Polish,WG,word,animals
-Item_71,sowa,Polish,WG,word,animals
-Item_72,ślimak,Polish,WG,word,animals
-Item_73,świnka,Polish,WG,word,animals
-Item_74,tygrys,Polish,WG,word,animals
-Item_75,wiewiórka,Polish,WG,word,animals
-Item_76,wilk,Polish,WG,word,animals
-Item_77,zając,Polish,WG,word,animals
-Item_78,żaba,Polish,WG,word,animals
-Item_79,żółw,Polish,WG,word,animals
-Item_80,żyrafa,Polish,WG,word,animals
-n_item_1,Dziecko samorzutnie powtarza zasłyszane wypowiedzi bądź ich fragmenty.,Polish,WS,nasladownictwo,
-n_item_2,"Poproszone o powtórzenie czegoś, chętnie powtarza.",Polish,WS,nasladownictwo,
-n_item_3,"Łatwo uczy się wierszyków, piosenek, tekstów z książeczek.",Polish,WS,nasladownictwo,
-n_item_1,Dziecko samorzutnie powtarza zasłyszane wypowiedzi bądź ich fragmenty.,Polish,WG,nasladownictwo,
-n_item_2,"Poproszone o powtórzenie czegoś, chętnie powtarza.",Polish,WG,nasladownictwo,
-n_item_3,"Niektóre dzieci chętnie wymieniają nazwy przedmiotów, tak jakby chciały się pochwalić, że je znają. Czy Państwa dziecko chętnie nazywa przedmioty?",Polish,WG,nasladownictwo,
-item_1,"Reaguje, gdy zawołać je po imieniu (np. odwraca głowę i patrzy w kierunku głosu)?",Polish,WG,first_signs,
+item_1,"Reaguje, gdy zawołać je po imieniu (np. odwraca głowę i patrzy w kierunku głosu)?",Polish,WG,pierwsze,
 item_2,"Reaguje na okrzyk Nie! (przerywając wykonywaną czynność choć na chwilę)? 
-",Polish,WG,first_signs,
-item_3,Reaguje na słowa Tu mama. lub Gdzie tata? (szukając matki lub ojca wzrokiem)? ,Polish,WG,first_signs,
+",Polish,WG,pierwsze,
+item_3,Reaguje na słowa Tu mama. lub Gdzie tata? (szukając matki lub ojca wzrokiem)? ,Polish,WG,pierwsze,
+item_1,Chcesz jeść?,Polish,WG,rozumienie,
+item_2,Chcesz spać?,Polish,WG,rozumienie,
+item_3,Chcesz pić?,Polish,WG,rozumienie,
+item_4,Cicho!,Polish,WG,rozumienie,
+item_1,gę gę,Polish,WG,slowa,sounds
+item_2,hau hau,Polish,WG,slowa,sounds
+item_3,ko ko ko,Polish,WG,slowa,sounds
+item_4,kwa kwa,Polish,WG,slowa,sounds
+item_5,miau,Polish,WG,slowa,sounds
+item_6,mee/bee,Polish,WG,slowa,sounds
+item_7,muu [krowa],Polish,WG,slowa,sounds
+item_8,pi pi pi/ćwir ćwir,Polish,WG,slowa,sounds
+item_9,bam/bum/bęc,Polish,WG,slowa,sounds
+item_10,brrum brrum [auto],Polish,WG,slowa,sounds
+item_11,tik tak,Polish,WG,slowa,sounds
+item_12,tralala/lalala,Polish,WG,slowa,sounds
+item_13,baran,Polish,WG,slowa,animals
+item_14,biedronka,Polish,WG,slowa,animals
+item_15,bocian,Polish,WG,slowa,animals
+item_16,gęś,Polish,WG,slowa,animals
+item_17,jeż,Polish,WG,slowa,animals
+item_18,kaczka,Polish,WG,slowa,animals
+item_19,kogut,Polish,WG,slowa,animals
+item_20,koń,Polish,WG,slowa,animals
+item_21,kot,Polish,WG,slowa,animals
+item_22,koza,Polish,WG,slowa,animals
+item_23,krowa,Polish,WG,slowa,animals
+item_24,królik,Polish,WG,slowa,animals
+item_25,kura,Polish,WG,slowa,animals
+item_26,lew,Polish,WG,slowa,animals
+item_27,lis,Polish,WG,slowa,animals
+item_28,małpa,Polish,WG,slowa,animals
+item_29,miś/niedźwiedź,Polish,WG,slowa,animals
+item_30,mucha,Polish,WG,slowa,animals
+item_31,myszka,Polish,WG,slowa,animals
+item_32,pies,Polish,WG,slowa,animals
+item_33,pingwin,Polish,WG,slowa,animals
+item_34,ptaszek,Polish,WG,slowa,animals
+item_35,robak,Polish,WG,slowa,animals
+item_36,ryba,Polish,WG,slowa,animals
+item_37,słoń,Polish,WG,slowa,animals
+item_38,sowa,Polish,WG,slowa,animals
+item_39,ślimak,Polish,WG,slowa,animals
+item_40,świnka,Polish,WG,slowa,animals
+item_41,tygrys,Polish,WG,slowa,animals
+item_42,wiewiórka,Polish,WG,slowa,animals
+item_43,wilk,Polish,WG,slowa,animals
+item_44,zając,Polish,WG,slowa,animals
+item_45,żaba,Polish,WG,slowa,animals
+item_46,żółw,Polish,WG,slowa,animals
+item_47,żyrafa,Polish,WG,slowa,animals
+item_1,Dziecko samorzutnie powtarza zasłyszane wypowiedzi bądź ich fragmenty.,Polish,WG,nasladownictwo,
+item_2,"Poproszone o powtórzenie czegoś, chętnie powtarza.",Polish,WG,nasladownictwo,
+item_3,"Chętnie nazywa przedmioty (niektóre dzieci chętnie wymieniają nazwy przedmiotów, tak jakby chciały się pochwalić, że je znają).",Polish,WG,nasladownictwo,
+item_1,"Czy dziecko zaczęło już łączyć wyrazy? Czy tworzy takie zdania jak np. dzidzi am, da mleko, tu kotek, mama śpi?",Polish,WG,laczenie,
+item_1,"Wyciąga rękę, aby pokazać trzymany przedmiot.",Polish,WG,gesty,pierwsze
+Item_2,Daje komuś trzymany przedmiot.,Polish,WG,gesty,pierwsze
+item_1,"Bawi się w „nie ma, nie ma – a jest!” (albo „a kuku!”)",Polish,WG,gesty,zabawy
+Item_2,Bawi się w „sroczka kaszkę warzyła”.,Polish,WG,gesty,zabawy

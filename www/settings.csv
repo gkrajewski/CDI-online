@@ -1,0 +1,13 @@
+language,form,type,page_type,cat_header,instr,long_text,warning,input_type,css_class,sentences_nr,comment,help
+Polish,WG,pierwsze,input&save,FALSE,TRUE,FALSE,FALSE,checkboxGroup,oneColumn,NULL,FALSE,FALSE
+Polish,WG,rozumienie,input&save,FALSE,TRUE,FALSE,FALSE,checkboxGroup,oneColumn,NULL,TRUE,FALSE
+Polish,WG,slowa,first,FALSE,FALSE,TRUE,TRUE,none,none,NULL,FALSE,FALSE
+Polish,WG,slowa,input,TRUE,TRUE,FALSE,FALSE,radioQuestions,threeColumns,NULL,TRUE,FALSE
+Polish,WG,slowa,last,TRUE,TRUE,FALSE,TRUE,radioQuestions,threeColumns,NULL,TRUE,TRUE
+Polish,WG,nasladownictwo,input&save,FALSE,TRUE,FALSE,FALSE,checkboxGroup,oneColumn,NULL,FALSE,FALSE
+Polish,WG,laczenie,input&save,FALSE,FALSE,FALSE,FALSE,radioQuestions,oneColumn,NULL,FALSE,FALSE
+Polish,WG,wypowiedzi,input&save,FALSE,TRUE,FALSE,FALSE,sentences,twoColumns,10,FALSE,FALSE
+Polish,WG,gesty,first,FALSE,FALSE,TRUE,FALSE,none,none,NULL,FALSE,FALSE
+Polish,WG,gesty,input,TRUE,TRUE,FALSE,FALSE,checkboxGroup,oneColumn,NULL,FALSE,FALSE
+Polish,WG,gesty,last,TRUE,TRUE,FALSE,FALSE,checkboxGroup,oneColumn,NULL,FALSE,FALSE
+Polish,WG,end,input&save,FALSE,TRUE,FALSE,FALSE,none,none,NULL,FALSE,TRUE

@@ -1,79 +1,120 @@
 server <- function(input, output, session) {
   
-  #Set working directory to source files location
-  #setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-  
-  options(stringsAsFactors = FALSE)
-  
-  #Specify data paths etc.
-  wd.datapath <- paste0(getwd(),"/www")
-  wd.functions <- paste0(wd.datapath,"/functions")
-  wd.init <- getwd()
-
-  #Load items and texts
-  setwd(wd.datapath)
-  texts <- read.csv("texts.csv", encoding = "UTF-8")
-  textsGeneral <- read.csv("textsGeneral.csv", encoding = "UTF-8")
-  items <- read.csv("items.csv", encoding = "UTF-8")
-  setwd(wd.init)
-  
-  #Specify available URL values for parameters 'id' and 'form'
-  availableIDs <- c("1234", "5678")
-  availableForms <- unique(texts$form)
-
-  #Read function
-  source(paste0(wd.functions,"/readFromURL.R"))
-
   observe({
     
     #Read parameters values from URL
-    id <- readFromURL("id", session, availableIDs)
+    id <- readFromURL("id", session, availableIds)
     form <- readFromURL("form", session, availableForms)
-    
-    availableTypes <- unique(texts[texts$form == form, 'item_type'])
-    type <- readFromURL("type", session, availableTypes)
-    
-    availableLanguages <- unique(texts[texts$item_type == type & texts$form == form, 'language'])
     lang <- readFromURL("lang", session, availableLanguages)
     
-    #Render UI if all parameters values are correct
-    if (!is.null(form) & !is.null(type) & !is.null(lang) & !is.null(id)){
+    #Render UI if all URL parameters are correct
+    if (!is.null(form) & !is.null(lang) & !is.null(id)){
       
-      #Take items and texts connected with concrete CDI form, item type and language
-      txtG <- textsGeneral[textsGeneral$language == lang, ]
-      texts <- texts[texts$form == form & texts$item_type == type & texts$language == lang, ]
-      items <- items[items$form == form & items$type == type & items$language == lang, ]
-      
-      #Specify path for file with answers
-      userAnswersFile <- paste0("answers/", form, "/", type, "/", id, ".csv")
-      
-      #Check existence of answers directories and create if necessary
-      ifelse(!dir.exists(file.path(wd.init, "answers")), dir.create(file.path(wd.init, "answers")), FALSE)
-      ifelse(!dir.exists(file.path(wd.init, "answers", form)), dir.create(file.path(wd.init, "answers", form)), FALSE)
-      ifelse(!dir.exists(file.path(wd.init, "answers", form, type)), dir.create(file.path(wd.init, "answers", form, type)), FALSE)
+      #Get translations, items and settings connected with given language and form
+      txt <<- translations[translations$language == lang & (translations$form == form | translations$form == ""),]
+      items <<- allItems[allItems$language == lang & allItems$form == form,]
+      settings <<- allSettings[allSettings$language == lang & allSettings$form == form,]
+      enableSettings <<- allEnableSettings[allEnableSettings$language == lang & allEnableSettings$form == form,]
 
+      #Render CDI name
+      output$cdiNamePrefix <- renderText({txt[txt$text_type == "cdiNamePrefix", "text"]})
+      output$cdiNameSufix <- renderText({txt[txt$text_type == "cdiNameSufix", "text"]})
+      
+      #Update labels of sidebar buttons
+      updateActionButton(session, "backBtn", label = txt[txt$text_type == "backBtn", "text"])
+      updateActionButton(session, "nextBtn", label = txt[txt$text_type == "nextBtn", "text"])
+      updateActionButton(session, "saveBtn", label = txt[txt$text_type == "saveBtn", "text"])
 
-      #Render header
-      output$header <- renderText({
-        texts[texts$text_type == "header", "text"]
+      #Get types from enableSettings file
+      types <<- enableSettings$type
+      
+      #Get number of types
+      typesNr <- length(types)
+      
+      #Prepare progress file
+      progressFile <- paste0("progress/", lang, "-", form, "-", id, ".csv")
+      
+      if (file.exists(progressFile)){
+        
+        progress <<- read.csv(progressFile, encoding = "UTF-8")
+        
+      } else {
+        
+        firstCat <- unique(items[items$type == types[1], "category"])[1] #get first category of first type
+        if (firstCat == "") firstCat <- "none"
+        
+        progress <<- data.frame(
+          type = types,
+          done = FALSE,
+          disabled = enableSettings$initially_disabled,
+          current = c(TRUE, rep(FALSE, typesNr - 1)), #make 1st type as current
+          category = c(firstCat, rep("none", typesNr - 1)) 
+        )
+        
+      }
+      
+      #Prepare answers file
+      answersFile <- paste0("answers/", lang, "-", form, "-", id, ".csv")
+      
+      if (file.exists(answersFile)){
+        answers <<- read.csv(answersFile, encoding = "UTF-8")
+      } else {
+        answers <<- data.frame(type = "none", category = "none", answer_type = "none", answer = "none")
+      }
+      
+      #Prepare list of type buttons divs
+      typeButtonsDivs <<- list()
+      
+      #Fill in list of type buttons divs
+      lapply(1:typesNr, function(i) {
+
+        type <- types[i]
+        
+        #Prepare css class for div with button
+        class <- "menuButtonContainer"
+        if (progress[progress$type == type, "done"]) class <- paste(class, "menuButtonContainerDone")
+        if (progress[progress$type == type, "current"]) class <- paste(class, "menuButtonContainerActive")
+        
+        #Prepare button div
+        buttonDiv <- div(id = paste0(type, "container"), class = class, actionButton(type, label = txt[txt$text_type == paste0(type,"Btn"), "text"], class = "btn-primary"))
+        if (progress[progress$type == type, "disabled"]) buttonDiv <- disabled(buttonDiv)
+        
+        #Add button div to list  
+        typeButtonsDivs[[i]] <<- buttonDiv
+        
+        #Render proper page when type button clicked
+        observeEvent(input[[type]], {
+          renderType(input, output, type)
+        })
+
       })
       
-      #Read functions
-      source(paste0(wd.functions,"/renderSidebar.R"))
-      source(paste0(wd.functions,"/renderMain.R"))
-
-      #Render sidebar
-      output$sidebar <- renderSidebar(type, txtG)
+      #Render menu with buttons
+      output$menu <- renderUI({typeButtonsDivs})
       
-      #Render main panel
-      output$main <- renderMain(wd.functions, type, input, output, items, texts, userAnswersFile, txtG, form, session)
-
+      #Start app
+      type <- types[match(TRUE, progress$current)] #get current type according to progress df
+      renderType(input, output, type)
+      
+      #Add observers (sidebar buttons and input objects)
+      addObservers(input, output)
+      
+      #Save answers and progress to csv file when session ended
+      session$onSessionEnded(function() {
+        write.csv(answers, answersFile, row.names = F)
+        write.csv(progress, progressFile, row.names = F)
+      })
+      
     } else {
+
+      #Update URL
+      updateQueryString(paste0("?id=", "test", "&form=", "WG", "&lang=", "Polish"))
       
-      output$sidebar <- renderText({"Error: No value of necessary URL parameter or bad value."})
-      
+      #Reload session
+      session$reload()
+
     }
-
+    
   })#end observe
-
-}
+  
+}#end server
