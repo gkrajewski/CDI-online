@@ -1,9 +1,13 @@
 language,form,type,initially_disabled,conditions,answers_to_enable
-Polish,WG,pierwsze,FALSE,none,
-Polish,WG,rozumienie,FALSE,none,
-Polish,WG,slowa,FALSE,none,
-Polish,WG,nasladownictwo,FALSE,none,
-Polish,WG,laczenie,FALSE,wypowiedzi,"2, 3"
-Polish,WG,wypowiedzi,TRUE,none,
-Polish,WG,gesty,FALSE,none,
-Polish,WG,end,TRUE,,
+Polish,WG,first_signs,FALSE,none,
+Polish,WG,phrases,FALSE,none,
+Polish,WG,word,FALSE,none,
+Polish,WG,starting_to_talk,FALSE,none,
+Polish,WG,combine,FALSE,sentences,"2,3"
+Polish,WG,sentences,TRUE,none,
+Polish,WG,gestures_first,FALSE,none,
+Polish,WG,gestures_games,FALSE,none,
+Polish,WG,gestures_objects,FALSE,none,
+Polish,WG,gestures_parent,FALSE,none,
+Polish,WG,gestures_adult,FALSE,none,
+Polish,WG,end,TRUE,none,

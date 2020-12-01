@@ -3,7 +3,7 @@ ui <- fluidPage(
   #It makes shinyjs library work
   useShinyjs(), 
   
-  #Loads ready, known UI theme - flatly
+  #Loads ready UI theme
   theme = shinytheme("flatly"),
   
   #Loads css file with custom apperance settings
@@ -11,10 +11,10 @@ ui <- fluidPage(
     tags$link(rel="stylesheet", type="text/css", href="style.css")
   ),
   
-  h1(textOutput("cdiNamePrefix")), #Communicative Development Inventory
-  h2(textOutput("cdiNameSufix")), #Words and Gestures or Words and Sentences etc.
-  uiOutput("menu"), #types buttons
-  h3(textOutput("header")), #current type name
+  h1(textOutput("cdiNamePrefix")),
+  h2(textOutput("cdiNameSufix")),
+  uiOutput("menu"),
+  h3(textOutput("header")), #Current type name
   
   sidebarLayout(
     
@@ -24,11 +24,12 @@ ui <- fluidPage(
       div(class = "help-block", textOutput("help")), #for example some warning before saving in sidebar panel
       
       #They will be hided or shown depending on page type
-      div(id = "buttons",
-          actionButton("backBtn", label = "Back"),
-          actionButton("nextBtn", label = "Next"),
-          actionButton("saveBtn", label = "Save")
-      )
+      # div(id = "buttons",
+          uiOutput("buttons"),
+          # actionButton("backBtn", label = "Back"),
+          # actionButton("nextBtn", label = "Next"),
+          # actionButton("saveBtn", label = "Save")
+      # )
       
     ),
     

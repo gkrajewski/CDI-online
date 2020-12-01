@@ -17,7 +17,7 @@ ifelse(!dir.exists(file.path(initPath, "progress")), dir.create(file.path(initPa
 #Load translations, items and settings
 setwd(dataPath)
 translations <<- read.csv("translations.csv", encoding = "UTF-8")
-allItems <<- read.csv("items.csv", encoding = "UTF-8")
+allItems <<- read.csv("items.csv", encoding = "UTF-8", sep = "\t")[1:6]
 allSettings <<- read.csv("settings.csv", encoding = "UTF-8")
 allEnableSettings <<- read.csv("enableSettings.csv", encoding = "UTF-8") 
 setwd(initPath)
@@ -27,9 +27,7 @@ source(paste0(functionsPath,"/readFromURL.R"))
 source(paste0(functionsPath,"/addObservers.R"))
 source(paste0(functionsPath,"/renderType.R"))
 source(paste0(functionsPath,"/renderPage.R"))
-source(paste0(functionsPath,"/checkboxGroup.R"))
-source(paste0(functionsPath,"/radioQuestions.R"))
-source(paste0(functionsPath,"/sentences.R"))
+source(paste0(functionsPath,"/renderInputObject.R"))
 
 #Specify available values for URL parameters
 availableIds <<- c("test") #TODO (currently inactive)

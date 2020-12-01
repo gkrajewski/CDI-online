@@ -12,7 +12,7 @@ server <- function(input, output, session) {
       
       #Get translations, items and settings connected with given language and form
       txt <<- translations[translations$language == lang & (translations$form == form | translations$form == ""),]
-      items <<- allItems[allItems$language == lang & allItems$form == form,]
+      items <<- allItems[allItems$language == lang & allItems$form == form,] 
       settings <<- allSettings[allSettings$language == lang & allSettings$form == form,]
       enableSettings <<- allEnableSettings[allEnableSettings$language == lang & allEnableSettings$form == form,]
 
@@ -20,11 +20,6 @@ server <- function(input, output, session) {
       output$cdiNamePrefix <- renderText({txt[txt$text_type == "cdiNamePrefix", "text"]})
       output$cdiNameSufix <- renderText({txt[txt$text_type == "cdiNameSufix", "text"]})
       
-      #Update labels of sidebar buttons
-      updateActionButton(session, "backBtn", label = txt[txt$text_type == "backBtn", "text"])
-      updateActionButton(session, "nextBtn", label = txt[txt$text_type == "nextBtn", "text"])
-      updateActionButton(session, "saveBtn", label = txt[txt$text_type == "saveBtn", "text"])
-
       #Get types from enableSettings file
       types <<- enableSettings$type
       
@@ -39,9 +34,9 @@ server <- function(input, output, session) {
         progress <<- read.csv(progressFile, encoding = "UTF-8")
         
       } else {
-        
+
         firstCat <- unique(items[items$type == types[1], "category"])[1] #get first category of first type
-        if (firstCat == "") firstCat <- "none"
+        if (is.na(firstCat)) firstCat <- "none"
         
         progress <<- data.frame(
           type = types,
@@ -101,8 +96,8 @@ server <- function(input, output, session) {
       
       #Save answers and progress to csv file when session ended
       session$onSessionEnded(function() {
-        write.csv(answers, answersFile, row.names = F)
-        write.csv(progress, progressFile, row.names = F)
+        # write.csv(answers, answersFile, row.names = F)
+        # write.csv(progress, progressFile, row.names = F)
       })
       
     } else {

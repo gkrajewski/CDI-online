@@ -18,6 +18,7 @@ h4 {
 
 h5 {
 	margin-bottom: 30px;
+	font-weight: bold;
 }
 
 #header {
@@ -51,10 +52,6 @@ h5 {
 
 .well {
 	text-align: center;
-}
-
-#buttons {
-	margin-top: 20px;
 }
 
 .threeColumns {

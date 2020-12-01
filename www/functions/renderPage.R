@@ -20,9 +20,7 @@ renderPage <- function(input, output){
       pageType <- "first"
       pageNr <- 1
       pageTxt <<- typeTxt[typeTxt$category == currCat, ]
-      hide("backBtn")
-      show("nextBtn")
-      hide("saveBtn")
+      output$buttons <- renderUI({actionButton("nextBtn", label = txt[txt$text_type == "nextBtn", "text"])})
       
     } else {
       
@@ -34,18 +32,24 @@ renderPage <- function(input, output){
         pageType <- "last"
         pageItems <<- typeItems[typeItems$category == currCat, ]
         pageTxt <<- typeTxt[typeTxt$category == currCat | typeTxt$category == "allInput", ]
-        show("backBtn")
-        hide("nextBtn")
-        show("saveBtn")        
+        output$buttons <- renderUI({
+          list(
+            actionButton("backBtn", label = txt[txt$text_type == "backBtn", "text"]),
+            actionButton("saveBtn", label = txt[txt$text_type == "saveBtn", "text"])
+          )
+        })
         
       } else {
         
         pageType <- "input"
         pageItems <<- typeItems[typeItems$category == currCat, ]
         pageTxt <<- typeTxt[typeTxt$category == currCat | typeTxt$category == "allInput", ]
-        show("backBtn")
-        show("nextBtn")
-        hide("saveBtn")         
+        output$buttons <- renderUI({
+          list(
+            actionButton("backBtn", label = txt[txt$text_type == "backBtn", "text"]),
+            actionButton("nextBtn", label = txt[txt$text_type == "nextBtn", "text"])
+          )
+        })
         
       }
       
@@ -56,20 +60,15 @@ renderPage <- function(input, output){
     
   } else {
     
-    #Adjust for one page design
+    #One page type
     pageType <<- "input&save"
     pageItems <<- typeItems
     pageTxt <<- typeTxt
-    hide("backBtn")
-    hide("nextBtn")
-    
     if (currType != "end"){
-      show("saveBtn")
+      output$buttons <- renderUI({actionButton("saveBtn", label = txt[txt$text_type == "saveBtn", "text"])})
     } else {
-      hide("saveBtn")
+      output$buttons <- renderUI({})
     }
-    
-    #No any page number
     output$page <- renderText({})
     
   }
@@ -78,14 +77,14 @@ renderPage <- function(input, output){
   pageSettings <<- typeSettings[typeSettings$page_type == pageType, ]
   
   #Get page input object type
-  pageInputType <- pageSettings$input_type
+  pageInputType <<- pageSettings$input_type
   
   if (pageInputType != "none"){
     
     #Add proper record to answers df if it doesn't exist
     record <- c(currType, currCat, pageInputType, NA)
     answers <<- rbind(if(!tail(duplicated(rbind(answers[1:3],record[1:3])),1)) record, answers)
-    
+
     #Get current page answers
     pageAnswer <<- answers[answers$type == currType & answers$category == currCat & answers$answer_type == pageInputType, "answer"]
     
@@ -118,11 +117,11 @@ renderPage <- function(input, output){
       #Render header of category
       if (pageSettings$cat_header) h4(pageTxt[pageTxt$text_type == "catHeader", "text"]),
       
-      #Render short instruction
-      if (pageSettings$instr) h5(pageTxt[pageTxt$text_type == "instr", "text"]),
-      
       #Render long paragraph
       if (pageSettings$long_text) p(pageTxt[pageTxt$text_type == "longText", "text"]),
+      
+      #Render short instruction
+      if (pageSettings$instr) h5(pageTxt[pageTxt$text_type == "instr", "text"]),
       
       #Render warning message
       if (pageSettings$warning) p(strong(pageTxt[pageTxt$text_type == "warning", "text"])),
@@ -130,7 +129,8 @@ renderPage <- function(input, output){
       #Render input object
       if (pageInputType != "none"){
         
-        inputObject <- do.call(pageInputType, list())
+        #inputObject <- do.call(pageInputType, list())
+        inputObject <- renderInputObject()
         if (pageSettings$css_class != "none") inputObject <- div(class=pageSettings$css_class, inputObject)
         inputObject
         

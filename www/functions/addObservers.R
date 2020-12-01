@@ -13,10 +13,6 @@ addObservers <- function(input, output){
     progress[progress$type == currType, "done"] <<- TRUE
     addClass(paste0(currType, "container"), "menuButtonContainerDone")
     
-    #Disable current type
-    progress[progress$type == currType, "disabled"] <<- TRUE
-    disable(currType)
-    
     #Get type conditioned by current type (if any)
     conditionedType <- enableSettings[enableSettings$type == currType, "conditions"]
     
@@ -24,7 +20,6 @@ addObservers <- function(input, output){
       
       #Get current type answer
       conditionedAnswer <- answers[answers$type == currType, "answer"]
-      print(conditionedAnswer)
       
       #Get answers that can make conditioned type enabled
       possibleAnswers <- strsplit(enableSettings[enableSettings$type == currType, "answers_to_enable"], ",")[[1]]
@@ -35,27 +30,34 @@ addObservers <- function(input, output){
         progress[progress$type == conditionedType, "disabled"] <<- FALSE
         enable(conditionedType)
         
+      } else {
+        
+        #Disable conditioned type
+        progress[progress$type == conditionedType, "disabled"] <<- TRUE
+        disable(conditionedType)
+        removeClass(paste0(conditionedType, "container"), "menuButtonContainerDone")
+        
       }
       
     }
     
-    #Render 1st enabled type (from left)
-    allDisabled <- TRUE
+    #Render 1st not done type (from left)
+    allDone <- TRUE
     for (type in types){
-      if (!progress[progress$type == type, "disabled"]){
+      if (!progress[progress$type == type, "done"] & !progress[progress$type == type, "disabled"]){
         renderType(input, output, type)
-        allDisabled <- FALSE
+        allDone <- FALSE
         break
       } 
     }
     
-    #Render end type if all types are disabled (so they are done)
-    if(allDisabled){
+    #Render end if all types are done
+    if(allDone){
       progress[progress$type == "end", "disabled"] <<- FALSE
       enable("end")
       addClass("end", "endEnabled")
       renderType(input, output, "end")
-    }     
+    }
       
   })
   
@@ -98,8 +100,8 @@ addObservers <- function(input, output){
   #############################################
   
   #Checkbox group
-  observeEvent(input$checkboxGroup, {
-    answers[answers$type == currType & answers$category == currCat & answers$answer_type == "checkboxGroup", "answer"] <<- paste(input$checkboxGroup, collapse =  " ")
+  observeEvent(input$oneCheckboxGroup, {
+    answers[answers$type == currType & answers$category == currCat & answers$answer_type == "oneCheckboxGroup", "answer"] <<- paste(input$oneCheckboxGroup, collapse =  "")
   })
   
   #Comment field
@@ -107,10 +109,10 @@ addObservers <- function(input, output){
     answers[answers$type == currType & answers$category == currCat & answers$answer_type == "comment", "answer"] <<- input$comment
   })
   
-  #Radio questions (max 100)
+  #Multi questions (max 100)
   lapply(1:100, function(i){
     
-    id <- paste0("rQ", i)
+    id <- paste0("mQ", i)
     
     observeEvent(input[[id]], {
 
@@ -118,18 +120,19 @@ addObservers <- function(input, output){
       
       for (i in 1 : nrow(pageItems)){
         
-        id <- paste0("rQ", i)
+        id <- paste0("mQ", i)
         
         if (!is.null(input[[id]])){
-          answersPattern[[i]] <- input[[id]]
+          answer <- paste0(input[[id]], collapse = "")
+          answersPattern[[i]] <- answer
         } else {
           answersPattern[[i]] <- 0
         }
         
       }
       
-      answersPattern <- paste0(answersPattern, collapse = "")
-      answers[answers$type == currType & answers$category == currCat & answers$answer_type == "radioQuestions", "answer"] <<- answersPattern
+      answersPattern <- paste0(answersPattern, collapse = ",")
+      answers[answers$type == currType & answers$category == currCat & answers$answer_type == pageInputType, "answer"] <<- answersPattern
       
     })
     
