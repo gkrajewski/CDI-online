@@ -13,7 +13,7 @@ Polish;choiceNames;Tak, Nie;WG;first_signs;
 Polish;phrasesBtn;Rozumienie wypowiedzi;WG;phrases;
 Polish;header;Rozumienie wypowiedzi dorosłych;WG;phrases;
 Polish;instr;Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać.;WG;phrases;
-Polish;wordBtn;Lista wyrazów;WG;word;
+Polish;wordBtn;Wyrazy;WG;word;
 Polish;header;Lista wyrazów;WG;word;
 Polish;longText;"Na kolejnych stronach przedstawiamy listę typowych wyrazów znanych małym dzieciom. Przy tych wyrazach, które Państwa dziecko rozumie, ale samo ich jeszcze nie mówi, proszę postawić znaczek w pierwszej kolumnie (R = rozumie). Przy tych wyrazach, które dziecko nie tylko rozumie, ale i samo mówi, proszę postawić znaczek w drugiej kolumnie (M = rozumie i mówi). Jeżeli dziecko używa nieco innej formy, np. mówi piesek, a nie pies, proszę mimo to postawić znaczek przy słowie pies. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. lybka zamiast rybka lub wiójka zamiast wiewiórka). Proszę takie słowo także zaznaczyć plusem, można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa. Czasami dzieci wymyślają własne wyrazy, np. dzi zamiast piłka; także taką formę należy potraktować jako wyraz i zaznaczyć słowo „piłka”, wpisując przy nim dodatkowo „dzi”. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać właściwe określenie. Wszelkie wątpliwości można dopisać na kwestionariuszu. 
   ";WG;word;none
@@ -52,7 +52,7 @@ Polish;choiceNames;Tak, Nie;WG;starting_to_talk;
 Polish;combineBtn;Łączenie wyrazów;WG;combine;
 Polish;header;Łączenie wyrazów;WG;combine;
 Polish;choiceNames;Jeszcze nie, Czasem, Często;WG;combine;
-Polish;help;Część „Wypowiedzi” uaktywni się w przypadku wybrania odpowiedzi „Czasem” lub „Często”.;WG;combine;
+Polish;help;Część „Wypowiedzi” uaktywni się w przypadku wybrania tutaj odpowiedzi „Czasem” lub „Często”.;WG;combine;
 Polish;sentencesBtn;Wypowiedzi;WG;sentences;
 Polish;header;Przykłady wypowiedzi;WG;sentences;
 Polish;instr;Proszę podać przykłady rzeczywistych wypowiedzi dziecka:;WG;sentences;

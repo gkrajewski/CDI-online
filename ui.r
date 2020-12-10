@@ -20,17 +20,8 @@ ui <- fluidPage(
     
     sidebarPanel(
       
-      h2(textOutput("page")), #page number for types with many pages
-      div(class = "help-block", textOutput("help")), #for example some warning before saving in sidebar panel
-      
-      #They will be hided or shown depending on page type
-      # div(id = "buttons",
-          uiOutput("buttons"),
-          # actionButton("backBtn", label = "Back"),
-          # actionButton("nextBtn", label = "Next"),
-          # actionButton("saveBtn", label = "Save")
-      # )
-      
+      uiOutput("sidebar")
+
     ),
     
     mainPanel(
