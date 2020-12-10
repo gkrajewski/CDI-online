@@ -6,6 +6,9 @@ renderPage <- function(input, output){
   #Get number of categories for current type
   categoriesNum <- length(unique(typeItems$category))
   
+  buttons <- NULL
+  currPageNr <- NULL
+  
   if (categoriesNum > 1){
     
     #Get items categories
@@ -20,7 +23,7 @@ renderPage <- function(input, output){
       pageType <- "first"
       pageNr <- 1
       pageTxt <<- typeTxt[typeTxt$category == currCat, ]
-      output$buttons <- renderUI({actionButton("nextBtn", label = txt[txt$text_type == "nextBtn", "text"])})
+      buttons <- list(actionButton("nextBtn", label = txt[txt$text_type == "nextBtn", "text"]))
       
     } else {
       
@@ -32,24 +35,20 @@ renderPage <- function(input, output){
         pageType <- "last"
         pageItems <<- typeItems[typeItems$category == currCat, ]
         pageTxt <<- typeTxt[typeTxt$category == currCat | typeTxt$category == "allInput", ]
-        output$buttons <- renderUI({
-          list(
+        buttons <- list(
             actionButton("backBtn", label = txt[txt$text_type == "backBtn", "text"]),
             actionButton("saveBtn", label = txt[txt$text_type == "saveBtn", "text"])
-          )
-        })
+        )
         
       } else {
         
         pageType <- "input"
         pageItems <<- typeItems[typeItems$category == currCat, ]
         pageTxt <<- typeTxt[typeTxt$category == currCat | typeTxt$category == "allInput", ]
-        output$buttons <- renderUI({
-          list(
+        buttons <- list(
             actionButton("backBtn", label = txt[txt$text_type == "backBtn", "text"]),
             actionButton("nextBtn", label = txt[txt$text_type == "nextBtn", "text"])
-          )
-        })
+        )
         
       }
       
@@ -57,6 +56,7 @@ renderPage <- function(input, output){
     
     #Render page number
     output$page <- renderText({paste0(as.character(pageNr), "/", as.character(categoriesNum + 1))})
+    currPageNr <- paste0(as.character(pageNr), "/", as.character(categoriesNum + 1))
     
   } else {
     
@@ -65,12 +65,9 @@ renderPage <- function(input, output){
     pageItems <<- typeItems
     pageTxt <<- typeTxt
     if (currType != "end"){
-      output$buttons <- renderUI({actionButton("saveBtn", label = txt[txt$text_type == "saveBtn", "text"])})
-    } else {
-      output$buttons <- renderUI({})
-    }
-    output$page <- renderText({})
-    
+      buttons <- list(actionButton("saveBtn", label = txt[txt$text_type == "saveBtn", "text"]))
+    } 
+  
   }
   
   #Get page settings
@@ -102,12 +99,22 @@ renderPage <- function(input, output){
     
   }
   
-  #Render help block text (if any)
-  if (pageSettings$help){
-    output$help <- renderText({pageTxt[pageTxt$text_type == "help", "text"]})
-  } else {
-    output$help <- renderText({})
-  }
+  #Render sidebarPanel
+  output$sidebar <- renderUI({
+    
+    list(
+      
+      #Render help message
+      if (pageSettings$help) div(class="help-block", pageTxt[pageTxt$text_type == "help", "text"]),
+      
+      #Render current page number
+      if (!is.null(currPageNr)) h2(currPageNr),
+      
+      #Render buttons
+      if (!is.null(buttons)) div(id="buttons", buttons)
+    )
+
+  })
   
   #Render main container according to page settings
   output$main <- renderUI({
