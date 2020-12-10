@@ -62,7 +62,7 @@ h5 {
    -column-fill: auto; 
 }
 
-.oneColumn> #checkboxGroup {
+.oneColumn> #oneCheckboxGroup {
 	width: 1000px;
 }
 

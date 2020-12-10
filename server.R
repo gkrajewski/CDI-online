@@ -15,6 +15,12 @@ server <- function(input, output, session) {
       items <<- allItems[allItems$language == lang & allItems$form == form,] 
       settings <<- allSettings[allSettings$language == lang & allSettings$form == form,]
       enableSettings <<- allEnableSettings[allEnableSettings$language == lang & allEnableSettings$form == form,]
+      
+      if (form == "WG"){
+        #Bind all gestures as one type
+        items[substr(allItems$type, 1, 8) == "gestures", "category"] <<- allItems[substr(allItems$type, 1, 8) == "gestures", "type"]
+        items[substr(allItems$type, 1, 8) == "gestures", "type"] <<- "gestures"
+      }
 
       #Render CDI name
       output$cdiNamePrefix <- renderText({txt[txt$text_type == "cdiNamePrefix", "text"]})

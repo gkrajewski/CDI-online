@@ -1,55 +1,74 @@
-language,text_type,text,form,item_type,category
-Polish,backBtn,Cofnij,,,
-Polish,nextBtn,Dalej,,,
-Polish,saveBtn,Zapisz,,,
-Polish,commentLabel,Twoje uwagi,,,
-Polish,cdiNamePrefix,Inwentarz Rozwoju Mowy i Komunikacji,,,
-Polish,cdiNameSufix,Słowa i Zdania,WS,,
-Polish,cdiNameSufix,Słowa i Gesty,WG,,
-Polish,first_signsBtn,Pierwsze przejawy rozumienia,WG,first_signs,
-Polish,header,Pierwsze przejawy rozumienia,WG,first_signs,
-Polish,longText,"Dzieci, zanim zaczną mówić, rozumieją wiele słów i wyrażeń. Można to stwierdzić obserwując ich reakcje na znane słowa lub zwroty. Czy Państwa dziecko wykazuje poniższe reakcje? (Proszę wybrać)",WG,first_signs,
-Polish,choiceNames,"Tak, Nie",WG,first_signs,
-Polish,phrasesBtn,Rozumienie wypowiedzi,WG,phrases,
-Polish,header,Rozumienie wypowiedzi dorosłych,WG,phrases,
-Polish,instr,"Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać.",WG,phrases,
-Polish,wordBtn,Lista wyrazów,WG,word,
-Polish,header,Lista wyrazów,WG,word,
-Polish,longText,"Na kolejnych stronach przedstawiamy listę typowych wyrazów znanych małym dzieciom. Przy tych wyrazach, które Państwa dziecko rozumie, ale samo ich jeszcze nie mówi, proszę postawić znaczek w pierwszej kolumnie (R = rozumie). Przy tych wyrazach, które dziecko nie tylko rozumie, ale i samo mówi, proszę postawić znaczek w drugiej kolumnie (M = rozumie i mówi). Jeżeli dziecko używa nieco innej formy, np. mówi piesek, a nie pies, proszę mimo to postawić znaczek przy słowie pies. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. lybka zamiast rybka lub wiójka zamiast wiewiórka). Proszę takie słowo także zaznaczyć plusem, można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa. Czasami dzieci wymyślają własne wyrazy, np. dzi zamiast piłka; także taką formę należy potraktować jako wyraz i zaznaczyć słowo „piłka”, wpisując przy nim dodatkowo „dzi”. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać właściwe określenie. Wszelkie wątpliwości można dopisać na kwestionariuszu. 
-  ",WG,word,none
-Polish,warning," UWAGA: Kwestionariusz przeznaczony jest dla dzieci w różnym wieku. Proszę się nie martwić, jeśli Państwa dziecko jeszcze nie używa wszystkich słów i gestów, o które pytamy!
-  ",WG,word,none
-Polish,help,"Przed zapisaniem proszę sprawdzić, czy nie pominęli Państwo jakiejś strony lub rubryki? Czy na pewno zaznaczone są wszystkie wyrazy, które Państwa dziecko rozumie / mówi?",WG,word,allInput
-Polish,instr,R = tylko rozumie M = rozumie i mówi ,WG,word,allInput
-Polish,choiceNames,"R,M ",WG,word,allInput
-Polish,catHeader,Odgłosy i wykrzykniki,WG,word,sounds
-Polish,catHeader,Zwierzęta – prawdziwe lub zabawkowe,WG,word,animals
-Polish,starting_to_talkBtn,Naśladownictwo,WG,starting_to_talk,
-Polish,header,Naśladownictwo,WG,starting_to_talk,
-Polish,choiceNames,"Tak, Nie",WG,starting_to_talk,
-Polish,combineBtn,Łączenie wyrazów,WG,combine,
-Polish,header,Łączenie wyrazów,WG,combine,
-Polish,choiceNames,"Jeszcze nie, Czasem, Często",WG,combine,
-Polish,sentencesBtn,Wypowiedzi,WG,sentences,
-Polish,header,Przykłady wypowiedzi,WG,sentences,
-Polish,instr,Proszę podać przykłady rzeczywistych wypowiedzi dziecka:,WG,sentences,
-Polish,gestures_firstBtn,Pierwsze gesty,WG,gestures_first,
-Polish,header,Pierwsze gesty komunikatywne,WG,gestures_first,
-Polish,longText,"Kiedy dzieci uczą się porozumiewać z innymi ludźmi, często posługują się gestami, aby wyrazić swoje pragnienia. Przy każdym z gestów na następnych stronach proszę postawić znaczek przy tym określeniu, które pasuje do tego, co Państwa dziecko aktualnie robi. ",WG,gestures_first,
-Polish,instr,Czy Państwa dziecko używa wymienionych niżej gestów? ,WG,gestures_first,
-Polish,gestures_gamesBtn,Zabawy i rytuały,WG,gestures_games,
-Polish,header,Zabawy i rytuały,WG,gestures_games,
-Polish,instr,Czy Państwa dziecko wykonuje wymienione niżej czynności?,WG,gestures_games,
-Polish,gestures_objectsBtn,Przedmioty,WG,gestures_objects,
-Polish,header,Działania na przedmiotach,WG,gestures_objects,
-Polish,instr,Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?,WG,gestures_objects,
-Polish,gestures_parentBtn,Czynności opiekuńcze,WG,gestures_parent,
-Polish,header,Zabawa lalką lub misiem: czynności opiekuńcze,WG,gestures_parent,
-Polish,instr,"Poniżej wypisano czynności opiekuńcze, jakie dzieci wykonują bawiąc się lalkami lub misiami. Proszę zaznaczyć te z nich, które zaobserwowali Państwo u swego dziecka.",WG,gestures_parent,
-Polish,gestures_adultBtn,Naśladowanie dorosłych,WG,gestures_adult,
-Polish,header,Naśladowanie innych czynności dorosłych (na przedmiotach lub zabawkach),WG,gestures_adult,
-Polish,instr,Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?,WG,gestures_adult,
-Polish,endBtn,Zakończ,WG,end,
-Polish,header,Koniec,WG,end,
-Polish,instr,Twoje odpowiedzi zostały zapisane.,WG,end,
-Polish,help,Dziękujemy za wypełnienie inwentarza!,WG,end,
+language;text_type;text;form;item_type;category
+Polish;backBtn;Cofnij;;;
+Polish;nextBtn;Dalej;;;
+Polish;saveBtn;Zapisz;;;
+Polish;commentLabel;Twoje uwagi;;;
+Polish;cdiNamePrefix;Inwentarz Rozwoju Mowy i Komunikacji;;;
+Polish;cdiNameSufix;Słowa i Zdania;WS;;
+Polish;cdiNameSufix;Słowa i Gesty;WG;;
+Polish;first_signsBtn;Pierwsze przejawy rozumienia;WG;first_signs;
+Polish;header;Pierwsze przejawy rozumienia;WG;first_signs;
+Polish;longText;Dzieci, zanim zaczną mówić, rozumieją wiele słów i wyrażeń. Można to stwierdzić obserwując ich reakcje na znane słowa lub zwroty. Czy Państwa dziecko wykazuje poniższe reakcje? (Proszę wybrać);WG;first_signs;
+Polish;choiceNames;Tak, Nie;WG;first_signs;
+Polish;phrasesBtn;Rozumienie wypowiedzi;WG;phrases;
+Polish;header;Rozumienie wypowiedzi dorosłych;WG;phrases;
+Polish;instr;Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać.;WG;phrases;
+Polish;wordBtn;Lista wyrazów;WG;word;
+Polish;header;Lista wyrazów;WG;word;
+Polish;longText;"Na kolejnych stronach przedstawiamy listę typowych wyrazów znanych małym dzieciom. Przy tych wyrazach, które Państwa dziecko rozumie, ale samo ich jeszcze nie mówi, proszę postawić znaczek w pierwszej kolumnie (R = rozumie). Przy tych wyrazach, które dziecko nie tylko rozumie, ale i samo mówi, proszę postawić znaczek w drugiej kolumnie (M = rozumie i mówi). Jeżeli dziecko używa nieco innej formy, np. mówi piesek, a nie pies, proszę mimo to postawić znaczek przy słowie pies. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. lybka zamiast rybka lub wiójka zamiast wiewiórka). Proszę takie słowo także zaznaczyć plusem, można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa. Czasami dzieci wymyślają własne wyrazy, np. dzi zamiast piłka; także taką formę należy potraktować jako wyraz i zaznaczyć słowo „piłka”, wpisując przy nim dodatkowo „dzi”. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać właściwe określenie. Wszelkie wątpliwości można dopisać na kwestionariuszu. 
+  ";WG;word;none
+Polish;warning;" UWAGA: Kwestionariusz przeznaczony jest dla dzieci w różnym wieku. Proszę się nie martwić, jeśli Państwa dziecko jeszcze nie używa wszystkich słów i gestów, o które pytamy!
+  ";WG;word;none
+Polish;help;Przed zapisaniem proszę sprawdzić, czy nie pominęli Państwo jakiejś strony lub rubryki? Czy na pewno zaznaczone są wszystkie wyrazy, które Państwa dziecko rozumie / mówi?;WG;word;allInput
+Polish;instr;R = tylko rozumie M = rozumie i mówi ;WG;word;allInput
+Polish;choiceNames;R,M ;WG;word;allInput
+Polish;catHeader;Odgłosy i wykrzykniki;WG;word;sounds
+Polish;catHeader;Zwierzęta – prawdziwe lub zabawkowe;WG;word;animals
+Polish;catHeader;Pojazdy - prawdziwe lub zabawkowe ;WG;word;vehicles
+Polish;catHeader;Pokarmy i napoje ;WG;word;food_drink
+Polish;catHeader;Zabawki;WG;word;toys
+Polish;catHeader;Ubrania ;WG;word;clothing
+Polish;catHeader;Części ciała ;WG;word;body_parts
+Polish;catHeader;W domu: pomieszczenia, sprzęty, meble ;WG;word;furniture_rooms 
+Polish;catHeader;Przedmioty domowego użytku ;WG;word;household
+Polish;catHeader;Poza domem ;WG;word;outside
+Polish;catHeader;Osoby ;WG;word;people
+Polish;note;Proszę wpisać, jak dziecko mówi na siebie, np. „Ika”, „Maciuś”, „Dodo”, „dzidzi”. ;WG;word;people
+Polish;catHeader;Formuły, zabawy, rutynowe czynności ;WG;word;games_routines
+Polish;catHeader;Przymiotniki i przysłówki ;WG;word;descriptive_words
+Polish;catHeader;Czasowniki ;WG;word;action_words
+Polish;catHeader;Określenia miejsca;WG;word;locations
+Polish;catHeader;Określenia czasu ;WG;word;time_words
+Polish;note;w takich zdaniach np. „Już zrobiłem!” albo „Tatuś już nie śpi”.;WG;word;time_words
+Polish;note;w takich zdaniach jak np. „Jeszcze pisać!”, „Jeszcze raz mi to zrób!” albo „Jeszcze nie wypiłam”. ;WG;word;time_words
+Polish;catHeader;Określenia miary ;WG;word;quantifiers
+Polish;note;"w takich zdaniach jak np. ""Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”. ";WG;word;quantifiers
+Polish;note;w takich zdaniach jak np. „Ania wszystko wypiła.” albo „Wszystko zepsute.” albo „Wszyscy śpią”. ;WG;word;quantifiers
+Polish;catHeader;Zaimki;WG;word;pronouns
+Polish;catHeader;Pytania;WG;word;question_words
+Polish;starting_to_talkBtn;Naśladownictwo;WG;starting_to_talk;
+Polish;header;Naśladownictwo;WG;starting_to_talk;
+Polish;choiceNames;Tak, Nie;WG;starting_to_talk;
+Polish;combineBtn;Łączenie wyrazów;WG;combine;
+Polish;header;Łączenie wyrazów;WG;combine;
+Polish;choiceNames;Jeszcze nie, Czasem, Często;WG;combine;
+Polish;sentencesBtn;Wypowiedzi;WG;sentences;
+Polish;header;Przykłady wypowiedzi;WG;sentences;
+Polish;instr;Proszę podać przykłady rzeczywistych wypowiedzi dziecka:;WG;sentences;
+Polish;gesturesBtn;Gesty;WG;gestures;
+Polish;longText;Kiedy dzieci uczą się porozumiewać z innymi ludźmi, często posługują się gestami, aby wyrazić swoje pragnienia. Przy każdym z gestów na następnych stronach proszę postawić znaczek przy tym określeniu, które pasuje do tego, co Państwa dziecko aktualnie robi. ;WG;gestures;none
+Polish;header;Gesty;WG;gestures;
+Polish;catHeader;Pierwsze gesty komunikatywne;WG;gestures;gestures_first
+Polish;instr;Czy Państwa dziecko używa wymienionych niżej gestów? ;WG;gestures;gestures_first
+Polish;catHeader;Zabawy i rytuały;WG;gestures;gestures_games
+Polish;instr;Czy Państwa dziecko wykonuje wymienione niżej czynności?;WG;gestures;gestures_games
+Polish;catHeader;Działania na przedmiotach;WG;gestures;gestures_objects
+Polish;instr;Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;WG;gestures;gestures_objects
+Polish;catHeader;Zabawa lalką lub misiem: czynności opiekuńcze;WG;gestures;gestures_parent
+Polish;instr;Poniżej wypisano czynności opiekuńcze, jakie dzieci wykonują bawiąc się lalkami lub misiami. Proszę zaznaczyć te z nich, które zaobserwowali Państwo u swego dziecka.;WG;gestures;gestures_parent
+Polish;catHeader;Naśladowanie innych czynności dorosłych (na przedmiotach lub zabawkach);WG;gestures;gestures_adult
+Polish;instr;Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;WG;gestures;gestures_adult
+Polish;endBtn;Zakończ;WG;end;
+Polish;header;Koniec;WG;end;
+Polish;instr;Twoje odpowiedzi zostały zapisane.;WG;end;
+Polish;help;Dziękujemy za wypełnienie inwentarza!;WG;end;
