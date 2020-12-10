@@ -5,7 +5,7 @@ Polish,WG,word,first,FALSE,FALSE,TRUE,TRUE,none,none,NULL,FALSE,FALSE
 Polish,WG,word,input,TRUE,TRUE,FALSE,FALSE,manyCheckboxGroups,threeColumns,NULL,TRUE,FALSE
 Polish,WG,word,last,TRUE,TRUE,FALSE,TRUE,manyCheckboxGroups,threeColumns,NULL,TRUE,TRUE
 Polish,WG,starting_to_talk,input&save,FALSE,FALSE,FALSE,FALSE,radio,oneColumn,NULL,FALSE,FALSE
-Polish,WG,combine,input&save,FALSE,FALSE,FALSE,FALSE,radio,oneColumn,NULL,FALSE,FALSE
+Polish,WG,combine,input&save,FALSE,FALSE,FALSE,FALSE,radio,oneColumn,NULL,FALSE,TRUE
 Polish,WG,sentences,input&save,FALSE,TRUE,FALSE,FALSE,sentences,twoColumns,10,FALSE,FALSE
 Polish,WG,gestures,first,FALSE,FALSE,TRUE,FALSE,none,none,NULL,FALSE,FALSE
 Polish,WG,gestures,input,TRUE,TRUE,FALSE,FALSE,oneCheckboxGroup,oneColumn,NULL,TRUE,FALSE
