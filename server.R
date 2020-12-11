@@ -62,7 +62,7 @@ server <- function(input, output, session) {
         
       } else {
 
-        firstCat <- unique(items[items$type == types[1], "category"])[1] #get first category of first type
+        firstCat <- unique(txt[txt$type == types[1], "category"])[1] #get first category of first type
         if (is.na(firstCat)) firstCat <- "none"
         
         progress <<- data.frame(
@@ -123,8 +123,8 @@ server <- function(input, output, session) {
       
       #Save answers and progress to csv file when session ended
       session$onSessionEnded(function() {
-        # write.csv(answers, answersFile, row.names = F)
-        # write.csv(progress, progressFile, row.names = F)
+        write.csv(answers, answersFile, row.names = F)
+        write.csv(progress, progressFile, row.names = F)
       })
       
     } else {
