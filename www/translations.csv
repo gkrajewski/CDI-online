@@ -6,13 +6,14 @@ Polish;commentLabel;Twoje uwagi;;;
 Polish;cdiNamePrefix;Inwentarz Rozwoju Mowy i Komunikacji;;;
 Polish;cdiNameSufix;Słowa i Zdania;WS;;
 Polish;cdiNameSufix;Słowa i Gesty;WG;;
-Polish;first_signsBtn;Pierwsze przejawy rozumienia;WG;first_signs;
-Polish;header;Pierwsze przejawy rozumienia;WG;first_signs;
-Polish;longText;Dzieci, zanim zaczną mówić, rozumieją wiele słów i wyrażeń. Można to stwierdzić obserwując ich reakcje na znane słowa lub zwroty. Czy Państwa dziecko wykazuje poniższe reakcje? (Proszę wybrać);WG;first_signs;
-Polish;choiceNames;Tak, Nie;WG;first_signs;
-Polish;phrasesBtn;Rozumienie wypowiedzi;WG;phrases;
-Polish;header;Rozumienie wypowiedzi dorosłych;WG;phrases;
-Polish;instr;Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać.;WG;phrases;
+Polish;understandingBtn;Rozumienie;WG;understanding;
+Polish;header;Rozumienie;WG;understanding;
+Polish;longText;Kwestionariusz ten jest polską adaptacją amerykańskiego inwentarza do badania rozwoju mowy najmłodszych dzieci (MacArthur-Bates Communicative Development Inventory). Metoda ta opiera się na wiedzy rodziców na temat rozwoju językowego własnych dzieci i dotyczy rozumienia mowy, mówienia oraz porozumiewania się przy pomocy gestów. Znaczną część inwentarza stanowią pytania o najwcześniejsze słownictwo dzieci. Rodzice mają zakreślić słowa, które dziecko rozumie, a także te z nich, których używa ono w mowie. Aby dobrze wypełnić kwestionariusz, należy przeczytać pytania i przez parę dni uważniej przysłuchiwać się temu, co dziecko mówi. Nie należy go przepytywać ani prosić o powtarzanie poszczególnych wyrazów, ani też „uczyć słówek”. Wystarczy, gdy rodzice odpowiedzą na pytania według własnej wiedzy o dziecku.;WG;understanding;none
+Polish;catHeader;Pierwsze przejawy rozumienia;WG;understanding;first_signs
+Polish;longText;Dzieci, zanim zaczną mówić, rozumieją wiele słów i wyrażeń. Można to stwierdzić obserwując ich reakcje na znane słowa lub zwroty. Czy Państwa dziecko wykazuje poniższe reakcje? (Proszę wybrać);WG;understanding;first_signs
+Polish;choiceNames;Tak, Nie;WG;understanding;first_signs
+Polish;catHeader;Rozumienie wypowiedzi dorosłych;WG;understanding;phrases
+Polish;instr;Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać.;WG;understanding;phrases
 Polish;wordBtn;Wyrazy;WG;word;
 Polish;header;Lista wyrazów;WG;word;
 Polish;longText;"Na kolejnych stronach przedstawiamy listę typowych wyrazów znanych małym dzieciom. Przy tych wyrazach, które Państwa dziecko rozumie, ale samo ich jeszcze nie mówi, proszę postawić znaczek w pierwszej kolumnie (R = rozumie). Przy tych wyrazach, które dziecko nie tylko rozumie, ale i samo mówi, proszę postawić znaczek w drugiej kolumnie (M = rozumie i mówi). Jeżeli dziecko używa nieco innej formy, np. mówi piesek, a nie pies, proszę mimo to postawić znaczek przy słowie pies. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. lybka zamiast rybka lub wiójka zamiast wiewiórka). Proszę takie słowo także zaznaczyć plusem, można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa. Czasami dzieci wymyślają własne wyrazy, np. dzi zamiast piłka; także taką formę należy potraktować jako wyraz i zaznaczyć słowo „piłka”, wpisując przy nim dodatkowo „dzi”. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać właściwe określenie. Wszelkie wątpliwości można dopisać na kwestionariuszu. 

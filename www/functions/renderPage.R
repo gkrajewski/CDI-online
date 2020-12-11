@@ -16,6 +16,7 @@ renderPage <- function(input, output){
     
     #Get last category
     lastCat <- categories[length(categories)]
+    print(currCat)
     
     #Adjust for multi page design
     if (currCat == "none"){

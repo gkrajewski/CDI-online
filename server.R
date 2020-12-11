@@ -15,19 +15,40 @@ server <- function(input, output, session) {
       items <<- allItems[allItems$language == lang & allItems$form == form,] 
       settings <<- allSettings[allSettings$language == lang & allSettings$form == form,]
       enableSettings <<- allEnableSettings[allEnableSettings$language == lang & allEnableSettings$form == form,]
-      
-      if (form == "WG"){
-        #Bind all gestures as one type
-        items[substr(allItems$type, 1, 8) == "gestures", "category"] <<- allItems[substr(allItems$type, 1, 8) == "gestures", "type"]
-        items[substr(allItems$type, 1, 8) == "gestures", "type"] <<- "gestures"
-      }
-
+    
       #Render CDI name
       output$cdiNamePrefix <- renderText({txt[txt$text_type == "cdiNamePrefix", "text"]})
       output$cdiNameSufix <- renderText({txt[txt$text_type == "cdiNameSufix", "text"]})
       
       #Get types from enableSettings file
       types <<- enableSettings$type
+      
+      #Bind some of types and create artificial categories as specified in enableSettings file
+      for (type in types){
+        
+        if (enableSettings[enableSettings$type == type, "binded_types"] != "none"){
+          
+          if (enableSettings[enableSettings$type == type, "binded_types"] == "startWith"){
+            
+            items[substr(allItems$type, 1, nchar(type)) == type, "category"] <<- allItems[substr(allItems$type, 1, nchar(type)) == type, "type"]
+            items[substr(allItems$type, 1, nchar(type)) == type, "type"] <<- type
+            
+          } else {
+            
+            bindedTypes <- strsplit(enableSettings[enableSettings$type == type, "binded_types"], ",")[[1]]
+            
+            for (bindedType in bindedTypes){
+              
+              items[substr(allItems$type, 1, nchar(bindedType)) == bindedType, "category"] <<- allItems[substr(allItems$type, 1, nchar(bindedType)) == bindedType, "type"]
+              items[substr(allItems$type, 1, nchar(bindedType)) == bindedType, "type"] <<- type
+              
+            }
+            
+          }
+          
+        }
+        
+      }
       
       #Get number of types
       typesNr <- length(types)

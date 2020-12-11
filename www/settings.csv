@@ -1,6 +1,7 @@
 language,form,type,page_type,cat_header,instr,long_text,warning,input_type,css_class,sentences_nr,comment,help
-Polish,WG,first_signs,input&save,FALSE,FALSE,TRUE,FALSE,radio,oneColumn,NULL,FALSE,FALSE
-Polish,WG,phrases,input&save,FALSE,TRUE,FALSE,FALSE,oneCheckboxGroup,threeColumns,NULL,TRUE,FALSE
+Polish,WG,understanding,first,FALSE,FALSE,TRUE,FALSE,none,none,NULL,FALSE,FALSE
+Polish,WG,understanding,input,TRUE,FALSE,TRUE,FALSE,radio,oneColumn,NULL,FALSE,FALSE
+Polish,WG,understanding,last,TRUE,TRUE,FALSE,FALSE,oneCheckboxGroup,threeColumns,NULL,TRUE,FALSE
 Polish,WG,word,first,FALSE,FALSE,TRUE,TRUE,none,none,NULL,FALSE,FALSE
 Polish,WG,word,input,TRUE,TRUE,FALSE,FALSE,manyCheckboxGroups,threeColumns,NULL,TRUE,FALSE
 Polish,WG,word,last,TRUE,TRUE,FALSE,TRUE,manyCheckboxGroups,threeColumns,NULL,TRUE,TRUE

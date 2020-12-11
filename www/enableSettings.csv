@@ -1,9 +1,8 @@
-language,form,type,initially_disabled,conditions,answers_to_enable
-Polish,WG,first_signs,FALSE,none,
-Polish,WG,phrases,FALSE,none,
-Polish,WG,word,FALSE,none,
-Polish,WG,starting_to_talk,FALSE,none,
-Polish,WG,combine,FALSE,sentences,"2,3"
-Polish,WG,sentences,TRUE,none,
-Polish,WG,gestures,FALSE,none,
-Polish,WG,end,TRUE,none,
+language,form,type,binded_types,initially_disabled,conditions,answers_to_enable
+Polish,WG,understanding,"first_signs,phrases",FALSE,none,
+Polish,WG,word,none,FALSE,none,
+Polish,WG,starting_to_talk,none,FALSE,none,
+Polish,WG,combine,none,FALSE,sentences,"2,3"
+Polish,WG,sentences,none,TRUE,none,
+Polish,WG,gestures,startWith,FALSE,none,
+Polish,WG,end,none,TRUE,none,
