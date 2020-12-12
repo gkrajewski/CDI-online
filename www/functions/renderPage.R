@@ -115,7 +115,7 @@ renderPage <- function(input, output){
     )
 
   })
-  
+  print(currCat)
   #Render main container according to page settings
   output$main <- renderUI({
     

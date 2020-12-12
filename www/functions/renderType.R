@@ -29,7 +29,7 @@ renderType <- function(input, output, type){
   typeTxt <<- txt[txt$item_type == currType,]
   typeItems <<- items[items$type == currType,]
   typeSettings <<- settings[settings$type == currType, ]
-  
+  print(typeTxt[typeTxt$text_type == "catHeader", "text"])
   #Render header
   output$header <- renderText({typeTxt[typeTxt$text_type == "header", "text"]})
   

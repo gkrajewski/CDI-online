@@ -109,8 +109,8 @@ addObservers <- function(input, output){
     answers[answers$type == currType & answers$category == currCat & answers$answer_type == "comment", "answer"] <<- input$comment
   })
   
-  #Multi questions (max 100)
-  lapply(1:100, function(i){
+  #Multi questions (max 200)
+  lapply(1:200, function(i){
     
     id <- paste0("mQ", i)
     

@@ -62,6 +62,12 @@ h5 {
    -column-fill: auto; 
 }
 
+.form-group {
+   -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
 .oneColumn> #oneCheckboxGroup {
 	width: 1000px;
 }
