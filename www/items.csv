@@ -221,7 +221,7 @@ item_218;widelec;Polish;WG;word;household;nouns;nouns;fork;;218
 item_219;zdjęcie/fotografia ;Polish;WG;word;household;nouns;nouns;photo;;219
 item_220;zegarek;Polish;WG;word;household;nouns;nouns;clock/watch;;220
 item_221;żelazko ;Polish;WG;word;household;nouns;nouns;iron;;221
-item_222;deszcz;Polish;WG;word;household;nouns;nouns;rain;;222
+item_222;deszcz;Polish;WG;word;outside;nouns;nouns;rain;;222
 item_223;dom;Polish;WG;word;outside;nouns;nouns;home/house;;223
 item_224;drzewo;Polish;WG;word;outside;nouns;nouns;tree;;224
 item_225;kamień;Polish;WG;word;outside;nouns;nouns;rock (object);;225

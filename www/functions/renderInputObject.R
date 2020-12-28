@@ -1,23 +1,22 @@
-createCheckboxQuestion <- function(questionId, choiceNames, choiceValues, selected, questionLabel = NULL, inline = F){
+createCheckboxQuestion <- function(questionId, choiceNames, choiceValues, selected, questionLabel = NULL, inline = F, noBreakInside){
   
   if (selected == 0){
     selected <- NULL
   } else {
     selected <- strsplit(selected, "")[[1]]
   }
-
-  return(
-    
-    checkboxGroupInput(
-      questionId,
-      label = questionLabel,
-      selected = selected,
-      choiceNames = choiceNames,
-      choiceValues = choiceValues,
-      inline = inline
-    )
-    
+      
+  checkboxGroup <- checkboxGroupInput(
+    questionId,
+    label = questionLabel,
+    selected = selected,
+    choiceNames = choiceNames,
+    choiceValues = choiceValues,
+    inline = inline
   )
+  
+  if (noBreakInside) checkboxGroup <- div(class="noBreakInside", checkboxGroup)
+  return(checkboxGroup)
   
 }
 
@@ -26,7 +25,7 @@ createRadioQuestion <- function(questionId, choiceNames, choiceValues, selected,
   if (selected == 0) selected <- character(0)
   
   return(
-    
+      
     radioButtons(
       questionId,
       label = questionLabel,
@@ -60,7 +59,7 @@ renderInputObject <- function(){
       if (pageInputType == "radio"){
         questions[[i]] <- createRadioQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i], pageItems[i, "definition"], T)
       } else {
-        questions[[i]] <- createCheckboxQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i], pageItems[i, "definition"], T)
+        questions[[i]] <- createCheckboxQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i], pageItems[i, "definition"], T, noBreakInside = TRUE)
       }
       
     }
@@ -70,7 +69,7 @@ renderInputObject <- function(){
     if (is.na(pageAnswer)) pageAnswer <- 0
     choiceNames <- as.character(pageItems$definition)
     choiceValues <- c(1 : nrow(pageItems))
-    questions[[1]] <- createCheckboxQuestion(pageInputType, choiceNames, choiceValues, pageAnswer)
+    questions[[1]] <- createCheckboxQuestion(pageInputType, choiceNames, choiceValues, pageAnswer, noBreakInside = FALSE)
     
   } else if (pageInputType == "sentences"){
     
