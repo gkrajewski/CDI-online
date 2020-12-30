@@ -8,7 +8,9 @@ ui <- fluidPage(
   
   #Loads css file with custom apperance settings
   tags$head(
-    tags$link(rel="stylesheet", type="text/css", href="style.css")
+    tags$link(rel="stylesheet", type="text/css", href="style.css"),
+    tags$link(rel="preconnect", href="https://fonts.gstatic.com"),
+    tags$link(href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap", rel="stylesheet")
   ),
   
   h1(textOutput("cdiNamePrefix")),
