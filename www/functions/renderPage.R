@@ -37,7 +37,7 @@ renderPage <- function(input, output){
         pageTxt <<- typeTxt[typeTxt$category == currCat | typeTxt$category == "allInput", ]
         buttons <- list(
             actionButton("backBtn", label = txt[txt$text_type == "backBtn", "text"]),
-            actionButton("saveBtn", label = txt[txt$text_type == "saveBtn", "text"])
+            actionButton("saveBtn", class = "btn-primary", label = txt[txt$text_type == "saveBtn", "text"])
         )
         
       } else {
@@ -65,7 +65,7 @@ renderPage <- function(input, output){
     pageItems <<- typeItems
     pageTxt <<- typeTxt
     if (currType != "end"){
-      buttons <- list(actionButton("saveBtn", label = txt[txt$text_type == "saveBtn", "text"]))
+      buttons <- list(actionButton("saveBtn", class = "btn-primary", label = txt[txt$text_type == "saveBtn", "text"]))
     } 
   
   }
@@ -115,7 +115,7 @@ renderPage <- function(input, output){
     )
 
   })
-  print(currCat)
+
   #Render main container according to page settings
   output$main <- renderUI({
     

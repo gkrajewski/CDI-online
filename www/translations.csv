@@ -53,7 +53,7 @@ Polish;choiceNames;Tak, Nie;WG;starting_to_talk;
 Polish;combineBtn;Łączenie wyrazów;WG;combine;
 Polish;header;Łączenie wyrazów;WG;combine;
 Polish;choiceNames;Jeszcze nie, Czasem, Często;WG;combine;
-Polish;help;Część „Wypowiedzi” uaktywni się w przypadku wybrania tutaj odpowiedzi „Czasem” lub „Często”.;WG;combine;
+Polish;help;Część „Wypowiedzi” uaktywni się w przypadku wybrania tutaj odpowiedzi „Czasem” lub „Często” (i zapisania jej).;WG;combine;
 Polish;sentencesBtn;Wypowiedzi;WG;sentences;
 Polish;header;Przykłady wypowiedzi;WG;sentences;
 Polish;instr;Proszę podać przykłady rzeczywistych wypowiedzi dziecka:;WG;sentences;
