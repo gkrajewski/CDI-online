@@ -117,6 +117,7 @@ renderPage <- function(input, output){
   })
 
   #Render main container according to page settings
+  notes = FALSE
   output$main <- renderUI({
     
     list(
@@ -136,12 +137,36 @@ renderPage <- function(input, output){
       #Render input object
       if (pageInputType != "none"){
         
-        #inputObject <- do.call(pageInputType, list())
+        if (is.element("note", pageTxt$text_type)){
+          
+          #Add notes
+          notes = TRUE
+          notesList <- list()
+          
+          i <- 1
+          for (note in pageTxt[pageTxt$text_type == "note", "text"]){
+            
+            noteTxt <- strsplit(note, "%")[[1]]
+            noteItemId <- noteTxt[1]
+            noteTxt <- noteTxt[2]
+            stars <- rep("*", i)
+            stars <- paste0(stars, collapse = "")
+            pageItems[pageItems$item_id == noteItemId, 'definition'] <<- paste0(pageItems[pageItems$item_id == noteItemId, 'definition'], stars)
+            notesList[[i]] <- p(paste0(stars, noteTxt, "\n"))
+            i <- i + 1
+            
+          }
+          
+        }
+       
         inputObject <- renderInputObject()
         if (pageSettings$css_class != "none") inputObject <- div(class=pageSettings$css_class, inputObject)
         inputObject
         
       },
+      
+      #Render notes under input object
+      if (notes) p(notesList),
       
       #Render comment field
       if (pageSettings$comment){

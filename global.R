@@ -16,10 +16,10 @@ ifelse(!dir.exists(file.path(initPath, "progress")), dir.create(file.path(initPa
 
 #Load translations, items and settings
 setwd(dataPath)
-translations <<- read.csv("translations.csv", encoding = "UTF-8", sep = ";")
-allItems <<- read.csv("items.csv", encoding = "UTF-8", sep = ";")[1:6]
-allSettings <<- read.csv("settings.csv", encoding = "UTF-8")
-allEnableSettings <<- read.csv("enableSettings.csv", encoding = "UTF-8") 
+translations <<- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
+allItems <<- read.csv("items.csv", encoding = "UTF-8", sep = ";", strip.white = T)[1:6]
+allSettings <<- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
+allEnableSettings <<- read.csv("enableSettings.csv", encoding = "UTF-8", strip.white = T) 
 setwd(initPath)
 
 #Load functions
