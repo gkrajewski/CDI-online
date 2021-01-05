@@ -61,12 +61,15 @@ renderPage <- function(input, output){
   } else {
     
     #One page type
-    pageType <<- "input&save"
     pageItems <<- typeItems
     pageTxt <<- typeTxt
-    if (currType != "end"){
+    
+    if (currType != "postEnd"){
       buttons <- list(actionButton("saveBtn", class = "btn-primary", label = txt[txt$text_type == "saveBtn", "text"]))
-    } 
+      pageType <<- "input&save"
+    } else {
+      pageType <<- "postEnd"
+    }
   
   }
   

@@ -34,17 +34,17 @@ Polish;catHeader;W domu: pomieszczenia, sprzęty, meble;WG;word;furniture_rooms
 Polish;catHeader;Przedmioty domowego użytku ;WG;word;household
 Polish;catHeader;Poza domem ;WG;word;outside
 Polish;catHeader;Osoby ;WG;word;people
-Polish;note;item_258%Proszę wpisać, jak dziecko mówi na siebie, np. „Ika”, „Maciuś”, „Dodo”, „dzidzi”. ;WG;word;people
+Polish;note;Proszę wpisać, jak dziecko mówi na siebie, np. „Ika”, „Maciuś”, „Dodo”, „dzidzi”. ;WG;word;people
 Polish;catHeader;Formuły, zabawy, rutynowe czynności ;WG;word;games_routines
 Polish;catHeader;Przymiotniki i przysłówki ;WG;word;descriptive_words
 Polish;catHeader;Czasowniki ;WG;word;action_words
 Polish;catHeader;Określenia miejsca;WG;word;locations
 Polish;catHeader;Określenia czasu ;WG;word;time_words
-Polish;note;item_373%w takich zdaniach np. „Już zrobiłem!” albo „Tatuś już nie śpi”.;WG;word;time_words
-Polish;note;item_374%w takich zdaniach jak np. „Jeszcze pisać!”, „Jeszcze raz mi to zrób!” albo „Jeszcze nie wypiłam”. ;WG;word;time_words
+Polish;note;w takich zdaniach np. „Już zrobiłem!” albo „Tatuś już nie śpi”.;WG;word;time_words
+Polish;note;w takich zdaniach jak np. „Jeszcze pisać!”, „Jeszcze raz mi to zrób!” albo „Jeszcze nie wypiłam”. ;WG;word;time_words
 Polish;catHeader;Określenia miary ;WG;word;quantifiers
-Polish;note;"item_382%w takich zdaniach jak np. ""Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”. ";WG;word;quantifiers
-Polish;note;item_383%w takich zdaniach jak np. „Ania wszystko wypiła.” albo „Wszystko zepsute.” albo „Wszyscy śpią”. ;WG;word;quantifiers
+Polish;note;"w takich zdaniach jak np. ""Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”. ";WG;word;quantifiers
+Polish;note;w takich zdaniach jak np. „Ania wszystko wypiła.” albo „Wszystko zepsute.” albo „Wszyscy śpią”. ;WG;word;quantifiers
 Polish;catHeader;Zaimki;WG;word;pronouns
 Polish;catHeader;Pytania;WG;word;question_words
 Polish;starting_to_talkBtn;Naśladownictwo;WG;starting_to_talk;
@@ -72,5 +72,7 @@ Polish;catHeader;Naśladowanie innych czynności dorosłych (na przedmiotach lub
 Polish;instr;Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;WG;gestures;gestures_adult
 Polish;endBtn;Zakończ;WG;end;
 Polish;header;Koniec;WG;end;
-Polish;instr;Twoje odpowiedzi zostały zapisane.;WG;end;
-Polish;help;Dziękujemy za wypełnienie inwentarza!;WG;end;
+Polish;instr; Na tym etapie wciąż możesz edytować swoje odpowiedzi, pomimo zapisania wszystkich części. Aby zakończyć definitywnie wypełnianie inwetarza kliknij przycisk „Zapisz”. ;WG;end;
+Polish;help;UWAGA: Po zapisaniu inwentarza nie będzie możliwości dalszej edycji odpowiedzi!;WG;end;
+Polish;help;Dziękujemy za wypełnienie!;WG;postEnd;
+Polish;instr;Dostaniesz wkrótce maila bla bla bla…;WG;postEnd;

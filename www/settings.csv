@@ -12,3 +12,4 @@ Polish,WG,gestures,first,FALSE,FALSE,TRUE,FALSE,none,none,NULL,FALSE,FALSE
 Polish,WG,gestures,input,TRUE,TRUE,FALSE,FALSE,oneCheckboxGroup,oneColumn,NULL,TRUE,FALSE
 Polish,WG,gestures,last,TRUE,TRUE,FALSE,FALSE,oneCheckboxGroup,oneColumn,NULL,TRUE,FALSE
 Polish,WG,end,input&save,FALSE,TRUE,FALSE,FALSE,none,none,NULL,FALSE,TRUE
+Polish,WG,postEnd,postEnd,FALSE,TRUE,FALSE,FALSE,none,none,NULL,FALSE,TRUE

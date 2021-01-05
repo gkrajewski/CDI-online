@@ -44,19 +44,38 @@ addObservers <- function(input, output){
     #Render 1st not done type (from left)
     allDone <- TRUE
     for (type in types){
+      
       if (!progress[progress$type == type, "done"] & !progress[progress$type == type, "disabled"]){
         renderType(input, output, type)
         allDone <- FALSE
         break
       } 
+      
     }
     
     #Render end if all types are done
     if(allDone){
-      progress[progress$type == "end", "disabled"] <<- FALSE
-      enable("end")
-      addClass("end", "endEnabled")
-      renderType(input, output, "end")
+      
+      if (!progress[progress$type == "end", "done"]){
+        
+        progress[progress$type == "end", "disabled"] <<- FALSE
+        enable("end")
+        addClass("end", "endEnabled")
+        renderType(input, output, "end")
+        
+      } else {
+        
+        renderType(input, output, "postEnd")
+        
+        for (type in types){
+          
+          disable(type)
+          progress[progress$type == type, "disabled"] <<- TRUE
+          
+        }
+        
+      }
+      
     }
       
   })
