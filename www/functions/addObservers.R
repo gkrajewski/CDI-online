@@ -14,28 +14,37 @@ addObservers <- function(input, output){
     addClass(paste0(currType, "container"), "menuButtonContainerDone")
     
     #Get type conditioned by current type (if any)
-    conditionedType <- enableSettings[enableSettings$type == currType, "conditions"]
+    # conditionedType <- enableSettings[enableSettings$type == currType, "conditions"]
+    conditionedTypes <- strsplit(enableSettings[enableSettings$type == currType, "conditions"], ",")[[1]]
     
-    if (conditionedType != "none"){
+    if (conditionedTypes != "none"){
       
       #Get current type answer
       conditionedAnswer <- answers[answers$type == currType, "answer"]
       
-      #Get answers that can make conditioned type enabled
+      #Get answers that can make conditioned types enabled
       possibleAnswers <- strsplit(enableSettings[enableSettings$type == currType, "answers_to_enable"], ",")[[1]]
       
       if(is.element(conditionedAnswer, possibleAnswers)){
         
-        #Enable conditioned type
-        progress[progress$type == conditionedType, "disabled"] <<- FALSE
-        enable(conditionedType)
+        #Enable conditioned types
+        for (conditionedType in conditionedTypes){
+          
+          progress[progress$type == conditionedType, "disabled"] <<- FALSE
+          enable(conditionedType)
+          
+        }
         
       } else {
         
-        #Disable conditioned type
-        progress[progress$type == conditionedType, "disabled"] <<- TRUE
-        disable(conditionedType)
-        removeClass(paste0(conditionedType, "container"), "menuButtonContainerDone")
+        #Disable conditioned types
+        for (conditionedType in conditionedTypes){
+          
+          progress[progress$type == conditionedType, "disabled"] <<- TRUE
+          disable(conditionedType)
+          removeClass(paste0(conditionedType, "container"), "menuButtonContainerDone")
+          
+        }
         
       }
       

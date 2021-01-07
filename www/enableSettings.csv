@@ -6,3 +6,8 @@ Polish,WG,combine,none,FALSE,sentences,"2,3"
 Polish,WG,sentences,none,TRUE,none,
 Polish,WG,gestures,startWith,FALSE,none,
 Polish,WG,end,none,TRUE,none,
+Polish,WS,word,none,FALSE,none,
+Polish,WS,starting_to_talk,none,FALSE,none,
+Polish,WS,combine,none,FALSE,sentences,"2,3"
+Polish,WS,sentences,none,TRUE,none,
+Polish,WS,end,none,TRUE,none,

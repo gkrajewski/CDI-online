@@ -11,5 +11,15 @@ Polish,WG,sentences,input&save,FALSE,TRUE,FALSE,FALSE,sentences,twoColumns,10,FA
 Polish,WG,gestures,first,FALSE,FALSE,TRUE,FALSE,none,none,NULL,FALSE,FALSE
 Polish,WG,gestures,input,TRUE,TRUE,FALSE,FALSE,oneCheckboxGroup,oneColumn,NULL,TRUE,FALSE
 Polish,WG,gestures,last,TRUE,TRUE,FALSE,FALSE,oneCheckboxGroup,oneColumn,NULL,TRUE,FALSE
-Polish,WG,end,input&save,FALSE,TRUE,FALSE,FALSE,none,none,NULL,FALSE,TRUE
-Polish,WG,postEnd,postEnd,FALSE,TRUE,FALSE,FALSE,none,none,NULL,FALSE,TRUE
+Polish,,end,input&save,FALSE,TRUE,FALSE,FALSE,none,none,NULL,FALSE,TRUE
+Polish,,postEnd,postEnd,FALSE,TRUE,FALSE,FALSE,none,none,NULL,FALSE,TRUE
+Polish,WS,word,first,FALSE,FALSE,TRUE,TRUE,none,none,NULL,FALSE,FALSE
+Polish,WS,word,input,TRUE,FALSE,FALSE,FALSE,oneCheckboxGroup,threeColumns,NULL,TRUE,FALSE
+Polish,WS,word,last,TRUE,FALSE,FALSE,FALSE,oneCheckboxGroup,threeColumns,NULL,TRUE,TRUE
+Polish,WS,starting_to_talk,input&save,FALSE,FALSE,FALSE,FALSE,radio,oneColumn,NULL,FALSE,FALSE
+Polish,WS,combine,input&save,FALSE,FALSE,FALSE,FALSE,radio,oneColumn,NULL,FALSE,TRUE
+Polish,WS,sentences10,input&save,FALSE,TRUE,FALSE,FALSE,sentences,twoColumns,10,FALSE,FALSE
+Polish,WS,sentences3,input&save,FALSE,TRUE,FALSE,FALSE,sentences,oneColumn,3,FALSE,FALSE
+Polish,WS,sentences,first,FALSE,FALSE,TRUE,FALSE,none,none,NULL,FALSE,FALSE
+Polish,WS,sentences,input,TRUE,TRUE,TRUE,FALSE,sentences,twoColumns,10,FALSE,FALSE
+Polish,WS,sentences,last,TRUE,TRUE,TRUE,FALSE,sentences,oneColumn,3,FALSE,FALSE

@@ -13,8 +13,8 @@ server <- function(input, output, session) {
       #Get translations, items and settings connected with given language and form
       txt <<- translations[translations$language == lang & (translations$form == form | translations$form == ""),]
       items <<- allItems[allItems$language == lang & allItems$form == form,] 
-      settings <<- allSettings[allSettings$language == lang & allSettings$form == form,]
-      enableSettings <<- allEnableSettings[allEnableSettings$language == lang & allEnableSettings$form == form,]
+      settings <<- allSettings[allSettings$language == lang & (allSettings$form == form | allSettings$form == ""),]
+      enableSettings <<- allEnableSettings[allEnableSettings$language == lang & allEnableSettings$form == form, ]
     
       #Render CDI name
       output$cdiNamePrefix <- renderText({txt[txt$text_type == "cdiNamePrefix", "text"]})
@@ -130,7 +130,7 @@ server <- function(input, output, session) {
     } else {
 
       #Update URL
-      updateQueryString(paste0("?id=", "test", "&form=", "WG", "&lang=", "Polish"))
+      updateQueryString(paste0("?id=", "test", "&form=", "WS", "&lang=", "Polish"))
       
       #Reload session
       session$reload()

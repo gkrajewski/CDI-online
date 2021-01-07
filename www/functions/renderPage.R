@@ -5,10 +5,10 @@ renderPage <- function(input, output){
   
   #Get number of categories for current type
   categoriesNum <- length(unique(typeItems$category))
-  
+
   buttons <- NULL
   currPageNr <- NULL
-  
+
   if (categoriesNum > 1){
     
     #Get items categories
@@ -66,13 +66,13 @@ renderPage <- function(input, output){
     
     if (currType != "postEnd"){
       buttons <- list(actionButton("saveBtn", class = "btn-primary", label = txt[txt$text_type == "saveBtn", "text"]))
-      pageType <<- "input&save"
+      pageType <- "input&save"
     } else {
-      pageType <<- "postEnd"
+      pageType <- "postEnd"
     }
   
   }
-  
+
   #Get page settings
   pageSettings <<- typeSettings[typeSettings$page_type == pageType, ]
   
