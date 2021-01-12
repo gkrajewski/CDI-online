@@ -130,7 +130,7 @@ server <- function(input, output, session) {
     } else {
 
       #Update URL
-      updateQueryString(paste0("?id=", "test", "&form=", "WS", "&lang=", "Polish"))
+      updateQueryString(paste0("?id=", "test", "&form=", "WG", "&lang=", "Polish"))
       
       #Reload session
       session$reload()

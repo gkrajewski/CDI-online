@@ -3,7 +3,7 @@ createCheckboxQuestion <- function(questionId, choiceNames, choiceValues, select
   if (selected == 0){
     selected <- NULL
   } else {
-    selected <- strsplit(selected, "")[[1]]
+    selected <- strsplit(selected, " ")[[1]]
   }
       
   checkboxGroup <- checkboxGroupInput(
@@ -66,6 +66,12 @@ renderInputObject <- function(){
     
   } else if (pageInputType == "oneCheckboxGroup"){
     
+    # if (is.na(pageAnswer)){
+    #   selected <- c(rep("0,", nrow(pageItems)))
+    # } else {
+    #   selected <- strsplit(pageAnswer, ",")[[1]]
+    # }
+    # 
     if (is.na(pageAnswer)) pageAnswer <- 0
     choiceNames <- as.character(pageItems$definition)
     choiceValues <- c(1 : nrow(pageItems))
@@ -79,6 +85,16 @@ renderInputObject <- function(){
     
     for (i in 1 : sentencesNr){
       questions[[i]] <- textInput(paste0("s", i), label = NULL, value = sentences[i])
+    }
+    
+  } else if (pageInputType == "radioAlt"){
+    
+    for (i in 1:nrow(pageItems)){
+      
+      choiceNames <-  strsplit(pageItems[i, "definition"], "%")[[1]]
+      choiceValues <- c(1 : length(choiceNames))
+      questions[[i]] <- createRadioQuestion(paste0("mQ", i), choiceNames, choiceValues, 0)
+      
     }
     
   }

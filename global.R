@@ -31,5 +31,5 @@ source(paste0(functionsPath,"/renderInputObject.R"))
 
 #Specify available values for URL parameters
 availableIds <<- c("test") #TODO (currently inactive)
-availableForms <<- c("WG", "WS")
+availableForms <<- c("WG", "WS", "CDI3")
 availableLanguages <<- c("Polish")

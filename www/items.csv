@@ -1164,3 +1164,7 @@ item_687;Czy łatwo uczy się wierszyków, piosenek, tekstów z książeczek? ;P
 item_688;Czy dziecko zaczęło już łączyć wyrazy? Czy tworzy takie zadania jak np. „am”, „da mleko”, „tu kotek”, „mama śpi”?;Polish;WS;combine ;;;;;;688
 item_689;;Polish;WS;sentences;sentences10;;;;;
 item_690;;Polish;WS;sentences;sentences3;;;;;
+item_1;Abli babli?;Polish;CDI3;yesNo;;;;;;
+item_2;sdfsdf?;Polish;CDI3;yesNo;;;;;;
+item_1;AB%BA;Polish;CDI3;alternatives;koko;;;;;
+item_2;BC%CD;Polish;CDI3;alternatives;okok;;;;;

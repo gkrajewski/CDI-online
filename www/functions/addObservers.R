@@ -129,7 +129,7 @@ addObservers <- function(input, output){
   
   #Checkbox group
   observeEvent(input$oneCheckboxGroup, {
-    answers[answers$type == currType & answers$category == currCat & answers$answer_type == "oneCheckboxGroup", "answer"] <<- paste(input$oneCheckboxGroup, collapse =  "")
+    answers[answers$type == currType & answers$category == currCat & answers$answer_type == "oneCheckboxGroup", "answer"] <<- paste(input$oneCheckboxGroup, collapse =  " ")
   })
   
   #Comment field
@@ -151,7 +151,7 @@ addObservers <- function(input, output){
         id <- paste0("mQ", i)
         
         if (!is.null(input[[id]])){
-          answer <- paste0(input[[id]], collapse = "")
+          answer <- paste0(input[[id]], collapse = " ")
           answersPattern[[i]] <- answer
         } else {
           answersPattern[[i]] <- 0
