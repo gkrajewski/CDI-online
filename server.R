@@ -123,14 +123,14 @@ server <- function(input, output, session) {
       
       #Save answers and progress to csv file when session ended
       session$onSessionEnded(function() {
-        # write.csv(answers, answersFile, row.names = F)
-        # write.csv(progress, progressFile, row.names = F)
+        write.csv(answers, answersFile, row.names = F)
+        write.csv(progress, progressFile, row.names = F)
       })
       
     } else {
 
       #Update URL
-      updateQueryString(paste0("?id=", "test", "&form=", "WG", "&lang=", "Polish"))
+      updateQueryString(paste0("?id=", "test", "&form=", "CDI3", "&lang=", "Polish"))
       
       #Reload session
       session$reload()

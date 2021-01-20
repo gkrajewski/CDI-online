@@ -23,7 +23,7 @@ Polish,WS,sentences3,input&save,FALSE,TRUE,FALSE,FALSE,sentences,oneColumn,3,FAL
 Polish,WS,sentences,first,FALSE,FALSE,TRUE,FALSE,none,none,NULL,FALSE,FALSE
 Polish,WS,sentences,input,TRUE,TRUE,TRUE,FALSE,sentences,twoColumns,10,FALSE,FALSE
 Polish,WS,sentences,last,TRUE,TRUE,TRUE,FALSE,sentences,oneColumn,3,FALSE,FALSE
-Polish,CDI3,alternatives,first,FALSE,FALSE,FALSE,FALSE,none,none,NULL,FALSE,FALSE
+Polish,CDI3,alternatives,first,FALSE,FALSE,TRUE,FALSE,none,none,NULL,FALSE,FALSE
 Polish,CDI3,alternatives,input,FALSE,FALSE,FALSE,FALSE,radioAlt,none,NULL,FALSE,FALSE
 Polish,CDI3,alternatives,last,FALSE,FALSE,FALSE,FALSE,radioAlt,none,NULL,FALSE,FALSE
 Polish,CDI3,yesNo,input&save,FALSE,FALSE,FALSE,FALSE,radio,oneColumn,NULL,FALSE,FALSE

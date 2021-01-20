@@ -71,7 +71,8 @@ renderInputObject <- function(){
     # } else {
     #   selected <- strsplit(pageAnswer, ",")[[1]]
     # }
-    # 
+    #
+    
     if (is.na(pageAnswer)) pageAnswer <- 0
     choiceNames <- as.character(pageItems$definition)
     choiceValues <- c(1 : nrow(pageItems))
@@ -89,11 +90,17 @@ renderInputObject <- function(){
     
   } else if (pageInputType == "radioAlt"){
     
+    if (is.na(pageAnswer)){
+      selected <- c(rep("0,", nrow(pageItems)))
+    } else {
+      selected <- strsplit(pageAnswer, ",")[[1]]
+    }
+    
     for (i in 1:nrow(pageItems)){
       
       choiceNames <-  strsplit(pageItems[i, "definition"], "%")[[1]]
       choiceValues <- c(1 : length(choiceNames))
-      questions[[i]] <- createRadioQuestion(paste0("mQ", i), choiceNames, choiceValues, 0)
+      questions[[i]] <- list(createRadioQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i]), br())
       
     }
     

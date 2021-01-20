@@ -50,6 +50,7 @@ Polish;starting_to_talkBtn;3. Naśladownictwo;WG;starting_to_talk;
 Polish;header;Naśladownictwo;WG;starting_to_talk;
 Polish;choiceNames;Tak, Nie;WG;starting_to_talk;
 Polish;combineBtn;4. Łączenie wyrazów;WG;combine;
+Polish;combineBtn;3. Łączenie wyrazów ;WS;combine;
 Polish;header;Łączenie wyrazów;;combine;
 Polish;choiceNames;Jeszcze nie, Czasem, Często;;combine;
 Polish;help;Część „Wypowiedzi” uaktywni się w przypadku wybrania tutaj odpowiedzi „Czasem” lub „Często” (i zatwierdzenia jej).;;combine;
@@ -70,14 +71,15 @@ Polish;instr;Poniżej wypisano czynności opiekuńcze, jakie dzieci wykonują ba
 Polish;catHeader;Naśladowanie innych czynności dorosłych (na przedmiotach lub zabawkach);WG;gestures;gestures_adult
 Polish;instr;Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;WG;gestures;gestures_adult
 Polish;endBtn;7. Zakończ;WG;end;
+Polish;endBtn;5. Zakończ;WS;end;
 Polish;header;Zakończenie;;end;
 Polish;instr; Na tym etapie wciąż możesz edytować swoje odpowiedzi, pomimo zatwierdzenia wszystkich części. Aby zakończyć definitywnie wypełnianie inwetarza kliknij teraz przycisk „Zatwierdź”. ;;end;
-Polish;help;UWAGA: Po zapisaniu inwentarza nie będzie możliwości dalszej edycji odpowiedzi!;;end;
+Polish;help;UWAGA: Po zatwierdzeniu inwentarza nie będzie możliwości dalszej edycji odpowiedzi!;;end;
 Polish;help;Dziękujemy za wypełnienie!;;postEnd;
 Polish;instr;Dostaniesz wkrótce maila bla bla bla…;;postEnd;
 Polish;cdiNameSufix;Słowa i Zdania;WS;;
 Polish;header ;Lista słów używanych przez dziecko ;WS;word;
-Polish;wordBtn ;Wyrazy;WS;word;
+Polish;wordBtn ;1. Wyrazy;WS;word;
 Polish;longText;"Dzieci rozumieją znacznie więcej słów niż same używają w mowie. Ten kwestionariusz dotyczy tylko tych słów, które Państwa dziecko spontanicznie mówi. Nie chodzi o to, co dziecko jest w stanie powtórzyć, ale o słowa, których samo z siebie używa. Proszę uważnie przeczytać listę wyrazów i zaznaczyć te z nich, które słyszeli Państwo od swego dziecka. Jeżeli dziecko używa nieco innej formy, np. mówi „piesek”, a nie „pies”, proszę mimo to zaznaczyć plus przy słowie „pies”. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. „lybka” zamiast „rybka” lub „wiójka” zamiast „wiewiórka”); można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa. Czasami dzieci wymyślają własne wyrazy, np. „dzi” zamiast „piłka”. Także taką formę należy potraktować jako wyraz i wstawić plus przy słowie „piłka”, dodatkowo wpisując „dzi”. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać właściwe określenie. Wszelkie wątpliwości można dopisać w kwestionariuszu. ";WS;word;none
 Polish;warning;UWAGA: Kwestionariusz przeznaczony jest dla dzieci w różnym wieku. Proszę się nie martwić, jeśli Państwa dziecko jeszcze nie używa wszystkich słów i gestów, o które pytamy. ;WS;word;none
 Polish;catHeader;Odgłosy i wykrzykniki;WS;word;sounds
@@ -110,18 +112,21 @@ Polish;catHeader ;Spójniki ;WS;word;connecting_words
 Polish;note;item_681%w takich zdaniach jak np. „Jak mama przyjdzie, (to) da mi jeść”. ;WS;word;connecting_words
 Polish;note;item_682%w takich zdaniach jak np. „To nie pies, tylko kot”. ;WS;word;connecting_words
 Polish;help;Przed zapisaniem proszę sprawdzić, czy nie pominęli Państwo jakiejś strony lub rubryki? Czy na pewno zaznaczone są wszystkie wyrazy, które Państwa dziecko mówi?;WS;word;allInput
-Polish;starting_to_talkBtn;Naśladownictwo;WS;starting_to_talk;
+Polish;starting_to_talkBtn;2. Naśladownictwo;WS;starting_to_talk;
 Polish;header;Naśladownictwo;WS;starting_to_talk;
 Polish;choiceNames;Tak, Nie;WS;starting_to_talk;
-Polish;sentencesBtn;Wypowiedzi;WS;sentences;
+Polish;sentencesBtn;4. Wypowiedzi;WS;sentences;
 Polish;header;Przykłady wypowiedzi;WS;sentences;
 Polish;longText;W poniższych tabelach proszę wpisać zapamiętane lub zanotowane typowe wypowiedzenia dziecka, a także przykłady zdań szczególnie złożonych. Prosimy o podanie przykładów rzeczywistych wypowiedzi dziecka, nawet jeśli uważają Państwo, że dziecko „mówi już wszystko”. ;WS;sentences;none
 Polish;catHeader;Wypowiedzenia wielowyrazowe;WS;sentences;sentences10
 Polish;instr;Proszę podać przykłady rzeczywistych wypowiedzeń dziecka złożonych z dwu lub więcej wyrazów:;WS;sentences;sentences10
 Polish;catHeader ;Trzy najdłuższe zdania ;WS;sentences;sentences3
 Polish;instr ;Proszę podać przykłady trzech najdłuższych zdań, jakie ostatnio słyszeli Państwo od swego dziecka. (Chodzi o wypowiedzi samodzielne, a nie wierszyki, piosenki itp.);WS;sentences;sentences3
-Polish;yesNoBtn;yesNo;CDI3;yesNo;
-Polish;header;yesNo;CDI3;yesNo;
+Polish;yesNoBtn;Zadanie 2.;CDI3;yesNo;
+Polish;header;Zadanie 2.;CDI3;yesNo;
 Polish;choiceNames;Tak, Nie;CDI3;yesNo;
-Polish;alternativesBtn;Alternatywy;CDI3;alternatives;
-Polish;header;Alternatywy;CDI3;alternatives;
+Polish;alternativesBtn;Zadanie 1.;CDI3;alternatives;
+Polish;header;Zadanie 1.;CDI3;alternatives;
+Polish;endBtn;Zakończ;CDI3;;
+Polish;cdiNameSufix;Pilotaż wersji trzeciej;CDI3;;
+Polish;longText;Tu może być jakaś instrukcja/wprowadzenie.;CDI3;alternatives;none
