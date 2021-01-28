@@ -1,0 +1,9 @@
+text_type;text;item_type;category
+yesNoBtn;Zadanie 2.;yesNo;
+header;Zadanie 2.;yesNo;
+choiceNames;Tak, Nie;yesNo;
+alternativesBtn;Zadanie 1.;alternatives;
+header;Zadanie 1.;alternatives;
+endBtn;Zakończ;;
+cdiNameSufix;Pilotaż wersji trzeciej;;
+longText;Tu może być jakaś instrukcja/wprowadzenie.;alternatives;none

@@ -14,12 +14,10 @@ initPath <- getwd()
 ifelse(!dir.exists(file.path(initPath, "answers")), dir.create(file.path(initPath, "answers")), FALSE)
 ifelse(!dir.exists(file.path(initPath, "progress")), dir.create(file.path(initPath, "progress")), FALSE)
 
-#Load translations, items and settings
+#Load universal translations and settings
 setwd(dataPath)
-translations <<- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
-allItems <<- read.csv("items.csv", encoding = "UTF-8", sep = ";", strip.white = T)[1:6]
+allTxt <<- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
 allSettings <<- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
-allEnableSettings <<- read.csv("enableSettings.csv", encoding = "UTF-8", strip.white = T) 
 setwd(initPath)
 
 #Load functions

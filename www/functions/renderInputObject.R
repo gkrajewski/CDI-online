@@ -43,69 +43,76 @@ renderInputObject <- function(){
   
   questions <- list()
   
-  if (pageInputType == "radio" | pageInputType == "manyCheckboxGroups"){
+  if (pageInputType == "radio" | pageInputType == "manyCheckboxGroups" | pageInputType == "radioAlt"){
 
+    #Prepare answer loaded from csv
     if (is.na(pageAnswer)){
       selected <- c(rep("0,", nrow(pageItems)))
     } else {
       selected <- strsplit(pageAnswer, ",")[[1]]
     }
+    
+    #Prepare choice names and values
+    if (pageInputType != "radioAlt"){
+      
+      choiceNames <- strsplit(pageTxt[pageTxt$text_type == "choiceNames", "text"], ",")[[1]]
+      choiceValues <- c(1 : length(choiceNames))
+      
+    } 
 
-    choiceNames <- strsplit(pageTxt[pageTxt$text_type == "choiceNames", "text"], ",")[[1]]
-    choiceValues <- c(1 : length(choiceNames))
-
+    #Prepare list with questions
     for (i in 1:nrow(pageItems)){
       
       if (pageInputType == "radio"){
+        
         questions[[i]] <- createRadioQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i], pageItems[i, "definition"], T)
-      } else {
+        
+      } else if (pageInputType == "radioAlt"){
+        
+        choiceNames <-  strsplit(pageItems[i, "definition"], "%")[[1]]
+        choiceValues <- c(1 : length(choiceNames))
+        questions[[i]] <- list(createRadioQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i]), br())
+        
+      } else if (pageInputType == "manyCheckboxGroups") {
+        
         questions[[i]] <- createCheckboxQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i], pageItems[i, "definition"], T, noBreakInside = TRUE)
+        
       }
       
     }
     
   } else if (pageInputType == "oneCheckboxGroup"){
     
-    # if (is.na(pageAnswer)){
-    #   selected <- c(rep("0,", nrow(pageItems)))
-    # } else {
-    #   selected <- strsplit(pageAnswer, ",")[[1]]
-    # }
-    #
-    
+    #Prepare answer loaded from csv
     if (is.na(pageAnswer)) pageAnswer <- 0
+    
+    #Prepare choice names and values for checklist
     choiceNames <- as.character(pageItems$definition)
     choiceValues <- c(1 : nrow(pageItems))
+    
+    #Prepare checklist
     questions[[1]] <- createCheckboxQuestion(pageInputType, choiceNames, choiceValues, pageAnswer, noBreakInside = FALSE)
     
   } else if (pageInputType == "sentences"){
     
-    sentencesNr <- pageSettings$sentences_nr
+    #Get number of sentences
+    if (currCat != "none"){
+      sentencesNr <<- as.numeric(substr(currCat, 10, nchar(currCat)))
+    } else {
+      sentencesNr <<- as.numeric(substr(currType, 10, nchar(currType)))
+    }
+    
+    #Prepare answer loaded from csv
     if (is.na(pageAnswer)) sentences <- c(rep("%", sentencesNr))   
     sentences <- strsplit(pageAnswer, "%")[[1]]
     
+    #Prepare list of text input areas
     for (i in 1 : sentencesNr){
       questions[[i]] <- textInput(paste0("s", i), label = NULL, value = sentences[i])
     }
     
-  } else if (pageInputType == "radioAlt"){
+  } 
     
-    if (is.na(pageAnswer)){
-      selected <- c(rep("0,", nrow(pageItems)))
-    } else {
-      selected <- strsplit(pageAnswer, ",")[[1]]
-    }
-    
-    for (i in 1:nrow(pageItems)){
-      
-      choiceNames <-  strsplit(pageItems[i, "definition"], "%")[[1]]
-      choiceValues <- c(1 : length(choiceNames))
-      questions[[i]] <- list(createRadioQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i]), br())
-      
-    }
-    
-  }
-  
   return(questions)
   
 }

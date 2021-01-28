@@ -10,12 +10,16 @@ server <- function(input, output, session) {
     #Render UI if all URL parameters are correct
     if (!is.null(form) & !is.null(lang) & !is.null(id)){
       
-      #Get translations, items and settings connected with given language and form
-      txt <<- translations[translations$language == lang & (translations$form == form | translations$form == ""),]
-      items <<- allItems[allItems$language == lang & allItems$form == form,] 
-      settings <<- allSettings[allSettings$language == lang & (allSettings$form == form | allSettings$form == ""),]
-      enableSettings <<- allEnableSettings[allEnableSettings$language == lang & allEnableSettings$form == form, ]
-    
+      #Get form items, translations and settings
+      setwd(paste0(dataPath, "/", lang, "-", form))
+      items <<- read.csv("items.csv", encoding = "UTF-8", sep = ";", strip.white = T)[1:6]
+      translations <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
+      txt <<- rbind(allTxt, translations) #Bind with universal translations
+      formSettings <- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
+      settings <<- rbind(allSettings, formSettings) #Bind with universal settings
+      enableSettings <<- read.csv("enableSettings.csv", encoding = "UTF-8", strip.white = T)
+      setwd(initPath)
+      
       #Render CDI name
       output$cdiNamePrefix <- renderText({txt[txt$text_type == "cdiNamePrefix", "text"]})
       output$cdiNameSufix <- renderText({txt[txt$text_type == "cdiNameSufix", "text"]})
@@ -23,31 +27,31 @@ server <- function(input, output, session) {
       #Get types from enableSettings file
       types <<- enableSettings$type
       
-      #Bind some of types and create artificial categories as specified in enableSettings file
+      #Bind some types and create artificial categories as specified in enableSettings file
       for (type in types){
-        
+
         if (enableSettings[enableSettings$type == type, "binded_types"] != "none"){
-          
+
           if (enableSettings[enableSettings$type == type, "binded_types"] == "startWith"){
             
-            items[substr(allItems$type, 1, nchar(type)) == type, "category"] <<- allItems[substr(allItems$type, 1, nchar(type)) == type, "type"]
-            items[substr(allItems$type, 1, nchar(type)) == type, "type"] <<- type
-            
+            items[substr(items$type, 1, nchar(type)) == type, "category"] <<- items[substr(items$type, 1, nchar(type)) == type, "type"]
+            items[substr(items$type, 1, nchar(type)) == type, "type"] <<- type
+
           } else {
-            
+
             bindedTypes <- strsplit(enableSettings[enableSettings$type == type, "binded_types"], ",")[[1]]
-            
+
             for (bindedType in bindedTypes){
               
-              items[substr(allItems$type, 1, nchar(bindedType)) == bindedType, "category"] <<- allItems[substr(allItems$type, 1, nchar(bindedType)) == bindedType, "type"]
-              items[substr(allItems$type, 1, nchar(bindedType)) == bindedType, "type"] <<- type
-              
+              items[substr(items$type, 1, nchar(bindedType)) == bindedType, "category"] <<- items[substr(items$type, 1, nchar(bindedType)) == bindedType, "type"]
+              items[substr(items$type, 1, nchar(bindedType)) == bindedType, "type"] <<- type
+
             }
-            
+
           }
-          
+
         }
-        
+
       }
       
       #Get number of types
@@ -55,7 +59,6 @@ server <- function(input, output, session) {
       
       #Prepare progress file
       progressFile <- paste0("progress/", lang, "-", form, "-", id, ".csv")
-      
       if (file.exists(progressFile)){
         
         progress <<- read.csv(progressFile, encoding = "UTF-8")
@@ -97,8 +100,12 @@ server <- function(input, output, session) {
         if (progress[progress$type == type, "done"]) class <- paste(class, "menuButtonContainerDone")
         if (progress[progress$type == type, "current"]) class <- paste(class, "menuButtonContainerActive")
         
+        #TODO: Prepare title for div with button
+        # title <- ""
+        # if (type == "end") title <- "bumbum"
+        
         #Prepare button div
-        buttonDiv <- div(id = paste0(type, "container"), class = class, actionButton(type, label = txt[txt$text_type == paste0(type,"Btn"), "text"], class = "btn-primary"))
+        buttonDiv <- div(title = title, id = paste0(type, "container"), class = class, actionButton(type, label = txt[txt$text_type == paste0(type,"Btn"), "text"], class = "btn-primary"))
         if (progress[progress$type == type, "disabled"]) buttonDiv <- disabled(buttonDiv)
         
         #Add button div to list  
@@ -130,7 +137,7 @@ server <- function(input, output, session) {
     } else {
 
       #Update URL
-      updateQueryString(paste0("?id=", "test", "&form=", "CDI3", "&lang=", "Polish"))
+      updateQueryString(paste0("?id=", "test", "&form=", "WS", "&lang=", "Polish"))
       
       #Reload session
       session$reload()

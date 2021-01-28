@@ -1,0 +1,48 @@
+text_type;text;item_type;category
+combineBtn;3. Łączenie wyrazów ;combine;
+endBtn;5. Zakończ;end;
+cdiNameSufix;Słowa i Zdania;;
+header ;Lista słów używanych przez dziecko ;word;
+wordBtn ;1. Wyrazy;word;
+longText;"Dzieci rozumieją znacznie więcej słów niż same używają w mowie. Ten kwestionariusz dotyczy tylko tych słów, które Państwa dziecko spontanicznie mówi. Nie chodzi o to, co dziecko jest w stanie powtórzyć, ale o słowa, których samo z siebie używa. Proszę uważnie przeczytać listę wyrazów i zaznaczyć te z nich, które słyszeli Państwo od swego dziecka. Jeżeli dziecko używa nieco innej formy, np. mówi „piesek”, a nie „pies”, proszę mimo to zaznaczyć plus przy słowie „pies”. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. „lybka” zamiast „rybka” lub „wiójka” zamiast „wiewiórka”); można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa. Czasami dzieci wymyślają własne wyrazy, np. „dzi” zamiast „piłka”. Także taką formę należy potraktować jako wyraz i wstawić plus przy słowie „piłka”, dodatkowo wpisując „dzi”. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać właściwe określenie. Wszelkie wątpliwości można dopisać w kwestionariuszu. ";word;none
+warning;UWAGA: Kwestionariusz przeznaczony jest dla dzieci w różnym wieku. Proszę się nie martwić, jeśli Państwa dziecko jeszcze nie używa wszystkich słów i gestów, o które pytamy. ;word;none
+catHeader;Odgłosy i wykrzykniki;word;sounds
+catHeader;Zwierzęta – prawdziwe lub zabawkowe;word;animals
+catHeader;Pojazdy - prawdziwe lub zabawkowe ;word;vehicles
+catHeader;Pokarmy i napoje ;word;food_drink
+catHeader;Zabawki;word;toys
+catHeader;Ubrania ;word;clothing
+catHeader;Części ciała ;word;body_parts
+catHeader;W domu: pomieszczenia, sprzęty, meble ;word;furniture_rooms 
+catHeader;Przedmioty domowego użytku ;word;household
+catHeader;Na dworze ;word;outside
+catHeader ;Miejsca, gdzie można pójść ;word;places
+catHeader ;Osoby ;word;people
+note;item_356%Proszę wpisać, jak dziecko mówi na siebie, np. „Ika”, „Maciuś”, „Dodo”, „dzidzi”. ;word;people 
+catHeader ;Formuły, zabawy, rutynowe czynności ;word;games_routines 
+catHeader ;Nazwy cech: przymiotniki ;word;descriptive_words
+catHeader ;Nazwy czynności: czasowniki ;word;action_words
+catHeader ;Określenia miejsca;word;locations 
+catHeader ;Określenia czasu ;word;time_words 
+note;item_563%w takich zdaniach jak np. „Jeszcze pisać!”, „Jeszcze raz mi to zrób!” albo „Jeszcze nie wypiłam”. ;word;time_words
+note;item_574%Proszę zaznaczyć odpowiednie kółko, nawet jeśli dziecko używa tych określeń błędnie, np. „Jutro Jaś jadł lody.” albo „Ciocia przyjdzie wczoraj”. ;word;time_words 
+catHeader ;Określenia miary ;word;quantifiers 
+note ;"item_585%w takich zdaniach jak np. ""Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”. ";word;quantifiers
+note;item_591%w takich zdaniach jak np. „Zjem tylko serek”. ;word;quantifiers
+catHeader ;Zaimki osobowe i dzierżawcze ;word;pronouns 
+catHeader ;Pytania ;word;question_words
+catHeader ;Przyimki ;word;descriptive_words
+catHeader ;Spójniki ;word;connecting_words
+note;item_681%w takich zdaniach jak np. „Jak mama przyjdzie, (to) da mi jeść”. ;word;connecting_words
+note;item_682%w takich zdaniach jak np. „To nie pies, tylko kot”. ;word;connecting_words
+help;Przed zapisaniem proszę sprawdzić, czy nie pominęli Państwo jakiejś strony lub rubryki? Czy na pewno zaznaczone są wszystkie wyrazy, które Państwa dziecko mówi?;word;allInput
+starting_to_talkBtn;2. Naśladownictwo;starting_to_talk;
+header;Naśladownictwo;starting_to_talk;
+choiceNames;Tak, Nie;starting_to_talk;
+sentencesBtn;4. Wypowiedzi;sentences;
+header;Przykłady wypowiedzi;sentences;
+longText;W polach na następnych stronach proszę wpisać zapamiętane lub zanotowane typowe wypowiedzenia dziecka, a także przykłady zdań szczególnie złożonych. Prosimy o podanie przykładów rzeczywistych wypowiedzi dziecka, nawet jeśli uważają Państwo, że dziecko „mówi już wszystko”. ;sentences;none
+catHeader;Wypowiedzenia wielowyrazowe;sentences;sentences10
+instr;Proszę podać przykłady rzeczywistych wypowiedzeń dziecka złożonych z dwu lub więcej wyrazów:;sentences;sentences10
+catHeader ;Trzy najdłuższe zdania ;sentences;sentences3
+instr ;Proszę podać przykłady trzech najdłuższych zdań, jakie ostatnio słyszeli Państwo od swego dziecka. (Chodzi o wypowiedzi samodzielne, a nie wierszyki, piosenki itp.);sentences;sentences3

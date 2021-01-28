@@ -175,7 +175,7 @@ addObservers <- function(input, output){
       
       sentences <- c()
       
-      for (i in 1 : pageSettings$sentences_nr){
+      for (i in 1 : sentencesNr){
         
         id <- paste0("s", i)
         

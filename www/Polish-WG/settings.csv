@@ -1,0 +1,15 @@
+type,page_type,cat_header,instr,long_text,warning,input_type,css_class,comment,help
+understanding,first,FALSE,FALSE,TRUE,FALSE,none,none,FALSE,FALSE
+understanding,input,TRUE,FALSE,TRUE,FALSE,radio,oneColumn,FALSE,FALSE
+understanding,last,TRUE,TRUE,FALSE,FALSE,oneCheckboxGroup,threeColumns,TRUE,FALSE
+word,first,FALSE,FALSE,TRUE,TRUE,none,none,FALSE,FALSE
+word,input,TRUE,TRUE,FALSE,FALSE,manyCheckboxGroups,threeColumns,TRUE,FALSE
+word,last,TRUE,TRUE,FALSE,TRUE,manyCheckboxGroups,threeColumns,TRUE,TRUE
+starting_to_talk,input&save,FALSE,FALSE,FALSE,FALSE,radio,oneColumn,FALSE,FALSE
+combine,input&save,FALSE,FALSE,FALSE,FALSE,radio,oneColumn,FALSE,TRUE
+sentences10,input&save,FALSE,TRUE,FALSE,FALSE,sentences,twoColumns,FALSE,FALSE
+gestures,first,FALSE,FALSE,TRUE,FALSE,none,none,FALSE,FALSE
+gestures,input,TRUE,TRUE,FALSE,FALSE,oneCheckboxGroup,oneColumn,TRUE,FALSE
+gestures,last,TRUE,TRUE,FALSE,FALSE,oneCheckboxGroup,oneColumn,TRUE,FALSE
+end,input&save,FALSE,TRUE,FALSE,FALSE,none,none,FALSE,TRUE
+postEnd,postEnd,FALSE,TRUE,FALSE,FALSE,none,none,FALSE,TRUE

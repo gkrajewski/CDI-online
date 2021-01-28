@@ -1,132 +1,14 @@
-language;text_type;text;form;item_type;category
-Polish;backBtn;Cofnij;;;
-Polish;nextBtn;Dalej;;;
-Polish;saveBtn;Zatwierdź;;;
-Polish;commentLabel;Twoje uwagi;;;
-Polish;cdiNamePrefix;Inwentarz Rozwoju Mowy i Komunikacji;;;
-Polish;cdiNameSufix;Słowa i Gesty;WG;;
-Polish;understandingBtn;1. Rozumienie;WG;understanding;
-Polish;header;Rozumienie;WG;understanding;
-Polish;longText;Kwestionariusz ten jest polską adaptacją amerykańskiego inwentarza do badania rozwoju mowy najmłodszych dzieci (MacArthur-Bates Communicative Development Inventory). Metoda ta opiera się na wiedzy rodziców na temat rozwoju językowego własnych dzieci i dotyczy rozumienia mowy, mówienia oraz porozumiewania się przy pomocy gestów. Znaczną część inwentarza stanowią pytania o najwcześniejsze słownictwo dzieci. Rodzice mają zaznaczyć słowa, które dziecko rozumie, a także te z nich, których używa ono w mowie. Aby dobrze wypełnić kwestionariusz, należy przeczytać pytania i przez parę dni uważniej przysłuchiwać się temu, co dziecko mówi. Nie należy go przepytywać ani prosić o powtarzanie poszczególnych wyrazów, ani też „uczyć słówek”. Wystarczy, gdy rodzice odpowiedzą na pytania według własnej wiedzy o dziecku.;WG;understanding;none
-Polish;catHeader;Pierwsze przejawy rozumienia;WG;understanding;first_signs
-Polish;longText;Dzieci, zanim zaczną mówić, rozumieją wiele słów i wyrażeń. Można to stwierdzić obserwując ich reakcje na znane słowa lub zwroty. Czy Państwa dziecko wykazuje poniższe reakcje? (Proszę wybrać);WG;understanding;first_signs
-Polish;choiceNames;Tak, Nie;WG;understanding;first_signs
-Polish;catHeader;Rozumienie wypowiedzi dorosłych;WG;understanding;phrases
-Polish;instr;Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać.;WG;understanding;phrases
-Polish;wordBtn;2. Wyrazy;WG;word;
-Polish;header;Lista wyrazów;WG;word;
-Polish;longText;"Na kolejnych stronach przedstawiamy listę typowych wyrazów znanych małym dzieciom. Przy tych wyrazach, które Państwa dziecko rozumie, ale samo ich jeszcze nie mówi, proszę postawić znaczek w pierwszej kolumnie (R = rozumie). Przy tych wyrazach, które dziecko nie tylko rozumie, ale i samo mówi, proszę postawić znaczek w drugiej kolumnie (M = rozumie i mówi). Jeżeli dziecko używa nieco innej formy, np. mówi piesek, a nie pies, proszę mimo to postawić znaczek przy słowie pies. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. lybka zamiast rybka lub wiójka zamiast wiewiórka). Proszę takie słowo także zaznaczyć plusem, można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa. Czasami dzieci wymyślają własne wyrazy, np. dzi zamiast piłka; także taką formę należy potraktować jako wyraz i zaznaczyć słowo „piłka”, wpisując przy nim dodatkowo „dzi”. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać właściwe określenie. Wszelkie wątpliwości można dopisać na kwestionariuszu. 
-  ";WG;word;none
-Polish;warning;" UWAGA: Kwestionariusz przeznaczony jest dla dzieci w różnym wieku. Proszę się nie martwić, jeśli Państwa dziecko jeszcze nie używa wszystkich słów i gestów, o które pytamy!
-  ";WG;word;none
-Polish;help;Przed zatwierdzeniem proszę sprawdzić, czy nie pominęli Państwo jakiejś strony? Czy na pewno zaznaczone są wszystkie wyrazy, które Państwa dziecko rozumie / mówi?;WG;word;allInput
-Polish;instr;R = tylko rozumie M = rozumie i mówi ;WG;word;allInput
-Polish;choiceNames;R,M ;WG;word;allInput
-Polish;catHeader;Odgłosy i wykrzykniki;WG;word;sounds
-Polish;catHeader;Zwierzęta – prawdziwe lub zabawkowe;WG;word;animals
-Polish;catHeader;Pojazdy - prawdziwe lub zabawkowe ;WG;word;vehicles
-Polish;catHeader;Pokarmy i napoje ;WG;word;food_drink
-Polish;catHeader;Zabawki;WG;word;toys
-Polish;catHeader;Ubrania ;WG;word;clothing
-Polish;catHeader;Części ciała ;WG;word;body_parts
-Polish;catHeader;W domu: pomieszczenia, sprzęty, meble;WG;word;furniture_rooms
-Polish;catHeader;Przedmioty domowego użytku ;WG;word;household
-Polish;catHeader;Poza domem ;WG;word;outside
-Polish;catHeader;Osoby ;WG;word;people
-Polish;note;item_258%Proszę wpisać, jak dziecko mówi na siebie, np. „Ika”, „Maciuś”, „Dodo”, „dzidzi”. ;WG;word;people
-Polish;catHeader;Formuły, zabawy, rutynowe czynności ;WG;word;games_routines
-Polish;catHeader;Przymiotniki i przysłówki ;WG;word;descriptive_words
-Polish;catHeader;Czasowniki ;WG;word;action_words
-Polish;catHeader;Określenia miejsca;WG;word;locations
-Polish;catHeader;Określenia czasu ;WG;word;time_words
-Polish;note;item_373%w takich zdaniach np. „Już zrobiłem!” albo „Tatuś już nie śpi”.;WG;word;time_words
-Polish;note;item_374w takich zdaniach jak np. „Jeszcze pisać!”, „Jeszcze raz mi to zrób!” albo „Jeszcze nie wypiłam”. ;WG;word;time_words
-Polish;catHeader;Określenia miary ;WG;word;quantifiers
-Polish;note;"item_382%w takich zdaniach jak np. ""Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”. ";WG;word;quantifiers
-Polish;note;item_383%w takich zdaniach jak np. „Ania wszystko wypiła.” albo „Wszystko zepsute.” albo „Wszyscy śpią”. ;WG;word;quantifiers
-Polish;catHeader;Zaimki;WG;word;pronouns
-Polish;catHeader;Pytania;WG;word;question_words
-Polish;starting_to_talkBtn;3. Naśladownictwo;WG;starting_to_talk;
-Polish;header;Naśladownictwo;WG;starting_to_talk;
-Polish;choiceNames;Tak, Nie;WG;starting_to_talk;
-Polish;combineBtn;4. Łączenie wyrazów;WG;combine;
-Polish;combineBtn;3. Łączenie wyrazów ;WS;combine;
-Polish;header;Łączenie wyrazów;;combine;
-Polish;choiceNames;Jeszcze nie, Czasem, Często;;combine;
-Polish;help;Część „Wypowiedzi” uaktywni się w przypadku wybrania tutaj odpowiedzi „Czasem” lub „Często” (i zatwierdzenia jej).;;combine;
-Polish;sentencesBtn;5. Wypowiedzi;WG;sentences;
-Polish;header;Przykłady wypowiedzi;WG;sentences;
-Polish;instr;Proszę podać przykłady rzeczywistych wypowiedzi dziecka:;WG;sentences;
-Polish;gesturesBtn;6. Gesty;WG;gestures;
-Polish;longText;Kiedy dzieci uczą się porozumiewać z innymi ludźmi, często posługują się gestami, aby wyrazić swoje pragnienia. Przy każdym z gestów na następnych stronach proszę postawić znaczek przy tym określeniu, które pasuje do tego, co Państwa dziecko aktualnie robi. ;WG;gestures;none
-Polish;header;Gesty;WG;gestures;
-Polish;catHeader;Pierwsze gesty komunikatywne;WG;gestures;gestures_first
-Polish;instr;Czy Państwa dziecko używa wymienionych niżej gestów? ;WG;gestures;gestures_first
-Polish;catHeader;Zabawy i rytuały;WG;gestures;gestures_games
-Polish;instr;Czy Państwa dziecko wykonuje wymienione niżej czynności?;WG;gestures;gestures_games
-Polish;catHeader;Działania na przedmiotach;WG;gestures;gestures_objects
-Polish;instr;Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;WG;gestures;gestures_objects
-Polish;catHeader;Zabawa lalką lub misiem: czynności opiekuńcze;WG;gestures;gestures_parent
-Polish;instr;Poniżej wypisano czynności opiekuńcze, jakie dzieci wykonują bawiąc się lalkami lub misiami. Proszę zaznaczyć te z nich, które zaobserwowali Państwo u swego dziecka.;WG;gestures;gestures_parent
-Polish;catHeader;Naśladowanie innych czynności dorosłych (na przedmiotach lub zabawkach);WG;gestures;gestures_adult
-Polish;instr;Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;WG;gestures;gestures_adult
-Polish;endBtn;7. Zakończ;WG;end;
-Polish;endBtn;5. Zakończ;WS;end;
-Polish;header;Zakończenie;;end;
-Polish;instr; Na tym etapie wciąż możesz edytować swoje odpowiedzi, pomimo zatwierdzenia wszystkich części. Aby zakończyć definitywnie wypełnianie inwetarza kliknij teraz przycisk „Zatwierdź”. ;;end;
-Polish;help;UWAGA: Po zatwierdzeniu inwentarza nie będzie możliwości dalszej edycji odpowiedzi!;;end;
-Polish;help;Dziękujemy za wypełnienie!;;postEnd;
-Polish;instr;Dostaniesz wkrótce maila bla bla bla…;;postEnd;
-Polish;cdiNameSufix;Słowa i Zdania;WS;;
-Polish;header ;Lista słów używanych przez dziecko ;WS;word;
-Polish;wordBtn ;1. Wyrazy;WS;word;
-Polish;longText;"Dzieci rozumieją znacznie więcej słów niż same używają w mowie. Ten kwestionariusz dotyczy tylko tych słów, które Państwa dziecko spontanicznie mówi. Nie chodzi o to, co dziecko jest w stanie powtórzyć, ale o słowa, których samo z siebie używa. Proszę uważnie przeczytać listę wyrazów i zaznaczyć te z nich, które słyszeli Państwo od swego dziecka. Jeżeli dziecko używa nieco innej formy, np. mówi „piesek”, a nie „pies”, proszę mimo to zaznaczyć plus przy słowie „pies”. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. „lybka” zamiast „rybka” lub „wiójka” zamiast „wiewiórka”); można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa. Czasami dzieci wymyślają własne wyrazy, np. „dzi” zamiast „piłka”. Także taką formę należy potraktować jako wyraz i wstawić plus przy słowie „piłka”, dodatkowo wpisując „dzi”. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać właściwe określenie. Wszelkie wątpliwości można dopisać w kwestionariuszu. ";WS;word;none
-Polish;warning;UWAGA: Kwestionariusz przeznaczony jest dla dzieci w różnym wieku. Proszę się nie martwić, jeśli Państwa dziecko jeszcze nie używa wszystkich słów i gestów, o które pytamy. ;WS;word;none
-Polish;catHeader;Odgłosy i wykrzykniki;WS;word;sounds
-Polish;catHeader;Zwierzęta – prawdziwe lub zabawkowe;WS;word;animals
-Polish;catHeader;Pojazdy - prawdziwe lub zabawkowe ;WS;word;vehicles
-Polish;catHeader;Pokarmy i napoje ;WS;word;food_drink
-Polish;catHeader;Zabawki;WS;word;toys
-Polish;catHeader;Ubrania ;WS;word;clothing
-Polish;catHeader;Części ciała ;WS;word;body_parts
-Polish;catHeader;W domu: pomieszczenia, sprzęty, meble ;WS;word;furniture_rooms 
-Polish;catHeader;Przedmioty domowego użytku ;WS;word;household
-Polish;catHeader;Na dworze ;WS;word;outside
-Polish;catHeader ;Miejsca, gdzie można pójść ;WS;word;places
-Polish;catHeader ;Osoby ;WS;word;people
-Polish;note;item_356%Proszę wpisać, jak dziecko mówi na siebie, np. „Ika”, „Maciuś”, „Dodo”, „dzidzi”. ;WS;word;people 
-Polish;catHeader ;Formuły, zabawy, rutynowe czynności ;WS;word;games_routines 
-Polish;catHeader ;Nazwy cech: przymiotniki ;WS;word;descriptive_words
-Polish;catHeader ;Nazwy czynności: czasowniki ;WS;word;action_words
-Polish;catHeader ;Określenia miejsca;WS;word;locations 
-Polish;catHeader ;Określenia czasu ;WS;word;time_words 
-Polish;note;item_563%w takich zdaniach jak np. „Jeszcze pisać!”, „Jeszcze raz mi to zrób!” albo „Jeszcze nie wypiłam”. ;WS;word;time_words
-Polish;note;item_574%Proszę zaznaczyć odpowiednie kółko, nawet jeśli dziecko używa tych określeń błędnie, np. „Jutro Jaś jadł lody.” albo „Ciocia przyjdzie wczoraj”. ;WS;word;time_words 
-Polish;catHeader ;Określenia miary ;WS;word;quantifiers 
-Polish;note ;"item_585%w takich zdaniach jak np. ""Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”. ";WS;word;quantifiers
-Polish;note;item_591%w takich zdaniach jak np. „Zjem tylko serek”. ;WS;word;quantifiers
-Polish;catHeader ;Zaimki osobowe i dzierżawcze ;WS;word;pronouns 
-Polish;catHeader ;Pytania ;WS;word;question_words
-Polish;catHeader ;Przyimki ;WS;word;descriptive_words
-Polish;catHeader ;Spójniki ;WS;word;connecting_words
-Polish;note;item_681%w takich zdaniach jak np. „Jak mama przyjdzie, (to) da mi jeść”. ;WS;word;connecting_words
-Polish;note;item_682%w takich zdaniach jak np. „To nie pies, tylko kot”. ;WS;word;connecting_words
-Polish;help;Przed zapisaniem proszę sprawdzić, czy nie pominęli Państwo jakiejś strony lub rubryki? Czy na pewno zaznaczone są wszystkie wyrazy, które Państwa dziecko mówi?;WS;word;allInput
-Polish;starting_to_talkBtn;2. Naśladownictwo;WS;starting_to_talk;
-Polish;header;Naśladownictwo;WS;starting_to_talk;
-Polish;choiceNames;Tak, Nie;WS;starting_to_talk;
-Polish;sentencesBtn;4. Wypowiedzi;WS;sentences;
-Polish;header;Przykłady wypowiedzi;WS;sentences;
-Polish;longText;W poniższych tabelach proszę wpisać zapamiętane lub zanotowane typowe wypowiedzenia dziecka, a także przykłady zdań szczególnie złożonych. Prosimy o podanie przykładów rzeczywistych wypowiedzi dziecka, nawet jeśli uważają Państwo, że dziecko „mówi już wszystko”. ;WS;sentences;none
-Polish;catHeader;Wypowiedzenia wielowyrazowe;WS;sentences;sentences10
-Polish;instr;Proszę podać przykłady rzeczywistych wypowiedzeń dziecka złożonych z dwu lub więcej wyrazów:;WS;sentences;sentences10
-Polish;catHeader ;Trzy najdłuższe zdania ;WS;sentences;sentences3
-Polish;instr ;Proszę podać przykłady trzech najdłuższych zdań, jakie ostatnio słyszeli Państwo od swego dziecka. (Chodzi o wypowiedzi samodzielne, a nie wierszyki, piosenki itp.);WS;sentences;sentences3
-Polish;yesNoBtn;Zadanie 2.;CDI3;yesNo;
-Polish;header;Zadanie 2.;CDI3;yesNo;
-Polish;choiceNames;Tak, Nie;CDI3;yesNo;
-Polish;alternativesBtn;Zadanie 1.;CDI3;alternatives;
-Polish;header;Zadanie 1.;CDI3;alternatives;
-Polish;endBtn;Zakończ;CDI3;;
-Polish;cdiNameSufix;Pilotaż wersji trzeciej;CDI3;;
-Polish;longText;Tu może być jakaś instrukcja/wprowadzenie.;CDI3;alternatives;none
+text_type;text;item_type;category
+backBtn;Cofnij;;
+nextBtn;Dalej;;
+saveBtn;Zatwierdź;;
+commentLabel;Twoje uwagi;;
+cdiNamePrefix;Inwentarz Rozwoju Mowy i Komunikacji;;
+header;Łączenie wyrazów;combine;
+choiceNames;Jeszcze nie, Czasem, Często;combine;
+help;Część „Wypowiedzi” uaktywni się w przypadku wybrania tutaj odpowiedzi „Czasem” lub „Często” (i zatwierdzenia jej).;combine;
+header;Zakończenie;end;
+instr; Na tym etapie wciąż możesz edytować swoje odpowiedzi, pomimo zatwierdzenia wszystkich części. Aby zakończyć definitywnie wypełnianie inwetarza kliknij teraz przycisk „Zatwierdź”. ;end;
+help;UWAGA: Po zatwierdzeniu inwentarza nie będzie możliwości dalszej edycji odpowiedzi!;end;
+help;Dziękujemy za wypełnienie!;postEnd;
+instr;Dostaniesz wkrótce maila bla bla bla…;postEnd;

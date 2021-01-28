@@ -28,7 +28,7 @@ ui <- fluidPage(
     
     mainPanel(
       
-      uiOutput("main"), #main content of page (input object, comment field etc.)
+      uiOutput("main") #main content of page (input object, comment field etc.)
       
     )
     
