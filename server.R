@@ -100,9 +100,9 @@ server <- function(input, output, session) {
         if (progress[progress$type == type, "done"]) class <- paste(class, "menuButtonContainerDone")
         if (progress[progress$type == type, "current"]) class <- paste(class, "menuButtonContainerActive")
         
-        #TODO: Prepare title for div with button
-        # title <- ""
-        # if (type == "end") title <- "bumbum"
+        #Prepare title for div with button
+        title <- ""
+        if (is.element(paste0(type, "Tooltip"), txt$text_type)) title <- txt[txt$text_type == paste0(type, "Tooltip"), "text"]
         
         #Prepare button div
         buttonDiv <- div(title = title, id = paste0(type, "container"), class = class, actionButton(type, label = txt[txt$text_type == paste0(type,"Btn"), "text"], class = "btn-primary"))
@@ -122,11 +122,14 @@ server <- function(input, output, session) {
       output$menu <- renderUI({typeButtonsDivs})
       
       #Start app
+      #TODO: HTTP start request
       type <- types[match(TRUE, progress$current)] #get current type according to progress df
       renderType(input, output, type)
       
       #Add observers (sidebar buttons and input objects)
-      addObservers(input, output)
+      #addObservers(input, output)
+      addSidebarObservers(input, output)
+      addDataSaving(input, output)
       
       #Save answers and progress to csv file when session ended
       session$onSessionEnded(function() {
@@ -137,7 +140,7 @@ server <- function(input, output, session) {
     } else {
 
       #Update URL
-      updateQueryString(paste0("?id=", "test", "&form=", "WS", "&lang=", "Polish"))
+      updateQueryString(paste0("?id=", "test", "&form=", "WG", "&lang=", "Polish"))
       
       #Reload session
       session$reload()

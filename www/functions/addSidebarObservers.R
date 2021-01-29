@@ -1,10 +1,4 @@
-addObservers <- function(input, output){
-
-  #################################
-  
-  ### SIDEBAR BUTTONS OBSERVERS ###
-  
-  #################################
+addSidebarObservers <- function(input, output){
   
   #Save button
   observeEvent(input$saveBtn, {
@@ -14,7 +8,6 @@ addObservers <- function(input, output){
     addClass(paste0(currType, "container"), "menuButtonContainerDone")
     
     #Get type conditioned by current type (if any)
-    # conditionedType <- enableSettings[enableSettings$type == currType, "conditions"]
     conditionedTypes <- strsplit(enableSettings[enableSettings$type == currType, "conditions"], ",")[[1]]
     
     if (conditionedTypes != "none"){
@@ -62,11 +55,11 @@ addObservers <- function(input, output){
       
     }
     
-    #Render end if all types are done
     if(allDone){
       
       if (!progress[progress$type == "end", "done"]){
         
+        #Render end
         progress[progress$type == "end", "disabled"] <<- FALSE
         enable("end")
         addClass("end", "endEnabled")
@@ -74,6 +67,8 @@ addObservers <- function(input, output){
         
       } else {
         
+        #TODO: HTTP request cdi end
+        #Render post end 
         renderType(input, output, "postEnd")
         
         for (type in types){
@@ -86,7 +81,7 @@ addObservers <- function(input, output){
       }
       
     }
-      
+    
   })
   
   #Next button
@@ -118,79 +113,6 @@ addObservers <- function(input, output){
     
     #Render page
     renderPage(input, output)
-    
-  })
-  
-  #############################################
-  
-  ### INPUT OBJECTS OBSERVERS (DATA SAVING) ###
-  
-  #############################################
-  
-  #Checkbox group
-  observeEvent(input$oneCheckboxGroup, {
-    answers[answers$type == currType & answers$category == currCat & answers$answer_type == "oneCheckboxGroup", "answer"] <<- paste(input$oneCheckboxGroup, collapse =  " ")
-  })
-  
-  #Comment field
-  observeEvent(input$comment, {
-    answers[answers$type == currType & answers$category == currCat & answers$answer_type == "comment", "answer"] <<- input$comment
-  })
-  
-  #Multi questions (max 200)
-  lapply(1:200, function(i){
-    
-    id <- paste0("mQ", i)
-    
-    observeEvent(input[[id]], {
-
-      answersPattern <- c()
-      
-      for (i in 1 : nrow(pageItems)){
-        
-        id <- paste0("mQ", i)
-        
-        if (!is.null(input[[id]])){
-          answer <- paste0(input[[id]], collapse = " ")
-          answersPattern[[i]] <- answer
-        } else {
-          answersPattern[[i]] <- 0
-        }
-        
-      }
-      
-      answersPattern <- paste0(answersPattern, collapse = ",")
-      answers[answers$type == currType & answers$category == currCat & answers$answer_type == pageInputType, "answer"] <<- answersPattern
-      
-    })
-    
-  })
-  
-  #Sentences (max 10)
-  lapply(1:10, function(i){
-    
-    id <- paste0("s", i)
-    
-    observeEvent(input[[id]], {
-      
-      sentences <- c()
-      
-      for (i in 1 : sentencesNr){
-        
-        id <- paste0("s", i)
-        
-        if (!is.null(input[[id]])){
-          sentences[[i]] <- input[[id]]
-        } else {
-          sentences[[i]] <- ""
-        }
-        
-      }
-      
-      sentences <- paste0(sentences, collapse = "%")
-      answers[answers$type == currType & answers$category == currCat & answers$answer_type == "sentences", "answer"] <<- sentences
-      
-    })
     
   })
   

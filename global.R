@@ -22,7 +22,8 @@ setwd(initPath)
 
 #Load functions
 source(paste0(functionsPath,"/readFromURL.R"))
-source(paste0(functionsPath,"/addObservers.R"))
+source(paste0(functionsPath,"/addSidebarObservers.R"))
+source(paste0(functionsPath,"/addDataSaving.R"))
 source(paste0(functionsPath,"/renderType.R"))
 source(paste0(functionsPath,"/renderPage.R"))
 source(paste0(functionsPath,"/renderInputObject.R"))

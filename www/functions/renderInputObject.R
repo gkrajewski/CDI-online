@@ -113,6 +113,6 @@ renderInputObject <- function(){
     
   } 
     
-  return(questions)
+  return(div(id="currInput", questions))
   
 }
