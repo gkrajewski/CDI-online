@@ -651,29 +651,29 @@ item_649;po co?/na co?;word;question_words;function_words;function_words;for wha
 item_650;jaki?;word;question_words;function_words;function_words;;;650
 item_651;który?;word;question_words;function_words;function_words;which;;651
 item_652;ile?;word;question_words;function_words;function_words;how much;;652
-item_653;chyba;word;descriptive_words;predicates;modal_adverbs;maybe;;653
-item_654;może;word;descriptive_words;predicates;modal_adverbs;perhaps;;654
-item_655;na pewno;word;descriptive_words;predicates;modal_adverbs;for sure;;655
-item_656;naprawdę;word;descriptive_words;predicates;modal_adverbs;really;;656
-item_657;pewnie;word;descriptive_words;predicates;modal_adverbs;surely;;657
-item_658;przecież;word;descriptive_words;predicates;modal_adverbs;though;;658
-item_659;w ogóle;word;descriptive_words;predicates;modal_adverbs;at all;;659
-item_660;właśnie;word;descriptive_words;predicates;modal_adverbs;exactly;;660
-item_661;bez (np. bez czapki);word;descriptive_words;predicates;prepositions;without ;;661
-item_662;dla (np. dla mamy);word;descriptive_words;predicates;prepositions;for;;662
-item_663;do (np. do pracy, do babci);word;descriptive_words;predicates;prepositions;to;;663
-item_664;na (np. na stole);word;descriptive_words;predicates;prepositions;on;;664
-item_665;koło/obok (np. koło szafy, obok taty);word;descriptive_words;predicates;prepositions;next to ;;665
-item_666;o (np. o kotku);word;descriptive_words;predicates;prepositions;about ;;666
-item_667;od (np. od wujka);word;descriptive_words;predicates;prepositions;from;;667
-item_668;po (np. po lesie, po wodę);word;descriptive_words;predicates;prepositions;;;668
-item_669;pod (np.pod stołem);word;descriptive_words;predicates;prepositions;under;;669
-item_670;przed (np. przed sklepem, przed obiadem);word;descriptive_words;predicates;prepositions;in front of ;;670
-item_671;u (np. u cioci);word;descriptive_words;predicates;prepositions;at;;671
-item_672;w (np. w kuchni);word;descriptive_words;predicates;prepositions;in;;672
-item_673;za (np. za szafą);word;descriptive_words;predicates;prepositions;behind ;;673
-item_674;z (np. z tatusiem, z cukrem);word;descriptive_words;predicates;prepositions;with;;674
-item_675;z (np. z łazienki) ;word;descriptive_words;predicates;prepositions;from;;675
+item_653;chyba;word;modal_adverbs;predicates;modal_adverbs;maybe;;653
+item_654;może;word;modal_adverbs;predicates;modal_adverbs;perhaps;;654
+item_655;na pewno;word;modal_adverbs;predicates;modal_adverbs;for sure;;655
+item_656;naprawdę;word;modal_adverbs;predicates;modal_adverbs;really;;656
+item_657;pewnie;word;modal_adverbs;predicates;modal_adverbs;surely;;657
+item_658;przecież;word;modal_adverbs;predicates;modal_adverbs;though;;658
+item_659;w ogóle;word;modal_adverbs;predicates;modal_adverbs;at all;;659
+item_660;właśnie;word;modal_adverbs;predicates;modal_adverbs;exactly;;660
+item_661;bez (np. bez czapki);word;prepositions;predicates;prepositions;without ;;661
+item_662;dla (np. dla mamy);word;prepositions;predicates;prepositions;for;;662
+item_663;do (np. do pracy, do babci);word;prepositions;predicates;prepositions;to;;663
+item_664;na (np. na stole);word;prepositions;predicates;prepositions;on;;664
+item_665;koło/obok (np. koło szafy, obok taty);word;prepositions;predicates;prepositions;next to ;;665
+item_666;o (np. o kotku);word;prepositions;predicates;prepositions;about ;;666
+item_667;od (np. od wujka);word;prepositions;predicates;prepositions;from;;667
+item_668;po (np. po lesie, po wodę);word;prepositions;predicates;prepositions;;;668
+item_669;pod (np.pod stołem);word;prepositions;predicates;prepositions;under;;669
+item_670;przed (np. przed sklepem, przed obiadem);word;prepositions;predicates;prepositions;in front of ;;670
+item_671;u (np. u cioci);word;prepositions;predicates;prepositions;at;;671
+item_672;w (np. w kuchni);word;prepositions;predicates;prepositions;in;;672
+item_673;za (np. za szafą);word;prepositions;predicates;prepositions;behind ;;673
+item_674;z (np. z tatusiem, z cukrem);word;prepositions;predicates;prepositions;with;;674
+item_675;z (np. z łazienki) ;word;prepositions;predicates;prepositions;from;;675
 item_676;a;word;connecting_words;function_words;conjunctions;;;676
 item_677;albo;word;connecting_words;function_words;conjunctions;or;;677
 item_678;ale;word;connecting_words;function_words;conjunctions;but;;678

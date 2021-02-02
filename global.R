@@ -16,18 +16,15 @@ ifelse(!dir.exists(file.path(initPath, "progress")), dir.create(file.path(initPa
 
 #Load universal translations and settings
 setwd(dataPath)
-allTxt <<- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
-allSettings <<- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
+# allTxt <<- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
+uniSettings <<- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
 setwd(initPath)
 
 #Load functions
 source(paste0(functionsPath,"/readFromURL.R"))
-source(paste0(functionsPath,"/addObservers.R"))
+source(paste0(functionsPath,"/addSidebarObservers.R"))
+source(paste0(functionsPath,"/addDataSaving.R"))
 source(paste0(functionsPath,"/renderType.R"))
 source(paste0(functionsPath,"/renderPage.R"))
 source(paste0(functionsPath,"/renderInputObject.R"))
-
-#Specify available values for URL parameters
-availableIds <<- c("test") #TODO (currently inactive)
-availableForms <<- c("WG", "WS", "CDI3")
-availableLanguages <<- c("Polish")
+source(paste0(functionsPath,"/countScore.R"))
