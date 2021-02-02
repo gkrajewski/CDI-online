@@ -4,3 +4,4 @@ starting_to_talk,none,FALSE,none,
 combine,none,FALSE,sentences,"2,3"
 sentences,none,TRUE,none,
 end,none,TRUE,none,
+postEnd,none,TRUE,none,

@@ -6,3 +6,4 @@ combine,none,FALSE,sentences10,"2,3"
 sentences10,none,TRUE,none,
 gestures,startWith,FALSE,none,
 end,none,TRUE,none,
+postEnd,none,TRUE,none,

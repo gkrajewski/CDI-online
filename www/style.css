@@ -73,7 +73,7 @@ h5 {
     break-inside: avoid;
 }
 
-.oneColumn> #oneCheckboxGroup {
+#currInput> #oneCheckboxGroup {
 	width: 1000px;
 }
 

@@ -1,7 +1,9 @@
-addSidebarObservers <- function(input, output){
+addSidebarObservers <- function(input, output, form){
   
   #Save button
   observeEvent(input$saveBtn, {
+    
+    if (currType == 'word') countScore(form)
     
     #Mark current type as done
     progress[progress$type == currType, "done"] <<- TRUE
@@ -44,18 +46,18 @@ addSidebarObservers <- function(input, output){
     }
     
     #Render 1st not done type (from left)
-    allDone <- TRUE
+    allEnabledDone <- TRUE
     for (type in types){
       
       if (!progress[progress$type == type, "done"] & !progress[progress$type == type, "disabled"]){
         renderType(input, output, type)
-        allDone <- FALSE
+        allEnabledDone <- FALSE
         break
       } 
       
     }
     
-    if(allDone){
+    if(allEnabledDone){
       
       if (!progress[progress$type == "end", "done"]){
         

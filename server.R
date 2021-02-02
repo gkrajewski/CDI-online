@@ -3,22 +3,28 @@ server <- function(input, output, session) {
   observe({
     
     #Read parameters values from URL
-    id <- readFromURL("id", session, availableIds)
-    form <- readFromURL("form", session, availableForms)
-    lang <- readFromURL("lang", session, availableLanguages)
+    id <- readFromURL("id", session)
+    form <- readFromURL("form", session)
+    lang <- readFromURL("lang", session)
     
-    #Render UI if all URL parameters are correct
+    #Render UI if all needed URL parameters are given
     if (!is.null(form) & !is.null(lang) & !is.null(id)){
       
-      #Get form items, translations and settings
-      setwd(paste0(dataPath, "/", lang, "-", form))
+      #Get language universal translations
+      setwd(paste0(dataPath, "/", lang))
+      uniTransl <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
+      
+      #Get form specific items, translations and settings
+      setwd(paste0(dataPath, "/", lang, "/", form))
       items <<- read.csv("items.csv", encoding = "UTF-8", sep = ";", strip.white = T)[1:6]
-      translations <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
-      txt <<- rbind(allTxt, translations) #Bind with universal translations
+      transl <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
       formSettings <- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
-      settings <<- rbind(allSettings, formSettings) #Bind with universal settings
-      enableSettings <<- read.csv("enableSettings.csv", encoding = "UTF-8", strip.white = T)
+      enableSettings <<- read.csv("enablesettings.csv", encoding = "UTF-8", strip.white = T)
       setwd(initPath)
+      
+      #Join form specific and universal translations and settings
+      txt <<- rbind(uniTransl, transl)
+      settings <<- rbind(uniSettings, formSettings) 
       
       #Render CDI name
       output$cdiNamePrefix <- renderText({txt[txt$text_type == "cdiNamePrefix", "text"]})
@@ -90,8 +96,8 @@ server <- function(input, output, session) {
       #Prepare list of type buttons divs
       typeButtonsDivs <<- list()
       
-      #Fill in list of type buttons divs
-      lapply(1:typesNr, function(i) {
+      #Fill in list of type buttons divs (except postEnd type)
+      lapply(1:(typesNr - 1), function(i) {
 
         type <- types[i]
         
@@ -128,7 +134,7 @@ server <- function(input, output, session) {
       
       #Add observers (sidebar buttons and input objects)
       #addObservers(input, output)
-      addSidebarObservers(input, output)
+      addSidebarObservers(input, output, form)
       addDataSaving(input, output)
       
       #Save answers and progress to csv file when session ended
@@ -140,7 +146,7 @@ server <- function(input, output, session) {
     } else {
 
       #Update URL
-      updateQueryString(paste0("?id=", "test", "&form=", "WG", "&lang=", "Polish"))
+      updateQueryString(paste0("?id=", "test", "&form=", "WS", "&lang=", "Polish"))
       
       #Reload session
       session$reload()

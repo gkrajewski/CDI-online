@@ -31,7 +31,8 @@ note ;"item_585%w takich zdaniach jak np. ""Jeszcze mleka!”, „Jeszcze jedną
 note;item_591%w takich zdaniach jak np. „Zjem tylko serek”. ;word;quantifiers
 catHeader ;Zaimki osobowe i dzierżawcze ;word;pronouns 
 catHeader ;Pytania ;word;question_words
-catHeader ;Przyimki ;word;descriptive_words
+catHeader ;Przysłówki modalne;word;modal_adverbs
+catHeader;Przyimki ;word;prepositions
 catHeader ;Spójniki ;word;connecting_words
 note;item_681%w takich zdaniach jak np. „Jak mama przyjdzie, (to) da mi jeść”. ;word;connecting_words
 note;item_682%w takich zdaniach jak np. „To nie pies, tylko kot”. ;word;connecting_words
