@@ -19,7 +19,7 @@ server <- function(input, output, session) {
       items <<- read.csv("items.csv", encoding = "UTF-8", sep = ";", strip.white = T)[1:6]
       transl <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
       formSettings <- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
-      enableSettings <<- read.csv("enablesettings.csv", encoding = "UTF-8", strip.white = T)
+      enableSettings <<- read.csv("enableSettings.csv", encoding = "UTF-8", strip.white = T)
       setwd(initPath)
       
       #Join form specific and universal translations and settings
