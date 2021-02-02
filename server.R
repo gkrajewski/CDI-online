@@ -133,7 +133,6 @@ server <- function(input, output, session) {
       renderType(input, output, type)
       
       #Add observers (sidebar buttons and input objects)
-      #addObservers(input, output)
       addSidebarObservers(input, output, form)
       addDataSaving(input, output)
       
@@ -146,7 +145,7 @@ server <- function(input, output, session) {
     } else {
 
       #Update URL
-      updateQueryString(paste0("?id=", "test", "&form=", "WS", "&lang=", "Polish"))
+      updateQueryString(paste0("?id=", "test", "&form=", "WG", "&lang=", "Polish"))
       
       #Reload session
       session$reload()
