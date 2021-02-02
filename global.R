@@ -16,7 +16,6 @@ ifelse(!dir.exists(file.path(initPath, "progress")), dir.create(file.path(initPa
 
 #Load universal translations and settings
 setwd(dataPath)
-# allTxt <<- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
 uniSettings <<- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
 setwd(initPath)
 
