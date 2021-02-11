@@ -12,7 +12,7 @@ server <- function(input, output, session) {
       
       #Get language universal translations
       setwd(paste0(dataPath, "/", lang))
-      uniTransl <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
+      uniTransl <- read.csv("uniTranslations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
       
       #Get form specific items, translations and settings
       setwd(paste0(dataPath, "/", lang, "/", form))

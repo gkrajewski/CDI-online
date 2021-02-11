@@ -11,12 +11,14 @@ functionsPath <- paste0(dataPath,"/functions")
 initPath <- getwd()
 
 #Create folders with user progress and answers if they don't exist
-ifelse(!dir.exists(file.path(initPath, "answers")), dir.create(file.path(initPath, "answers")), FALSE)
-ifelse(!dir.exists(file.path(initPath, "progress")), dir.create(file.path(initPath, "progress")), FALSE)
+if(!dir.exists(file.path(initPath, "answers"))) dir.create(file.path(initPath, "answers")) 
+if(!dir.exists(file.path(initPath, "progress"))) dir.create(file.path(initPath, "progress")) 
+# ifelse(!dir.exists(file.path(initPath, "answers")), dir.create(file.path(initPath, "answers")), FALSE)
+# ifelse(!dir.exists(file.path(initPath, "progress")), dir.create(file.path(initPath, "progress")), FALSE)
 
-#Load universal translations and settings
+#Load universal settings
 setwd(dataPath)
-uniSettings <<- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
+uniSettings <<- read.csv("uniSettings.csv", encoding = "UTF-8", strip.white = T)
 setwd(initPath)
 
 #Load functions

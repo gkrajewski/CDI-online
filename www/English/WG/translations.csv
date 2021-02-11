@@ -1,0 +1,64 @@
+text_type; text; item_type; category
+cdiNameSufix; Words and Gestures ;;
+understandingBtn; 1. Understanding;understanding;
+header; Understanding; understanding;
+longText;" This questionnaire is a Polish adaptation of the American inventory for the study of speech development in the youngest children (MacArthur-Bates Communicative Development Inventory). This method is based on parents' knowledge of their children's linguistic development and concerns speech understanding, speaking and communication using gestures. Much of the inventory consists of questions about the earliest vocabulary of children. Parents are asked to mark the words the child understands as well as those used in speech. To complete the questionnaire correctly, you should read the questions and listen to what your child is saying for a few days. He should not be questioned or asked to repeat individual words, nor should he ""teach words"". It is enough for the parents to answer the questions according to their knowledge about the child."; understanding; none
+catHeader; First signs of understanding; understanding; first_signs
+longText; Children understand many words and phrases before speaking. You can tell by watching their reactions to familiar words or phrases. Does your child show the following reactions? (Please select); understanding; first_signs
+choiceNames; Yes, No; understanding; first_signs
+catHeader; Adult speech understanding; understanding; phrases
+instr; Please mark the statements that you think your child understands. If something is missing from the list, please add.; understanding; phrases
+wordBtn; 2. Words; word;
+header; Word list; word;
+longText;"On the following pages we present a list of common words known to young children. For those words that your child understands but does not yet say them, please put a stamp in the first column (R = understand). For those words that your child does not only understand understands, but also says the same, please put a stamp in the second column (M = understands and speaks). If the child uses a slightly different form, e.g. dog says, not dog, please put a stamp next to the word dog. , if the child pronounces a word differently (e.g. a lyb instead of a fish or a string instead of a squirrel). Please also mark such a word with a plus, you can also enter the wording in the form in which the child uses it. Sometimes children make up their own words, e.g. today instead of a ball; also such a form should be treated as a word and the word ""ball"" should be marked, additionally entering ""y."" mark the appropriate item and add the appropriate phrase. Any doubts can be added on the questionnaire.
+  "; word; none
+warning;"NOTE: The questionnaire is intended for children of all ages. Please do not worry if your child does not yet use all the words and gestures we ask for!
+  "; word; none
+help; Please check if you have missed any page before submitting? Are you sure that all the words your child understands / says are selected?; Word; allInput
+instr; R = only understands M = understands and says; word; allInput
+choiceNames; R, M; word; allInput
+catHeader; Sounds and exclamation marks; word; sounds
+catHeader; Animals - real or toy; word; animals
+catHeader; Vehicles - real or toy; word; vehicles
+catHeader; Foods and drinks; word; food_drink
+catHeader; Toys; word; toys
+catHeader; Clothes; word; clothing
+catHeader; Body parts; word; body_parts
+catHeader; At home: rooms, appliances, furniture; word; furniture_rooms
+catHeader; Household items; word; household
+catHeader; Away; word; outside
+catHeader; People; word; people
+note;" item_258% Please enter how your child speaks to himself, eg ""Ika"", ""Maciuś"", ""Dodo"", ""Dzidzia"". "; word; people
+catHeader; Formulas, games, routines; word; games_routines
+catHeader; Adjectives and adverbs; word; descriptive_words
+catHeader; Verbs; word; action_words
+catHeader; Place definitions; word; locations
+catHeader; Time statements; word; time_words
+note;" item_373% in such sentences, eg ""I already did!"" or ""Daddy's awake anymore."""; word; time_words
+note;" item_374 in sentences such as ""Write again!"", ""Do it to me again!"" or ""Haven't had a drink yet."" "; word; time_words
+catHeader; Measure statements; word; quantifiers
+note;"item_382% in sentences such as"" ""More milk!"", ""Give me another strawberry!"". "; word; quantifiers
+note;" item_383% in sentences such as ""Ania drank everything."" or ""It's all broken."" or ""Everyone's asleep."" "; word; quantifiers
+catHeader; Pronouns; word; pronouns
+catHeader; Questions; word; question_words
+starting_to_talkBtn; 3. Imitation; starting_to_talk;
+header; Imitation; starting_to_talk;
+choiceNames; Yes, No; starting_to_talk;
+combineBtn; 4. Combine words; combine;
+sentences10Btn; 5. Statements; sentences10;
+header; Examples of statements; sentences10;
+instr; Please provide examples of real statements of the child:; sentences10;
+gesturesBtn; 6. Gestures;;
+longText;When children learn to communicate with other people, they often use gestures to express their desires. For each of the gestures on the following pages, please put a badge on the word that matches what your child is currently doing. ; gestures; none
+header; Gestures; gestures;
+catHeader; First communicative gestures; gestures; gestures_first
+Instr; Does your child use the following gestures? ; gestures; gestures_first
+catHeader; Games and rituals; gestures; gestures_games
+instr; Is your child doing the following?; gestures; gestures_games
+catHeader; Object operations; gestures; gestures_objects
+instr; Is your child doing or trying to do any of the following?; gestures; gestures_objects
+catHeader; Playing with a doll or a teddy bear: caring activities; gestures; gestures_parent
+Instr; The caring activities that children perform when playing with dolls or teddy bears are listed below. Please mark the ones you observed in your child.; gestures; gestures_parent
+catHeader; Mimicking other adult activities (on objects or toys); gestures; gestures_adult
+instr; Is your child doing or trying to do any of the following?; gestures; gestures_adult
+endBtn; 7. End; end;
