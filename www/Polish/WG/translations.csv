@@ -1,6 +1,6 @@
 text_type;text;item_type;category
 cdiNameSufix;Słowa i Gesty;;
-understandingBtn;1. Rozumienie;understanding;
+understandingBtn;Rozumienie;understanding;
 header;Rozumienie;understanding;
 longText;Kwestionariusz ten jest polską adaptacją amerykańskiego inwentarza do badania rozwoju mowy najmłodszych dzieci (MacArthur-Bates Communicative Development Inventory). Metoda ta opiera się na wiedzy rodziców na temat rozwoju językowego własnych dzieci i dotyczy rozumienia mowy, mówienia oraz porozumiewania się przy pomocy gestów. Znaczną część inwentarza stanowią pytania o najwcześniejsze słownictwo dzieci. Rodzice mają zaznaczyć słowa, które dziecko rozumie, a także te z nich, których używa ono w mowie. Aby dobrze wypełnić kwestionariusz, należy przeczytać pytania i przez parę dni uważniej przysłuchiwać się temu, co dziecko mówi. Nie należy go przepytywać ani prosić o powtarzanie poszczególnych wyrazów, ani też „uczyć słówek”. Wystarczy, gdy rodzice odpowiedzą na pytania według własnej wiedzy o dziecku.;understanding;none
 catHeader;Pierwsze przejawy rozumienia;understanding;first_signs
@@ -8,7 +8,7 @@ longText;Dzieci, zanim zaczną mówić, rozumieją wiele słów i wyrażeń. Mo�
 choiceNames;Tak, Nie;understanding;first_signs
 catHeader;Rozumienie wypowiedzi dorosłych;understanding;phrases
 instr;Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać.;understanding;phrases
-wordBtn;2. Wyrazy;word;
+wordBtn;Wyrazy;word;
 header;Lista wyrazów;word;
 longText;"Na kolejnych stronach przedstawiamy listę typowych wyrazów znanych małym dzieciom. Przy tych wyrazach, które Państwa dziecko rozumie, ale samo ich jeszcze nie mówi, proszę postawić znaczek w pierwszej kolumnie (R = rozumie). Przy tych wyrazach, które dziecko nie tylko rozumie, ale i samo mówi, proszę postawić znaczek w drugiej kolumnie (M = rozumie i mówi). Jeżeli dziecko używa nieco innej formy, np. mówi piesek, a nie pies, proszę mimo to postawić znaczek przy słowie pies. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. lybka zamiast rybka lub wiójka zamiast wiewiórka). Proszę takie słowo także zaznaczyć plusem, można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa. Czasami dzieci wymyślają własne wyrazy, np. dzi zamiast piłka; także taką formę należy potraktować jako wyraz i zaznaczyć słowo „piłka”, wpisując przy nim dodatkowo „dzi”. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać właściwe określenie. Wszelkie wątpliwości można dopisać na kwestionariuszu. 
   ";word;none
@@ -41,14 +41,14 @@ note;"item_382%w takich zdaniach jak np. ""Jeszcze mleka!”, „Jeszcze jedną 
 note;item_383%w takich zdaniach jak np. „Ania wszystko wypiła.” albo „Wszystko zepsute.” albo „Wszyscy śpią”. ;word;quantifiers
 catHeader;Zaimki;word;pronouns
 catHeader;Pytania;word;question_words
-starting_to_talkBtn;3. Naśladownictwo;starting_to_talk;
+starting_to_talkBtn;Naśladownictwo;starting_to_talk;
 header;Naśladownictwo;starting_to_talk;
 choiceNames;Tak, Nie;starting_to_talk;
-combineBtn;4. Łączenie wyrazów;combine;
-sentences10Btn;5. Wypowiedzi;sentences10;
+combineBtn;Łączenie wyrazów;combine;
+sentences10Btn;Wypowiedzi;sentences10;
 header;Przykłady wypowiedzi;sentences10;
 instr;Proszę podać przykłady rzeczywistych wypowiedzi dziecka:;sentences10;
-gesturesBtn;6. Gesty;gestures;
+gesturesBtn;Gesty;gestures;
 longText;Kiedy dzieci uczą się porozumiewać z innymi ludźmi, często posługują się gestami, aby wyrazić swoje pragnienia. Przy każdym z gestów na następnych stronach proszę postawić znaczek przy tym określeniu, które pasuje do tego, co Państwa dziecko aktualnie robi. ;gestures;none
 header;Gesty;gestures;
 catHeader;Pierwsze gesty komunikatywne;gestures;gestures_first
@@ -61,4 +61,4 @@ catHeader;Zabawa lalką lub misiem: czynności opiekuńcze;gestures;gestures_par
 instr;Poniżej wypisano czynności opiekuńcze, jakie dzieci wykonują bawiąc się lalkami lub misiami. Proszę zaznaczyć te z nich, które zaobserwowali Państwo u swego dziecka.;gestures;gestures_parent
 catHeader;Naśladowanie innych czynności dorosłych (na przedmiotach lub zabawkach);gestures;gestures_adult
 instr;Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;gestures;gestures_adult
-endBtn;7. Zakończ;end;
+endBtn;Zakończ;end;

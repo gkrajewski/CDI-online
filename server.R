@@ -111,7 +111,7 @@ server <- function(input, output, session) {
         if (is.element(paste0(type, "Tooltip"), txt$text_type)) title <- txt[txt$text_type == paste0(type, "Tooltip"), "text"]
         
         #Prepare button div
-        buttonDiv <- div(title = title, id = paste0(type, "container"), class = class, actionButton(type, label = txt[txt$text_type == paste0(type,"Btn"), "text"], class = "btn-primary"))
+        buttonDiv <- div(title = title, id = paste0(type, "container"), class = class, actionButton(type, label = paste0(i, ". ", txt[txt$text_type == paste0(type,"Btn"), "text"]), class = "btn-primary"))
         if (progress[progress$type == type, "disabled"]) buttonDiv <- disabled(buttonDiv)
         
         #Add button div to list  
