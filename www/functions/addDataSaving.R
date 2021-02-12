@@ -10,30 +10,36 @@ addDataSaving <- function(input, output){
     answers[answers$type == currType & answers$category == currCat & answers$answer_type == "comment", "answer"] <<- input$comment
   })
   
+  #Demographic input
+  demographic <- reactive({paste(input$birthDate, input$gender)})
+  observeEvent(demographic(), {
+    answers[answers$type == currType & answers$category == currCat & answers$answer_type == pageInputType, "answer"] <<- paste0(input$birthDate, ",", input$gender)
+  })
+  
   #Many radio buttons or many groups of checkboxes
   onclick("currInput", 
           
-          if (pageInputType == "radio" | pageInputType == "manyCheckboxGroups" | pageInputType == "radioAlt"){
-            
-            answersPattern <- c()
-            
-            for (i in 1 : nrow(pageItems)){
-              
-              id <- paste0("mQ", i)
-              
-              if (!is.null(input[[id]])){
-                answer <- paste0(input[[id]], collapse = " ")
-                answersPattern[[i]] <- answer
-              } else {
-                answersPattern[[i]] <- 0
-              }
-              
-            }
-            
-            answersPattern <- paste0(answersPattern, collapse = ",")
-            answers[answers$type == currType & answers$category == currCat & answers$answer_type == pageInputType, "answer"] <<- answersPattern
-            
-          } 
+    if (pageInputType == "radio" | pageInputType == "manyCheckboxGroups" | pageInputType == "radioAlt"){
+      
+      answersPattern <- c()
+      
+      for (i in 1 : nrow(pageItems)){
+        
+        id <- paste0("mQ", i)
+        
+        if (!is.null(input[[id]])){
+          answer <- paste0(input[[id]], collapse = " ")
+          answersPattern[[i]] <- answer
+        } else {
+          answersPattern[[i]] <- 0
+        }
+        
+      }
+      
+      answersPattern <- paste0(answersPattern, collapse = ",")
+      answers[answers$type == currType & answers$category == currCat & answers$answer_type == pageInputType, "answer"] <<- answersPattern
+      
+    } 
           
   )
   

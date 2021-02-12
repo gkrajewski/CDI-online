@@ -111,7 +111,36 @@ renderInputObject <- function(){
       questions[[i]] <- textInput(paste0("s", i), label = NULL, value = sentences[i])
     }
     
-  } 
+  } else if (pageInputType == "demographic"){
+    
+    if (is.na(pageAnswer)){
+      
+      currGender <- character(0)
+      currDate <- NULL
+      
+    } else {
+      
+      pageAnswer <- strsplit(pageAnswer, ",")[[1]]
+      currDate <- pageAnswer[1]
+      currGender <- pageAnswer[2]
+      
+    }
+    
+    choiceNames <- strsplit(txt[txt$text_type == "genders", "text"], ",")[[1]]
+    choiceValues <- c("Female", "Male", "Other")
+    
+    questions[[1]] <- br()
+    questions[[2]] <- dateInput("birthDate", txt[txt$text_type == "dateLabel", "text"], currDate)
+    questions[[3]] <- br()
+    questions[[4]] <- radioButtons(
+      "gender",
+      label = txt[txt$text_type == "genderLabel", "text"],
+      selected = currGender,
+      choiceNames = strsplit(txt[txt$text_type == "genders", "text"], ",")[[1]],
+      choiceValues = c("Female", "Male", "Other")
+    )
+    
+  }
     
   return(div(id="currInput", questions))
   

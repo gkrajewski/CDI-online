@@ -13,8 +13,6 @@ initPath <- getwd()
 #Create folders with user progress and answers if they don't exist
 if(!dir.exists(file.path(initPath, "answers"))) dir.create(file.path(initPath, "answers")) 
 if(!dir.exists(file.path(initPath, "progress"))) dir.create(file.path(initPath, "progress")) 
-# ifelse(!dir.exists(file.path(initPath, "answers")), dir.create(file.path(initPath, "answers")), FALSE)
-# ifelse(!dir.exists(file.path(initPath, "progress")), dir.create(file.path(initPath, "progress")), FALSE)
 
 #Load universal settings
 setwd(dataPath)
