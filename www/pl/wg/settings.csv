@@ -1,6 +1,5 @@
 type,page_type,cat_header,instr,long_text,warning,input_type,css_class,comment,help
-understanding,first,FALSE,FALSE,TRUE,FALSE,none,none,FALSE,FALSE
-understanding,input,TRUE,FALSE,TRUE,FALSE,radio,none,FALSE,FALSE
+understanding,first,TRUE,FALSE,TRUE,FALSE,radio,none,FALSE,FALSE
 understanding,last,TRUE,TRUE,FALSE,FALSE,oneCheckboxGroup,threeColumns,TRUE,FALSE
 word,first,FALSE,FALSE,TRUE,TRUE,none,none,FALSE,FALSE
 word,input,TRUE,TRUE,FALSE,FALSE,manyCheckboxGroups,threeColumns,TRUE,FALSE

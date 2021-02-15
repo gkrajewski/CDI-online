@@ -14,6 +14,16 @@ addDataSaving <- function(input, output){
   demographic <- reactive({paste(input$birthDate, input$gender)})
   observeEvent(demographic(), {
     answers[answers$type == currType & answers$category == currCat & answers$answer_type == pageInputType, "answer"] <<- paste0(input$birthDate, ",", input$gender)
+    
+    if (!is.null(input$birthDate)){
+      # print(input$birthDate)
+      # diff <- Sys.Date() - as.Date(input$birthDate)
+      # print(as.integer(diff))
+      age <- interval(input$birthDate, Sys.Date()) %/% months(1)
+      print(age)
+      
+    }
+    
   })
   
   #Many radio buttons or many groups of checkboxes

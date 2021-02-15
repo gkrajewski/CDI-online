@@ -1,3 +1,4 @@
 type,page_type,cat_header,instr,long_text,warning,input_type,css_class,comment,help
+start,input&save,FALSE,FALSE,TRUE,FALSE,demographic,none,FALSE,TRUE
 end,input&save,FALSE,TRUE,FALSE,FALSE,none,none,FALSE,TRUE
 postEnd,postEnd,FALSE,TRUE,FALSE,FALSE,none,none,FALSE,TRUE

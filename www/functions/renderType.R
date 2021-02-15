@@ -4,21 +4,21 @@ renderType <- function(input, output, type){
   currType <<- type
   
   #Get current category for current type
-  currCat <<- progress[progress$type == currType, "category"]
+  currCat <<- userProgress[userProgress$type == currType, "category"]
 
-  #Set proper type button as current (in progress df and proper design)
+  #Set proper type button as current (in userProgress df and proper design)
   for (type in types) {
     
     divId <- paste0(type, "container")
   
     if (type == currType){
       
-      progress[progress$type == type, "current"] <<- TRUE
+      userProgress[userProgress$type == type, "current"] <<- TRUE
       addClass(divId, "menuButtonContainerActive")
       
     } else {
       
-      progress[progress$type == type, "current"] <<- FALSE
+      userProgress[userProgress$type == type, "current"] <<- FALSE
       removeClass(divId, "menuButtonContainerActive")
       
     }

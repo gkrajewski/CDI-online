@@ -1,0 +1,27 @@
+text_type;text;item_type;category
+longText;Kwestionariusz ten jest polską adaptacją amerykańskiego inwentarza do badania rozwoju mowy najmłodszych dzieci (MacArthur-Bates Communicative Development Inventory). Metoda ta opiera się na wiedzy rodziców na temat rozwoju językowego własnych dzieci i dotyczy rozumienia mowy, mówienia oraz porozumiewania się przy pomocy gestów. Znaczną część inwentarza stanowią pytania o najwcześniejsze słownictwo dzieci. Rodzice mają zaznaczyć słowa, które dziecko rozumie, a także te z nich, których używa ono w mowie. Aby dobrze wypełnić kwestionariusz, należy przeczytać pytania i przez parę dni uważniej przysłuchiwać się temu, co dziecko mówi. Nie należy go przepytywać ani prosić o powtarzanie poszczególnych wyrazów, ani też „uczyć słówek”. Wystarczy, gdy rodzice odpowiedzą na pytania według własnej wiedzy o dziecku.;start;
+help;UWAGA: Po zatwierdzeniu tej części nie będzie już możliwości jej ponownego odwiedzenia.;start;
+backBtn;Cofnij;;
+nextBtn;Dalej;;
+saveBtn;Zatwierdź;;
+startBtn;Start;;
+dateLabel;Data urodzin Twojego dziecka;;
+genderLabel;Płeć Twojego dziecka;;
+noGender;Aby zatwierdzić wybierz płeć.;;
+badDate;Błędna data urodzenia.;;
+genders;Dziewczynka,Chłopiec,Inna;;
+commentLabel;Twoje uwagi;;
+cdiNamePrefix;Inwentarz Rozwoju Mowy i Komunikacji;;
+endTooltip;Zakończenie inwentarza będzie możliwe po zatwierdzeniu wszystkich części.;;
+sentencesTooltip;Część „Wypowiedzi” uaktywnia się w zależności od odpowiedzi w części „Łączenie wyrazów”.;;
+header;Łączenie wyrazów;combine;
+combineBtn;Łączenie wyrazów ;combine;
+choiceNames;Jeszcze nie, Czasem, Często;combine;
+help;Część „Wypowiedzi” uaktywni się w przypadku wybrania tutaj odpowiedzi „Czasem” lub „Często” (i zatwierdzenia jej).;combine;
+header;Zakończenie;end;
+endBtn;Zakończ;end;
+instr; Na tym etapie wciąż możesz edytować swoje odpowiedzi, pomimo zatwierdzenia wszystkich części. Aby zakończyć definitywnie wypełnianie inwetarza kliknij teraz przycisk „Zatwierdź”. ;end;
+help;UWAGA: Po zatwierdzeniu inwentarza nie będzie możliwości dalszej edycji odpowiedzi!;end;
+help;Dziękujemy za wypełnienie!;postEnd;
+instr;"Bardzo dziękujemy za [czas i wysiłek poświęcony na] wypełnienie tego kwestionariusza! Proszę śledzić powiadomienia w apce/nowe informacje w zakładce ""Wiedza""";postEnd;
+;;;none

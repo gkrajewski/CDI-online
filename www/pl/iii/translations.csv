@@ -4,6 +4,7 @@ header;Zadanie 2.;yesNo;
 choiceNames;Tak, Nie;yesNo;
 alternativesBtn;Zadanie 1.;alternatives;
 header;Zadanie 1.;alternatives;
-endBtn;Zakończ;;
+longText;Tu może być jakaś instrukcja/wprowadzenie.;alternatives;firstPage
+catHeader;Grupa 1.;alternatives;grupa1
+catHeader;Grupa 2.;alternatives;grupa2
 cdiNameSufix;Pilotaż wersji trzeciej;;
-longText;Tu może być jakaś instrukcja/wprowadzenie.;alternatives;none

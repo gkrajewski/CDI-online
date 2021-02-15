@@ -1,9 +1,8 @@
 type,binded_types,initially_disabled,conditions,answers_to_enable
-understanding,"first_signs,phrases",FALSE,none,
+start,none,FALSE,none,
 word,none,FALSE,none,
 starting_to_talk,none,FALSE,none,
-combine,none,FALSE,sentences10,"2,3"
-sentences10,none,TRUE,none,
-gestures,startWith,FALSE,none,
+combine,none,FALSE,sentences,"2,3"
+sentences,none,TRUE,none,
 end,none,TRUE,none,
 postEnd,none,TRUE,none,

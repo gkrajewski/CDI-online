@@ -1,34 +1,41 @@
 renderPage <- function(input, output){
   
-  #Update progress df
-  progress[progress$type == currType, "category"] <<- currCat
+  #Update userProgress df
+  userProgress[userProgress$type == currType, "category"] <<- currCat
   
-  #Get number of categories for current type
-  categoriesNum <- length(unique(typeItems$category))
+  #Get unique text categories (except allInput and "")
+  specialCategories <- c("", "allInput")
+  categories <<- unique(typeTxt$category)
+  categories <<- setdiff(categories, specialCategories)
+  
+  #Get number of categories (to display) for current type
+  categoriesNum <- length(categories)
 
   buttons <- NULL
   currPageNr <- NULL
 
   if (categoriesNum > 1){
     
-    #Get items categories
-    categories <<- unique(typeItems$category)
+    ### MULTI PAGE TYPE ###
+    
+    #Get first category
+    firstCat <- categories[1]
+    if (firstCat == "") firstCat <- categories[2]
     
     #Get last category
     lastCat <- categories[length(categories)]
     
     #Adjust for multi page design
-    if (currCat == "none"){
+    if (currCat == firstCat){
       
       pageType <- "first"
-      pageNr <- 1
+      pageItems <<- typeItems[typeItems$category == currCat, ]
       pageTxt <<- typeTxt[typeTxt$category == currCat, ]
       buttons <- list(actionButton("nextBtn", label = txt[txt$text_type == "nextBtn", "text"]))
       
     } else {
       
-      pos <- match(currCat, categories)
-      pageNr <- pos + 1
+
       
       if (currCat == lastCat){
         
@@ -55,12 +62,14 @@ renderPage <- function(input, output){
     }
     
     #Render page number
-    output$page <- renderText({paste0(as.character(pageNr), "/", as.character(categoriesNum + 1))})
-    currPageNr <- paste0(as.character(pageNr), "/", as.character(categoriesNum + 1))
+    pageNr <- match(currCat, categories)
+    output$page <- renderText({paste0(as.character(pageNr), "/", as.character(categoriesNum))})
+    currPageNr <- paste0(as.character(pageNr), "/", as.character(categoriesNum))
     
   } else {
     
-    #One page type
+    ### ONE PAGE TYPE ###
+    
     pageItems <<- typeItems
     pageTxt <<- typeTxt
     
