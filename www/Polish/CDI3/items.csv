@@ -1,9 +1,0 @@
-item_id;definition;type;category;lexical_category;lexical_class;uni_lemma;complexity_category ;num_item_id
-item_1;Jak mama przyjdzie, to nakarmi kota%Mama nakarmi kota;alternatives;grupa1;;;;;1
-item_2;Jak był śnieg, to lepiłem(-am) bałwana%Lepiłem(-am) bałwana;alternatives;grupa1;;;;;2
-item_3;Jak wrócę do domu, to zjem obiad%W domu zjem obiad;alternatives;grupa1;;;;;3
-item_4;Ściany są pomalowane na żółto%Ściany są żółte;alternatives;grupa2;;;;;4
-item_5;"Czy dziecko używa słowa ""jak"" i/lub ""kiedy"", by łączyć 2 zdania, np. ""jak wrócę do domu, to zjem obiad""";yesNo;grupa2;;;;;5
-item_6;"Czy dziecko używa słów ""będzie"", ""będą"", ""będziemy"" w zdaniach jak: ""Oni będą jechać do babci"", ""Kasia będzie śpiewać piosenkę""";yesNo;grupa2;;;;;6
-item_7;Czy dziecko używa wyrazów zakończonych na -ami, np. lalkami, samochodami, płatkami?;yesNo;grupa2;;;;;7
-item_8;"Czy dziecko używa słów ""mogę"" albo ""musimy"" w zdaniach takich jak ""mogę zjeść"", ""musimy iść""";yesNo;grupa2;;;;;8
