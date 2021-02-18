@@ -22,7 +22,7 @@ createCheckboxQuestion <- function(questionId, choiceNames, choiceValues, select
 
 createRadioQuestion <- function(questionId, choiceNames, choiceValues, selected, questionLabel = NULL, inline = F){
 
-  if (selected == 0) selected <- character(0)
+  if (is.na(selected) | selected == 0) selected <- character(0)
   
   return(
       

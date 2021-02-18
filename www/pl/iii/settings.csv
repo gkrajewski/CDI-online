@@ -1,5 +1,0 @@
-type,page_type,cat_header,instr,long_text,warning,input_type,css_class,comment,help
-alternatives,first,FALSE,FALSE,TRUE,FALSE,none,none,FALSE,FALSE
-alternatives,input,TRUE,FALSE,FALSE,FALSE,radioAlt,none,FALSE,FALSE
-alternatives,last,TRUE,FALSE,FALSE,FALSE,radioAlt,none,FALSE,FALSE
-yesNo,input&save,FALSE,FALSE,FALSE,FALSE,radio,oneColumn,FALSE,FALSE

@@ -1,0 +1,12 @@
+text_type;text;item_type;category
+yesNoBtn;Zadanie 2.;yesNo;wprost
+header;Zadanie 2.;yesNo;wprost
+choiceNames;Tak, Nie;yesNo;wprost
+alternativesBtn;Zadanie 1.;alternatives;
+header;Zadanie 1.;alternatives;
+longText;Tu może być jakaś instrukcja/wprowadzenie.;alternatives;firstPage
+catHeader;Grupa 1.;alternatives;grupa1
+catHeader;Grupa 2.;alternatives;grupa2
+catHeader;Grupa 3.;alternatives;grupa3
+catHeader;Grupa 4.;alternatives;grupa4
+cdiNameSufix;Pilotaż wersji trzeciej;;

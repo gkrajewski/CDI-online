@@ -8,7 +8,8 @@ server <- function(input, output, session) {
     
     if (!is.null(form) & !is.null(lang) & !is.null(id)){
       
-      connected <- callSW(form = form, id = id)
+      #connected <- callSW(form = form, id = id)
+      connected = FALSE
       notFromSW = TRUE #TODO
       
       if (connected | notFromSW){
@@ -23,7 +24,7 @@ server <- function(input, output, session) {
         setwd(initPath)
         txt <<- rbind(uniTransl, transl)
         settings <<- rbind(formSettings, endSettings)
-        typeUniqueSettings <<- settings[settings$category == "", ]
+        typeUniqueSettings <<- settings[settings$category == "" | is.na(settings$category), ]
         types <<- typeUniqueSettings$type
         typesNr <- length(types)
         userProgressFile <- paste0("usersProgress/", lang, "-", form, "-", id, ".csv")
@@ -32,9 +33,11 @@ server <- function(input, output, session) {
         #Bind some types and create artificial categories
         for (type in types){
           
-          if (typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"] != ""){
+          bindedTypesStr <- typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"]
+          
+          if (!is.na(bindedTypesStr)){
             
-            if (typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"] == "startWith"){
+            if (bindedTypesStr == "startWith"){
               
               items[substr(items$type, 1, nchar(type)) == type, "category"] <<- items[substr(items$type, 1, nchar(type)) == type, "type"]
               items[substr(items$type, 1, nchar(type)) == type, "type"] <<- type
@@ -137,7 +140,7 @@ server <- function(input, output, session) {
     } else {
       
       #No URL parameters
-      updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl"))
+      updateQueryString(paste0("?id=", "test", "&form=", "iii1", "&lang=", "pl"))
       session$reload()
 
     }

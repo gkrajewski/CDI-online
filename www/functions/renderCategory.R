@@ -18,7 +18,7 @@ renderCategory <- function(input, output){
     if (is.element(currCat, typeSettings$category)){
       catSettings <<- typeSettings[typeSettings$category == currCat, ]
     } else {
-      catSettings <<- typeSettings[typeSettings$category == "", ]
+      catSettings <<- typeSettings[typeSettings$category == "" | is.na(typeSettings$category), ]
     }
     
     if (currCat == firstCat){
@@ -99,7 +99,7 @@ renderCategory <- function(input, output){
       if (is.element("longText", catTxt$text_type)) p(catTxt[catTxt$text_type == "longText", "text"]),
       if (is.element("instr", catTxt$text_type)) h5(catTxt[catTxt$text_type == "instr", "text"]),
       if (is.element("warning", catTxt$text_type)) p(strong(catTxt[catTxt$text_type == "warning", "text"])),
-      
+
       if (!is.na(inputType) & currCat != "firstPage"){
         
         if (is.element("note", catTxt$text_type)){
@@ -120,8 +120,8 @@ renderCategory <- function(input, output){
           
         }
         
-        inputObj<- renderInput()
-        inputObj<- div(class=catSettings$css_class, inputObj)
+        inputObj <- renderInput()
+        inputObj <- div(class=catSettings$css_class, inputObj)
         inputObj
         
       },

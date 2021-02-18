@@ -34,7 +34,7 @@ catHeader;Przyimki ;word;prepositions
 catHeader ;Spójniki ;word;connecting_words
 note;item_681%w takich zdaniach jak np. „Jak mama przyjdzie, (to) da mi jeść”. ;word;connecting_words
 note;item_682%w takich zdaniach jak np. „To nie pies, tylko kot”. ;word;connecting_words
-help;Przed zapisaniem proszę sprawdzić, czy nie pominęli Państwo jakiejś strony lub rubryki? Czy na pewno zaznaczone są wszystkie wyrazy, które Państwa dziecko mówi?;word;allInput
+help;Przed zapisaniem proszę sprawdzić, czy nie pominęli Państwo jakiejś strony lub rubryki? Czy na pewno zaznaczone są wszystkie wyrazy, które Państwa dziecko mówi?;word;connecting_words
 starting_to_talkBtn;Naśladownictwo;starting_to_talk;
 header;Naśladownictwo;starting_to_talk;
 choiceNames;Tak, Nie;starting_to_talk;
