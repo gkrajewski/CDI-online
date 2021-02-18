@@ -1,43 +1,44 @@
 addDataSaving <- function(input, output){
   
-  #One group of checkboxes
   observeEvent(input$oneCheckboxGroup, {
     answers[answers$type == currType & answers$category == currCat & answers$answer_type == "oneCheckboxGroup", "answer"] <<- paste(input$oneCheckboxGroup, collapse =  " ")
   })
   
-  #Comment field
   observeEvent(input$comment, {
     answers[answers$type == currType & answers$category == currCat & answers$answer_type == "comment", "answer"] <<- input$comment
   })
   
-  #Many radio buttons or many groups of checkboxes
+  demographic <- reactive({paste(input$birthDate, input$gender)})
+  observeEvent(demographic(), {
+    answers[answers$type == currType & answers$category == currCat & answers$answer_type == inputType, "answer"] <<- paste0(input$birthDate, ",", input$gender)
+  })
+  
   onclick("currInput", 
           
-          if (pageInputType == "radio" | pageInputType == "manyCheckboxGroups" | pageInputType == "radioAlt"){
-            
-            answersPattern <- c()
-            
-            for (i in 1 : nrow(pageItems)){
-              
-              id <- paste0("mQ", i)
-              
-              if (!is.null(input[[id]])){
-                answer <- paste0(input[[id]], collapse = " ")
-                answersPattern[[i]] <- answer
-              } else {
-                answersPattern[[i]] <- 0
-              }
-              
-            }
-            
-            answersPattern <- paste0(answersPattern, collapse = ",")
-            answers[answers$type == currType & answers$category == currCat & answers$answer_type == pageInputType, "answer"] <<- answersPattern
-            
-          } 
+    if (inputType == "radio" | inputType == "manyCheckboxGroups" | inputType == "radioAlt"){
+      
+      answersPattern <- c()
+      
+      for (i in 1 : nrow(catItems)){
+        
+        id <- paste0("mQ", i)
+        
+        if (!is.null(input[[id]])){
+          answer <- paste0(input[[id]], collapse = " ")
+          answersPattern[[i]] <- answer
+        } else {
+          answersPattern[[i]] <- 0
+        }
+        
+      }
+      
+      answersPattern <- paste0(answersPattern, collapse = ",")
+      answers[answers$type == currType & answers$category == currCat & answers$answer_type == inputType, "answer"] <<- answersPattern
+      
+    } 
           
   )
   
-  #Sentences (max 10)
   lapply(1:10, function(i){
     
     id <- paste0("s", i)

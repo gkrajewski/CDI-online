@@ -1,0 +1,4 @@
+type,category,input_type,comment,css_class,binded_types,initially_disabled,conditions,answers_to_enable
+end,,,FALSE,,,TRUE,,
+postEnd,,,FALSE,,,TRUE,,
+,none,none,,none,none,,none,none

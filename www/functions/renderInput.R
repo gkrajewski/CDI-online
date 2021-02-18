@@ -80,14 +80,9 @@ renderInput <- function(){
     
   } else if (inputType == "oneCheckboxGroup"){
     
-    #Prepare answer loaded from csv
     if (is.na(catAnswer)) catAnswer <- 0
-    
-    #Prepare choice names and values for checklist
     choiceNames <- as.character(catItems$definition)
     choiceValues <- c(1 : nrow(catItems))
-    
-    #Prepare checklist
     questions[[1]] <- createCheckboxQuestion(inputType, choiceNames, choiceValues, catAnswer, noBreakInside = FALSE)
     
   } else if (inputType == "sentences"){

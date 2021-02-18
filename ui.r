@@ -1,12 +1,9 @@
 ui <- fluidPage(
-  
-  #It makes shinyjs library work
+
   useShinyjs(), 
   
-  #Loads ready UI theme
   theme = shinytheme("flatly"),
   
-  #Loads css file with custom apperance settings
   tags$head(
     tags$link(rel="stylesheet", type="text/css", href="style.css"),
     tags$link(rel="preconnect", href="https://fonts.gstatic.com"),
@@ -16,7 +13,7 @@ ui <- fluidPage(
   h1(textOutput("cdiNamePrefix")),
   h2(textOutput("cdiNameSufix")),
   uiOutput("menu"),
-  h3(textOutput("header")), #Current type name
+  h3(textOutput("header")),
   
   sidebarLayout(
     
@@ -28,7 +25,8 @@ ui <- fluidPage(
     
     mainPanel(
       
-      uiOutput("main") #main content of page (input object, comment field etc.)
+      uiOutput("main"),
+      textOutput("warning")
       
     )
     

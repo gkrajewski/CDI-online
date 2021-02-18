@@ -1,0 +1,11 @@
+type,page_type,cat_header,instr,long_text,warning,input_type,css_class,comment,help
+word,first,FALSE,FALSE,TRUE,TRUE,none,none,FALSE,FALSE
+word,input,TRUE,FALSE,FALSE,FALSE,oneCheckboxGroup,threeColumns,TRUE,FALSE
+word,last,TRUE,FALSE,FALSE,FALSE,oneCheckboxGroup,threeColumns,TRUE,TRUE
+starting_to_talk,input&save,FALSE,FALSE,FALSE,FALSE,radio,none,FALSE,FALSE
+combine,input&save,FALSE,FALSE,FALSE,FALSE,radio,none,FALSE,TRUE
+sentences10,input&save,FALSE,TRUE,FALSE,FALSE,sentences,twoColumns,FALSE,FALSE
+sentences3,input&save,FALSE,TRUE,FALSE,FALSE,sentences,none,FALSE,FALSE
+sentences,first,FALSE,FALSE,TRUE,FALSE,none,none,FALSE,FALSE
+sentences,input,TRUE,TRUE,TRUE,FALSE,sentences,twoColumns,FALSE,FALSE
+sentences,last,TRUE,TRUE,TRUE,FALSE,sentences,none,FALSE,FALSE

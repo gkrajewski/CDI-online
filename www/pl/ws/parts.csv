@@ -1,0 +1,8 @@
+type,binded_types,initially_disabled,conditions,answers_to_enable
+start,none,FALSE,none,
+word,none,FALSE,none,
+starting_to_talk,none,FALSE,none,
+combine,none,FALSE,sentences,"2,3"
+sentences,none,TRUE,none,
+end,none,TRUE,none,
+postEnd,none,TRUE,none,
