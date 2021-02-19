@@ -8,9 +8,13 @@ server <- function(input, output, session) {
     
     if (!is.null(form) & !is.null(lang) & !is.null(id)){
       
-      #connected <- callSW(form = form, id = id)
-      connected = FALSE
-      notFromSW = TRUE #TODO
+      if (length(id) == 21){
+        connected <- callSW(form = form, id = id)
+        notFromSW = FALSE
+      } else {
+        connected = FALSE
+        notFromSW = TRUE
+      }
       
       if (connected | notFromSW){
         
@@ -19,6 +23,7 @@ server <- function(input, output, session) {
         uniTransl <- read.csv("uniTranslations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
         setwd(paste0(dataPath, "/", lang, "/", form))
         items <<- read.csv("items.csv", encoding = "UTF-8", sep = ";", strip.white = T)[1:6]
+        norms <<- read.csv("comp.csv", encoding = "UTF-8", strip.white = T, row.names = 1)
         transl <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
         formSettings <- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
         setwd(initPath)
@@ -123,12 +128,12 @@ server <- function(input, output, session) {
         language <<- lang #needed for dateInput
         renderType(input, output, type)
         addSidebarObservers(input, output, form)
-        addDataSaving(input, output)
+        addDataSaving(input)
 
         #Save data
         session$onSessionEnded(function() {
-          # write.csv(answers, answersFile, row.names = F)
-          # write.csv(userProgress, userProgressFile, row.names = F)
+          write.csv(answers, answersFile, row.names = F)
+          write.csv(userProgress, userProgressFile, row.names = F)
         })
         
       } else {
@@ -140,7 +145,7 @@ server <- function(input, output, session) {
     } else {
       
       #No URL parameters
-      updateQueryString(paste0("?id=", "test", "&form=", "iii1", "&lang=", "pl"))
+      updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl"))
       session$reload()
 
     }

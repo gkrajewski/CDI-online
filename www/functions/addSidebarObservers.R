@@ -32,8 +32,6 @@ addSidebarObservers <- function(input, output, form){
       
       output$warning <- renderText({})
       
-      if (currType == 'word') countScore(form)
-      
       userProgress[userProgress$type == currType, "done"] <<- TRUE
       addClass(paste0(currType, "container"), "menuButtonContainerDone")
       

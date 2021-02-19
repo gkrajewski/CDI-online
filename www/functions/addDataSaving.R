@@ -1,4 +1,32 @@
-addDataSaving <- function(input, output){
+saveData <- function(input){
+  
+  if (inputType == "radio" | inputType == "manyCheckboxGroups" | inputType == "radioAlt"){
+    
+    answersPattern <- c()
+    
+    for (i in 1 : nrow(catItems)){
+      
+      id <- paste0("mQ", i)
+      
+      if (!is.null(input[[id]])){
+        answer <- paste0(input[[id]], collapse = " ")
+        answersPattern[[i]] <- answer
+      } else {
+        answersPattern[[i]] <- 0
+      }
+      
+    }
+    
+    answersPattern <- paste0(answersPattern, collapse = ",")
+    answers[answers$type == currType & answers$category == currCat & answers$answer_type == inputType, "answer"] <<- answersPattern
+    
+  }
+  
+  countScore("wg")
+  
+}
+
+addDataSaving <- function(input){
   
   observeEvent(input$oneCheckboxGroup, {
     answers[answers$type == currType & answers$category == currCat & answers$answer_type == "oneCheckboxGroup", "answer"] <<- paste(input$oneCheckboxGroup, collapse =  " ")
@@ -10,33 +38,11 @@ addDataSaving <- function(input, output){
   
   demographic <- reactive({paste(input$birthDate, input$gender)})
   observeEvent(demographic(), {
-    answers[answers$type == currType & answers$category == currCat & answers$answer_type == inputType, "answer"] <<- paste0(input$birthDate, ",", input$gender)
+    answers[answers$type == currType & answers$category == currCat & answers$answer_type == "demographic", "answer"] <<- paste0(input$birthDate, ",", input$gender)
   })
   
-  onclick("currInput", 
-          
-    if (inputType == "radio" | inputType == "manyCheckboxGroups" | inputType == "radioAlt"){
-      
-      answersPattern <- c()
-      
-      for (i in 1 : nrow(catItems)){
-        
-        id <- paste0("mQ", i)
-        
-        if (!is.null(input[[id]])){
-          answer <- paste0(input[[id]], collapse = " ")
-          answersPattern[[i]] <- answer
-        } else {
-          answersPattern[[i]] <- 0
-        }
-        
-      }
-      
-      answersPattern <- paste0(answersPattern, collapse = ",")
-      answers[answers$type == currType & answers$category == currCat & answers$answer_type == inputType, "answer"] <<- answersPattern
-      
-    } 
-          
+  onclick("currInput",
+    saveData(input)
   )
   
   lapply(1:10, function(i){

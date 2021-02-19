@@ -29,5 +29,5 @@ renderType <- function(input, output, type){
   
   currCat <<- userProgress[userProgress$type == currType, "category"]
   renderCategory(input, output)
-
+  
 }

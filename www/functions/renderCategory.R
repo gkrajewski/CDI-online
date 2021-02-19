@@ -62,7 +62,7 @@ renderCategory <- function(input, output){
   
   inputType <<- catSettings$input_type
   
-  if (!is.na(inputType)){
+  if (!is.na(inputType) & currCat != "firstPage"){
     
     record <- c(currType, currCat, inputType, NA)
     answers <<- rbind(if(!tail(duplicated(rbind(answers[1:3],record[1:3])),1)) record, answers)
