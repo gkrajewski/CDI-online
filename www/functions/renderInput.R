@@ -20,12 +20,11 @@ createCheckboxQuestion <- function(questionId, choiceNames, choiceValues, select
   
 }
 
-createRadioQuestion <- function(questionId, choiceNames, choiceValues, selected, questionLabel = NULL, inline = F){
+createRadioQuestion <- function(questionId, choiceNames, choiceValues, selected, questionLabel = NULL, inline = F, noBreakInside = TRUE){
 
   if (is.na(selected) | selected == 0) selected <- character(0)
   
-  return(
-      
+  radioGroup <- (
     radioButtons(
       questionId,
       label = questionLabel,
@@ -34,8 +33,10 @@ createRadioQuestion <- function(questionId, choiceNames, choiceValues, selected,
       choiceValues = choiceValues,
       inline = inline
     )
-    
   )
+  
+  if (noBreakInside) radioGroup <- div(class="noBreakInside", radioGroup)
+  return(radioGroup)
   
 }
 

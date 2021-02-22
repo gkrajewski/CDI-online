@@ -28,6 +28,7 @@ renderType <- function(input, output, type){
   output$warning <- renderText({})
   
   currCat <<- userProgress[userProgress$type == currType, "category"]
+
   renderCategory(input, output)
   
 }

@@ -78,6 +78,7 @@ server <- function(input, output, session) {
             categoriesNum <- length(uniqueCategories)
             firstCat <- uniqueCategories[1]
             if (categoriesNum > 1 & uniqueCategories[1] == "") firstCat <- uniqueCategories[2]
+            if (firstCat == "allInput") firstCat <- uniqueCategories[3]
             firstCats[i] <- firstCat
             i <- i + 1
           }
@@ -133,8 +134,8 @@ server <- function(input, output, session) {
 
         #Save data
         session$onSessionEnded(function() {
-          write.csv(answers, answersFile, row.names = F)
-          write.csv(userProgress, userProgressFile, row.names = F)
+          # write.csv(answers, answersFile, row.names = F)
+          # write.csv(userProgress, userProgressFile, row.names = F)
         })
         
       } else {
@@ -146,7 +147,7 @@ server <- function(input, output, session) {
     } else {
       
       #No URL parameters
-      updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "no"))
+      updateQueryString(paste0("?id=", "test", "&form=", "ws", "&lang=", "no"))
       session$reload()
 
     }
