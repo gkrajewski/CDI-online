@@ -1,0 +1,63 @@
+text_type;text;text;item_type;category
+cdiNameSufix;Ord og gester;Słowa i Gesty;;
+sentences10Tooltip;"Avsnittet ""Setninger"" blir aktiv, avhengig av svaret i ""Kombinasjon av ord"" -delen.";Część „Wypowiedzi” uaktywnia się w zależności od odpowiedzi w części „Łączenie wyrazów”.;;
+understandingBtn;Forståelse;Rozumienie;understanding;
+header;Forståelse;Rozumienie;understanding;
+catHeader;De første tegn på forståelse;Pierwsze przejawy rozumienia;understanding;first_signs
+longText;Før barn begynner å snakke, viser de tegn på at de forstår språk ved å reagere på kjente ord og uttrykk. Her er noen vanlige eksempler. Gjør barnet ditt noe av dette? (Vennligst velg);Dzieci, zanim zaczną mówić, rozumieją wiele słów i wyrażeń. Można to stwierdzić obserwując ich reakcje na znane słowa lub zwroty. Czy Państwa dziecko wykazuje poniższe reakcje? (Proszę wybrać);understanding;first_signs
+choiceNames;Ja, Nei;Tak, Nie;understanding;first_signs
+catHeader;Forstå hva voksne sier;Rozumienie wypowiedzi dorosłych;understanding;phrases
+instr;Kryss av i listen under de uttrykkene som det virker som om barnet ditt forstår;Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać.;understanding;phrases
+starting_to_talkBtn;Begynner å snakke;Naśladownictwo;starting_to_talk;
+header;Begynner å snakke;Naśladownictwo;starting_to_talk;
+choiceNames;Ikke ennå,Noen ganger,Ofte;Tak, Nie;starting_to_talk;
+wordBtn;Ord;Wyrazy;word;
+header;Ordliste;Lista wyrazów;word;
+longText;Her følger lister over typiske ord i et barns ordforråd. Kryss av i den første kolonnen (forstår) dersom barnet ditt forstår ordet, men ennå ikke sier det. Ord som barnet både forstår og bruker, krysser du av i den andre kolonnen (forstår og sier). Om barnet bruker en annen uttale av et ord (for eksempel at det sier ”epe” istedenfor ”eple”) krysser du av ordet likevel. Husk at dette er en ”katalog” over ord som blir brukt av mange forskjellige barn, så ikke bli bekymret dersom barnet ditt kun kan noen få av dem akkurat nå.;"Na kolejnych stronach przedstawiamy listę typowych wyrazów znanych małym dzieciom. Przy tych wyrazach, które Państwa dziecko rozumie, ale samo ich jeszcze nie mówi, proszę postawić znaczek w pierwszej kolumnie (R = rozumie). Przy tych wyrazach, które dziecko nie tylko rozumie, ale i samo mówi, proszę postawić znaczek w drugiej kolumnie (M = rozumie i mówi). Jeżeli dziecko używa nieco innej formy, np. mówi piesek, a nie pies, proszę mimo to postawić znaczek przy słowie pies. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. lybka zamiast rybka lub wiójka zamiast wiewiórka). Proszę takie słowo także zaznaczyć plusem, można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa. Czasami dzieci wymyślają własne wyrazy, np. dzi zamiast piłka; także taką formę należy potraktować jako wyraz i zaznaczyć słowo „piłka”, wpisując przy nim dodatkowo „dzi”. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać właściwe określenie. Wszelkie wątpliwości można dopisać na kwestionariuszu. 
+  ";word;firstPage
+warning;MERKNAD: Spørreskjemaet er beregnet på barn i forskjellige aldre. Ikke bekymre deg hvis barnet ditt ennå ikke bruker alle ordene og bevegelsene vi ber om!;" UWAGA: Kwestionariusz przeznaczony jest dla dzieci w różnym wieku. Proszę się nie martwić, jeśli Państwa dziecko jeszcze nie używa wszystkich słów i gestów, o które pytamy!
+  ";word;firstPage
+instr;F = bare forstår, S = forstår og sier;R = tylko rozumie M = rozumie i mówi ;word;allInput
+choiceNames;F,S;R,M ;word;allInput
+catHeader;Lydeffekter og dyrelyder;Odgłosy i wykrzykniki;word;sounds
+catHeader;Navn på dyr (virkelige eller lekedyr);Zwierzęta – prawdziwe lub zabawkowe;word;animals
+catHeader;Kjøretøy (virkelige eller leketøy);Pojazdy - prawdziwe lub zabawkowe ;word;vehicles
+catHeader;Leker;Zabawki;word;toys
+catHeader;Mat og drikke;Pokarmy i napoje ;word;food_drink
+catHeader;Klær og tilbehør;Ubrania ;word;clothing
+catHeader;Kroppsdeler;Części ciała ;word;body_parts
+catHeader;Små gjenstander i huset;Przedmioty domowego użytku ;word;household
+catHeader;Rom og møbler;W domu: pomieszczenia, sprzęty, meble;word;furniture_rooms
+catHeader;Ting utendørs;Poza domem ;word;outside
+catHeader;Steder å dra til;;word;places
+catHeader;Mennesker;Osoby ;word;people
+note;item_250%Skriv inn hvordan barnet snakker til seg selv, f.eks. „Ella”, „baby”;item_258%Proszę wpisać, jak dziecko mówi na siebie, np. „Ika”, „Maciuś”, „Dodo”, „dzidzi”. ;word;people
+catHeader;Leker og rutiner;Formuły, zabawy, rutynowe czynności ;word;games_routines
+catHeader;Verb;Czasowniki ;word;action_words
+catHeader;Beskrivende ord;Przymiotniki i przysłówki ;word;descriptive_words
+catHeader;Ord om tid;Określenia czasu ;word;time_words
+catHeader;Pronomen;Zaimki;word;pronouns
+catHeader;Spørreord;Pytania;word;question_words
+catHeader;Preposisjoner og stedsangivelser;Określenia miejsca;word;locations
+catHeader;Mengdeord og bestemmerord ;Określenia miary ;word;quantifiers
+note;;item_373%w takich zdaniach np. „Już zrobiłem!” albo „Tatuś już nie śpi”.;word;time_words
+note;;item_374%w takich zdaniach jak np. „Jeszcze pisać!”, „Jeszcze raz mi to zrób!” albo „Jeszcze nie wypiłam”. ;word;time_words
+note;;"item_382%w takich zdaniach jak np. ""Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”. ";word;quantifiers
+note;;item_383%w takich zdaniach jak np. „Ania wszystko wypiła.” albo „Wszystko zepsute.” albo „Wszyscy śpią”. ;word;quantifiers
+help;Sjekk om du har gått glipp av noen side før du validerte? Er du sikker på at alle ordene barnet ditt forstår / sier er sjekket?;Przed zatwierdzeniem proszę sprawdzić, czy nie pominęli Państwo jakiejś strony? Czy na pewno zaznaczone są wszystkie wyrazy, które Państwa dziecko rozumie / mówi?;word;question_words
+sentences10Btn;;Wypowiedzi;sentences10;
+header;;Przykłady wypowiedzi;sentences10;
+instr;;Proszę podać przykłady rzeczywistych wypowiedzi dziecka:;sentences10;
+gesturesBtn;Handlinger og gester;Gesty;gestures;
+longText;I begynnelsen når spebarn lærer å kommunisere bruker de gester for å uttrykke hva de ønsker. Kryss av på lista for hvilke av gestene/handlingene som barnet ditt bruker akkurat nå.;Kiedy dzieci uczą się porozumiewać z innymi ludźmi, często posługują się gestami, aby wyrazić swoje pragnienia. Przy każdym z gestów na następnych stronach proszę postawić znaczek przy tym określeniu, które pasuje do tego, co Państwa dziecko aktualnie robi. ;gestures;firstPage
+header;Handlinger og gester;Gesty;gestures;
+catHeader;De første kommuniserende gestene;Pierwsze gesty komunikatywne;gestures;gestures_first
+instr;Kryss av på lista for hvilke av gestene/handlingene som barnet ditt bruker akkurat nå.;Czy Państwa dziecko używa wymienionych niżej gestów? ;gestures;gestures_first
+catHeader;Leker og rutiner;Zabawy i rytuały;gestures;gestures_games
+instr;Gjør barnet ditt noe av det følgende, eller prøver han/hun å gjøre det?;Czy Państwa dziecko wykonuje wymienione niżej czynności?;gestures;gestures_games
+catHeader;Handling med objekter;Działania na przedmiotach;gestures;gestures_objects
+instr;Gjør barnet ditt noe av det følgende, eller prøver han/hun å gjøre det?;Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;gestures;gestures_objects
+catHeader;Å leke at man er mor eller far;Zabawa lalką lub misiem: czynności opiekuńcze;gestures;gestures_parent
+instr;Her er slike ting som små barn av og til gjør med kosedyr eller dukker. Kryss av for de handlingene du har sett ditt barn gjøre.;Poniżej wypisano czynności opiekuńcze, jakie dzieci wykonują bawiąc się lalkami lub misiami. Proszę zaznaczyć te z nich, które zaobserwowali Państwo u swego dziecka.;gestures;gestures_parent
+catHeader;Herme etter det de voksne gjør;Naśladowanie innych czynności dorosłych (na przedmiotach lub zabawkach);gestures;gestures_adult
+instr;Gjør barnet ditt noe av det følgende, eller prøver han/hun å gjøre det?;Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;gestures;gestures_adult

@@ -1,9 +1,0 @@
-type,category,input_type,comment,css_class,binded_types,initially_disabled,conditions,answers_to_enable
-start,,demographic,FALSE,,,FALSE,,
-understanding,first_signs,radio,FALSE,,,,,
-understanding,,oneCheckboxGroup,TRUE,threeColumns,"first_signs,phrases",FALSE,,
-word,,manyCheckboxGroups,TRUE,threeColumns,,FALSE,,
-starting_to_talk,,radio,FALSE,threeColumns,,FALSE,,
-combine,,radio,FALSE,,,FALSE,sentences10,"2,3"
-sentences10,,sentences,FALSE,twoColumns,,TRUE,,
-gestures,,radio,TRUE,threeColumns,startWith,FALSE,,

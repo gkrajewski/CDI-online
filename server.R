@@ -23,8 +23,9 @@ server <- function(input, output, session) {
         uniTransl <- read.csv("uniTranslations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
         setwd(paste0(dataPath, "/", lang, "/", form))
         items <<- read.csv("items.csv", encoding = "UTF-8", sep = ";", strip.white = T)[1:6]
-        norms <<- read.csv("comp.csv", encoding = "UTF-8", strip.white = T, row.names = 1)
-        transl <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
+        #TODO: norms <<- read.csv("comp.csv", encoding = "UTF-8", strip.white = T, row.names = 1)
+        transl <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T) 
+        if (lang == "no") transl$text.1 <- NULL #TODO
         formSettings <- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
         setwd(initPath)
         txt <<- rbind(uniTransl, transl)
@@ -145,7 +146,7 @@ server <- function(input, output, session) {
     } else {
       
       #No URL parameters
-      updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl"))
+      updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "no"))
       session$reload()
 
     }

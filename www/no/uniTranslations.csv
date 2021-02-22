@@ -1,0 +1,27 @@
+text_type;text;item_type;category
+longText;FORELDRERAPPORT FOR KOMMUNIKATIV UTVIKLING: ORD OG GESTER. Her følger lister over typiske ord i et barns ordforråd. Kryss av i den første kolonnen (forstår) dersom barnet ditt forstår ordet, men ennå ikke sier det. Ord som barnet både forstår og bruker, krysser du av i den andre kolonnen (forstår og sier). Om barnet bruker en annen uttale av et ord (for eksempel at det sier ”epe” istedenfor ”eple”) krysser du av ordet likevel. Husk at dette er en ”katalog” over ord som blir brukt av mange forskjellige barn, så ikke bli bekymret dersom barnet ditt kun kan noen få av dem akkurat nå.;start;
+help;MERK: Etter å ha bekreftet startdelen, vil det ikke være mulig å besøke den igjen.;start;
+backBtn;Gå tilbake;;
+nextBtn;Fortsett;;
+saveBtn;Bekreft;;
+startBtn;Start;;
+dateLabel;Barnets fødselsdato;;
+genderLabel;Barnets kjønn;;
+noGender;Velg kjønn for å bekrefte.;;
+badDate;Feil fødselsdato;;
+genders;Jente, Gutt, Annen;;
+commentLabel;Andre kommentarer;;
+cdiNamePrefix;Foreldrerapport for Kommunikativ Utvikling;;
+endTooltip;Det vil være mulig å fullføre varelageret når alle delene er godkjent.;;
+sentencesTooltip;"Avsnittet ""Setninger"" blir aktiv, avhengig av svaret i ""Kombinasjon av ord"" -delen.";;
+header;Kombinasjon av ord;combine;
+combineBtn;Kombinasjon av ord;combine;
+choiceNames;Ikke ennå, noen ganger, ofte;combine;
+help;"Avsnittet ""Setninger"" blir aktiv hvis du velger svaret ""Noen ganger"" eller ""Ofte"" her (og bekrefter det).";combine;
+header;Slutt;end;
+endBtn;Bli ferdig;end;
+instr;"På dette punktet kan du fremdeles redigere svarene dine, til tross for at du godkjenner alle delene. For å endelig være ferdig med å fylle lageret, klikk nå ""Send"" -knappen.";end;
+help;MERKNAD: Etter validering av beholdningen vil du ikke kunne redigere svaret lenger!;end;
+help;Takk for at du fylte ut!;postEnd;
+instr;"Tusen takk for tid og krefter for å fylle ut dette spørreskjemaet! Følg varslinger i appen / ny informasjon i ""Kunnskap"" -fanen";postEnd;
+;;;none
