@@ -1,17 +1,17 @@
 text_type;text;item_type;category
 cdiNameSufix;Słowa i Gesty;;
 sentences10Tooltip;Część „Wypowiedzi” uaktywnia się w zależności od odpowiedzi w części „Łączenie wyrazów”.;;
+longText;Kwestionariusz ten jest polską adaptacją amerykańskiego inwentarza do badania rozwoju mowy najmłodszych dzieci („MacArthur-Bates Communicative Development Inventory”). Metoda ta opiera się na wiedzy rodziców na temat rozwoju językowego własnych dzieci i dotyczy rozumienia mowy, mówienia oraz porozumiewania się przy pomocy gestów. Znaczną część inwentarza stanowią pytania o najwcześniejsze słownictwo dzieci. Rodzice mają zaznaczyć słowa, które dziecko rozumie, a także te z nich, których używa ono w mowie. Nie należy dziecka przepytywać ani prosić o powtarzanie poszczególnych wyrazów, ani też „uczyć słówek”. Wystarczy, gdy rodzice odpowiedzą na pytania według własnej wiedzy o dziecku.;start;
 understandingBtn;Rozumienie;understanding;
 header;Rozumienie;understanding;
 catHeader;Pierwsze przejawy rozumienia;understanding;first_signs
 longText;Dzieci, zanim zaczną mówić, rozumieją wiele słów i wyrażeń. Można to stwierdzić obserwując ich reakcje na znane słowa lub zwroty. Czy Państwa dziecko wykazuje poniższe reakcje? (Proszę wybrać);understanding;first_signs
 choiceNames;Tak, Nie;understanding;first_signs
 catHeader;Rozumienie wypowiedzi dorosłych;understanding;phrases
-instr;Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać.;understanding;phrases
+instr;Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać w polu na uwagi.;understanding;phrases
 wordBtn;Wyrazy;word;
 header;Lista wyrazów;word;
-longText;"Na kolejnych stronach przedstawiamy listę typowych wyrazów znanych małym dzieciom. Przy tych wyrazach, które Państwa dziecko rozumie, ale samo ich jeszcze nie mówi, proszę postawić znaczek w pierwszej kolumnie (R = rozumie). Przy tych wyrazach, które dziecko nie tylko rozumie, ale i samo mówi, proszę postawić znaczek w drugiej kolumnie (M = rozumie i mówi). Jeżeli dziecko używa nieco innej formy, np. mówi piesek, a nie pies, proszę mimo to postawić znaczek przy słowie pies. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. lybka zamiast rybka lub wiójka zamiast wiewiórka). Proszę takie słowo także zaznaczyć plusem, można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa. Czasami dzieci wymyślają własne wyrazy, np. dzi zamiast piłka; także taką formę należy potraktować jako wyraz i zaznaczyć słowo „piłka”, wpisując przy nim dodatkowo „dzi”. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać właściwe określenie. Wszelkie wątpliwości można dopisać na kwestionariuszu. 
-  ";word;firstPage
+longText;"Na kolejnych stronach przedstawiamy listę typowych wyrazów znanych małym dzieciom. Przy tych wyrazach, które Państwa dziecko rozumie, ale samo ich jeszcze nie mówi, proszę zaznaczyć R (= rozumie). Przy tych wyrazach, które dziecko nie tylko rozumie, ale i samo mówi, proszę zaznaczyć M (= rozumie i mówi). Jeżeli dziecko używa nieco innej formy, np. mówi „piesek”, a nie „pies”, proszę mimo to postawić znaczek przy słowie „pies”. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. „lybka” zamiast „rybka” lub „wiójka” zamiast „wiewiórka”). Proszę takie słowo także zaznaczyć, można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa, w polu na uwagi. Czasami dzieci wymyślają własne wyrazy, np. „dzi” zamiast „piłka”; także taką formę należy potraktować jako wyraz i zaznaczyć słowo „piłka”, wpisując dodatkowo „dzi” w polu na uwagi. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać w polu na uwagi właściwe określenie. Wszelkie wątpliwości można również wpisywać w polu na uwagi.";word;firstPage
 warning;" UWAGA: Kwestionariusz przeznaczony jest dla dzieci w różnym wieku. Proszę się nie martwić, jeśli Państwa dziecko jeszcze nie używa wszystkich słów i gestów, o które pytamy!
   ";word;firstPage
 instr;R = tylko rozumie M = rozumie i mówi ;word;allInput
@@ -36,7 +36,7 @@ catHeader;Określenia czasu ;word;time_words
 note;item_373%w takich zdaniach np. „Już zrobiłem!” albo „Tatuś już nie śpi”.;word;time_words
 note;item_374%w takich zdaniach jak np. „Jeszcze pisać!”, „Jeszcze raz mi to zrób!” albo „Jeszcze nie wypiłam”. ;word;time_words
 catHeader;Określenia miary ;word;quantifiers
-note;"item_382%w takich zdaniach jak np. ""Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”. ";word;quantifiers
+note;"item_382%w takich zdaniach jak np. „Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”. ";word;quantifiers
 note;item_383%w takich zdaniach jak np. „Ania wszystko wypiła.” albo „Wszystko zepsute.” albo „Wszyscy śpią”. ;word;quantifiers
 catHeader;Zaimki;word;pronouns
 catHeader;Pytania;word;question_words
@@ -44,9 +44,10 @@ help;Przed zatwierdzeniem proszę sprawdzić, czy nie pominęli Państwo jakiej�
 starting_to_talkBtn;Naśladownictwo;starting_to_talk;
 header;Naśladownictwo;starting_to_talk;
 choiceNames;Tak, Nie;starting_to_talk;
+help;"UWAGA: To pytanie odnosi się do dzieci, które już znają dość dużo wyrazów. Jeśli Państwa dziecko jeszcze nie łączy wyrazów, proszę zaznaczyć „Jeszcze nie” i przejść do zakładki „Gesty”. Po wybraniu odpowiedzi „Czasem” lub „Często” dostępna stanie się zakładka „Wypowiedzi”.;combine;
 sentences10Btn;Wypowiedzi;sentences10;
 header;Przykłady wypowiedzi;sentences10;
-instr;Proszę podać przykłady rzeczywistych wypowiedzi dziecka:;sentences10;
+instr;Jeśli Państwa dziecko łączy wyrazy „czasem” lub „często”, proszę podać przykłady rzeczywistych wypowiedzi dziecka:;sentences10;
 gesturesBtn;Gesty;gestures;
 longText;Kiedy dzieci uczą się porozumiewać z innymi ludźmi, często posługują się gestami, aby wyrazić swoje pragnienia. Przy każdym z gestów na następnych stronach proszę postawić znaczek przy tym określeniu, które pasuje do tego, co Państwa dziecko aktualnie robi. ;gestures;firstPage
 header;Gesty;gestures;
