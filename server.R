@@ -133,8 +133,8 @@ server <- function(input, output, session) {
 
         #Save data
         session$onSessionEnded(function() {
-          write.csv(answers, answersFile, row.names = F)
-          write.csv(userProgress, userProgressFile, row.names = F)
+          # write.csv(answers, answersFile, row.names = F)
+          # write.csv(userProgress, userProgressFile, row.names = F)
         })
         
       } else {
@@ -146,7 +146,7 @@ server <- function(input, output, session) {
     } else {
       
       #No URL parameters
-      updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "no"))
+      updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl"))
       session$reload()
 
     }
