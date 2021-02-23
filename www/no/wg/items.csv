@@ -1,33 +1,33 @@
 item_id;definition;type;category;lexical_category;lexical_class;uni_lemma;complexity_category;num_item_id
-item_1;Reagerer når han/hun hører navnet sitt (ved f.eks. å snu seg mot den som snakker);first_signs;NA;NA;NA;NA;;1
-item_2;"Reagerer på at noen sier ""nei, nei"" (ved å stoppe aktiviteten – i alle fall et øyeblikk)";first_signs;NA;NA;NA;NA;;2
-item_3;"Reagerer når noen sier ""der er pappa/mamma"" ved å se etter ham/henne.";first_signs;NA;NA;NA;NA;;3
-item_4;Er du sulten?;phrases;NA;NA;NA;NA;;4
-item_5;Er du trøtt?;phrases;NA;NA;NA;NA;;5
-item_6;Det var flink jente/gutt;phrases;NA;NA;NA;NA;;6
-item_7;Gap opp;phrases;NA;NA;NA;NA;;7
-item_8;Gi meg en klem;phrases;NA;NA;NA;NA;;8
-item_9;Gi meg et kyss;phrases;NA;NA;NA;NA;;9
-item_10;Gå og hent ________;phrases;NA;NA;NA;NA;;10
-item_11;Ikke gjør det;phrases;NA;NA;NA;NA;;11
-item_12;Ikke rør;phrases;NA;NA;NA;NA;;12
-item_13;Kast ballen;phrases;NA;NA;NA;NA;;13
-item_14;Klapp med hendene dine;phrases;NA;NA;NA;NA;;14
-item_15;Kom hit;phrases;NA;NA;NA;NA;;15
-item_16;La mamma få det;phrases;NA;NA;NA;NA;;16
-item_17;Nå sier vi ha det;phrases;NA;NA;NA;NA;;17
-item_18;På tide å legge seg;phrases;NA;NA;NA;NA;;18
-item_19;Reis deg (opp);phrases;NA;NA;NA;NA;;19
-item_20;Se her;phrases;NA;NA;NA;NA;;20
-item_21;Sett deg (ned);phrases;NA;NA;NA;NA;;21
-item_22;Skal vi kjøre en tur?;phrases;NA;NA;NA;NA;;22
-item_23;Slutt (opp);phrases;NA;NA;NA;NA;;23
-item_24;Spytt ut;phrases;NA;NA;NA;NA;;24
-item_25;Stå stille;phrases;NA;NA;NA;NA;;25
-item_26;Vil du ha mer?;phrases;NA;NA;NA;NA;;26
-item_27;Vær forsiktig;phrases;NA;NA;NA;NA;;27
-item_28;Vær stille;phrases;NA;NA;NA;NA;;28
-item_29;Skifte bleie;phrases;NA;NA;NA;NA;;29
+item_1;Reagerer når han/hun hører navnet sitt (ved f.eks. å snu seg mot den som snakker);understanding;first_signs;NA;NA;NA;;1
+item_2;"Reagerer på at noen sier ""nei, nei"" (ved å stoppe aktiviteten – i alle fall et øyeblikk)";understanding;first_signs;NA;NA;NA;;2
+item_3;"Reagerer når noen sier ""der er pappa/mamma"" ved å se etter ham/henne.";understanding;first_signs;NA;NA;NA;;3
+item_4;Er du sulten?;understanding;phrases;NA;NA;NA;;4
+item_5;Er du trøtt?;understanding;phrases;NA;NA;NA;;5
+item_6;Det var flink jente/gutt;understanding;phrases;NA;NA;NA;;6
+item_7;Gap opp;understanding;phrases;NA;NA;NA;;7
+item_8;Gi meg en klem;understanding;phrases;NA;NA;NA;;8
+item_9;Gi meg et kyss;understanding;phrases;NA;NA;NA;;9
+item_10;Gå og hent ________;understanding;phrases;NA;NA;NA;;10
+item_11;Ikke gjør det;understanding;phrases;NA;NA;NA;;11
+item_12;Ikke rør;understanding;phrases;NA;NA;NA;;12
+item_13;Kast ballen;understanding;phrases;NA;NA;NA;;13
+item_14;Klapp med hendene dine;understanding;phrases;NA;NA;NA;;14
+item_15;Kom hit;understanding;phrases;NA;NA;NA;;15
+item_16;La mamma få det;understanding;phrases;NA;NA;NA;;16
+item_17;Nå sier vi ha det;understanding;phrases;NA;NA;NA;;17
+item_18;På tide å legge seg;understanding;phrases;NA;NA;NA;;18
+item_19;Reis deg (opp);understanding;phrases;NA;NA;NA;;19
+item_20;Se her;understanding;phrases;NA;NA;NA;;20
+item_21;Sett deg (ned);understanding;phrases;NA;NA;NA;;21
+item_22;Skal vi kjøre en tur?;understanding;phrases;NA;NA;NA;;22
+item_23;Slutt (opp);understanding;phrases;NA;NA;NA;;23
+item_24;Spytt ut;understanding;phrases;NA;NA;NA;;24
+item_25;Stå stille;understanding;phrases;NA;NA;NA;;25
+item_26;Vil du ha mer?;understanding;phrases;NA;NA;NA;;26
+item_27;Vær forsiktig;understanding;phrases;NA;NA;NA;;27
+item_28;Vær stille;understanding;phrases;NA;NA;NA;;28
+item_29;Skifte bleie;understanding;phrases;NA;NA;NA;;29
 item_30;"Noen barn liker å etterlikne (imitere) det de nettopp har hørt (det kan være nye ord de holder på å lære og/eller deler av setninger som f. eks. at de sier ""jobb nå"" etter at de har hørt at ""mamma skal gå på jobb nå""). Hvor ofte hermer barnet ditt etter ord?";starting_to_talk;NA;NA;NA;NA;;30
 item_31;Noen barn liker å si navnet på ting de ser rundt seg. Det kan virke som om de er stolte over å vite hva tingene heter og at de liker å vise dette. Hvor ofte navngir barnet ditt ting det ser?;starting_to_talk;NA;NA;NA;NA;;31
 item_32;au;word;sounds;other;other;ouch;;32
@@ -425,66 +425,66 @@ item_423;mer;word;quantifiers;function_words;function_words;more;;423
 item_424;noe;word;quantifiers;function_words;function_words;some;;424
 item_425;noen;word;quantifiers;function_words;function_words;any;;425
 item_426;samme;word;quantifiers;function_words;function_words;same;;426
-item_427;Strekker armen for å vise noe i hånden?;gestures_first;NA;NA;NA;NA;;427
-item_428;Rekker deg en leke hun/han holder?;gestures_first;NA;NA;NA;NA;;428
-item_429;Peker på noe som fanger oppmerksomheten?;gestures_first;NA;NA;NA;NA;;429
-item_430;Vinker ha det på egen hånd når noen drar?;gestures_first;NA;NA;NA;NA;;430
-item_431;Strekker armene opp for å bli løftet?;gestures_first;NA;NA;NA;NA;;431
-item_432;"Rister på hodet for ""nei""?";gestures_first;NA;NA;NA;NA;;432
-item_433;"Nikker til ""ja?""";gestures_first;NA;NA;NA;NA;;433
-item_434;Gestikulerer hysj ved fingeren mot munnen?;gestures_first;NA;NA;NA;NA;;434
-item_435;Vil ha noe ved å strekke armen og åpne og lukke hånden?;gestures_first;NA;NA;NA;NA;;435
-item_436;Sender slengkyss?;gestures_first;NA;NA;NA;NA;;436
-item_437;Smatter med leppene - nam-nam- for å vise at noe smaker godt?;gestures_first;NA;NA;NA;NA;;437
-item_438;Trekker på skuldrene for å vise at man ikke vet?;gestures_first;NA;NA;NA;NA;;438
-item_439;Leker hvor er _____? Der er _____! (Gjemmer ansiktet bak hendene og tar hendene bort);gestures_games;NA;NA;NA;NA;;439
-item_440;"Leker ""bake kake søte"" eller andre leker med hender og fingre.";gestures_games;NA;NA;NA;NA;;440
-item_441;Leker hvor stor er du – sååååååå stor.;gestures_games;NA;NA;NA;NA;;441
-item_442;Leker at man prøver å fange hverandre.;gestures_games;NA;NA;NA;NA;;442
-item_443;Synger.;gestures_games;NA;NA;NA;NA;;443
-item_444;Danser.;gestures_games;NA;NA;NA;NA;;444
-item_445;Spiser med skje eller gaffel.;gestures_objects;NA;NA;NA;NA;;445
-item_446;Drikker fra en kopp.;gestures_objects;NA;NA;NA;NA;;446
-item_447;Børster eller grer håret sitt selv.;gestures_objects;NA;NA;NA;NA;;447
-item_448;Pusser tennene.;gestures_objects;NA;NA;NA;NA;;448
-item_449;Vasker seg i ansiktet eller hendene med en klut.;gestures_objects;NA;NA;NA;NA;;449
-item_450;Setter på seg lue/solhatt selv.;gestures_objects;NA;NA;NA;NA;;450
-item_451;Tar på seg en sko eller sokk selv.;gestures_objects;NA;NA;NA;NA;;451
-item_452;Tar på seg halsbånd eller andre pyntesaker selv.;gestures_objects;NA;NA;NA;NA;;452
-item_453;Legger hodet på samlede hender og kniper øynene for å late som om hun/han sover.;gestures_objects;NA;NA;NA;NA;;453
-item_454;Blåser for å vise at noe er varmt.;gestures_objects;NA;NA;NA;NA;;454
-item_455;Holder et lekefly i hånda og later som om det flyr.;gestures_objects;NA;NA;NA;NA;;455
-item_456;Tar telefonen til øret.;gestures_objects;NA;NA;NA;NA;;456
-item_457;Lukter på blomstene.;gestures_objects;NA;NA;NA;NA;;457
-item_458;Dytter lekebiler rundt på gulvet og later som om de kjører.;gestures_objects;NA;NA;NA;NA;;458
-item_459;Kaster ball.;gestures_objects;NA;NA;NA;NA;;459
-item_460;Later som om man heller noe flytende fra en beholder til en annen.;gestures_objects;NA;NA;NA;NA;;460
-item_461;Later som om man rører med en skje i en gryte eller kopp.;gestures_objects;NA;NA;NA;NA;;461
-item_462;Legger dem i senga for å sove.;gestures_parent;NA;NA;NA;NA;;462
-item_463;Tar dyne over.;gestures_parent;NA;NA;NA;NA;;463
-item_464;Mater med en flaske.;gestures_parent;NA;NA;NA;NA;;464
-item_465;Mater med en skje.;gestures_parent;NA;NA;NA;NA;;465
-item_466;Børster/grer håret.;gestures_parent;NA;NA;NA;NA;;466
-item_467;Klapper barnet på ryggen for å få en rap.;gestures_parent;NA;NA;NA;NA;;467
-item_468;Triller i vogn.;gestures_parent;NA;NA;NA;NA;;468
-item_469;Vugger/rugger det i armene.;gestures_parent;NA;NA;NA;NA;;469
-item_470;Kysser eller klemmer på det.;gestures_parent;NA;NA;NA;NA;;470
-item_471;Prøver å kle på det.;gestures_parent;NA;NA;NA;NA;;471
-item_472;Tørker det i ansiktet eller hendene.;gestures_parent;NA;NA;NA;NA;;472
-item_473;Snakker til det.;gestures_parent;NA;NA;NA;NA;;473
-item_474;Prøver å ta på bleie.;gestures_parent;NA;NA;NA;NA;;474
-item_475;Feier med en kost.;gestures_adult;NA;NA;NA;NA;;475
-item_476;Putter nøkkel i nøkkelhullet (eller i nærheten av det).;gestures_adult;NA;NA;NA;NA;;476
-item_477;Banker med en hammer.;gestures_adult;NA;NA;NA;NA;;477
-item_478;Prøver å sage.;gestures_adult;NA;NA;NA;NA;;478
-item_479;Skriver på et tastatur.;gestures_adult;NA;NA;NA;NA;;479
-item_480;"„Leser"" (åpner bøker og blar i sidene).";gestures_adult;NA;NA;NA;NA;;480
-item_481;Støvsuger.;gestures_adult;NA;NA;NA;NA;;481
-item_482;Vanner planter.;gestures_adult;NA;NA;NA;NA;;482
-item_483;Spiller på musikkinstrumenter.;gestures_adult;NA;NA;NA;NA;;483
-item_484;"„Kjører"" bil ved å styre med et ratt.";gestures_adult;NA;NA;NA;NA;;484
-item_485;Vasker opp.;gestures_adult;NA;NA;NA;NA;;485
-item_486;Gjør rent med klut eller tørker støv.;gestures_adult;NA;NA;NA;NA;;486
-item_487;Skriver/tegner med blyant, tusj eller fargestifter.;gestures_adult;NA;NA;NA;NA;;487
-item_488;Graver med en spade (i sandkassen).;gestures_adult;NA;NA;NA;NA;;488
-item_489;Tar på seg (sol)briller.;gestures_adult;NA;NA;NA;NA;;489
+item_427;Strekker armen for å vise noe i hånden?;gestures_first;;NA;NA;NA;;427
+item_428;Rekker deg en leke hun/han holder?;gestures_first;;NA;NA;NA;;428
+item_429;Peker på noe som fanger oppmerksomheten?;gestures_first;;NA;NA;NA;;429
+item_430;Vinker ha det på egen hånd når noen drar?;gestures_first;;NA;NA;NA;;430
+item_431;Strekker armene opp for å bli løftet?;gestures_first;;NA;NA;NA;;431
+item_432;"Rister på hodet for ""nei""?";gestures_first;;NA;NA;NA;;432
+item_433;"Nikker til ""ja?""";gestures_first;;NA;NA;NA;;433
+item_434;Gestikulerer hysj ved fingeren mot munnen?;gestures_first;;NA;NA;NA;;434
+item_435;Vil ha noe ved å strekke armen og åpne og lukke hånden?;gestures_first;;NA;NA;NA;;435
+item_436;Sender slengkyss?;gestures_first;;NA;NA;NA;;436
+item_437;Smatter med leppene - nam-nam- for å vise at noe smaker godt?;gestures_first;;NA;NA;NA;;437
+item_438;Trekker på skuldrene for å vise at man ikke vet?;gestures_first;;NA;NA;NA;;438
+item_439;Leker hvor er _____? Der er _____! (Gjemmer ansiktet bak hendene og tar hendene bort);gestures_games;;NA;NA;NA;;439
+item_440;"Leker ""bake kake søte"" eller andre leker med hender og fingre.";gestures_games;;NA;NA;NA;;440
+item_441;Leker hvor stor er du – sååååååå stor.;gestures_games;;NA;NA;NA;;441
+item_442;Leker at man prøver å fange hverandre.;gestures_games;;NA;NA;NA;;442
+item_443;Synger.;gestures_games;;NA;NA;NA;;443
+item_444;Danser.;gestures_games;;NA;NA;NA;;444
+item_445;Spiser med skje eller gaffel.;gestures_objects;;NA;NA;NA;;445
+item_446;Drikker fra en kopp.;gestures_objects;;NA;NA;NA;;446
+item_447;Børster eller grer håret sitt selv.;gestures_objects;;NA;NA;NA;;447
+item_448;Pusser tennene.;gestures_objects;;NA;NA;NA;;448
+item_449;Vasker seg i ansiktet eller hendene med en klut.;gestures_objects;;NA;NA;NA;;449
+item_450;Setter på seg lue/solhatt selv.;gestures_objects;;NA;NA;NA;;450
+item_451;Tar på seg en sko eller sokk selv.;gestures_objects;;NA;NA;NA;;451
+item_452;Tar på seg halsbånd eller andre pyntesaker selv.;gestures_objects;;NA;NA;NA;;452
+item_453;Legger hodet på samlede hender og kniper øynene for å late som om hun/han sover.;gestures_objects;;NA;NA;NA;;453
+item_454;Blåser for å vise at noe er varmt.;gestures_objects;;NA;NA;NA;;454
+item_455;Holder et lekefly i hånda og later som om det flyr.;gestures_objects;;NA;NA;NA;;455
+item_456;Tar telefonen til øret.;gestures_objects;;NA;NA;NA;;456
+item_457;Lukter på blomstene.;gestures_objects;;NA;NA;NA;;457
+item_458;Dytter lekebiler rundt på gulvet og later som om de kjører.;gestures_objects;;NA;NA;NA;;458
+item_459;Kaster ball.;gestures_objects;;NA;NA;NA;;459
+item_460;Later som om man heller noe flytende fra en beholder til en annen.;gestures_objects;;NA;NA;NA;;460
+item_461;Later som om man rører med en skje i en gryte eller kopp.;gestures_objects;;NA;NA;NA;;461
+item_462;Legger dem i senga for å sove.;gestures_parent;;NA;NA;NA;;462
+item_463;Tar dyne over.;gestures_parent;;NA;NA;NA;;463
+item_464;Mater med en flaske.;gestures_parent;;NA;NA;NA;;464
+item_465;Mater med en skje.;gestures_parent;;NA;NA;NA;;465
+item_466;Børster/grer håret.;gestures_parent;;NA;NA;NA;;466
+item_467;Klapper barnet på ryggen for å få en rap.;gestures_parent;;NA;NA;NA;;467
+item_468;Triller i vogn.;gestures_parent;;NA;NA;NA;;468
+item_469;Vugger/rugger det i armene.;gestures_parent;;NA;NA;NA;;469
+item_470;Kysser eller klemmer på det.;gestures_parent;;NA;NA;NA;;470
+item_471;Prøver å kle på det.;gestures_parent;;NA;NA;NA;;471
+item_472;Tørker det i ansiktet eller hendene.;gestures_parent;;NA;NA;NA;;472
+item_473;Snakker til det.;gestures_parent;;NA;NA;NA;;473
+item_474;Prøver å ta på bleie.;gestures_parent;;NA;NA;NA;;474
+item_475;Feier med en kost.;gestures_adult;;NA;NA;NA;;475
+item_476;Putter nøkkel i nøkkelhullet (eller i nærheten av det).;gestures_adult;;NA;NA;NA;;476
+item_477;Banker med en hammer.;gestures_adult;;NA;NA;NA;;477
+item_478;Prøver å sage.;gestures_adult;;NA;NA;NA;;478
+item_479;Skriver på et tastatur.;gestures_adult;;NA;NA;NA;;479
+item_480;"„Leser"" (åpner bøker og blar i sidene).";gestures_adult;;NA;NA;NA;;480
+item_481;Støvsuger.;gestures_adult;;NA;NA;NA;;481
+item_482;Vanner planter.;gestures_adult;;NA;NA;NA;;482
+item_483;Spiller på musikkinstrumenter.;gestures_adult;;NA;NA;NA;;483
+item_484;"„Kjører"" bil ved å styre med et ratt.";gestures_adult;;NA;NA;NA;;484
+item_485;Vasker opp.;gestures_adult;;NA;NA;NA;;485
+item_486;Gjør rent med klut eller tørker støv.;gestures_adult;;NA;NA;NA;;486
+item_487;Skriver/tegner med blyant, tusj eller fargestifter.;gestures_adult;;NA;NA;NA;;487
+item_488;Graver med en spade (i sandkassen).;gestures_adult;;NA;NA;NA;;488
+item_489;Tar på seg (sol)briller.;gestures_adult;;NA;NA;NA;;489

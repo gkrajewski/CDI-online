@@ -78,6 +78,7 @@ server <- function(input, output, session) {
             categoriesNum <- length(uniqueCategories)
             firstCat <- uniqueCategories[1]
             if (categoriesNum > 1 & uniqueCategories[1] == "") firstCat <- uniqueCategories[2]
+            if (firstCat == "allInput") firstCat <- uniqueCategories[3]
             firstCats[i] <- firstCat
             i <- i + 1
           }
@@ -148,7 +149,7 @@ server <- function(input, output, session) {
       #No URL parameters
       updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl"))
       session$reload()
-
+      
     }
     
   })#end observe
