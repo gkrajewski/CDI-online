@@ -14,7 +14,7 @@ wordBtn;Ord;word;
 header;Sjekkliste over ordforrådet;word;
 longText;Her følger lister over typiske ord i et barns ordforråd. Kryss av i den første kolonnen (forstår) dersom barnet ditt forstår ordet, men ennå ikke sier det. Ord som barnet både forstår og bruker, krysser du av i den andre kolonnen (forstår og sier). Om barnet bruker en annen uttale av et ord (for eksempel at det sier ”epe” istedenfor ”eple”) krysser du av ordet likevel.;word;firstPage
 warning;Husk at dette er en ”katalog” over ord som mange forskjellige barn bruker, så ikke bli bekymret dersom barnet ditt kun bruker noen få av disse akkurat nå.;word;firstPage
-instr;F = bare forstår, S = forstår og sier;word;allInput
+instr;F = bare forstår, F&S = forstår og sier;word;allInput
 choiceNames;F,F&S;word;allInput
 catHeader;Lydeffekter og dyrelyder;word;sounds
 catHeader;Navn på dyr (virkelige eller lekedyr);word;animals

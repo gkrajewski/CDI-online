@@ -1,4 +1,19 @@
-addSidebarObservers <- function(input, output, form){
+renderPostEnd <- function(input, output){
+  
+  renderType(input, output, "postEnd")
+  output$warning <- renderText({})
+  
+  for (type in types){
+    
+    disable(type)
+    userProgress[userProgress$type == type, "disabled"] <<- TRUE
+    
+  } 
+  
+}
+
+
+addSidebarObservers <- function(input, output, form, id){
   
   observeEvent(input$saveBtn, {
     
@@ -90,13 +105,21 @@ addSidebarObservers <- function(input, output, form){
           
         } else {
           
-          #TODO: HTTP request cdi end
-          renderType(input, output, "postEnd")
-          
-          for (type in types){
+          if (callSW(done = "true", form = form, id = id, score = countScore(form), return = FALSE)){
             
-            disable(type)
-            userProgress[userProgress$type == type, "disabled"] <<- TRUE
+            renderPostEnd(input, output)
+            
+          } else {
+            
+            output$warning <- renderText({"Trying to connect with StarWords app"})
+            delay(
+              3000,
+              if (callSW(done = "true", form = form, id = id, score = countScore(form), return = FALSE)){
+                renderPostEnd(input, output)
+              } else {
+                output$warning <- renderText({"Cannot connect with StarWords app"})
+              }
+            )
             
           }
           

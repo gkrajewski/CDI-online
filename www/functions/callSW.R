@@ -1,4 +1,5 @@
-callSW<- function(done = "false", form, id, score = "false"){
+# library(jsonlite)
+callSW <- function(done = "false", form, id, score = "false", return = FALSE){
   
   ### LOGIN TO FIREBASE ###
   
@@ -29,10 +30,7 @@ callSW<- function(done = "false", form, id, score = "false"){
     url <- "https://apps.multilada.pl/graphql"
     
     body <- paste0("
-  
-    {
-        \"query\":
-          \"mutation{
+          mutation{
             upsertCdi(input:{
               token:\"", idToken, "\",
               cdi:{
@@ -48,18 +46,15 @@ callSW<- function(done = "false", form, id, score = "false"){
                   score
                 }
             }
-        } \"
-    }
-                 
+        }
   ")
     
-  response <- POST(url, body = body, encode = "json", verbose())
+  response <- POST(url, body = body, accept_json(), content_type("application/graphql"), verbose(data_in = TRUE))
   parsedResp <- content(response, "parsed")
   print(parsedResp)
-  cat(body)
   
   if(length(parsedResp$errors) > 0) return(FALSE)
-  return(TRUE)
+  return(return)
   
   } else {
     

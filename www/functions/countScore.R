@@ -32,4 +32,6 @@ countScore <- function(form){
     
   }
   
+  return("true")
+  
 }
