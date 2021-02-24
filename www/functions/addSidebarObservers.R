@@ -21,7 +21,7 @@ renderPostEnd <- function(input, output){
 }
 
 
-addSidebarObservers <- function(input, output, form, id, lang){
+addSidebarObservers <- function(input, output){
   
   observeEvent(input$saveBtn, {
     
@@ -36,12 +36,12 @@ addSidebarObservers <- function(input, output, form, id, lang){
         
       } else {
         
-        norms <- readNormsFile(form)
+        norms <- readNormsFile()
         print(norms)
         
         if(!is.null(norms)){
           
-          if (badDate(input$birthDate, form)){
+          if (badDate(input$birthDate)){
             
             canConfirm <- FALSE
             output$warning <- renderText({txt[txt$text_type == "badDate", "text"]})
@@ -124,7 +124,7 @@ addSidebarObservers <- function(input, output, form, id, lang){
           
         } else {
           
-          if (callSW(done = "true", form = form, id = id, score = countScore(form), return = FALSE)){
+          if (callSW(done = "true", score = countScore(), return = FALSE)){
             
             renderPostEnd(input, output)
             
@@ -133,7 +133,7 @@ addSidebarObservers <- function(input, output, form, id, lang){
             output$warning <- renderText({"Trying to connect with StarWords app"})
             delay(
               3000,
-              if (callSW(done = "true", form = form, id = id, score = countScore(form), return = FALSE)){
+              if (callSW(done = "true", score = countScore(), return = FALSE)){
                 renderPostEnd(input, output)
               } else {
                 output$warning <- renderText({"Cannot connect with StarWords app"})

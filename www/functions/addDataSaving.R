@@ -22,7 +22,7 @@ saveData <- function(input){
     
   }
   
-  countScore("wg")
+  #countScore()
   
 }
 

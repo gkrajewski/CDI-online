@@ -1,4 +1,4 @@
-startApp <- function(input, output, session, id, form, lang){
+startApp <- function(input, output, session){
   
   formPath <<- paste0(dataPath, "/", lang, "/", form)
   
@@ -111,7 +111,7 @@ startApp <- function(input, output, session, id, form, lang){
   type <- types[match(TRUE, userProgress$current)]
   language <<- lang #needed for dateInput
   renderType(input, output, type)
-  addSidebarObservers(input, output, form, id, lang)
+  addSidebarObservers(input, output)
   addDataSaving(input)
   
   #Save data

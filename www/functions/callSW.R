@@ -1,5 +1,5 @@
 # library(jsonlite)
-callSW <- function(done = "false", form, id, score = "false", return = FALSE){
+callSW <- function(done = "false", score = "false", return = FALSE){
   
   ### LOGIN TO FIREBASE ###
   

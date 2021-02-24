@@ -1,4 +1,4 @@
-countScore <- function(form){
+countScore <- function(){
   
   if (form == "wg"){
     

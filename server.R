@@ -2,9 +2,9 @@ server <- function(input, output, session) {
   
   observe({
     
-    id <- readFromURL("id", session)
-    form <- readFromURL("form", session)
-    lang <- readFromURL("lang", session)
+    id <<- readFromURL("id", session)
+    form <<- readFromURL("form", session)
+    lang <<- readFromURL("lang", session)
     
     if (!is.null(form) & !is.null(lang) & !is.null(id)){
       
@@ -16,13 +16,13 @@ server <- function(input, output, session) {
       
       if (!fromSW){
         
-        startApp(input, output, session, id, form, lang)
+        startApp(input, output, session)
         
       } else {
         
-        if (callSW(form = form, id = id, return = FALSE)){
+        if (callSW(return = FALSE)){
           
-          startApp(input, output, session, id, form, lang)
+          startApp(input, output, session)
           
         } else {
           
@@ -31,8 +31,8 @@ server <- function(input, output, session) {
           delay(
             
             3000,
-            if (callSW(form = form, id = id, return = TRUE)){
-              startApp(input, output, session, id, form, lang)
+            if (callSW(return = TRUE)){
+              startApp(input, output, session)
             } else {
               output$sidebar <- renderUI({"Cannot connect with StarWords app"})
             }

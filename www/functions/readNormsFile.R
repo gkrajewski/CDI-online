@@ -1,4 +1,4 @@
-readNormsFile <- function(form, gender = NULL){
+readNormsFile <- function(gender = NULL){
   
   ### If no gender is given unisex norms are taken (default) ###
   ### If form is wg comp norms are taken ###
