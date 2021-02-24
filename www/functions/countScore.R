@@ -10,8 +10,8 @@ countScore <- function(form){
     tbl <- table(replaced)
     score1 <- sum(replaced == 1)
     score2 <- sum(replaced == 2)
-    print(score1)
-    print(score2)
+    # print(score1)
+    # print(score2)
     
     # demoAnswer <- answers[answers$answer_type == "demographic", "answer"]
     # demoAnswer <- strsplit(demoAnswer, ",")[[1]]

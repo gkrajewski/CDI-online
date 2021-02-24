@@ -17,6 +17,7 @@ setwd(initPath)
 
 source(paste0(functionsPath,"/readFromURL.R"))
 source(paste0(functionsPath,"/startApp.R"))
+source(paste0(functionsPath,"/readNormsFile.R"))
 source(paste0(functionsPath,"/callSW.R"))
 source(paste0(functionsPath,"/addSidebarObservers.R"))
 source(paste0(functionsPath,"/addDataSaving.R"))

@@ -46,7 +46,7 @@ server <- function(input, output, session) {
     } else {
       
       #No URL parameters
-      updateQueryString(paste0("?id=", "V1StGXR8_Z5jdHi6B-myT", "&form=", "wg", "&lang=", "pl"))
+      updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl"))
       session$reload()
       
     }

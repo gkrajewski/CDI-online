@@ -127,7 +127,7 @@ renderInput <- function(){
       label = txt[txt$text_type == "genderLabel", "text"],
       selected = currGender,
       choiceNames = strsplit(txt[txt$text_type == "genders", "text"], ",")[[1]],
-      choiceValues = c("Female", "Male", "Other")
+      choiceValues = c("female", "male", "other")
     )
     
   }

@@ -1,3 +1,11 @@
+confirmStart <- function(){
+  
+  userProgress[userProgress$type == 'start', "disabled"] <<- TRUE
+  disable('start')
+  return(TRUE)
+  
+}
+
 renderPostEnd <- function(input, output){
   
   renderType(input, output, "postEnd")
@@ -13,7 +21,7 @@ renderPostEnd <- function(input, output){
 }
 
 
-addSidebarObservers <- function(input, output, form, id){
+addSidebarObservers <- function(input, output, form, id, lang){
   
   observeEvent(input$saveBtn, {
     
@@ -21,26 +29,37 @@ addSidebarObservers <- function(input, output, form, id){
     
     if (currType == 'start'){
       
-      if (is.null(input$gender)) output$warning <- renderText({txt[txt$text_type == "noGender", "text"]})
-      if (badDate(input$birthDate, form)) output$warning <- renderText({txt[txt$text_type == "badDate", "text"]})
-      
       if (is.null(input$gender)){
         
         canConfirm <- FALSE
         output$warning <- renderText({txt[txt$text_type == "noGender", "text"]})
         
-      } else if (badDate(input$birthDate, form)){
-        
-        canConfirm <- FALSE
-        output$warning <- renderText({txt[txt$text_type == "badDate", "text"]})
-        
       } else {
         
-        userProgress[userProgress$type == 'start', "disabled"] <<- TRUE
-        disable('start')
+        norms <- readNormsFile(form)
+        print(norms)
+        
+        if(!is.null(norms)){
+          
+          if (badDate(input$birthDate, form)){
+            
+            canConfirm <- FALSE
+            output$warning <- renderText({txt[txt$text_type == "badDate", "text"]})
+            
+          } else {
+
+            canConfirm <- confirmStart()
+            
+          }
+          
+        } else {
+          
+          canConfirm <- confirmStart()
+          
+        }
         
       }
-      
+        
     }
     
     if (canConfirm){

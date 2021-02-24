@@ -1,11 +1,12 @@
 startApp <- function(input, output, session, id, form, lang){
   
+  formPath <<- paste0(dataPath, "/", lang, "/", form)
+  
   #Prepare items, translations, settings and data files
   setwd(paste0(dataPath, "/", lang))
   uniTransl <- read.csv("uniTranslations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
-  setwd(paste0(dataPath, "/", lang, "/", form))
+  setwd(formPath)
   items <<- read.csv("items.csv", encoding = "UTF-8", sep = ";", strip.white = T)[c("definition", "type", "category")]
-  #TODO: norms <<- read.csv("comp.csv", encoding = "UTF-8", strip.white = T, row.names = 1)
   transl <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T) 
   formSettings <- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
   setwd(initPath)
@@ -110,7 +111,7 @@ startApp <- function(input, output, session, id, form, lang){
   type <- types[match(TRUE, userProgress$current)]
   language <<- lang #needed for dateInput
   renderType(input, output, type)
-  addSidebarObservers(input, output, form, id)
+  addSidebarObservers(input, output, form, id, lang)
   addDataSaving(input)
   
   #Save data
