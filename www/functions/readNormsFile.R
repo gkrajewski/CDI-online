@@ -59,17 +59,17 @@ readNormsFile <- function(gender = NULL){
     
     if (file.exists(normsFile)){
       
-      print(normsFile)
-      return(read.csv(normsFile, encoding = "UTF-8", strip.white = T, row.names = 1))
-      
+      norms <- read.csv(normsFile, encoding = "UTF-8", strip.white = T, row.names = 1)
+
     } else {
       
       print(paste0("ERROR: Cannot find ", normsFile, " file"))
-      return(NULL)
-      
+      norms <- NULL
+
     }
     
     setwd(initPath)
+    return(norms)
     
   }
   

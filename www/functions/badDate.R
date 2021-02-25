@@ -1,9 +1,7 @@
-badDate <- function(birthDate){
+badDate <- function(norms, birthDate){
   
-  # age <- interval(birthDate, Sys.Date()) %/% months(1)
-  # 
-  # if ( (age <= 18 & form == 'wg') | (age > 18 & age <= 36 & form == 'ws') | (age > 36 & form == 'iii') ) return(FALSE)
-  
-  return(TRUE)
+  age <- interval(birthDate, Sys.Date()) %/% months(1)
+  monthsInNorms <- lapply(row.names(norms), function(i){as.numeric(substr(i, 3, nchar(i)))})
+  return(!is.element(age, monthsInNorms))
   
 }

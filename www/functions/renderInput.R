@@ -120,7 +120,7 @@ renderInput <- function(){
     choiceValues <- c("Female", "Male", "Other")
     
     questions[[1]] <- br()
-    questions[[2]] <- dateInput("birthDate", txt[txt$text_type == "dateLabel", "text"], currDate, language = language)
+    questions[[2]] <- dateInput("birthDate", txt[txt$text_type == "dateLabel", "text"], currDate, language = lang)
     questions[[3]] <- br()
     questions[[4]] <- radioButtons(
       "gender",

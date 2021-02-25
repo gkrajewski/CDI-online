@@ -126,6 +126,7 @@ renderCategory <- function(input, output){
         
       },
       
+      if (length(notesList) > 0) br(),
       notesList,
       
       if (catSettings$comment & currCat != "firstPage"){

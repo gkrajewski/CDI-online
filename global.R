@@ -8,8 +8,8 @@ dataPath <- paste0(getwd(),"/www")
 functionsPath <- paste0(dataPath,"/functions")
 initPath <- getwd()
 
-if(!dir.exists(file.path(initPath, "answers"))) dir.create(file.path(initPath, "answers")) 
-if(!dir.exists(file.path(initPath, "usersProgress"))) dir.create(file.path(initPath, "usersProgress")) 
+# if(!dir.exists(file.path(initPath, "answers"))) dir.create(file.path(initPath, "answers")) 
+# if(!dir.exists(file.path(initPath, "usersProgress"))) dir.create(file.path(initPath, "usersProgress")) 
 
 setwd(dataPath)
 endSettings <<- read.csv("endSettings.csv", encoding = "UTF-8", strip.white = T)

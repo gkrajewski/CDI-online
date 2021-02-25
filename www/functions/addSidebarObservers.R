@@ -37,11 +37,10 @@ addSidebarObservers <- function(input, output){
       } else {
         
         norms <- readNormsFile()
-        print(norms)
         
         if(!is.null(norms)){
           
-          if (badDate(input$birthDate)){
+          if (badDate(norms, input$birthDate)){
             
             canConfirm <- FALSE
             output$warning <- renderText({txt[txt$text_type == "badDate", "text"]})
@@ -124,23 +123,32 @@ addSidebarObservers <- function(input, output){
           
         } else {
           
-          if (callSW(done = "true", score = countScore(), return = FALSE)){
+          # if (callSW(done = "true", score = countScore(), return = FALSE)){
+          #   
+          #   renderPostEnd(input, output)
+          #   
+          # } else {
+          #   
+          #   output$warning <- renderText({"Trying to connect with StarWords app"})
+          #   delay(
+          #     3000,
+          #     if (callSW(done = "true", score = countScore(), return = FALSE)){
+          #       renderPostEnd(input, output)
+          #     } else {
+          #       output$warning <- renderText({"Cannot connect with StarWords app"})
+          #     }
+          #   )
+          #   
+          # }
+          
+          renderType(input, output, "postEnd")
+          
+          for (type in types){
             
-            renderPostEnd(input, output)
+            disable(type)
+            userProgress[userProgress$type == type, "disabled"] <<- TRUE
             
-          } else {
-            
-            output$warning <- renderText({"Trying to connect with StarWords app"})
-            delay(
-              3000,
-              if (callSW(done = "true", score = countScore(), return = FALSE)){
-                renderPostEnd(input, output)
-              } else {
-                output$warning <- renderText({"Cannot connect with StarWords app"})
-              }
-            )
-            
-          }
+          } 
           
         }
         
