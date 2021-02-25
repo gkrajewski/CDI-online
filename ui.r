@@ -28,7 +28,8 @@ ui <- fluidPage(
       uiOutput("main"),
       textOutput("warning")
       
-    )
+    ),
+    position = c("right")
     
   )
   
