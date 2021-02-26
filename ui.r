@@ -10,6 +10,7 @@ ui <- fluidPage(
     tags$link(href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap", rel="stylesheet")
   ),
   
+  p(style = "text-align:right; font-size: 8px;", "Version 1.0"),
   h1(textOutput("cdiNamePrefix")),
   h2(textOutput("cdiNameSufix")),
   uiOutput("menu"),
@@ -32,5 +33,5 @@ ui <- fluidPage(
     position = c("right")
     
   )
-  
+
 )
