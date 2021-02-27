@@ -1,37 +1,34 @@
-countScore <- function(){
+countScore <- function(type = "word", answersCounted = 1){
   
-  if (form == "wg"){
+  typeAnswers <- answers[answers$type == type,]
+  typeInputType <- typeUniqueSettings[typeUniqueSettings$type == type, "input_type"]
+  rawAnswers <- typeAnswers[typeAnswers$answer_type == typeInputType, "answer"]
+  
+  if (typeInputType == "manyCheckboxGroups"){
     
-    answersStrings <- answers[answers$answer_type == "manyCheckboxGroups", "answer"]
+    answersStrings <- rawAnswers
     answerString <- paste0(na.omit(answersStrings), collapse = ", ")
     splittedAnswer <- strsplit(answerString[1], ",")[[1]]
     numericAnswer <- as.numeric(splittedAnswer)
     replaced <- replace(numericAnswer, is.na(numericAnswer), 2)
     tbl <- table(replaced)
-    score1 <- sum(replaced == 1)
-    score2 <- sum(replaced == 2)
-    # print(score1)
-    # print(score2)
     
-    # demoAnswer <- answers[answers$answer_type == "demographic", "answer"]
-    # demoAnswer <- strsplit(demoAnswer, ",")[[1]]
-    # birthDate <- demoAnswer[1]
-    # 
-    # age <- interval(birthDate, Sys.Date()) %/% months(1)
-    # ageStr <- paste0("m_", age)
-    # 
-    # print(norms[ageStr, "p_0.1"])
+    if (is.element(answersCounted, unique(replaced))){
+      score <- sum(replaced == answersCounted)
+    } else {
+      score <- 0
+      print("WARNING: Invalid answersCounted value given to countScore function or score is zero.")
+    }
     
-  } else {
+  } else if (typeInputType == "oneCheckboxGroup"){
     
-    answersInt <- na.omit(answers[answers$answer_type == "oneCheckboxGroup", "answer"])
+    answersInt <- na.omit(rawAnswers)
     answersStrings <- as.character(answersInt)
     str <- paste0(answersStrings, collapse = " ")
     score <- length(strsplit(str, " ")[[1]])
-    print(score)
     
   }
   
-  return("true")
-  
+  return(score)
+    
 }

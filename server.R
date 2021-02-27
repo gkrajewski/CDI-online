@@ -8,45 +8,15 @@ server <- function(input, output, session) {
     
     if (!is.null(form) & !is.null(lang) & !is.null(id)){
       
-      if (nchar(id) == 21){
-        fromSW <- TRUE
-      } else {
-        fromSW <- FALSE
-      }
+      #if (nchar(id) == 21) recurrentCallSW()
+      startApp(input, output, session)
       
-      if (!fromSW){
-        
-        startApp(input, output, session)
-        
-      } else {
-        
-        if (callSW(return = FALSE)){
-          
-          startApp(input, output, session)
-          
-        } else {
-          
-          output$sidebar <- renderUI({"Trying to connect with StarWords app"})
-          
-          delay(
-            
-            3000,
-            if (callSW(return = TRUE)){
-              startApp(input, output, session)
-            } else {
-              output$sidebar <- renderUI({"Cannot connect with StarWords app"})
-            }
-            
-          )
-          
-        }
-        
-      }
+      #sendmail("pkrol4478@gmail.com", "pkrol4478@gmail.com", "TYTUL MAILA", "TRESC MAILA")
       
     } else {
       
       #No URL parameters
-      updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl"))
+      updateQueryString(paste0("?id=", "IlYaL6gzKieyRx92YUl1q", "&form=", "wg", "&lang=", "pl"))
       session$reload()
       
     }

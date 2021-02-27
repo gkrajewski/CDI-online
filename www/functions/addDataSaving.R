@@ -22,8 +22,6 @@ saveData <- function(input){
     
   }
   
-  #countScore()
-  
 }
 
 addDataSaving <- function(input){

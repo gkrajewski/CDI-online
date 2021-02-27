@@ -1,5 +1,5 @@
 # library(jsonlite)
-callSW <- function(done = "false", score = "false", return = FALSE){
+callSW <- function(done = "false"){
   
   ### LOGIN TO FIREBASE ###
   
@@ -22,6 +22,11 @@ callSW <- function(done = "false", score = "false", return = FALSE){
   status <- http_status(response)$category
   
   if (status == "Success"){
+    
+    score <- "false"
+    if (done == "true"){
+      if (countScore() <= readValueFromNorms()) score <- "true"
+    }
     
     ### MAKE CALL TO STARWORDS APP ###
     
@@ -49,13 +54,13 @@ callSW <- function(done = "false", score = "false", return = FALSE){
         }
   ")
     
-  response <- POST(url, body = body, accept_json(), content_type("application/graphql"), verbose(data_in = TRUE))
-  parsedResp <- content(response, "parsed")
-  print(parsedResp)
-  
-  if(length(parsedResp$errors) > 0) return(FALSE)
-  return(return)
-  
+    response <- POST(url, body = body, accept_json(), content_type("application/graphql"), verbose(data_in = TRUE))
+    parsedResp <- content(response, "parsed")
+    print(parsedResp)
+    
+    if(length(parsedResp$errors) > 0) return(FALSE)
+    return(TRUE)
+    
   } else {
     
     print("ERROR: Cannot connect to Firebase")

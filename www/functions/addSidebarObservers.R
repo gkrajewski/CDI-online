@@ -6,21 +6,6 @@ confirmStart <- function(){
   
 }
 
-renderPostEnd <- function(input, output){
-  
-  renderType(input, output, "postEnd")
-  output$warning <- renderText({})
-  
-  for (type in types){
-    
-    disable(type)
-    userProgress[userProgress$type == type, "disabled"] <<- TRUE
-    
-  } 
-  
-}
-
-
 addSidebarObservers <- function(input, output){
   
   observeEvent(input$saveBtn, {
@@ -36,7 +21,7 @@ addSidebarObservers <- function(input, output){
         
       } else {
         
-        norms <- readNormsFile()
+        norms <<- readNormsFile()
         
         if(!is.null(norms)){
           
@@ -62,6 +47,12 @@ addSidebarObservers <- function(input, output){
     }
     
     if (canConfirm){
+      
+      #TODO: Delete it
+      if (currType == "word"){
+        print(readValueFromNorms())
+        print(countScore())
+      }
       
       output$warning <- renderText({})
       
@@ -123,24 +114,7 @@ addSidebarObservers <- function(input, output){
           
         } else {
           
-          # if (callSW(done = "true", score = countScore(), return = FALSE)){
-          #   
-          #   renderPostEnd(input, output)
-          #   
-          # } else {
-          #   
-          #   output$warning <- renderText({"Trying to connect with StarWords app"})
-          #   delay(
-          #     3000,
-          #     if (callSW(done = "true", score = countScore(), return = FALSE)){
-          #       renderPostEnd(input, output)
-          #     } else {
-          #       output$warning <- renderText({"Cannot connect with StarWords app"})
-          #     }
-          #   )
-          #   
-          # }
-          
+          recurrentCallSW("true")
           renderType(input, output, "postEnd")
           
           for (type in types){
