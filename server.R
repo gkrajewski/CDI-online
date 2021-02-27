@@ -8,10 +8,12 @@ server <- function(input, output, session) {
     
     if (!is.null(form) & !is.null(lang) & !is.null(id)){
       
-      #if (nchar(id) == 21) recurrentCallSW()
+      #if (nchar(idxx) == 21) recurrentCallSW()
       startApp(input, output, session)
       
-      #sendmail("pkrol4478@gmail.com", "pkrol4478@gmail.com", "TYTUL MAILA", "TRESC MAILA")
+      #gm_auth_configure(path = "C:/Users/pkrol/Desktop/credentials.json")
+      # gm_auth_configure() 
+      # gm_auth(email = TRUE, cache = ".secret")
       
     } else {
       
