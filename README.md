@@ -10,4 +10,5 @@ Accesible values of lang paramater are: pl, no <br/>
 Zmiany: <br/>
 - Dodanie kropki na końcu zdania w informacji wyświetlanej
 po zakończeniu inwentarza. <br/>
-- Przesyłanie do bazy SW informacji o wyniku. <br/>
+- Dodanie przesyłania do bazy SW informacji o wyniku. <br/>
+- Poprawione wyświetlanie czcionek na Safari. <br/>
