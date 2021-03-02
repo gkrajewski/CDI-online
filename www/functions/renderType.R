@@ -28,19 +28,6 @@ renderType <- function(input, output, type){
   output$warning <- renderText({})
   
   currCat <<- userProgress[userProgress$type == currType, "category"]
-
   renderCategory(input, output)
-  
-  # email <-
-  #   gm_mime() %>%
-  #   gm_to("pkrol4478@gmail.com") %>%
-  #   gm_from("pkrol4478@gmail.com") %>%
-  #   gm_subject("[SHINYERROR] BRAK POŁĄCZENIA Z BAZĄ") %>%
-  #   gm_text_body("blabla")
-  # 
-  # # # Verify it looks correct
-  # # gm_create_draft(test_email)
-  # 
-  # gm_send_message(email)
   
 }

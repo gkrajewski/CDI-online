@@ -1,10 +1,10 @@
 type,category,input_type,comment,css_class,binded_types,initially_disabled,conditions,answers_to_enable
-start,,demographic,FALSE,,,FALSE,,
-word,,oneCheckboxGroup,TRUE,threeColumns,,FALSE,,
-how_use_words,,radio,FALSE,,,FALSE,,
-word_endings,,radio,FALSE,,,FALSE,,
-word_forms,,oneCheckboxGroup,FALSE,threeColumns,,FALSE,,
-word_endings2,,oneCheckboxGroup,FALSE,threeColumns,,FALSE,,
-combine,,radio,FALSE,,,FALSE,"sentences3,complexity","2,3"
+start,,demographic,FALSE,,,FALSE,"word,how_use_words,word_endings,word_forms,word_endings2,combine",all
+word,,oneCheckboxGroup,TRUE,threeColumns,,TRUE,,
+how_use_words,,radio,FALSE,,,TRUE,,
+word_endings,,radio,FALSE,,,TRUE,,
+word_forms,,oneCheckboxGroup,FALSE,threeColumns,,TRUE,,
+word_endings2,,oneCheckboxGroup,FALSE,threeColumns,,TRUE,,
+combine,,radio,FALSE,,,TRUE,"sentences3,complexity","2,3"
 sentences3,,sentences,FALSE,,,TRUE,,
 complexity,,radioAlt,TRUE,,,TRUE,,

@@ -142,4 +142,8 @@ renderCategory <- function(input, output){
     
   })
   
+  runjs('
+      document.getElementById("header").scrollIntoView();
+    ')
+  
 }

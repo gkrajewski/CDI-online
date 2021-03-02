@@ -1,5 +1,5 @@
 # library(jsonlite)
-callSW <- function(done = "false"){
+callSW <- function(done, score){
   
   ### LOGIN TO FIREBASE ###
   
@@ -23,11 +23,6 @@ callSW <- function(done = "false"){
   
   if (status == "Success"){
     
-    score <- "false"
-    if (done == "true"){
-      if (countScore() <= readValueFromNorms()) score <- "true"
-    }
-    
     ### MAKE CALL TO STARWORDS APP ###
     
     body <- content(response, "parsed")
@@ -41,7 +36,7 @@ callSW <- function(done = "false"){
               cdi:{
                 done:", done, ",
                 cdiTypeId:\"", form, "\",
-                childHash:\"", id, "\",
+                childHash:\"", idx, "\",
                 score: ", score, "}}
                 ){
                 cdi{

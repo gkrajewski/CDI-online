@@ -2,18 +2,14 @@ server <- function(input, output, session) {
   
   observe({
     
-    id <<- readFromURL("id", session)
+    idx <<- readFromURL("id", session)
     form <<- readFromURL("form", session)
     lang <<- readFromURL("lang", session)
     
-    if (!is.null(form) & !is.null(lang) & !is.null(id)){
+    if (!is.null(form) & !is.null(lang) & !is.null(idx)){
       
-      #if (nchar(idxx) == 21) recurrentCallSW()
+      if (nchar(idx) == 21) recurrentCallSW()
       startApp(input, output, session)
-      
-      #gm_auth_configure(path = "C:/Users/pkrol/Desktop/credentials.json")
-      # gm_auth_configure() 
-      # gm_auth(email = TRUE, cache = ".secret")
       
     } else {
       

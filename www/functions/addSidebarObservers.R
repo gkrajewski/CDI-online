@@ -48,11 +48,11 @@ addSidebarObservers <- function(input, output){
     
     if (canConfirm){
       
-      #TODO: Delete it
-      if (currType == "word"){
-        print(readValueFromNorms())
-        print(countScore())
-      }
+      # #TODO: Delete it
+      # if (currType == "word"){
+      #   print(readValueFromNorms())
+      #   print(countScore())
+      # }
       
       output$warning <- renderText({})
       
@@ -66,9 +66,10 @@ addSidebarObservers <- function(input, output){
         
         conditionedTypes <- strsplit(conditionedTypes, ",")[[1]]
         conditionedAnswer <- answers[answers$type == currType, "answer"]
-        possibleAnswers <- strsplit(typeUniqueSettings[typeUniqueSettings$type == currType, "answers_to_enable"], ",")[[1]]
+        possibleAnswers <- typeUniqueSettings[typeUniqueSettings$type == currType, "answers_to_enable"]
+        if (possibleAnswers != "all") possibleAnswers <- strsplit(possibleAnswers, ",")[[1]]
         
-        if(is.element(conditionedAnswer, possibleAnswers)){
+        if(is.element(conditionedAnswer, possibleAnswers) | possibleAnswers == "all"){
           
           for (conditionedType in conditionedTypes){
             
@@ -114,7 +115,6 @@ addSidebarObservers <- function(input, output){
           
         } else {
           
-          recurrentCallSW("true")
           renderType(input, output, "postEnd")
           
           for (type in types){
@@ -122,7 +122,23 @@ addSidebarObservers <- function(input, output){
             disable(type)
             userProgress[userProgress$type == type, "disabled"] <<- TRUE
             
-          } 
+          }
+          
+          score <- "false"
+          if (countScore() <= readValueFromNorms()) score <- "true"
+          recurrentCallSW("true", score)
+          
+          write.csv(answers, answersFile, row.names = F)
+          
+          email <-
+            gm_mime() %>%
+            gm_to(emailTo) %>%
+            gm_from("cdishiny@gmail.com") %>%
+            gm_subject(paste0("[SHINYDATA] ", lang, "-", form, "-", idx)) %>%
+            gm_text_body("Inventory completed.", charset = "utf-8") %>%
+            gm_attach_file(answersFile)
+          
+          gm_send_message(email)
           
         }
         

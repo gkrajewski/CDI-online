@@ -15,8 +15,8 @@ startApp <- function(input, output, session){
   typeUniqueSettings <<- settings[settings$category == "" | is.na(settings$category), ]
   types <<- typeUniqueSettings$type
   typesNr <- length(types)
-  userProgressFile <- paste0("usersProgress/", lang, "-", form, "-", id, ".csv")
-  answersFile <- paste0("answers/", lang, "-", form, "-", id, ".csv")
+  userProgressFile <<- paste0("usersProgress/", lang, "-", form, "-", idx, ".csv")
+  answersFile <<- paste0("answers/", lang, "-", form, "-", idx, ".csv")
   
   #Bind some types and create artificial categories
   for (type in types){
@@ -115,8 +115,8 @@ startApp <- function(input, output, session){
   
   #Save data
   session$onSessionEnded(function() {
-    # write.csv(answers, answersFile, row.names = F)
-    # write.csv(userProgress, userProgressFile, row.names = F)
+    write.csv(answers, answersFile, row.names = F)
+    write.csv(userProgress, userProgressFile, row.names = F)
   })
   
 }
