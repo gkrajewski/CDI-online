@@ -8,14 +8,14 @@ server <- function(input, output, session) {
     
     if (!is.null(form) & !is.null(lang) & !is.null(idx)){
       
-      if (nchar(idx) == 21) recurrentCallSW()
       startApp(input, output, session)
       
     } else {
       
-      #No URL parameters
-      updateQueryString(paste0("?id=", "IlYaL6gzKieyRx92YUl1q", "&form=", "wg", "&lang=", "pl"))
-      session$reload()
+      # updateQueryString(paste0("?id=", "IlYaL6gzKieyRx92YUl1q", "&form=", "wg", "&lang=", "pl"))
+      # updateQueryString(paste0("?id=", "test", "&form=", "ws", "&lang=", "pl"))
+      # session$reload()
+      output$sidebar <- renderText({"No needed URL parameters"})
       
     }
     

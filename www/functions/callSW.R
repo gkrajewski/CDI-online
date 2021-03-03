@@ -1,4 +1,3 @@
-# library(jsonlite)
 callSW <- function(done, score){
   
   ### LOGIN TO FIREBASE ###

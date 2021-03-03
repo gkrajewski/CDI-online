@@ -108,11 +108,14 @@ renderCategory <- function(input, output){
           for (note in catTxt[catTxt$text_type == "note", "text"]){
             
             noteTxt <- strsplit(note, "%")[[1]]
-            noteItemId <- noteTxt[1]
+            noteItemIds <- noteTxt[1]
+            noteItemIds <- strsplit(noteItemIds, ",")[[1]]
             noteTxt <- noteTxt[2]
             stars <- rep("*", i)
             stars <- paste0(stars, collapse = "")
-            catItems[catItems$item_id == noteItemId, 'definition'] <<- paste0(catItems[catItems$item_id == noteItemId, 'definition'], stars)
+            for (noteItemId in noteItemIds){
+              catItems[catItems$item_id == noteItemId, 'definition'] <<- paste0(catItems[catItems$item_id == noteItemId, 'definition'], stars)
+            }
             notesList[[i]] <- p(paste0(stars, noteTxt, "\n"))
             i <- i + 1
             

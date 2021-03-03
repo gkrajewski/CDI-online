@@ -11,14 +11,15 @@ recurrentCallSW <- function(done = "false", score = "false", i = 1, maxI = 3){
     
     print("ERROR: Cannot make successfull call")
     
-    email <-
-      gm_mime() %>%
-      gm_to(emailTo) %>%
-      gm_from("cdishiny@gmail.com") %>%
-      gm_subject("[SHINYERROR] CANNOT MAKE CALL") %>%
-      gm_text_body(paste0("done: ", done, "\nform: ", form, "\nid: ", idx, "\nscore: ", score), charset = "utf-8")
-
-    gm_send_message(email)
+    send.mail(
+      from = "cdishiny@gmail.com",
+      to = emailTo,
+      subject = "[SHINYERROR] CANNOT MAKE CALL",
+      body = paste0("done: ", done, "\nform: ", form, "\nid: ", idx, "\nscore: ", score),
+      smtp = list(host.name = "smtp.gmail.com", port = 465, user.name = "cdishiny@gmail.com", passwd = Sys.getenv("GMAIL_PASSWORD"), ssl = TRUE),
+      authenticate = TRUE,
+      send = TRUE,
+    )
     
   }
   

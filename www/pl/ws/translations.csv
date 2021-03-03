@@ -20,15 +20,17 @@ catHeader ;Osoby ;word;people
 note;item_356%Proszę wpisać, jak dziecko mówi na siebie, np. „Ika”, „Maciuś”, „Dodo”, „dzidzi”. ;word;people 
 catHeader ;Formuły, zabawy, rutynowe czynności ;word;games_routines 
 catHeader ;Nazwy cech: przymiotniki ;word;descriptive_words
+catHeader ;Nazwy cech: przysłówki;word;descriptive_words2
 catHeader ;Nazwy czynności: czasowniki ;word;action_words
 catHeader ;Określenia miejsca;word;locations 
 catHeader ;Określenia czasu ;word;time_words 
 note;item_563%w takich zdaniach jak np. „Jeszcze pisać!”, „Jeszcze raz mi to zrób!” albo „Jeszcze nie wypiłam”. ;word;time_words
-note;item_574%Proszę zaznaczyć odpowiednie kółko, nawet jeśli dziecko używa tych określeń błędnie, np. „Jutro Jaś jadł lody.” albo „Ciocia przyjdzie wczoraj”. ;word;time_words 
+note;item_574,item_573%Proszę zaznaczyć odpowiednie kółko, nawet jeśli dziecko używa tych określeń błędnie, np. „Jutro Jaś jadł lody.” albo „Ciocia przyjdzie wczoraj”. ;word;time_words 
 catHeader ;Określenia miary ;word;quantifiers 
 note ;"item_585%w takich zdaniach jak np. ""Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”. ";word;quantifiers
 note;item_591%w takich zdaniach jak np. „Zjem tylko serek”. ;word;quantifiers
 catHeader ;Zaimki osobowe i dzierżawcze ;word;pronouns 
+catHeader ;Zaimki wskazujące i nieokreślone;word;pronouns2 
 catHeader ;Pytania ;word;question_words
 catHeader ;Przysłówki modalne;word;modal_adverbs
 catHeader;Przyimki ;word;prepositions

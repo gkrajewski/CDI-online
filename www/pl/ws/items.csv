@@ -35,7 +35,7 @@ item_33;motylek;word;animals;nouns;nouns;butterfly;;33
 item_34;mrówka;word;animals;nouns;nouns;ant;;34
 item_35;mucha;word;animals;nouns;nouns;housefly;;35
 item_36;myszka;word;animals;nouns;nouns;mouse;;36
-item_37;spider;word;animals;nouns;nouns;spider;;37
+item_37;pająk;word;animals;nouns;nouns;spider;;37
 item_38;pies;word;animals;nouns;nouns;dog;;38
 item_39;pingwin;word;animals;nouns;nouns;penguin;;39
 item_40;ptaszek;word;animals;nouns;nouns;bird;;40
@@ -54,8 +54,8 @@ item_52;zwierzątko;word;animals;nouns;nouns;animal/pet;;52
 item_53;żaba;word;animals;nouns;nouns;frog;;53
 item_54;żółw;word;animals;nouns;nouns;turtle;;54
 item_55;żyrafa;word;animals;nouns;nouns;giraffe;;55
-item_56;auto/samochód ;word;animals;nouns;nouns;car;;56
-item_57;autobus;word;animals;nouns;nouns;bus;;57
+item_56;auto/samochód ;word;vehicles;nouns;nouns;car;;56
+item_57;autobus;word;vehicles;nouns;nouns;bus;;57
 item_58;ciężarówka;word;vehicles;nouns;nouns;truck;;58
 item_59;helikopter;word;vehicles;nouns;nouns;helicopter;;59
 item_60;koparka;word;vehicles;nouns;nouns;digger/excavator;;60
@@ -114,7 +114,7 @@ item_112;naleśniki;word;food_drink;nouns;nouns;pancakes;;112
 item_113;orzechy;word;food_drink;nouns;nouns;nuts;;113
 item_114;ogórek;word;food_drink;nouns;nouns;cucumber;;114
 item_115;paluszki;word;food_drink;nouns;nouns;breadsticks;;115
-item_116;parówki/kiełbaska ;word;food_drink;nouns;nouns;sausages;;116
+item_116;parówka/kiełbaska ;word;food_drink;nouns;nouns;sausages;;116
 item_117;picie;word;food_drink;nouns;nouns;drink (beverage) ;;117
 item_118;pierogi;word;food_drink;nouns;nouns;dumplings;;118
 item_119;placek;word;food_drink;nouns;nouns;pie;;119
@@ -206,7 +206,7 @@ item_204;balkon;word;furniture_rooms;nouns;nouns;balcony;;204
 item_205;dach;word;furniture_rooms;nouns;nouns;roof;;205
 item_206;drzwi;word;furniture_rooms;nouns;nouns;door;;206
 item_207;dywan;word;furniture_rooms;nouns;nouns;carpet;;207
-item_208;firanka/zasłonka;word;furniture_rooms;nouns;nouns;curtain;;208
+item_208;firanka/zasłona;word;furniture_rooms;nouns;nouns;curtain;;208
 item_209;fotel;word;furniture_rooms;nouns;nouns;armchair;;209
 item_210;korytarz/przedpokój ;word;furniture_rooms;nouns;nouns;corridor;;210
 item_211;kran;word;furniture_rooms;nouns;nouns;tap;;211
@@ -408,19 +408,19 @@ item_406;zdrowy;word;descriptive_words;predicates;adjectives;healthy;;406
 item_407;zepsuty;word;descriptive_words;predicates;adjectives;broken;;407
 item_408;zimny;word;descriptive_words;predicates;adjectives;cold;;408
 item_409;zmęczony;word;descriptive_words;predicates;adjectives;tired;;409
-item_410;boso/na bosaka;word;descriptive_words;predicates;adverbs;barefoot;;410
-item_411;brzydko;word;descriptive_words;predicates;adverbs;ugly;;411
-item_412;cicho;word;descriptive_words;predicates;adverbs;quietly;;412
-item_413;ciemno;word;descriptive_words;predicates;adverbs;dark;;413
-item_414;ciepło;word;descriptive_words;predicates;adverbs;warm;;414
-item_415;dobrze;word;descriptive_words;predicates;adverbs;well;;415
-item_416;głośno;word;descriptive_words;predicates;adverbs;loudly;;416
-item_417;gorąco;word;descriptive_words;predicates;adverbs;hot;;417
-item_418;ładnie;word;descriptive_words;predicates;adverbs;prettily;;418
-item_419;mocno;word;descriptive_words;predicates;adverbs;strongly;;419
-item_420;mokro;word;descriptive_words;predicates;adverbs;wet;;420
-item_421;prędko/szybko ;word;descriptive_words;predicates;adverbs;quickly;;421
-item_422;zimno;word;descriptive_words;predicates;adverbs;cold;;422
+item_410;boso/na bosaka;word;descriptive_words2;predicates;adverbs;barefoot;;410
+item_411;brzydko;word;descriptive_words2;predicates;adverbs;ugly;;411
+item_412;cicho;word;descriptive_words2;predicates;adverbs;quietly;;412
+item_413;ciemno;word;descriptive_words2;predicates;adverbs;dark;;413
+item_414;ciepło;word;descriptive_words2;predicates;adverbs;warm;;414
+item_415;dobrze;word;descriptive_words2;predicates;adverbs;well;;415
+item_416;głośno;word;descriptive_words2;predicates;adverbs;loudly;;416
+item_417;gorąco;word;descriptive_words2;predicates;adverbs;hot;;417
+item_418;ładnie;word;descriptive_words2;predicates;adverbs;prettily;;418
+item_419;mocno;word;descriptive_words2;predicates;adverbs;strongly;;419
+item_420;mokro;word;descriptive_words2;predicates;adverbs;wet;;420
+item_421;prędko/szybko ;word;descriptive_words2;predicates;adverbs;quickly;;421
+item_422;zimno;word;descriptive_words2;predicates;adverbs;cold;;422
 item_423;bać się ;word;action_words;predicates;verbs;be afraid of;;423
 item_424;bawić się ;word;action_words;predicates;verbs;play;;424
 item_425;bić;word;action_words;predicates;verbs;beat;;425
@@ -629,15 +629,15 @@ item_627;nasz;word;pronouns;function_words;function_words;our;;627
 item_628;wasz;word;pronouns;function_words;function_words;your;;628
 item_629;ich;word;pronouns;function_words;function_words;their;;629
 item_630;swój;word;pronouns;function_words;function_words;;;630
-item_631;to;word;pronouns;function_words;function_words;this;;631
-item_632;coś;word;pronouns;function_words;function_words;something;;632
-item_633;ktoś;word;pronouns;function_words;function_words;someone;;633
-item_634;nic;word;pronouns;function_words;function_words;nothing;;634
-item_635;nikt;word;pronouns;function_words;function_words;nobody;;635
-item_636;ten;word;pronouns;function_words;function_words;this;;636
-item_637;tamten;word;pronouns;function_words;function_words;that;;637
-item_638;taki;word;pronouns;function_words;function_words;such;;638
-item_639;jakiś;word;pronouns;function_words;function_words;;;639
+item_631;to;word;pronouns2;function_words;function_words;this;;631
+item_632;coś;word;pronouns2;function_words;function_words;something;;632
+item_633;ktoś;word;pronouns2;function_words;function_words;someone;;633
+item_634;nic;word;pronouns2;function_words;function_words;nothing;;634
+item_635;nikt;word;pronouns2;function_words;function_words;nobody;;635
+item_636;ten;word;pronouns2;function_words;function_words;this;;636
+item_637;tamten;word;pronouns2;function_words;function_words;that;;637
+item_638;taki;word;pronouns2;function_words;function_words;such;;638
+item_639;jakiś;word;pronouns2;function_words;function_words;;;639
 item_640;co to?/co to jest? ;word;question_words;function_words;function_words;what is this?;;640
 item_641;co?;word;question_words;function_words;function_words;what;;641
 item_642;co robi? ;word;question_words;function_words;function_words;;;642
@@ -646,7 +646,7 @@ item_644;czyj?;word;question_words;function_words;function_words;whose;;644
 item_645;gdzie?;word;question_words;function_words;function_words;where;;645
 item_646;kiedy?;word;question_words;function_words;function_words;when;;646
 item_647;jak?;word;question_words;function_words;function_words;how;;647
-item_648;dlaczego?czemu?;word;question_words;function_words;function_words;why;;648
+item_648;dlaczego?/czemu?;word;question_words;function_words;function_words;why;;648
 item_649;po co?/na co?;word;question_words;function_words;function_words;for what;;649
 item_650;jaki?;word;question_words;function_words;function_words;;;650
 item_651;który?;word;question_words;function_words;function_words;which;;651

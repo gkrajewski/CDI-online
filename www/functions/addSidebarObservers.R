@@ -1,5 +1,6 @@
 confirmStart <- function(){
   
+  if (nchar(idx) == 21) recurrentCallSW()
   userProgress[userProgress$type == 'start', "disabled"] <<- TRUE
   disable('start')
   return(TRUE)
@@ -47,12 +48,6 @@ addSidebarObservers <- function(input, output){
     }
     
     if (canConfirm){
-      
-      # #TODO: Delete it
-      # if (currType == "word"){
-      #   print(readValueFromNorms())
-      #   print(countScore())
-      # }
       
       output$warning <- renderText({})
       
@@ -124,21 +119,26 @@ addSidebarObservers <- function(input, output){
             
           }
           
-          score <- "false"
-          if (countScore() <= readValueFromNorms()) score <- "true"
-          recurrentCallSW("true", score)
+          if (nchar(idx) == 21){
+            
+            score <- "false"
+            if (countScore() <= readValueFromNorms()) score <- "true"
+            recurrentCallSW("true", score)
+            
+          }
           
           write.csv(answers, answersFile, row.names = F)
           
-          email <-
-            gm_mime() %>%
-            gm_to(emailTo) %>%
-            gm_from("cdishiny@gmail.com") %>%
-            gm_subject(paste0("[SHINYDATA] ", lang, "-", form, "-", idx)) %>%
-            gm_text_body("Inventory completed.", charset = "utf-8") %>%
-            gm_attach_file(answersFile)
-          
-          gm_send_message(email)
+          send.mail(
+            from = "cdishiny@gmail.com",
+            to = emailTo,
+            subject = paste0("[SHINYDATA] ", lang, "-", form, "-", idx),
+            body = "Inventory completed.",
+            smtp = list(host.name = "smtp.gmail.com", port = 465, user.name = "cdishiny@gmail.com", passwd = Sys.getenv("GMAIL_PASSWORD"), ssl = TRUE),
+            authenticate = TRUE,
+            send = TRUE,
+            attach.files = c(answersFile)
+          )
           
         }
         

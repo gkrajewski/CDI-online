@@ -3,7 +3,7 @@ library(shinyjs)
 library(httr)
 library(lubridate)
 library(fresh)
-library(gmailr)
+library(mailR)
 options(stringsAsFactors = FALSE)
 
 dataPath <- paste0(getwd(),"/www")
@@ -32,7 +32,4 @@ source(paste0(functionsPath,"/badDate.R"))
 source(paste0(functionsPath,"/countScore.R"))
 
 readRenviron(".Renviron")
-emailTo <<- "pkrol4478@gmail.com"
-gm_auth_configure(key = Sys.getenv("CLIENT_ID"), secret = Sys.getenv("CLIENT_SECRET"))
-# gm_auth()
-gm_auth(email = TRUE, cache = ".secret")
+emailTo <<- c("cdishiny@gmail.com", "projekt.starwords@psych.uw.edu.pl")
