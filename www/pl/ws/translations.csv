@@ -41,7 +41,7 @@ help;Przed zatwierdzeniem proszę sprawdzić, czy nie pominęli Państwo jakiej�
 starting_to_talkBtn;Naśladownictwo;starting_to_talk;
 header;Naśladownictwo;starting_to_talk;
 choiceNames;Tak, Nie;starting_to_talk;
-help;Jeżeli odpowiedzieli Państwo „czasem” lub „często”, prosimy o przejście do zakładki „Wypowiedzi”.;combine;
+help; Po wybraniu odpowiedzi „Czasem” lub „Często” dostępna stanie się zakładka „Wypowiedzi”.;combine;
 sentencesBtn;Wypowiedzi;sentences;
 header;Przykłady wypowiedzi;sentences;
 longText;W polach na następnych stronach proszę wpisać zapamiętane lub zanotowane typowe wypowiedzenia dziecka, a także przykłady zdań szczególnie złożonych. Prosimy o podanie przykładów rzeczywistych wypowiedzi dziecka, nawet jeśli uważają Państwo, że dziecko „mówi już wszystko”. ;sentences;firstPage

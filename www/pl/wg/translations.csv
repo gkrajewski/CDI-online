@@ -36,7 +36,7 @@ catHeader;Określenia czasu ;word;time_words
 note;item_373%w takich zdaniach np. „Już zrobiłem!” albo „Tatuś już nie śpi”.;word;time_words
 note;item_374%w takich zdaniach jak np. „Jeszcze pisać!”, „Jeszcze raz mi to zrób!” albo „Jeszcze nie wypiłam”. ;word;time_words
 catHeader;Określenia miary ;word;quantifiers
-note;"item_382%w takich zdaniach jak np. „Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”. ";word;quantifiers
+note;item_382%w takich zdaniach jak np. „Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”. ;word;quantifiers
 note;item_383%w takich zdaniach jak np. „Ania wszystko wypiła.” albo „Wszystko zepsute.” albo „Wszyscy śpią”. ;word;quantifiers
 catHeader;Zaimki;word;pronouns
 catHeader;Pytania;word;question_words
@@ -44,7 +44,8 @@ help;Przed zatwierdzeniem proszę sprawdzić, czy nie pominęli Państwo jakiej�
 starting_to_talkBtn;Naśladownictwo;starting_to_talk;
 header;Naśladownictwo;starting_to_talk;
 choiceNames;Tak, Nie;starting_to_talk;
-help;"UWAGA: To pytanie odnosi się do dzieci, które już znają dość dużo wyrazów. Jeśli Państwa dziecko jeszcze nie łączy wyrazów, proszę zaznaczyć „Jeszcze nie” i przejść do zakładki „Gesty”. Po wybraniu odpowiedzi „Czasem” lub „Często” dostępna stanie się zakładka „Wypowiedzi”.";combine;
+warning;UWAGA: To pytanie odnosi się do dzieci, które już znają dość dużo wyrazów. Jeśli Państwa dziecko jeszcze nie łączy wyrazów, proszę zaznaczyć „Jeszcze nie”.;combine;
+help; Po wybraniu odpowiedzi „Czasem” lub „Często” dostępna stanie się zakładka „Wypowiedzi”.;combine;
 sentences10Btn;Wypowiedzi;sentences10;
 header;Przykłady wypowiedzi;sentences10;
 instr;Jeśli Państwa dziecko łączy wyrazy „czasem” lub „często”, proszę podać przykłady rzeczywistych wypowiedzi dziecka:;sentences10;
