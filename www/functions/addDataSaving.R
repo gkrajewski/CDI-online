@@ -1,6 +1,6 @@
 saveData <- function(input){
   
-  if (inputType == "radio" | inputType == "manyCheckboxGroups" | inputType == "radioAlt"){
+  if (inputType == "radio" | inputType == "manyCheckboxGroups" | inputType == "radioAlt" | inputType == "checkboxAlt"){
     
     answersPattern <- c()
     

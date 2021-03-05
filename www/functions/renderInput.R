@@ -44,7 +44,7 @@ renderInput <- function(){
   
   questions <- list()
   
-  if (inputType == "radio" | inputType == "manyCheckboxGroups" | inputType == "radioAlt"){
+  if (inputType == "radio" | inputType == "manyCheckboxGroups" | inputType == "radioAlt" | inputType == "checkboxAlt"){
 
     if (is.na(catAnswer)){
       selected <- c(rep("0,", nrow(catItems)))
@@ -52,7 +52,7 @@ renderInput <- function(){
       selected <- strsplit(catAnswer, ",")[[1]]
     }
     
-    if (inputType != "radioAlt"){
+    if (inputType != "radioAlt" & inputType != "checkboxAlt"){
       
       choiceNames <- strsplit(catTxt[catTxt$text_type == "choiceNames", "text"], ",")[[1]]
       choiceValues <- c(1 : length(choiceNames))
@@ -74,6 +74,12 @@ renderInput <- function(){
       } else if (inputType == "manyCheckboxGroups") {
         
         questions[[i]] <- createCheckboxQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i], catItems[i, "definition"], T, noBreakInside = TRUE)
+        
+      } else if (inputType == "checkboxAlt") {
+        
+        choiceNames <-  strsplit(catItems[i, "definition"], "%")[[1]]
+        choiceValues <- c(1 : length(choiceNames))
+        questions[[i]] <- list(createCheckboxQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i], noBreakInside = FALSE), br())
         
       }
       
