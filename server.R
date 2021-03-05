@@ -15,7 +15,7 @@ server <- function(input, output, session) {
       # updateQueryString(paste0("?id=", "IlYaL6gzKieyRx92YUl1q", "&form=", "wg", "&lang=", "pl"))
       updateQueryString(paste0("?id=", "test", "&form=", "ws", "&lang=", "pl"))
       session$reload()
-      output$sidebar <- renderText({"No needed URL parameters"})
+      #output$sidebar <- renderText({"No needed URL parameters"})
       
     }
     
