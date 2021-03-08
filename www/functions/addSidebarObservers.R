@@ -62,26 +62,29 @@ addSidebarObservers <- function(input, output){
         conditionedTypes <- strsplit(conditionedTypes, ",")[[1]]
         conditionedAnswer <- answers[answers$type == currType, "answer"]
         possibleAnswers <- typeUniqueSettings[typeUniqueSettings$type == currType, "answers_to_enable"]
-        if (possibleAnswers != "all") possibleAnswers <- strsplit(possibleAnswers, ",")[[1]]
+        possibleAnswers <- strsplit(possibleAnswers, ";")[[1]]
         
-        if(is.element(conditionedAnswer, possibleAnswers) | possibleAnswers == "all"){
+        for (i in 1:length(conditionedTypes)){
           
-          for (conditionedType in conditionedTypes){
-            
-            userProgress[userProgress$type == conditionedType, "disabled"] <<- FALSE
-            enable(conditionedType)
-            
+          conditionedType <- conditionedTypes[i]
+          
+          if (length(possibleAnswers) >= i){
+            possibleAnswer <- possibleAnswers[i]
+          } else {
+            possibleAnswer <- possibleAnswers[length(possibleAnswers)]
           }
           
-        } else {
+          if (possibleAnswer != "all") possibleAnswer <- strsplit(possibleAnswer, ",")[[1]]
           
-          for (conditionedType in conditionedTypes){
-            
+          if (is.element(conditionedAnswer, possibleAnswer) | possibleAnswer == "all"){
+            userProgress[userProgress$type == conditionedType, "disabled"] <<- FALSE
+            enable(conditionedType)
+          } else {
             userProgress[userProgress$type == conditionedType, "disabled"] <<- TRUE
             disable(conditionedType)
             removeClass(paste0(conditionedType, "container"), "menuButtonContainerDone")
-            
           }
+            
           
         }
         

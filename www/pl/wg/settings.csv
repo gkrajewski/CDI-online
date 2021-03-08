@@ -3,7 +3,7 @@ start,,demographic,FALSE,,,FALSE,understanding,all
 understanding,first_signs,radio,FALSE,,,,,
 understanding,,oneCheckboxGroup,TRUE,threeColumns,"first_signs,phrases",TRUE,word,all
 word,,manyCheckboxGroups,TRUE,threeColumns,,TRUE,starting_to_talk,all
-starting_to_talk,,radio,FALSE,,,TRUE,"combine,gestures",all
-combine,,radio,FALSE,,,TRUE,sentences10,"2,3"
+starting_to_talk,,radio,FALSE,,,TRUE,combine,all
+combine,,radio,FALSE,,,TRUE,"sentences10,gestures","2,3;all"
 sentences10,,sentences,FALSE,twoColumns,,TRUE,,
 gestures,,oneCheckboxGroup,TRUE,,startWith,TRUE,,
