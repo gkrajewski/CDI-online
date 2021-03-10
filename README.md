@@ -17,7 +17,7 @@ Zmiany (version develop): <br/>
 - Poprawa polskich itemów (ws) i translacji (ws i wg). <br/>
 - Dodanie przesyłania do bazy SW informacji o wyniku. <br/>
 - Poprawione wyświetlanie czcionek na Safari. <br/>
-- Przy przechodzeniu na nową kategorię górną granicę ekranu wyznacza nagłówek. <br/>
+- Przy przechodzeniu na nową kategorię górną granicę ekranu wyznacza nagłówek (telefon). <br/>
 - Dodanie wysyłanie maila z wynikami po zakończeniu inwentarza. <br/>
 - Dodanie wysyłania maila w przypadku nieudanego calla do bazy SW.
 - Tylko część startowa dostępna na początku wypełniania inwentarza. 

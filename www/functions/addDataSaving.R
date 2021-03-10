@@ -34,9 +34,9 @@ addDataSaving <- function(input){
     answers[answers$type == currType & answers$category == currCat & answers$answer_type == "comment", "answer"] <<- input$comment
   })
   
-  demographic <- reactive({paste(input$birthDate, input$gender)})
+  demographic <- reactive({paste(input$birthDate, input$gender, input$filler, input$fillerTxt)})
   observeEvent(demographic(), {
-    answers[answers$type == currType & answers$category == currCat & answers$answer_type == "demographic", "answer"] <<- paste0(input$birthDate, ",", input$gender)
+    answers[answers$type == currType & answers$category == currCat & answers$answer_type == "demographic", "answer"] <<- paste0(input$birthDate, ",", input$gender, ",", input$filler, ",", input$fillerTxt)
   })
   
   onclick("currInput",

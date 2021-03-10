@@ -113,17 +113,18 @@ renderInput <- function(){
       
       currGender <- character(0)
       currDate <- NULL
+      currFiller <- character(0)
+      currFillerTxt <- ""
       
     } else {
       
       catAnswer <- strsplit(catAnswer, ",")[[1]]
       currDate <- catAnswer[1]
       currGender <- catAnswer[2]
+      currFiller <- catAnswer[3]
+      currFillerTxt <- catAnswer[4]
       
     }
-    
-    choiceNames <- strsplit(txt[txt$text_type == "genders", "text"], ",")[[1]]
-    choiceValues <- c("Female", "Male", "Other")
     
     questions[[1]] <- br()
     questions[[2]] <- dateInput("birthDate", txt[txt$text_type == "dateLabel", "text"], currDate, language = lang)
@@ -135,6 +136,15 @@ renderInput <- function(){
       choiceNames = strsplit(txt[txt$text_type == "genders", "text"], ",")[[1]],
       choiceValues = c("female", "male", "other")
     )
+    questions[[5]] <- br()
+    questions[[6]] <- radioButtons(
+      "filler",
+      label = txt[txt$text_type == "fillerLabel", "text"],
+      selected = currFiller,
+      choiceNames = strsplit(txt[txt$text_type == "fillers", "text"], ",")[[1]],
+      choiceValues = c("mother", "father", "grandmother", "grandfather", "nanny", "teacher", "other")
+    )
+    questions[[7]] <- textInput("fillerTxt", label = NULL, value = currFillerTxt)
     
   }
     
