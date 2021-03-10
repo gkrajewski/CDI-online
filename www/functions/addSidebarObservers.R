@@ -20,6 +20,11 @@ addSidebarObservers <- function(input, output){
         canConfirm <- FALSE
         output$warning <- renderText({txt[txt$text_type == "noGender", "text"]})
         
+      } else if (is.null(input$filler)){
+        
+        canConfirm <- FALSE
+        output$warning <- renderText({txt[txt$text_type == "noFiller", "text"]})
+      
       } else {
         
         norms <<- readNormsFile()
