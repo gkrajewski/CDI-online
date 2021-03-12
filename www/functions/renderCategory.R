@@ -96,9 +96,9 @@ renderCategory <- function(input, output){
     list(
       
       if (is.element("catHeader", catTxt$text_type)) h4(catTxt[catTxt$text_type == "catHeader", "text"]),
-      if (is.element("longText", catTxt$text_type)) p(catTxt[catTxt$text_type == "longText", "text"]),
       if (is.element("instr", catTxt$text_type)) h5(catTxt[catTxt$text_type == "instr", "text"]),
-      if (is.element("warning", catTxt$text_type)) p(strong(catTxt[catTxt$text_type == "warning", "text"])),
+      if (is.element("longText", catTxt$text_type)) p(catTxt[catTxt$text_type == "longText", "text"]),
+      if (is.element("warning", catTxt$text_type)) p(class = "warning", strong(catTxt[catTxt$text_type == "warning", "text"])),
 
       if (!is.na(inputType) & currCat != "firstPage"){
         

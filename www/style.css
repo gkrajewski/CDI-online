@@ -2,10 +2,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-body {
-	text-align: justify;
-}
-
 h1 {
 	margin-bottom: 20px;
 	text-align: center;
@@ -94,4 +90,8 @@ h5 {
 
 #warning {
 	color: red;
+}
+
+.warning {
+	margin-bottom: 30px;
 }

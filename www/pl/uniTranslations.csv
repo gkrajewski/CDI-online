@@ -1,4 +1,5 @@
 text_type;text;item_type;category
+warning;UWAGA: Zakończenie inwentarza będzie możliwe dopiero po zatwierdzeniu każdej z części. W każdej chwili jednak można przerwać wypełnianie co nie spowoduje utraty dotychczasowych odpowiedzi.;start;
 backBtn;Cofnij;;
 nextBtn;Dalej;;
 saveBtn;Zatwierdź;;

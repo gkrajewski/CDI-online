@@ -152,6 +152,12 @@ addSidebarObservers <- function(input, output){
         
       }      
       
+    } else {
+      
+      runjs('
+        document.getElementById("warning").scrollIntoView();
+      ')
+      
     }
     
   })
