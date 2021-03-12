@@ -1,5 +1,4 @@
 text_type;text;item_type;category
-help;Proszę wskazać datę urodzenia oraz płeć Państwa dziecka, a następnie kliknąć „Zatwierdź”, żeby przejść do kwestionariusza.;start;
 backBtn;Cofnij;;
 nextBtn;Dalej;;
 saveBtn;Zatwierdź;;
