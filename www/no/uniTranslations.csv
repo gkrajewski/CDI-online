@@ -7,6 +7,8 @@ saveBtn;Bekreft;;
 startBtn;Start;;
 dateLabel;Barnets fødselsdato;;
 genderLabel;Barnets kjønn;;
+fillerLabel;TODO: Kto wypełnia…;;
+fillers;TODO: p1, p2, p3, p4, p5, p6, p7;;
 noGender;Velg kjønn for å bekrefte.;;
 badDate;Feil fødselsdato;;
 genders;Jente, Gutt, Annen;;
