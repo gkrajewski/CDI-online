@@ -11,7 +11,6 @@ readValueFromNorms <- function(percentile = "p_0.1"){
       birthDate <- demoAnswer[1]
       
       age <- interval(birthDate, Sys.Date()) %/% months(1)
-      print(paste0("Wiek: ", age))
       ageStr <- paste0("m_", age)
       
       return(norms[ageStr, percentile])

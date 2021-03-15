@@ -5,7 +5,7 @@ longText;Kwestionariusz ten jest polską adaptacją amerykańskiego inwentarza d
 understandingBtn;Rozumienie;understanding;
 header;Rozumienie;understanding;
 catHeader;Pierwsze przejawy rozumienia;understanding;first_signs
-longText;Dzieci, zanim zaczną mówić, rozumieją wiele słów i wyrażeń. Można to stwierdzić obserwując ich reakcje na znane słowa lub zwroty. Czy Państwa dziecko wykazuje poniższe reakcje? (Proszę wybrać);understanding;first_signs
+longText;Dzieci, zanim zaczną mówić, rozumieją wiele słów i wyrażeń. Można to stwierdzić obserwując ich reakcje na znane słowa lub zwroty. Czy Państwa dziecko wykazuje poniższe reakcje?;understanding;first_signs
 choiceNames;Tak, Nie;understanding;first_signs
 catHeader;Rozumienie wypowiedzi dorosłych;understanding;phrases
 instr;Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać w polu na uwagi.;understanding;phrases
