@@ -164,16 +164,20 @@ addSidebarObservers <- function(input, output){
   
   observeEvent(input$nextBtn, {
     
-    currCat <<- categories[currCatNr + 1]
-    renderCategory(input, output)
-    
+    if (currCatNr < length(categories)){
+      currCat <<- categories[currCatNr + 1]
+      renderCategory(input, output)
+    }
+
   })
   
   observeEvent(input$backBtn, {
     
-    currCat <<- categories[currCatNr - 1]
-    renderCategory(input, output)
-    
+    if (currCatNr != 1){
+      currCat <<- categories[currCatNr - 1]
+      renderCategory(input, output)
+    }
+
   })
   
 }
