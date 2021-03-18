@@ -1,9 +1,7 @@
-startApp <- function(input, output, session){
-  
-  formPath <<- paste0(dataPath, "/", lang, "/", form)
+startInventory <- function(input, output, session){
   
   #Prepare items, translations, settings and data files
-  setwd(paste0(dataPath, "/", lang))
+  setwd(langPath)
   uniTransl <- read.csv("uniTranslations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
   setwd(formPath)
   items <<- read.csv("items.csv", encoding = "UTF-8", sep = ";", strip.white = T)[c("item_id", "definition", "type", "category")]

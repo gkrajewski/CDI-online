@@ -1,24 +1,30 @@
+#Load libraries
 library(shinythemes)
 library(shinyjs)
-library(httr)
-library(lubridate)
+library(httr) #http requests
+library(lubridate) #dates
 library(fresh)
-library(mailR)
+library(mailR) #sending mails
 options(stringsAsFactors = FALSE)
 
-dataPath <- paste0(getwd(),"/www")
-functionsPath <- paste0(dataPath,"/functions")
+#Specify paths
+wwwPath <- paste0(getwd(),"/www")
+functionsPath <- paste0(wwwPath,"/functions")
+languagesPath <- paste0(wwwPath,"/languages")
 initPath <- getwd()
 
+#Create dirs to save answers and users' progress
 if(!dir.exists(file.path(initPath, "answers"))) dir.create(file.path(initPath, "answers"))
 if(!dir.exists(file.path(initPath, "usersProgress"))) dir.create(file.path(initPath, "usersProgress"))
 
-setwd(dataPath)
+#Load form-universal end settings
+setwd(wwwPath)
 endSettings <<- read.csv("endSettings.csv", encoding = "UTF-8", strip.white = T)
 setwd(initPath)
 
+#Load functions
 source(paste0(functionsPath,"/readFromURL.R"))
-source(paste0(functionsPath,"/startApp.R"))
+source(paste0(functionsPath,"/startInventory.R"))
 source(paste0(functionsPath,"/readNormsFile.R"))
 source(paste0(functionsPath,"/readValueFromNorms.R"))
 source(paste0(functionsPath,"/recurrentCallSW.R"))
@@ -31,5 +37,8 @@ source(paste0(functionsPath,"/renderInput.R"))
 source(paste0(functionsPath,"/badDate.R"))
 source(paste0(functionsPath,"/countScore.R"))
 
+#Load file with secret variables
 readRenviron(".Renviron")
+
+#Specify recipients of mails produced by app
 emailTo <<- c("cdishiny@gmail.com", "projekt.starwords@psych.uw.edu.pl")

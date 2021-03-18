@@ -5,7 +5,7 @@ readFromURL <- function(parameter, session) {
   if (!is.null(query[[parameter]])){
     
     value <- query[[parameter]]
-    return(value)
+    return(tolower(value))
   
   } 
   

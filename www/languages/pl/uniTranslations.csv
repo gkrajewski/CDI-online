@@ -25,4 +25,3 @@ endBtn;Zakończ;end;
 instr;Jeśli wypełnili Państwo wszystkie części kwestionariusza, proszę kliknąć przycisk „Zatwierdź”. ;end;
 help;Dziękujemy za wypełnienie!;postEnd;
 instr;Bardzo dziękujemy za wypełnienie kwestionariusza! Więcej informacji znajdą Państwo w zakładce „Wiedza”.;postEnd;
-;;;none
