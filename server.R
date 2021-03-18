@@ -1,5 +1,8 @@
 server <- function(input, output, session) {
   
+  availableForms <- c("wg", "ws", "iii1", "iii2", "iii3")
+  availableLangs <- c("pl", "no")
+  
   observe({
     
     idx <<- readFromURL("id", session)
@@ -8,7 +11,11 @@ server <- function(input, output, session) {
     
     if (!is.null(form) & !is.null(lang) & !is.null(idx)){
       
-      startApp(input, output, session)
+      if (is.element(form, availableForms) & is.element(lang, availableLangs)){
+        startApp(input, output, session)
+      } else {
+        output$sidebar <- renderText({"Bad form or lang in URL"})
+      }
       
     } else {
       
