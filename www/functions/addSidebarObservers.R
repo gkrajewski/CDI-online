@@ -18,12 +18,22 @@ addSidebarObservers <- function(input, output){
       if (is.null(input$gender)){
         
         canConfirm <- FALSE
-        output$warning <- renderText({txt[txt$text_type == "noGender", "text"]})
+        showModal(modalDialog(
+          title = txt[txt$text_type == "modalTitle", "text"],
+          txt[txt$text_type == "noGender", "text"],
+          easyClose = TRUE,
+          footer = NULL
+        ))
         
       } else if (is.null(input$filler)){
         
         canConfirm <- FALSE
-        output$warning <- renderText({txt[txt$text_type == "noFiller", "text"]})
+        showModal(modalDialog(
+          title = txt[txt$text_type == "modalTitle", "text"],
+          txt[txt$text_type == "noFiller", "text"],
+          easyClose = TRUE,
+          footer = NULL
+        ))
       
       } else {
         
@@ -34,7 +44,12 @@ addSidebarObservers <- function(input, output){
           if (badDate(norms, input$birthDate)){
             
             canConfirm <- FALSE
-            output$warning <- renderText({txt[txt$text_type == "badDate", "text"]})
+            showModal(modalDialog(
+              title = txt[txt$text_type == "modalTitle", "text"],
+              txt[txt$text_type == "badDate", "text"],
+              easyClose = TRUE,
+              footer = NULL
+            ))
             
           } else {
 
@@ -152,13 +167,7 @@ addSidebarObservers <- function(input, output){
         
       }      
       
-    } else {
-      
-      runjs('
-        document.getElementById("warning").scrollIntoView();
-      ')
-      
-    }
+    } 
     
   })
   
