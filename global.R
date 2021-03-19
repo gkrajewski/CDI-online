@@ -13,7 +13,7 @@ functionsPath <- paste0(wwwPath,"/functions")
 languagesPath <- paste0(wwwPath,"/languages")
 initPath <- getwd()
 
-#Create dirs to save answers and users' progress
+#Create dirs to saving answers and users' progress
 if(!dir.exists(file.path(initPath, "answers"))) dir.create(file.path(initPath, "answers"))
 if(!dir.exists(file.path(initPath, "usersProgress"))) dir.create(file.path(initPath, "usersProgress"))
 

@@ -100,7 +100,7 @@ startInventory <- function(input, output, session){
     
   })
   
-  #Render universal UI
+  #Render type-universal UI
   output$cdiNamePrefix <- renderText({txt[txt$text_type == "cdiNamePrefix", "text"]})
   output$cdiNameSufix <- renderText({txt[txt$text_type == "cdiNameSufix", "text"]})
   output$menu <- renderUI({typeButtonsDivs})

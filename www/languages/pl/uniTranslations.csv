@@ -1,5 +1,5 @@
 text_type;text;item_type;category
-warning;"UWAGA: Zakończenie inwentarza będzie możliwe dopiero po zatwierdzeniu wszystkich części. Zakładka ""Wypowiedzi"" będzie dostępna tylko, jeśli zaznaczą Państwo, że dziecko łączy wyrazy (zakładka ""Łączenie wyrazów""). W każdej chwili można przerwać wypełnianie inwentarza, co nie spowoduje utraty dotychczasowych odpowiedzi. Żeby wrócić do wypełniania (np. na innym urządzeniu), proszę użyć dokładnie tego samego linku.";start;
+warning;UWAGA: Zakończenie inwentarza będzie możliwe dopiero po zatwierdzeniu wszystkich części. W każdej chwili można przerwać wypełnianie, co nie spowoduje utraty dotychczasowych odpowiedzi. Żeby wrócić do wypełniania (np. na innym urządzeniu), należy użyć dokładnie tego samego linku.;start;
 backBtn;Cofnij;;
 nextBtn;Dalej;;
 saveBtn;Zatwierdź;;
@@ -25,3 +25,4 @@ endBtn;Zakończ;end;
 instr;Jeśli wypełnili Państwo wszystkie części kwestionariusza, proszę kliknąć przycisk „Zatwierdź”. ;end;
 help;Dziękujemy za wypełnienie!;postEnd;
 instr;Bardzo dziękujemy za wypełnienie kwestionariusza! Więcej informacji znajdą Państwo w zakładce „Wiedza”.;postEnd;
+;;;none
