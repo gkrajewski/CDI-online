@@ -103,7 +103,7 @@ startInventory <- function(input, output, session){
   #Render type-universal UI
   output$cdiNamePrefix <- renderText({txt[txt$text_type == "cdiNamePrefix", "text"]})
   output$cdiNameSufix <- renderText({txt[txt$text_type == "cdiNameSufix", "text"]})
-  output$menu <- renderUI({typeButtonsDivs})
+  output$menu <- renderUI({list(typeButtonsDivs, disconnectMessage(text = txt[txt$text_type == "error", "text"], refresh = txt[txt$text_type == "refresh", "text"]))})
   
   #Render first type
   type <- types[match(TRUE, userProgress$current)]

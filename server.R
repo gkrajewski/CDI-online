@@ -36,7 +36,7 @@ server <- function(input, output, session) {
       
     } else {
       
-      # updateQueryString(paste0("?id=", "test", "&form=", "wz", "&lang=", "pl")) #IlYaL6gzKieyRx92YUl1q #id=test&form=wg&lang=pl
+      # updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl")) #IlYaL6gzKieyRx92YUl1q #id=test&form=wg&lang=pl
       # session$reload()
       output$sidebar <- renderText({"No needed params in URL (lang, form and id)"})
       

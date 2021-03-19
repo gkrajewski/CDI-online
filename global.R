@@ -5,6 +5,7 @@ library(httr) #http requests
 library(lubridate) #dates
 library(fresh)
 library(mailR) #sending mails
+library(shinydisconnect) #handling disconnects in a nice visual way
 options(stringsAsFactors = FALSE)
 
 #Specify paths
