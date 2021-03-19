@@ -598,92 +598,78 @@ item_596;za (np. za dużo) ;word;quantifiers ;function_words;function_words;too 
 item_597;każdy;word;quantifiers ;function_words;function_words;every;;597
 item_598;niektóry ;word;quantifiers ;function_words;function_words;some;;598
 item_599;żaden ;word;quantifiers ;function_words;function_words;none ;;599
-item_600;ja;word;pronouns;function_words;function_words;I;;600
-item_601;ty;word;pronouns;function_words;function_words;you;;601
-item_602;on;word;pronouns;function_words;function_words;he;;602
-item_603;ona;word;pronouns;function_words;function_words;she;;603
-item_604;my;word;pronouns;function_words;function_words;we;;604
-item_605;wy;word;pronouns;function_words;function_words;you;;605
-item_606;oni/one;word;pronouns;function_words;function_words;them ;;606
-item_607;mnie;word;pronouns;function_words;function_words;;;607
-item_608;cię;word;pronouns;function_words;function_words;;;608
-item_609;go;word;pronouns;function_words;function_words;;;609
-item_610;ją;word;pronouns;function_words;function_words;;;610
-item_611;nas;word;pronouns;function_words;function_words;;;611
-item_612;was;word;pronouns;function_words;function_words;;;612
-item_613;ich/je;word;pronouns;function_words;function_words;;;613
-item_614;się;word;pronouns;function_words;function_words;;;614
-item_615;mi;word;pronouns;function_words;function_words;me;;615
-item_616;ci;word;pronouns;function_words;function_words;you;;616
-item_617;mu;word;pronouns;function_words;function_words;him;;617
-item_618;jej;word;pronouns;function_words;function_words;her;;618
-item_619;nam;word;pronouns;function_words;function_words;us;;619
-item_620;wam;word;pronouns;function_words;function_words;you;;620
-item_621;im;word;pronouns;function_words;function_words;them;;621
-item_622;sobie;word;pronouns;function_words;function_words;myself;;622
-item_623;mój;word;pronouns;function_words;function_words;my;;623
-item_624;twój;word;pronouns;function_words;function_words;your;;624
-item_625;jego;word;pronouns;function_words;function_words;his;;625
-item_626;jej;word;pronouns;function_words;function_words;her;;626
-item_627;nasz;word;pronouns;function_words;function_words;our;;627
-item_628;wasz;word;pronouns;function_words;function_words;your;;628
-item_629;ich;word;pronouns;function_words;function_words;their;;629
-item_630;swój;word;pronouns;function_words;function_words;;;630
-item_631;to;word;pronouns2;function_words;function_words;this;;631
-item_632;coś;word;pronouns2;function_words;function_words;something;;632
-item_633;ktoś;word;pronouns2;function_words;function_words;someone;;633
-item_634;nic;word;pronouns2;function_words;function_words;nothing;;634
-item_635;nikt;word;pronouns2;function_words;function_words;nobody;;635
-item_636;ten;word;pronouns2;function_words;function_words;this;;636
-item_637;tamten;word;pronouns2;function_words;function_words;that;;637
-item_638;taki;word;pronouns2;function_words;function_words;such;;638
-item_639;jakiś;word;pronouns2;function_words;function_words;;;639
-item_640;co to?/co to jest? ;word;question_words;function_words;function_words;what is this?;;640
-item_641;co?;word;question_words;function_words;function_words;what;;641
-item_642;co robi? ;word;question_words;function_words;function_words;;;642
-item_643;kto?;word;question_words;function_words;function_words;who;;643
-item_644;czyj?;word;question_words;function_words;function_words;whose;;644
-item_645;gdzie?;word;question_words;function_words;function_words;where;;645
-item_646;kiedy?;word;question_words;function_words;function_words;when;;646
-item_647;jak?;word;question_words;function_words;function_words;how;;647
-item_648;dlaczego?/czemu?;word;question_words;function_words;function_words;why;;648
-item_649;po co?/na co?;word;question_words;function_words;function_words;for what;;649
-item_650;jaki?;word;question_words;function_words;function_words;;;650
-item_651;który?;word;question_words;function_words;function_words;which;;651
-item_652;ile?;word;question_words;function_words;function_words;how much;;652
-item_653;chyba;word;modal_adverbs;predicates;modal_adverbs;maybe;;653
-item_654;może;word;modal_adverbs;predicates;modal_adverbs;perhaps;;654
-item_655;na pewno;word;modal_adverbs;predicates;modal_adverbs;for sure;;655
-item_656;naprawdę;word;modal_adverbs;predicates;modal_adverbs;really;;656
-item_657;pewnie;word;modal_adverbs;predicates;modal_adverbs;surely;;657
-item_658;przecież;word;modal_adverbs;predicates;modal_adverbs;though;;658
-item_659;w ogóle;word;modal_adverbs;predicates;modal_adverbs;at all;;659
-item_660;właśnie;word;modal_adverbs;predicates;modal_adverbs;exactly;;660
-item_661;bez (np. bez czapki);word;prepositions;predicates;prepositions;without ;;661
-item_662;dla (np. dla mamy);word;prepositions;predicates;prepositions;for;;662
-item_663;do (np. do pracy, do babci);word;prepositions;predicates;prepositions;to;;663
-item_664;na (np. na stole);word;prepositions;predicates;prepositions;on;;664
-item_665;koło/obok (np. koło szafy, obok taty);word;prepositions;predicates;prepositions;next to ;;665
-item_666;o (np. o kotku);word;prepositions;predicates;prepositions;about ;;666
-item_667;od (np. od wujka);word;prepositions;predicates;prepositions;from;;667
-item_668;po (np. po lesie, po wodę);word;prepositions;predicates;prepositions;;;668
-item_669;pod (np.pod stołem);word;prepositions;predicates;prepositions;under;;669
-item_670;przed (np. przed sklepem, przed obiadem);word;prepositions;predicates;prepositions;in front of ;;670
-item_671;u (np. u cioci);word;prepositions;predicates;prepositions;at;;671
-item_672;w (np. w kuchni);word;prepositions;predicates;prepositions;in;;672
-item_673;za (np. za szafą);word;prepositions;predicates;prepositions;behind ;;673
-item_674;z (np. z tatusiem, z cukrem);word;prepositions;predicates;prepositions;with;;674
-item_675;z (np. z łazienki) ;word;prepositions;predicates;prepositions;from;;675
-item_676;a;word;connecting_words;function_words;conjunctions;;;676
-item_677;albo;word;connecting_words;function_words;conjunctions;or;;677
-item_678;ale;word;connecting_words;function_words;conjunctions;but;;678
-item_679;bo;word;connecting_words;function_words;conjunctions;because ;;679
-item_680;i;word;connecting_words;function_words;conjunctions;and;;680
-item_681;jak - (to);word;connecting_words;function_words;conjunctions;if - (then) ;;681
-item_682;tylko ;word;connecting_words;function_words;conjunctions;but;;682
-item_683;że ;word;connecting_words;function_words;conjunctions;that ;;683
-item_684;żeby;word;connecting_words;function_words;conjunctions;in order to ;;684
-item_685;Czy dziecko samorzutnie powtarza zasłyszane wypowiedzi bądź ich fragmenty? ;starting_to_talk;;;;;;685
-item_686;Czy poproszone o powtórzenie czegoś, chętnie powtarza? ;starting_to_talk;;;;;;686
-item_687;Czy łatwo uczy się wierszyków, piosenek, tekstów z książeczek? ;starting_to_talk;;;;;;687
-item_688;Czy dziecko zaczęło już łączyć wyrazy? Czy tworzy takie zadania jak np. „am”, „da mleko”, „tu kotek”, „mama śpi”?;combine ;;;;;;688
+item_600;ja/mnie/mi;word;pronouns;function_words;function_words;I;;600
+item_601;ty/cię/ci;word;pronouns;function_words;function_words;you;;601
+item_602;on/go/mu;word;pronouns;function_words;function_words;he;;602
+item_603;ona/ją/jej;word;pronouns;function_words;function_words;she;;603
+item_604;my/nas/nam;word;pronouns;function_words;function_words;we;;604
+item_605;wy/was/wam;word;pronouns;function_words;function_words;you;;605
+item_606;oni/one/ich/je/im;word;pronouns;function_words;function_words;them ;;606
+item_607;się;word;pronouns;function_words;function_words;;;614
+item_608;sobie;word;pronouns;function_words;function_words;myself;;622
+item_609;mój;word;pronouns;function_words;function_words;my;;623
+item_610;twój;word;pronouns;function_words;function_words;your;;624
+item_611;jego;word;pronouns;function_words;function_words;his;;625
+item_612;jej;word;pronouns;function_words;function_words;her;;626
+item_613;nasz;word;pronouns;function_words;function_words;our;;627
+item_614;wasz;word;pronouns;function_words;function_words;your;;628
+item_615;ich;word;pronouns;function_words;function_words;their;;629
+item_616;swój;word;pronouns;function_words;function_words;;;630
+item_617;to;word;pronouns2;function_words;function_words;this;;631
+item_618;coś;word;pronouns2;function_words;function_words;something;;632
+item_619;ktoś;word;pronouns2;function_words;function_words;someone;;633
+item_620;nic;word;pronouns2;function_words;function_words;nothing;;634
+item_621;nikt;word;pronouns2;function_words;function_words;nobody;;635
+item_622;ten;word;pronouns2;function_words;function_words;this;;636
+item_623;tamten;word;pronouns2;function_words;function_words;that;;637
+item_624;taki;word;pronouns2;function_words;function_words;such;;638
+item_625;jakiś;word;pronouns2;function_words;function_words;;;639
+item_626;co to?/co to jest? ;word;question_words;function_words;function_words;what is this?;;640
+item_627;co?;word;question_words;function_words;function_words;what;;641
+item_628;co robi? ;word;question_words;function_words;function_words;;;642
+item_629;kto?;word;question_words;function_words;function_words;who;;643
+item_630;czyj?;word;question_words;function_words;function_words;whose;;644
+item_631;gdzie?;word;question_words;function_words;function_words;where;;645
+item_632;kiedy?;word;question_words;function_words;function_words;when;;646
+item_633;jak?;word;question_words;function_words;function_words;how;;647
+item_634;dlaczego?/czemu?;word;question_words;function_words;function_words;why;;648
+item_635;po co?/na co?;word;question_words;function_words;function_words;for what;;649
+item_636;jaki?;word;question_words;function_words;function_words;;;650
+item_637;który?;word;question_words;function_words;function_words;which;;651
+item_638;ile?;word;question_words;function_words;function_words;how much;;652
+item_639;chyba;word;modal_adverbs;predicates;modal_adverbs;maybe;;653
+item_640;może;word;modal_adverbs;predicates;modal_adverbs;perhaps;;654
+item_641;na pewno;word;modal_adverbs;predicates;modal_adverbs;for sure;;655
+item_642;naprawdę;word;modal_adverbs;predicates;modal_adverbs;really;;656
+item_643;pewnie;word;modal_adverbs;predicates;modal_adverbs;surely;;657
+item_644;przecież;word;modal_adverbs;predicates;modal_adverbs;though;;658
+item_645;w ogóle;word;modal_adverbs;predicates;modal_adverbs;at all;;659
+item_646;właśnie;word;modal_adverbs;predicates;modal_adverbs;exactly;;660
+item_647;bez (np. bez czapki);word;prepositions;predicates;prepositions;without ;;661
+item_648;dla (np. dla mamy);word;prepositions;predicates;prepositions;for;;662
+item_649;do (np. do pracy, do babci);word;prepositions;predicates;prepositions;to;;663
+item_650;na (np. na stole);word;prepositions;predicates;prepositions;on;;664
+item_651;koło/obok (np. koło szafy, obok taty);word;prepositions;predicates;prepositions;next to ;;665
+item_652;o (np. o kotku);word;prepositions;predicates;prepositions;about ;;666
+item_653;od (np. od wujka);word;prepositions;predicates;prepositions;from;;667
+item_654;po (np. po lesie, po wodę);word;prepositions;predicates;prepositions;;;668
+item_655;pod (np.pod stołem);word;prepositions;predicates;prepositions;under;;669
+item_656;przed (np. przed sklepem, przed obiadem);word;prepositions;predicates;prepositions;in front of ;;670
+item_657;u (np. u cioci);word;prepositions;predicates;prepositions;at;;671
+item_658;w (np. w kuchni);word;prepositions;predicates;prepositions;in;;672
+item_659;za (np. za szafą);word;prepositions;predicates;prepositions;behind ;;673
+item_660;z (np. z tatusiem, z cukrem);word;prepositions;predicates;prepositions;with;;674
+item_661;z (np. z łazienki) ;word;prepositions;predicates;prepositions;from;;675
+item_662;a;word;connecting_words;function_words;conjunctions;;;676
+item_663;albo;word;connecting_words;function_words;conjunctions;or;;677
+item_664;ale;word;connecting_words;function_words;conjunctions;but;;678
+item_665;bo;word;connecting_words;function_words;conjunctions;because ;;679
+item_666;i;word;connecting_words;function_words;conjunctions;and;;680
+item_667;jak - (to);word;connecting_words;function_words;conjunctions;if - (then) ;;681
+item_668;tylko ;word;connecting_words;function_words;conjunctions;but;;682
+item_669;że ;word;connecting_words;function_words;conjunctions;that ;;683
+item_670;żeby;word;connecting_words;function_words;conjunctions;in order to ;;684
+item_671;Czy dziecko samorzutnie powtarza zasłyszane wypowiedzi bądź ich fragmenty? ;starting_to_talk;;;;;;685
+item_672;Czy poproszone o powtórzenie czegoś, chętnie powtarza? ;starting_to_talk;;;;;;686
+item_673;Czy łatwo uczy się wierszyków, piosenek, tekstów z książeczek? ;starting_to_talk;;;;;;687
+item_674;Czy dziecko zaczęło już łączyć wyrazy? Czy tworzy takie zadania jak np. „am”, „da mleko”, „tu kotek”, „mama śpi”?;combine ;;;;;;688
