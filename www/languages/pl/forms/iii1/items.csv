@@ -1,71 +1,71 @@
 item_id;definition;language;form;type;category;lexical_category;lexical_class;uni_lemma;complexity_category ;num_item_id
-item_1;Jak był śnieg, to lepiłem(-am) bałwana%Był śnieg. Lepiłem(-am) bałwana;Polish;CDI3;alternatives;grupa1;;;;;1
-item_2;Piję mleko, które nalała babcia%Piję mleko;Polish;CDI3;alternatives;grupa1;;;;;2
-item_3;Oni pójdą do sklepu%Oni idą do sklepu;Polish;CDI3;alternatives;grupa1;;;;;3
-item_4;Mam worek z butami%Mam worek i buty;Polish;CDI3;alternatives;grupa1;;;;;4
-item_5;Zapalę światło, żebyś widział%Zapalę światło. Będziesz widział;Polish;CDI3;alternatives;grupa1;;;;;5
-item_6;Babcia powiedziała, że przyjedzie%Babcia przyjedzie;Polish;CDI3;alternatives;grupa1;;;;;6
-item_7;Szukam misia, ale nie mogę go znaleźć.%Szukam misia. Nie mogę znaleźć;Polish;CDI3;alternatives;grupa1;;;;;7
-item_8;Mama śpi, bo jest zmęczona%Mama jest zmęczona i śpi;Polish;CDI3;alternatives;grupa1;;;;;8
-item_9;Jak był śnieg, to lepiłem(-am) bałwana%Lepiłem(-am) bałwana;Polish;CDI3;alternatives;grupa1;;;;;9
-item_10;Jadąc do przedszkola, śpiewałem(-am) piosenkę%Jechałem(-am) do przedszkola. Śpiewałem(-am) piosenkę;Polish;CDI3;alternatives;grupa1;;;;;10
-item_11;Mama narysuje kotka%Mama rysuje kotka;Polish;CDI3;alternatives;grupa1;;;;;11
-item_12;Naklejki są przyklejone krzywo%Naklejki są krzywo;Polish;CDI3;alternatives;grupa1;;;;;12
-item_13;Wracając do domu, widziałem(-am) kolegę%Wracałem(-am) do domu. Widziałem(-am) kolegę;Polish;CDI3;alternatives;grupa1;;;;;13
-item_14;Jestem zmęczony(-a), więc idę spać%Jestem zmęczony(-a) i idę spać;Polish;CDI3;alternatives;grupa1;;;;;14
-item_15;Dzisiaj będziemy myć główkę%Dzisiaj umyjemy główkę;Polish;CDI3;alternatives;grupa1;;;;;15
-item_16;Jeśli będzie padać, zostaniemy w domu%Będzie padać i zostaniemy w domu;Polish;CDI3;alternatives;grupa1;;;;;16
-item_17;Umyjmy ząbki%Umyjemy ząbki;Polish;CDI3;alternatives;grupa1;;;;;17
-item_18;Ptaszek, którego karmi mama, jest żółty%Mama karmi ptaszka. Ptaszek jest żółty;Polish;CDI3;alternatives;grupa2;;;;;18
-item_19;Jadąc do przedszkola, śpiewałem(-am) piosenkę%Jechałem(-am) do przedszkola i śpiewałem(-am) piosenkę;Polish;CDI3;alternatives;grupa2;;;;;19
-item_20;Tata rozmawia z panem%Tata rozmawia;Polish;CDI3;alternatives;grupa2;;;;;20
-item_21;Jak wrócę do domu, to zjem obiad%Wrócę do domu i zjem obiad;Polish;CDI3;alternatives;grupa2;;;;;21
-item_22;Braciszek zrobił kanapkę, ale jej nie je.%Braciszek nie je kanapki;Polish;CDI3;alternatives;grupa2;;;;;22
-item_23;Kolega, który rozlał wodę, wytarł podłogę%Kolega rozlał wodę. Wytarł podłogę.;Polish;CDI3;alternatives;grupa2;;;;;23
-item_24;Dzisiaj będziemy myć główkę%Dzisiaj główkę myjemy;Polish;CDI3;alternatives;grupa2;;;;;24
-item_25;Wujek będzie śpiewać piosenkę%Wujek zaśpiewa piosenkę;Polish;CDI3;alternatives;grupa2;;;;;25
-item_26;Przyjedzie ciocia i będziemy się bawić%Przyjedzie ciocia;Polish;CDI3;alternatives;grupa2;;;;;26
-item_27;Jem kanapkę i piję wodę%Jem kanapkę. Piję wodę.;Polish;CDI3;alternatives;grupa2;;;;;27
-item_28;Sam(-a) założę spodnie, bo jestem duży(-a)%Sam(-a) założę spodnie;Polish;CDI3;alternatives;grupa2;;;;;28
-item_29;Jak był śnieg, to lepiłem(-am) bałwana%Był śnieg i lepiłem(-am) bałwana;Polish;CDI3;alternatives;grupa2;;;;;29
-item_30;Jeśli będzie padać, zostaniemy w domu%Będzie padać. Zostaniemy w domu;Polish;CDI3;alternatives;grupa2;;;;;30
-item_31;Jem zupę, którą zrobił tata%Jem zupę;Polish;CDI3;alternatives;grupa2;;;;;31
-item_32;Jestem wesoła(-y) i śpiewam piosenki%Jestem wesoła(-y). Śpiewam piosenki.;Polish;CDI3;alternatives;grupa2;;;;;32
-item_33;Chciał(a)bym banana%Chcę banana;Polish;CDI3;alternatives;grupa2;;;;;33
-item_34;Jak wrócę do domu, to zjem obiad%W domu zjem obiad;Polish;CDI3;alternatives;grupa2;;;;;34
-item_35;Schowajmy klocki%Chowamy klocki;Polish;CDI3;alternatives;grupa3;;;;;35
-item_36;Jestem zmęczony(-a), więc idę spać%Jestem zmęczony(-a);Polish;CDI3;alternatives;grupa3;;;;;36
-item_37;Jestem głodny(-a), więc zjem banana%Jestem głodny(-a). Zjem banana;Polish;CDI4;alternatives;grupa3;;;;;37
-item_38;Mama śpi, bo jest zmęczona%Mama śpi;Polish;CDI4;alternatives;grupa3;;;;;38
-item_39;Przyjedzie ciocia i będziemy się bawić%Przyjedzie ciocia. Będziemy się bawić.;Polish;CDI4;alternatives;grupa3;;;;;39
-item_40;Jedziemy do sklepu samochodem%Jedziemy do sklepu;Polish;CDI4;alternatives;grupa3;;;;;40
-item_41;Czytam bajkę o zwierzątkach%Czytam bajkę;Polish;CDI4;alternatives;grupa3;;;;;41
-item_42;Jem zupę, którą zrobił tata%Tata zrobił zupę. Jem zupę;Polish;CDI4;alternatives;grupa3;;;;;42
-item_43;Tata śpi na łóżku%Tata śpi;Polish;CDI4;alternatives;grupa3;;;;;43
-item_44;Nie wyjdziemy, bo pada deszcz%Nie wyjdziemy;Polish;CDI4;alternatives;grupa3;;;;;44
-item_45;Odkręć wodę, żebym umył(-a) rączki%Odkręć wodę. Umyję rączki;Polish;CDI4;alternatives;grupa3;;;;;45
-item_46;Siadajcie tutaj%Siadacie tutaj;Polish;CDI4;alternatives;grupa3;;;;;46
-item_47;Tata powiedział, że lubi pierogi%Tata powiedział: lubię pierogi;Polish;CDI4;alternatives;grupa3;;;;;47
-item_48;Widzę ptaszki, które latają po niebie%Widzę ptaszki. Latają po niebie.;Polish;CDI4;alternatives;grupa3;;;;;48
-item_49;Zapalę światło, żebyś widział%Zapalę światło;Polish;CDI4;alternatives;grupa3;;;;;
-item_50;Nie wyjdziemy, bo pada deszcz%Pada deszcz i nie wyjdziemy;Polish;CDI4;alternatives;grupa3;;;;;
-item_51;Mam worek z butami%Mam worek;Polish;CDI4;alternatives;grupa3;;;;;
-item_52;Szukam misia, ale nie mogę go znaleźć.%Szukam misia i nie mogę znaleźć;Polish;CDI4;alternatives;grupa4;;;;;
-item_53;Jest ładna pogoda, więc pójdziemy na spacer%Jest ładna pogoda;Polish;CDI4;alternatives;grupa4;;;;;
-item_54;Mam klocki w koszyku%Mam klocki;Polish;CDI4;alternatives;grupa4;;;;;
-item_55;Mama czyta bajkę o misiu%Mama czyta bajkę;Polish;CDI4;alternatives;grupa4;;;;;
-item_56;Chcę iść do sklepu%Chcę do sklepu;Polish;CDI4;alternatives;grupa4;;;;;
-item_57;Szukam misia, ale nie mogę go znaleźć.%Nie mogę znaleźć misia;Polish;CDI4;alternatives;grupa4;;;;;
-item_58;Ptaszek, którego karmi mama, jest żółty%Ptaszek jest żółty;Polish;CDI4;alternatives;grupa4;;;;;
-item_59;Piłem(-am)%Piję;Polish;CDI4;alternatives;grupa4;;;;;
-item_60;Widzę ptaszki, które latają po niebie%Widzę ptaszki;Polish;CDI4;alternatives;grupa4;;;;;
-item_61;Jest ładna pogoda, więc pójdziemy na spacer%Jest ładna pogoda i pójdziemy na spacer;Polish;CDI4;alternatives;grupa4;;;;;
-item_62;Biegałem(-am)%Biegam;Polish;CDI4;alternatives;grupa4;;;;;
-item_63;Pójdę na spacer, jeśli będzie ciepło%Będzie ciepło i pójdę na spacer;Polish;CDI4;alternatives;grupa4;;;;;
-item_64;Sam(-a) założę spodnie, bo jestem duży(-a)%Jestem duży(-a). Sam(-a) założę spodnie;Polish;CDI4;alternatives;grupa4;;;;;
-item_65;Schowajmy klocki%Schowamy klocki;Polish;CDI4;alternatives;grupa4;;;;;
-item_66;Chcę, żebyś narysowała misia%Narysuj misia;Polish;CDI4;alternatives;grupa4;;;;;
-item_67;Jem kanapkę i piję wodę%Jem kanapkę;Polish;CDI4;alternatives;grupa4;;;;;
+item_1;A. Widziałem psa. Pies szczekał.%B. Widziałem(-am) psa, który szczekał.;Polish;CDI3;alternatives;grupa1;;;;;1
+item_2;A. Jestem wesoła(-y). Śpiewam piosenki.%B. Jestem wesoła(-y) i śpiewam piosenki.;Polish;CDI3;alternatives;grupa1;;;;;2
+item_3;A. Schowamy klocki.%B. Schowajmy klocki.;Polish;CDI3;alternatives;grupa1;;;;;3
+item_4;A. Biegam.%B. Biegałem(-am).;Polish;CDI3;alternatives;grupa1;;;;;4
+item_5;A. Zjemy kolację.%B. Musimy zjeść kolację.;Polish;CDI3;alternatives;grupa1;;;;;5
+item_6;A. Myjemy ząbki.%B. Umyjmy ząbki.;Polish;CDI3;alternatives;grupa1;;;;;6
+item_7;A. Jest ładna pogoda. Pójdziemy na spacer.%B. Jest ładna pogoda, więc pójdziemy na spacer.;Polish;CDI3;alternatives;grupa1;;;;;7
+item_8;A. Zabawka jest pod łóżkiem.%B. Zabawka jest schowana pod łóżkiem.;Polish;CDI3;alternatives;grupa1;;;;;8
+item_9;A. Jestem zmęczony(-a).%B. Jestem zmęczony(-a), więc idę spać.;Polish;CDI3;alternatives;grupa1;;;;;9
+item_10;A. Zaśpiewasz piosenkę?%B. Zaśpiewałabyś piosenkę?;Polish;CDI3;alternatives;grupa1;;;;;10
+item_11;A. Babcia powiedziała: przyjadę.%B. Babcia powiedziała, że przyjedzie.;Polish;CDI3;alternatives;grupa1;;;;;11
+item_12;A. Dzisiaj myjemy główkę.%B. Dzisiaj będziemy myć główkę.;Polish;CDI3;alternatives;grupa1;;;;;12
+item_13;A. Kolega wytarł podłogę.%B. Kolega, który rozlał wodę, wytarł podłogę.;Polish;CDI3;alternatives;grupa1;;;;;13
+item_14;A. Wieczorem jemy kolację.%B. Wieczorem zjemy kolację.;Polish;CDI3;alternatives;grupa1;;;;;14
+item_15;A. Odkręć wodę. Umyję rączki.%B. Odkręć wodę, żebym umył(-a) rączki.;Polish;CDI3;alternatives;grupa1;;;;;15
+item_16;A. Mama kupiła zabawkę. Zabawka lezy w szafie.%B. Zabawka, którą kupiła mama, leży w szafie.;Polish;CDI3;alternatives;grupa1;;;;;16
+item_17;A. Jem kanapkę.%B. Jem kanapkę z żółtym serem.;Polish;CDI3;alternatives;grupa1;;;;;17
+item_18;A. Widzę ptaszki.%B. Widzę ptaszki, które latają po niebie.;Polish;CDI3;alternatives;grupa2;;;;;18
+item_19;A. Siadacie tutaj.%B. Siadajcie tutaj.;Polish;CDI3;alternatives;grupa2;;;;;19
+item_20;A. Piję.%B. Piłem(-am).;Polish;CDI3;alternatives;grupa2;;;;;20
+item_21;A. Chcę jogurt i płatki.%B. Chcę jogurt z płatkami.;Polish;CDI3;alternatives;grupa2;;;;;21
+item_22;A. Tata jedzie po soczek.%B. Tata jedzie kupić soczek.;Polish;CDI3;alternatives;grupa2;;;;;22
+item_23;A. Był śnieg i lepiłem(-am) bałwana.%B. Jak był śnieg, to lepiłem(-am) bałwana.;Polish;CDI3;alternatives;grupa2;;;;;23
+item_24;A. Jestem głodny(-a) i zjem banana.%B. Jestem głodny(-a), więc zjem banana.;Polish;CDI3;alternatives;grupa2;;;;;24
+item_25;A. Pójdę na spacer.%B. Pójdę na spacer, jeśli będzie ciepło.;Polish;CDI3;alternatives;grupa2;;;;;25
+item_26;A. Zapalę światło.%B. Zapalę światło, żebyś widział.;Polish;CDI3;alternatives;grupa2;;;;;26
+item_27;A. Tata lubi pierogi.%B. Tata powiedział, że lubi pierogi.;Polish;CDI3;alternatives;grupa2;;;;;27
+item_28;A. Ptaszki śpiewają.%B. Ptaszki śpiewają na drzewach.;Polish;CDI3;alternatives;grupa2;;;;;28
+item_29;A. Czytam bajkę.%B. Czytam bajkę o zwierzątkach.;Polish;CDI3;alternatives;grupa2;;;;;29
+item_30;A. Wujek zaśpiewa piosenkę.%B. Wujek będzie śpiewać piosenkę.;Polish;CDI3;alternatives;grupa2;;;;;30
+item_31;A. Mama czyta bajkę.%B. Mama czyta bajkę o misiu.;Polish;CDI3;alternatives;grupa2;;;;;31
+item_32;A. Naklejki są krzywo.%B. Naklejki są przyklejone krzywo.;Polish;CDI3;alternatives;grupa2;;;;;32
+item_33;A. Przyjedzie ciocia. Będziemy się bawić.%B. Przyjedzie ciocia i będziemy się bawić.;Polish;CDI3;alternatives;grupa2;;;;;33
+item_34;A. Zapalę światło.%B. Zapalę światło, aby widzieć.;Polish;CDI3;alternatives;grupa2;;;;;34
+item_35;A. Mama rysuje kotka.%B. Mama narysuje kotka.;Polish;CDI3;alternatives;grupa3;;;;;35
+item_36;A. Tata zrobił zupę. Jem zupę.%B. Jem zupę, którą zrobił tata.;Polish;CDI3;alternatives;grupa3;;;;;36
+item_37;A. Mam klocki.%B. Mam klocki w koszyku.;Polish;CDI4;alternatives;grupa3;;;;;37
+item_38;A. Pada deszcz. Nie wyjdziemy.%B. Nie wyjdziemy, bo pada deszcz.;Polish;CDI4;alternatives;grupa3;;;;;38
+item_39;A. Idę do przedszkola.%B. Muszę iść do przedszkola.;Polish;CDI4;alternatives;grupa3;;;;;39
+item_40;A. Oglądam książeczkę.%B. Oglądam książeczkę, którą dała mi babcia.;Polish;CDI4;alternatives;grupa3;;;;;40
+item_41;A. Oni idą do sklepu.%B. Oni pójdą do sklepu.;Polish;CDI4;alternatives;grupa3;;;;;41
+item_42;A. Mama śpi.%B. Mama śpi, bo jest zmęczona.;Polish;CDI4;alternatives;grupa3;;;;;42
+item_43;A. Dostanę misia. Będę się cieszyć.%B. Będę się cieszyć, jeśli dostanę misia.;Polish;CDI4;alternatives;grupa3;;;;;43
+item_44;A. Ptaszek jest żółty.%B. Ptaszek, którego karmi mama, jest żółty.;Polish;CDI4;alternatives;grupa3;;;;;44
+item_45;A. Chcę banana.%B. Chciał(a)bym banana.;Polish;CDI4;alternatives;grupa3;;;;;45
+item_46;A. Szukam misia. Nie mogę znaleźć.%B. Szukam misia, ale nie mogę go znaleźć.;Polish;CDI4;alternatives;grupa3;;;;;46
+item_47;A. Tata śpi.%B. Tata śpi na łóżku.;Polish;CDI4;alternatives;grupa3;;;;;47
+item_48;A. Podlałem(-am) kwiaty.%B. Podlałem(-am) kwiaty, żeby urosły.;Polish;CDI4;alternatives;grupa3;;;;;48
+item_49;A. Tata rozmawia.%B. Tata rozmawia z panem.;Polish;CDI4;alternatives;grupa3;;;;;
+item_50;A. Jestem duży(-a) i sam(-a) założę spodnie.%B. Sam(-a) założę spodnie, bo jestem duży(-a).;Polish;CDI4;alternatives;grupa3;;;;;
+item_51;A. Pani ma pieska. Pani uśmiecha się.%B. Pani, która ma pieska, uśmiecha się.;Polish;CDI4;alternatives;grupa3;;;;;
+item_52;A. Jem kanapkę.%B. Jem kanapkę i piję wodę.;Polish;CDI4;alternatives;grupa4;;;;;
+item_53;A. Wrócę do domu. Zjem obiad.%B. Jak wrócę do domu, to zjem obiad.;Polish;CDI4;alternatives;grupa4;;;;;
+item_54;A. Nie otworzę.%B. Nie mogę tego otworzyć.;Polish;CDI4;alternatives;grupa4;;;;;
+item_55;A. Idę do sklepu.%B. Chcę iść do sklepu.;Polish;CDI4;alternatives;grupa4;;;;;
+item_56;A. Wracałem(-am) do domu. Widziałem(-am) kolegę.%B. Wracając do domu, widziałem(-am) kolegę.;Polish;CDI4;alternatives;grupa4;;;;;
+item_57;A. Jedziemy do sklepu.%B. Jedziemy do sklepu samochodem.;Polish;CDI4;alternatives;grupa4;;;;;
+item_58;A. Myję nogi.%B. Myję nogi, żeby były czyste.;Polish;CDI4;alternatives;grupa4;;;;;
+item_59;A. Będzie padać i zostaniemy w domu.%B. Jeśli będzie padać, zostaniemy w domu.;Polish;CDI4;alternatives;grupa4;;;;;
+item_60;A. Oni jadą do babci.%B. Oni będą jechać do babci.;Polish;CDI4;alternatives;grupa4;;;;;
+item_61;A. Widziałem(-am) zabawki.%B. Widziałem(-am) zabawki w pudełkach.;Polish;CDI4;alternatives;grupa4;;;;;
+item_62;A. Tata nakarmi kota.%B. Jak tata przyjdzie, to nakarmi kota.;Polish;CDI4;alternatives;grupa4;;;;;
+item_63;A. Mam worek.%B. Mam worek z butami.;Polish;CDI4;alternatives;grupa4;;;;;
+item_64;A. Chcę kanapkę z serem.%B. Chciał(a)bym kanapkę z serem.;Polish;CDI4;alternatives;grupa4;;;;;
+item_65;A. Narysuj misia.%B. Chcę, żebyś narysowała misia.;Polish;CDI4;alternatives;grupa4;;;;;
+item_66;A. Braciszek nie je kanapki.%B. Braciszek zrobił kanapkę, ale jej nie je.;Polish;CDI4;alternatives;grupa4;;;;;
+item_67;A. Jechałem(-am) do przedszkola i śpiewałem(-am) piosenkę.%B. Jadąc do przedszkola, śpiewałem(-am) piosenkę.;Polish;CDI4;alternatives;grupa4;;;;;
 item_68;"Czy Twoje dziecko opowiada o tym, co ktoś powiedział, mówiąc ""... powiedział(a), że...""?";Polish;CDI3;yesNo;wprost;;;;;
 item_69;"Czy Twoje dziecko używa słów ""która"", ""które"" (""co"") itp., żeby połączyć dwa zdania, np. ""Jem ciasto, które zrobiła mama""?";Polish;CDI3;yesNo;wprost;;;;;
 item_70;"Czy Twoje dziecko używa słów ""żebym"", ""żebyś"", ""abym"", ""abyś"" itp. w zdaniach takich jak: ""Chcę, żebyś narysowała misia"", ""Zapal światło, abym mógł widzieć""?";Polish;CDI3;yesNo;wprost;;;;;

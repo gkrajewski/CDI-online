@@ -1,12 +1,14 @@
 text_type;text;item_type;category
-yesNoBtn;Zadanie 2.;yesNo;wprost
-header;Zadanie 2.;yesNo;wprost
+yesNoBtn;Dodatkowe pytania;yesNo;wprost
+header;Dodatkowe pytania;yesNo;wprost
 choiceNames;Tak, Nie;yesNo;wprost
-alternativesBtn;Zadanie 1.;alternatives;
-header;Zadanie 1.;alternatives;
-longText;Tu może być jakaś instrukcja/wprowadzenie.;alternatives;firstPage
-catHeader;Grupa 1.;alternatives;grupa1
-catHeader;Grupa 2.;alternatives;grupa2
-catHeader;Grupa 3.;alternatives;grupa3
-catHeader;Grupa 4.;alternatives;grupa4
-cdiNameSufix;Pilotaż wersji trzeciej;;
+alternativesBtn;Przykłady wypowiedzi;alternatives;
+header;Przykłady wypowiedzi;alternatives;
+instr;"Poniżej znajdują się przykłady wypowiedzi, które dzieci mogą tworzyć w różnym wieku. Ułożyliśmy je parami: w każdej parze jedna wersja jest mniej, a druga bardziej złożona. Proszę zaznaczyć wersję, która przypomina wypowiedzi Państwa dziecka. Nie chodzi nam o dokładnie takie sformułowania, jakich użyliśmy w przykładach. Również wyrazy używane przez Państwa dziecko mogą być inne (mogą też występować w nich błędy, np. ""kubeku"" zamiast ""kubku"" lub ""dałambym"" zamiast ""dałabym""). Jeżeli obie wersje przypominają wypowiedzi Państwa dziecka, mogą Państwo zaznaczyć obie, a jeśli Państwa dziecko jeszcze w ogóle nie tworzy takich wypowiedzi, proszę nie zaznaczać żadnej z nich.";alternatives;grupa1
+instr;"Poniżej znajdują się przykłady wypowiedzi, które dzieci mogą tworzyć w różnym wieku. Ułożyliśmy je parami: w każdej parze jedna wersja jest mniej, a druga bardziej złożona. Proszę zaznaczyć wersję, która przypomina wypowiedzi Państwa dziecka. Nie chodzi nam o dokładnie takie sformułowania, jakich użyliśmy w przykładach. Również wyrazy używane przez Państwa dziecko mogą być inne (mogą też występować w nich błędy, np. ""kubeku"" zamiast ""kubku"" lub ""dałambym"" zamiast ""dałabym""). Jeżeli obie wersje przypominają wypowiedzi Państwa dziecka, mogą Państwo zaznaczyć obie, a jeśli Państwa dziecko jeszcze w ogóle nie tworzy takich wypowiedzi, proszę nie zaznaczać żadnej z nich.";alternatives;grupa2
+instr;"Poniżej znajdują się przykłady wypowiedzi, które dzieci mogą tworzyć w różnym wieku. Ułożyliśmy je parami: w każdej parze jedna wersja jest mniej, a druga bardziej złożona. Proszę zaznaczyć wersję, która przypomina wypowiedzi Państwa dziecka. Nie chodzi nam o dokładnie takie sformułowania, jakich użyliśmy w przykładach. Również wyrazy używane przez Państwa dziecko mogą być inne (mogą też występować w nich błędy, np. ""kubeku"" zamiast ""kubku"" lub ""dałambym"" zamiast ""dałabym""). Jeżeli obie wersje przypominają wypowiedzi Państwa dziecka, mogą Państwo zaznaczyć obie, a jeśli Państwa dziecko jeszcze w ogóle nie tworzy takich wypowiedzi, proszę nie zaznaczać żadnej z nich.";alternatives;grupa3
+instr;"Poniżej znajdują się przykłady wypowiedzi, które dzieci mogą tworzyć w różnym wieku. Ułożyliśmy je parami: w każdej parze jedna wersja jest mniej, a druga bardziej złożona. Proszę zaznaczyć wersję, która przypomina wypowiedzi Państwa dziecka. Nie chodzi nam o dokładnie takie sformułowania, jakich użyliśmy w przykładach. Również wyrazy używane przez Państwa dziecko mogą być inne (mogą też występować w nich błędy, np. ""kubeku"" zamiast ""kubku"" lub ""dałambym"" zamiast ""dałabym""). Jeżeli obie wersje przypominają wypowiedzi Państwa dziecka, mogą Państwo zaznaczyć obie, a jeśli Państwa dziecko jeszcze w ogóle nie tworzy takich wypowiedzi, proszę nie zaznaczać żadnej z nich.";alternatives;grupa4
+cdiNameSufix;Typowe wypowiedzi dziecka;;
+cdiNamePrefix;Jak mówi Twój trzylatek?;;
+instr;Bardzo dziękujemy za wypełnienie kwestionariusza!;postEnd;
+yesNoTooltip;Zakładka “Dodatkowe pytania” włączy się po wypełnieniu i zatwierdzeniu części “Przykłady wypowiedzi”;;
