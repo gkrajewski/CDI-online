@@ -66,7 +66,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
     reactList$items <- reactList$typeItems
     reactList$txt <- reactList$typeTxt
     reactList$settings <- reactList$typeSettings
-    if (reactList$type != "postEnd") buttons <- list(actionButton("confBtn", class = "btn-primary", label = staticList$txt[staticList$txt$text_type == "confBtn", "text"]))
+    if (reactList$type != "postEnd" & reactList$type != "postEndSW") buttons <- list(actionButton("confBtn", class = "btn-primary", label = staticList$txt[staticList$txt$text_type == "confBtn", "text"]))
 
   }
   

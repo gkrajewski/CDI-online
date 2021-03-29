@@ -30,4 +30,4 @@ instr;Bardzo dziękujemy za wypełnienie kwestionariusza!;postEnd;
 error;Wystąpił błąd. Proszę odświeżyć stronę i spróbować ponownie.;;
 refresh;Odśwież;;
 badForm;Zła wartość parametru form w adresie URL. Dostępne wartości to: ;;none
-inventoryOpened;Inwentarz jest już otwarty.;;
+inventoryOpened;Inwentarz jest już otwarty. Proszę zamknąć inwentarz jeśli jest otwarty gdzie indziej i/lub odświeżyć stronę.;;
