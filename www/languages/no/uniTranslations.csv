@@ -3,7 +3,7 @@ longText;FORELDRERAPPORT FOR KOMMUNIKATIV UTVIKLING: ORD OG GESTER. Her følger 
 help;MERK: Etter å ha bekreftet startdelen, vil det ikke være mulig å besøke den igjen.;start;
 backBtn;Gå tilbake;;
 nextBtn;Fortsett;;
-saveBtn;Bekreft;;
+confBtn;Bekreft;;
 startBtn;Start;;
 dateLabel;Barnets fødselsdato;;
 genderLabel;Barnets kjønn;;

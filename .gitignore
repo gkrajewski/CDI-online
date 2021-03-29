@@ -1,8 +1,6 @@
 .Renviron
 .Rhistory
 rsconnect/
-wordbank.R
-Versions/
 answers/
 usersProgress/
 .RData

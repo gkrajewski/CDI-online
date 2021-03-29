@@ -44,7 +44,7 @@ help;Przed zatwierdzeniem proszę sprawdzić, czy nie pominęli Państwo jakiej�
 starting_to_talkBtn;Naśladownictwo;starting_to_talk;
 header;Naśladownictwo;starting_to_talk;
 choiceNames;Tak, Nie;starting_to_talk;
-warning;UWAGA: To pytanie odnosi się do dzieci, które już znają dość dużo wyrazów. Jeśli Państwa dziecko jeszcze nie łączy wyrazów, proszę zaznaczyć „Jeszcze nie”.;combine;
+longText;To pytanie odnosi się do dzieci, które już znają dość dużo wyrazów. Jeśli Państwa dziecko jeszcze nie łączy wyrazów, proszę zaznaczyć „Jeszcze nie”.;combine;
 help; Po wybraniu odpowiedzi „Czasem” lub „Często” dostępna stanie się zakładka „Wypowiedzi”.;combine;
 sentences10Btn;Wypowiedzi;sentences10;
 header;Przykłady wypowiedzi;sentences10;

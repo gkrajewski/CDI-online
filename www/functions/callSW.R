@@ -1,4 +1,4 @@
-callSW <- function(done, score){
+callSW <- function(idx, form, done, score){
   
   ### LOGIN TO FIREBASE ###
   
