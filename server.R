@@ -53,6 +53,9 @@ server <- function(input, output, session) {
             items <- read.csv("items.csv", encoding = "UTF-8", sep = ";", strip.white = T)[c("item_id", "definition", "type", "category")]
             transl <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T) 
             formSettings <- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
+            translID <- paste(transl$text_type, transl$item_type, transl$category)
+            uniTranslID <- paste(uniTransl$text_type, uniTransl$item_type, uniTransl$category)
+            uniTransl <- subset(uniTransl, !(uniTranslID %in% translID)) #Get things from uniTransl that are not in translations
             setwd(INIT_PATH)
             txt <- rbind(uniTransl, transl)
             settings <- rbind(formSettings, END_SETTINGS)
