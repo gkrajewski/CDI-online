@@ -140,7 +140,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
         } else if (reactList$settings$input_type == "checkboxAlt"){
           choiceNames <-  strsplit(reactList$items[i, "definition"], "%")[[1]]
           choiceValues <- c(1 : length(choiceNames))
-          inputObj[[i]] <- list(createCheckboxQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i], noBreakInside = FALSE), br())
+          inputObj[[i]] <- list(br(), createCheckboxQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i], noBreakInside = FALSE))
         }
       }
       

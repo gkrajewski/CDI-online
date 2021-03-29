@@ -390,7 +390,7 @@ server <- function(input, output, session) {
       }
       
     } else {
-      # updateQueryString(paste0("?id=", "IlYaL6gzKieyRx92YUl1a", "&form=", "wg", "&lang=", "pl")) #IlYaL6gzKieyRx92YUl1q #id=test&form=wg&lang=pl
+      # updateQueryString(paste0("?id=", "IlYaL6gzKieyRx92YUl1a", "&form=", "iii1", "&lang=", "pl")) #IlYaL6gzKieyRx92YUl1q #id=test&form=wg&lang=pl
       # session$reload()
       output$sidebar <- renderText({"No needed params in URL (lang, form and id)"})
     }  
