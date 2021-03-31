@@ -22,4 +22,6 @@ instr;"På dette punktet kan du fremdeles redigere svarene dine, til tross for a
 help;MERKNAD: Etter validering av beholdningen vil du ikke kunne redigere svaret lenger!;end;
 help;Takk for at du fylte ut!;postEnd;
 instr;"Tusen takk for tid og krefter for å fylle ut dette spørreskjemaet! Følg varslinger i appen / ny informasjon i ""Kunnskap"" -fanen";postEnd;
+instr;"TODO: Tusen takk for tid og krefter for å fylle ut dette spørreskjemaet! Følg varslinger i appen / ny informasjon i ""Kunnskap"" -fanen";postEndSW;
+help;Takk for at du fylte ut!;postEndSW;
 ;;;none
