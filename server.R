@@ -91,7 +91,7 @@ server <- function(input, output, session) {
                 categoriesNum <- length(uniqueCategories)
                 firstCat <- uniqueCategories[1]
                 if (categoriesNum > 1 & uniqueCategories[1] == "") firstCat <- uniqueCategories[2]
-                if (firstCat == "allButFirst") firstCat <- uniqueCategories[3]
+                if (firstCat == "allInput") firstCat <- uniqueCategories[3]
                 firstCats[i] <- firstCat
                 i <- i + 1
               }
