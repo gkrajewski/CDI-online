@@ -3,7 +3,9 @@ server <- function(input, output, session) {
   #Get available languages
   availableLangs <- list.files(path = LANGUAGES_PATH, recursive = FALSE)
   
+  waitingForClose <- reactiveVal(FALSE)
   inventoryStarted <- reactiveVal(FALSE)
+  
   observe({
       
     #Read parameters values from URL
@@ -30,16 +32,31 @@ server <- function(input, output, session) {
           formPath <- paste0(langPath, "/forms/", form)
           urlString <- paste(lang, form, idx, sep = "-")
           
-          if (!is.element(urlString, BUSY_URLS)){
-            
-            #Prevent from opening same url params more than once in the same moment
-            BUSY_URLS <<- append(BUSY_URLS, urlString)
-            session$onSessionEnded(function() {
-              BUSY_URLS <<- BUSY_URLS[BUSY_URLS != urlString]
-            })
+          if (!is.element(urlString, BUSY_URLS())){
             
             ### START INVENTORY ###
             inventoryStarted(TRUE)
+            
+            #Prevent from opening same url params more than once in the same moment
+            busyURLs <- BUSY_URLS()
+            busyURLs <- c(busyURLs, urlString)
+            BUSY_URLS(busyURLs)
+            
+            session$onSessionEnded(function() {
+              busyURLs <- isolate(BUSY_URLS())
+              busyURLs <- busyURLs[busyURLs != urlString]
+              BUSY_URLS(busyURLs)
+            })
+
+            closeSession <- reactive({paste0(is.element(urlString, URLS_TO_CLOSE()))})
+            observeEvent(closeSession(), {
+              if (closeSession()){
+                urlsToClose <- URLS_TO_CLOSE()
+                urlsToClose <- urlsToClose[urlsToClose != urlString]
+                URLS_TO_CLOSE(urlsToClose)
+                session$close()
+              }
+            }, ignoreInit = TRUE)
             
             #Check if user is connected with StarWords app
             if (nchar(idx) == 21){
@@ -375,10 +392,11 @@ server <- function(input, output, session) {
               write.csv(isolate(reactList()$userProgress), progressFile, row.names = F)
             })
             
-          } else {
-            if (!inventoryStarted()){
-              output$sidebar <- renderText({uniTransl[uniTransl$text_type == "inventoryOpened", "text"]})
-            } 
+          } else if (!waitingForClose() & !inventoryStarted()){
+            urlsToClose <- URLS_TO_CLOSE()
+            urlsToClose <- c(urlsToClose, urlString)
+            URLS_TO_CLOSE(urlsToClose)
+            waitingForClose(TRUE)
           }
           
         } else {

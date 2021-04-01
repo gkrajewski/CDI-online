@@ -38,8 +38,9 @@ source(paste0(FUNCTIONS_PATH,"/countScore.R"))
 readRenviron(".Renviron")
 
 #Set mail things
-MAIL_USERNAME = "cdishiny@gmail.com"
+MAIL_USERNAME <- "cdishiny@gmail.com"
 EMAILS_RECIPIENTS <- c("cdishiny@gmail.com", "projekt.starwords@psych.uw.edu.pl")
 
-#Prepare vector of busy inventories (to not allow few opens of the same inventory)
-BUSY_URLS <- c()
+#Prepare vector of busy urls and urls to close (to not allow few opens of the same inventory)
+BUSY_URLS <- reactiveVal(list())
+URLS_TO_CLOSE <- reactiveVal(list())
