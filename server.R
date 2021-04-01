@@ -388,8 +388,8 @@ server <- function(input, output, session) {
             
             #Save data to file when session ends
             session$onSessionEnded(function() {
-              write.csv(isolate(reactList()$answers), answersFile, row.names = F)
-              write.csv(isolate(reactList()$userProgress), progressFile, row.names = F)
+              write.csv(isolate(reactList()$answers), answersFile, row.names = F, fileEncoding = "UTF-8")
+              write.csv(isolate(reactList()$userProgress), progressFile, row.names = F, fileEncoding = "UTF-8")
             })
             
           } else if (!waitingForClose() & !inventoryStarted()){
