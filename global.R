@@ -9,37 +9,37 @@ library(shinydisconnect) #handling disconnects in a nice visual way
 options(stringsAsFactors = FALSE)
 
 #Specify paths
-wwwPath <- paste0(getwd(),"/www")
-functionsPath <- paste0(wwwPath,"/functions")
-languagesPath <- paste0(wwwPath,"/languages")
-initPath <- getwd()
+WWW_PATH <- paste0(getwd(),"/www")
+FUNCTIONS_PATH <- paste0(WWW_PATH,"/functions")
+LANGUAGES_PATH <- paste0(WWW_PATH,"/languages")
+INIT_PATH <- getwd()
 
 #Create dirs to saving answers and users' progress
-if(!dir.exists(file.path(initPath, "answers"))) dir.create(file.path(initPath, "answers"))
-if(!dir.exists(file.path(initPath, "usersProgress"))) dir.create(file.path(initPath, "usersProgress"))
+if(!dir.exists(file.path(INIT_PATH, "answers"))) dir.create(file.path(INIT_PATH, "answers"))
+if(!dir.exists(file.path(INIT_PATH, "usersProgress"))) dir.create(file.path(INIT_PATH, "usersProgress"))
 
 #Load form-universal end settings
-setwd(wwwPath)
-endSettings <<- read.csv("endSettings.csv", encoding = "UTF-8", strip.white = T)
-setwd(initPath)
+setwd(WWW_PATH)
+END_SETTINGS <- read.csv("endSettings.csv", encoding = "UTF-8", strip.white = T)
+setwd(INIT_PATH)
 
 #Load functions
-source(paste0(functionsPath,"/readFromURL.R"))
-source(paste0(functionsPath,"/startInventory.R"))
-source(paste0(functionsPath,"/readNormsFile.R"))
-source(paste0(functionsPath,"/readValueFromNorms.R"))
-source(paste0(functionsPath,"/recurrentCallSW.R"))
-source(paste0(functionsPath,"/callSW.R"))
-source(paste0(functionsPath,"/addSidebarObservers.R"))
-source(paste0(functionsPath,"/addDataSaving.R"))
-source(paste0(functionsPath,"/renderType.R"))
-source(paste0(functionsPath,"/renderCategory.R"))
-source(paste0(functionsPath,"/renderInput.R"))
-source(paste0(functionsPath,"/badDate.R"))
-source(paste0(functionsPath,"/countScore.R"))
+source(paste0(FUNCTIONS_PATH,"/readFromURL.R"))
+source(paste0(FUNCTIONS_PATH,"/renderType.R"))
+source(paste0(FUNCTIONS_PATH,"/renderCategory.R"))
+source(paste0(FUNCTIONS_PATH,"/createRadioQuestion.R"))
+source(paste0(FUNCTIONS_PATH,"/createCheckboxQuestion.R"))
+source(paste0(FUNCTIONS_PATH,"/readNorms.R"))
+source(paste0(FUNCTIONS_PATH,"/recurrentCallSW.R"))
+source(paste0(FUNCTIONS_PATH,"/callSW.R"))
+source(paste0(FUNCTIONS_PATH,"/countScore.R"))
 
 #Load file with secret variables
 readRenviron(".Renviron")
 
-#Specify recipients of mails produced by app
-emailTo <<- c("cdishiny@gmail.com", "projekt.starwords@psych.uw.edu.pl")
+#Set mail things
+MAIL_USERNAME = "cdishiny@gmail.com"
+EMAILS_RECIPIENTS <- c("cdishiny@gmail.com", "projekt.starwords@psych.uw.edu.pl")
+
+#Prepare vector of busy inventories (to not allow few opens of the same inventory)
+BUSY_URLS <- c()

@@ -27,7 +27,6 @@ ui <- fluidPage(
     mainPanel(
       
       uiOutput("main"),
-      textOutput("warning")
       
     ),
     

@@ -2,7 +2,7 @@ text_type;text;item_type;category
 warning;UWAGA: Zakończenie inwentarza będzie możliwe dopiero po zatwierdzeniu wszystkich części. W każdej chwili można przerwać wypełnianie, co nie spowoduje utraty dotychczasowych odpowiedzi. Żeby wrócić do wypełniania (np. na innym urządzeniu), należy użyć dokładnie tego samego linku.;start;
 backBtn;Cofnij;;
 nextBtn;Dalej;;
-saveBtn;Zatwierdź;;
+confBtn;Zatwierdź;;
 startBtn;Start;;
 dateLabel;Data urodzin dziecka;;
 genderLabel;Płeć dziecka;;
@@ -13,7 +13,7 @@ badDate;Podana data urodzenia wskazuje, że Państwa dziecko nie jest w wieku, d
 genders;dziewczynka,chłopiec,inna;;
 fillerLabel;Kim Państwo są dla dziecka?;;
 fillers;mama,tata,babcia,dziadek,niania,nauczyciel(-ka),inna odpowiedź (proszę wpisać):;;
-commentLabel;Państwa uwagi;;
+commentLabel;Uwagi;;
 cdiNamePrefix;Inwentarz Rozwoju Mowy i Komunikacji;;
 endTooltip;Zakończenie inwentarza będzie możliwe po zatwierdzeniu wszystkich części.;;
 sentencesTooltip;Zakładka „Wypowiedzi” staje się dostępna w zależności od odpowiedzi udzielonych w zakładce „Łączenie wyrazów”.;;
@@ -21,10 +21,13 @@ header;Łączenie wyrazów;combine;
 combineBtn;Łączenie wyrazów ;combine;
 choiceNames;Jeszcze nie,Czasem,Często;combine;
 header;Zakończenie;end;
-endBtn;Zakończ;end;
+endBtn;Zakończenie;end;
 instr;Jeśli wypełnili Państwo wszystkie części kwestionariusza, proszę kliknąć przycisk „Zatwierdź”. ;end;
 help;Dziękujemy za wypełnienie!;postEnd;
-instr;Bardzo dziękujemy za wypełnienie kwestionariusza! Więcej informacji znajdą Państwo w zakładce „Wiedza”.;postEnd;
+help;Dziękujemy za wypełnienie!;postEndSW;
+instr;Bardzo dziękujemy za wypełnienie kwestionariusza! Więcej informacji znajdą Państwo w zakładce „Wiedza”.;postEndSW;
+instr;Bardzo dziękujemy za wypełnienie kwestionariusza!;postEnd;
 error;Wystąpił błąd. Proszę odświeżyć stronę i spróbować ponownie.;;
 refresh;Odśwież;;
-;;;none
+badForm;Zła wartość parametru form w adresie URL. Dostępne wartości to: ;;none
+inventoryOpened;Inwentarz jest już otwarty. Proszę zamknąć inwentarz jeśli jest otwarty gdzie indziej i/lub odświeżyć stronę.;;
