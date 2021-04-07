@@ -341,48 +341,52 @@ server <- function(input, output, session) {
                 #Render end or postend type
                 if(allEnabledDone){
                   if (!reactList$userProgress[reactList$userProgress$type == "end", "done"]){
+                    #End type
                     reactList$userProgress[reactList$userProgress$type == "end", "disabled"] <- FALSE
                     enable("end")
                     addClass("end", "endEnabled")
                     reactList(renderType(input, output, "end", reactList, staticList))
                   } else {
-                    for (type in types){
-                      disable(type)
-                      reactList$userProgress[reactList$userProgress$type == type, "disabled"] <- TRUE
-                    }
+                    #Postend type
                     if (fromSW){
-                      score <- "false"
-                      norms <- readNorms(formPath, form)
-                      if (!is.null(norms)){
-                        demoAnswer <- reactList$answers[reactList$answers$answer_type == "demographic", "answer"]
-                        demoAnswer <- strsplit(demoAnswer, ",")[[1]]
-                        birthDate <- demoAnswer[1]
-                        age <- interval(birthDate, Sys.Date()) %/% months(1)
-                        if (countScore(reactList$answers, typeUniqueSettings) <= norms[paste0("m_", age), "p_0.1"]) score <- "true"
-                      }
-                      recurrentCallSW(idx, form, done = "true", score)
-                    }
-                    write.csv(reactList$answers, answersFile, row.names = F)
-                    send.mail(
-                      from = MAIL_USERNAME,
-                      to = EMAILS_RECIPIENTS,
-                      subject = paste0("[SHINYDATA] ", urlString),
-                      body = "Inventory completed.",
-                      smtp = list(host.name = "smtp.gmail.com", port = 465, user.name = MAIL_USERNAME, passwd = Sys.getenv("GMAIL_PASSWORD"), ssl = TRUE),
-                      authenticate = TRUE,
-                      send = TRUE,
-                      attach.files = c(answersFile)
-                    )
-                    if (fromSW){
-                      print("TAK")
-                      reactList(renderType(input, output, "postEndSW", reactList, staticList))
+                      type = "postEndSW"
                     } else {
-                      reactList(renderType(input, output, "postEnd", reactList, staticList))
+                      type = "postEnd"
                     }
+                    if (!reactList$userProgress[reactList$userProgress$type == type, "done"]){
+                      for (type in types){
+                        disable(type)
+                        reactList$userProgress[reactList$userProgress$type == type, "disabled"] <- TRUE
+                      }
+                      if (fromSW){
+                        score <- "false"
+                        norms <- readNorms(formPath, form)
+                        if (!is.null(norms)){
+                          demoAnswer <- reactList$answers[reactList$answers$answer_type == "demographic", "answer"]
+                          demoAnswer <- strsplit(demoAnswer, ",")[[1]]
+                          birthDate <- demoAnswer[1]
+                          age <- interval(birthDate, Sys.Date()) %/% months(1)
+                          if (countScore(reactList$answers, typeUniqueSettings) <= norms[paste0("m_", age), "p_0.1"]) score <- "true"
+                        }
+                        recurrentCallSW(idx, form, done = "true", score)
+                      }
+                      write.csv(reactList$answers, answersFile, row.names = F)
+                      send.mail(
+                        from = MAIL_USERNAME,
+                        to = EMAILS_RECIPIENTS,
+                        subject = paste0("[SHINYDATA] ", urlString),
+                        body = "Inventory completed.",
+                        smtp = list(host.name = "smtp.gmail.com", port = 465, user.name = MAIL_USERNAME, passwd = Sys.getenv("GMAIL_PASSWORD"), ssl = TRUE),
+                        authenticate = TRUE,
+                        send = TRUE,
+                        attach.files = c(answersFile)
+                      )
+                    }
+                    reactList(renderType(input, output, type, reactList, staticList))
                   }
                 }   
                 
-              }
+              }#end canConfirm
               
             })
             
