@@ -292,7 +292,7 @@ server <- function(input, output, session) {
               if (canConfirm){
                 
                 if (reactList$type == "start"){
-                  if (fromSW) recurrentCallSW(idx, form)
+                  if (fromSW) recurrentCallSW(idx, form, lang)
                   reactList$userProgress[reactList$userProgress$type == 'start', "disabled"] <- TRUE
                   disable('start')
                 }
@@ -368,7 +368,7 @@ server <- function(input, output, session) {
                           age <- interval(birthDate, Sys.Date()) %/% months(1)
                           if (countScore(reactList$answers, typeUniqueSettings) <= norms[paste0("m_", age), "p_0.1"]) score <- "true"
                         }
-                        recurrentCallSW(idx, form, done = "true", score)
+                        recurrentCallSW(idx, form, lang, done = "true", score)
                       }
                       write.csv(reactList$answers, answersFile, row.names = F)
                       send.mail(
@@ -412,7 +412,7 @@ server <- function(input, output, session) {
       }
       
     } else {
-      # updateQueryString(paste0("?id=", "IlYaL6gzKieyRx92YUl1a", "&form=", "wg", "&lang=", "pl")) #IlYaL6gzKieyRx92YUl1q #id=test&form=wg&lang=pl
+      # updateQueryString(paste0("?id=", "IlYaL6gzKieyRx92YUl1a", "&form=", "wg", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
       # session$reload()
       output$sidebar <- renderText({"No needed params in URL (lang, form and id)"})
     }  
