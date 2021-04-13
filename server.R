@@ -349,9 +349,9 @@ server <- function(input, output, session) {
                   } else {
                     #Postend type
                     if (fromSW){
-                      type = "postEndSW"
+                      postEnd <- "postEndSW"
                     } else {
-                      type = "postEnd"
+                      postEnd <- "postEnd"
                     }
                     if (!reactList$userProgress[reactList$userProgress$type == type, "done"]){
                       for (type in types){
@@ -382,7 +382,7 @@ server <- function(input, output, session) {
                         attach.files = c(answersFile)
                       )
                     }
-                    reactList(renderType(input, output, type, reactList, staticList))
+                    reactList(renderType(input, output, postEnd, reactList, staticList))
                   }
                 }   
                 
