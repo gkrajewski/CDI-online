@@ -1,9 +1,9 @@
 type,category,input_type,comment,css_class,binded_types,initially_disabled,conditions,answers_to_enable
-start,,demographic,FALSE,,,FALSE,understanding,all
+start,,demographic,FALSE,,,FALSE,"understanding,word,starting_to_talk,combine,gestures",all
 understanding,first_signs,radio,FALSE,,,,,
-understanding,,oneCheckboxGroup,TRUE,threeColumns,"first_signs,phrases",TRUE,word,all
-word,,manyCheckboxGroups,TRUE,threeColumns,,TRUE,starting_to_talk,all
-starting_to_talk,,radio,FALSE,,,TRUE,"combine,gestures",all
+understanding,,oneCheckboxGroup,TRUE,threeColumns,"first_signs,phrases",TRUE,,
+word,,manyCheckboxGroups,TRUE,threeColumns,,TRUE,,
+starting_to_talk,,radio,FALSE,,,TRUE,,
 combine,,radio,FALSE,,,TRUE,sentences10,"2,3"
 sentences10,,sentences,FALSE,twoColumns,,TRUE,,
 gestures,,oneCheckboxGroup,TRUE,,startWith,TRUE,,

@@ -1,4 +1,4 @@
-countScore <- function(type = "word", answersCounted = 1){
+countScore <- function(answers, typeUniqueSettings, type = "word", answersCounted = 1){
   
   typeAnswers <- answers[answers$type == type,]
   typeInputType <- typeUniqueSettings[typeUniqueSettings$type == type, "input_type"]

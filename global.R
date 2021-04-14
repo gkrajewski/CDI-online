@@ -1,39 +1,39 @@
+#Load libraries
 library(shinythemes)
 library(shinyjs)
-library(httr)
-library(lubridate)
+library(httr) #http requests
+library(lubridate) #dates
 library(fresh)
 library(mailR) #sending mails
 library(shinydisconnect) #handling disconnects in a nice visual way
 library(RMariaDB) #connecting with MySQL database
-
 options(stringsAsFactors = FALSE)
 
-dataPath <- paste0(getwd(),"/www")
-functionsPath <- paste0(dataPath,"/functions")
-initPath <- getwd()
+#Specify paths
+WWW_PATH <- paste0(getwd(),"/www")
+FUNCTIONS_PATH <- paste0(WWW_PATH,"/functions")
+LANGUAGES_PATH <- paste0(WWW_PATH,"/languages")
+INIT_PATH <- getwd()
 
-if(!dir.exists(file.path(initPath, "answers"))) dir.create(file.path(initPath, "answers"))
-if(!dir.exists(file.path(initPath, "usersProgress"))) dir.create(file.path(initPath, "usersProgress"))
+#Create dirs to saving answers and users' progress
+if(!dir.exists(file.path(INIT_PATH, "answers"))) dir.create(file.path(INIT_PATH, "answers"))
+if(!dir.exists(file.path(INIT_PATH, "usersProgress"))) dir.create(file.path(INIT_PATH, "usersProgress"))
 
-setwd(dataPath)
-endSettings <<- read.csv("endSettings.csv", encoding = "UTF-8", strip.white = T)
-setwd(initPath)
+#Load form-universal end settings
+setwd(WWW_PATH)
+END_SETTINGS <- read.csv("endSettings.csv", encoding = "UTF-8", strip.white = T)
+setwd(INIT_PATH)
 
-source(paste0(functionsPath,"/readFromURL.R"))
-source(paste0(functionsPath,"/startApp.R"))
-source(paste0(functionsPath,"/readNormsFile.R"))
-source(paste0(functionsPath,"/readValueFromNorms.R"))
-source(paste0(functionsPath,"/recurrentCallSW.R"))
-source(paste0(functionsPath,"/callSW.R"))
-source(paste0(functionsPath,"/addSidebarObservers.R"))
-source(paste0(functionsPath,"/addDataSaving.R"))
-source(paste0(functionsPath,"/renderType.R"))
-source(paste0(functionsPath,"/renderCategory.R"))
-source(paste0(functionsPath,"/renderInput.R"))
-source(paste0(functionsPath,"/badDate.R"))
-source(paste0(functionsPath,"/countScore.R"))
-
+#Load functions
+source(paste0(FUNCTIONS_PATH,"/readFromURL.R"))
+source(paste0(FUNCTIONS_PATH,"/renderType.R"))
+source(paste0(FUNCTIONS_PATH,"/renderCategory.R"))
+source(paste0(FUNCTIONS_PATH,"/createRadioQuestion.R"))
+source(paste0(FUNCTIONS_PATH,"/createCheckboxQuestion.R"))
+source(paste0(FUNCTIONS_PATH,"/readNorms.R"))
+source(paste0(FUNCTIONS_PATH,"/recurrentCallSW.R"))
+source(paste0(FUNCTIONS_PATH,"/callSW.R"))
+source(paste0(FUNCTIONS_PATH,"/countScore.R"))
 
 #Load file with secret variables
 readRenviron("Renviron")
@@ -50,3 +50,4 @@ DB_NAME = "shinyapp"
 #Prepare vector of busy urls and urls to close (to not allow few opens of the same inventory)
 BUSY_URLS <- reactiveVal(list())
 URLS_TO_CLOSE <- reactiveVal(list())
+

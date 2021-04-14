@@ -1,11 +1,11 @@
 text_type;text;item_type;category
 cdiNameSufix;Słowa i Gesty;;
 sentences10Tooltip;Część „Wypowiedzi” uaktywnia się w zależności od odpowiedzi w części „Łączenie wyrazów”.;;
-longText;Kwestionariusz ten jest polską adaptacją amerykańskiego inwentarza do badania rozwoju mowy najmłodszych dzieci („MacArthur-Bates Communicative Development Inventory”). Metoda ta opiera się na wiedzy rodziców na temat rozwoju językowego własnych dzieci i dotyczy rozumienia mowy, mówienia oraz porozumiewania się przy pomocy gestów. Znaczną część inwentarza stanowią pytania o najwcześniejsze słownictwo dzieci. Rodzice mają zaznaczyć słowa, które dziecko rozumie, a także te z nich, których używa ono w mowie. Nie należy dziecka przepytywać ani prosić o powtarzanie poszczególnych wyrazów, ani też „uczyć słówek”. Wystarczy, gdy rodzice odpowiedzą na pytania według własnej wiedzy o dziecku.;start;
+longText;Kwestionariusz ten jest polską adaptacją amerykańskiego inwentarza do badania rozwoju mowy najmłodszych dzieci („MacArthur-Bates Communicative Development Inventory”). Metoda ta opiera się na wiedzy rodziców (lub innych opiekunów) na temat rozwoju językowego dzieci i dotyczy rozumienia mowy, mówienia oraz porozumiewania się przy pomocy gestów. Znaczną część inwentarza stanowią pytania o najwcześniejsze słownictwo dzieci. Rodzice (lub inni opiekunowie) mają zaznaczyć słowa, które dziecko rozumie, a także te z nich, których używa ono w mowie. Nie należy dziecka przepytywać ani prosić o powtarzanie poszczególnych wyrazów, ani też „uczyć słówek”. Wystarczy, gdy rodzice (lub inni opiekunowie) odpowiedzą na pytania według własnej wiedzy o dziecku.;start;
 understandingBtn;Rozumienie;understanding;
 header;Rozumienie;understanding;
 catHeader;Pierwsze przejawy rozumienia;understanding;first_signs
-longText;Dzieci, zanim zaczną mówić, rozumieją wiele słów i wyrażeń. Można to stwierdzić obserwując ich reakcje na znane słowa lub zwroty. Czy Państwa dziecko wykazuje poniższe reakcje? (Proszę wybrać);understanding;first_signs
+longText;Dzieci, zanim zaczną mówić, rozumieją wiele słów i wyrażeń. Można to stwierdzić obserwując ich reakcje na znane słowa lub zwroty. Czy Państwa dziecko wykazuje poniższe reakcje?;understanding;first_signs
 choiceNames;Tak, Nie;understanding;first_signs
 catHeader;Rozumienie wypowiedzi dorosłych;understanding;phrases
 instr;Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać w polu na uwagi.;understanding;phrases
@@ -44,7 +44,7 @@ help;Przed zatwierdzeniem proszę sprawdzić, czy nie pominęli Państwo jakiej�
 starting_to_talkBtn;Naśladownictwo;starting_to_talk;
 header;Naśladownictwo;starting_to_talk;
 choiceNames;Tak, Nie;starting_to_talk;
-warning;UWAGA: To pytanie odnosi się do dzieci, które już znają dość dużo wyrazów. Jeśli Państwa dziecko jeszcze nie łączy wyrazów, proszę zaznaczyć „Jeszcze nie”.;combine;
+longText;To pytanie odnosi się do dzieci, które już znają dość dużo wyrazów. Jeśli Państwa dziecko jeszcze nie łączy wyrazów, proszę zaznaczyć „Jeszcze nie”.;combine;
 help; Po wybraniu odpowiedzi „Czasem” lub „Często” dostępna stanie się zakładka „Wypowiedzi”.;combine;
 sentences10Btn;Wypowiedzi;sentences10;
 header;Przykłady wypowiedzi;sentences10;

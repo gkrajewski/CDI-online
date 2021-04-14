@@ -3,7 +3,9 @@ server <- function(input, output, session) {
   #Get available languages
   availableLangs <- list.files(path = LANGUAGES_PATH, recursive = FALSE)
   
+  waitingForClose <- reactiveVal(FALSE)
   inventoryStarted <- reactiveVal(FALSE)
+  
   observe({
       
     #Read parameters values from URL
@@ -30,16 +32,31 @@ server <- function(input, output, session) {
           formPath <- paste0(langPath, "/forms/", form)
           urlString <- paste(lang, form, idx, sep = "-")
           
-          if (!is.element(urlString, BUSY_URLS)){
-            
-            #Prevent from opening same url params more than once in the same moment
-            BUSY_URLS <<- append(BUSY_URLS, urlString)
-            session$onSessionEnded(function() {
-              BUSY_URLS <<- BUSY_URLS[BUSY_URLS != urlString]
-            })
+          if (!is.element(urlString, BUSY_URLS())){
             
             ### START INVENTORY ###
             inventoryStarted(TRUE)
+            
+            #Prevent from opening same url params more than once in the same moment
+            busyURLs <- BUSY_URLS()
+            busyURLs <- c(busyURLs, urlString)
+            BUSY_URLS(busyURLs)
+            
+            session$onSessionEnded(function() {
+              busyURLs <- isolate(BUSY_URLS())
+              busyURLs <- busyURLs[busyURLs != urlString]
+              BUSY_URLS(busyURLs)
+            })
+            
+            closeSession <- reactive({paste0(is.element(urlString, URLS_TO_CLOSE()))})
+            observeEvent(closeSession(), {
+              if (closeSession()){
+                urlsToClose <- URLS_TO_CLOSE()
+                urlsToClose <- urlsToClose[urlsToClose != urlString]
+                URLS_TO_CLOSE(urlsToClose)
+                session$close()
+              }
+            }, ignoreInit = TRUE)
             
             #Check if user is connected with StarWords app
             if (nchar(idx) == 21){
@@ -91,7 +108,7 @@ server <- function(input, output, session) {
                 categoriesNum <- length(uniqueCategories)
                 firstCat <- uniqueCategories[1]
                 if (categoriesNum > 1 & uniqueCategories[1] == "") firstCat <- uniqueCategories[2]
-                if (firstCat == "allButFirst") firstCat <- uniqueCategories[3]
+                if (firstCat == "allInput") firstCat <- uniqueCategories[3]
                 firstCats[i] <- firstCat
                 i <- i + 1
               }
@@ -275,7 +292,7 @@ server <- function(input, output, session) {
               if (canConfirm){
                 
                 if (reactList$type == "start"){
-                  if (fromSW) recurrentCallSW(idx, form)
+                  if (fromSW) recurrentCallSW(idx, form, lang)
                   reactList$userProgress[reactList$userProgress$type == 'start', "disabled"] <- TRUE
                   disable('start')
                 }
@@ -324,73 +341,78 @@ server <- function(input, output, session) {
                 #Render end or postend type
                 if(allEnabledDone){
                   if (!reactList$userProgress[reactList$userProgress$type == "end", "done"]){
+                    #End type
                     reactList$userProgress[reactList$userProgress$type == "end", "disabled"] <- FALSE
                     enable("end")
                     addClass("end", "endEnabled")
                     reactList(renderType(input, output, "end", reactList, staticList))
                   } else {
-                    for (type in types){
-                      disable(type)
-                      reactList$userProgress[reactList$userProgress$type == type, "disabled"] <- TRUE
-                    }
+                    #Postend type
                     if (fromSW){
-                      score <- "false"
-                      norms <- readNorms(formPath, form)
-                      if (!is.null(norms)){
-                        demoAnswer <- reactList$answers[reactList$answers$answer_type == "demographic", "answer"]
-                        demoAnswer <- strsplit(demoAnswer, ",")[[1]]
-                        birthDate <- demoAnswer[1]
-                        age <- interval(birthDate, Sys.Date()) %/% months(1)
-                        if (countScore(reactList$answers, typeUniqueSettings) <= norms[paste0("m_", age), "p_0.1"]) score <- "true"
-                      }
-                      recurrentCallSW(idx, form, done = "true", score)
-                    }
-                    write.csv(reactList$answers, answersFile, row.names = F)
-                    print(answersFile)
-                    print(DB_USERNAME)
-                    print(DB_NAME)
-                    print(DB_HOST)
-                    print(DB_PORT)
-                    print(Sys.getenv("DB_PASSWORD"))
-                    #DB_NAME=paset0(DB_NAME, "_", lang, "_", form)
-                    storiesDb <- dbConnect(RMariaDB::MariaDB(), user=DB_USERNAME, password=Sys.getenv("DB_PASSWORD"), dbname=DB_NAME, 
-                                           host=DB_HOST, port=DB_PORT)
-                    print(dbListTables(storiesDb))
-                    dbWriteTable(storiesDb, value = reactList$answers, row.names = FALSE, name = "form2", append = TRUE )
-                    dbDisconnect(storiesDb)
-                    send.mail(
-                      from = MAIL_USERNAME,
-                      to = EMAILS_RECIPIENTS,
-                      subject = paste0("[SHINYDATA] ", urlString),
-                      body = "Inventory completed.",
-                      smtp = list(host.name = "smtp.gmail.com", port = 465, user.name = MAIL_USERNAME, passwd = Sys.getenv("GMAIL_PASSWORD"), ssl = TRUE),
-                      authenticate = TRUE,
-                      send = TRUE,
-                      attach.files = c(answersFile)
-                    )
-                    if (fromSW){
-                      print("TAK")
-                      reactList(renderType(input, output, "postEndSW", reactList, staticList))
+                      postEnd <- "postEndSW"
                     } else {
-                      reactList(renderType(input, output, "postEnd", reactList, staticList))
+                      postEnd <- "postEnd"
                     }
+                    if (!reactList$userProgress[reactList$userProgress$type == type, "done"]){
+                      for (type in types){
+                        disable(type)
+                        reactList$userProgress[reactList$userProgress$type == type, "disabled"] <- TRUE
+                      }
+                      if (fromSW){
+                        score <- "false"
+                        norms <- readNorms(formPath, form)
+                        if (!is.null(norms)){
+                          demoAnswer <- reactList$answers[reactList$answers$answer_type == "demographic", "answer"]
+                          demoAnswer <- strsplit(demoAnswer, ",")[[1]]
+                          birthDate <- demoAnswer[1]
+                          age <- interval(birthDate, Sys.Date()) %/% months(1)
+                          if (countScore(reactList$answers, typeUniqueSettings) <= norms[paste0("m_", age), "p_0.1"]) score <- "true"
+                        }
+                        recurrentCallSW(idx, form, lang, done = "true", score)
+                      }
+                      write.csv(reactList$answers, answersFile, row.names = F)
+                      print(answersFile)
+                      print(DB_USERNAME)
+                      print(DB_NAME)
+                      print(DB_HOST)
+                      print(DB_PORT)
+                      print(Sys.getenv("DB_PASSWORD"))
+                      #DB_NAME=paset0(DB_NAME, "_", lang, "_", form)
+                      storiesDb <- dbConnect(RMariaDB::MariaDB(), user=DB_USERNAME, password=Sys.getenv("DB_PASSWORD"), dbname=DB_NAME, 
+                                             host=DB_HOST, port=DB_PORT)
+                      print(dbListTables(storiesDb))
+                      dbWriteTable(storiesDb, value = reactList$answers, row.names = FALSE, name = "form2", append = TRUE )
+                      dbDisconnect(storiesDb)
+                      send.mail(
+                        from = MAIL_USERNAME,
+                        to = EMAILS_RECIPIENTS,
+                        subject = paste0("[SHINYDATA] ", urlString),
+                        body = "Inventory completed.",
+                        smtp = list(host.name = "smtp.gmail.com", port = 465, user.name = MAIL_USERNAME, passwd = Sys.getenv("GMAIL_PASSWORD"), ssl = TRUE),
+                        authenticate = TRUE,
+                        send = TRUE,
+                        attach.files = c(answersFile)
+                      )
+                    }
+                    reactList(renderType(input, output, postEnd, reactList, staticList))
                   }
                 }   
                 
-              }
+              }#end canConfirm
               
             })
             
             #Save data to file when session ends
             session$onSessionEnded(function() {
-              write.csv(isolate(reactList()$answers), answersFile, row.names = F)
-              write.csv(isolate(reactList()$userProgress), progressFile, row.names = F)
+              write.csv(isolate(reactList()$answers), answersFile, row.names = F, fileEncoding = "UTF-8")
+              write.csv(isolate(reactList()$userProgress), progressFile, row.names = F, fileEncoding = "UTF-8")
             })
             
-          } else {
-            if (!inventoryStarted()){
-              output$sidebar <- renderText({uniTransl[uniTransl$text_type == "inventoryOpened", "text"]})
-            } 
+          } else if (!waitingForClose() & !inventoryStarted()){
+            urlsToClose <- URLS_TO_CLOSE()
+            urlsToClose <- c(urlsToClose, urlString)
+            URLS_TO_CLOSE(urlsToClose)
+            waitingForClose(TRUE)
           }
           
         } else {
@@ -402,7 +424,7 @@ server <- function(input, output, session) {
       }
       
     } else {
-      # updateQueryString(paste0("?id=", "IlYaL6gzKieyRx92YUl1a", "&form=", "wg", "&lang=", "pl")) #IlYaL6gzKieyRx92YUl1q #id=test&form=wg&lang=pl
+      # updateQueryString(paste0("?id=", "IlYaL6gzKieyRx92YUl1a", "&form=", "wg", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
       # session$reload()
       output$sidebar <- renderText({"No needed params in URL (lang, form and id)"})
     }  

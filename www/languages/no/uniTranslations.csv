@@ -3,10 +3,12 @@ longText;FORELDRERAPPORT FOR KOMMUNIKATIV UTVIKLING: ORD OG GESTER. Her følger 
 help;MERK: Etter å ha bekreftet startdelen, vil det ikke være mulig å besøke den igjen.;start;
 backBtn;Gå tilbake;;
 nextBtn;Fortsett;;
-saveBtn;Bekreft;;
+confBtn;Bekreft;;
 startBtn;Start;;
 dateLabel;Barnets fødselsdato;;
 genderLabel;Barnets kjønn;;
+fillerLabel;TODO: Kto wypełnia…;;
+fillers;TODO: p1, p2, p3, p4, p5, p6, p7;;
 noGender;Velg kjønn for å bekrefte.;;
 badDate;Feil fødselsdato;;
 genders;Jente, Gutt, Annen;;
@@ -20,4 +22,6 @@ instr;"På dette punktet kan du fremdeles redigere svarene dine, til tross for a
 help;MERKNAD: Etter validering av beholdningen vil du ikke kunne redigere svaret lenger!;end;
 help;Takk for at du fylte ut!;postEnd;
 instr;"Tusen takk for tid og krefter for å fylle ut dette spørreskjemaet! Følg varslinger i appen / ny informasjon i ""Kunnskap"" -fanen";postEnd;
+instr;"TODO: Tusen takk for tid og krefter for å fylle ut dette spørreskjemaet! Følg varslinger i appen / ny informasjon i ""Kunnskap"" -fanen";postEndSW;
+help;Takk for at du fylte ut!;postEndSW;
 ;;;none

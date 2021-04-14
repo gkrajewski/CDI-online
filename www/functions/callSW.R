@@ -1,4 +1,4 @@
-callSW <- function(done, score){
+callSW <- function(idx, form, lang, done, score){
   
   ### LOGIN TO FIREBASE ###
   
@@ -36,6 +36,7 @@ callSW <- function(done, score){
                 done:", done, ",
                 cdiTypeId:\"", form, "\",
                 childHash:\"", idx, "\",
+                language:\"", lang, "\",
                 score: ", score, "}}
                 ){
                 cdi{
@@ -52,13 +53,12 @@ callSW <- function(done, score){
     parsedResp <- content(response, "parsed")
     print(parsedResp)
     
-    if(length(parsedResp$errors) > 0) return(FALSE)
-    return(TRUE)
+    if(length(parsedResp$errors) > 0) return(list(FALSE, parsedResp$errors[[1]]$message))
+    return(list(TRUE, ""))
     
   } else {
     
-    print("ERROR: Cannot connect to Firebase")
-    return(FALSE)
+    return(list(FALSE, "ERROR: Cannot connect to Firebase"))
     
   }
   
