@@ -126,7 +126,8 @@ server <- function(input, output, session) {
             if (file.exists(answersFile)){
               answers <- read.csv(answersFile, encoding = "UTF-8")
             } else {
-              answers <- data.frame(type = "none", category = "none", answer_type = "none", answer = "none")
+              startDate <- Sys.time()
+              answers <- data.frame(type = "none", category = "none", answer_type = "none", answer = "none", start_date = as.character(startDate))
             }
             
             #Prepare menu buttons (as many as types, except postEnd and postEndSW type)
@@ -371,18 +372,15 @@ server <- function(input, output, session) {
                         recurrentCallSW(idx, form, lang, done = "true", score)
                       }
                       write.csv(reactList$answers, answersFile, row.names = F)
-                      print(answersFile)
-                      print(DB_USERNAME)
-                      print(DB_NAME)
-                      print(DB_HOST)
-                      print(DB_PORT)
-                      print(Sys.getenv("DB_PASSWORD"))
-                      #DB_NAME=paset0(DB_NAME, "_", lang, "_", form)
+                      
+                      endDate = Sys.time()
+                      tableName=paste0("form_", form, "_", lang)
+                      answers = prepareOutput(reactList$answers, id, lang, form, endDate)
                       storiesDb <- dbConnect(RMariaDB::MariaDB(), user=DB_USERNAME, password=Sys.getenv("DB_PASSWORD"), dbname=DB_NAME, 
                                              host=DB_HOST, port=DB_PORT)
-                      print(dbListTables(storiesDb))
-                      dbWriteTable(storiesDb, value = reactList$answers, row.names = FALSE, name = "form2", append = TRUE )
+                      dbWriteTable(storiesDb, value = answers, row.names = FALSE, name = tableName, append = TRUE )
                       dbDisconnect(storiesDb)
+                      
                       send.mail(
                         from = MAIL_USERNAME,
                         to = EMAILS_RECIPIENTS,
