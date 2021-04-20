@@ -12,6 +12,8 @@ server <- function(input, output, session) {
     idx <- readFromURL("id", session, caseInvariance = FALSE)
     form <- readFromURL("form", session)
     lang <- readFromURL("lang", session)
+    
+    print(paste0(idx, form, lang))
       
     if (!is.null(lang) & !is.null(form) & !is.null(idx)){
       
@@ -127,7 +129,7 @@ server <- function(input, output, session) {
               answers <- read.csv(answersFile, encoding = "UTF-8")
             } else {
               startDate <- Sys.time()
-              answers <- data.frame(type = "none", category = "none", answer_type = "none", answer = "none", start_date = as.character(startDate))
+              answers <- data.frame(type = "none", category = "none", answer_type = "none", answer = as.character(startDate))
             }
             
             #Prepare menu buttons (as many as types, except postEnd and postEndSW type)
@@ -217,7 +219,7 @@ server <- function(input, output, session) {
                   }
                   catAnswer <- paste(answersPattern, collapse = ",")
                 } else if (inputType() == "demographic"){
-                  catAnswer <- paste(input$birthDate, input$gender, input$filler, input$fillerTxt, sep = ",")
+                  catAnswer <- paste(input$birthDate, input$gender, input$filler, input$fillerTxt, sep = "#")
                 }
                 catAnswer
               } else {
@@ -364,7 +366,7 @@ server <- function(input, output, session) {
                         norms <- readNorms(formPath, form)
                         if (!is.null(norms)){
                           demoAnswer <- reactList$answers[reactList$answers$answer_type == "demographic", "answer"]
-                          demoAnswer <- strsplit(demoAnswer, ",")[[1]]
+                          demoAnswer <- strsplit(demoAnswer, "#")[[1]]
                           birthDate <- demoAnswer[1]
                           age <- interval(birthDate, Sys.Date()) %/% months(1)
                           if (countScore(reactList$answers, typeUniqueSettings) <= norms[paste0("m_", age), "p_0.1"]) score <- "true"
@@ -373,11 +375,33 @@ server <- function(input, output, session) {
                       }
                       write.csv(reactList$answers, answersFile, row.names = F)
                       
-                      endDate = Sys.time()
-                      tableName=paste0("form_", form, "_", lang)
-                      answers = prepareOutput(reactList$answers, id, lang, form, endDate)
+                      endDate <- Sys.time()
+                      tableName <- paste0("form_", form, "_", lang)
+                      answers <- prepareOutput(reactList$answers, idx, lang, form, endDate, STRING_LIMIT)
                       storiesDb <- dbConnect(RMariaDB::MariaDB(), user=DB_USERNAME, password=Sys.getenv("DB_PASSWORD"), dbname=DB_NAME, 
                                              host=DB_HOST, port=DB_PORT)
+                      print(DB_NAME)
+                      print(tableName)
+                      print(dbListTables(storiesDb))
+                      print(tableName %in% dbListTables(storiesDb))
+                      if (!(tableName %in% dbListTables(storiesDb))) {
+                        query = paste0("CREATE TABLE `", DB_NAME, "`.`",tableName,"` (
+                            `id` VARCHAR(99) NOT NULL,
+                            `lang` VARCHAR(45) NULL,
+                            `form` VARCHAR(45) NULL,
+                            `start_date` DATETIME NULL,
+                            `end_date` DATETIME NULL,
+                            `type` VARCHAR(45) NULL,
+                            `category` VARCHAR(45) NULL,
+                            `answer_type` VARCHAR(45) NULL,
+                            `question_id` INT NULL,
+                            `answer_id` VARCHAR(45) NULL,
+                            `answer1` VARCHAR(", toString(STRING_LIMIT), ") CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+                            `answer2` VARCHAR(100) NULL);")
+                        rsInsert <- dbSendQuery(storiesDb, query)
+                        dbClearResult(rsInsert)
+                      }
+                        
                       dbWriteTable(storiesDb, value = answers, row.names = FALSE, name = tableName, append = TRUE )
                       dbDisconnect(storiesDb)
                       
