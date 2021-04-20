@@ -56,4 +56,3 @@ STRING_LIMIT <- 2000
 #Prepare vector of busy urls and urls to close (to not allow few opens of the same inventory)
 BUSY_URLS <- reactiveVal(list())
 URLS_TO_CLOSE <- reactiveVal(list())
-

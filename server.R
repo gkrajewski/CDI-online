@@ -12,8 +12,6 @@ server <- function(input, output, session) {
     idx <- readFromURL("id", session, caseInvariance = FALSE)
     form <- readFromURL("form", session)
     lang <- readFromURL("lang", session)
-    
-    print(paste0(idx, form, lang))
       
     if (!is.null(lang) & !is.null(form) & !is.null(idx)){
       
@@ -381,10 +379,6 @@ server <- function(input, output, session) {
                       answers <- prepareOutput(reactList$answers, idx, lang, form, endDate, STRING_LIMIT)
                       storiesDb <- dbConnect(RMariaDB::MariaDB(), user=DB_USERNAME, password=Sys.getenv("DB_PASSWORD"), dbname=DB_NAME, 
                                              host=DB_HOST, port=DB_PORT)
-                      print(DB_NAME)
-                      print(tableName)
-                      print(dbListTables(storiesDb))
-                      print(tableName %in% dbListTables(storiesDb))
                       if (!(tableName %in% dbListTables(storiesDb))) {
                         query = paste0("CREATE TABLE `", DB_NAME, "`.`",tableName,"` (
                             `id` VARCHAR(99) NOT NULL,
