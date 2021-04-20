@@ -6,6 +6,9 @@ library(lubridate) #dates
 library(fresh)
 library(mailR) #sending mails
 library(shinydisconnect) #handling disconnects in a nice visual way
+library(RMariaDB) #connecting with MySQL database
+library(dplyr) #preparing output file
+library(tidyr) #preparing output file
 options(stringsAsFactors = FALSE)
 
 #Specify paths
@@ -33,6 +36,8 @@ source(paste0(FUNCTIONS_PATH,"/readNorms.R"))
 source(paste0(FUNCTIONS_PATH,"/recurrentCallSW.R"))
 source(paste0(FUNCTIONS_PATH,"/callSW.R"))
 source(paste0(FUNCTIONS_PATH,"/countScore.R"))
+source(paste0(FUNCTIONS_PATH,"/prepareOutput.R"))
+
 
 #Load file with secret variables
 readRenviron(".Renviron")
@@ -40,6 +45,13 @@ readRenviron(".Renviron")
 #Set mail things
 MAIL_USERNAME <- "cdishiny@gmail.com"
 EMAILS_RECIPIENTS <- c("cdishiny@gmail.com", "projekt.starwords@psych.uw.edu.pl")
+
+# credentials to connect with database
+DB_USERNAME <- "cdi_vtOgKdtu"
+DB_HOST <- 'sk201194-001.dbaas.ovh.net'
+DB_PORT <- "35324"
+DB_NAME <- "cdi"
+STRING_LIMIT <- 2000
 
 #Prepare vector of busy urls and urls to close (to not allow few opens of the same inventory)
 BUSY_URLS <- reactiveVal(list())
