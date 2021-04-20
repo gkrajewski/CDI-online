@@ -11,13 +11,12 @@ countScore <- function(answers, typeUniqueSettings, type = "word", answersCounte
     splittedAnswer <- strsplit(answerString[1], ",")[[1]]
     numericAnswer <- as.numeric(splittedAnswer)
     replaced <- replace(numericAnswer, is.na(numericAnswer), 2)
-    tbl <- table(replaced)
+    # tbl <- table(replaced)
+    # print(tbl)
     
-    if (is.element(answersCounted, unique(replaced))){
-      score <- sum(replaced == answersCounted)
-    } else {
-      score <- 0
-      print("WARNING: Invalid answersCounted value given to countScore function or score is zero.")
+    score <- sum(replaced == answersCounted)
+    if (type == "word" & answersCounted == 1){
+      score <- score + sum(replaced == 2)
     }
     
   } else if (typeInputType == "oneCheckboxGroup"){

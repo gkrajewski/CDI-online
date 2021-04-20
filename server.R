@@ -168,6 +168,7 @@ server <- function(input, output, session) {
             #Change category to next when nextBtn clicked
             observeEvent(input$nextBtn, {
               if (reactList()$categoryNr < reactList()$categoriesNr) reactList(renderCategory(input, output, reactList()$categories[reactList()$categoryNr + 1], reactList(), staticList))
+              if (reactList()$type == "word") print(countScore(reactList()$answers, typeUniqueSettings))
             })
             
             #Change category to previous when backBtn clicked
@@ -412,7 +413,7 @@ server <- function(input, output, session) {
       }
       
     } else {
-      # updateQueryString(paste0("?id=", "IlYaL6gzKieyRx92YUl1a", "&form=", "wg", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
+      # updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
       # session$reload()
       output$sidebar <- renderText({"No needed params in URL (lang, form and id)"})
     }  
