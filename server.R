@@ -377,10 +377,10 @@ server <- function(input, output, session) {
                       endDate <- Sys.time()
                       tableName <- paste0("form_", form, "_", lang)
                       answers <- prepareOutput(reactList$answers, idx, lang, form, endDate, STRING_LIMIT)
-                      storiesDb <- dbConnect(RMariaDB::MariaDB(), user=DB_USERNAME, password=Sys.getenv("DB_PASSWORD"), dbname=DB_NAME, 
-                                             host=DB_HOST, port=DB_PORT)
+                      storiesDb <- dbConnect(RMariaDB::MariaDB(), user=Sys.getenv("DB_USERNAME"), password=Sys.getenv("DB_PASSWORD"), dbname=Sys.getenv("DB_NAME"), 
+                                             host=Sys.getenv("DB_HOST"), port=Sys.getenv("DB_PORT"))
                       if (!(tableName %in% dbListTables(storiesDb))) {
-                        query = paste0("CREATE TABLE `", DB_NAME, "`.`",tableName,"` (
+                        query = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
                             `id` VARCHAR(99) NOT NULL,
                             `lang` VARCHAR(45) NULL,
                             `form` VARCHAR(45) NULL,
