@@ -169,7 +169,6 @@ server <- function(input, output, session) {
             #Change category to next when nextBtn clicked
             observeEvent(input$nextBtn, {
               if (reactList()$categoryNr < reactList()$categoriesNr) reactList(renderCategory(input, output, reactList()$categories[reactList()$categoryNr + 1], reactList(), staticList))
-              if (reactList()$type == "word") print(countScore(reactList()$answers, typeUniqueSettings))
             })
             
             #Change category to previous when backBtn clicked
