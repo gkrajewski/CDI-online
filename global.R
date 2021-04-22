@@ -47,10 +47,6 @@ MAIL_USERNAME <- "cdishiny@gmail.com"
 EMAILS_RECIPIENTS <- c("cdishiny@gmail.com", "projekt.starwords@psych.uw.edu.pl")
 
 # credentials to connect with database
-DB_USERNAME <- "cdi_vtOgKdtu"
-DB_HOST <- 'sk201194-001.dbaas.ovh.net'
-DB_PORT <- "35324"
-DB_NAME <- "cdi"
 STRING_LIMIT <- 2000
 
 #Prepare vector of busy urls and urls to close (to not allow few opens of the same inventory)
