@@ -9,6 +9,7 @@ library(shinydisconnect) #handling disconnects in a nice visual way
 library(RMariaDB) #connecting with MySQL database
 library(dplyr) #preparing output file
 library(tidyr) #preparing output file
+library(logging)
 options(stringsAsFactors = FALSE)
 
 #Specify paths
@@ -52,3 +53,6 @@ STRING_LIMIT <- 2000
 #Prepare vector of busy urls and urls to close (to not allow few opens of the same inventory)
 BUSY_URLS <- reactiveVal(list())
 URLS_TO_CLOSE <- reactiveVal(list())
+
+#prepare logger
+basicConfig()
