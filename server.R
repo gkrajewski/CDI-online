@@ -12,6 +12,10 @@ server <- function(input, output, session) {
     idx <- readFromURL("id", session, caseInvariance = FALSE)
     form <- readFromURL("form", session)
     lang <- readFromURL("lang", session)
+    run <- readFromURL("run", session)
+    if(is.null(run)){
+      run <- "0"
+    }
       
     if (!is.null(lang) & !is.null(form) & !is.null(idx)){
       
@@ -30,7 +34,7 @@ server <- function(input, output, session) {
           
           #Specify path to form and set inventory string
           formPath <- paste0(langPath, "/forms/", form)
-          urlString <- paste(lang, form, idx, sep = "-")
+          urlString <- paste(lang, form, idx, run, sep = "-")
           
           if (!is.element(urlString, BUSY_URLS())){
             
@@ -130,7 +134,7 @@ server <- function(input, output, session) {
               answers <- data.frame(type = "none", category = "none", answer_type = "none", answer = as.character(startDate))
             }
             
-            logerror(paste0("id=", idx, " form=", form, " lang=", lang, " fromSW=", fromSW))
+            logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " fromSW=", fromSW))
             
             #Prepare menu buttons (as many as types, except postEnd and postEndSW type)
             menuButtons <- c(1:(length(setdiff(unique(types), c("postEnd", "postEndSW")))))
@@ -344,7 +348,7 @@ server <- function(input, output, session) {
                 #Render end or postend type
                 if(allEnabledDone){
                   
-                  logerror(paste0("id=", idx, " form=", form, " lang=", lang, " form completed. Saving..."))
+                  logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " form completed. Saving..."))
                   if (!reactList$userProgress[reactList$userProgress$type == "end", "done"]){
                     #End type
                     reactList$userProgress[reactList$userProgress$type == "end", "disabled"] <- FALSE
@@ -376,17 +380,17 @@ server <- function(input, output, session) {
                         recurrentCallSW(idx, form, lang, done = "true", score)
                       }
                       write.csv(reactList$answers, answersFile, row.names = F)
-                      logerror(paste0("id=", idx, " form=", form, " lang=", lang, " csv file with asnwers saved"))
+                      logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " csv file with asnwers saved"))
                       
                       endDate <- Sys.time()
                       tableName <- paste0("form_", form, "_", lang)
-                      answers <- prepareOutput(reactList$answers, idx, lang, form, endDate, STRING_LIMIT)
+                      answers <- prepareOutput(reactList$answers, idx, lang, form, run, endDate, STRING_LIMIT)
                       
                       dbConnection <- tryCatch( 
                         expr = {
                           storiesDb <- dbConnect(RMariaDB::MariaDB(), user=Sys.getenv("DB_USERNAME"), password=Sys.getenv("DB_PASSWORD"), dbname=Sys.getenv("DB_NAME"), 
                                                  host=Sys.getenv("DB_HOST"), port=Sys.getenv("DB_PORT"))
-                          logerror(paste0("id=", idx, " form=", form, " lang=", lang, 
+                          logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, 
                                           " connected with database. Tables: ", paste(dbListTables(storiesDb), collapse=" "), " tableName=", tableName))
                         
                           if (!(tableName %in% dbListTables(storiesDb))) {
@@ -394,6 +398,7 @@ server <- function(input, output, session) {
                             `id` VARCHAR(99) NOT NULL,
                             `lang` VARCHAR(45) NULL,
                             `form` VARCHAR(45) NULL,
+                            `run` VARCHAR(45) NULL,
                             `start_date` DATETIME NULL,
                             `end_date` DATETIME NULL,
                             `type` VARCHAR(45) NULL,
@@ -409,11 +414,11 @@ server <- function(input, output, session) {
                           
                           dbWriteTable(storiesDb, value = answers, row.names = FALSE, name = tableName, append = TRUE )
                           dbDisconnect(storiesDb)
-                          logerror(paste0("id=", idx, " form=", form, " lang=", lang, " saved in database"))
+                          logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " saved in database"))
                           
                           },
                         error = function(e) {
-                          logerror(paste0("id=", idx, " form=", form, " lang=", lang, " ", e))
+                          logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " ", e))
                         }
                       )
                      
@@ -430,10 +435,10 @@ server <- function(input, output, session) {
                             attach.files = c(answersFile)
                           )
                           
-                          logerror(paste0("id=", idx, " form=", form, " lang=", lang, " email sent"))
+                          logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " email sent"))
                         },
                         error = function(e) {
-                          logerror(paste0("id=", idx, " form=", form, " lang=", lang))
+                          logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run))
                           logerror(e)
                         }
                       )
