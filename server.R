@@ -423,18 +423,23 @@ server <- function(input, output, session) {
                       )
                      
                       emailSender <- tryCatch( 
+ 
                         expr = {
-                          send.mail(
-                            from = MAIL_USERNAME,
-                            to = EMAILS_RECIPIENTS,
-                            subject = paste0("[SHINYDATA] ", urlString),
-                            body = "Inventory completed.",
-                            smtp = list(host.name = "smtp.gmail.com", port = 465, user.name = MAIL_USERNAME, passwd = Sys.getenv("GMAIL_PASSWORD"), ssl = TRUE),
-                            authenticate = TRUE,
-                            send = TRUE,
-                            attach.files = c(answersFile)
-                          )
                           
+                          email <- envelope() %>%
+                            from(MAIL_USERNAME) %>%
+                            to(EMAILS_RECIPIENTS) %>%
+                            subject(paste0("[SHINYDATA] ", urlString)) %>%
+                            text("Inventory completed.") %>%
+                            attachment(c(answersFile))
+                          
+                          smtp <- emayili::server(host = "smtp.gmail.com",
+                                         port = 465,
+                                         username = MAIL_USERNAME,
+                                         password = Sys.getenv("GMAIL_PASSWORD"))
+                          
+                          smtp(email, verbose = TRUE)
+
                           logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " email sent"))
                         },
                         error = function(e) {

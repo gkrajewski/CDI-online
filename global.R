@@ -4,8 +4,8 @@ library(shinyjs)
 library(httr) #http requests
 library(lubridate) #dates
 library(fresh)
-library(mailR) #sending mails
 library(shinydisconnect) #handling disconnects in a nice visual way
+library(emayili) #sending mails
 library(RMariaDB) #connecting with MySQL database
 library(dplyr) #preparing output file
 library(tidyr) #preparing output file
