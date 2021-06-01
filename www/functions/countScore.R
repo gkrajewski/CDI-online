@@ -22,6 +22,7 @@ countScore <- function(answers, typeUniqueSettings, type = "word", answersCounte
   } else if (typeInputType == "oneCheckboxGroup"){
     
     answersInt <- na.omit(rawAnswers)
+    answersInt <- answersInt[answersInt != ""]
     answersStrings <- as.character(answersInt)
     str <- paste0(answersStrings, collapse = " ")
     score <- length(strsplit(str, " ")[[1]])
