@@ -8,6 +8,7 @@ confBtn;Bekreft;;
 startBtn;Start;;
 dateLabel;Barnets fødselsdato;;
 genderLabel;Barnets kjønn;;
+modalTitle;Merk!;;
 fillerLabel;Hva er din relasjon til barnet?;;
 fillers;mor / forelder 1, far / forelder 2, bestemor, bestefar, barnepasser, lærer, annet;;
 noGender;Velg kjønn for å bekrefte.;;
@@ -22,7 +23,10 @@ endBtn;Bli ferdig;end;
 instr;"På dette punktet kan du fremdeles redigere svarene dine, til tross for at du godkjenner alle delene. For å endelig være ferdig med å fylle lageret, klikk nå ""Send"" -knappen.";end;
 help;MERKNAD: Etter validering av beholdningen vil du ikke kunne redigere svaret lenger!;end;
 help;Takk for at du fylte ut!;postEnd;
+help;Takk for at du fylte ut!;postEndSW;
 instr;"Tusen takk for tid og krefter for å fylle ut dette spørreskjemaet!";postEnd;
 instr;"Tusen takk for tid og krefter for å fylle ut dette spørreskjemaet! Følg varslinger i appen";postEndSW;
-help;Takk for at du fylte ut!;postEndSW;
-;;;none
+error;Feil oppstod. Oppdater og prøv igjen.;;
+refresh;Oppdater;;
+badForm;Feil skjemaparameterverdi i URL. De tilgjengelige verdiene er: ;;none
+inventoryOpened;Spørreskjemaet er nå åpen. Lukk spørreskjemaet hvis det er åpent et annet sted og / eller oppdater siden.;;
