@@ -21,7 +21,7 @@ endBtn;Bli ferdig;end;
 instr;"På dette punktet kan du fremdeles redigere svarene dine, til tross for at du godkjenner alle delene. For å endelig være ferdig med å fylle lageret, klikk nå ""Send"" -knappen.";end;
 help;MERKNAD: Etter validering av beholdningen vil du ikke kunne redigere svaret lenger!;end;
 help;Takk for at du fylte ut!;postEnd;
-instr;"Tusen takk for tid og krefter for å fylle ut dette spørreskjemaet! Følg varslinger i appen / ny informasjon i ""Kunnskap"" -fanen";postEnd;
-instr;"TODO: Tusen takk for tid og krefter for å fylle ut dette spørreskjemaet! Følg varslinger i appen / ny informasjon i ""Kunnskap"" -fanen";postEndSW;
+instr;"Tusen takk for tid og krefter for å fylle ut dette spørreskjemaet!";postEnd;
+instr;"Tusen takk for tid og krefter for å fylle ut dette spørreskjemaet! Følg varslinger i appen";postEndSW;
 help;Takk for at du fylte ut!;postEndSW;
 ;;;none
