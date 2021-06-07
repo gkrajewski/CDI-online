@@ -1,5 +1,6 @@
 text_type;text;item_type;category
 longText;FORELDRERAPPORT FOR KOMMUNIKATIV UTVIKLING: ORD OG GESTER. Her følger lister over typiske ord i et barns ordforråd. Kryss av i den første kolonnen (forstår) dersom barnet ditt forstår ordet, men ennå ikke sier det. Ord som barnet både forstår og bruker, krysser du av i den andre kolonnen (forstår og sier). Om barnet bruker en annen uttale av et ord (for eksempel at det sier ”epe” istedenfor ”eple”) krysser du av ordet likevel. Husk at dette er en ”katalog” over ord som blir brukt av mange forskjellige barn, så ikke bli bekymret dersom barnet ditt kun kan noen få av dem akkurat nå.;start;
+warning;VIKTIG: Fullføring av spørreskjemaet vil bare være mulig etter at alle delene er godkjent. Du kan når som helst slutte å fylle ut, noe som ikke vil føre til at du mister de forrige svarene. For å gå tilbake til fylling (f.eks. på en annen enhet, men beholdningen kan ikke åpnes på flere enheter samtidig), bruk nøyaktig samme lenke.;start;
 help;MERK: Etter å ha bekreftet startdelen, vil det ikke være mulig å besøke den igjen.;start;
 backBtn;Gå tilbake;;
 nextBtn;Fortsett;;
