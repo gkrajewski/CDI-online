@@ -27,7 +27,7 @@ instr;Jeśli wypełnili Państwo wszystkie części kwestionariusza, proszę kli
 help;Dziękujemy za wypełnienie!;postEnd;
 help;Dziękujemy za wypełnienie!;postEndSW;
 instr;Bardzo dziękujemy za wypełnienie kwestionariusza! Więcej informacji znajdą Państwo w zakładce „Wiedza”.;postEndSW;
-instr;Dziękujemy za wypełnienie kwestionariusza! Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Ciebie cenny! Twoje zaangażowanie w badanie jest bardzo ważne - pomoże nam szczegółowo opisać wczesny rozwój językowy dzieci jedno- i dwujęzycznych, przyswajających język polski, jako jeden ze swoich języków.;postEnd;
+instr;Dziękujemy za wypełnienie kwestionariusza! Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Państwa cenny! Państwa zaangażowanie w badanie jest bardzo ważne - pomoże nam szczegółowo opisać wczesny rozwój językowy dzieci jedno- i dwujęzycznych przyswajających język polski jako jeden ze swoich języków.;postEnd;
 error;Wystąpił błąd. Proszę odświeżyć i spróbować ponownie.;;
 refresh;Odśwież;;
 badForm;Zła wartość parametru form w adresie URL. Dostępne wartości to: ;;none
