@@ -12,6 +12,10 @@ server <- function(input, output, session) {
     idx <- readFromURL("id", session, caseInvariance = FALSE)
     form <- readFromURL("form", session)
     lang <- readFromURL("lang", session)
+    run <- readFromURL("run", session)
+    if(is.null(run)){
+      run <- "0"
+    }
       
     if (!is.null(lang) & !is.null(form) & !is.null(idx)){
       
@@ -30,7 +34,7 @@ server <- function(input, output, session) {
           
           #Specify path to form and set inventory string
           formPath <- paste0(langPath, "/forms/", form)
-          urlString <- paste(lang, form, idx, sep = "-")
+          urlString <- paste(lang, form, idx, run, sep = "-")
           
           if (!is.element(urlString, BUSY_URLS())){
             
@@ -129,6 +133,8 @@ server <- function(input, output, session) {
               startDate <- Sys.time()
               answers <- data.frame(type = "none", category = "none", answer_type = "none", answer = as.character(startDate))
             }
+            
+            logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " fromSW=", fromSW))
             
             #Prepare menu buttons (as many as types, except postEnd and postEndSW type)
             menuButtons <- c(1:(length(setdiff(unique(types), c("postEnd", "postEndSW")))))
@@ -341,6 +347,8 @@ server <- function(input, output, session) {
                 
                 #Render end or postend type
                 if(allEnabledDone){
+                  
+                  logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " form completed. Saving..."))
                   if (!reactList$userProgress[reactList$userProgress$type == "end", "done"]){
                     #End type
                     reactList$userProgress[reactList$userProgress$type == "end", "disabled"] <- FALSE
@@ -368,21 +376,32 @@ server <- function(input, output, session) {
                           birthDate <- demoAnswer[1]
                           age <- interval(birthDate, Sys.Date()) %/% months(1)
                           if (countScore(reactList$answers, typeUniqueSettings) <= norms[paste0("m_", age), "p_0.1"]) score <- "true"
+                          # print(paste0("Policzony wynik: ", countScore(reactList$answers, typeUniqueSettings)))
+                          # print(paste0("Wartość z norm: ", norms[paste0("m_", age), "p_0.1"]))
                         }
+                        # print(paste0("Po odczytaniu: ", score))
                         recurrentCallSW(idx, form, lang, done = "true", score)
                       }
                       write.csv(reactList$answers, answersFile, row.names = F)
+                      logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " csv file with asnwers saved"))
                       
                       endDate <- Sys.time()
                       tableName <- paste0("form_", form, "_", lang)
-                      answers <- prepareOutput(reactList$answers, idx, lang, form, endDate, STRING_LIMIT)
-                      storiesDb <- dbConnect(RMariaDB::MariaDB(), user=Sys.getenv("DB_USERNAME"), password=Sys.getenv("DB_PASSWORD"), dbname=Sys.getenv("DB_NAME"), 
-                                             host=Sys.getenv("DB_HOST"), port=Sys.getenv("DB_PORT"))
-                      if (!(tableName %in% dbListTables(storiesDb))) {
-                        query = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
+                      answers <- prepareOutput(reactList$answers, idx, lang, form, run, endDate, STRING_LIMIT)
+                      
+                      dbConnection <- tryCatch( 
+                        expr = {
+                          storiesDb <- dbConnect(RMariaDB::MariaDB(), user=Sys.getenv("DB_USERNAME"), password=Sys.getenv("DB_PASSWORD"), dbname=Sys.getenv("DB_NAME"), 
+                                                 host=Sys.getenv("DB_HOST"), port=Sys.getenv("DB_PORT"))
+                          logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, 
+                                          " connected with database. Tables: ", paste(dbListTables(storiesDb), collapse=" "), " tableName=", tableName))
+                        
+                          if (!(tableName %in% dbListTables(storiesDb))) {
+                            query = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
                             `id` VARCHAR(99) NOT NULL,
                             `lang` VARCHAR(45) NULL,
                             `form` VARCHAR(45) NULL,
+                            `run` VARCHAR(45) NULL,
                             `start_date` DATETIME NULL,
                             `end_date` DATETIME NULL,
                             `type` VARCHAR(45) NULL,
@@ -392,23 +411,46 @@ server <- function(input, output, session) {
                             `answer_id` VARCHAR(45) NULL,
                             `answer1` VARCHAR(", toString(STRING_LIMIT), ") CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
                             `answer2` VARCHAR(100) NULL);")
-                        rsInsert <- dbSendQuery(storiesDb, query)
-                        dbClearResult(rsInsert)
-                      }
-                        
-                      dbWriteTable(storiesDb, value = answers, row.names = FALSE, name = tableName, append = TRUE )
-                      dbDisconnect(storiesDb)
-                      
-                      send.mail(
-                        from = MAIL_USERNAME,
-                        to = EMAILS_RECIPIENTS,
-                        subject = paste0("[SHINYDATA] ", urlString),
-                        body = "Inventory completed.",
-                        smtp = list(host.name = "smtp.gmail.com", port = 465, user.name = MAIL_USERNAME, passwd = Sys.getenv("GMAIL_PASSWORD"), ssl = TRUE),
-                        authenticate = TRUE,
-                        send = TRUE,
-                        attach.files = c(answersFile)
+                            rsInsert <- dbSendQuery(storiesDb, query)
+                            dbClearResult(rsInsert)
+                          }
+                          
+                          dbWriteTable(storiesDb, value = answers, row.names = FALSE, name = tableName, append = TRUE )
+                          dbDisconnect(storiesDb)
+                          logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " saved in database"))
+                          
+                          },
+                        error = function(e) {
+                          logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " ", e))
+                        }
                       )
+                     
+                      emailSender <- tryCatch( 
+ 
+                        expr = {
+                          
+                          email <- envelope() %>%
+                            from(MAIL_USERNAME) %>%
+                            to(EMAILS_RECIPIENTS) %>%
+                            subject(paste0("[SHINYDATA] ", urlString)) %>%
+                            text("Inventory completed.") %>%
+                            attachment(c(answersFile))
+                          
+                          smtp <- emayili::server(host = "smtp.gmail.com",
+                                         port = 465,
+                                         username = MAIL_USERNAME,
+                                         password = Sys.getenv("GMAIL_PASSWORD"))
+                          
+                          smtp(email, verbose = TRUE)
+
+                          logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " email sent"))
+                        },
+                        error = function(e) {
+                          logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run))
+                          logerror(e)
+                        }
+                      )
+                      
                     }
                     reactList(renderType(input, output, postEnd, reactList, staticList))
                   }

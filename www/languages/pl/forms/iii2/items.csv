@@ -51,7 +51,7 @@ item_49;A. Tata rozmawia.%B. Tata rozmawia z panem.;Polish;CDI4;alternatives;gru
 item_50;A. Sam(-a) założę spodnie.%B. Sam(-a) założę spodnie, bo jestem duży(-a).;Polish;CDI4;alternatives;grupa3;;;;;
 item_51;A. Pani uśmiecha się.%B. Pani, która ma pieska, uśmiecha się.;Polish;CDI4;alternatives;grupa3;;;;;
 item_52;A. Jem kanapkę. Piję wodę.%B. Jem kanapkę i piję wodę.;Polish;CDI4;alternatives;grupa4;;;;;
-item_53;A. Wrócę do domu i zjem obiad.%B. Jak wrócę do domu, to zjem obiad.;Polish;CDI4;alternatives;grupa4;;;;;
+item_53;A. Wrócę do domu i zjem obiad.%B. Zjem obiad, jak wrócę do domu.;Polish;CDI4;alternatives;grupa4;;;;;
 item_54;A. Nie otworzę.%B. Nie mogę tego otworzyć.;Polish;CDI4;alternatives;grupa4;;;;;
 item_55;A. Chcę do sklepu.%B. Chcę iść do sklepu.;Polish;CDI4;alternatives;grupa4;;;;;
 item_56;A. Wracałem(-am) do domu i widziałem(-am) kolegę.%B. Wracając do domu, widziałem(-am) kolegę.;Polish;CDI4;alternatives;grupa4;;;;;

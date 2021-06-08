@@ -1,4 +1,4 @@
-prepareOutput <- function(answers, id, lang, form, endDate, stringLimit){
+prepareOutput <- function(answers, id, lang, form, run, endDate, stringLimit){
   
   startDate = answers[answers$type=="none", "answer"]
   startDate = as.POSIXct(startDate)
@@ -52,6 +52,7 @@ prepareOutput <- function(answers, id, lang, form, endDate, stringLimit){
   a["id"] = id
   a["lang"] = lang
   a["form"] = form
+  a["run"] = run
   a["start_date"] = startDate
   a["end_date"] = endDate
   
