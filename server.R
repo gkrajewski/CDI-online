@@ -388,7 +388,6 @@ server <- function(input, output, session) {
                       endDate <- Sys.time()
                       tableName <- paste0("form_", form, "_", lang)
                       answers <- prepareOutput(reactList$answers, idx, lang, form, run, endDate, STRING_LIMIT)
-                      
                       dbConnection <- tryCatch( 
                         expr = {
                           storiesDb <- dbConnect(RMariaDB::MariaDB(), user=Sys.getenv("DB_USERNAME"), password=Sys.getenv("DB_PASSWORD"), dbname=Sys.getenv("DB_NAME"), 
@@ -409,7 +408,7 @@ server <- function(input, output, session) {
                             `answer_type` VARCHAR(45) NULL,
                             `question_id` INT NULL,
                             `answer_id` VARCHAR(45) NULL,
-                            `answer1` VARCHAR(", toString(STRING_LIMIT), ") CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+                            `answer1` VARCHAR(", toString(STRING_LIMIT), ") CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
                             `answer2` VARCHAR(100) NULL);")
                             rsInsert <- dbSendQuery(storiesDb, query)
                             dbClearResult(rsInsert)
@@ -425,22 +424,22 @@ server <- function(input, output, session) {
                         }
                       )
                      
-                      emailSender <- tryCatch( 
- 
+                      emailSender <- tryCatch(
+
                         expr = {
-                          
+
                           email <- envelope() %>%
                             from(MAIL_USERNAME) %>%
                             to(EMAILS_RECIPIENTS) %>%
                             subject(paste0("[SHINYDATA] ", urlString)) %>%
                             text("Inventory completed.") %>%
                             attachment(c(answersFile))
-                          
+
                           smtp <- emayili::server(host = "smtp.gmail.com",
                                          port = 465,
                                          username = MAIL_USERNAME,
                                          password = Sys.getenv("GMAIL_PASSWORD"))
-                          
+
                           smtp(email, verbose = TRUE)
 
                           logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " email sent"))
@@ -474,17 +473,43 @@ server <- function(input, output, session) {
           }
           
         } else {
-          output$sidebar <- renderText({paste0(c(uniTransl[uniTransl$text_type == "badForm", "text"], availableForms), collapse = " ")})
+          url = paste0(session$clientData$url_protocol,"//", 
+                       session$clientData$url_hostname,":",
+                       session$clientData$url_port,
+                       session$clientData$url_pathname,
+                       session$clientData$url_search)
+          output$sidebar <- renderText({paste0(c(uniTransl[uniTransl$text_type == "badForm", "text"], 
+                                                 availableForms,
+                                                 "<br><br>", 
+                                                 uniTransl[uniTransl$text_type == "errorInfo", "text"],
+                                                 "<br><br>link:",
+                                                 url), collapse = " ")})
+
         }
         
       } else {
-        output$sidebar <- renderText({paste0(c("Bad value of lang parameter in URL. Accesible values are: ", availableLangs), collapse = " ")})
+        url = paste0(session$clientData$url_protocol,"//", 
+                     session$clientData$url_hostname,":",
+                     session$clientData$url_port,
+                     session$clientData$url_pathname,
+                     session$clientData$url_search)
+        output$sidebar <- renderText({paste0(c("Bad value of lang parameter in URL. Accesible values are: ", 
+                                               availableLangs,
+                                               "<br><br>link:",
+                                               url), collapse = " ")})
       }
       
     } else {
       # updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
       # session$reload()
-      output$sidebar <- renderText({"No needed params in URL (lang, form and id)"})
+      url = paste0(session$clientData$url_protocol,"//", 
+                   session$clientData$url_hostname,":",
+                   session$clientData$url_port,
+                   session$clientData$url_pathname,
+                   session$clientData$url_search)
+      output$sidebar <- renderText({paste0("No needed params in URL (lang, form and id) <br><br>link: ", 
+                                           url)})
+      
     }  
     
   })
