@@ -32,3 +32,4 @@ error;Wystąpił błąd. Proszę odświeżyć i spróbować ponownie.;;
 refresh;Odśwież;;
 badForm;Zła wartość parametru form w adresie URL. Dostępne wartości to: ;;none
 inventoryOpened;Inwentarz jest już otwarty. Proszę zamknąć inwentarz jeśli jest otwarty gdzie indziej i/lub odświeżyć stronę.;;
+errorInfo;Jeżeli wyskakuje błąd, prosimy przekleić link poniżej i wysłać na maila projekt.starwords@psych.uw.edu.pl. Pozwoli nam to na szybszą diagnozę i naprawę błędów.;;
