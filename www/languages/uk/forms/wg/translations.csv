@@ -1,7 +1,7 @@
 ﻿text_type;text;item_type;category
 cdiNameSufix;Words and Gestures;;
 sentences10Tooltip;;;
-longText;general instruction - to be added;start;
+longText;General instruction - to be added;start;
 understandingBtn;Understanding;understanding;
 header;Understanding;understanding;
 catHeader;Fisrt signs of understanding;understanding;first_signs
@@ -11,53 +11,65 @@ catHeader;Things children understand;understanding;phrases
 instr;In the list below, please mark the phrases that your child seems to understand.;understanding;phrases
 wordBtn;Words;word;
 header;Word list;word;
-longText;list instruction - to be added;word;firstPage
+longText;Word list instruction - to be added;word;firstPage
 warning;NOTE: It is a large inventory of words used by many different children across a wide age range, so do not worry if your child knows only a few of them at the moment!;word;firstPage
-instr;"U = only undersatnds; U&S = understands + says";word;allInput
+instr;"U = only undersatnds; U&S = understands and says";word;allInput
 choiceNames;U,U&S;word;allInput
 catHeader;Sounds;word;sounds
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;sounds
 catHeader;Animal words;word;animals
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;animals
 catHeader;Vehicle Words;word;vehicles
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;vehicles
 catHeader;Words for toys;word;toys
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;toys
 catHeader;Food and drink words;word;food_drink
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;food_drink
 catHeader;Words for body parts;word;body_parts
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;body_parts
 catHeader;Words for clothes;word;clothing
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;clothing
 catHeader;Furniture words;word;furniture_rooms
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;furniture_rooms
 catHeader;Words for small household items;word;household
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;household
 catHeader;Outside words;word;outside
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;outside
 catHeader;Words for people;word;people
 warning;Please mark the word even if your child only says the name of the person (e.g. “Adam” for “baby”). Please also put names of other people your child says and write down who they are in the comments section.;word;people
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;people
 catHeader;Words for games and routines;word;games_routines
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;games_routines
 catHeader;Action words;word;action_words
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;action_words
 catHeader;Describing words;word;descriptive_words
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;descriptive_words
 catHeader;Question words;word;question_words
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;question_words
 catHeader;Words about time;word;time_words
-note;;;time_words
-note;;;time_words
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;time_words
 catHeader;Words about people and things;word;pronouns
-note;;word;quantifiers
-note;;word;quantifiers
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;pronouns
 catHeader;Words about places;word;location
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;location
 catHeader;Words about amounts;word;quantifiers
+commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;quantifiers
 help;Please make sure you have completed all of the pages, before finishing this part. Did you mark all the words that your child understands/says?;word;quantifiers
-starting_to_talkBtn;;starting_to_talk;
-header;;starting_to_talk;
-choiceNames;;starting_to_talk;
-longText;;combine;
-help;;combine;
-sentences10Btn;;sentences10;
-header;;sentences10;
-instr;;sentences10;
-gesturesBtn;Actiones and gestures;gestures;
+gesturesBtn;Actions and gestures;gestures;quantifiers
 longText;When infants are learning to communicate they often use gestures to get a message across. For each of the gestures below, please mark the actions that you have seen your child do.;gestures;firstPage
 header;Actiones and gestures;gestures;
 catHeader;First communicative gestures;gestures;gestures_first
-instr;;gestures;gestures_first
+instr;Have you seen your child do any of the following?;gestures;gestures_first
+commentLabel;Comments;gestures;gestures_first
 catHeader;Games and Routines;gestures;gestures_games
-instr;;gestures;gestures_games
+instr;Have you seen your child do any of the following?;gestures;gestures_games
+commentLabel;Comments;gestures;gestures_games
 catHeader;Actions with objects;gestures;gestures_objects
 instr;Does your child do or try to do any of the following?;gestures;gestures_objects
+commentLabel;Comments;gestures;gestures_objects
 catHeader;Pretending to be a parent;gestures;gestures_parent
 instr;Here are some things that young children sometimes do with stuffed animals or dolls. Please mark the actions that you have seen your child do.;gestures;gestures_parent
+commentLabel;Comments;gestures;gestures_parent
 catHeader;Imitating other adult actions (Using real objects or toys);gestures;gestures_adult
 instr;Does your child do or try to do any of the following?;gestures;gestures_adult
+commentLabel;Comments;gestures;gestures_adult
