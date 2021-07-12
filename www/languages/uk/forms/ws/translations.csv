@@ -1,91 +1,91 @@
-﻿text_type;text;item_type;category;
-cdiNameSufix;Words and Sentences;;;
-longText;to be added;start;;
-header ;Word list;word;;
-wordBtn ;Words;word;;
-longText;to be added;word;firstPage;
-warning;NOTE: This questionnaire is for children of many ages and it has a long list of words. Your child may not be able to understand or say a lot of the words on the form. That is perfectly fine!;word;firstPage;
-catHeader;Sounds;word;sounds;
-commentLabel;"If your child uses a different word for any of the words above (e.g. ""bruum bruum"" for vroom), you can write this in the box below if you wish.";word;sounds;
-catHeader;Animal words ;word;animals;
-commentLabel;"If your child uses a different word for any of the words above (e.g. says ""buzzy"" or ""buzzy bee"" for bee), you can write this in the box below if you wish.";word;animals;
-catHeader;Vehicle words;word;vehicles;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish;word;vehicles;
-catHeader;Words for toys ;word;toys;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish;word;toys;
-catHeader;Food and drink words;word;food_drink;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;food_drink;
-catHeader;Words for body parts;word;body_parts;
-note;item_189%Or the word used in your family;word;body_parts;
-note;item_190%Or the word used in your family;word;body_parts;
-note;item_211%Or the word used in your family;word;body_parts;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;body_parts;
-catHeader;Words for clothes;word;clothing;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;clothing;
-catHeader;Words for furniture and rooms;word;furniture_rooms;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;furniture_rooms;
-catHeader;Words for small household items ;word;household;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;household;
-catHeader;Outside words ;word;outside;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;outside;
-catHeader ;Places to go;word;places;
-note;item_369%Or the word used in your family;word;places;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;places;
-catHeader ;Words for people;word;people;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;people ;
-catHeader ;Words for games and routines;word;games_routines ;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;games_routines ;
-catHeader ;Action words;word;action_words;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;action_words;
-catHeader ;Describing words;word;descriptive_words;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;descriptive_words;
-catHeader ;Question words;word;question_words;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;question_words;
-catHeader ;Words about time;word;time_words;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;time_words;
-catHeader ;Words about people and things ;word;pronouns;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;pronouns;
-catHeader ;Words about places;word;prepositions;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;prepositions;
-catHeader ;Words about amounts ;word;quantifiers;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;quantifiers;
-catHeader ;Helping verbs;word;helping_verbs;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;helping_verbs;
-catHeader ;Connecting words;word;connecting_words;
-commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;connecting_words;
-help;Please make sure you have completed all of the sections, before finishing this part. Did you mark all the words that your child understands and says?;word;connecting_words;
-how_use_wordsBtn;How Children Use Words;how_use_words;;
-header;How Children Use Words;how_use_words;;
-choiceNames;Not yet, Sometimes, Often;how_use_words;;
-word_endingsBtn;Word Endings / Part 1;word_endings;;
-header;Word Endings / Part 1;word_endings;;
-choiceNames;Not yet, Sometimes, Often;word_endings;;
-word_formsBtn;Word Forms ;word_forms;;
-header;Word Forms ;word_forms;;
-longText;Following are some words children learn. Please mark any of these words that your child uses.   ;word_forms;;
-catHeader;Nouns;word_forms;word_form_nouns;
-catHeader;Verbs;word_forms;word_form_verbs;
-word_endings2Btn;Word Endings / Part 2;word_endings2;;
-header;Word Endings / Part 2;word_endings2;;
-longText;Young children often place the wrong endings on words. For example, a child might say “Auntie goed home.” Mistakes like this are often a sign of progress in language. In the following lists, please mark all the mistakes of this kind you have heard your child say recently.;word_endings2;;
-catHeader;Nouns;word_endings2;word_endings_nouns;
-catHeader;Verbs;word_endings2;word_endings_verbs;
-combineBtn;Combininig words ;combine;;
-header;Combininig words ;combine;;
-longText;Has your child begun to combine words yet, such as “nother cracker”, or “doggie bite?”;combine;;
-choiceNames;Not yet, Sometimes, Often;combine;;
-help;"The sentences section will open after selecting ""sometimes"" or ""often"".";combine;;
-header;The longest sentences ;sentences3;;
-sentences3Btn;The longest sentences ;sentences3;;
-sentences3Tooltip;"This section opens depending on your answers in the ""Combing words"" section.";sentences3;;
-instr;"Examples: Please list three of the longest sentences you have heard your child say recently. If you cannot remember any, please write ""N/A"". ";sentences3;;
-header;Complexity;complexity;;
-complexityBtn;Complexity;complexity;;
-complexityTooltip;"This section opens depending on your answers in the ""Combing words"" section.";complexity;;
-instr;In each of the following pairs, please mark the one that sounds MOST like the way your child talks right now. Please answer all the questions.  If your child is only using shorter or less complex sentences than the options provided, please click on the first of the boxes. If your child is saying sentences even longer or more complicated than the options listed, just click the last box.;complexity;;
-note;item_782%Talking about something happening right now;complexity;group1;
-note;item_783%Talking about something happening right now;complexity;group1;
-note;item_792%Talking about something that has already happened;complexity;group2;
-note;item_796%Talking about something that has already happened;complexity;group2;
-note;item_805%Talking about something that has already happened;complexity;group3;
-note;item_806%Talking about something that has already happened;complexity;group3;
+text_type;text;item_type;category
+cdiNameSufix;Words and Sentences;
+longText;to be added;start;
+header ;Word list;word;
+wordBtn ;Words;word;
+longText;to be added;word;firstPage
+warning;NOTE: This questionnaire is for children of many ages and it has a long list of words. Your child may not be able to understand or say a lot of the words on the form. That is perfectly fine! ;word;firstPage
+catHeader;Sounds;word;sounds
+commentLabel;"If your child uses a different word for any of the words above (e.g. ""bruum bruum"" for vroom), you can write this in the box below if you wish.";word;sounds
+catHeader;Animal words ;word;animals
+commentLabel;"If your child uses a different word for any of the words above (e.g. says ""buzzy"" or ""buzzy bee"" for bee), you can write this in the box below if you wish.";word;animals
+catHeader;Vehicle words;word;vehicles
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish;word;vehicles
+catHeader;Words for toys ;word;toys
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish;word;toys
+catHeader;Food and drink words;word;food_drink
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;food_drink
+catHeader;Words for body parts;word;body_parts
+note;item_189%Or the word used in your family;word;body_parts
+note;item_190%Or the word used in your family;word;body_parts
+note;item_211%Or the word used in your family;word;body_parts
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;body_parts
+catHeader;Words for clothes;word;clothing
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;clothing
+catHeader;Words for furniture and rooms;word;furniture_rooms
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;furniture_rooms
+catHeader;Words for small household items ;word;household
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;household
+catHeader;Outside words ;word;outside
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;outside
+catHeader ;Places to go;word;places
+note;item_369%Or the word used in your family;word;places
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;places
+catHeader ;Words for people;word;people
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;people
+catHeader ;Words for games and routines;word;games_routines
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;games_routines
+catHeader ;Action words;word;action_words
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;action_words
+catHeader ;Describing words;word;descriptive_words
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;descriptive_words
+catHeader ;Question words;word;question_words
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;question_words
+catHeader ;Words about time;word;time_words
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;time_words
+catHeader ;Words about people and things ;word;pronouns
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;pronouns
+catHeader ;Words about places;word;prepositions
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;prepositions
+catHeader ;Words about amounts ;word;quantifiers
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;quantifiers
+catHeader ;Helping verbs;word;helping_verbs
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;helping_verbs
+catHeader ;Connecting words;word;connecting_words
+commentLabel;If your child uses a different word for any of the words above, you can write this in the box below if you wish.;word;connecting_words
+help;Please make sure you have completed all of the sections, before finishing this part. Did you mark all the words that your child understands and says?;word;connecting_words
+how_use_wordsBtn;How Children Use Words;how_use_words;
+header;How Children Use Words;how_use_words;
+choiceNames;Not yet, Sometimes, Often;how_use_words;
+word_endingsBtn;Word Endings / Part 1;word_endings;
+header;Word Endings / Part 1;word_endings;
+choiceNames;Not yet, Sometimes, Often;word_endings;
+word_formsBtn;Word Forms ;word_forms;
+header;Word Forms ;word_forms;
+longText;Following are some words children learn. Please mark any of these words that your child uses. ;word_forms;
+catHeader;Nouns;word_forms;word_form_nouns
+catHeader;Verbs;word_forms;word_form_verbs
+word_endings2Btn;Word Endings / Part 2;word_endings2;
+header;Word Endings / Part 2;word_endings2;
+longText;Young children often place the wrong endings on words. For example, a child might say “Auntie goed home.” Mistakes like this are often a sign of progress in language. In the following lists, please mark all the mistakes of this kind you have heard your child say recently.;word_endings2;
+catHeader;Nouns;word_endings2;word_endings_nouns
+catHeader;Verbs;word_endings2;word_endings_verbs
+combineBtn;Combininig words ;combine;
+header;Combininig words ;combine;
+longText;Has your child begun to combine words yet, such as “nother cracker”, or “doggie bite?”;combine;
+choiceNames;Not yet, Sometimes, Often;combine;
+help;"The sentences section will open after selecting ""sometimes"" or ""often"".";combine;
+header;The longest sentences ;sentences3;
+sentences3Btn;The longest sentences ;sentences3;
+sentences3Tooltip;"This section opens depending on your answers in the ""Combing words"" section.";sentences3;
+instr;"Examples: Please list three of the longest sentences you have heard your child say recently. If you cannot remember any, please write ""N/A"". ";sentences3;
+header;Complexity;complexity;
+complexityBtn;Complexity;complexity;
+complexityTooltip;"This section opens depending on your answers in the ""Combing words"" section.";complexity;
+instr;In each of the following pairs, please mark the one that sounds MOST like the way your child talks right now. Please answer all the questions. If your child is only using shorter or less complex sentences than the options provided, please click on the first of the boxes. If your child is saying sentences even longer or more complicated than the options listed, just click the last box.;complexity;
+note;item_782%Talking about something happening right now;complexity;group1
+note;item_783%Talking about something happening right now;complexity;group1
+note;item_792%Talking about something that has already happened;complexity;group2
+note;item_796%Talking about something that has already happened;complexity;group2
+note;item_805%Talking about something that has already happened;complexity;group3
+note;item_806%Talking about something that has already happened;complexity;group3
