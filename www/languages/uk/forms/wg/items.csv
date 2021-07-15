@@ -1,35 +1,35 @@
 item_id;definition;type;category
-item_1;Respond when his or her name is called (e.g. by turning and looking at the speaker) ;understanding;first_signs
-item_2;Respond to ‘no’ (by stopping what she or he is doing, at least for a moment) ;understanding;first_signs
-item_3;React to ‘there’s Mummy/Daddy’ by looking round for them;understanding;first_signs
-item_4;Are you hungry?;understanding;phrases
-item_5;Are you tired/ sleepy?;understanding;phrases
-item_6;Be careful;understanding;phrases
-item_7;Be quiet;understanding;phrases
-item_8;Clap your hands;understanding;phrases
-item_9;Change nappy;understanding;phrases
-item_10;Come here/come on;understanding;phrases
-item_11;Daddy/Mummy’s home;understanding;phrases
-item_12;Do you want more?;understanding;phrases
-item_13;Don’t do that;understanding;phrases
-item_14;Don’t touch;understanding;phrases
-item_15;Get up;understanding;phrases
-item_16;Give it to Mummy;understanding;phrases
-item_17;Give me a hug;understanding;phrases
-item_18;Give me a kiss;understanding;phrases
-item_19;Go and get_____;understanding;phrases
-item_20;Good girl/boy;understanding;phrases
-item_21;Hold still;understanding;phrases
-item_22;Let’s go bye bye;understanding;phrases
-item_23;Look/look here;understanding;phrases
-item_24;Open your mouth;understanding;phrases
-item_25;Sit down;understanding;phrases
-item_26;Spit it out;understanding;phrases
-item_27;Stop it;understanding;phrases
-item_28;Time to go night night;understanding;phrases
-item_29;Throw the ball;understanding;phrases
-item_30;This little piggy;understanding;phrases
-item_31;Want to go for a ride?;understanding;phrases
+item_1;Respond when his or her name is called (e.g. by turning and looking at the speaker);first_signs;
+item_2;Respond to 'no' (by stopping what she or he is doing, at least for a moment);first_signs;
+item_3;React to 'there's Mummy/Daddy' by looking round for them;first_signs;
+item_4;Are you hungry?;phrases;
+item_5;Are you tired/ sleepy?;phrases;
+item_6;Be careful;phrases;
+item_7;Be quiet;phrases;
+item_8;Clap your hands;phrases;
+item_9;Change nappy;phrases;
+item_10;Come here/come on;phrases;
+item_11;Daddy/Mummy's home;phrases;
+item_12;Do you want more?;phrases;
+item_13;Don't do that;phrases;
+item_14;Don't touch;phrases;
+item_15;Get up;phrases;
+item_16;Give it to Mummy;phrases;
+item_17;Give me a hug;phrases;
+item_18;Give me a kiss;phrases;
+item_19;Go and get_____;phrases;
+item_20;Good girl/boy;phrases;
+item_21;Hold still;phrases;
+item_22;Let's go bye bye;phrases;
+item_23;Look/look here;phrases;
+item_24;Open your mouth;phrases;
+item_25;Sit down;phrases;
+item_26;Spit it out;phrases;
+item_27;Stop it;phrases;
+item_28;Time to go night night;phrases;
+item_29;Throw the ball;phrases;
+item_30;This little piggy;phrases;
+item_31;Want to go for a ride?;phrases;
 item_32;baa baa;word;sounds
 item_33;choo choo;word;sounds
 item_34;cockadoodledoo;word;sounds
@@ -288,7 +288,7 @@ item_286;(call on) phone;word;games_routines
 item_287;please;word;games_routines
 item_288;sorry;word;games_routines
 item_289;tea (meal);word;games_routines
-item_290;thankyou/ ta;word;games_routines
+item_290;thank you/ ta;word;games_routines
 item_291;this little piggy;word;games_routines
 item_292;wait;word;games_routines
 item_293;want to;word;games_routines
@@ -431,19 +431,19 @@ item_429;When you look/point at toy across the room, does your child look at it?
 item_430;Points (with arm and index finger extended) at some interesting object or event.;gesture_first;
 item_431;Waves bye-bye on his or her own when someone leaves.;gesture_first;
 item_432;Extends his or her arm upward to signal a wish to be picked up.;gesture_first;
-item_433;Shakes head “no”.;gesture_first;
-item_434;Nods head “yes”.;gesture_first;
-item_435;Gestures “hush” by placing finger to lips.;gesture_first;
+item_433;Shakes head "no".;gesture_first;
+item_434;Nods head "yes".;gesture_first;
+item_435;Gestures "hush" by placing finger to lips.;gesture_first;
 item_436;Requests something by extending arm and opening and closing hand.;gesture_first;
 item_437;Blows kisses from a distance.;gesture_first;
-item_438;Shrugs to indicate “all gone” or “where did it go”.;gesture_first;
-item_439;Plays ‘peekaboo’/’peepo’.;gestures_games;
-item_440;Plays ‘pattycake’/ ‘pat-a-cake’.;gestures_games;
+item_438;Shrugs to indicate "all gone" or "where did it go".;gesture_first;
+item_439;Plays 'peekaboo'/'peepo'.;gestures_games;
+item_440;Plays 'pattycake'/ 'pat-a-cake'.;gestures_games;
 item_441;Plays chasing games.;gestures_games;
 item_442;Sings.;gestures_games;
 item_443;Dances.;gestures_games;
 item_444;Claps hands.;gestures_games;
-item_445;Plays ‘high five’/’gimme five’.;gestures_games;
+item_445;Plays 'high five'/'gimme five'.;gestures_games;
 item_446;Eat with a spoon or fork, holding or helping to hold the spoon or fork.;gestures_objects;
 item_447;Drink from an open cup containing liquid.;gestures_objects;
 item_448;Comb or brush own hair.;gestures_objects;
@@ -454,14 +454,14 @@ item_452;Put on a shoe or a sock.;gestures_objects;
 item_453;Put on a necklace, bracelet, or watch.;gestures_objects;
 item_454;Lay head on hands and squeeze eyes shut as if sleeping.;gestures_objects;
 item_455;Blow to indicate something is hot.;gestures_objects;
-item_456;Hold plane and make it “fly”.;gestures_objects;
+item_456;Hold plane and make it "fly".;gestures_objects;
 item_457;Put telephone to ear.;gestures_objects;
 item_458;Sniff flowers.;gestures_objects;
 item_459;Push toy car or truck.;gestures_objects;
 item_460;Throw a ball.;gestures_objects;
 item_461;Pour pretend liquid from one container to another.;gestures_objects;
 item_462;Stir pretend liquid in a cup or pan with a spoon.;gestures_objects;
-item_463;Pretend to ‘drink’ from a cup or other object.;gestures_objects;
+item_463;Pretend to 'drink' from a cup or other object.;gestures_objects;
 item_464;Put to bed.;gestures_parent;
 item_465;Cover with blanket.;gestures_parent;
 item_466;Feed with bottle or at the breast.;gestures_parent;
@@ -478,11 +478,11 @@ item_476;Sweep with a broom or mop.;gestures_adult;
 item_477;Put a key in a door or lock.;gestures_adult;
 item_478;Bang with a hammer or mallet.;gestures_adult;
 item_479;Attempt to use a saw.;gestures_adult;
-item_480;“Type” at a typewriter or computer keyboard.;gestures_adult;
-item_481; “Read” (opens book, turns page).;gestures_adult;
+item_480;"Type" at a typewriter or computer keyboard.;gestures_adult;
+item_481; "Read" (opens book, turns page).;gestures_adult;
 item_482;Hoover.;gestures_adult;
 item_483;Play a musical instrument (e.g. piano, trumpet).;gestures_adult;
-item_484;“Drive” a car by turning steering wheel.;gestures_adult;
+item_484;"Drive" a car by turning steering wheel.;gestures_adult;
 item_485;Washing up / wash dishes.;gestures_adult;
 item_486;Clean with a cloth or duster.;gestures_adult;
 item_487;Write with a pen, pencil, or marker.;gestures_adult;

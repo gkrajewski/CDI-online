@@ -8,12 +8,13 @@ longText;Before children learn to speak, they often show signs of understanding 
 choiceNames;Yes, No;understanding;first_signs
 catHeader;Things children understand;understanding;phrases
 instr;In the list below, please mark the phrases that your child seems to understand.;understanding;phrases
+commentLabel;Comments;understanding;phrases
 wordBtn;Words;word;
 header;Word list;word;
 longText;Word list instruction - to be added.;word;firstPage
 warning;NOTE: It is a large inventory of words used by many different children across a wide age range, so do not worry if your child knows only a few of them at the moment!;word;firstPage
 instr;U = only understands U&S = understands and says ;word;allInput
-choiceNames;U,U&S ;word;allInput
+choiceNames;U, U&S ;word;allInput
 catHeader;Sounds;word;sounds
 commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;sounds
 catHeader;Animal words;word;animals
@@ -35,7 +36,7 @@ commentLabel;Remember to give your child credit for using different or local wor
 catHeader;Outside words;word;outside
 commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;outside
 catHeader;Words for people;word;people
-warning;Please mark the word even if your child only says the name of the person (e.g. “Adam” for “baby”). Please also put names of other people your child says and write down who they are in the comments section.;word;people
+warning;Please mark the word even if your child only says the name of the person (e.g. "Adam" for "baby"). Please also put names of other people your child says and write down who they are in the comments section.;word;people
 commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;people
 catHeader;Words for games and routines;word;games_routines
 commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;games_routines
@@ -55,10 +56,10 @@ catHeader;Words about amounts;word;quantifiers
 commentLabel;Remember to give your child credit for using different or local words with the same meaning as those in the box above. Please write these words here:;word;quantifiers
 help;Please make sure you have completed all of the pages, before finishing this part. Did you mark all the words that your child understands/says?;word;quantifiers
 gesturesBtn;Actions and gestures;gestures;
-longText;When infants are learning to communicate they often use gestures to get a message across. For each of the gestures below, please mark the actions that you have seen your child do.;gestures;firstPage
+longText;When infants are learning to communicate they often use gestures to get a message across. For each of the gestures below, please mark the actions that you have seen your child do. ;gestures;firstPage
 header;Actions and gestures;gestures;
 catHeader;First communicative gestures;gestures;gestures_first
-instr;Have you seen your child do any of the following?;gestures;gestures_first
+instr;Have you seen your child do any of the following? ;gestures;gestures_first
 commentLabel;Comments;gestures;gestures_first
 catHeader;Games and Routines;gestures;gestures_games
 instr;Have you seen your child do any of the following?;gestures;gestures_games

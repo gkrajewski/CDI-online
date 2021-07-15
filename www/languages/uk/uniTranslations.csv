@@ -18,12 +18,12 @@ cdiNamePrefix;UK-Communicative Development Inventory (UK-CDI);;
 endTooltip;Finishing the questionnaire will be possible after confirming all your answers in each section.;;
 header;End;end;
 endBtn;End;end;
-instr;"If you have filled all parts of the questionnaire please click the "Confirm" button. ;end;
+instr;If you have filled all parts of the questionnaire please click the "Confirm" button. ;end;
 help;Thank you for filling the questionnaire!;postEnd;
 help;Thank you for filling the questionnaire!;postEndSW;
 instr;Thank you for filling the questionnaire. You can find more information in the "Knowledge" section.;postEndSW;
 instr;Thank you for filling the questionnaire! We hope that filling the questionnaire was a valuable experience and allowed you to reflect on your child's langauge developemnt. Your participation in the study is very important for us – it will help us to describe early language development of mono- and bilingual children who acquire English as one of their languages.;postEnd;
 error;Error has occured. Please reload the page and try again.;;
 refresh;Reload;;
-badForm;Incorrect parameter value in the URL. Available values:;;none
+badForm;Incorrect parameter value in the URL. Available values: ;;none
 inventoryOpened;The questionnaire is already open. Please close the questionnaire if it's open somewhere else and/or reload the page.;;
