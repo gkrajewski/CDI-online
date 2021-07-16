@@ -425,18 +425,18 @@ item_423;more;word;quantifiers
 item_424;none;word;quantifiers
 item_425;not;word;quantifiers
 item_426;some;word;quantifiers
-item_427;Extends an arm to show you something she or he is holding.;gesture_first;
-item_428;Reaches out and gives you a toy or some object that she or he is holding.;gesture_first;
-item_429;When you look/point at toy across the room, does your child look at it?;gesture_first;
-item_430;Points (with arm and index finger extended) at some interesting object or event.;gesture_first;
-item_431;Waves bye-bye on his or her own when someone leaves.;gesture_first;
-item_432;Extends his or her arm upward to signal a wish to be picked up.;gesture_first;
-item_433;Shakes head "no".;gesture_first;
-item_434;Nods head "yes".;gesture_first;
-item_435;Gestures "hush" by placing finger to lips.;gesture_first;
-item_436;Requests something by extending arm and opening and closing hand.;gesture_first;
-item_437;Blows kisses from a distance.;gesture_first;
-item_438;Shrugs to indicate "all gone" or "where did it go".;gesture_first;
+item_427;Extends an arm to show you something she or he is holding.;gestures_first;
+item_428;Reaches out and gives you a toy or some object that she or he is holding.;gestures_first;
+item_429;When you look/point at toy across the room, does your child look at it?;gestures_first;
+item_430;Points (with arm and index finger extended) at some interesting object or event.;gestures_first;
+item_431;Waves bye-bye on his or her own when someone leaves.;gestures_first;
+item_432;Extends his or her arm upward to signal a wish to be picked up.;gestures_first;
+item_433;Shakes head "no".;gestures_first;
+item_434;Nods head "yes".;gestures_first;
+item_435;Gestures "hush" by placing finger to lips.;gestures_first;
+item_436;Requests something by extending arm and opening and closing hand.;gestures_first;
+item_437;Blows kisses from a distance.;gestures_first;
+item_438;Shrugs to indicate "all gone" or "where did it go".;gestures_first;
 item_439;Plays 'peekaboo'/'peepo'.;gestures_games;
 item_440;Plays 'pattycake'/ 'pat-a-cake'.;gestures_games;
 item_441;Plays chasing games.;gestures_games;
@@ -478,11 +478,11 @@ item_476;Sweep with a broom or mop.;gestures_adult;
 item_477;Put a key in a door or lock.;gestures_adult;
 item_478;Bang with a hammer or mallet.;gestures_adult;
 item_479;Attempt to use a saw.;gestures_adult;
-item_480;"Type" at a typewriter or computer keyboard.;gestures_adult;
-item_481; "Read" (opens book, turns page).;gestures_adult;
+item_480; 'Type' at a typewriter or computer keyboard.;gestures_adult;
+item_481; 'Read' (opens book, turns page).;gestures_adult;
 item_482;Hoover.;gestures_adult;
 item_483;Play a musical instrument (e.g. piano, trumpet).;gestures_adult;
-item_484;"Drive" a car by turning steering wheel.;gestures_adult;
+item_484; 'Drive' a car by turning steering wheel.;gestures_adult;
 item_485;Washing up / wash dishes.;gestures_adult;
 item_486;Clean with a cloth or duster.;gestures_adult;
 item_487;Write with a pen, pencil, or marker.;gestures_adult;
