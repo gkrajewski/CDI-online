@@ -189,7 +189,12 @@ renderCategory <- function(input, output, category, reactList, staticList){
         choices = strsplit(staticList$txt[staticList$txt$text_type == "genders", "text"], ",")[[1]]
       )
       inputObj[[3]] <- br()
-      inputObj[[4]] <- dateInput("birthDate", staticList$txt[staticList$txt$text_type == "dateLabel", "text"], currDate, language = staticList$lang)
+      if (staticList$lang == "uk"){
+        dateLanguage = "en"
+      } else {
+        dateLanguage = staticList$lang
+      }
+      inputObj[[4]] <- dateInput("birthDate", staticList$txt[staticList$txt$text_type == "dateLabel", "text"], currDate, language = dateLanguage)
       inputObj[[5]] <- br()
       inputObj[[6]] <- radioButtons(
         "filler",
@@ -225,7 +230,13 @@ renderCategory <- function(input, output, category, reactList, staticList){
       if (is.element("warning", reactList$txt$text_type)) p(class = "warning", strong(reactList$txt[reactList$txt$text_type == "warning", "text"])),
       if (length(inputObj) > 0) div(class=reactList$settings$css_class, inputObj),
       if (length(notes) > 0) notes,
-      if (commentField) div(class = "comment", textAreaInput("comment", label = staticList$txt[staticList$txt$text_type == "commentLabel", "text"], value = commentValue))
+      if (commentField){
+        if (is.element("commentLabel", reactList$txt$text_type)){
+          div(class = "comment", textAreaInput("comment", label = reactList$txt[reactList$txt$text_type == "commentLabel", "text"], value = commentValue))
+        } else {
+          div(class = "comment", textAreaInput("comment", label = staticList$txt[staticList$txt$text_type == "commentLabel", "text"], value = commentValue))
+        }
+      }
     )
   })
 
