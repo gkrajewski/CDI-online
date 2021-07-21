@@ -187,8 +187,8 @@ item_185;ankle;word;body_parts
 item_186;arm;word;body_parts
 item_187;belly / tummy;word;body_parts
 item_188;belly button / tummy button;word;body_parts
-item_189;boob / boobies [or the word used in your family];word;body_parts
-item_190;buttocks / bottom / bum [or the word used in your family];word;body_parts
+item_189;boob / boobies *;word;body_parts
+item_190;buttocks / bottom / bum *;word;body_parts
 item_191;cheek;word;body_parts
 item_192;chin;word;body_parts
 item_193;ear / tab;word;body_parts
@@ -209,7 +209,7 @@ item_207;mouth;word;body_parts
 item_208;nail / fingernail;word;body_parts
 item_209;neck;word;body_parts
 item_210;nose;word;body_parts
-item_211;privates /penis / vagina [or the word used in your family];word;body_parts
+item_211;privates /penis / vagina *;word;body_parts
 item_212;shoulder;word;body_parts
 item_213;teeth / tooth;word;body_parts
 item_214;toe;word;body_parts
@@ -367,7 +367,7 @@ item_365;watering can;word;outside
 item_366;wind;word;outside
 item_367;beach;word;places
 item_368;cafe;word;places
-item_369;church / mosque / synagogue [or the word used in your family];word;places
+item_369;church / mosque / synagogue *;word;places
 item_370;circus;word;places
 item_371;farm;word;places
 item_372;home;word;places
@@ -697,14 +697,14 @@ item_695;if;word;connecting_words
 item_696;so;word;connecting_words
 item_697;then;word;connecting_words
 item_699;Does your child ever talk about past events or people who are not present? For example, a child who saw a parade last week might later say parade, clown, or band.;how_use_words
-item_700;Does your child ever talk about something that's going to happen in the future, for example, saying "choo choo" or "aeroplane" before you leave the house for a trip, or saying "swing" when you are going to the park?;how_use_words
+item_700;Does your child ever talk about something that's going to happen in the future, for example, saying 'choo choo' or 'aeroplane' before you leave the house for a trip, or saying 'swing' when you are going to the park?;how_use_words
 item_701;Does your child talk about objects that are not present such as asking about a missing or absent toy, referring to a pet out of view, or asking about someone not present?;how_use_words
-item_702;Does your child understand if you ask for something that is not in the room? For example, would your child go to the bedroom to get a teddy bear when you say "Where's the bear?";how_use_words
-item_703;Does your child ever pick up or point to an object and name an absent person to whom the object belongs? For example, a child might point to mummy's shoe and say "mummy".;how_use_words
-item_704;To talk about more than one thing, we add an "s" to many words. Examples include cars (for more than one car), shoes , dogs , and keys . Has your child begun to do this?;word_endings
-item_705;To talk about ownership, we add an "s", for example, daddy's key, kitty's dish, and baby's bottle. Has your child begun to do this?;word_endings
-item_706;To talk about activities, we sometimes add "ing" to verbs. Examples include looking, sucking and crying. Has your child begun to do this?;word_endings
-item_707;To talk about things that happened in the past, we often add "ed" to the verb. Examples include kissed, opened and pushed. Has your child begun to do this?;word_endings
+item_702;Does your child understand if you ask for something that is not in the room? For example, would your child go to the bedroom to get a teddy bear when you say 'Where's the bear?';how_use_words
+item_703;Does your child ever pick up or point to an object and name an absent person to whom the object belongs? For example, a child might point to mummy's shoe and say 'mummy'.;how_use_words
+item_704;To talk about more than one thing, we add an 's' to many words. Examples include cars (for more than one car), shoes , dogs , and keys . Has your child begun to do this?;word_endings
+item_705;To talk about ownership, we add an 's', for example, daddy's key, kitty's dish, and baby's bottle. Has your child begun to do this?;word_endings
+item_706;To talk about activities, we sometimes add 'ing' to verbs. Examples include looking, sucking and crying. Has your child begun to do this?;word_endings
+item_707;To talk about things that happened in the past, we often add 'ed' to the verb. Examples include kissed, opened and pushed. Has your child begun to do this?;word_endings
 item_708;children;word_forms;word_form_nouns
 item_709;men;word_forms;word_form_nouns
 item_710;teeth;word_forms;word_form_nouns
@@ -775,12 +775,12 @@ item_774;doed;word_endings2;word_endings_verbs
 item_775;holded;word_endings2;word_endings_verbs
 item_776;dranked;word_endings2;word_endings_verbs
 item_777;losed;word_endings2;word_endings_verbs
-item_778;Has your child begun to combine words yet, such as "nother cracker", or "doggie bite?";combine
+item_778;Has your child begun to combine words yet, such as 'nother cracker', or 'doggie bite?';combine
 item_779;Two shoe % Two shoes. % I have two shoes.;complexity;
 item_780;Two foot % Two feet. % I have two feet.;complexity;
 item_781;Daddy car % Daddy's car. % There's daddy's car.;complexity;
-item_782;Kitty sleep % Kitty sleeping.  % Kitty is sleeping.;complexity;
-item_783;I make tower % I making tower. % I'm making tower.;complexity;
+item_782;Kitty sleep % Kitty sleeping.  % Kitty is sleeping. * ;complexity;
+item_783;I make tower % I making tower. % I'm making tower. * ;complexity;
 item_784;Baby crying % Baby is crying. % The baby is crying.;complexity;
 item_785;Fix it % You fix it? % Can you fix it?;complexity;
 item_786;Read story, mummy % Read me story, mummy. % Read me a story, mummy.;complexity;
@@ -789,11 +789,11 @@ item_788;Want juice % Want more juice. % Want juice in there. % Want more juice 
 item_789;There kitty % There a kitty. % There's a kitty. % There's a little kitty.;complexity;
 item_790;Go bye-bye % Wanna go bye-bye.;complexity;
 item_791;Where go % Where mummy go? % Where did mummy go? % Where did my mummy go?;complexity;
-item_792;Fall down % I fall down. % I fell down.;complexity;
+item_792;Fall down % I fall down. % I fell down. ** ;complexity;
 item_793;More biscuit % More biscuits. % More biscuits please.;complexity;
 item_794;These my tooth % These my teeth. % These are my teeth.;complexity;
 item_795;Baby blanket % Baby's blanket. % The baby's blanket.;complexity;
-item_796;Doggie kiss me % Doggie kissed me. % The doggie kissed me.;complexity;
+item_796;Doggie kiss me % Doggie kissed me. % The doggie kissed me. ** ;complexity;
 item_797;Coffee hot % That coffee hot. % That coffee is hot.;complexity;
 item_798;No do it % I no do it. % I can't do it.;complexity;
 item_799;I like read % I like read stories. % I like to read. % I like to read stories.;complexity;
@@ -802,8 +802,8 @@ item_801;Turn on light % Turn on the light. % Turn on the light so I see. % Turn
 item_802;I want % I want that. % I want that one you got. % I want that one that you've got.;complexity;
 item_803;Want biscuits % Want biscuits and juice.;complexity;
 item_804;Biscuit mummy % Biscuit for mummy. % Mummy want biscuit. % Mummy wants a biscuit.;complexity;
-item_805;Pick up % Daddy pick up. % Daddy pick me up. % Daddy picked me up.;complexity;
-item_806;Kitty away % Kitty go away. % Kitty went away. % The kitty went away.;complexity;
+item_805;Pick up % Daddy pick up. % Daddy pick me up. % Daddy picked me up. ** ;complexity;
+item_806;Kitty away % Kitty go away. % Kitty went away. % The kitty went away. ** ;complexity;
 item_807;Doggie table % Doggie on table. % Doggie is on table. % Doggie is on the table.;complexity;
 item_808;My truck % That my truck. % That's my truck. % That's my big truck.;complexity;
 item_809;Baby eat % Baby want eat. % Baby want to eat. % Baby wants to eat.;complexity;

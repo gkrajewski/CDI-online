@@ -1,20 +1,21 @@
 text_type;text;item_type;category
-warning;IMPORTANT: Finishing the questionnaire will be possible after filling all the sections. You can stop filling the questionnaire at any time and your answers will be saved. To go back to the questionnaire (for example on another device, but note that the questionnaire cannot be open on two deviced at the same time) use the same link.;start;
+warning;IMPORTANT: Finishing the questionnaire will be possible after filling all the pages. You can stop filling the questionnaire at any time and your answers will be saved. To go back to the questionnaire (for example on another device, but note that the questionnaire cannot be open on two devices at the same time) use the same link.;start;
 help;NOTE: It will not be possible to go back to this part after you have confirmed your answers.;start;
 backBtn;Go back;;
 nextBtn;Next;;
 confBtn;Confirm;;
 startBtn;Start;;
-dateLabel;child's date of birth;;
-genderLabel;child's gender;;
+dateLabel;Your child's date of birth;;
+genderLabel;Your child's gender;;
 modalTitle;Warning!;;
 noGender;Please indicte the child's gender.;;
 noFiller;Please indicate who is filling the questionnaire.;;
 badDate;The child's date of birth indicates that your child is not in the appropriate age range for this questionnaire.;;
 genders;girl,boy,other;;
 fillerLabel;What is your relationship to the child?;;
-fillers;mother,father,grandmother,grandfather,nanny,teacher,another guardian (please indicate);;
-cdiNamePrefix;UK-Communicative Development Inventory (UK-CDI);;
+fillers;mother,father,grandmother,grandfather,nanny,teacher,other (please indicate);;
+commentLabel; Comments;;
+cdiNamePrefix;UK Communicative Development Inventory;;
 endTooltip;Finishing the questionnaire will be possible after confirming all your answers in each section.;;
 header;End;end;
 endBtn;End;end;
