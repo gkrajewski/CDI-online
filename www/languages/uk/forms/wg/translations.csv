@@ -1,22 +1,22 @@
 text_type;text;item_type;category
 cdiNameSufix;Words and Gestures;;
-longText;This is the UK Communicative Development Inventory (UK-CDI), which is an adaptation of the American questionnaire concerning speech development in young children ('MacArthur-Bates Communicative Development Inventory'). In this questionnaire we are asking parents (or other guardians) of English-speaking children aged 8 to 18 months (including up until the last day of 18th months) to tell us about the words and gestures their children understand and say, as they know far more about their children than any test could ever reveal. Please don't worry if your child is not yet talking. We know that at this age, many children have not yet begun to talk, but often they can point, nod or wave to get their message across. If you change your mind before submitting the study, simply close your browser. If you change your mind afterwards, just let us know. You can do this without giving any explanation.;start;
+longText;This is the UK Communicative Development Inventory (UK-CDI), which is an adaptation of the American questionnaire concerning speech development in young children ('MacArthur-Bates Communicative Development Inventory'). In this questionnaire we are asking parents (or other guardians) of English-speaking children aged 8 to 18 months (including up until the last day of 18th months) to tell us about the words and gestures their children understand and use. Please don't worry if your child is not yet talking. We know that at this age many children have not yet begun to talk, but often they can point, nod or wave to get their message across. If you change your mind before submitting the questionnaire, simply close your browser. If you change your mind afterwards, just let us know. You can do this without giving any explanation.;start;
 understandingBtn;Understanding;understanding;
 header;Understanding;understanding;
 catHeader;First signs of understanding;understanding;first_signs
 longText;Before children learn to speak, they often show signs of understanding by responding to familiar words and phrases. Below are some common examples - does your child do any of these?;understanding;first_signs
 choiceNames;Yes, No;understanding;first_signs
 catHeader;Things children understand;understanding;phrases
-instr;In the list below, please mark the phrases that your child seems to understand.;understanding;phrases
+instr;In the list below please mark the phrases that your child seems to understand.;understanding;phrases
 wordBtn;Words;word;
 header;Word list;word;
-longText;Here is a list of words children may know. It is a large inventory of words used by many different children across a wide age range, so do not worry if your child knows only a few of them at the moment! Please read all of the instructions carefully and make sure you complete all of the pages. If your child DOES NOT YET UNDERSTAND OR SAY THE WORD, leave the words unchecked. If your child UNDERSTANDS A WORD BUT DOESN'T SAY THE WORD, check U (= understands). If your child UNDERSTANDS AND ALSO SAYS the word, check U&S (= understands and says) Please only include words your child says on their own (e.g. not when you ask them to 'say train'). Give your child credit for using different words with the same meaning. If your child understands or says a DIFFERENT WORD please check  the appropriate box and write down your word in the comment box at the bottom of each page. Please include: different words (e.g. 'baby' for 'doll'), local or dialect words (e.g. 'bairn' for 'baby'), family names (e.g. 'nana' for 'grandma'), baby-talk words (e.g. 'goggy' for 'dog'). Please do NOT  include foreign words (e.g. 'aqua' for 'water'). If you have any additional comments you can type them in the box at the bottom of each page.;word;firstPage
+longText;Here is a list of words children may know. Please read all of the instructions carefully and make sure you complete all of the pages. If your child DOES NOT YET UNDERSTAND OR SAY THE WORD, leave the word unchecked. If your child UNDERSTANDS A WORD BUT DOESN'T SAY THE WORD, check U (= understands). If your child UNDERSTANDS AND ALSO SAYS the word, check U&S (= understands and says) Please only include words your child says on their own (e.g., not when you ask them to 'say train'). Give your child credit for using different words with the same meaning. If your child understands or says a DIFFERENT WORD please check the appropriate box and write down your word in the comment box at the bottom of each page. Please include: different words (e.g. 'baby' for 'doll'), local or dialect words (e.g. 'bairn' for 'baby'), family names (e.g. 'nana' for 'grandma'), baby-talk words (e.g. 'goggy' for 'dog'). Please do NOT  include foreign words (e.g. 'aqua' for 'water'). If you have any additional comments, you can type them in the box at the bottom of each page too.;word;firstPage
 warning;NOTE: It is a large inventory of words used by many different children across a wide age range, so do not worry if your child knows only a few of them at the moment!;word;firstPage
 instr;U = only understands U&S = understands and says ;word;allInput
 choiceNames;U, U&S ;word;allInput
 catHeader;Sounds;word;sounds
 catHeader;Animal words;word;animals
-catHeader;Vehicle Words;word;vehicles
+catHeader;Vehicle words;word;vehicles
 catHeader;Words for toys;word;toys
 catHeader;Food and drink words;word;food_drink
 catHeader;Words for body parts;word;body_parts
@@ -36,7 +36,7 @@ catHeader;Words about places;word;locations
 catHeader;Words about amounts;word;quantifiers
 help;Please make sure you have completed all of the pages, before finishing this part. Did you mark all the words that your child understands/says?;word;quantifiers
 gesturesBtn;Actions and gestures;gestures;
-longText;When infants are learning to communicate they often use gestures to get a message across. For each of the gestures below, please mark the actions that you have seen your child do. ;gestures;firstPage
+longText;When infants are learning to communicate, they often use gestures to get a message across. For each of the gestures below, please mark the actions that you have seen your child do. ;gestures;firstPage
 header;Actions and gestures;gestures;
 catHeader;First communicative gestures;gestures;gestures_first
 choiceNames; Not yet, Sometimes, Often;gestures;gestures_first 

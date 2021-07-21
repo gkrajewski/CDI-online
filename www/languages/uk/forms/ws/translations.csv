@@ -1,9 +1,9 @@
 text_type;text;item_type;category
 cdiNameSufix;Words and Sentences;;
-longText;This is the UK Communicative Development Inventory (UK-CDI), which is an adaptation of the American questionnaire concerning speech development in young children ('MacArthur-Bates Communicative Development Inventory'). In this questionnaire we are asking parents (or other guardians) of 16 to 30 month old children learning to speak English, who will tell us what words their children can say. If you change your mind before submitting the study, simply close your browser. If you change your mind afterwards, just let us know. You can do this without giving any explanation.;start;
+longText;This is the UK Communicative Development Inventory (UK-CDI), which is an adaptation of the American questionnaire concerning speech development in young children ('MacArthur-Bates Communicative Development Inventory'). In this questionnaire we are asking parents (or other guardians) of 16 to 30 month old children learning to speak English, who will tell us what words their children can say. If you change your mind before submitting the questionnaire, simply close your browser. If you change your mind afterwards, just let us know. You can do this without giving any explanation.;start;
 header ;Word list ;word;
 wordBtn ;Words;word;
-longText;In this section, you will be asked about words that your child UNDERSTANDS AND SAYS. Your child UNDERSTANDS AND SAYS a word on the list if they know what the word means AND they say it by themselves. Here are some examples. DO check the box if your child says the word when trying to name an object or describe something that happened. DO check the box if you think he/she has a meaning for that word. It's fine if your child can't say the whole word or says it his/her own 'special' way. If you use another word in your family (e.g. Nana for Grandma), that is ok too. Different words (e.g. 'baby' for 'doll'), local or dialect words (e.g. 'bairn' for 'baby'), baby-talk words (e.g. 'goggy' for 'dog') are OK. DON'T check the box if your child is just stringing sounds together. This is not a real word that means something. DON'T ask your child to repeat the words on the list. This doesn't count! Please do NOT include foreign words (e.g. 'aqua' for 'water'). If your child knows the word in English as well, that's OK, but not if they only say it in the other language. If your child understands or says a DIFFERENT WORD please check in the appropriate box and write down your word in the comment box at the bottom of each page. If you have any additional comments you can type them in the box at the bottom of the page.;word;firstPage
+longText;In this section, you will be asked about words that your child UNDERSTANDS AND SAYS. Your child UNDERSTANDS AND SAYS a word on the list if they know what the word means AND they say it by themselves. Here are some examples. DO check the box if your child says the word when trying to name an object or describe something that happened. DO check the box if you think he/she has a meaning for that word. It's fine if your child can't say the whole word or says it his/her own 'special' way. If you use another word in your family (e.g. Nana for Grandma), that is ok too. Different words (e.g. 'baby' for 'doll'), local or dialect words (e.g. 'bairn' for 'baby'), baby-talk words (e.g. 'goggy' for 'dog') are OK. DON'T check the box if your child is just stringing sounds together. This is not a real word that means something. DON'T ask your child to repeat the words on the list. This doesn't count! Please do NOT include foreign words (e.g. 'aqua' for 'water'). If your child knows the word in English as well, that's OK, but not if they only say it in the other language. If your child understands or says a DIFFERENT WORD please check in the appropriate box and write down your word in the comment box at the bottom of each page. If you have any additional comments, you can type them in the box at the bottom of the page too.;word;firstPage
 warning;NOTE: This questionnaire is for children of many ages and it has a long list of words. Your child may not be able to understand or say a lot of the words on the form. That is perfectly fine! ;word;firstPage
 catHeader;Sounds;word;sounds
 catHeader;Animal words;word;animals
@@ -31,32 +31,32 @@ catHeader ;Words about amounts ;word;quantifiers
 catHeader ;Helping verbs;word;helping_verbs
 catHeader ;Connecting words;word;connecting_words
 help;Please make sure you have completed all of the pages, before finishing this part. Did you mark all the words that your child understands and says?;word;connecting_words
-how_use_wordsBtn;How Children Use Words;how_use_words;
-header;How Children Use Words;how_use_words;
+how_use_wordsBtn;How children use words;how_use_words;
+header;How children use words;how_use_words;
 choiceNames;Not yet, Sometimes, Often;how_use_words;
-word_endingsBtn;Word Endings / Part 1;word_endings;
-header;Word Endings / Part 1;word_endings;
+word_endingsBtn;Word endings (part 1);word_endings;
+header;Word endings (part 1);word_endings;
 choiceNames;Not yet, Sometimes, Often;word_endings;
-word_formsBtn;Word Forms ;word_forms;
-header;Word Forms;word_forms;
+word_formsBtn;Word forms ;word_forms;
+header;Word forms;word_forms;
 longText;Following are some words children learn. Please mark any of these words that your child uses.;word_forms;firstPage
 catHeader;Nouns;word_forms;word_form_nouns
 catHeader;Verbs;word_forms;word_form_verbs
-word_endings2Btn;Word Endings / Part 2;word_endings2;
-header;Word Endings / Part 2;word_endings2;
+word_endings2Btn;Word endings (part 2);word_endings2;
+header;Word endings (part 2);word_endings2;
 longText;Young children often place the wrong endings on words. For example, a child might say 'Auntie goed home.' Mistakes like this are often a sign of progress in language. In the following lists, please mark all the mistakes of this kind you have heard your child say recently.;word_endings2;firstPage
 catHeader;Nouns;word_endings2;word_endings_nouns
 catHeader;Verbs;word_endings2;word_endings_verbs
 combineBtn;Combininig words ;combine;
 header;Combininig words ;combine;
 choiceNames;Not yet, Sometimes, Often;combine;
-help;The sentences section will open after selecting 'sometimes' or 'often'.;combine;
+help;"The longest sentences" and "Complexity" sections will open after selecting 'sometimes' or 'often'.;combine;
 header;The longest sentences ;sentences3;
 sentences3Btn;The longest sentences ;sentences3;
-sentences3Tooltip;This section opens depending on your answers in the 'Combing words' section.;sentences3;
-instr;Examples: Please list three of the longest sentences you have heard your child say recently. If you cannot remember any, please write 'N/A'.;sentences3;
+sentences3Tooltip;This section opens depending on your answer in the "Combining words" section.;sentences3;
+instr;Examples: Please list three of the longest sentences you have heard your child say recently. If you cannot remember any, you can leave the boxes empty.;sentences3;
 header;Complexity;complexity;
 complexityBtn;Complexity;complexity;
-complexityTooltip;This section opens depending on your answers in the 'Combning words' section.;complexity;
-instr;In each of the following pairs, please mark the one that sounds MOST like the way your child talks right now. Please answer all the questions. If your child is only using shorter or less complex sentences than the options provided, please click on the first of the boxes. If your child is saying sentences even longer or more complicated than the options listed, just click the last box.;complexity;
+complexityTooltip;This section opens depending on your answer in the "Combining words" section.;complexity;
+instr;In each of the following pairs or groups of three examples, please mark the one that sounds MOST like the way your child talks right now. Please answer all the questions. If your child is only using shorter or less complex sentences than the options provided, please click on the first of the boxes. If your child is saying sentences even longer or more complicated than the options listed, just click the last box.;complexity;
 warning; *Talking about something happening right now **Talking about something that has already happened;complexity;
