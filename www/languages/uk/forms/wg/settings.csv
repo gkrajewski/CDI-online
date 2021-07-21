@@ -4,7 +4,4 @@ understanding,first_signs,radio,FALSE,,,,,
 understanding,,oneCheckboxGroup,TRUE,threeColumns,"first_signs,phrases",TRUE,,
 word,,manyCheckboxGroups,TRUE,threeColumns,,TRUE,,
 gestures,gestures_first,radio,FALSE,,,TRUE
-gestures,gestures_games,radio,FALSE,,,TRUE
-gestures,gestures_objects,radio,FALSE,,,TRUE
-gestures,gestures_parent,radio,FALSE,,,TRUE
-gestures,gestures_adult,radio,FALSE,,,TRUE
+gestures,,radio,FALSE,,"gestures_first,gestures_games,gestures_objects,gestures_parent,gestures_adult",TRUE
