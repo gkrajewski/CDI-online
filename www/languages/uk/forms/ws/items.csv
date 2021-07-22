@@ -702,9 +702,9 @@ item_700;Does your child ever talk about something that's going to happen in the
 item_701;Does your child talk about objects that are not present such as asking about a missing or absent toy, referring to a pet out of view, or asking about someone not present?;how_use_words;
 item_702;Does your child understand if you ask for something that is not in the room? For example, would your child go to the bedroom to get a teddy bear when you say 'Where's the bear?';how_use_words;
 item_703;Does your child ever pick up or point to an object and name an absent person to whom the object belongs? For example, a child might point to mummy's shoe and say 'mummy'.;how_use_words;
-item_704;To talk about more than one thing, we add an 's' to many words. Examples include carS (for more than one car), shoeS , dogS , and keyS . Has your child begun to do this?;word_endings;
+item_704;To talk about more than one thing, we add an 's' to many words. Examples include carS (for more than one car), shoeS, dogS, and keyS. Has your child begun to do this?;word_endings;
 item_705;To talk about ownership, we add an 's', for example, daddy'S key, kitty'S dish, and baby'S bottle. Has your child begun to do this?;word_endings;
-item_706;To talk about activities, we sometimes add 'ing' to verbs. Examples include lookING, suckING and cryING.Has your child begun to do this?;word_endings;
+item_706;To talk about activities, we sometimes add 'ing' to verbs. Examples include lookING, suckING and cryING. Has your child begun to do this?;word_endings;
 item_707;To talk about things that happened in the past, we often add 'ed' to the verb. Examples include kissED, openED and pushED. Has your child begun to do this?;word_endings;
 item_708;children;word_forms;word_form_nouns
 item_709;men;word_forms;word_form_nouns
@@ -776,7 +776,7 @@ item_774;doed;word_endings2;word_endings_verbs
 item_775;holded;word_endings2;word_endings_verbs
 item_776;dranked;word_endings2;word_endings_verbs
 item_777;losed;word_endings2;word_endings_verbs
-item_778;Has your child begun to combine words yet, such as 'nother cracker', or 'doggie bite?';combine;
+item_778;Has your child begun to combine words yet, such as 'nother cracker', or 'doggie bite'?;combine;
 item_779;Two shoe. % Two shoes. % I have two shoes.;complexity;
 item_780;Two foot. % Two feet. % I have two feet.;complexity;
 item_781;Daddy car. % Daddy's car. % There's daddy's car.;complexity;

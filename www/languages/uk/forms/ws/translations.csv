@@ -47,10 +47,10 @@ header;Word endings (part 2);word_endings2;
 longText;Young children often place the wrong endings on words. For example, a child might say 'Auntie goed home.' Mistakes like this are often a sign of progress in language. In the following lists, please mark all the mistakes of this kind you have heard your child say recently.;word_endings2;firstPage
 catHeader;Nouns;word_endings2;word_endings_nouns
 catHeader;Verbs;word_endings2;word_endings_verbs
-combineBtn;Combininig words ;combine;
-header;Combininig words ;combine;
+combineBtn;Combining words ;combine;
+header;Combining words ;combine;
 choiceNames;Not yet, Sometimes, Often;combine;
-help;'The longest sentences' and 'Complexity' sections become available after selecting 'sometimes' or 'often'.;combine;
+help;'The longest sentences' and 'Complexity' sections become available after selecting 'Sometimes' or 'Often'.;combine;
 header;The longest sentences ;sentences3;
 sentences3Btn;The longest sentences ;sentences3;
 sentences3Tooltip;Availability of this section depends on your answer in the 'Combining words' section.;sentences3;
