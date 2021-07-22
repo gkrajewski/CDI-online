@@ -36,18 +36,14 @@ catHeader;Words about places;word;locations
 catHeader;Words about amounts;word;quantifiers
 help;Please make sure you have completed all of the pages, before finishing this part. Did you mark all the words that your child understands/says?;word;quantifiers
 gesturesBtn;Actions and gestures;gestures;
-longText;When infants are learning to communicate, they often use gestures to get a message across. For each of the gestures below, please mark the actions that you have seen your child do. ;gestures;firstPage
+longText;When infants are learning to communicate, they often use gestures to get a message across. For each of the gestures, please mark the actions that you have seen your child do. ;gestures;firstPage
 header;Actions and gestures;gestures;
 catHeader;First communicative gestures;gestures;gestures_first
 choiceNames; Not yet, Sometimes, Often;gestures;gestures_first 
 catHeader;Games and Routines;gestures;gestures_games
-choiceNames;Yes, No;gestures;gestures_games
 catHeader;Actions with objects;gestures;gestures_objects
 instr;Does your child do or TRY TO DO any of the following?;gestures;gestures_objects
-choiceNames;Yes, No;gestures;gestures_objects
 catHeader;Pretending to be a parent;gestures;gestures_parent
 instr;Here are some things that young children sometimes do with stuffed animals or dolls. Please mark the actions that you have seen your child do.;gestures;gestures_parent
-choiceNames;Yes, No;gestures;gestures_parent
 catHeader;Imitating other adult actions (Using real objects or toys);gestures;gestures_adult
 instr;Does your child do or TRY TO DO any of the following?;gestures;gestures_adult
-choiceNames;Yes, No;gestures;gestures_adult
