@@ -50,13 +50,13 @@ catHeader;Verbs;word_endings2;word_endings_verbs
 combineBtn;Combininig words ;combine;
 header;Combininig words ;combine;
 choiceNames;Not yet, Sometimes, Often;combine;
-help;'The longest sentences' and 'Complexity' sections will open after selecting 'sometimes' or 'often'.;combine;
+help;'The longest sentences' and 'Complexity' sections become available after selecting 'sometimes' or 'often'.;combine;
 header;The longest sentences ;sentences3;
 sentences3Btn;The longest sentences ;sentences3;
-sentences3Tooltip;This section opens depending on your answer in the 'Combining words' section.;sentences3;
+sentences3Tooltip;Availability of this section depends on your answer in the 'Combining words' section.;sentences3;
 instr;Examples: Please list three of the longest sentences you have heard your child say recently. If you cannot remember any, you can leave the boxes empty.;sentences3;
 header;Complexity;complexity;
 complexityBtn;Complexity;complexity;
-complexityTooltip;This section opens depending on your answer in the 'Combining words' section.;complexity;
-instr;In each of the following pairs or groups of three or four examples, please mark the one that sounds MOST like the way your child talks right now. Please answer all the questions. If your child is only using shorter or less complex sentences than the options provided, please click on the first of the boxes. If your child is saying sentences even longer or more complicated than the options listed, just click the last box.;complexity;
+complexityTooltip;Availability of this section depends on your answer in the 'Combining words' section.;complexity;
+instr;In each of the following groups of (2-4) examples, please mark the one that sounds MOST like the way your child talks right now. Please answer all the questions. If your child is only using shorter or less complex sentences than the options provided, please click on the first of the boxes. If your child is saying sentences even longer or more complicated than the options listed, just click the last box.;complexity;
 warning; *Talking about something happening right now **Talking about something that has already happened;complexity;
