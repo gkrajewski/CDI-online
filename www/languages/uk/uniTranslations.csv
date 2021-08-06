@@ -19,7 +19,7 @@ cdiNamePrefix;UK Communicative Development Inventory;;
 endTooltip;Submitting the questionnaire will be possible after confirming your answers in each section.;;
 header;Submitting your answers;end;
 endBtn;Finish;end;
-instr;If you have filled all parts of the questionnaire please click the "Confirm" button. ;end;
+instr;If you have filled all parts of the questionnaire please click the “Confirm” button. ;end;
 help;Thank you for filling the questionnaire!;postEnd;
 help;Thank you for filling the questionnaire!;postEndSW;
 instr;Thank you for filling the questionnaire! We hope that it was a valuable experience that allowed you to reflect on your child's langauge development. Your participation in the study is very important for us – it will help us to describe early language development of mono- and bilingual children who acquire English as one of their languages.;postEndSW;

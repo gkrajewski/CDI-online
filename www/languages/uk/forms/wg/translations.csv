@@ -1,6 +1,6 @@
 text_type;text;item_type;category
 cdiNameSufix;Words and Gestures;;
-longText;This is the UK Communicative Development Inventory (UK-CDI), which is an adaptation of the American questionnaire concerning speech development in young children ('MacArthur-Bates Communicative Development Inventory'). In this questionnaire we are asking parents (or other guardians) of English-speaking children aged 8 to 18 months (including up until the last day of 18th months) to tell us about the words and gestures their children understand and use. Please don't worry if your child is not yet talking. We know that at this age many children have not yet begun to talk, but often they can point, nod or wave to get their message across. If you change your mind before submitting the questionnaire, simply close your browser. If you change your mind afterwards, just let us know. You can do this without giving any explanation.;start;
+longText;This is the UK Communicative Development Inventory (UK-CDI), which is an adaptation of the American questionnaire concerning speech development in young children (“MacArthur-Bates Communicative Development Inventory”). In this questionnaire we are asking parents (or other guardians) of English-speaking children aged 8 to 18 months (including up until the last day of 18th months) to tell us about the words and gestures their children understand and use. Please don't worry if your child is not yet talking. We know that at this age many children have not yet begun to talk, but often they can point, nod or wave to get their message across. If you change your mind before submitting the questionnaire, simply close your browser. If you change your mind afterwards, just let us know. You can do this without giving any explanation.;start;
 understandingBtn;Understanding;understanding;
 header;Understanding;understanding;
 catHeader;First signs of understanding;understanding;first_signs
@@ -10,7 +10,7 @@ catHeader;Things children understand;understanding;phrases
 instr;In the list below please mark the phrases that your child seems to understand.;understanding;phrases
 wordBtn;Words;word;
 header;Word list;word;
-longText;Here is a list of words children may know. Please read all of the instructions carefully and make sure you complete all of the pages. If your child DOES NOT YET UNDERSTAND OR SAY THE WORD, leave the word unchecked. If your child UNDERSTANDS A WORD BUT DOESN'T SAY THE WORD, check U (= understands). If your child UNDERSTANDS AND ALSO SAYS the word, check U&S (= understands and says) Please only include words your child says on their own (e.g., not when you ask them to 'say train'). Give your child credit for using different words with the same meaning. If your child understands or says a DIFFERENT WORD please check the appropriate box and write down your word in the comment box at the bottom of each page. Please include: different words (e.g. 'baby' for 'doll'), local or dialect words (e.g. 'bairn' for 'baby'), family names (e.g. 'nana' for 'grandma'), baby-talk words (e.g. 'goggy' for 'dog'). Please do NOT  include foreign words (e.g. 'aqua' for 'water'). If you have any additional comments, you can type them in the box at the bottom of each page too.;word;firstPage
+longText;Here is a list of words children may know. Please read all of the instructions carefully and make sure you complete all of the pages. If your child DOES NOT YET UNDERSTAND OR SAY THE WORD, leave the word unchecked. If your child UNDERSTANDS A WORD BUT DOESN'T SAY THE WORD, check U (= understands). If your child UNDERSTANDS AND ALSO SAYS the word, check U&S (= understands and says) Please only include words your child says on their own (e.g., not when you ask them to “say train”). Give your child credit for using different words with the same meaning. If your child understands or says a DIFFERENT WORD please check the appropriate box and write down your word in the comment box at the bottom of each page. Please include: different words (e.g. ‘baby’ for ‘doll’), local or dialect words (e.g. ‘bairn’ for ‘baby’), family names (e.g. ‘nana’ for ‘grandma’), baby-talk words (e.g. ‘goggy’ for ‘dog’). Please do NOT  include foreign words (e.g. ‘aqua’ for ‘water’). If you have any additional comments, you can type them in the box at the bottom of each page too.;word;firstPage
 warning;NOTE: It is a large inventory of words used by many different children across a wide age range, so do not worry if your child knows only a few of them at the moment!;word;firstPage
 instr;U = only understands U&S = understands and says ;word;allInput
 choiceNames;U, U&S ;word;allInput
@@ -25,7 +25,7 @@ catHeader;Furniture words;word;furniture_rooms
 catHeader;Words for small household items;word;household
 catHeader;Outside words;word;outside
 catHeader;Words for people;word;people
-warning;Please mark the word even if your child only says the name of the person (e.g. 'Adam' for 'baby'). Please also put names of other people your child says and write down who they are in the comment box.;word;people
+warning;Please mark the word even if your child only says the name of the person (e.g. ‘Adam’ for ‘baby’). Please also put names of other people your child says and write down who they are in the comment box.;word;people
 catHeader;Words for games and routines;word;games_routines
 catHeader;Action words;word;action_words
 catHeader;Describing words;word;descriptive_words
@@ -45,5 +45,5 @@ catHeader;Actions with objects;gestures;gestures_objects
 instr;Does your child do or TRY TO DO any of the following?;gestures;gestures_objects
 catHeader;Pretending to be a parent;gestures;gestures_parent
 instr;Here are some things that young children sometimes do with stuffed animals or dolls. Please mark the actions that you have seen your child do.;gestures;gestures_parent
-catHeader;Imitating other adult actions (Using real objects or toys);gestures;gestures_adult
+catHeader;Imitating other adult actions (using real objects or toys);gestures;gestures_adult
 instr;Does your child do or TRY TO DO any of the following?;gestures;gestures_adult
