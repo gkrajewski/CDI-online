@@ -1,5 +1,5 @@
 text_type;text;item_type;category
-warning;WAŻNE: Zakończenie inwentarza będzie możliwe dopiero po zatwierdzeniu wszystkich części. W każdej chwili można przerwać wypełnianie, co nie spowoduje utraty dotychczasowych odpowiedzi. Żeby wrócić do wypełniania (np. na innym urządzeniu, ale inwentarz nie może być otwarty na kilku urządzeniach na raz), należy użyć dokładnie tego samego linku.;start;
+warning;WAŻNE: Zakończenie i przesłanie odpowiedzi będzie możliwe dopiero po zatwierdzeniu wszystkich części. W każdej chwili można przerwać wypełnianie, co nie spowoduje utraty dotychczasowych odpowiedzi. Żeby wrócić do wypełniania (np. na innym urządzeniu), trzeba użyć dokładnie tego samego linku. Proszę jednak pamiętać, że inwentarz nie może być otwarty na kilku urządzeniach na raz.;start;
 help;UWAGA: Po zatwierdzeniu tej części nie będzie już możliwości wrócenia do niej.;start;
 backBtn;Cofnij;;
 nextBtn;Dalej;;
