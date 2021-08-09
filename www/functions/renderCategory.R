@@ -189,7 +189,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
         choices = strsplit(staticList$txt[staticList$txt$text_type == "genders", "text"], ",")[[1]]
       )
       inputObj[[3]] <- br()
-      if (staticList$lang == "uk"){
+      if (staticList$lang == "en-gb"){
         dateLanguage = "en"
       } else {
         dateLanguage = staticList$lang
