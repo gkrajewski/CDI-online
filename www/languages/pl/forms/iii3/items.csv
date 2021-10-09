@@ -76,13 +76,11 @@ item_74;"Czy Twoje dziecko używa słowa ""jeśli"" (""jeżeli""), żeby połąc
 item_75;"Czy Twoje dziecko używa słowa ""bo"" (""ponieważ""), żeby połączyć dwa zdania, np. ""Nie wyjdziemy, bo pada deszcz""?";Polish;CDI3;yesNo;wprost;;;;;
 item_76;"Czy Twoje dziecko używa form rzeczowników odpowiadających na pytania ""kim? czym?"", zakończonych na ""-ami"", np. ""lalkami"", ""samochodami"", ""płatkami""?";Polish;CDI3;yesNo;wprost;;;;;
 item_77;"Czy Twoje dziecko używa form rzeczowników odpowiadających na pytania ""o/na/w kim? czym?"", zakończonych na ""-ach"", np. ""o zabawkach"", ""na drzewach""?";Polish;CDI3;yesNo;wprost;;;;;
-item_78;"Czy Twoje dziecko używa słowa ""więc"", żeby połączyć dwa zdania, np. ""Jest ładna pogoda, więc pójdziemy na spacer""?";Polish;CDI3;yesNo;wprost;;;;;49
-item_79;"Czy Twoje dziecko używa form rzeczowników odpowiadających na pytania ""o/na/w kim? czym?"", zakończonych na ""-u"", np. ""w kubku"", ""na łóżku""?";Polish;CDI3;yesNo;wprost;;;;;50
-item_80;"Czy Twoje dziecko używa słowa ""ale"", żeby połączyć dwa zdania, np. ""Szukam misia, ale nie mogę go znaleźć""?";Polish;CDI3;yesNo;wprost;;;;;51
-item_81;"Czy Twoje dziecko używa form czasowników zakończonych na ""-ąc"", np. ""wracając"", ""rozmawiając"", ""jadąc""?";Polish;CDI3;yesNo;wprost;;;;;52
-item_82;"Czy Twoje dziecko używa słowa ""i"", żeby połączyć dwa zdania, np. ""Jem kanapkę i piję soczek""?";Polish;CDI3;yesNo;wprost;;;;;53
-item_83;"Czy Twoje dziecko używa form rzeczowników odpowiadających na pytania ""kim? czym?"", zakończonych na ""-em"", np. ""panem"", ""serem""?";Polish;CDI3;yesNo;wprost;;;;;54
-item_84;"Czy Twoje dziecko używa słowa ""żeby"" (""aby"") w zdaniach takich jak ""Myję nogi, żeby były czyste""?";Polish;CDI3;yesNo;wprost;;;;;55
-item_85;"Czy Twoje dziecko używa słowa ""jak"" i/lub ""kiedy"", by łączyć dwa zdania, np. ""Jak wrócę do domu, to zjem obiad""?";Polish;CDI3;yesNo;wprost;;;;;56
-;;;;;;;;;;57
-;;;;;;;;;;58
+item_78;"Czy Twoje dziecko używa słowa ""więc"", żeby połączyć dwa zdania, np. ""Jest ładna pogoda, więc pójdziemy na spacer""?";Polish;CDI3;yesNo;wprost;;;;;
+item_79;"Czy Twoje dziecko używa form rzeczowników odpowiadających na pytania ""o/na/w kim? czym?"", zakończonych na ""-u"", np. ""w kubku"", ""na łóżku""?";Polish;CDI3;yesNo;wprost;;;;;
+item_80;"Czy Twoje dziecko używa słowa ""ale"", żeby połączyć dwa zdania, np. ""Szukam misia, ale nie mogę go znaleźć""?";Polish;CDI3;yesNo;wprost;;;;;
+item_81;"Czy Twoje dziecko używa form czasowników zakończonych na ""-ąc"", np. ""wracając"", ""rozmawiając"", ""jadąc""?";Polish;CDI3;yesNo;wprost;;;;;
+item_82;"Czy Twoje dziecko używa słowa ""i"", żeby połączyć dwa zdania, np. ""Jem kanapkę i piję soczek""?";Polish;CDI3;yesNo;wprost;;;;;
+item_83;"Czy Twoje dziecko używa form rzeczowników odpowiadających na pytania ""kim? czym?"", zakończonych na ""-em"", np. ""panem"", ""serem""?";Polish;CDI3;yesNo;wprost;;;;;
+item_84;"Czy Twoje dziecko używa słowa ""żeby"" (""aby"") w zdaniach takich jak ""Myję nogi, żeby były czyste""?";Polish;CDI3;yesNo;wprost;;;;;
+item_85;"Czy Twoje dziecko używa słowa ""jak"" i/lub ""kiedy"", by łączyć dwa zdania, np. ""Jak wrócę do domu, to zjem obiad""?";Polish;CDI3;yesNo;wprost;;;;;
