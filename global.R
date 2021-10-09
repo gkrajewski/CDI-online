@@ -49,7 +49,7 @@ source(paste0(FUNCTIONS_PATH,"/startTest.R"))
 source(paste0(FUNCTIONS_PATH,"/createProgressBar.R"))
 
 #Load file with secret variables
-readRenviron("Renviron")
+readRenviron(".Renviron")
 
 #Set mail things
 MAIL_USERNAME <- "cdishiny@gmail.com"
