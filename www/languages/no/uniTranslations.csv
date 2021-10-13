@@ -1,5 +1,5 @@
 text_type;text;item_type;category
-longText;"FORELDRERAPPORT FOR KOMMUNIKATIV UTVIKLING: ORD OG GESTER. Dette skjemaet er en norsk tilpasning av den ""MacArthur-Bates Communicative Development Inventory: Word and gestures"". Denne metoden er basert på foreldrenes (eller andre omsorgspersoners) kunnskap om språkutvikling av barn og gjelder forståelse av tale, tale og kommunikasjon ved hjelp av bevegelser. Mye av inventaret består av spørsmål om barns tidligste vokabular. Foreldre (eller andre omsorgspersoner) skal markere ordene som barnet forstår, så vel som de som brukes i tale. Barnet skal ikke bli avhørt eller bedt om å gjenta enkeltord, og det skal heller ikke ""lære ord"". Det er nok for foreldrene (eller andre foresatte) å svare på spørsmålene i henhold til deres kunnskap om barnet.";start;
+longText;"FORELDRERAPPORT FOR KOMMUNIKATIV UTVIKLING: ORD OG GESTER. Dette skjemaet er en norsk tilpasning av den “MacArthur-Bates Communicative Development Inventory: Word and gestures”. Denne metoden er basert på foreldrenes (eller andre omsorgspersoners) kunnskap om språkutvikling av barn og gjelder forståelse av tale, tale og kommunikasjon ved hjelp av bevegelser. Mye av inventaret består av spørsmål om barns tidligste vokabular. Foreldre (eller andre omsorgspersoner) skal markere ordene som barnet forstår, så vel som de som brukes i tale. Barnet skal ikke bli avhørt eller bedt om å gjenta enkeltord, og det skal heller ikke “lære ord”. Det er nok for foreldrene (eller andre foresatte) å svare på spørsmålene i henhold til deres kunnskap om barnet.";start;
 warning;VIKTIG: Det er bare mulig å avslutte utfyllingen av spørreskjemaet etter at alle delene er godkjent. Du kan når som helst ta en pause i utfyllingen og du vil fremdeles beholde svarene selv om du tar en pause. For å gå tilbake til skjemaet (f.eks. på en annen enhet), bruk nøyaktig samme lenke. Du kan ikke ha skjemaet oppe på flere enheter samtidig.;start;
 help;MERK: Etter å ha bekreftet første del, er det ikke mulig å gå tilbake til den igjen.;start;
 backBtn;Gå tilbake;;
@@ -13,15 +13,15 @@ fillerLabel;Hva er din relasjon til barnet?;;
 fillers;mor / forelder 1, far / forelder 2, bestemor, bestefar, barnepasser, lærer, annet;;
 noGender;Velg kjønn for å bekrefte.;;
 badDate;Feil fødselsdato;;
-genders;Jente, Gutt, Annen;;
+genders;jente, gutt, annen;;
 commentLabel;Andre kommentarer;;
 cdiNamePrefix;Foreldrerapport for Kommunikativ Utvikling;;
 endTooltip;Det vil være mulig å fullføre varelageret når alle delene er godkjent.;;
-sentences3Tooltip;"Avsnittet ""Setninger"" blir aktiv, avhengig av svaret i ""Kombinasjon av ord"" -delen.";;
+sentences3Tooltip;"Avsnittet ""Setninger"" blir aktiv, avhengig av svaret i “Kombinasjon av ord” -delen.";;
 header;Avslutt;end;
 endBtn;Avslutt;end;
-instr;"Selv om du har godkjent alle delene av skjemaet kan du fremdeles redigere svarene dine ved å gå tilbake i skjemaet. For å avslutte utfyllingen av skjemaet, trykk ""Bekreft"".";end;
-help;"MERKNAD: Når du har trykket på ""Bekreft"", kan du ikke lenger redigere svaret ditt.";end;
+instr;"Selv om du har godkjent alle delene av skjemaet kan du fremdeles redigere svarene dine ved å gå tilbake i skjemaet. For å avslutte utfyllingen av skjemaet, trykk “Bekreft”.";end;
+help;"MERKNAD: Når du har trykket på “Bekreft”, kan du ikke lenger redigere svaret ditt.";end;
 help;Takk for at du fylte ut!;postEnd;
 help;Takk for at du fylte ut!;postEndSW;
 instr;Tusen takk for tid og krefter for å fylle ut dette spørreskjemaet! Vi håper at tiden for refleksjon over ditt barns språklige utvikling var verdifull! Ditt engasjement i forskningen er svært viktig - det vil hjelpe oss med å beskrive i detalj den tidlige språkutviklingen til enspråklige og tospråklige barn.;postEnd;

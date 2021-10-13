@@ -12,8 +12,8 @@ header;Begynner å snakke;starting_to_talk;
 choiceNames;Ikke ennå,Noen ganger,Ofte;starting_to_talk;
 wordBtn;Ord;word;
 header;Sjekkliste over ordforrådet;word;
-longText;"Dette skjemaet inneholder lister over typiske ord i et barns ordforråd. Kryss av i den første kolonnen (forstår) dersom barnet ditt forstår ordet, men ennå ikke sier det. Ord som barnet både forstår og bruker, krysser du av i den andre kolonnen (forstår og sier). Om barnet bruker en annen uttale av et ord (for eksempel at det sier ""epe"" istedenfor ""eple""), krysser du av ordet likevel.";word;firstPage
-warning;Husk at dette er en ”katalog” over ord som mange forskjellige barn bruker, så ikke bli bekymret dersom barnet ditt kun bruker noen få av disse akkurat nå.;word;firstPage
+longText;"Dette skjemaet inneholder lister over typiske ord i et barns ordforråd. Kryss av i den første kolonnen (forstår) dersom barnet ditt forstår ordet, men ennå ikke sier det. Ord som barnet både forstår og bruker, krysser du av i den andre kolonnen (forstår og sier). Om barnet bruker en annen uttale av et ord (for eksempel at det sier ‘epe’ istedenfor ‘eple’), krysser du av ordet likevel.";word;firstPage
+warning;Husk at dette er en “katalog” over ord som mange forskjellige barn bruker, så ikke bli bekymret dersom barnet ditt kun bruker noen få av disse akkurat nå.;word;firstPage
 instr;F = bare forstår, F&S = forstår og sier;word;allInput
 choiceNames;F,F&S;word;allInput
 catHeader;Lydeffekter og dyrelyder;word;sounds
@@ -48,6 +48,6 @@ instr;Gjør barnet ditt noe av det følgende, eller prøver han/hun å gjøre de
 catHeader;Handling med objekter;gestures;gestures_objects
 instr;Gjør barnet ditt noe av det følgende, eller prøver han/hun å gjøre det?;gestures;gestures_objects
 catHeader;Å leke at man er mor eller far;gestures;gestures_parent
-instr;Her er ting som små barn av og til gjør med kosedyr eller dukker. Kryss av for de handlingene du har sett ditt barn gjøre.;gestures;gestures_parent
+instr;Her er slike ting som små barn av og til gjør med kosedyr eller dukker. Kryss av for de handlingene du har sett ditt barn gjøre.;gestures;gestures_parent
 catHeader;Herme etter det de voksne gjør;gestures;gestures_adult
 instr;Gjør barnet ditt noe av det følgende, eller prøver han/hun å gjøre det?;gestures;gestures_adult

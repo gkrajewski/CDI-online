@@ -385,7 +385,7 @@ item_383;søster;word;people;other;other;sister;
 item_384;tante;word;people;other;other;aunt;
 item_385;venn;word;people;other;other;;
 item_386;venninne;word;people;other;other;;
-item_387;„kommer og tar deg” lek;word;games_routines;other;other;;
+item_387;“kommer og tar deg” lek;word;games_routines;other;other;;
 item_388;bade;word;games_routines;other;other;bath;
 item_389;frokost;word;games_routines;other;other;breakfast;
 item_390;gå på do;word;games_routines;other;other;;
@@ -731,11 +731,11 @@ item_729;og;word;connecting_words;function_words;function_words;;
 item_730;så;word;connecting_words;function_words;function_words;;
 item_731;som;word;connecting_words;function_words;function_words;;
 item_732;Snakker barnet ditt om ting som har skjedd i fortiden eller om personer som ikke er tilstede? Et eksempel kan være at barnet begynner å snakke om en klovn eller hester som er relatert til forrige uke da dere var på sirkus.;how_use_words;;;;;
-item_733;Snakker barnet ditt noen gang om ting som skal skje i fremtiden? F.eks. ved å si ”skli” før dere går til lekeplassen.;how_use_words;;;;;
+item_733;Snakker barnet ditt noen gang om ting som skal skje i fremtiden? F.eks. ved å si ‘skli’ før dere går til lekeplassen.;how_use_words;;;;;
 item_734;"Snakker barnet ditt om ting/folk som ikke er til stede eller synlige? F.eks. at det vil ha leker som er et annet sted; eller spør etter et kjæledyr eller en person som er ute.";how_use_words;;;;;
 item_735;Forstår barnet ditt dersom du spør etter ting som ikke er i rommet? F.eks. ved å gå til eller hente en leke fra et annet rom.;how_use_words;;;;;
-item_736;Tar barnet ditt opp eller peker på ting som tilhører en person som ikke er tilstede? F.eks. ved å peke på mamma sine sko og si: ”mamma”.;how_use_words;;;;;
-item_737;"Barn bruker ofte en enkel form av verbet i begynnelsen. De sier f.eks. sove; spise osv. selv om handlingen foregår nå. Etter hvert legger de til en r og sier sover; spiser osv. slik som vi voksne gjør.  Gjør barnet ditt dette?";word_endings;;;;;
+item_736;Tar barnet ditt opp eller peker på ting som tilhører en person som ikke er tilstede? F.eks. ved å peke på mamma sine sko og si: “mamma”.;how_use_words;;;;;
+item_737;"Barn bruker ofte en enkel form av verbet i begynnelsen. De sier f.eks. sove; spise osv. selv om handlingen foregår nå. Etter hvert legger de til en r og sier sover; spiser osv. slik som vi voksne gjør. Gjør barnet ditt dette?";word_endings;;;;;
 item_738;"Når vi snakker om flere enn en ting; legger vi til -er (endelsen kan variere avhengig av dialekt) på mange ord. Vi sier biler; dukker og hunder. Gjør barnet ditt dette?";word_endings;;;;;
 item_739;"Når vi snakker om bestemte ting; putter vi på en endelse for å markere dette. Eksempler er huset; bilen og jenta (i motsetning til hus; bil; jente). Har ditt barn begynt med dette?";word_endings;;;;;
 item_740;"Den formen av verbet vi voksne bruker etter har (eller er); f.eks. har spist; bruker noen barn uten noe foran. De sier bare spist; kjøpt; løpt osv. Gjør barnet ditt dette?";word_endings;;;;;
@@ -824,7 +824,7 @@ item_822;sprekte;word_endings2;word_endings_verbs;;;;
 item_823;synget;word_endings2;word_endings_verbs;;;;
 item_824;syngte;word_endings2;word_endings_verbs;;;;
 item_825;tadde;word_endings2;word_endings_verbs;;;;
-item_826;Har barnet ditt begynt å sette sammen ord slik som ”mer kake” eller pappa Lars” (pappa til Lars)?;combine;;;;;
+item_826;Har barnet ditt begynt å sette sammen ord slik som “mer kake” eller “pappa Lars” (pappa til Lars)?;combine;;;;;
 item_827;To bil % To biler;complexity;;;;;morphology
 item_828;Dukke sove (skjer nå) % Dukken sover;complexity;;;;;morphology
 item_829;Se katt % Se katten;complexity;;;;;morphology
