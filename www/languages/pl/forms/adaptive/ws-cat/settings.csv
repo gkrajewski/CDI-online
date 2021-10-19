@@ -12,7 +12,7 @@ thanks;Dziękujemy za wypełnienie inwentarza!;
 fillerQuestion;Kim Państwo są dla dziecka?;
 fillers;mama,tata,babcia,dziadek,niania,nauczyciel(-ka),inna odpowiedź (proszę wpisać):;
 noFiller;Proszę wybrać osobę, która wypełnia kwestionariusz;
-continueBtn;dalej;
+continueBtn;Dalej;
 MirtMethod;ML;
 MirtCriteria;MI;
 minItemNr;1;
