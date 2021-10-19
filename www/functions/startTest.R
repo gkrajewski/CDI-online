@@ -139,13 +139,19 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   values$designFile <- designFile
   values$subject <- subject
   values$groupsToSave <- c()
+  
+  #Render question and optionally header
+  header <- paste0(isolate(values$subgroup), "Header")
   output$main <- renderUI({
-    radioButtons(
-      "question",
-      label = paste0(values$itemsGroup$question[values$nextItem], ' "', values$itemsGroup$item[values$nextItem], '"?'),
-      selected = character(0),
-      choiceNames = strsplit(txt[txt$text_type == "choiceNames", "text"], ",")[[1]],
-      choiceValues = c(0,1)
+    list(
+      if (header %in% txt$text_type) h3(txt[txt$text_type == header, "text"]),
+      radioButtons(
+        "question",
+        label = paste0(values$itemsGroup$question[values$nextItem], ' "', values$itemsGroup$item[values$nextItem], '"?'),
+        selected = character(0),
+        choiceNames = strsplit(txt[txt$text_type == "choiceNames", "text"], ",")[[1]],
+        choiceValues = c(0,1)
+      )
     )
   })
 
@@ -407,14 +413,18 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
             actionButton(btnID, label = txt[txt$text_type == "continueBtn", "text"], class = "btn-primary")
           })
           
+          header <- paste0(isolate(values$subgroup), "Header")
           observeEvent(input[[btnID]], {
             output$main <- renderUI({
-              radioButtons(
-                "question",
-                label = paste0(values$itemsGroup$question[values$nextItem], ' "', values$itemsGroup$item[values$nextItem], '"?'),
-                selected = character(0),
-                choiceNames = strsplit(txt[txt$text_type == "choiceNames", "text"], ",")[[1]],
-                choiceValues = c(0,1)
+              list(
+                if (header %in% txt$text_type) h3(txt[txt$text_type == header, "text"]),
+                radioButtons(
+                  "question",
+                  label = paste0(values$itemsGroup$question[values$nextItem], ' "', values$itemsGroup$item[values$nextItem], '"?'),
+                  selected = character(0),
+                  choiceNames = strsplit(txt[txt$text_type == "choiceNames", "text"], ",")[[1]],
+                  choiceValues = c(0,1)
+                )
               )
             })
             

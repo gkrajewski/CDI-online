@@ -19,10 +19,13 @@ gestyBtn;Koniec części drugiej, proszę przejść do części trzeciej (ostatn
 continueBtn;Dalej;
 rozumienieMirtMethod;ML;
 rozumienieMirtCriteria;MI;
+rozumienieHeader;Rozumienie słów;
 gestyMirtMethod;ML;
 gestyMirtCriteria;MI;
+gestyHeader;Gesty;
 mowaMirtMethod;ML;
 mowaMirtCriteria;MI;
+mowaHeader;Produkcja słów;
 rozumienieMirtSeTheta;0.05;
 mowaMirtSeTheta;0.05;
 gestyMirtSeTheta;0.5;
