@@ -1,12 +1,12 @@
 runStatic <- function(input, output, session, lang, form, idx, run){
   
   urlString <- paste(lang, form, idx, run, sep = "-")
-  langPath <- paste0(LANGUAGES_PATH, "/", lang)
+  langPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/static")
   setwd(langPath)
   uniTransl <- read.csv("uniTranslations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
   setwd(INIT_PATH)
   
-  formPath <- paste0(langPath, "/forms/", form)
+  formPath <- paste0(langPath, "/", form)
   
   #Check if user is connected with StarWords app
   if (nchar(idx) == 21){
@@ -16,6 +16,7 @@ runStatic <- function(input, output, session, lang, form, idx, run){
   }
   
   #Prepare items, translations, settings and norms
+  print(formPath)
   setwd(formPath)
   items <- read.csv("items.csv", encoding = "UTF-8", sep = ";", strip.white = T)[c("item_id", "definition", "type", "category")]
   transl <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T) 
@@ -80,7 +81,7 @@ runStatic <- function(input, output, session, lang, form, idx, run){
     answers <- data.frame(type = "none", category = "none", answer_type = "none", answer = as.character(startDate))
   }
   
-  logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " fromSW=", fromSW))
+  loginfo(paste0(urlString, " fromSW=", fromSW))
   
   #Prepare menu buttons (as many as types, except postEnd and postEndSW type)
   menuButtons <- c(1:(length(setdiff(unique(types), c("postEnd", "postEndSW")))))
@@ -294,7 +295,7 @@ runStatic <- function(input, output, session, lang, form, idx, run){
       #Render end or postend type
       if(allEnabledDone){
         
-        logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " form completed. Saving..."))
+        loginfo(paste0(urlString, " form completed. Saving..."))
         if (!reactList$userProgress[reactList$userProgress$type == "end", "done"]){
           #End type
           reactList$userProgress[reactList$userProgress$type == "end", "disabled"] <- FALSE
@@ -329,20 +330,13 @@ runStatic <- function(input, output, session, lang, form, idx, run){
               recurrentCallSW(idx, form, lang, done = "true", score)
             }
             write.csv(reactList$answers, answersFile, row.names = F)
-            logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " csv file with asnwers saved"))
+            logerror(paste0(urlString, " csv file with asnwers saved"))
             
             endDate <- Sys.time()
             tableName <- paste0("form_", form, "_", lang)
             answers <- prepareOutputStatic(reactList$answers, idx, lang, form, run, endDate, STRING_LIMIT)
-            dbConnection <- tryCatch( 
-              expr = {
-                storiesDb <- dbConnect(RMariaDB::MariaDB(), user=Sys.getenv("DB_USERNAME"), password=Sys.getenv("DB_PASSWORD"), dbname=Sys.getenv("DB_NAME"), 
-                                       host=Sys.getenv("DB_HOST"), port=Sys.getenv("DB_PORT"))
-                logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, 
-                                " connected with database. Tables: ", paste(dbListTables(storiesDb), collapse=" "), " tableName=", tableName))
-                
-                if (!(tableName %in% dbListTables(storiesDb))) {
-                  query = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
+            
+            query = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
                             `id` VARCHAR(99) NOT NULL,
                             `lang` VARCHAR(45) NULL,
                             `form` VARCHAR(45) NULL,
@@ -356,45 +350,32 @@ runStatic <- function(input, output, session, lang, form, idx, run){
                             `answer_id` VARCHAR(45) NULL,
                             `answer1` VARCHAR(", toString(STRING_LIMIT), ") CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
                             `answer2` VARCHAR(100) NULL);")
-                  rsInsert <- dbSendQuery(storiesDb, query)
-                  dbClearResult(rsInsert)
-                }
-                
-                dbWriteTable(storiesDb, value = answers, row.names = FALSE, name = tableName, append = TRUE )
-                dbDisconnect(storiesDb)
-                logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " saved in database"))
-                
-              },
-              error = function(e) {
-                logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " ", e))
-              }
-            )
             
-            emailSender <- tryCatch(
-              
-              expr = {
-                
-                email <- envelope() %>%
-                  from(MAIL_USERNAME) %>%
-                  to(EMAILS_RECIPIENTS) %>%
-                  subject(paste0("[SHINYDATA] ", urlString)) %>%
-                  text("Inventory completed.") %>%
-                  attachment(c(answersFile))
-                
-                smtp <- emayili::server(host = "smtp.gmail.com",
-                                        port = 465,
-                                        username = MAIL_USERNAME,
-                                        password = Sys.getenv("GMAIL_PASSWORD"))
-                
-                smtp(email, verbose = TRUE)
-                
-                logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run, " email sent"))
-              },
-              error = function(e) {
-                logerror(paste0("id=", idx, " form=", form, " lang=", lang, " run=", run))
-                logerror(e)
-              }
-            )
+            sendDatabase <- sendDatabase(username=Sys.getenv("DB_USERNAME"), 
+                                         password=Sys.getenv("DB_PASSWORD"),
+                                         dbname=Sys.getenv("DB_NAME"), 
+                                         host=Sys.getenv("DB_HOST"), 
+                                         port=Sys.getenv("DB_PORT"), 
+                                         id=urlString, 
+                                         tableName=tableName, 
+                                         tableCreate=query, 
+                                         tableInput=answers)
+            
+            if (txt[txt$text_type == "email", "text"]=="yes") {
+              loginfo(paste0(urlString, " sending email"))
+              sendMail(subjectText=paste0("[SHINYDATA] ", urlString),
+                       txt="Inventory completed.",
+                       id=urlString,
+                       host="smtp.gmail.com",
+                       port=465,
+                       username=MAIL_USERNAME,
+                       password=Sys.getenv("GMAIL_PASSWORD"),
+                       recipients=EMAILS_RECIPIENTS,
+                       attach=answersFile
+              )
+            } else {
+              loginfo(paste0(urlString, " sending emails disabled"))
+            }
             
           }
           reactList(renderType(input, output, postEnd, reactList, staticList))

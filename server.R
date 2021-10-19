@@ -23,17 +23,17 @@ server <- function(input, output, session) {
 
         #Get available forms for given language
         langPath <- paste0(LANGUAGES_PATH, "/", lang)
-        availableForms <- list.files(path = paste0(langPath, "/forms"), recursive = FALSE)
+        availableStaticForms <- list.files(path = paste0(langPath, "/forms/static"), recursive = FALSE)
+        availableAdaptiveForms <- list.files(path = paste0(langPath, "/forms/adaptive"), recursive = FALSE)
         
         #Get language universal translations
         setwd(langPath)
-        uniTransl <- read.csv("uniTranslations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
+        settings <- read.csv("preSettings.csv", encoding = "UTF-8", sep = ";", strip.white = T)
         setwd(INIT_PATH)
         
-        if (is.element(form, availableForms)){
+        if (is.element(form, c(availableStaticForms, availableAdaptiveForms))){
           
-          #Specify path to form and set inventory string
-          formPath <- paste0(langPath, "/forms/", form)
+          #Set inventory string
           urlString <- paste(lang, form, idx, run, sep = "-")
           
           if (!is.element(urlString, BUSY_URLS())){
@@ -82,10 +82,13 @@ server <- function(input, output, session) {
                        session$clientData$url_port,
                        session$clientData$url_pathname,
                        session$clientData$url_search)
-          output$sidebar <- renderText({paste0(c(uniTransl[uniTransl$text_type == "badForm", "text"], 
-                                                 availableForms,
+          output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badForm", "text"], 
+                                                 " type=static: ",
+                                                 availableStaticForms, 
+                                                 ", type=adaptive: ",
+                                                 availableAdaptiveForms,
                                                  "<br><br>", 
-                                                 uniTransl[uniTransl$text_type == "errorInfo", "text"],
+                                                 settings[settings$text_type == "errorInfo", "text"],
                                                  "<br><br>link:",
                                                  url), collapse = " ")})
 

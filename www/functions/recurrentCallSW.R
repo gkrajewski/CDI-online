@@ -13,28 +13,14 @@ recurrentCallSW <- function(idx, form, lang, done = "false", score = "false", i 
     print("ERROR: Cannot make successfull call")
     errorMsg <- listReturned[[2]]
     
-    emailSender <- tryCatch(
-      
-      expr = {
-        
-        email <- envelope() %>%
-          from(MAIL_USERNAME) %>%
-          to(EMAILS_RECIPIENTS) %>%
-          subject("[SHINYERROR] CANNOT MAKE CALL") %>%
-          text(paste0("done: ", done, "\nform: ", form, "\nid: ", idx, "\nscore: ", score, "\n\n", errorMsg)) 
-        
-        smtp <- emayili::server(host = "smtp.gmail.com",
-                                port = 465,
-                                username = MAIL_USERNAME,
-                                password = Sys.getenv("GMAIL_PASSWORD"))
-        
-        smtp(email, verbose = TRUE)
-        
-      },
-      error = function(e) {
-        print("EMAIL SENDING FAILED")
-        print(e)
-      }
+    sendMail(subjectText="[SHINYERROR] CANNOT MAKE CALL",
+             txt=paste0("done: ", done, "\nform: ", form, "\nid: ", idx, "\nscore: ", score, "\n\n", errorMsg),
+             id=paste0("id=", idx, " form=", form, " lang=", lang),
+             host="smtp.gmail.com",
+             port=465,
+             username=MAIL_USERNAME,
+             password=Sys.getenv("GMAIL_PASSWORD"),
+             recipients=EMAILS_RECIPIENTS
     )
     
   }

@@ -1,14 +1,12 @@
 runAdaptive <- function(input, output, session, lang, form, idx, run){
 
   urlString <- paste(lang, form, idx, run, sep = "-")
-  #Load translations
-  testPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/", form)
+  #Load settings
+  testPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/adaptive/", form)
   print(testPath)
   setwd(testPath)
-  txt <- read.csv(paste0("translations.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
-  print("step2")
+  txt <- read.csv(paste0("settings.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
   setwd(INIT_PATH)
-  print("step3")
   
   #Render CDI name
   output$cdiNamePrefix <- renderText({txt[txt$text_type == "cdiNamePrefix", "text"]})
@@ -81,7 +79,8 @@ runAdaptive <- function(input, output, session, lang, form, idx, run){
         subject$gender <- input$gender
         subject$filler <- input$filler
         subject$fillerTxt <- input$fillerTxt
-        startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt)
+        loginfo(paste0(urlString, " starting test from the beginning."))
+        startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString)
       }
     })
     
@@ -90,7 +89,8 @@ runAdaptive <- function(input, output, session, lang, form, idx, run){
     if (!is.na(subject[["testEnd"]])){
       output$sidebar <- renderUI({div(class = "help-block", txt[txt$text_type == "thanks", "text"])}) #End of all testing
     } else {
-      startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt) #Start test
+      loginfo(paste0(urlString, " continuing with the started test."))
+      startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString) #Start test
     }
     
   }

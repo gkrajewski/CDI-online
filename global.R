@@ -47,9 +47,11 @@ source(paste0(FUNCTIONS_PATH,"/runStatic.R"))
 source(paste0(FUNCTIONS_PATH,"/runAdaptive.R"))
 source(paste0(FUNCTIONS_PATH,"/startTest.R"))
 source(paste0(FUNCTIONS_PATH,"/createProgressBar.R"))
+source(paste0(FUNCTIONS_PATH,"/sendMail.R"))
+source(paste0(FUNCTIONS_PATH,"/sendDatabase.R"))
 
 #Load file with secret variables
-readRenviron(".Renviron")
+readRenviron("Renviron")
 
 #Set mail things
 MAIL_USERNAME <- "cdishiny@gmail.com"
