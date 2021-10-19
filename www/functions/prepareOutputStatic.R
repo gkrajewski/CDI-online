@@ -1,4 +1,4 @@
-prepareOutput <- function(answers, id, lang, form, run, endDate, stringLimit){
+prepareOutputStatic <- function(answers, id, lang, form, run, endDate, stringLimit){
   
   startDate = answers[answers$type=="none", "answer"]
   startDate = as.POSIXct(startDate)

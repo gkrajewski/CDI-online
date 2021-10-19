@@ -10,6 +10,8 @@ library(RMariaDB) #connecting with MySQL database
 library(dplyr) #preparing output file
 library(tidyr) #preparing output file
 library(logging)
+library(mirtCAT)
+library(tidyverse) #add_row method
 options(stringsAsFactors = FALSE)
 
 #Specify paths
@@ -21,6 +23,8 @@ INIT_PATH <- getwd()
 #Create dirs to saving answers and users' progress
 if(!dir.exists(file.path(INIT_PATH, "answers"))) dir.create(file.path(INIT_PATH, "answers"))
 if(!dir.exists(file.path(INIT_PATH, "usersProgress"))) dir.create(file.path(INIT_PATH, "usersProgress"))
+if (!dir.exists(file.path(INIT_PATH, "designs"))) dir.create(file.path(INIT_PATH, "designs"))
+if (!dir.exists(file.path(INIT_PATH, "subjects"))) dir.create(file.path(INIT_PATH, "subjects"))
 
 #Load form-universal end settings
 setwd(WWW_PATH)
@@ -37,8 +41,14 @@ source(paste0(FUNCTIONS_PATH,"/readNorms.R"))
 source(paste0(FUNCTIONS_PATH,"/recurrentCallSW.R"))
 source(paste0(FUNCTIONS_PATH,"/callSW.R"))
 source(paste0(FUNCTIONS_PATH,"/countScore.R"))
-source(paste0(FUNCTIONS_PATH,"/prepareOutput.R"))
-
+source(paste0(FUNCTIONS_PATH,"/prepareOutputStatic.R"))
+source(paste0(FUNCTIONS_PATH,"/prepareOutputAdaptative.R"))
+source(paste0(FUNCTIONS_PATH,"/runStatic.R"))
+source(paste0(FUNCTIONS_PATH,"/runAdaptive.R"))
+source(paste0(FUNCTIONS_PATH,"/startTest.R"))
+source(paste0(FUNCTIONS_PATH,"/createProgressBar.R"))
+source(paste0(FUNCTIONS_PATH,"/sendMail.R"))
+source(paste0(FUNCTIONS_PATH,"/sendDatabase.R"))
 
 #Load file with secret variables
 readRenviron(".Renviron")
