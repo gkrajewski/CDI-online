@@ -51,7 +51,7 @@ source(paste0(FUNCTIONS_PATH,"/sendMail.R"))
 source(paste0(FUNCTIONS_PATH,"/sendDatabase.R"))
 
 #Load file with secret variables
-readRenviron("Renviron")
+readRenviron(".Renviron")
 
 #Set mail things
 MAIL_USERNAME <- "cdishiny@gmail.com"
