@@ -126,6 +126,9 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   output$sidebar <- renderUI({
     div(class = "help-block", txt[txt$text_type == "testInstr", "text"])
   })
+  
+  #Adjust sidebar background color
+  
 
   #Render first question
   if (is.na(subject[[paste0(subgroup, "Start")]])) {
@@ -142,9 +145,11 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   
   #Render question and optionally header
   header <- paste0(isolate(values$subgroup), "Header")
+  headerColor <- paste0(isolate(values$subgroup), "HeaderColor")
   output$main <- renderUI({
     list(
-      if (header %in% txt$text_type) h3(txt[txt$text_type == header, "text"]),
+      if (header %in% txt$text_type & headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"], style=paste0("color: ", txt[txt$text_type == headerColor, "text"], ";")),
+      if (header %in% txt$text_type & !headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"]),
       radioButtons(
         "question",
         label = paste0(values$itemsGroup$question[values$nextItem], ' "', values$itemsGroup$item[values$nextItem], '"?'),
@@ -414,10 +419,12 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
           })
           
           header <- paste0(isolate(values$subgroup), "Header")
+          headerColor <- paste0(isolate(values$subgroup), "HeaderColor")
           observeEvent(input[[btnID]], {
             output$main <- renderUI({
               list(
-                if (header %in% txt$text_type) h3(txt[txt$text_type == header, "text"]),
+                if (header %in% txt$text_type & headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"], style=paste0("color: ", txt[txt$text_type == headerColor, "text"], ";")),
+                if (header %in% txt$text_type & !headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"]),
                 radioButtons(
                   "question",
                   label = paste0(values$itemsGroup$question[values$nextItem], ' "', values$itemsGroup$item[values$nextItem], '"?'),
@@ -428,7 +435,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
               )
             })
             
-            output$sidebar <- renderUI({})
+            output$sidebar <- renderUI({div(class = "help-block", txt[txt$text_type == "testInstr", "text"])})
           })
           
         } else {
