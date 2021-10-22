@@ -323,10 +323,7 @@ runStatic <- function(input, output, session, lang, form, idx, run){
                 birthDate <- demoAnswer[1]
                 age <- interval(birthDate, Sys.Date()) %/% months(1)
                 if (countScore(reactList$answers, typeUniqueSettings) <= norms[paste0("m_", age), "p_0.1"]) score <- "true"
-                # print(paste0("Policzony wynik: ", countScore(reactList$answers, typeUniqueSettings)))
-                # print(paste0("Wartość z norm: ", norms[paste0("m_", age), "p_0.1"]))
               }
-              # print(paste0("Po odczytaniu: ", score))
               recurrentCallSW(idx, form, lang, done = "true", score)
             }
             write.csv(reactList$answers, answersFile, row.names = F)
