@@ -52,6 +52,7 @@ runStatic <- function(input, output, session, lang, form, idx, run){
   if (file.exists(progressFile)){
     userProgress <- read.csv(progressFile, encoding = "UTF-8")
   } else {
+    if (fromSW) recurrentCallSW(idx, form, lang) #First contact with inventory
     firstCats <- c()
     i <- 1
     for (type in types){
@@ -246,7 +247,6 @@ runStatic <- function(input, output, session, lang, form, idx, run){
     if (canConfirm){
       
       if (reactList$type == "start"){
-        if (fromSW) recurrentCallSW(idx, form, lang)
         reactList$userProgress[reactList$userProgress$type == 'start', "disabled"] <- TRUE
         disable('start')
       }
@@ -324,7 +324,7 @@ runStatic <- function(input, output, session, lang, form, idx, run){
                 age <- interval(birthDate, Sys.Date()) %/% months(1)
                 if (countScore(reactList$answers, typeUniqueSettings) <= norms[paste0("m_", age), "p_0.1"]) score <- "true"
               }
-              recurrentCallSW(idx, form, lang, done = "true", score)
+              recurrentCallSW(idx, form, lang, done = "true", score) 
             }
             write.csv(reactList$answers, answersFile, row.names = F)
             logerror(paste0(urlString, " csv file with asnwers saved"))
