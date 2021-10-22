@@ -87,7 +87,14 @@ runAdaptive <- function(input, output, session, lang, form, idx, run){
   } else {
     
     if (!is.na(subject[["testEnd"]])){
-      output$sidebar <- renderUI({div(class = "help-block", txt[txt$text_type == "thanks", "text"])}) #End of all testing
+      
+      #Test already filled
+      showModal(modalDialog(
+        txt[txt$text_type == "alreadyFilled", "text"],
+        easyClose = FALSE,
+        footer = NULL
+      ))
+      
     } else {
       loginfo(paste0(urlString, " continuing with the started test."))
       startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString) #Start test

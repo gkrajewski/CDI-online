@@ -280,12 +280,19 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       values$groupsToSave <- c(values$groupsToSave, isolate(values$subgroup))
       
       if (values$groupIdx==length(groupsToTest)) {
+        
+        ### TEST DEFINITIVE END ###
+        
         values$subject[["testEnd"]] <- "end"
         values$subject[[paste0(values$subgroup, "Test")]] <- "end"
-        output$sidebar <- renderUI({ div(class = "help-block", txt[txt$text_type == "thanks", "text"]) })
-        output$warning <- renderText({txt[txt$text_type == "thanks", "text"]})
-        output$main <- renderUI({})
-        observe({})
+        
+        showModal(modalDialog(
+          title = txt[txt$text_type == "end", "text"],
+          txt[txt$text_type == "thanks", "text"],
+          easyClose = FALSE,
+          footer = NULL
+        ))
+        
         CATdesign(updatedDesign)
         saveRDS(isolate(CATdesign()), isolate(values$designFile))
         saveRDS(isolate(values$subject), subjectFile)
