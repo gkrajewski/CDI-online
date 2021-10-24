@@ -26,7 +26,7 @@ callSW <- function(idx, form, lang, done, score){
     
     body <- content(response, "parsed")
     idToken <- body$idToken
-    url <- "https://apps.multilada.pl/graphql"
+    url <- "https://apps.multilada.pl/starwordsdev/graphql"
     
     body <- paste0("
           mutation{
