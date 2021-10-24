@@ -10,10 +10,10 @@ recurrentCallSW <- function(idx, form, lang, done = "false", score = "false", i 
     
   } else if (!callSuccess & i == maxI) {
     
-    print("ERROR: Cannot make successfull call")
+    logerror("ERROR: Cannot make successfull call")
     errorMsg <- listReturned[[2]]
     
-    sendMail(subjectText="[SHINYERROR] CANNOT MAKE CALL",
+    sendMail(subjectText=paste0("[SHINYERROR] ",lang, "-", form, "-", idx,  " CANNOT MAKE CALL"),
              txt=paste0("done: ", done, "\nform: ", form, "\nid: ", idx, "\nscore: ", score, "\n\n", errorMsg),
              id=paste0("id=", idx, " form=", form, " lang=", lang),
              host="smtp.gmail.com",
