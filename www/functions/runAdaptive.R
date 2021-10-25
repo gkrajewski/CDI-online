@@ -70,9 +70,19 @@ runAdaptive <- function(input, output, session, lang, form, idx, run){
     #Awaiting answer
     observeEvent(input$btn, {
       if (is.null(input$gender)){
-        output$warning <- renderText({txt[txt$text_type == "noGender", "text"]})
+        showModal(modalDialog(
+          title = txt[txt$text_type == "modalTitle", "text"],
+          txt[txt$text_type == "noGender", "text"],
+          easyClose = TRUE,
+          footer = NULL
+        ))
       } else if (is.null(input$filler)) {
-        output$warning <- renderText({txt[txt$text_type == "noFiller", "text"]})
+        showModal(modalDialog(
+          title = txt[txt$text_type == "modalTitle", "text"],
+          txt[txt$text_type == "noFiller", "text"],
+          easyClose = TRUE,
+          footer = NULL
+        ))
       } else {
         output$warning <- renderText({})
         subject$birth <- paste(input$birth)
