@@ -51,7 +51,7 @@ source(paste0(FUNCTIONS_PATH,"/sendMail.R"))
 source(paste0(FUNCTIONS_PATH,"/sendDatabase.R"))
 
 #Load file with secret variables
-readRenviron(".Renviron")
+readRenviron("Renviron_dev")
 
 #Set mail things
 MAIL_USERNAME <- "cdishiny@gmail.com"
@@ -66,3 +66,25 @@ URLS_TO_CLOSE <- reactiveVal(list())
 
 #prepare logger
 basicConfig()
+addHandler(writeToFile, file=paste0(INIT_PATH, "/testing.log"), level='DEBUG')
+
+#create logging table
+tableName="logging"
+create_logging = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
+                            `date` DATETIME NULL,
+                            `text` VARCHAR(2000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL);
+                            CREATE EVENT `", Sys.getenv("DB_NAME"), "`.`Delete_Older_Than_30_Days` (
+                            ON SCHEDULE EVERY 1 MINUTE
+                            STARTS STR_TO_DATE(DATE_FORMAT(NOW(),'%Y%m%d 0100'),'%Y%m%d %H%i')
+                            DO
+                            DELETE FROM `", Sys.getenv("DB_NAME"), "`.`",tableName,"` 
+                            WHERE date < DATE_SUB(NOW(),INTERVAL 2 MINUTE);
+                        ")
+sendDatabase <- sendDatabase(username=Sys.getenv("DB_USERNAME"),
+                             password=Sys.getenv("DB_PASSWORD"),
+                             dbname=Sys.getenv("DB_NAME"),
+                             host=Sys.getenv("DB_HOST"),
+                             port=Sys.getenv("DB_PORT"),
+                             id="global",
+                             tableName=tableName,
+                             tableCreate=create_logging)

@@ -1,4 +1,4 @@
-sendDatabase <- function(username, password, dbname, host, port, id, tableName, tableCreate, tableInput){
+sendDatabase <- function(username, password, dbname, host, port, id, tableName, tableCreate=NULL, tableInput=NULL){
   
   
   dbConnection <- tryCatch( 
@@ -16,10 +16,12 @@ sendDatabase <- function(username, password, dbname, host, port, id, tableName, 
         dbClearResult(rsInsert)
       }
       
-      dbWriteTable(storiesDb, value = tableInput, row.names = FALSE, name = tableName, append = TRUE )
-      dbDisconnect(storiesDb)
-      loginfo(paste0(id, " saved in database"))
+      if (!is.null(tableInput)) {
+        dbWriteTable(storiesDb, value = tableInput, row.names = FALSE, name = tableName, append = TRUE )
+        loginfo(paste0(id, " saved in database"))
+      }
       
+      dbDisconnect(storiesDb)
     },
     error = function(e) {
       logerror(paste0(id, " DATABASE SAVING FAILED! ", e))
