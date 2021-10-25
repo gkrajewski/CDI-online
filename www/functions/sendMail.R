@@ -25,7 +25,7 @@ sendMail <- function(subjectText, txt, id, host, port, username, password, recip
       loginfo(paste0(id, ". EMAIL sent"))
     },
     error = function(e) {
-      logerror(paste0(id, " EMAIL SAVING FAILED! ", e))
+      logerror(paste0(id, " EMAIL SENDING FAILED! ", e))
     }
   )
 }
