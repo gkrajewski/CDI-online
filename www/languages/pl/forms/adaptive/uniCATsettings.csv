@@ -1,0 +1,19 @@
+text_type;text
+cdiNamePrefix;Inwentarz Rozwoju Mowy i Komunikacji
+cdiNameSufix;wersja adaptatywna
+birthQuestion;Data urodzin dziecka
+genderQuestion;Płeć dziecka
+genders;dziewczynka,chłopiec,inna
+btn;Start
+noGender;Proszę wybrać płeć dziecka.
+modalTitle;Uwaga!
+testInstr;Proszę odpowiedzieć na pytanie.
+question;Czy Twoje dziecko mówi
+choiceNames;Nie, Tak
+thanks;To było ostatnie pytanie. Dziękujemy za wypełnienie inwentarza!
+end;Koniec!
+alreadyFilled;Ten inwentarz został już przez Ciebie wypełniony.
+fillerQuestion;Kim Państwo są dla dziecka?
+fillers;mama,tata,babcia,dziadek,niania,nauczyciel(-ka),inna odpowiedź (proszę wpisać):
+noFiller;Proszę wybrać osobę, która wypełnia kwestionariusz
+email;yes
