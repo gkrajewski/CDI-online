@@ -3,8 +3,8 @@ cdiNameSufix;Ord og gester;;
 longText;"Dette skjemaet er en norsk tilpasning av den “MacArthur-Bates Communicative Development Inventory: Word and gestures”. Denne metoden er basert på foreldrenes (eller andre omsorgspersoners) kunnskap om språkutvikling av barn og gjelder forståelse av tale, tale og kommunikasjon ved hjelp av bevegelser. Mye av inventaret består av spørsmål om barns tidligste vokabular. Foreldre (eller andre omsorgspersoner) skal markere ordene som barnet forstår, så vel som de som brukes i tale. Barnet skal ikke bli avhørt eller bedt om å gjenta enkeltord, og det skal heller ikke “lære ord”. Det er nok for foreldrene (eller andre foresatte) å svare på spørsmålene i henhold til deres kunnskap om barnet.";start;
 understandingBtn;Forståelse;understanding;
 header;Forståelse;understanding;
-catHeader;De første tegn på forståelse;understanding;first_signs
 longText;Før barn begynner å snakke, viser de tegn på at de forstår språk ved å reagere på kjente ord og uttrykk. Her er noen vanlige eksempler. Gjør barnet ditt noe av dette?;understanding;firstPage
+catHeader;De første tegn på forståelse;understanding;first_signs
 choiceNames;Ja, Nei;understanding;first_signs
 catHeader;Faste uttrykk;understanding;phrases
 instr;Kryss av de uttrykkene som det virker som om barnet ditt forstår;understanding;phrases
