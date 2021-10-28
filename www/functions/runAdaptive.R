@@ -1,11 +1,19 @@
 runAdaptive <- function(input, output, session, lang, form, idx, run){
 
   urlString <- paste(lang, form, idx, run, sep = "-")
+
   #Load settings
   testPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/adaptive/", form)
   print(testPath)
   setwd(testPath)
-  txt <- read.csv(paste0("settings.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
+  uniTransl <- read.csv(paste0("../uniCATsettings.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
+  transl <- read.csv(paste0("settings.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
+  
+  translID <- paste(transl$text_type, transl$text)
+  uniTranslID <- paste(uniTransl$text_type, uniTransl$text)
+  uniTransl <- subset(uniTransl, !(uniTranslID %in% translID)) #Get things from uniTransl (uniCATsettings) that are not in translations
+  txt <- rbind(uniTransl, transl)
+  
   setwd(INIT_PATH)
   
   #Render CDI name
