@@ -51,7 +51,7 @@ header;Przykłady wypowiedzi;sentences10;
 instr;Jeśli Państwa dziecko łączy wyrazy „czasem” lub „często”, proszę podać przykłady rzeczywistych wypowiedzi dziecka:;sentences10;
 gesturesBtn;Gesty;gestures;
 longText;Kiedy dzieci uczą się porozumiewać z innymi ludźmi, często posługują się gestami, aby wyrazić swoje pragnienia. Przy każdym z gestów na następnych stronach proszę postawić znaczek przy tym określeniu, które pasuje do tego, co Państwa dziecko aktualnie robi. ;gestures;firstPage
-header;Gesty;gestures;
+header;Czynności i gesty;gestures;
 catHeader;Pierwsze gesty komunikatywne;gestures;gestures_first
 instr;Czy Państwa dziecko używa wymienionych niżej gestów? ;gestures;gestures_first
 catHeader;Zabawy i rytuały;gestures;gestures_games
