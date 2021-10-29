@@ -12,7 +12,7 @@ fillerLabel;Hva er din relasjon til barnet?;;
 fillers;mor / forelder 1, far / forelder 2, bestemor, bestefar, barnepasser, lærer, annet;;
 noGender;Velg kjønn for å bekrefte.;;
 badDate;Feil fødselsdato;;
-genders;jente, gutt, annen;;
+genders;jente, gutt;;
 commentLabel;Andre kommentarer;;
 cdiNamePrefix;Foreldrerapport for Kommunikativ Utvikling;;
 endTooltip;Det vil være mulig å fullføre varelageret når alle delene er godkjent.;;

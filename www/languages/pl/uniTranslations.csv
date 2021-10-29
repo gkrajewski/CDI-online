@@ -11,7 +11,7 @@ modalTitle;Uwaga!;;
 noGender;Proszę wskazać płeć dziecka.;;
 noFiller;Proszę wskazać osobę wypełniającą inwentarz.;;
 badDate;Podana data urodzenia wskazuje, że Państwa dziecko nie jest w wieku, dla którego przeznaczony jest ten kwestionariusz.;;
-genders;dziewczynka,chłopiec,inna;;
+genders;dziewczynka,chłopiec;;
 fillerLabel;Kim Państwo są dla dziecka?;;
 fillers;mama,tata,babcia,dziadek,niania,nauczyciel(-ka),inna odpowiedź (proszę wpisać):;;
 commentLabel;Uwagi;;
