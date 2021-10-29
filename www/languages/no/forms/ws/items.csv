@@ -825,45 +825,45 @@ item_823;synget;word_endings2;word_endings_verbs;;;;
 item_824;syngte;word_endings2;word_endings_verbs;;;;
 item_825;tadde;word_endings2;word_endings_verbs;;;;
 item_826;Har barnet ditt begynt å sette sammen ord slik som “mer kake” eller “pappa Lars” (pappa til Lars)?;combine;;;;;
-item_827;To bil % To biler;complexity;;;;;morphology
-item_828;Dukke sove (skjer nå) % Dukken sover;complexity;;;;;morphology
-item_829;Se katt % Se katten;complexity;;;;;morphology
-item_830;Hva det? % Hva er det?;complexity;;;;;syntax
-item_831;Jeg spise (skjer nå) % Jeg spiser;complexity;;;;;morphology
-item_832;Du spist opp % Du har spist opp;complexity;;;;;syntax
-item_833;To fot(er) % To føtter;complexity;;;;;morphology
-item_834;En bil % Jeg ser en bil;complexity;;;;;syntax
-item_835;Pappa Lars % Pappa til Lars;complexity;;;;;syntax
-item_836;Hunden hoppe meg % Hunden hoppet på meg;complexity;;;;;syntax
-item_837;Mange klosser % Det var mange klosser;complexity;;;;;syntax
-item_838;Boka på bordet % Boka ligger på bordet;complexity;;;;;syntax
-item_839;Få lov? % Kan jeg få lov?;complexity;;;;;syntax
-item_840;Dra dit? % Skal vi dra dit?;complexity;;;;;syntax
-item_841;Den min % Boka (er) min;complexity;;;;;syntax
-item_842;Ikke rør % Ikke rør leken min;complexity;;;;;syntax
-item_843;Tegn katt pappa % Tegn en katt pappa;complexity;;;;;syntax
-item_844;Kan jeg få banan? % Kan jeg få en banan?;complexity;;;;;syntax
-item_845;Ha den % Jeg (vil) ha boka;complexity;;;;;syntax
-item_846;Ikke på % Lyset står ikke på;complexity;;;;;syntax
-item_847;Under bordet % Katten er under bordet;complexity;;;;;syntax
-item_848;Kake mamma % Kake til mamma;complexity;;;;;syntax
-item_849;Meg først % Jeg vil være først;complexity;;;;;syntax
-item_850;Jeg leke Fredrik % Jeg vil leke med Fredrik;complexity;;;;;syntax
-item_851;Mer skive % Kan jeg få mer skive?;complexity;;;;;syntax
-item_852;Hvor mamma gå? % Hvor skal du mamma?;complexity;;;;;syntax
-item_853;Ny ark % Nytt ark;complexity;;;;;morphology
-item_854;Jeg lekte med hun % Jeg lekte med henne;complexity;;;;;morphology
-item_855;Vi dro til butikken % Vi dro til butikken og handlet mat;complexity;;;;;syntax
-item_856;Vi kjøpte epler % Vi kjøpte grønne epler;complexity;;;;;syntax
-item_857;Jeg dette ned  % Jeg datt ned;complexity;;;;;morphology
-item_858;Det ikke er magen % Det er ikke magen;complexity;;;;;morphology
-item_859;Går ikke spise det % Det går ikke å spise det;complexity;;;;;syntax
-item_860;Ikke ha den % Jeg vil ikke ha den;complexity;;;;;syntax
-item_861;Hva ligger der? % Hva er det som ligger der?;complexity;;;;;syntax
-item_862;Bestemor har laget den % Det er bestemor som har laget den;complexity;;;;;syntax
-item_863;Min biler % Mine biler;complexity;;;;;morphology
-item_864;Vi laget denne % Jeg og Marie laget denne;complexity;;;;;syntax
-item_865;Jeg synger en sang % Jeg vil synge en sang for deg;complexity;;;;;syntax
-item_866;Se hva jeg har % Se hva jeg har fått av pappa;complexity;;;;;syntax
-item_867;Gutten gråter % Gutten gråter fordi han har slått seg;complexity;;;;;syntax
-item_868;Pappa sko % Pappa sine  sko (Pappas sko);complexity;;;;;syntax
+item_827;To bil % To biler;complexity;complexity1;;;;morphology
+item_828;Dukke sove (skjer nå) % Dukken sover;complexity;complexity1;;;;morphology
+item_829;Se katt % Se katten;complexity;complexity1;;;;morphology
+item_830;Hva det? % Hva er det?;complexity;complexity1;;;;syntax
+item_831;Jeg spise (skjer nå) % Jeg spiser;complexity;complexity1;;;;morphology
+item_832;Du spist opp % Du har spist opp;complexity;complexity1;;;;syntax
+item_833;To fot(er) % To føtter;complexity;complexity1;;;;morphology
+item_834;En bil % Jeg ser en bil;complexity;complexity2;;;;syntax
+item_835;Pappa Lars % Pappa til Lars;complexity;complexity2;;;;syntax
+item_836;Hunden hoppe meg % Hunden hoppet på meg;complexity;complexity2;;;;syntax
+item_837;Mange klosser % Det var mange klosser;complexity;complexity2;;;;syntax
+item_838;Boka på bordet % Boka ligger på bordet;complexity;complexity2;;;;syntax
+item_839;Få lov? % Kan jeg få lov?;complexity;complexity2;;;;syntax
+item_840;Dra dit? % Skal vi dra dit?;complexity;complexity2;;;;syntax
+item_841;Den min % Boka (er) min;complexity;complexity3;;;;syntax
+item_842;Ikke rør % Ikke rør leken min;complexity;complexity3;;;;syntax
+item_843;Tegn katt pappa % Tegn en katt pappa;complexity;complexity3;;;;syntax
+item_844;Kan jeg få banan? % Kan jeg få en banan?;complexity;complexity3;;;;syntax
+item_845;Ha den % Jeg (vil) ha boka;complexity;complexity3;;;;syntax
+item_846;Ikke på % Lyset står ikke på;complexity;complexity3;;;;syntax
+item_847;Under bordet % Katten er under bordet;complexity;complexity3;;;;syntax
+item_848;Kake mamma % Kake til mamma;complexity;complexity4;;;;syntax
+item_849;Meg først % Jeg vil være først;complexity;complexity4;;;;syntax
+item_850;Jeg leke Fredrik % Jeg vil leke med Fredrik;complexity;complexity4;;;;syntax
+item_851;Mer skive % Kan jeg få mer skive?;complexity;complexity4;;;;syntax
+item_852;Hvor mamma gå? % Hvor skal du mamma?;complexity;complexity4;;;;syntax
+item_853;Ny ark % Nytt ark;complexity;complexity4;;;;morphology
+item_854;Jeg lekte med hun % Jeg lekte med henne;complexity;complexity4;;;;morphology
+item_855;Vi dro til butikken % Vi dro til butikken og handlet mat;complexity;complexity5;;;;syntax
+item_856;Vi kjøpte epler % Vi kjøpte grønne epler;complexity;complexity5;;;;syntax
+item_857;Jeg dette ned  % Jeg datt ned;complexity;complexity5;;;;morphology
+item_858;Det ikke er magen % Det er ikke magen;complexity;complexity5;;;;morphology
+item_859;Går ikke spise det % Det går ikke å spise det;complexity;complexity5;;;;syntax
+item_860;Ikke ha den % Jeg vil ikke ha den;complexity;complexity5;;;;syntax
+item_861;Hva ligger der? % Hva er det som ligger der?;complexity;complexity5;;;;syntax
+item_862;Bestemor har laget den % Det er bestemor som har laget den;complexity;complexity6;;;;syntax
+item_863;Min biler % Mine biler;complexity;complexity6;;;;morphology
+item_864;Vi laget denne % Jeg og Marie laget denne;complexity;complexity6;;;;syntax
+item_865;Jeg synger en sang % Jeg vil synge en sang for deg;complexity;complexity6;;;;syntax
+item_866;Se hva jeg har % Se hva jeg har fått av pappa;complexity;complexity6;;;;syntax
+item_867;Gutten gråter % Gutten gråter fordi han har slått seg;complexity;complexity6;;;;syntax
+item_868;Pappa sko % Pappa sine  sko (Pappas sko);complexity;complexity6;;;;syntax
