@@ -1,8 +1,9 @@
 text_type;text;item_type;category
 cdiNameSufix;Ord og setninger;;
-header ;Ord som barn bruker;word;
-wordBtn ;Ord som barn bruker;word;
-longText;Barn forstår mange flere ord enn de sier. Her er vi spesielt interessert i ordene barnet ditt sier. Gå gjennom listen og kryss av ved de ordene du har hørt barnet bruke. Om barnet bruker en annet uttale av ordet (for eksempel sier ‘svell’ istedenfor ‘fjell’ eller ‘bå’ / ‘belå’ for ‘blå’), krysser du av ordet likevel. ;word;firstPage
+longText;"Dette skjemaet er en norsk tilpasning av den "MacArthur-Bates Communicative Development Inventory: Words and sentences". Denne metoden er basert på foreldrenes (eller andre omsorgspersoners) kunnskap om språkutvikling av barn og gjelder forståelse av tale, tale og kommunikasjon ved hjelp av bevegelser. Barnet skal ikke bli avhørt eller bedt om å gjenta enkeltord, og det skal heller ikke "lære ord". Det er nok for foreldrene (eller andre foresatte) å svare på spørsmålene i henhold til deres kunnskap om barnet.";start;
+wordBtn;Ord;word;
+header;Sjekkliste over ordforrådet;word;
+longText;Barn forstår mange flere ord enn de sier. Her er vi spesielt interessert i ordene barnet ditt sier. Gå gjennom listen og kryss av ved de ordene du har hørt barnet bruke. Om barnet bruker en annet uttale av ordet (for eksempel sier ‘svell’ istedenfor ‘fjell’ eller ‘bå’ / ‘belå’ for ‘blå’), krysser du av ordet likevel.;word;firstPage
 warning;Husk at dette er en “katalog” over ord som mange forskjellige barn bruker, så ikke bli bekymret dersom barnet ditt kun bruker noen få av disse akkurat nå.;word;firstPage
 catHeader;Lydeffekter og dyrelyder;word;sounds
 catHeader;Navn på dyr (virkelige eller lekedyr);word;animals
