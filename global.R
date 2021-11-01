@@ -71,7 +71,7 @@ formatter.shiny <- function(record) {
   text <- paste(record$timestamp, record$levelname, record$msg, sep='%')
   return(text)
 }
-addHandler(writeToFile, file=paste0(INIT_PATH, "/testing.log"), level='DEBUG', 
+addHandler(writeToFile, file=paste0(INIT_PATH, "/shinyapp.log"), level='DEBUG', 
            formatter=formatter.shiny)
 
 #create logging table
