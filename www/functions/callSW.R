@@ -6,6 +6,8 @@ callSW <- function(idx, form, lang, done, score){
       
       ### LOGIN TO FIREBASE ###
       
+      httr::set_config(httr::config(http_version = 1))
+      
       authEmail <- Sys.getenv("AUTH_EMAIL")
       authPassword <- Sys.getenv("AUTH_PASSWORD")
       apiKey <- Sys.getenv("API_KEY")
