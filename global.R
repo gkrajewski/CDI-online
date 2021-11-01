@@ -71,12 +71,12 @@ formatter.shiny <- function(record) {
   text <- paste(record$timestamp, record$levelname, record$msg, sep='%')
   return(text)
 }
-addHandler(writeToFile, file=paste0(INIT_PATH, "/shinyapp.log"), level='DEBUG', 
+addHandler(writeToFile, file=paste0(INIT_PATH, "/logs/shinyapp.log"), level='DEBUG', 
            formatter=formatter.shiny)
 
 #create logging table
 tableName="logging"
-create_logging = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
+createLogging = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
                             `date` DATETIME NULL,
                             `level` VARCHAR(50) NULL,
                             `text` VARCHAR(2000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
@@ -91,9 +91,9 @@ sendDatabase(username=Sys.getenv("DB_USERNAME"),
                              port=Sys.getenv("DB_PORT"),
                              id="global",
                              tableName=tableName,
-                             tableCreate=create_logging)
+                             tableCreate=createLogging)
 
-create_event = paste0("CREATE EVENT IF NOT EXISTS `", Sys.getenv("DB_NAME"), "`.`Delete_Older_Than_30_Days`
+createEvent = paste0("CREATE EVENT IF NOT EXISTS `", Sys.getenv("DB_NAME"), "`.`Delete_Older_Than_30_Days`
                             ON SCHEDULE EVERY 1 DAY
                             STARTS STR_TO_DATE(DATE_FORMAT(NOW(),'%Y%m%d 0100'),'%Y%m%d %H%i')
                             DO
@@ -107,4 +107,4 @@ sendDatabase(username=Sys.getenv("DB_USERNAME"),
                              port=Sys.getenv("DB_PORT"),
                              id="global",
                              tableName=tableName,
-                             tableQuery=create_event)
+                             tableQuery=createEvent)

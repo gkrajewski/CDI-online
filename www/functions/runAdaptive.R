@@ -1,10 +1,18 @@
 runAdaptive <- function(input, output, session, lang, form, idx, run){
 
   urlString <- paste(lang, form, idx, run, sep = "-")
+
   #Load settings
   testPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/adaptive/", form)
   setwd(testPath)
-  txt <- read.csv(paste0("settings.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
+  uniTransl <- read.csv(paste0("../uniCATsettings.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
+  transl <- read.csv(paste0("settings.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
+  
+  translID <- paste(transl$text_type, transl$text)
+  uniTranslID <- paste(uniTransl$text_type, uniTransl$text)
+  uniTransl <- subset(uniTransl, !(uniTranslID %in% translID)) #Get things from uniTransl (uniCATsettings) that are not in translations
+  txt <- rbind(uniTransl, transl)
+  
   setwd(INIT_PATH)
   
   #Render CDI name
@@ -69,9 +77,19 @@ runAdaptive <- function(input, output, session, lang, form, idx, run){
     #Awaiting answer
     observeEvent(input$btn, {
       if (is.null(input$gender)){
-        output$warning <- renderText({txt[txt$text_type == "noGender", "text"]})
+        showModal(modalDialog(
+          title = txt[txt$text_type == "modalTitle", "text"],
+          txt[txt$text_type == "noGender", "text"],
+          easyClose = TRUE,
+          footer = NULL
+        ))
       } else if (is.null(input$filler)) {
-        output$warning <- renderText({txt[txt$text_type == "noFiller", "text"]})
+        showModal(modalDialog(
+          title = txt[txt$text_type == "modalTitle", "text"],
+          txt[txt$text_type == "noFiller", "text"],
+          easyClose = TRUE,
+          footer = NULL
+        ))
       } else {
         output$warning <- renderText({})
         subject$birth <- paste(input$birth)
