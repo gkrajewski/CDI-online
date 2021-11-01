@@ -1,23 +1,6 @@
-text_type;text;test
-cdiNamePrefix;Inwentarz Rozwoju Mowy i Komunikacji;
-cdiNameSufix;wersja adaptatywna;
-birthQuestion;Data urodzin dziecka;
-genderQuestion;Płeć dziecka;
-genders;dziewczynka,chłopiec,inna;
-btn;Start;
-noGender;Proszę wybrać płeć dziecka.;
-testInstr;Proszę odpowiedzieć na pytanie.;
-choiceNames;Nie, Tak;
-thanks;To było ostatnie pytanie. Dziękujemy za wypełnienie inwentarza!;
-end;Koniec!;
-alreadyFilled;Ten inwentarz został już przez Ciebie wypełniony.;
-fillerQuestion;Kim Państwo są dla dziecka?;
-fillers;mama,tata,babcia,dziadek,niania,nauczyciel(-ka),inna odpowiedź (proszę wpisać):;
-noFiller;Proszę wybrać osobę, która wypełnia kwestionariusz;
-continueBtn;Dalej;
-MirtMethod;ML;
-MirtCriteria;MI;
-minItemNr;1;
-maxItemNr;5;
-MirtSeTheta;0.05;
-email;yes;
+text_type;text
+MirtMethod;ML
+MirtCriteria;MI
+minItemNr;1
+maxItemNr;5
+MirtSeTheta;0.05
