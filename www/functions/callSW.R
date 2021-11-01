@@ -22,7 +22,7 @@ callSW <- function(idx, form, lang, done, score){
   
   if (status == "Success"){
     
-    loginfo(paste0(form, "-", lang, "-", idx, " successfully connected to SW database"))
+    loginfo(paste0(lang, "-", form, "-", idx, " successfully connected to SW database"))
     
     ### MAKE CALL TO STARWORDS APP ###
     

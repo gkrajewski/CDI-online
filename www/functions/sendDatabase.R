@@ -1,4 +1,4 @@
-sendDatabase <- function(username, password, dbname, host, port, id, tableName, tableCreate=NULL, tableInput=NULL){
+sendDatabase <- function(username, password, dbname, host, port, id, tableName, tableCreate=NULL, tableInput=NULL, tableQuery=NULL){
   
   
   dbConnection <- tryCatch( 
@@ -13,6 +13,11 @@ sendDatabase <- function(username, password, dbname, host, port, id, tableName, 
       
       if (!(tableName %in% dbListTables(storiesDb))) {
         rsInsert <- dbSendQuery(storiesDb, tableCreate)
+        dbClearResult(rsInsert)
+      }
+      
+      if (!is.null(tableQuery)) {
+        rsInsert <- dbSendQuery(storiesDb, tableQuery)
         dbClearResult(rsInsert)
       }
       

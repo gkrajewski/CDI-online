@@ -3,7 +3,6 @@ runAdaptive <- function(input, output, session, lang, form, idx, run){
   urlString <- paste(lang, form, idx, run, sep = "-")
   #Load settings
   testPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/adaptive/", form)
-  print(testPath)
   setwd(testPath)
   txt <- read.csv(paste0("settings.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
   setwd(INIT_PATH)

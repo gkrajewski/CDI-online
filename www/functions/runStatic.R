@@ -327,7 +327,7 @@ runStatic <- function(input, output, session, lang, form, idx, run){
               recurrentCallSW(idx, form, lang, done = "true", score) 
             }
             write.csv(reactList$answers, answersFile, row.names = F)
-            logerror(paste0(urlString, " csv file with asnwers saved"))
+            loginfo(paste0(urlString, " csv file with asnwers saved"))
             
             endDate <- Sys.time()
             tableName <- paste0("form_", form, "_", lang)
@@ -348,7 +348,7 @@ runStatic <- function(input, output, session, lang, form, idx, run){
                             `answer1` VARCHAR(", toString(STRING_LIMIT), ") CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
                             `answer2` VARCHAR(100) NULL);")
             
-            sendDatabase <- sendDatabase(username=Sys.getenv("DB_USERNAME"), 
+            sendDatabase(username=Sys.getenv("DB_USERNAME"), 
                                          password=Sys.getenv("DB_PASSWORD"),
                                          dbname=Sys.getenv("DB_NAME"), 
                                          host=Sys.getenv("DB_HOST"), 
@@ -387,6 +387,22 @@ runStatic <- function(input, output, session, lang, form, idx, run){
   session$onSessionEnded(function() {
     write.csv(isolate(reactList()$answers), answersFile, row.names = F, fileEncoding = "UTF-8")
     write.csv(isolate(reactList()$userProgress), progressFile, row.names = F, fileEncoding = "UTF-8")
+    logs <- read.table(paste0(INIT_PATH, "/logs/", urlString, ".log"), sep="%", blank.lines.skip = TRUE, quote="")
+    colnames(logs) <- c("date", "level", "text")
+    logs$date <- as.POSIXct(logs$date)
+    date_max <- max(logs[grepl("session started", logs$text, fixed=T), "date"])
+    new_logs <- logs[logs$date>=date_max, ]
+    new_logs$id <- idx
+    new_logs$form <- form
+    new_logs$lang <- lang
+    sendDatabase(username=Sys.getenv("DB_USERNAME"), 
+                                 password=Sys.getenv("DB_PASSWORD"),
+                                 dbname=Sys.getenv("DB_NAME"), 
+                                 host=Sys.getenv("DB_HOST"), 
+                                 port=Sys.getenv("DB_PORT"), 
+                                 id=urlString, 
+                                 tableName="logging", 
+                                 tableInput=new_logs)
   })
   
 }
