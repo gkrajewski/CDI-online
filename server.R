@@ -106,8 +106,8 @@ server <- function(input, output, session) {
       }
       
     } else {
-      updateQueryString(paste0("?id=", "test", "&form=", "ws", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
-      session$reload()
+      # updateQueryString(paste0("?id=", "test", "&form=", "ws", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
+      # session$reload()
       url = paste0(session$clientData$url_protocol,"//", 
                    session$clientData$url_hostname,":",
                    session$clientData$url_port,
