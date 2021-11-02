@@ -49,6 +49,7 @@ source(paste0(FUNCTIONS_PATH,"/startTest.R"))
 source(paste0(FUNCTIONS_PATH,"/createProgressBar.R"))
 source(paste0(FUNCTIONS_PATH,"/sendMail.R"))
 source(paste0(FUNCTIONS_PATH,"/sendDatabase.R"))
+source(paste0(FUNCTIONS_PATH,"/chooseTheta.R"))
 
 #Load file with secret variables
 readRenviron(".Renviron")
