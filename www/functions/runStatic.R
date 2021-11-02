@@ -34,6 +34,24 @@ runStatic <- function(input, output, session, lang, form, idx, run){
       settings <- rbind(formSettings, END_SETTINGS)
       typeUniqueSettings <- settings[settings$category == "" | is.na(settings$category), ]
       
+      #Modify items: bind some types into new one and treat old types as categories
+      types <- typeUniqueSettings$type
+      for (type in types){
+        bindedTypesStr <- typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"]
+        if (!is.na(bindedTypesStr)){
+          if (bindedTypesStr == "startWith"){
+            items[substr(items$type, 1, nchar(type)) == type, "category"] <- items[substr(items$type, 1, nchar(type)) == type, "type"]
+            items[substr(items$type, 1, nchar(type)) == type, "type"] <- type
+          } else {
+            bindedTypes <- strsplit(typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"], ",")[[1]]
+            for (bindedType in bindedTypes){
+              items[substr(items$type, 1, nchar(bindedType)) == bindedType, "category"] <- items[substr(items$type, 1, nchar(bindedType)) == bindedType, "type"]
+              items[substr(items$type, 1, nchar(bindedType)) == bindedType, "type"] <- type
+            }
+          }
+        }
+      }
+      
       TRUE
     },
     error = function(m){
@@ -54,24 +72,6 @@ runStatic <- function(input, output, session, lang, form, idx, run){
     
     #Render nice message when error
     output$dcMessage <- renderUI({disconnectMessage(text = txt[txt$text_type == "error", "text"], refresh = txt[txt$text_type == "refresh", "text"])})
-    
-    #Modify items: bind some types into new one and treat old types as categories
-    types <- typeUniqueSettings$type
-    for (type in types){
-      bindedTypesStr <- typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"]
-      if (!is.na(bindedTypesStr)){
-        if (bindedTypesStr == "startWith"){
-          items[substr(items$type, 1, nchar(type)) == type, "category"] <- items[substr(items$type, 1, nchar(type)) == type, "type"]
-          items[substr(items$type, 1, nchar(type)) == type, "type"] <- type
-        } else {
-          bindedTypes <- strsplit(typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"], ",")[[1]]
-          for (bindedType in bindedTypes){
-            items[substr(items$type, 1, nchar(bindedType)) == bindedType, "category"] <- items[substr(items$type, 1, nchar(bindedType)) == bindedType, "type"]
-            items[substr(items$type, 1, nchar(bindedType)) == bindedType, "type"] <- type
-          }
-        }
-      }
-    }
     
     #Prepare user progress
     progressFile <- paste0("usersProgress/", urlString, ".csv")
