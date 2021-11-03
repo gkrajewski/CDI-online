@@ -67,7 +67,7 @@ runStatic <- function(input, output, session, lang, form, idx, run){
       return(FALSE)
     }
   )
-  
+
   if (inputFilesRead){
     
     #Render nice message when error
@@ -351,6 +351,7 @@ runStatic <- function(input, output, session, lang, form, idx, run){
                 recurrentCallSW(idx, form, lang, done = "true", score)
               }
               write.csv(reactList$answers, answersFile, row.names = F)
+              
               loginfo(paste0(urlString, " csv file with asnwers saved"))
               
               endDate <- Sys.time()
@@ -432,3 +433,4 @@ runStatic <- function(input, output, session, lang, form, idx, run){
   }
   
 }
+

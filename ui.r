@@ -31,6 +31,8 @@ ui <- fluidPage(
     
     position = c("right")
     
-  )
+  ),
+  
+  uiOutput("dcMessage")
   
 )

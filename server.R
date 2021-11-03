@@ -72,7 +72,6 @@ server <- function(input, output, session) {
               runStatic(input, output, session, lang, form, idx, run)
             }
 
-            
           } else if (!waitingForClose() & !inventoryStarted()){
             urlsToClose <- URLS_TO_CLOSE()
             urlsToClose <- c(urlsToClose, urlString)
@@ -111,7 +110,7 @@ server <- function(input, output, session) {
       }
       
     } else {
-      # updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
+      # updateQueryString(paste0("?id=", "test", "&form=", "ws", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
       # session$reload()
       url = paste0(session$clientData$url_protocol,"//", 
                    session$clientData$url_hostname,":",
