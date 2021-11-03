@@ -71,7 +71,7 @@ runStatic <- function(input, output, session, lang, form, idx, run){
   if (inputFilesRead){
     
     #Render nice message when error
-    output$dcMessage <- renderUI({disconnectMessage(text = txt[txt$text_type == "error", "text"], refresh = txt[txt$text_type == "refresh", "text"])})
+    output$dcMessage <- renderUI({disconnectMessage(text = paste0(txt[txt$text_type == "error", "text"], " [", urlString, "]"), refresh = txt[txt$text_type == "refresh", "text"])})
     
     #Prepare user progress
     progressFile <- paste0("usersProgress/", urlString, ".csv")
