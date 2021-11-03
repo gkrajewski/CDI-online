@@ -307,17 +307,17 @@ runStatic <- function(input, output, session, lang, form, idx, run){
         }
         
         #Render 1st not done type (from left)
-        allEnabledDone <- TRUE
+        reactList$allEnabledDone <- TRUE
         for (type in types){
           if (!reactList$userProgress[reactList$userProgress$type == type, "done"] & !reactList$userProgress[reactList$userProgress$type == type, "disabled"]){
             reactList(renderType(input, output, type, reactList, staticList))
-            allEnabledDone <- FALSE
+            reactList$allEnabledDone <- FALSE
             break
           }
         }
         
         #Render end or postend type
-        if(allEnabledDone){
+        if(reactList$allEnabledDone){
           
           loginfo(paste0(urlString, " form completed. Saving..."))
           if (!reactList$userProgress[reactList$userProgress$type == "end", "done"]){
@@ -399,6 +399,8 @@ runStatic <- function(input, output, session, lang, form, idx, run){
                 loginfo(paste0(urlString, " sending emails disabled"))
               }
               
+              sendLogs(urlString, idx, form, lang)
+              
             }
             reactList(renderType(input, output, postEnd, reactList, staticList))
           }
@@ -412,22 +414,11 @@ runStatic <- function(input, output, session, lang, form, idx, run){
     session$onSessionEnded(function() {
       write.csv(isolate(reactList()$answers), answersFile, row.names = F, fileEncoding = "UTF-8")
       write.csv(isolate(reactList()$userProgress), progressFile, row.names = F, fileEncoding = "UTF-8")
-      logs <- read.table(paste0(INIT_PATH, "/logs/", urlString, ".log"), sep="%", blank.lines.skip = TRUE, quote="")
-      colnames(logs) <- c("date", "level", "text")
-      logs$date <- as.POSIXct(logs$date)
-      date_max <- max(logs[grepl("session started", logs$text, fixed=T), "date"])
-      new_logs <- logs[logs$date>=date_max, ]
-      new_logs$id <- idx
-      new_logs$form <- form
-      new_logs$lang <- lang
-      sendDatabase(username=Sys.getenv("DB_USERNAME"), 
-                   password=Sys.getenv("DB_PASSWORD"),
-                   dbname=Sys.getenv("DB_NAME"), 
-                   host=Sys.getenv("DB_HOST"), 
-                   port=Sys.getenv("DB_PORT"), 
-                   id=urlString, 
-                   tableName="logging", 
-                   tableInput=new_logs)
+      
+      if (reactList()$allEnabledDone) {
+        sendLogs(urlString, idx, form, lang)
+      }
+      
     })
     
   }

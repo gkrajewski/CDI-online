@@ -134,6 +134,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   if (is.na(subject[[paste0(subgroup, "Start")]])) {
     subject[[paste0(subgroup, "Start")]] <- as.character(Sys.time())
   }
+  
   values <- reactiveValues()
   values$nextItem <- findNextItem(CATdesign)
   values$groupIdx <- groupIdx
@@ -142,6 +143,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   values$designFile <- designFile
   values$subject <- subject
   values$groupsToSave <- c()
+  values$sendLogs <- TRUE
   
   #Render question and optionally header
   header <- paste0(isolate(values$subgroup), "Header")
@@ -255,22 +257,10 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       values$groupsToSave <- values$groupsToSave[values$groupsToSave!=saveblock]
     }
     
-    logs <- read.table(paste0(INIT_PATH, "/logs/", urlString, ".log"), sep="%", blank.lines.skip = TRUE, quote="")
-    colnames(logs) <- c("date", "level", "text")
-    logs$date <- as.POSIXct(logs$date)
-    date_max <- max(logs[grepl("session started", logs$text, fixed=T), "date"])
-    new_logs <- logs[logs$date>=date_max, ]
-    new_logs$id <- idx
-    new_logs$form <- form
-    new_logs$lang <- lang
-    sendDatabase(username=Sys.getenv("DB_USERNAME"), 
-                                 password=Sys.getenv("DB_PASSWORD"),
-                                 dbname=Sys.getenv("DB_NAME"), 
-                                 host=Sys.getenv("DB_HOST"), 
-                                 port=Sys.getenv("DB_PORT"), 
-                                 id=urlString, 
-                                 tableName="logging", 
-                                 tableInput=new_logs)
+    if (values$sendLogs) {
+      sendLogs(urlString, idx, form, lang)
+    }
+    
   })
 
   observeEvent(input$question, {
@@ -370,6 +360,9 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
 
           values$groupsToSave <- values$groupsToSave[values$groupsToSave!=saveblock]
         }
+        
+        sendLogs(urlString, idx, form, lang)
+        values$sendLogs <- FALSE
         
       } 
       else {

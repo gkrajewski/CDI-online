@@ -50,6 +50,7 @@ source(paste0(FUNCTIONS_PATH,"/startTest.R"))
 source(paste0(FUNCTIONS_PATH,"/createProgressBar.R"))
 source(paste0(FUNCTIONS_PATH,"/sendMail.R"))
 source(paste0(FUNCTIONS_PATH,"/sendDatabase.R"))
+source(paste0(FUNCTIONS_PATH,"/sendLogs.R"))
 
 #Load file with secret variables
 readRenviron(".Renviron")
@@ -78,6 +79,7 @@ addHandler(writeToFile, file=paste0(INIT_PATH, "/logs/shinyapp.log"), level='DEB
 tableName="logging"
 createLogging = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
                             `date` DATETIME NULL,
+                            `dateString` VARCHAR(50) NULL,
                             `level` VARCHAR(50) NULL,
                             `text` VARCHAR(2000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
                             `id` VARCHAR(99) NULL,
