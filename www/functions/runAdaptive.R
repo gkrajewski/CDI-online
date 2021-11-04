@@ -7,8 +7,8 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
       #Load settings
       testPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/adaptive/", form)
       setwd(testPath)
-      uniTransl <- read.csv(paste0("../uniCATsettings.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
-      transl <- read.csv(paste0("settings.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
+      uniTransl <- read.csv(paste0("../uniSettings&translations.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
+      transl <- read.csv(paste0("settings&translations.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
       
       translID <- paste(transl$text_type, transl$text)
       uniTranslID <- paste(uniTransl$text_type, uniTransl$text)
