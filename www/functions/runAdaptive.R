@@ -1,10 +1,7 @@
-runAdaptive <- function(input, output, session, lang, form, idx, run){
-
-  urlString <- paste(lang, form, idx, run, sep = "-")
+runAdaptive <- function(input, output, session, lang, form, idx, run, urlString, fromSW){
 
   #Load settings
   testPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/adaptive/", form)
-  print(testPath)
   setwd(testPath)
   uniTransl <- read.csv(paste0("../uniCATsettings.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
   transl <- read.csv(paste0("settings.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
@@ -39,7 +36,7 @@ runAdaptive <- function(input, output, session, lang, form, idx, run){
       subject[[paste0(subgroup, "Start")]] = NA
     }
     
-    recurrentCallSW(idx, form, lang)
+    if (fromSW) recurrentCallSW(idx, form, lang)
   }
   
   #Render rest of UI

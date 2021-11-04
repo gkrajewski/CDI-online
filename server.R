@@ -41,6 +41,16 @@ server <- function(input, output, session) {
             ### START INVENTORY ###
             inventoryStarted(TRUE)
             
+            #Check if user is connected with StarWords app
+            if (nchar(idx) == 21){
+              fromSW <- TRUE
+            } else {
+              fromSW <- FALSE
+            }
+            
+            #Log info about opening inventory
+            loginfo(paste0("Inventory opened ", urlString, " fromSW=", fromSW))
+            
             #Prevent from opening same url params more than once in the same moment
             busyURLs <- BUSY_URLS()
             busyURLs <- c(busyURLs, urlString)
@@ -63,9 +73,9 @@ server <- function(input, output, session) {
             }, ignoreInit = TRUE)
             
             if (endsWith(form, "-cat")) {
-              runAdaptive(input, output, session, lang, form, idx, run)
+              runAdaptive(input, output, session, lang, form, idx, run, urlString, fromSW)
             } else {
-              runStatic(input, output, session, lang, form, idx, run)
+              runStatic(input, output, session, lang, form, idx, run, urlString, fromSW)
             }
 
           } else if (!waitingForClose() & !inventoryStarted()){
