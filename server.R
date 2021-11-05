@@ -40,6 +40,8 @@ server <- function(input, output, session) {
             
             ### START INVENTORY ###
             inventoryStarted(TRUE)
+            addHandler(writeToFile, file=paste0(INIT_PATH, "/logs/", urlString, ".log"), level='DEBUG', 
+                       formatter=formatter.shiny)
             
             #Check if user is connected with StarWords app
             if (nchar(idx) == 21){
@@ -71,6 +73,8 @@ server <- function(input, output, session) {
                 session$close()
               }
             }, ignoreInit = TRUE)
+            
+            loginfo(paste0(urlString, " session started"))
             
             if (endsWith(form, "-cat")) {
               runAdaptive(input, output, session, lang, form, idx, run, urlString, fromSW)

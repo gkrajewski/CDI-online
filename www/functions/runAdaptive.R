@@ -30,10 +30,14 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
       logwarn(msg)
       output$sidebar <- renderText({msg})
       return(FALSE)
+      
     }
   )
 
   if (inputFilesRead){
+    
+    #Render nice message when error
+    output$dcMessage <- renderUI({disconnectMessage(text = paste0(txt[txt$text_type == "error", "text"], " [", urlString, "]"), refresh = txt[txt$text_type == "refresh", "text"])})
     
     #Render CDI name
     output$cdiNamePrefix <- renderText({txt[txt$text_type == "cdiNamePrefix", "text"]})
