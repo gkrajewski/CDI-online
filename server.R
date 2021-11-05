@@ -74,8 +74,6 @@ server <- function(input, output, session) {
               }
             }, ignoreInit = TRUE)
             
-            loginfo(paste0(urlString, " session started"))
-            
             if (endsWith(form, "-cat")) {
               runAdaptive(input, output, session, lang, form, idx, run, urlString, fromSW)
             } else {
