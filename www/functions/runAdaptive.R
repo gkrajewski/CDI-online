@@ -19,6 +19,9 @@ runAdaptive <- function(input, output, session, lang, form, idx, run){
   output$cdiNamePrefix <- renderText({txt[txt$text_type == "cdiNamePrefix", "text"]})
   output$cdiNameSufix <- renderText({txt[txt$text_type == "cdiNameSufix", "text"]})
   
+  #Render nice message when error
+  output$dcMessage <- renderUI({disconnectMessage(text = paste0(txt[txt$text_type == "error", "text"], " [", urlString, "]"), refresh = txt[txt$text_type == "refresh", "text"])})
+  
   #Prepare subject variable
   subjectFile <- paste0("subjects/", urlString, ".rds")
   if (file.exists(subjectFile)){
