@@ -40,6 +40,8 @@ server <- function(input, output, session) {
             
             ### START INVENTORY ###
             inventoryStarted(TRUE)
+            addHandler(writeToFile, file=paste0(INIT_PATH, "/logs/", urlString, ".log"), level='DEBUG', 
+                       formatter=formatter.shiny)
             
             #Prevent from opening same url params more than once in the same moment
             busyURLs <- BUSY_URLS()
@@ -61,6 +63,8 @@ server <- function(input, output, session) {
                 session$close()
               }
             }, ignoreInit = TRUE)
+            
+            loginfo(paste0(urlString, " session started"))
             
             if (endsWith(form, "-cat")) {
               runAdaptive(input, output, session, lang, form, idx, run)

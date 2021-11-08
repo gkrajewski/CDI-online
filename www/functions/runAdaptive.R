@@ -4,7 +4,6 @@ runAdaptive <- function(input, output, session, lang, form, idx, run){
 
   #Load settings
   testPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/adaptive/", form)
-  print(testPath)
   setwd(testPath)
   uniTransl <- read.csv(paste0("../uniCATsettings.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
   transl <- read.csv(paste0("settings.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
@@ -19,6 +18,9 @@ runAdaptive <- function(input, output, session, lang, form, idx, run){
   #Render CDI name
   output$cdiNamePrefix <- renderText({txt[txt$text_type == "cdiNamePrefix", "text"]})
   output$cdiNameSufix <- renderText({txt[txt$text_type == "cdiNameSufix", "text"]})
+  
+  #Render nice message when error
+  output$dcMessage <- renderUI({disconnectMessage(text = paste0(txt[txt$text_type == "error", "text"], " [", urlString, "]"), refresh = txt[txt$text_type == "refresh", "text"])})
   
   #Prepare subject variable
   subjectFile <- paste0("subjects/", urlString, ".rds")

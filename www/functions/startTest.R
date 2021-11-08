@@ -134,6 +134,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   if (is.na(subject[[paste0(subgroup, "Start")]])) {
     subject[[paste0(subgroup, "Start")]] <- as.character(Sys.time())
   }
+  
   values <- reactiveValues()
   values$nextItem <- findNextItem(CATdesign)
   values$groupIdx <- groupIdx
@@ -142,6 +143,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   values$designFile <- designFile
   values$subject <- subject
   values$groupsToSave <- c()
+  values$sendLogs <- TRUE
   
   #Render question and optionally header
   header <- paste0(isolate(values$subgroup), "Header")
@@ -241,7 +243,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
                             `start_date` DATETIME NULL,
                             `end_date` DATETIME NULL);")
       
-      sendDatabase <- sendDatabase(username=Sys.getenv("DB_USERNAME"),
+      sendDatabase(username=Sys.getenv("DB_USERNAME"),
                                    password=Sys.getenv("DB_PASSWORD"),
                                    dbname=Sys.getenv("DB_NAME"),
                                    host=Sys.getenv("DB_HOST"),
@@ -254,6 +256,11 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       
       values$groupsToSave <- values$groupsToSave[values$groupsToSave!=saveblock]
     }
+    
+    if (values$sendLogs) {
+      sendLogs(urlString, idx, form, lang)
+    }
+    
   })
 
   observeEvent(input$question, {
@@ -340,7 +347,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
                             `start_date` DATETIME NULL,
                             `end_date` DATETIME NULL);")
 
-          sendDatabase <- sendDatabase(username=Sys.getenv("DB_USERNAME"),
+          sendDatabase(username=Sys.getenv("DB_USERNAME"),
                                        password=Sys.getenv("DB_PASSWORD"),
                                        dbname=Sys.getenv("DB_NAME"),
                                        host=Sys.getenv("DB_HOST"),
@@ -353,6 +360,9 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
 
           values$groupsToSave <- values$groupsToSave[values$groupsToSave!=saveblock]
         }
+        
+        sendLogs(urlString, idx, form, lang)
+        values$sendLogs <- FALSE
         
       } 
       else {

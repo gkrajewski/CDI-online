@@ -1,5 +1,5 @@
-callSW <- function(idx, form, lang, done, score){
-  
+callSW <- function(idx, form, lang, done, score){ 
+ 
   swCaller <- tryCatch(
     
     expr = {
@@ -26,6 +26,8 @@ callSW <- function(idx, form, lang, done, score){
       
       if (status == "Success"){
         
+        loginfo(paste0(lang, "-", form, "-", idx, " successfully connected to SW database"))
+        
         ### MAKE CALL TO STARWORDS APP ###
         
         body <- content(response, "parsed")
@@ -50,6 +52,7 @@ callSW <- function(idx, form, lang, done, score){
                   score
                   }
                 }
+
               }
         ")
             
@@ -57,13 +60,21 @@ callSW <- function(idx, form, lang, done, score){
         parsedResp <- content(response, "parsed")
         print(parsedResp)
         
-        if(length(parsedResp$errors) > 0) return(list(FALSE, parsedResp$errors[[1]]$message))
+        if(length(parsedResp$errors) > 0) {
+      
+          logerror(paste0(form, "-", lang, "-", idx, " ERROR: Cannot update the SW database"))
+          return(list(FALSE, parsedResp$errors[[1]]$message))
+    
+        } 
+    
+        loginfo(paste0(form, "-", lang, "-", idx, " successfully updating status in SW database"))
         return(list(TRUE, ""))
-        
+    
       } else {
         
-        return(list(FALSE, "ERROR: Cannot connect to Firebase"))
-        
+        logerror(paste0(form, "-", lang, "-", idx, " ERROR: Cannot connect to SW database"))
+        return(list(FALSE, "ERROR: Cannot connect to SW database"))
+            
       }
       
     },
