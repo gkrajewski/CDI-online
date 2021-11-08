@@ -259,10 +259,6 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     
   })
   
-  observeEvent(input$comment, {
-    values$subject[[paste0(values$subgroup, "Comment")]] <- input$comment
-  })
-
   observeEvent(input$question, {
     
     #Update design
@@ -363,6 +359,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         
       } else {
         
+        ### NOT TEST DEFINITIVE END - ONLY GROUP END ###
+        
         saveRDS(isolate(CATdesign()), isolate(values$designFile))
         
         values$subject[[paste0(values$subgroup, "Test")]] <- "end"
@@ -442,7 +440,14 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
           
           header <- paste0(isolate(values$subgroup), "Header")
           headerColor <- paste0(isolate(values$subgroup), "HeaderColor")
+          
           observeEvent(input[[btnID]], {
+            
+            ### START NEXT PART ###
+            
+            #Save comment
+            values$subject[[paste0(groupsToTest[values$groupIdx - 1], "Comment")]] <- input$comment
+            
             output$main <- renderUI({
               list(
                 if (header %in% txt$text_type & headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"], style=paste0("color: ", txt[txt$text_type == headerColor, "text"], ";")),
@@ -459,7 +464,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
             
             output$sidebar <- renderUI({div(class = "help-block", txt[txt$text_type == "testInstr", "text"])})
             
-          })
+          }, once = TRUE)
           
         } else {
           
