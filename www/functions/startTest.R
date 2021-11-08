@@ -1,10 +1,7 @@
 startTest <- function(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString){
 
-  #Get subject age in months
+  #Get subject (children) age in months
   subjectAge <- interval(subject$birth, Sys.Date()) %/% months(1)
-  
-  #Get subject gender
-  subjectGender <- subject$gender
   
   #Load items and start thetas
   setwd(testPath)
@@ -42,7 +39,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     
   }
   
-  chooseTheta <- function(startThetas, subjectGender, subjectAge, group) {
+  chooseTheta <- function(startThetas, subjectGender, subjectAge, group){
     if (!is.data.frame(get("startThetas"))) {
       return(0)
     } 
@@ -62,8 +59,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     }
       
     if ("gender" %in% colnames(groupFile)) {
-      if (subjectGender %in% groupFile$gender) {
-        startThetasFile = groupFile[groupFile$gender==subjectGender, ]
+      if (subject$gender %in% groupFile$gender) {
+        startThetasFile = groupFile[groupFile$gender==subject$gender, ]
       } else {
         if ("age" %in% colnames(groupFile)) {
           startThetasFile = groupFile %>% group_by(age) %>% summarise(theta=mean(theta))
@@ -85,7 +82,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       idAge = which.min(ageDiff) 
       startTheta <- startThetasFile$theta[idAge]
     } else {
-      startTheta <- startThetasFile[startThetasFile["gender"]==subjectGender, "theta"][1]
+      startTheta <- startThetasFile[startThetasFile["gender"]==subject$gender, "theta"][1]
     }
     
     return(startTheta)
@@ -106,7 +103,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   
   #Prepare start theta
   if (is.na(subject[[paste0(subgroup, "Theta")]])){
-    subject[[paste0(subgroup, "Theta")]] <- chooseTheta(startThetas, subjectGender, subjectAge, subgroup)
+    subject[[paste0(subgroup, "Theta")]] <- chooseTheta(startThetas, subject$gender, subjectAge, subgroup)
   }
 
   #Prepare mirtCAT design object for current group
@@ -408,7 +405,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         } else {
           
           if (is.na(values$subject[[paste0(values$subgroup, "Theta")]])){
-            values$subject[[paste0(values$subgroup, "Theta")]] <- chooseTheta(startThetas, subjectGender, subjectAge, values$subgroup)
+            values$subject[[paste0(values$subgroup, "Theta")]] <- chooseTheta(startThetas, subject$gender, subjectAge, values$subgroup)
           }
           
           params <- values$itemsGroup[, c("a1", "d")]
