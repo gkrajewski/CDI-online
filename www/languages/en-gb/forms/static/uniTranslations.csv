@@ -28,3 +28,4 @@ error;An error has occured. Please reload the page and try again.;;
 refresh;Reload;;
 badForm;Incorrect parameter value in the URL. Available values: ;;none
 inventoryOpened;The questionnaire is already open. Please close the questionnaire if it's open somewhere else and/or reload the page.;;
+email;no;;
