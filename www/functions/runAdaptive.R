@@ -45,7 +45,7 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
 
   if (inputFilesRead){
     
-    #Render nice message when error
+    #Add rendering nice message when error
     output$dcMessage <- renderUI({disconnectMessage(text = paste0(txt[txt$text_type == "error", "text"], " [", urlString, "]"), refresh = txt[txt$text_type == "refresh", "text"])})
     
     #Render CDI name
@@ -61,7 +61,7 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
       
     } else {
       
-      #First contact with inventory
+      #First contact with the form
       if (fromSW) recurrentCallSW(idx, form, lang)
       
       subject <- list(id = idx, gender = NA, birth = NA, filler = NA, form = form, formEnded = FALSE)
@@ -114,7 +114,7 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
         actionButton("btn", label = txt[txt$text_type == "btn", "text"], class = "btn-primary")
       })
       
-      #Awaiting answer
+      #Awaiting confirmation
       observeEvent(input$btn, {
         
         if (is.null(input$gender)){
@@ -150,6 +150,8 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
       
     } else {
       
+      ### THERE WAS CONTACT WITH THE TEST ALREADY ###
+      
       if (subject$formEnded){
         
         #Test already filled
@@ -161,6 +163,7 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
         
       } else {
         
+        #Test started but not filled
         loginfo(paste0(urlString, " continuing with already started test."))
         startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString)
         
