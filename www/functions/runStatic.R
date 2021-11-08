@@ -260,9 +260,13 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
       if (canConfirm){
         
         if (reactList$type == "start"){
+          #Disable start btn
           reactList$userProgress[reactList$userProgress$type == 'start', "disabled"] <- TRUE
           disable('start')
         }
+        
+        #Log info about done type
+        loginfo(paste0(urlString, " part '", reactList$type, "' done"))
         
         #Mark curent type as done
         reactList$userProgress[reactList$userProgress$type == reactList$type, "done"] <- TRUE
