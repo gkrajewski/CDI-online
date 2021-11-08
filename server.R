@@ -51,7 +51,7 @@ server <- function(input, output, session) {
             }
             
             #Log info about opening inventory
-            loginfo(paste0("Inventory opened ", urlString, " fromSW=", fromSW))
+            loginfo(paste0(urlString, " inventory opened, ",  "fromSW=", fromSW))
             
             #Prevent from opening same url params more than once in the same moment
             busyURLs <- BUSY_URLS()

@@ -2,36 +2,45 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
   
   #Read translations & settings
   inputFilesRead <- tryCatch(
+    
     expr = {
       
-      #Load settings
+      #Load settings and translations
       testPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/adaptive/", form)
       setwd(testPath)
       uniTransl <- read.csv(paste0("../uniSettings&translations.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
       transl <- read.csv(paste0("settings&translations.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
       
+      #Prepare settings and translations
       translID <- paste(transl$text_type, transl$text)
       uniTranslID <- paste(uniTransl$text_type, uniTransl$text)
-      uniTransl <- subset(uniTransl, !(uniTranslID %in% translID)) #Get things from uniTransl (uniCATsettings) that are not in translations
+      uniTransl <- subset(uniTransl, !(uniTranslID %in% translID)) #Get things from uniTransl (uniSettings&translations) that are not in translations
       txt <- rbind(uniTransl, transl)
       
       setwd(INIT_PATH)
       
       TRUE
+      
     },
+    
     error = function(m){
-      msg <- paste0("There is problem with input files <br><br>", m)
+      
+      msg <- paste0("There is problem with input file <br><br>", m)
       logerror(msg)
       output$sidebar <- renderText({msg})
       return(FALSE)
+      
     },
+    
     warning = function(m){
-      msg <- paste0("There is problem with input files <br><br>", m)
+      
+      msg <- paste0("There is problem with input file <br><br>", m)
       logwarn(msg)
       output$sidebar <- renderText({msg})
       return(FALSE)
       
     }
+    
   )
 
   if (inputFilesRead){
@@ -45,10 +54,17 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
     
     #Prepare subject variable
     subjectFile <- paste0("subjects/", urlString, ".rds")
+    
     if (file.exists(subjectFile)){
+      
       subject <- readRDS(subjectFile)
+      
     } else {
-      subject <- list(id = idx, gender = NA, birth = NA, test = NA, testEnd = NA, filler=NA)
+      
+      #First contact with inventory
+      if (fromSW) recurrentCallSW(idx, form, lang)
+      
+      subject <- list(id = idx, gender = NA, birth = NA, filler = NA, form = form, formEnded = FALSE)
       
       if ("groups" %in% txt$text_type) {
         groups<-strsplit(txt[txt$text_type == "groups", "text"], ",")[[1]]
@@ -60,9 +76,9 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
         subject[[paste0(subgroup, "Test")]] = NA
         subject[[paste0(subgroup, "Theta")]] = NA
         subject[[paste0(subgroup, "Start")]] = NA
+        subject[[paste0(subgroup, "Comment")]] = NA
       }
-      
-      if (fromSW) recurrentCallSW(idx, form, lang)
+  
     }
     
     #Render rest of UI
@@ -100,34 +116,41 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
       
       #Awaiting answer
       observeEvent(input$btn, {
+        
         if (is.null(input$gender)){
+          
           showModal(modalDialog(
             title = txt[txt$text_type == "modalTitle", "text"],
             txt[txt$text_type == "noGender", "text"],
             easyClose = TRUE,
             footer = NULL
           ))
+          
         } else if (is.null(input$filler)) {
+          
           showModal(modalDialog(
             title = txt[txt$text_type == "modalTitle", "text"],
             txt[txt$text_type == "noFiller", "text"],
             easyClose = TRUE,
             footer = NULL
           ))
+          
         } else {
-          output$warning <- renderText({})
+          
           subject$birth <- paste(input$birth)
           subject$gender <- input$gender
           subject$filler <- input$filler
           subject$fillerTxt <- input$fillerTxt
           loginfo(paste0(urlString, " starting test from the beginning."))
           startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString)
+          
         }
+        
       })
       
     } else {
       
-      if (!is.na(subject[["testEnd"]])){
+      if (subject$formEnded){
         
         #Test already filled
         showModal(modalDialog(
@@ -137,8 +160,10 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
         ))
         
       } else {
-        loginfo(paste0(urlString, " continuing with the started test."))
-        startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString) #Start test
+        
+        loginfo(paste0(urlString, " continuing with already started test."))
+        startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString)
+        
       }
       
     }    

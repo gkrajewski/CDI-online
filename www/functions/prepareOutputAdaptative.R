@@ -16,6 +16,7 @@ prepareOutputAdaptative <- function(design, items, subject, lang, group, endDate
   a["gender"] = subject$gender
   a["birth"] = subject$birth
   a["test"] = subject$test
+  a["comment"] = subject[[paste0(group, "Comment")]]
   a["start_theta"] = subject[[paste0(group, "Theta")]]
   a["filler"] = paste0(subject$filler, subject$fillerTxt)
   a["lang"] = lang
