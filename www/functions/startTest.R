@@ -231,6 +231,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
                             `q_id` INT NOT NULL,
                             `items` VARCHAR(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
                             `answers` INT NULL,
+                            `comment` VARCHAR(", toString(STRING_LIMIT), ") CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
                             `theta` FLOAT NULL,
                             `se_theta` FLOAT NULL,
                             `final` INT NULL,
@@ -247,13 +248,13 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
                                    tableCreate=query,
                                    tableInput=outputTable)
       
-      
-      values$groupsToSave <- values$groupsToSave[values$groupsToSave!=saveblock]
+      #TODO
+      #values$groupsToSave <- values$groupsToSave[values$groupsToSave!=saveblock]
     }
     
-    if (values$sendLogs) {
-      sendLogs(urlString, idx, form, lang)
-    }
+    # if (values$sendLogs) {
+    #   sendLogs(urlString, idx, form, lang)
+    # }
     
   })
   
@@ -350,11 +351,13 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
                             `q_id` INT NOT NULL,
                             `items` VARCHAR(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
                             `answers` INT NULL,
+                            `comment` VARCHAR(", toString(STRING_LIMIT), ") CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
                             `theta` FLOAT NULL,
                             `se_theta` FLOAT NULL,
                             `final` INT NULL,
                             `start_date` DATETIME NULL,
                             `end_date` DATETIME NULL);")
+            print(outputTable)
             
             sendDatabase(username=Sys.getenv("DB_USERNAME"),
                          password=Sys.getenv("DB_PASSWORD"),
