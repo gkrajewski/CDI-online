@@ -53,7 +53,6 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   
   groupIdx <- 1
   subgroup <- groupsToTest[groupIdx]
-
   itemsGroup <- items[items$group==subgroup, ]
   
   #Prepare start theta
@@ -255,6 +254,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         recurrentCallSW(idx, form, lang, done = "true", score="true")
         
         toSave = isolate(values$groupsToSave)
+        
         for (saveblock in toSave) {
 
           answerFile <- paste0("designs/", urlString, "-", saveblock, ".csv")

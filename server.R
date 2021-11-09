@@ -84,9 +84,9 @@ server <- function(input, output, session) {
               }, ignoreInit = TRUE)
                 
               if (type=="adaptative") {
-                runAdaptive(input, output, session, lang, form, idx, run)
+                runAdaptive(input, output, session, lang, form, idx, run, urlString, fromSW)
               } else {
-                runStatic(input, output, session, lang, form, idx, run)
+                runStatic(input, output, session, lang, form, idx, run, urlString, fromSW)
               }
                 
             } else if (!waitingForClose() & !inventoryStarted()){
@@ -122,7 +122,7 @@ server <- function(input, output, session) {
                        session$clientData$url_pathname,
                        session$clientData$url_search)
           output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badType", "text"], 
-                                                 "static, adaptive",
+                                                 "static, adaptative",
                                                  "<br><br>", 
                                                  settings[settings$text_type == "errorInfo", "text"],
                                                  "<br><br>link:",
