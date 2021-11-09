@@ -462,13 +462,16 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
             
             ### START NEXT PART ###
             
+            #Save comment to csv
+            answerFile <- paste0("designs/", urlString, "-", isolate(values$commentGroup), ".csv")
+            outputTable <- read.csv(answerFile)
+            outputTable$comment <- values$subject[[paste0(values$commentGroup, "Comment")]]
+            write.csv(outputTable, answerFile, row.names = F)
+            
             #Update comment group
             values$commentGroup <- values$subgroup
             
-            #Save comment to csv
-            # outputTable$comment <- input$comment
-            # write.csv(outputTable, answerFile, row.names = F)
-            
+            #Render testing UI
             output$main <- renderUI({
               list(
                 if (header %in% txt$text_type & headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"], style=paste0("color: ", txt[txt$text_type == headerColor, "text"], ";")),
