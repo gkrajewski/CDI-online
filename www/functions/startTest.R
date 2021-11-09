@@ -125,11 +125,9 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
                                    tableName=tableName,
                                    tableCreate=query,
                                    tableInput=outputTable)
-      
-      values$groupsToSave <- values$groupsToSave[values$groupsToSave!=saveblock]
     }
     
-    if (values$sendLogs) {
+    if (isolate(values$sendLogs)) {
        sendLogs(urlString, idx, form, lang)
    }
     
