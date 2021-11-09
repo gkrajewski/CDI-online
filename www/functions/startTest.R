@@ -257,14 +257,10 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     
   })
   
+  #Add comment saving
   observeEvent(input$comment, {
-    
-    #Comment saving
-    print(values$commentGroup)
     values$subject[[paste0(values$commentGroup, "Comment")]] <- input$comment
-    print(values$subject)
-    
-  }, ignoreInit = TRUE)
+  })
   
   observeEvent(input$question, {
     
@@ -290,46 +286,59 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         
         ### TEST DEFINITIVE END ###
         
-        values$subject[["formEnded"]] <- TRUE
-        values$subject[[paste0(values$subgroup, "Test")]] <- "end"
+        output$main <- renderUI({
+          list(
+            h5(txt[txt$text_type == "endText", "text"]),
+            div(class = "comment", textAreaInput("comment", label = txt[txt$text_type == "commentLabel", "text"], value = ""))
+          )
+        })
         
-        showModal(modalDialog(
-          title = txt[txt$text_type == "end", "text"],
-          txt[txt$text_type == "thanks", "text"],
-          easyClose = FALSE,
-          footer = NULL
-        ))
+        output$sidebar <- renderUI({
+          actionButton("endBtn", label = txt[txt$text_type == "endBtn", "text"], class = "btn-primary")
+        })
         
-        CATdesign(updatedDesign)
-        saveRDS(isolate(CATdesign()), isolate(values$designFile))
-        saveRDS(isolate(values$subject), subjectFile)
-        recurrentCallSW(idx, form, lang, done = "true", score="true")
-        
-        toSave = isolate(values$groupsToSave)
-        for (saveblock in toSave) {
-
-          answerFile <- paste0("designs/", urlString, "-", saveblock, ".csv")
-          outputTable <- read.csv(answerFile)
-
-          if (txt[txt$text_type == "email", "text"]=="yes") {
-            loginfo(paste0(urlString, "-", saveblock, " sending email."))
-            sendMail(subjectText=paste0("[SHINYDATA] ", urlString, "-", saveblock),
-                     txt="Inventory completed.",
-                     id=paste0(urlString, " group=", saveblock),
-                     host="smtp.gmail.com",
-                     port=465,
-                     username=MAIL_USERNAME,
-                     password=Sys.getenv("GMAIL_PASSWORD"),
-                     recipients=EMAILS_RECIPIENTS,
-                     attach=answerFile
-            )
-          } else {
-            loginfo(paste0(urlString, " sending emails disabled."))
-          }
-
-
-          tableName <- paste0("form_", form, "_", lang, "_adaptive")
-          query = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
+        observeEvent(input$endBtn, {
+          
+          values$subject[["formEnded"]] <- TRUE
+          values$subject[[paste0(values$subgroup, "Test")]] <- "end"
+          
+          showModal(modalDialog(
+            title = txt[txt$text_type == "end", "text"],
+            txt[txt$text_type == "thanks", "text"],
+            easyClose = FALSE,
+            footer = NULL
+          ))
+          
+          CATdesign(updatedDesign)
+          saveRDS(isolate(CATdesign()), isolate(values$designFile))
+          saveRDS(isolate(values$subject), subjectFile)
+          recurrentCallSW(idx, form, lang, done = "true", score="true")
+          
+          toSave = isolate(values$groupsToSave)
+          for (saveblock in toSave) {
+            
+            answerFile <- paste0("designs/", urlString, "-", saveblock, ".csv")
+            outputTable <- read.csv(answerFile)
+            
+            if (txt[txt$text_type == "email", "text"]=="yes") {
+              loginfo(paste0(urlString, "-", saveblock, " sending email."))
+              sendMail(subjectText=paste0("[SHINYDATA] ", urlString, "-", saveblock),
+                       txt="Inventory completed.",
+                       id=paste0(urlString, " group=", saveblock),
+                       host="smtp.gmail.com",
+                       port=465,
+                       username=MAIL_USERNAME,
+                       password=Sys.getenv("GMAIL_PASSWORD"),
+                       recipients=EMAILS_RECIPIENTS,
+                       attach=answerFile
+              )
+            } else {
+              loginfo(paste0(urlString, " sending emails disabled."))
+            }
+            
+            
+            tableName <- paste0("form_", form, "_", lang, "_adaptive")
+            query = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
                             `idx` VARCHAR(45) NULL,
                             `gender` VARCHAR(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
                             `birth` VARCHAR(45) NULL,
@@ -346,23 +355,25 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
                             `final` INT NULL,
                             `start_date` DATETIME NULL,
                             `end_date` DATETIME NULL);")
-
-          sendDatabase(username=Sys.getenv("DB_USERNAME"),
-                                       password=Sys.getenv("DB_PASSWORD"),
-                                       dbname=Sys.getenv("DB_NAME"),
-                                       host=Sys.getenv("DB_HOST"),
-                                       port=Sys.getenv("DB_PORT"),
-                                       id=paste0(urlString, " group=", saveblock),
-                                       tableName=tableName,
-                                       tableCreate=query,
-                                       tableInput=outputTable)
-
-
-          values$groupsToSave <- values$groupsToSave[values$groupsToSave!=saveblock]
-        }
-        
-        sendLogs(urlString, idx, form, lang)
-        values$sendLogs <- FALSE
+            
+            sendDatabase(username=Sys.getenv("DB_USERNAME"),
+                         password=Sys.getenv("DB_PASSWORD"),
+                         dbname=Sys.getenv("DB_NAME"),
+                         host=Sys.getenv("DB_HOST"),
+                         port=Sys.getenv("DB_PORT"),
+                         id=paste0(urlString, " group=", saveblock),
+                         tableName=tableName,
+                         tableCreate=query,
+                         tableInput=outputTable)
+            
+            
+            values$groupsToSave <- values$groupsToSave[values$groupsToSave!=saveblock]
+          }
+          
+          sendLogs(urlString, idx, form, lang)
+          values$sendLogs <- FALSE
+          
+        }, once = TRUE)
         
       } else {
         
@@ -438,7 +449,6 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
                 h5(txt[txt$text_type == btnID, "text"]),
                 div(class = "comment", textAreaInput("comment", label = txt[txt$text_type == "commentLabel", "text"], value = ""))
               )
-            
           })
           
           output$sidebar <- renderUI({
@@ -486,10 +496,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         
         values$subject[[paste0(values$subgroup, "Start")]] <- as.character(Sys.time())
         CATdesign(CATdesign)
+        
       }
-      
-      
-      
 
     } else {
       
