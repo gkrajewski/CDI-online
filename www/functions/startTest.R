@@ -135,6 +135,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   values$nextItem <- findNextItem(CATdesign)
   values$groupIdx <- groupIdx
   values$subgroup <- subgroup
+  values$commentGroup <- subgroup
   values$itemsGroup <- itemsGroup
   values$designFile <- designFile
   values$subject <- subject
@@ -255,6 +256,15 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     }
     
   })
+  
+  observeEvent(input$comment, {
+    
+    #Comment saving
+    print(values$commentGroup)
+    values$subject[[paste0(values$commentGroup, "Comment")]] <- input$comment
+    print(values$subject)
+    
+  }, ignoreInit = TRUE)
   
   observeEvent(input$question, {
     
@@ -442,8 +452,12 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
             
             ### START NEXT PART ###
             
-            #Save comment
-            values$subject[[paste0(groupsToTest[values$groupIdx - 1], "Comment")]] <- input$comment
+            #Update comment group
+            values$commentGroup <- values$subgroup
+            
+            #Save comment to csv
+            # outputTable$comment <- input$comment
+            # write.csv(outputTable, answerFile, row.names = F)
             
             output$main <- renderUI({
               list(
