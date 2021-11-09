@@ -52,6 +52,7 @@ source(paste0(FUNCTIONS_PATH,"/sendMail.R"))
 source(paste0(FUNCTIONS_PATH,"/sendDatabase.R"))
 source(paste0(FUNCTIONS_PATH,"/chooseTheta.R"))
 source(paste0(FUNCTIONS_PATH,"/sendLogs.R"))
+source(paste0(FUNCTIONS_PATH,"/prepareGroup.R"))
 
 #Load file with secret variables
 readRenviron(".Renviron")
@@ -60,7 +61,7 @@ readRenviron(".Renviron")
 MAIL_USERNAME <- "cdishiny@gmail.com"
 EMAILS_RECIPIENTS <- c("cdishiny@gmail.com", "projekt.starwords@psych.uw.edu.pl")
 
-# credentials to connect with database
+# Parameters to save results in database
 STRING_LIMIT <- 2000
 
 #Prepare vector of busy urls and urls to close (to not allow few opens of the same inventory)
