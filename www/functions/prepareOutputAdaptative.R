@@ -6,6 +6,7 @@ prepareOutputAdaptative <- function(design, items, subject, lang, group, endDate
   a = data.frame("q_id" = 1:length(answered),
                  "items" = items[answered],
                  "answers" = design$person$responses[answered],
+                 "comment" = NA,
                  "theta" = design$person$thetas_history[2:length(design$person$thetas_history)],
                  "se_theta" = design$person$thetas_SE_history[2:length(design$person$thetas_SE_history)])
   
