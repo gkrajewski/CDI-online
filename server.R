@@ -44,12 +44,24 @@ server <- function(input, output, session) {
             
             #Set inventory string
             urlString <- paste(lang, form, idx, run, sep = "-")
-            
+  
             if (!is.element(urlString, BUSY_URLS())){
               
               ### START INVENTORY ###
               inventoryStarted(TRUE)
+              addHandler(writeToFile, file=paste0(INIT_PATH, "/logs/", urlString, ".log"), level='DEBUG', 
+                         formatter=formatter.shiny)
               
+              #Check if user is connected with StarWords app
+              if (nchar(idx) == 21){
+                fromSW <- TRUE
+              } else {
+                fromSW <- FALSE
+              }
+              
+              #Log info about opening inventory
+              loginfo(paste0(urlString, " inventory opened, ",  "fromSW=", fromSW))
+                
               #Prevent from opening same url params more than once in the same moment
               busyURLs <- BUSY_URLS()
               busyURLs <- c(busyURLs, urlString)
@@ -60,7 +72,7 @@ server <- function(input, output, session) {
                 busyURLs <- busyURLs[busyURLs != urlString]
                 BUSY_URLS(busyURLs)
               })
-              
+                
               closeSession <- reactive({paste0(is.element(urlString, URLS_TO_CLOSE()))})
               observeEvent(closeSession(), {
                 if (closeSession()){
@@ -70,14 +82,13 @@ server <- function(input, output, session) {
                   session$close()
                 }
               }, ignoreInit = TRUE)
-              
-              if (endsWith(form, "-cat")) {
+                
+              if (type=="adaptative") {
                 runAdaptive(input, output, session, lang, form, idx, run)
               } else {
                 runStatic(input, output, session, lang, form, idx, run)
               }
-              
-              
+                
             } else if (!waitingForClose() & !inventoryStarted()){
               urlsToClose <- URLS_TO_CLOSE()
               urlsToClose <- c(urlsToClose, urlString)
@@ -131,7 +142,7 @@ server <- function(input, output, session) {
       }
       
     } else {
-      # updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
+      # updateQueryString(paste0("?id=", "test", "&form=", "ws", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
       # session$reload()
       url = paste0(session$clientData$url_protocol,"//", 
                    session$clientData$url_hostname,":",

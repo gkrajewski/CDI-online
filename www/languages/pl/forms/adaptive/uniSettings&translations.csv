@@ -16,3 +16,6 @@ fillerQuestion;Kim Państwo są dla dziecka?
 fillers;mama,tata,babcia,dziadek,niania,nauczyciel(-ka),inna odpowiedź (proszę wpisać):
 noFiller;Proszę wybrać osobę, która wypełnia kwestionariusz
 email;yes
+error;Wystąpił błąd. Proszę odświeżyć i spróbować ponownie. Jeśli błąd się powtarza prosimy o zrobienie screena tego komunikatu i wysłanie na maila projekt.starwords@psych.uw.edu.pl lub przez media społecznościowe.
+refresh;Odśwież
+commentLabel;Uwagi

@@ -1,5 +1,3 @@
-# Communicative Development Inventory - static version
-<br/>
-wersja BETA 3
-<br/>
-Link do aplikacji: https://piotrkrol.shinyapps.io/CDI-static/ (Należy dodać odpowiednie parametry URL np. ?id=test&form=wg&lang=pl)
+# CDI online
+In order to launch any inventory you have to provide a proper URL query eg. /?id=test&form=wg&lang=pl
+Currently accesible langs and forms are in the www folder. Id could be any string, ids of length 21 mean a person connected with the StarWords app.

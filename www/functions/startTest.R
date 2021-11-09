@@ -1,19 +1,15 @@
 startTest <- function(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString){
 
-  loginfo(paste0(urlString, "--- START TEST ---"))
+  #Get subject age in months
+  subjectAge <- interval(subject$birth, Sys.Date()) %/% months(1)
   
-  #TODO
-  #Select current test for subject
-  if (is.na(subject[["testEnd"]])){
-    subjectAge <- interval(subject$birth, Sys.Date()) %/% months(1)
-    subjectGender <- subject$gender
-    subject$test <- form
-  } 
+  #Get subject gender
+  subjectGender <- subject$gender
   
   #Load items and start thetas
   setwd(testPath)
   items <- read.csv(paste0("items.csv"), encoding = "UTF-8", strip.white = T)
-  startThetasFile <- paste0("startThetas.csv")
+  startThetasFile <- "startThetas.csv"
   if (file.exists(startThetasFile)) {
     startThetas <- read.csv(paste0("startThetas.csv"), encoding = "UTF-8", strip.white = T, dec=",")
   } else {
@@ -22,8 +18,13 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   setwd(INIT_PATH)
   
   if ("groups" %in% txt$text_type) {
+    
+    #Many groups form
     groups<-strsplit(txt[txt$text_type == "groups", "text"], ",")[[1]]
+    
   } else {
+    
+    #One group form
     groups <- c("group1")
     items$group <- "group1"
     txt[txt$text_type == "MirtMethod", "text_type"] = paste0("group1", txt[txt$text_type == "MirtMethod", "text_type"])
@@ -38,6 +39,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     if ("minItemNr" %in% txt$text_type) {
       txt[txt$text_type == "minItemNr", "text_type"] = paste0("group1", txt[txt$text_type == "minItemNr", "text_type"])
     }
+    
   }
   
   groupsToTestBool <- vector(, length(groups))
@@ -59,7 +61,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     subject[[paste0(subgroup, "Theta")]] <- chooseTheta(startThetas, subjectGender, subjectAge, subgroup)
   }
 
-  #Prepare mirtCAT design object
+  #Prepare mirtCAT design object for current group
   designFile <- paste0("designs/", urlString, "-", subgroup, ".rds")
   if (file.exists(designFile)){
     CATdesign <- readRDS(designFile)
@@ -79,13 +81,11 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     div(class = "help-block", txt[txt$text_type == "testInstr", "text"])
   })
   
-  #Adjust sidebar background color
-  
-
   #Render first question
   if (is.na(subject[[paste0(subgroup, "Start")]])) {
     subject[[paste0(subgroup, "Start")]] <- as.character(Sys.time())
   }
+  
   values <- reactiveValues()
   values$nextItem <- findNextItem(CATdesign)
   values$groupIdx <- groupIdx
@@ -94,8 +94,9 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   values$designFile <- designFile
   values$subject <- subject
   values$groupsToSave <- c()
+  values$sendLogs <- TRUE
   
-  #Render question and optionally header
+  #Render question and optionally header of given color
   header <- paste0(isolate(values$subgroup), "Header")
   headerColor <- paste0(isolate(values$subgroup), "HeaderColor")
   output$main <- renderUI({
@@ -141,9 +142,6 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     values$seTheta <- 0
   }
 
-  #Render progress bar
-  #createProgressBar(output, CATdesign, maxItemNr)
-  
   #Save CAT design and subject to file when session ends
   CATdesign <- reactiveVal(CATdesign)
   session$onSessionEnded(function() {
@@ -193,7 +191,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
                             `start_date` DATETIME NULL,
                             `end_date` DATETIME NULL);")
       
-      sendDatabase <- sendDatabase(username=Sys.getenv("DB_USERNAME"),
+      sendDatabase(username=Sys.getenv("DB_USERNAME"),
                                    password=Sys.getenv("DB_PASSWORD"),
                                    dbname=Sys.getenv("DB_NAME"),
                                    host=Sys.getenv("DB_HOST"),
@@ -206,15 +204,21 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       
       values$groupsToSave <- values$groupsToSave[values$groupsToSave!=saveblock]
     }
+    
+    if (values$sendLogs) {
+      sendLogs(urlString, idx, form, lang)
+    }
+    
+  })
+  
+  observeEvent(input$comment, {
+    values$subject[[paste0(values$subgroup, "Comment")]] <- input$comment
   })
 
   observeEvent(input$question, {
     
     #Update design
     updatedDesign <- updateDesign(CATdesign(), new_item = values$nextItem, new_response = input$question)
-
-    #Update progress bar
-    #createProgressBar(output, updatedDesign, maxItemNr)
 
     if ((length(na.omit(updatedDesign$person$items_answered)) >= values$minItemNr) &
         ((length(na.omit(updatedDesign$person$items_answered)) >= values$maxItemNr) |
@@ -235,7 +239,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         
         ### TEST DEFINITIVE END ###
         
-        values$subject[["testEnd"]] <- "end"
+        values$subject[["formEnded"]] <- TRUE
         values$subject[[paste0(values$subgroup, "Test")]] <- "end"
         
         showModal(modalDialog(
@@ -292,7 +296,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
                             `start_date` DATETIME NULL,
                             `end_date` DATETIME NULL);")
 
-          sendDatabase <- sendDatabase(username=Sys.getenv("DB_USERNAME"),
+          sendDatabase(username=Sys.getenv("DB_USERNAME"),
                                        password=Sys.getenv("DB_PASSWORD"),
                                        dbname=Sys.getenv("DB_NAME"),
                                        host=Sys.getenv("DB_HOST"),
@@ -306,8 +310,10 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
           values$groupsToSave <- values$groupsToSave[values$groupsToSave!=saveblock]
         }
         
-      } 
-      else {
+        sendLogs(urlString, idx, form, lang)
+        values$sendLogs <- FALSE
+        
+      } else {
         
         saveRDS(isolate(CATdesign()), isolate(values$designFile))
         
@@ -316,7 +322,6 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         values$groupIdx <- values$groupIdx +1
         values$subgroup <- groupsToTest[values$groupIdx]
         values$itemsGroup <- items[items$group==values$subgroup, ]
-        
         
         #Set maximum number of items in test (stop criterion)
         if (paste0(isolate(values$subgroup), "maxItemNr") %in% txt$text_type) {
@@ -351,7 +356,9 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         values$designFile <- paste0("designs/", lang, "-", form, "-", idx, "-", isolate(values$subgroup), ".rds")
         
         if (file.exists(values$designFile)){
+          
           CATdesign <- readRDS(isolate(values$designFile))
+          
         } else {
           
           if (is.na(values$subject[[paste0(values$subgroup, "Theta")]])){
@@ -372,7 +379,15 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         
         btnID = paste0(isolate(values$subgroup), "Btn")  
         if (btnID %in% txt$text_type) {
-          output$main <- renderUI({h5(txt[txt$text_type == btnID, "text"])})
+          
+          output$main <- renderUI({
+              list(
+                h5(txt[txt$text_type == btnID, "text"]),
+                div(class = "comment", textAreaInput("comment", label = txt[txt$text_type == "commentLabel", "text"], value = ""))
+              )
+            
+          })
+          
           output$sidebar <- renderUI({
             actionButton(btnID, label = txt[txt$text_type == "continueBtn", "text"], class = "btn-primary")
           })
@@ -395,6 +410,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
             })
             
             output$sidebar <- renderUI({div(class = "help-block", txt[txt$text_type == "testInstr", "text"])})
+            
           })
           
         } else {
@@ -418,13 +434,11 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       updateRadioButtons(session, "question",
                          label = paste0(values$itemsGroup$question[values$nextItem], ' "', values$itemsGroup$item[values$nextItem], '"?'),
                          selected = character(0))
-      
 
       CATdesign(updatedDesign)
+      
     }
     
-
   })
     
-
 }

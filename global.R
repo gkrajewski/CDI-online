@@ -25,6 +25,7 @@ if(!dir.exists(file.path(INIT_PATH, "answers"))) dir.create(file.path(INIT_PATH,
 if(!dir.exists(file.path(INIT_PATH, "usersProgress"))) dir.create(file.path(INIT_PATH, "usersProgress"))
 if (!dir.exists(file.path(INIT_PATH, "designs"))) dir.create(file.path(INIT_PATH, "designs"))
 if (!dir.exists(file.path(INIT_PATH, "subjects"))) dir.create(file.path(INIT_PATH, "subjects"))
+if (!dir.exists(file.path(INIT_PATH, "logs"))) dir.create(file.path(INIT_PATH, "logs"))
 
 #Load form-universal end settings
 setwd(WWW_PATH)
@@ -50,6 +51,7 @@ source(paste0(FUNCTIONS_PATH,"/createProgressBar.R"))
 source(paste0(FUNCTIONS_PATH,"/sendMail.R"))
 source(paste0(FUNCTIONS_PATH,"/sendDatabase.R"))
 source(paste0(FUNCTIONS_PATH,"/chooseTheta.R"))
+source(paste0(FUNCTIONS_PATH,"/sendLogs.R"))
 
 #Load file with secret variables
 readRenviron(".Renviron")
@@ -67,3 +69,45 @@ URLS_TO_CLOSE <- reactiveVal(list())
 
 #prepare logger
 basicConfig()
+formatter.shiny <- function(record) {
+  text <- paste(record$timestamp, record$levelname, record$msg, sep='%')
+  return(text)
+}
+addHandler(writeToFile, file=paste0(INIT_PATH, "/logs/shinyapp.log"), level='DEBUG', 
+           formatter=formatter.shiny)
+
+#create logging table
+tableName="logging"
+createLogging = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
+                            `date` DATETIME NULL,
+                            `dateString` VARCHAR(50) NULL,
+                            `level` VARCHAR(50) NULL,
+                            `text` VARCHAR(2000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
+                            `id` VARCHAR(99) NULL,
+                            `lang` VARCHAR(50) NULL,
+                            `form` VARCHAR(50) NULL);
+                        ")
+sendDatabase(username=Sys.getenv("DB_USERNAME"),
+                             password=Sys.getenv("DB_PASSWORD"),
+                             dbname=Sys.getenv("DB_NAME"),
+                             host=Sys.getenv("DB_HOST"),
+                             port=Sys.getenv("DB_PORT"),
+                             id="global",
+                             tableName=tableName,
+                             tableCreate=createLogging)
+
+createEvent = paste0("CREATE EVENT IF NOT EXISTS `", Sys.getenv("DB_NAME"), "`.`Delete_Older_Than_30_Days`
+                            ON SCHEDULE EVERY 1 DAY
+                            STARTS STR_TO_DATE(DATE_FORMAT(NOW(),'%Y%m%d 0100'),'%Y%m%d %H%i')
+                            DO
+                            DELETE FROM `", Sys.getenv("DB_NAME"), "`.`",tableName,"`
+                            WHERE date < DATE_SUB(NOW(),INTERVAL 30 DAY);
+                        ")
+sendDatabase(username=Sys.getenv("DB_USERNAME"),
+                             password=Sys.getenv("DB_PASSWORD"),
+                             dbname=Sys.getenv("DB_NAME"),
+                             host=Sys.getenv("DB_HOST"),
+                             port=Sys.getenv("DB_PORT"),
+                             id="global",
+                             tableName=tableName,
+                             tableQuery=createEvent)
