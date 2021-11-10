@@ -12,12 +12,13 @@ server <- function(input, output, session) {
     idx <- readFromURL("id", session, caseInvariance = FALSE)
     form <- readFromURL("form", session)
     lang <- readFromURL("lang", session)
+    type <- readFromURL("type", session)
     run <- readFromURL("run", session)
     if(is.null(run)){
       run <- "0"
     }
       
-    if (!is.null(lang) & !is.null(form) & !is.null(idx)){
+    if (!is.null(lang) & !is.null(form) & !is.null(idx) & !is.null(type)){
       
       if (is.element(lang, availableLangs)){
 
@@ -31,78 +32,101 @@ server <- function(input, output, session) {
         settings <- read.csv("preSettings.csv", encoding = "UTF-8", sep = ";", strip.white = T)
         setwd(INIT_PATH)
         
-        if (is.element(form, c(availableStaticForms, availableAdaptiveForms))){
+        if (type=="static" | type=="adaptative") {
           
-          #Set inventory string
-          urlString <- paste(lang, form, idx, run, sep = "-")
+          if (type=="static") {
+            availableForms = availableStaticForms
+          } else {
+            availableForms = availableAdaptiveForms
+          }
           
-          if (!is.element(urlString, BUSY_URLS())){
+          if (is.element(form, availableForms)){
             
-            ### START INVENTORY ###
-            inventoryStarted(TRUE)
-            addHandler(writeToFile, file=paste0(INIT_PATH, "/logs/", urlString, ".log"), level='DEBUG', 
-                       formatter=formatter.shiny)
-            
-            #Check if user is connected with StarWords app
-            if (nchar(idx) == 21){
-              fromSW <- TRUE
-            } else {
-              fromSW <- FALSE
-            }
-            
-            #Log info about opening inventory
-            loginfo(paste0(urlString, " inventory opened, ",  "fromSW=", fromSW))
-            
-            #Prevent from opening same url params more than once in the same moment
-            busyURLs <- BUSY_URLS()
-            busyURLs <- c(busyURLs, urlString)
-            BUSY_URLS(busyURLs)
-            
-            session$onSessionEnded(function() {
-              busyURLs <- isolate(BUSY_URLS())
-              busyURLs <- busyURLs[busyURLs != urlString]
-              BUSY_URLS(busyURLs)
-            })
-            
-            closeSession <- reactive({paste0(is.element(urlString, URLS_TO_CLOSE()))})
-            observeEvent(closeSession(), {
-              if (closeSession()){
-                urlsToClose <- URLS_TO_CLOSE()
-                urlsToClose <- urlsToClose[urlsToClose != urlString]
-                URLS_TO_CLOSE(urlsToClose)
-                session$close()
+            #Set inventory string
+            urlString <- paste(lang, form, idx, run, sep = "-")
+  
+            if (!is.element(urlString, BUSY_URLS())){
+              
+              ### START INVENTORY ###
+              inventoryStarted(TRUE)
+              addHandler(writeToFile, file=paste0(INIT_PATH, "/logs/", urlString, ".log"), level='DEBUG', 
+                         formatter=formatter.shiny)
+              
+              #Check if user is connected with StarWords app
+              if (nchar(idx) == 21){
+                fromSW <- TRUE
+              } else {
+                fromSW <- FALSE
               }
-            }, ignoreInit = TRUE)
-            
-            if (endsWith(form, "-cat")) {
-              runAdaptive(input, output, session, lang, form, idx, run, urlString, fromSW)
-            } else {
-              runStatic(input, output, session, lang, form, idx, run, urlString, fromSW)
+              
+              #Log info about opening inventory
+              loginfo(paste0(urlString, " inventory opened, ",  "fromSW=", fromSW))
+                
+              #Prevent from opening same url params more than once in the same moment
+              busyURLs <- BUSY_URLS()
+              busyURLs <- c(busyURLs, urlString)
+              BUSY_URLS(busyURLs)
+              
+              session$onSessionEnded(function() {
+                busyURLs <- isolate(BUSY_URLS())
+                busyURLs <- busyURLs[busyURLs != urlString]
+                BUSY_URLS(busyURLs)
+              })
+                
+              closeSession <- reactive({paste0(is.element(urlString, URLS_TO_CLOSE()))})
+              observeEvent(closeSession(), {
+                if (closeSession()){
+                  urlsToClose <- URLS_TO_CLOSE()
+                  urlsToClose <- urlsToClose[urlsToClose != urlString]
+                  URLS_TO_CLOSE(urlsToClose)
+                  session$close()
+                }
+              }, ignoreInit = TRUE)
+                
+              if (type=="adaptative") {
+                runAdaptive(input, output, session, lang, form, idx, run, urlString, fromSW)
+              } else {
+                runStatic(input, output, session, lang, form, idx, run, urlString, fromSW)
+              }
+                
+            } else if (!waitingForClose() & !inventoryStarted()){
+              urlsToClose <- URLS_TO_CLOSE()
+              urlsToClose <- c(urlsToClose, urlString)
+              URLS_TO_CLOSE(urlsToClose)
+              waitingForClose(TRUE)
             }
-
-          } else if (!waitingForClose() & !inventoryStarted()){
-            urlsToClose <- URLS_TO_CLOSE()
-            urlsToClose <- c(urlsToClose, urlString)
-            URLS_TO_CLOSE(urlsToClose)
-            waitingForClose(TRUE)
+            
+          } else {
+            url = paste0(session$clientData$url_protocol,"//", 
+                         session$clientData$url_hostname,":",
+                         session$clientData$url_port,
+                         session$clientData$url_pathname,
+                         session$clientData$url_search)
+            output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badForm", "text"], 
+                                                   " type=static: ",
+                                                   availableStaticForms, 
+                                                   ", type=adaptive: ",
+                                                   availableAdaptiveForms,
+                                                   "<br><br>", 
+                                                   settings[settings$text_type == "errorInfo", "text"],
+                                                   "<br><br>link:",
+                                                   url), collapse = " ")})
+            
           }
           
         } else {
+          
           url = paste0(session$clientData$url_protocol,"//", 
                        session$clientData$url_hostname,":",
                        session$clientData$url_port,
                        session$clientData$url_pathname,
                        session$clientData$url_search)
-          output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badForm", "text"], 
-                                                 " type=static: ",
-                                                 availableStaticForms, 
-                                                 ", type=adaptive: ",
-                                                 availableAdaptiveForms,
+          output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badType", "text"], 
+                                                 "static, adaptative",
                                                  "<br><br>", 
                                                  settings[settings$text_type == "errorInfo", "text"],
                                                  "<br><br>link:",
                                                  url), collapse = " ")})
-
         }
         
       } else {
@@ -125,7 +149,7 @@ server <- function(input, output, session) {
                    session$clientData$url_port,
                    session$clientData$url_pathname,
                    session$clientData$url_search)
-      output$sidebar <- renderText({paste0("No needed params in URL (lang, form and id) <br><br>link: ", 
+      output$sidebar <- renderText({paste0("No needed params in URL (lang, form, type and id) <br><br>link: ", 
                                            url)})
       
     }  

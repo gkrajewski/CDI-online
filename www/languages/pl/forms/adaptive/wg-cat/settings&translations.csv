@@ -1,7 +1,5 @@
 text_type;text
 groups;mowa,rozumienie,gesty
-rozumienieBtn;Koniec części pierwszej, proszę przejść do części drugiej
-gestyBtn;Koniec części drugiej, proszę przejść do części trzeciej (ostatniej)
 rozumienieMirtMethod;ML
 rozumienieMirtCriteria;MI
 rozumienieHeader;Rozumienie słów
@@ -24,3 +22,6 @@ rozumienieminItemNr;1
 mowaminItemNr;1
 gestyminItemNr;1
 continueBtn;Dalej
+rozumienieInstr;Proszę zaznaczać “tak”, jeśli twoje dziecko rozumie podane słowo
+gestyInstr;Proszę zaznaczać “tak”, jeśli twoje dziecko wykonuje podany gest
+mowaInstr;Proszę zaznaczać “tak”, jeśli twoje dziecko mówi podane słowo

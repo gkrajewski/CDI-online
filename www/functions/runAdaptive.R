@@ -150,9 +150,9 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
       
     } else {
       
+      if (subject[["formEnded"]]){
+
       ### THERE WAS CONTACT WITH THE TEST ALREADY ###
-      
-      if (subject$formEnded){
         
         #Test already filled
         showModal(modalDialog(
