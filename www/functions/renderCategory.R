@@ -189,12 +189,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
         choices = strsplit(staticList$txt[staticList$txt$text_type == "genders", "text"], ",")[[1]]
       )
       inputObj[[3]] <- br()
-      if (staticList$lang == "en-gb"){
-        dateLanguage = "en"
-      } else {
-        dateLanguage = staticList$lang
-      }
-      inputObj[[4]] <- dateInput("birthDate", staticList$txt[staticList$txt$text_type == "dateLabel", "text"], currDate, language = dateLanguage)
+      inputObj[[4]] <- dateInput("birthDate", staticList$txt[staticList$txt$text_type == "dateLabel", "text"], currDate, language = staticList$lang)
       inputObj[[5]] <- br()
       inputObj[[6]] <- radioButtons(
         "filler",
