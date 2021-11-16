@@ -228,6 +228,19 @@ renderCategory <- function(input, output, category, reactList, staticList){
       if (commentField) div(class = "comment", textAreaInput("comment", label = staticList$txt[staticList$txt$text_type == "commentLabel", "text"], value = commentValue))
     )
   })
+  
+  #Render modalDialog if end type and inventory ended already
+  if (reactList$type == "end" & reactList$userProgress[reactList$userProgress$type == "end", "disabled"] == TRUE){
+    
+    if (staticList$fromSW) endMsg <- "endMsgTextSW" else endMsg <- "endMsgText"
+    showModal(modalDialog(
+      title = reactList$txt[reactList$txt$text_type == "endMsgTitle", "text"],
+      reactList$txt[reactList$txt$text_type == endMsg, "text"],
+      easyClose = FALSE,
+      footer = NULL
+    ))
+    
+  }
 
   #Add scrolling to header when opening new category
   runjs('document.getElementById("header").scrollIntoView();')

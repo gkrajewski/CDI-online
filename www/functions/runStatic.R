@@ -130,7 +130,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
     
     #Render current type
     reactList <- reactiveVal(list(userProgress = userProgress, answers = answers))
-    staticList <- list(types = types, items = items, txt = txt, settings = settings, lang = lang)
+    staticList <- list(types = types, items = items, txt = txt, settings = settings, lang = lang, fromSW = fromSW)
     reactList(renderType(input, output, types[match(TRUE, reactList()$userProgress$current)], reactList(), staticList))
     
     #Change category to next when nextBtn clicked
@@ -322,22 +322,16 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
             
           } else {
             
-            #Postend message
-            if (fromSW){
-              postEnd <- "postEndSW"
-            } else {
-              postEnd <- "postEnd"
-            }
-            
             if (!reactList$userProgress[reactList$userProgress$type == type, "done"]){
               
               ### INVENTORY END ###
               loginfo(paste0(urlString, " form completed. Saving..."))
               
               #Show info about end
+              if (fromSW) endMsg <- "endMsgTextSW" else endMsg <- "endMsgText"
               showModal(modalDialog(
-                title = reactList$txt[reactList$txt$text_type == "msgTitle", "text"],
-                reactList$txt[reactList$txt$text_type == "msgText", "text"],
+                title = reactList$txt[reactList$txt$text_type == "endMsgTitle", "text"],
+                reactList$txt[reactList$txt$text_type == endMsg, "text"],
                 easyClose = FALSE,
                 footer = NULL
               ))
@@ -347,11 +341,11 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
                 disable(type)
                 reactList$userProgress[reactList$userProgress$type == type, "disabled"] <- TRUE
               }
+              reactList(renderType(input, output, "end", reactList, staticList))
               
               #Count score and call StarWords database
               if (fromSW){
                 
-
                 score <- "false"
                 norms <- readNorms(formPath, form)
                 if (!is.null(norms)){
@@ -424,9 +418,6 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
               sendLogs(urlString, idx, form, lang)
               
             }
-            
-            #Ended already
-            reactList(renderType(input, output, postEnd, reactList, staticList))
             
           }
           
