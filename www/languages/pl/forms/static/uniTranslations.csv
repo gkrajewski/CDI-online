@@ -24,6 +24,8 @@ choiceNames;Jeszcze nie,Czasem,Często;combine;
 header;Zakończenie;end;
 endBtn;Zakończenie;end;
 instr;Jeśli wypełnili Państwo wszystkie części kwestionariusza, proszę kliknąć przycisk „Zatwierdź”. ;end;
+msgTitle;Dziękujemy za wypełnienie!;end;
+msgText;Bardzo dziękujemy za wypełnienie kwestionariusza! Więcej informacji znajdą Państwo w zakładce „Wiedza”.;end;
 help;Dziękujemy za wypełnienie!;postEnd;
 help;Dziękujemy za wypełnienie!;postEndSW;
 instr;Bardzo dziękujemy za wypełnienie kwestionariusza! Więcej informacji znajdą Państwo w zakładce „Wiedza”.;postEndSW;
