@@ -1,15 +1,4 @@
-runStatic <- function(input, output, session, lang, form, idx, run){
-  
-  #Check if user is connected with StarWords app
-  if (nchar(idx) == 21){
-    fromSW <- TRUE
-  } else {
-    fromSW <- FALSE
-  }
-  
-  #Prepare urlString and log info about user
-  urlString <- paste(lang, form, idx, run, sep = "-")
-  loginfo(paste0("Inventory opened ", urlString, " fromSW=", fromSW))
+runStatic <- function(input, output, session, lang, form, idx, run, urlString, fromSW){
   
   #Read and prepare items, translations and settings
   inputFilesRead <- tryCatch(
@@ -271,9 +260,13 @@ runStatic <- function(input, output, session, lang, form, idx, run){
       if (canConfirm){
         
         if (reactList$type == "start"){
+          #Disable start btn
           reactList$userProgress[reactList$userProgress$type == 'start', "disabled"] <- TRUE
           disable('start')
         }
+        
+        #Log info about done type
+        loginfo(paste0(urlString, " part '", reactList$type, "' done"))
         
         #Mark curent type as done
         reactList$userProgress[reactList$userProgress$type == reactList$type, "done"] <- TRUE
