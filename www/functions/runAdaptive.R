@@ -150,10 +150,10 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
       
     } else {
       
+      ### THERE WAS CONTACT WITH THE TEST ALREADY ###
+      
       if (subject[["formEnded"]]){
 
-      ### THERE WAS CONTACT WITH THE TEST ALREADY ###
-        
         #Test already filled
         showModal(modalDialog(
           txt[txt$text_type == "alreadyFilled", "text"],

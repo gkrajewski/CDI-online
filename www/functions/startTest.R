@@ -14,14 +14,15 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   }
   setwd(INIT_PATH)
   
+  #Prepare parts settings
   if ("groups" %in% txt$text_type) {
     
-    #Many groups form
+    #Many parts form
     groups<-strsplit(txt[txt$text_type == "groups", "text"], ",")[[1]]
     
   } else {
     
-    #One group form
+    #One part form
     groups <- c("group1")
     items$group <- "group1"
     txt[txt$text_type == "MirtMethod", "text_type"] = paste0("group1", txt[txt$text_type == "MirtMethod", "text_type"])
@@ -45,9 +46,11 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     groupsToTestBool[i] <- is.na(subject[[paste0(groups[i], "Test")]])
   }
   
+  #Select some groups order from groups/parts that were not started already
   groupsToTest <- groups[groupsToTestBool]
   groupsToTest <- sample(groupsToTest)
   
+  #Prepare reactive variables
   values <- reactiveValues()
   values$groupIdx <- 1
   values$subgroup <- groupsToTest[values$groupIdx]
@@ -129,7 +132,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     
     if (isolate(values$sendLogs)) {
        sendLogs(urlString, idx, form, lang)
-   }
+    }
     
   })
   
