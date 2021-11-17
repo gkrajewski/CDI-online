@@ -3,11 +3,14 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
   # STEP 1. Prepare everything for the group
   
   #Prepare mirtCAT design object
-  values$designFile <- designFile <- paste0("designs/", urlString, "-", values$subgroup, ".rds")
+  values$designFile <- designFile <- paste0("CATdesigns/", urlString, "-", values$subgroup, ".rds")
   
   if (file.exists(values$designFile)){
+
     CATdesign <- readRDS(isolate(values$designFile))
+    
   } else {
+    
     #preapre startTheta
     if (is.na(values$subject[[paste0(values$subgroup, "Theta")]])){
       values$subject[[paste0(values$subgroup, "Theta")]] <- chooseTheta(startThetas, values$subject$gender, subjectAge, values$subgroup)
@@ -21,6 +24,7 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
                          start_item = txt[txt$text_type == paste0(values$subgroup, "MirtCriteria"), "text"],
                          design_elements = TRUE, 
                          design = list(thetas.start = values$subject[[paste0(values$subgroup, "Theta")]]))
+    
   }
   
   values$nextItem <- findNextItem(CATdesign)
