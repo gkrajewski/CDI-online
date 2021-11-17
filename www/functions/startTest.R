@@ -149,6 +149,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
          values$seTheta))
     ){
       
+      ### PART END ###
+      
       endDate <- Sys.time()
       outputTable <- prepareOutputAdaptative(isolate(CATdesign()), isolate(values$itemsGroup$item) ,isolate(values$subject), lang, isolate(values$subgroup), endDate)
       answerFile <- paste0("designs/", urlString, "-", isolate(values$subgroup), ".csv")
@@ -159,18 +161,21 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       
       values$groupsToSave <- c(values$groupsToSave, isolate(values$subgroup))
       
+      if (values$groupIdx==length(groupsToTest)) {
+        labelBtn <- txt[txt$text_type == "endBtn", "text"]
+        completeEnd <- TRUE
+      } else {
+        labelBtn <- txt[txt$text_type == "continueBtn", "text"]
+        completeEnd <- FALSE
+      }
+      
       output$main <- renderUI({
         list(
-          if (values$groupIdx==length(groupsToTest)) h5(txt[txt$text_type == "endText", "text"]),
+          if (completeEnd) h5(txt[txt$text_type == "endText", "text"]),
           div(class = "comment", textAreaInput("comment", label = txt[txt$text_type == "commentLabel", "text"], value = ""))
         )
       })
       
-      if (values$groupIdx==length(groupsToTest)) {
-        labelBtn <- txt[txt$text_type == "endBtn", "text"]
-      } else {
-        labelBtn <- txt[txt$text_type == "continueBtn", "text"]
-      }
       output$sidebar <- renderUI({
         actionButton("commentBtn", label = labelBtn, class = "btn-primary")
       })
@@ -186,7 +191,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         #Update comment group
         values$commentGroup <- values$subgroup
         
-        if (values$groupIdx==length(groupsToTest)) {
+        if (completeEnd) {
           
           values$subject[["formEnded"]] <- TRUE
           
@@ -285,7 +290,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
           
         }
         
-      }, once = TRUE)
+      }, once = TRUE, ignoreInit = TRUE)
 
 
     } else {
