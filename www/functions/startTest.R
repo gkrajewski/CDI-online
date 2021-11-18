@@ -40,7 +40,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     
   }
   
-  #Prepare vector of groups tested already or not
+  #Prepare vector of parts tested already and not
   groupsToTestBool <- vector(, length(groups))
   
   for (i in 1:length(groups)) {
@@ -91,15 +91,15 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       
       ### PART END ###
       
+      values$subject[[paste0(values$subgroup, "Test")]] <- "end"
+      values$groupsToSave <- c(values$groupsToSave, isolate(values$subgroup))
+      loginfo(paste0(urlString, " done with part", values$groupIdx))
+      
+      #Save data
       endDate <- Sys.time()
       outputTable <- prepareOutputAdaptative(isolate(CATdesign()), isolate(values$itemsGroup$item) ,isolate(values$subject), lang, isolate(values$subgroup), endDate)
       answerFile <- paste0("answers/", urlString, "-", isolate(values$subgroup), ".csv")
       write.csv(outputTable, answerFile, row.names = F)
-      
-      values$subject[[paste0(values$subgroup, "Test")]] <- "end"
-      loginfo(paste0(urlString, " done with part", values$groupIdx))
-      
-      values$groupsToSave <- c(values$groupsToSave, isolate(values$subgroup))
       
       if (values$groupIdx==length(groupsToTest)) {
         btnLabel <- txt[txt$text_type == "endBtn", "text"]
@@ -171,7 +171,6 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
           
           saveRDS(isolate(CATdesign()), isolate(values$designFile))
           
-          values$subject[[paste0(values$subgroup, "Test")]] <- "end"
           values$groupIdx <- values$groupIdx +1
           values$subgroup <- groupsToTest[values$groupIdx]
           values$itemsGroup <- items[items$group==values$subgroup, ]

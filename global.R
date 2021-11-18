@@ -54,6 +54,7 @@ source(paste0(FUNCTIONS_PATH,"/chooseTheta.R"))
 source(paste0(FUNCTIONS_PATH,"/sendLogs.R"))
 source(paste0(FUNCTIONS_PATH,"/prepareGroup.R"))
 source(paste0(FUNCTIONS_PATH,"/saveCAT.R"))
+source(paste0(FUNCTIONS_PATH,"/renderTestingUI.R"))
 
 #Load file with secret variables
 readRenviron(".Renviron")
