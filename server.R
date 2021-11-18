@@ -14,8 +14,13 @@ server <- function(input, output, session) {
     lang <- readFromURL("lang", session)
     type <- readFromURL("type", session)
     run <- readFromURL("run", session)
-    if(is.null(run)){
+    
+    if (is.null(run)){
       run <- "0"
+    }
+    
+    if (is.null(type)){
+      type <- "static"
     }
       
     if (!is.null(lang) & !is.null(form) & !is.null(idx) & !is.null(type)){
