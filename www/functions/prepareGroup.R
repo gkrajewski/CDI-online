@@ -69,8 +69,9 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
   header <- paste0(isolate(values$subgroup), "Header")
   headerColor <- paste0(isolate(values$subgroup), "HeaderColor")
   
-  #First display instruction if available
-  instrID = paste0(isolate(values$subgroup), "Instr")  
+  #Render testing UI, display instruction first if available
+  instrID = paste0(isolate(values$subgroup), "Instr") 
+  
   if (instrID %in% txt$text_type) {
 
     output$main <- renderUI({h5(txt[txt$text_type == instrID, "text"])})
@@ -83,7 +84,7 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
       
       renderTestingUI(output, header, headerColor, txt, values)
       
-    })
+    }, once = TRUE)
     
   } else {
     

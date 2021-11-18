@@ -112,7 +112,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       output$main <- renderUI({
         list(
           if (completeEnd) h5(txt[txt$text_type == "endText", "text"]),
-          div(class = "comment", textAreaInput("comment", label = txt[txt$text_type == "commentLabel", "text"], value = ""))
+          div(class = "comment", textAreaInput("comment", label = txt[txt$text_type == "commentLabel", "text"], value = values$subject[[paste0(values$commentGroup, "Comment")]]))
         )
       })
       
