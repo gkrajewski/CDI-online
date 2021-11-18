@@ -40,6 +40,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     
   }
   
+  #Prepare vector of groups tested already or not
   groupsToTestBool <- vector(, length(groups))
   
   for (i in 1:length(groups)) {
@@ -60,7 +61,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   values$groupsToSave <- c()
   values$sendLogs <- TRUE
   
-  #Prepare given part CAT design
+  #Prepare CAT design for given part
   CATdesign <- prepareGroup(output = output, 
                             input = input, 
                             values = values,
@@ -71,29 +72,12 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   
   CATdesign <- reactiveVal(CATdesign)
   
-  #Save ended parts when session ends
-  session$onSessionEnded(function() {
-    
-    saveCAT(
-      CATdesign = isolate(CATdesign()),
-      designFile = isolate(values$designFile),
-      subject = isolate(values$subject),
-      subjectFile = subjectFile,
-      groupsToSave = isolate(values$groupsToSave),
-      urlString = urlString,
-      form = form,
-      lang = lang,
-      sendLogs = isolate(values$sendLogs),
-      idx = idx
-    )
-    
-  })
-  
   #Add comment saving
   observeEvent(input$comment, {
     values$subject[[paste0(values$commentGroup, "Comment")]] <- input$comment
   })
   
+  #Wait for question response
   observeEvent(input$question, {
     
     #Update design
@@ -133,10 +117,10 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       })
       
       output$sidebar <- renderUI({
-        actionButton("commentBtn", label = labelBtn, class = "btn-primary")
+        actionButton("partEndBtn", label = labelBtn, class = "btn-primary")
       })
       
-      observeEvent(input$commentBtn, {
+      observeEvent(input$partEndBtn, {
         
         #Save comment to csv
         answerFile <- paste0("answers/", urlString, "-", isolate(values$commentGroup), ".csv")
@@ -171,6 +155,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
             subject = isolate(values$subject),
             subjectFile = subjectFile,
             groupsToSave = isolate(values$groupsToSave),
+            txt = txt,
             urlString = urlString,
             form = form,
             lang = lang,
@@ -219,6 +204,25 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       CATdesign(updatedDesign)
       
     }
+    
+  })
+  
+  #Save ended parts when session ends
+  session$onSessionEnded(function() {
+    
+    saveCAT(
+      CATdesign = isolate(CATdesign()),
+      designFile = isolate(values$designFile),
+      subject = isolate(values$subject),
+      subjectFile = subjectFile,
+      groupsToSave = isolate(values$groupsToSave),
+      urlString = urlString,
+      txt = txt,
+      form = form,
+      lang = lang,
+      sendLogs = isolate(values$sendLogs),
+      idx = idx
+    )
     
   })
     

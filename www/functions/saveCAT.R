@@ -1,4 +1,4 @@
-saveCAT <- function(CATdesign, designFile, subject, subjectFile, groupsToSave, urlString, form, lang, sendLogs, idx){
+saveCAT <- function(CATdesign, designFile, subject, subjectFile, groupsToSave, urlString, txt, form, lang, sendLogs, idx){
   
   #Save design and subject files
   saveRDS(CATdesign, designFile)
