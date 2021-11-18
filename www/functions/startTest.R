@@ -102,10 +102,10 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       values$groupsToSave <- c(values$groupsToSave, isolate(values$subgroup))
       
       if (values$groupIdx==length(groupsToTest)) {
-        labelBtn <- txt[txt$text_type == "endBtn", "text"]
+        btnLabel <- txt[txt$text_type == "endBtn", "text"]
         completeEnd <- TRUE
       } else {
-        labelBtn <- txt[txt$text_type == "continueBtn", "text"]
+        btnLabel <- txt[txt$text_type == "continueBtn", "text"]
         completeEnd <- FALSE
       }
       
@@ -117,12 +117,12 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       })
       
       output$sidebar <- renderUI({
-        actionButton("partEndBtn", label = labelBtn, class = "btn-primary")
+        actionButton("partEndBtn", label = btnLabel, class = "btn-primary")
       })
       
       observeEvent(input$partEndBtn, {
         
-        #Save comment to csv
+        #Save comment
         answerFile <- paste0("answers/", urlString, "-", isolate(values$commentGroup), ".csv")
         outputTable <- read.csv(answerFile)
         outputTable$comment <- values$subject[[paste0(values$commentGroup, "Comment")]]
@@ -132,6 +132,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         values$commentGroup <- values$subgroup
         
         if (completeEnd) {
+          
+          ### FORM COMPLETE END ###
           
           values$subject[["formEnded"]] <- TRUE
           
@@ -145,9 +147,6 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
           CATdesign(updatedDesign)
 
           recurrentCallSW(idx, form, lang, done = "true", score="true")
-          
-          saveRDS(isolate(CATdesign()), isolate(values$designFile))
-          saveRDS(isolate(values$subject), subjectFile)
           
           saveCAT(
             CATdesign = isolate(CATdesign()),
@@ -168,16 +167,16 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         
         } else {
           
-          ### NOT TEST DEFINITIVE END - ONLY GROUP END ###
+          ### NOT FORM COMPLETE END - ONLY PART END ###
           
           saveRDS(isolate(CATdesign()), isolate(values$designFile))
           
           values$subject[[paste0(values$subgroup, "Test")]] <- "end"
-          
           values$groupIdx <- values$groupIdx +1
           values$subgroup <- groupsToTest[values$groupIdx]
           values$itemsGroup <- items[items$group==values$subgroup, ]
           
+          #Prepare CAT design for new part
           CATdesign <- prepareGroup(output = output, 
                                     input = input, 
                                     values = values,
