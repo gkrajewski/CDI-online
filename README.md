@@ -4,6 +4,7 @@ Currently accesible langs and forms are in the www folder. Id could be any strin
 
 ## Changes
 ### v1.0
+* Added: En and No static forms should work
 * Added: Default setting (static) for type parameter (issue #164)
 * Fixed: Cleaned code for adaptive inventory (issue #162)
 * Fixed: End message in CAT before opportunity to give a comment to a last part (issue #168)
