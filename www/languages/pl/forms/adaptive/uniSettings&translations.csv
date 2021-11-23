@@ -1,7 +1,7 @@
 text_type;text
 cdiNamePrefix;Inwentarz Rozwoju Mowy i Komunikacji
 cdiNameSufix;wersja adaptatywna
-birthQuestion;Data urodzin dziecka
+birthQuestion;Data urodzenia dziecka
 genderQuestion;Płeć dziecka
 genders;dziewczynka,chłopiec,inna
 btn;Start

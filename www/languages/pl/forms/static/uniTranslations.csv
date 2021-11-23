@@ -5,7 +5,7 @@ backBtn;Cofnij;;
 nextBtn;Dalej;;
 confBtn;Zatwierdź;;
 startBtn;Start;;
-dateLabel;Data urodzin dziecka;;
+dateLabel;Data urodzenia dziecka;;
 genderLabel;Płeć dziecka;;
 modalTitle;Uwaga!;;
 noGender;Proszę wskazać płeć dziecka.;;

@@ -4,6 +4,8 @@ Currently accesible langs and forms are in the www folder. Id could be any strin
 
 ## Changes
 ### v1.0
+* Changed: 'Data urodzenia' not 'data urodzin'
+* Changed: Type adaptive not adaptative
 * Added: En and No static forms should work
 * Added: Default setting (static) for type parameter (issue #164)
 * Fixed: Cleaned code for adaptive inventory (issue #162)
