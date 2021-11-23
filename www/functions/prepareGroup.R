@@ -3,11 +3,14 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
   # STEP 1. Prepare everything for the group
   
   #Prepare mirtCAT design object
-  values$designFile <- designFile <- paste0("designs/", urlString, "-", values$subgroup, ".rds")
+  values$designFile <- designFile <- paste0("CATdesigns/", urlString, "-", values$subgroup, ".rds")
   
   if (file.exists(values$designFile)){
+
     CATdesign <- readRDS(isolate(values$designFile))
+    
   } else {
+    
     #preapre startTheta
     if (is.na(values$subject[[paste0(values$subgroup, "Theta")]])){
       values$subject[[paste0(values$subgroup, "Theta")]] <- chooseTheta(startThetas, values$subject$gender, subjectAge, values$subgroup)
@@ -21,6 +24,7 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
                          start_item = txt[txt$text_type == paste0(values$subgroup, "MirtCriteria"), "text"],
                          design_elements = TRUE, 
                          design = list(thetas.start = values$subject[[paste0(values$subgroup, "Theta")]]))
+    
   }
   
   values$nextItem <- findNextItem(CATdesign)
@@ -65,8 +69,9 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
   header <- paste0(isolate(values$subgroup), "Header")
   headerColor <- paste0(isolate(values$subgroup), "HeaderColor")
   
-  #First display instruction if available
-  instrID = paste0(isolate(values$subgroup), "Instr")  
+  #Render testing UI, display instruction first if available
+  instrID = paste0(isolate(values$subgroup), "Instr") 
+  
   if (instrID %in% txt$text_type) {
 
     output$main <- renderUI({h5(txt[txt$text_type == instrID, "text"])})
@@ -76,49 +81,14 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
     })
     
     observeEvent(input[[instrID]], {
-      #Render testing UI
-      output$main <- renderUI({
-        list(
-          if (header %in% txt$text_type & headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"], style=paste0("color: ", txt[txt$text_type == headerColor, "text"], ";")),
-          if (header %in% txt$text_type & !headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"]),
-          radioButtons(
-            "question",
-            label = paste0(values$itemsGroup$question[values$nextItem], ' "', values$itemsGroup$item[values$nextItem], '"?'),
-            selected = character(0),
-            choiceNames = strsplit(txt[txt$text_type == "choiceNames", "text"], ",")[[1]],
-            choiceValues = c(0,1)
-          )
-        )
-      })
       
-      #Render sidebar instruction
-      output$sidebar <- renderUI({
-        div(class = "help-block", txt[txt$text_type == "testInstr", "text"])
-      })
+      renderTestingUI(output, header, headerColor, txt, values)
       
-    })
+    }, once = TRUE)
     
   } else {
     
-    #Render testing UI
-    output$main <- renderUI({
-      list(
-        if (header %in% txt$text_type & headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"], style=paste0("color: ", txt[txt$text_type == headerColor, "text"], ";")),
-        if (header %in% txt$text_type & !headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"]),
-        radioButtons(
-          "question",
-          label = paste0(values$itemsGroup$question[values$nextItem], ' "', values$itemsGroup$item[values$nextItem], '"?'),
-          selected = character(0),
-          choiceNames = strsplit(txt[txt$text_type == "choiceNames", "text"], ",")[[1]],
-          choiceValues = c(0,1)
-        )
-      )
-    })
-    
-    #Render sidebar instruction
-    output$sidebar <- renderUI({
-      div(class = "help-block", txt[txt$text_type == "testInstr", "text"])
-    })
+    renderTestingUI(output, header, headerColor, txt, values)
     
   }
   

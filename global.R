@@ -23,8 +23,8 @@ INIT_PATH <- getwd()
 #Create dirs to saving answers and users' progress
 if(!dir.exists(file.path(INIT_PATH, "answers"))) dir.create(file.path(INIT_PATH, "answers"))
 if(!dir.exists(file.path(INIT_PATH, "usersProgress"))) dir.create(file.path(INIT_PATH, "usersProgress"))
-if (!dir.exists(file.path(INIT_PATH, "designs"))) dir.create(file.path(INIT_PATH, "designs"))
-if (!dir.exists(file.path(INIT_PATH, "subjects"))) dir.create(file.path(INIT_PATH, "subjects"))
+if (!dir.exists(file.path(INIT_PATH, "CATdesigns"))) dir.create(file.path(INIT_PATH, "CATdesigns"))
+if (!dir.exists(file.path(INIT_PATH, "CATsubjects"))) dir.create(file.path(INIT_PATH, "CATsubjects"))
 if (!dir.exists(file.path(INIT_PATH, "logs"))) dir.create(file.path(INIT_PATH, "logs"))
 
 #Load form-universal end settings
@@ -53,6 +53,8 @@ source(paste0(FUNCTIONS_PATH,"/sendDatabase.R"))
 source(paste0(FUNCTIONS_PATH,"/chooseTheta.R"))
 source(paste0(FUNCTIONS_PATH,"/sendLogs.R"))
 source(paste0(FUNCTIONS_PATH,"/prepareGroup.R"))
+source(paste0(FUNCTIONS_PATH,"/saveCAT.R"))
+source(paste0(FUNCTIONS_PATH,"/renderTestingUI.R"))
 
 #Load file with secret variables
 readRenviron(".Renviron")

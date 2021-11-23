@@ -130,7 +130,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
     
     #Render current type
     reactList <- reactiveVal(list(userProgress = userProgress, answers = answers))
-    staticList <- list(types = types, items = items, txt = txt, settings = settings, lang = lang)
+    staticList <- list(types = types, items = items, txt = txt, settings = settings, lang = lang, fromSW = fromSW)
     reactList(renderType(input, output, types[match(TRUE, reactList()$userProgress$current)], reactList(), staticList))
     
     #Change category to next when nextBtn clicked
@@ -309,29 +309,43 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
           }
         }
         
-        #Render end or postend type
+        #Render end type or postend message
         if(reactList$allEnabledDone){
           
-          loginfo(paste0(urlString, " form completed. Saving..."))
           if (!reactList$userProgress[reactList$userProgress$type == "end", "done"]){
-            #End type
+            
+            #Render end type
             reactList$userProgress[reactList$userProgress$type == "end", "disabled"] <- FALSE
             enable("end")
             addClass("end", "endEnabled")
             reactList(renderType(input, output, "end", reactList, staticList))
+            
           } else {
-            #Postend type
-            if (fromSW){
-              postEnd <- "postEndSW"
-            } else {
-              postEnd <- "postEnd"
-            }
+            
             if (!reactList$userProgress[reactList$userProgress$type == type, "done"]){
+              
+              ### INVENTORY END ###
+              loginfo(paste0(urlString, " form completed. Saving..."))
+              
+              #Show info about end
+              if (fromSW) endMsg <- "endMsgTextSW" else endMsg <- "endMsgText"
+              showModal(modalDialog(
+                title = reactList$txt[reactList$txt$text_type == "endMsgTitle", "text"],
+                reactList$txt[reactList$txt$text_type == endMsg, "text"],
+                easyClose = FALSE,
+                footer = NULL
+              ))
+              
+              #Disable all types
               for (type in types){
                 disable(type)
                 reactList$userProgress[reactList$userProgress$type == type, "disabled"] <- TRUE
               }
+              reactList(renderType(input, output, "end", reactList, staticList))
+              
+              #Count score and call StarWords database
               if (fromSW){
+                
                 score <- "false"
                 norms <- readNorms(formPath, form)
                 if (!is.null(norms)){
@@ -342,11 +356,14 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
                   if (countScore(reactList$answers, typeUniqueSettings) <= norms[paste0("m_", age), "p_0.1"]) score <- "true"
                 }
                 recurrentCallSW(idx, form, lang, done = "true", score)
+                
               }
-              write.csv(reactList$answers, answersFile, row.names = F)
               
+              #Save csv with answers
+              write.csv(reactList$answers, answersFile, row.names = F)
               loginfo(paste0(urlString, " csv file with asnwers saved"))
               
+              #Save answers to database
               endDate <- Sys.time()
               tableName <- paste0("form_", form, "_", lang)
               answers <- prepareOutputStatic(reactList$answers, idx, lang, form, run, endDate, STRING_LIMIT)
@@ -376,7 +393,9 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
                                            tableCreate=query,
                                            tableInput=answers)
               
+              #Send e-mail
               if (txt[txt$text_type == "email", "text"]=="yes") {
+                
                 loginfo(paste0(urlString, " sending email"))
                 sendMail(subjectText=paste0("[SHINYDATA] ", urlString),
                          txt="Inventory completed.",
@@ -388,23 +407,29 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
                          recipients=EMAILS_RECIPIENTS,
                          attach=answersFile
                 )
+                
               } else {
+                
                 loginfo(paste0(urlString, " sending emails disabled"))
+                
               }
               
+              #Send logs to database
               sendLogs(urlString, idx, form, lang)
               
             }
-            reactList(renderType(input, output, postEnd, reactList, staticList))
+            
           }
-        }
+          
+        }#end reactList$allEnabledDone
         
       }#end canConfirm
       
-    })
+    })#end observeEvent
     
     #Save data to file when session ends
     session$onSessionEnded(function() {
+      
       write.csv(isolate(reactList()$answers), answersFile, row.names = F, fileEncoding = "UTF-8")
       write.csv(isolate(reactList()$userProgress), progressFile, row.names = F, fileEncoding = "UTF-8")
       
@@ -417,4 +442,3 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
   }
   
 }
-

@@ -52,8 +52,8 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
     output$cdiNamePrefix <- renderText({txt[txt$text_type == "cdiNamePrefix", "text"]})
     output$cdiNameSufix <- renderText({txt[txt$text_type == "cdiNameSufix", "text"]})
     
-    #Prepare subject variable
-    subjectFile <- paste0("subjects/", urlString, ".rds")
+    #Prepare subject
+    subjectFile <- paste0("CATsubjects/", urlString, ".rds")
     
     if (file.exists(subjectFile)){
       
@@ -150,10 +150,10 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
       
     } else {
       
+      ### THERE WAS CONTACT WITH THE TEST ALREADY ###
+      
       if (subject[["formEnded"]]){
 
-      ### THERE WAS CONTACT WITH THE TEST ALREADY ###
-        
         #Test already filled
         showModal(modalDialog(
           txt[txt$text_type == "alreadyFilled", "text"],
