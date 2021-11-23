@@ -1,5 +1,5 @@
 text_type;text;item_type;category
-warning;WAŻNE: Zakończenie inwentarza będzie możliwe dopiero po zatwierdzeniu wszystkich części. W każdej chwili można przerwać wypełnianie, co nie spowoduje utraty dotychczasowych odpowiedzi. Żeby wrócić do wypełniania (np. na innym urządzeniu, ale inwentarz nie może być otwarty na kilku urządzeniach na raz), należy użyć dokładnie tego samego linku.;start;
+warning;WAŻNE: Zakończenie i przesłanie odpowiedzi będzie możliwe dopiero po zatwierdzeniu wszystkich części. W każdej chwili można przerwać wypełnianie, co nie spowoduje utraty dotychczasowych odpowiedzi. Żeby wrócić do wypełniania (np. na innym urządzeniu), trzeba użyć dokładnie tego samego linku. Proszę jednak pamiętać, że inwentarz nie może być otwarty na kilku urządzeniach na raz.;start;
 help;UWAGA: Po zatwierdzeniu tej części nie będzie już możliwości wrócenia do niej.;start;
 backBtn;Cofnij;;
 nextBtn;Dalej;;
@@ -11,7 +11,7 @@ modalTitle;Uwaga!;;
 noGender;Proszę wskazać płeć dziecka.;;
 noFiller;Proszę wskazać osobę wypełniającą inwentarz.;;
 badDate;Podana data urodzenia wskazuje, że Państwa dziecko nie jest w wieku, dla którego przeznaczony jest ten kwestionariusz.;;
-genders;dziewczynka,chłopiec,inna;;
+genders;dziewczynka,chłopiec;;
 fillerLabel;Kim Państwo są dla dziecka?;;
 fillers;mama,tata,babcia,dziadek,niania,nauczyciel(-ka),inna odpowiedź (proszę wpisać):;;
 commentLabel;Uwagi;;

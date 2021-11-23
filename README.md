@@ -13,3 +13,4 @@ Currently accesible langs and forms are in the www folder. Id could be any strin
 * Fixed: Long waiting after confirmation of the last part in the static inventory (issue #110)
 
 last deploy (cdi dev): 16.11.2021 no version tag
+

@@ -225,7 +225,13 @@ renderCategory <- function(input, output, category, reactList, staticList){
       if (is.element("warning", reactList$txt$text_type)) p(class = "warning", strong(reactList$txt[reactList$txt$text_type == "warning", "text"])),
       if (length(inputObj) > 0) div(class=reactList$settings$css_class, inputObj),
       if (length(notes) > 0) notes,
-      if (commentField) div(class = "comment", textAreaInput("comment", label = staticList$txt[staticList$txt$text_type == "commentLabel", "text"], value = commentValue))
+      if (commentField){
+        if (is.element("commentLabel", reactList$txt$text_type)){
+          div(class = "comment", textAreaInput("comment", label = reactList$txt[reactList$txt$text_type == "commentLabel", "text"], value = commentValue))
+        } else {
+          div(class = "comment", textAreaInput("comment", label = staticList$txt[staticList$txt$text_type == "commentLabel", "text"], value = commentValue))
+        }
+      }
     )
   })
   
