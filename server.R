@@ -37,7 +37,7 @@ server <- function(input, output, session) {
         settings <- read.csv("preSettings.csv", encoding = "UTF-8", sep = ";", strip.white = T)
         setwd(INIT_PATH)
         
-        if (type=="static" | type=="adaptative") {
+        if (type=="static" | type=="adaptive") {
           
           if (type=="static") {
             availableForms = availableStaticForms
@@ -88,7 +88,7 @@ server <- function(input, output, session) {
                 }
               }, ignoreInit = TRUE)
                 
-              if (type=="adaptative") {
+              if (type=="adaptive") {
                 runAdaptive(input, output, session, lang, form, idx, run, urlString, fromSW)
               } else {
                 runStatic(input, output, session, lang, form, idx, run, urlString, fromSW)
@@ -127,7 +127,7 @@ server <- function(input, output, session) {
                        session$clientData$url_pathname,
                        session$clientData$url_search)
           output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badType", "text"], 
-                                                 "static, adaptative",
+                                                 "static, adaptive",
                                                  "<br><br>", 
                                                  settings[settings$text_type == "errorInfo", "text"],
                                                  "<br><br>link:",
