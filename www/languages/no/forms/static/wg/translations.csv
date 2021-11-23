@@ -1,19 +1,20 @@
 text_type;text;item_type;category
 cdiNameSufix;Ord og gester;;
+longText;"Dette skjemaet er en norsk tilpasning av den “MacArthur-Bates Communicative Development Inventory: Word and gestures”. Denne metoden er basert på foreldrenes (eller andre omsorgspersoners) kunnskap om språkutvikling av barn og gjelder forståelse av tale, tale og kommunikasjon ved hjelp av bevegelser. Mye av inventaret består av spørsmål om barns tidligste vokabular. Foreldre (eller andre omsorgspersoner) skal markere ordene som barnet forstår, så vel som de som brukes i tale. Barnet skal ikke bli avhørt eller bedt om å gjenta enkeltord, og det skal heller ikke “lære ord”. Det er nok for foreldrene (eller andre foresatte) å svare på spørsmålene i henhold til deres kunnskap om barnet.";start;
 understandingBtn;Forståelse;understanding;
 header;Forståelse;understanding;
+longText;Før barn begynner å snakke, viser de tegn på at de forstår språk ved å reagere på kjente ord og uttrykk. Her er noen vanlige eksempler. Gjør barnet ditt noe av dette?;understanding;firstPage
 catHeader;De første tegn på forståelse;understanding;first_signs
-longText;Før barn begynner å snakke, viser de tegn på at de forstår språk ved å reagere på kjente ord og uttrykk. Her er noen vanlige eksempler. Gjør barnet ditt noe av dette? (Vennligst velg);understanding;firstPage
 choiceNames;Ja, Nei;understanding;first_signs
 catHeader;Faste uttrykk;understanding;phrases
-instr;Kryss av i listen under de uttrykkene som det virker som om barnet ditt forstår;understanding;phrases
+instr;Kryss av de uttrykkene som det virker som om barnet ditt forstår;understanding;phrases
 starting_to_talkBtn;Begynner å snakke;starting_to_talk;
 header;Begynner å snakke;starting_to_talk;
 choiceNames;Ikke ennå,Noen ganger,Ofte;starting_to_talk;
 wordBtn;Ord;word;
 header;Sjekkliste over ordforrådet;word;
-longText;Her følger lister over typiske ord i et barns ordforråd. Kryss av i den første kolonnen (forstår) dersom barnet ditt forstår ordet, men ennå ikke sier det. Ord som barnet både forstår og bruker, krysser du av i den andre kolonnen (forstår og sier). Om barnet bruker en annen uttale av et ord (for eksempel at det sier ”epe” istedenfor ”eple”) krysser du av ordet likevel.;word;firstPage
-warning;Husk at dette er en ”katalog” over ord som mange forskjellige barn bruker, så ikke bli bekymret dersom barnet ditt kun bruker noen få av disse akkurat nå.;word;firstPage
+longText;"Dette skjemaet inneholder lister over typiske ord i et barns ordforråd. Kryss av i den første kolonnen (forstår) dersom barnet ditt forstår ordet, men ennå ikke sier det. Ord som barnet både forstår og bruker, krysser du av i den andre kolonnen (forstår og sier). Om barnet bruker en annen uttale av et ord (for eksempel at det sier ‘epe’ istedenfor ‘eple’), krysser du av ordet likevel.";word;firstPage
+warning;Husk at dette er en “katalog” over ord som mange forskjellige barn bruker, så ikke bli bekymret dersom barnet ditt kun bruker noen få av disse akkurat nå.;word;firstPage
 instr;F = bare forstår, F&S = forstår og sier;word;allInput
 choiceNames;F,F&S;word;allInput
 catHeader;Lydeffekter og dyrelyder;word;sounds
@@ -36,15 +37,15 @@ catHeader;Pronomen;word;pronouns
 catHeader;Spørreord;word;question_words
 catHeader;Preposisjoner og stedsangivelser;word;locations
 catHeader;Mengdeord og bestemmerord ;word;quantifiers
-help;Sjekk om du har gått glipp av noen side før du validerte? Er du sikker på at alle ordene barnet ditt forstår / sier er sjekket?;word;quantifiers
+help;Sjekk om du har gått glipp av noen av sidene før du bekrefter. Er du sikker på du har krysset av for alle ordene barnet ditt forstår / sier?;word;quantifiers
 gesturesBtn;Handlinger og gester;gestures;
 header;Handlinger og gester;gestures;
 choiceNames;Ikke ennå,Noen ganger,Ofte;gestures;allInput
-longText;I begynnelsen når spebarn lærer å kommunisere bruker de gester for å uttrykke hva de ønsker. Kryss av på lista for hvilke av gestene/handlingene som barnet ditt bruker akkurat nå.;gestures;firstPage
+longText;I begynnelsen når spebarn lærer å kommunisere, bruker de gester for å uttrykke hva de ønsker. Kryss av på lista for hvilke av gestene/handlingene som barnet ditt bruker akkurat nå.;gestures;firstPage
 catHeader;De første kommuniserende gestene;gestures;gestures_first
 instr;Kryss av på lista for hvilke av gestene/handlingene som barnet ditt bruker akkurat nå.;gestures;gestures_first
 catHeader;Leker og rutiner;gestures;gestures_games
-instr;Gjør barnet ditt noe av det følgende, eller prøver han/hun å gjøre det?;gestures;gestures_games
+instr;Gjør barnet ditt noe av det følgende?;gestures;gestures_games
 catHeader;Handling med objekter;gestures;gestures_objects
 instr;Gjør barnet ditt noe av det følgende, eller prøver han/hun å gjøre det?;gestures;gestures_objects
 catHeader;Å leke at man er mor eller far;gestures;gestures_parent

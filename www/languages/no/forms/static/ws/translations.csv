@@ -1,0 +1,64 @@
+text_type;text;item_type;category
+cdiNameSufix;Ord og setninger;;
+longText;"Dette skjemaet er en norsk tilpasning av den "MacArthur-Bates Communicative Development Inventory: Words and sentences". Denne metoden er basert på foreldrenes (eller andre omsorgspersoners) kunnskap om språkutvikling av barn og gjelder forståelse av tale, tale og kommunikasjon ved hjelp av bevegelser. Barnet skal ikke bli avhørt eller bedt om å gjenta enkeltord, og det skal heller ikke "lære ord". Det er nok for foreldrene (eller andre foresatte) å svare på spørsmålene i henhold til deres kunnskap om barnet.";start;
+wordBtn;Ord;word;
+header;Sjekkliste over ordforrådet;word;
+longText;Barn forstår mange flere ord enn de sier. Her er vi spesielt interessert i ordene barnet ditt sier. Gå gjennom listen og kryss av ved de ordene du har hørt barnet bruke. Om barnet bruker en annet uttale av ordet (for eksempel sier ‘svell’ istedenfor ‘fjell’ eller ‘bå’ / ‘belå’ for ‘blå’), krysser du av ordet likevel.;word;firstPage
+warning;Husk at dette er en “katalog” over ord som mange forskjellige barn bruker, så ikke bli bekymret dersom barnet ditt kun bruker noen få av disse akkurat nå.;word;firstPage
+catHeader;Lydeffekter og dyrelyder;word;sounds
+catHeader;Navn på dyr (virkelige eller lekedyr);word;animals
+catHeader;Kjøretøy (virkelige eller leketøy);word;vehicles
+catHeader;Leker;word;toys
+catHeader;Mat og drikke;word;food_drink
+catHeader;Klær og tilbehør;word;clothing
+catHeader;Kroppsdeler;word;body_parts
+catHeader;Små gjenstander i huset;word;household
+catHeader;Rom og møbler;word;furniture_rooms 
+catHeader;Ting utendørs;word;outside
+catHeader ;Steder å dra til;word;places
+catHeader ;Mennesker;word;people
+catHeader ;Leker og rutiner;word;games_routines 
+catHeader ;Verb;word;action_words
+catHeader ;Beskrivende ord;word;descriptive_words
+catHeader ;Ord om tid;word;time_words 
+catHeader ;Pronomen;word;pronouns 
+catHeader ;Spørreord;word;question_words
+catHeader;Preposisjoner og stedsangivelser;word;locations
+catHeader ;Mengdeord og bestemmerord;word;quantifiers 
+catHeader ;Hjelpeverb og verb med generelt innhold;word;helping_verbs
+catHeader ;Bindeord;word;connecting_words
+help;Sjekk om du har gått glipp av noen av sidene før du bekrefter. Er du sikker på du har krysset av for alle ordene barnet ditt sier?;word;connecting_words
+how_use_wordsBtn;Hvordan barn bruker ord;how_use_words;
+header;Hvordan barn bruker ord;how_use_words;
+longText;Gjør ditt barn noe av det følgende?;how_use_words;
+choiceNames;Ikke ennå,Noen ganger,Ofte;how_use_words;
+word_endingsBtn;Bøyningsendelser del 1;word_endings;
+header;Bøyningsendelser del 1;word_endings;
+choiceNames;Ikke ennå,Noen ganger,Ofte;word_endings;
+word_formsBtn;Ordformer;word_forms;
+header;Ordformer;word_forms;
+longText;Her er noen andre ord som barn lærer seg. Kryss av de ordene som barnet ditt bruker.;word_forms;firstPage
+catHeader;Substantiv (flertallsformer);word_forms;word_forms_nouns
+catHeader;Verb (fortidsformer);word_forms;word_forms_verbs
+word_endings2Btn;Bøyningsendelser del 2;word_endings2;
+header;Bøyningsendelser del 2;word_endings2;
+longText;Små barn bruker ofte feil form eller endelser på ordene. De kan for eksempel si “tante gådde hjem.” Slike feil er ofte tegn på at barnets språk utvikler seg. I listen under finner du noen eksempler. Kryss av for de feilene du har hørt ditt barn si nylig.;word_endings2;firstPage
+catHeader;Substantiv (flertalls- og bestemthetsformer);word_endings2;word_endings_nouns
+catHeader;Verb (fortidsformer);word_endings2;word_endings_verbs
+combineBtn;Kombinasjon av ord;combine;
+header;Kombinasjon av ord;combine;
+choiceNames;Ikke ennå,Noen ganger,Ofte;combine;
+help;"Avsnitta “De tre lengste setningene” og “Kompleksitet” blir aktiv hvis du velger svaret “Noen ganger” eller “Ofte” her.";combine;
+header;De tre lengste setningene;sentences3;
+sentences3Btn;De tre lengste setningene;sentences3;
+sentences3Tooltip;Denne avsnittet åpnes avhengig av svarene dine i “Kombinasjon av ord” avsnittet;sentences3;
+instr;Eksempler: Skriv de tre lengste setningene du har hørt barnet ditt si nylig;sentences3;
+header;Kompleksitet;complexity;
+complexityBtn;Kompleksitet;complexity;
+complexityTooltip;Denne avsnittet åpnes avhengig av svarene dine i “Kombinasjon av ord” avsnittet;complexity;
+instr;Kryss av i de følgende parene den av de to som ligner mest på måten barnet ditt snakker akkurat nå. Om barnet sier setninger som er lengre og mer sammensatte enn eksemplene, velger du den andre/siste setningen, som er den mest komplekse av de to. De setningene som er for vanskelige for ditt barn nå, krysser du ikke av, men bare hopper over.;complexity;complexity1
+instr;Kryss av i de følgende parene den av de to som ligner mest på måten barnet ditt snakker akkurat nå. Om barnet sier setninger som er lengre og mer sammensatte enn eksemplene, velger du den andre/siste setningen, som er den mest komplekse av de to. De setningene som er for vanskelige for ditt barn nå, krysser du ikke av, men bare hopper over.;complexity;complexity2
+instr;Kryss av i de følgende parene den av de to som ligner mest på måten barnet ditt snakker akkurat nå. Om barnet sier setninger som er lengre og mer sammensatte enn eksemplene, velger du den andre/siste setningen, som er den mest komplekse av de to. De setningene som er for vanskelige for ditt barn nå, krysser du ikke av, men bare hopper over.;complexity;complexity3
+instr;Kryss av i de følgende parene den av de to som ligner mest på måten barnet ditt snakker akkurat nå. Om barnet sier setninger som er lengre og mer sammensatte enn eksemplene, velger du den andre/siste setningen, som er den mest komplekse av de to. De setningene som er for vanskelige for ditt barn nå, krysser du ikke av, men bare hopper over.;complexity;complexity4
+instr;Kryss av i de følgende parene den av de to som ligner mest på måten barnet ditt snakker akkurat nå. Om barnet sier setninger som er lengre og mer sammensatte enn eksemplene, velger du den andre/siste setningen, som er den mest komplekse av de to. De setningene som er for vanskelige for ditt barn nå, krysser du ikke av, men bare hopper over.;complexity;complexity5
+instr;Kryss av i de følgende parene den av de to som ligner mest på måten barnet ditt snakker akkurat nå. Om barnet sier setninger som er lengre og mer sammensatte enn eksemplene, velger du den andre/siste setningen, som er den mest komplekse av de to. De setningene som er for vanskelige for ditt barn nå, krysser du ikke av, men bare hopper over.;complexity;complexity6
