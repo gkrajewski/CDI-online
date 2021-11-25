@@ -23,9 +23,9 @@ INIT_PATH <- getwd()
 #Create dirs to saving answers and users' progress
 if(!dir.exists(file.path(INIT_PATH, "answers"))) dir.create(file.path(INIT_PATH, "answers"))
 if(!dir.exists(file.path(INIT_PATH, "usersProgress"))) dir.create(file.path(INIT_PATH, "usersProgress"))
-if (!dir.exists(file.path(INIT_PATH, "CATdesigns"))) dir.create(file.path(INIT_PATH, "CATdesigns"))
-if (!dir.exists(file.path(INIT_PATH, "CATsubjects"))) dir.create(file.path(INIT_PATH, "CATsubjects"))
-if (!dir.exists(file.path(INIT_PATH, "logs"))) dir.create(file.path(INIT_PATH, "logs"))
+if(!dir.exists(file.path(INIT_PATH, "CATdesigns"))) dir.create(file.path(INIT_PATH, "CATdesigns"))
+if(!dir.exists(file.path(INIT_PATH, "CATsubjects"))) dir.create(file.path(INIT_PATH, "CATsubjects"))
+if(!dir.exists(file.path(INIT_PATH, "logs"))) dir.create(file.path(INIT_PATH, "logs"))
 
 #Load form-universal end settings
 setwd(WWW_PATH)
@@ -34,6 +34,7 @@ setwd(INIT_PATH)
 
 #Load functions
 source(paste0(FUNCTIONS_PATH,"/readFromURL.R"))
+source(paste0(FUNCTIONS_PATH,"/getWholeURL.R"))
 source(paste0(FUNCTIONS_PATH,"/renderType.R"))
 source(paste0(FUNCTIONS_PATH,"/renderCategory.R"))
 source(paste0(FUNCTIONS_PATH,"/createRadioQuestion.R"))
@@ -63,14 +64,14 @@ readRenviron(".Renviron")
 MAIL_USERNAME <- "cdishiny@gmail.com"
 EMAILS_RECIPIENTS <- c("cdishiny@gmail.com", "projekt.starwords@psych.uw.edu.pl")
 
-# Parameters to save results in database
+#Set parameters of saving results in database
 STRING_LIMIT <- 2000
 
-#Prepare vector of busy urls and urls to close (to not allow few opens of the same inventory)
+#Prepare vector of busy urls and urls to close (to not to allow opening the same inventory more than once)
 BUSY_URLS <- reactiveVal(list())
 URLS_TO_CLOSE <- reactiveVal(list())
 
-#prepare logger
+#Prepare logger
 basicConfig()
 formatter.shiny <- function(record) {
   text <- paste(record$timestamp, record$levelname, record$msg, sep='%')
@@ -79,7 +80,7 @@ formatter.shiny <- function(record) {
 addHandler(writeToFile, file=paste0(INIT_PATH, "/logs/shinyapp.log"), level='DEBUG', 
            formatter=formatter.shiny)
 
-#create logging table
+#Create logging table
 tableName="logging"
 createLogging = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
                             `date` DATETIME NULL,

@@ -1,9 +1,12 @@
 ui <- fluidPage(
 
+  #Needed to be able to use shinyjs library
   useShinyjs(), 
   
+  #Set main UI theme
   theme = shinytheme("flatly"),
   
+  #Load style and fonts
   tags$head(
     tags$link(rel="stylesheet", type="text/css", href="style.css"),
     tags$link(rel="preconnect", href="https://fonts.gstatic.com"),
@@ -14,8 +17,9 @@ ui <- fluidPage(
   h1(textOutput("cdiNamePrefix")),
   h2(textOutput("cdiNameSufix")),
   uiOutput("menu"),
-  h3(textOutput("header")),
+  h3(textOutput("header")), #name of current type
   
+  #Main layout
   sidebarLayout(
     
     sidebarPanel(
@@ -34,6 +38,7 @@ ui <- fluidPage(
     
   ),
   
+  #For showing nice disconnect message
   uiOutput("dcMessage")
   
 )

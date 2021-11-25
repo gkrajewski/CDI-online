@@ -3,6 +3,7 @@ server <- function(input, output, session) {
   #Get available languages
   availableLangs <- list.files(path = LANGUAGES_PATH, recursive = FALSE)
   
+  #Set variables used for preventing opening the same inventory more than once
   waitingForClose <- reactiveVal(FALSE)
   inventoryStarted <- reactiveVal(FALSE)
   
@@ -23,7 +24,7 @@ server <- function(input, output, session) {
       type <- "static"
     }
       
-    if (!is.null(lang) & !is.null(form) & !is.null(idx) & !is.null(type)){
+    if (!is.null(lang) & !is.null(form) & !is.null(idx)){
       
       if (is.element(lang, availableLangs)){
 
@@ -102,11 +103,8 @@ server <- function(input, output, session) {
             }
             
           } else {
-            url = paste0(session$clientData$url_protocol,"//", 
-                         session$clientData$url_hostname,":",
-                         session$clientData$url_port,
-                         session$clientData$url_pathname,
-                         session$clientData$url_search)
+            
+            #Bad form
             output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badForm", "text"], 
                                                    " type=static: ",
                                                    availableStaticForms, 
@@ -115,50 +113,42 @@ server <- function(input, output, session) {
                                                    "<br><br>", 
                                                    settings[settings$text_type == "errorInfo", "text"],
                                                    "<br><br>link:",
-                                                   url), collapse = " ")})
+                                                   getWholeURL(session)), collapse = " ")})
             
           }
           
         } else {
           
-          url = paste0(session$clientData$url_protocol,"//", 
-                       session$clientData$url_hostname,":",
-                       session$clientData$url_port,
-                       session$clientData$url_pathname,
-                       session$clientData$url_search)
+          #Bad type
           output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badType", "text"], 
                                                  "static, adaptive",
                                                  "<br><br>", 
                                                  settings[settings$text_type == "errorInfo", "text"],
                                                  "<br><br>link:",
-                                                 url), collapse = " ")})
+                                                 getWholeURL(session)), collapse = " ")})
         }
         
       } else {
-        url = paste0(session$clientData$url_protocol,"//", 
-                     session$clientData$url_hostname,":",
-                     session$clientData$url_port,
-                     session$clientData$url_pathname,
-                     session$clientData$url_search)
+        
+        #Bad language
         output$sidebar <- renderText({paste0(c("Bad value of lang parameter in URL. Accesible values are: ", 
                                                availableLangs,
                                                "<br><br>link:",
-                                               url), collapse = " ")})
+                                               getWholeURL(session)), collapse = " ")})
       }
       
     } else {
+      
+      #No all needed parameters
+      output$sidebar <- renderText({paste0("No needed params in URL (lang, form and id) <br><br>link: ", 
+                                           getWholeURL(session))})
+      
+      # Useful for testing
       # updateQueryString(paste0("?id=", "test", "&form=", "ws", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
       # session$reload()
-      url = paste0(session$clientData$url_protocol,"//", 
-                   session$clientData$url_hostname,":",
-                   session$clientData$url_port,
-                   session$clientData$url_pathname,
-                   session$clientData$url_search)
-      output$sidebar <- renderText({paste0("No needed params in URL (lang, form, type and id) <br><br>link: ", 
-                                           url)})
       
     }  
     
-  })
+  })#end observe
   
-}
+}#end server
