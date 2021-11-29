@@ -28,88 +28,102 @@ server <- function(input, output, session) {
       
       if (is.element(lang, availableLangs)){
 
-        #Get available forms for given language
-        langPath <- paste0(LANGUAGES_PATH, "/", lang)
-        availableStaticForms <- list.files(path = paste0(langPath, "/forms/static"), recursive = FALSE)
-        availableAdaptiveForms <- list.files(path = paste0(langPath, "/forms/adaptive"), recursive = FALSE)
-        
         #Get language universal translations
+        langPath <- paste0(LANGUAGES_PATH, "/", lang)
         setwd(langPath)
         settings <- read.csv("preSettings.csv", encoding = "UTF-8", sep = ";", strip.white = T)
         setwd(INIT_PATH)
+
+        #Get allowed by app types
+        allowedTypes <- c("static", "adaptive")
         
-        if (type=="static" | type=="adaptive") {
+        if (is.element(type, allowedTypes)) {
           
-          if (type=="static") {
-            availableForms = availableStaticForms
-          } else {
-            availableForms = availableAdaptiveForms
-          }
+          #Get available types for given language
+          availableTypes <- list.files(path = paste0(langPath, "/forms/"), recursive = FALSE)
           
-          if (is.element(form, availableForms)){
+          if (is.element(type, availableTypes)){
             
-            #Set inventory string
-            urlString <- paste(lang, form, idx, run, sep = "-")
-  
-            if (!is.element(urlString, BUSY_URLS())){
+            #Get available forms for given type
+            typePath <- paste0(langPath, "/forms/", type)
+            availableForms <- list.files(path = paste0(langPath, "/forms/", type), recursive = FALSE)
+            availableForms <- availableForms[!endsWith(availableForms, ".csv")] #get rid of csv file
+            
+            if (is.element(form, availableForms)){
               
-              ### START INVENTORY ###
-              inventoryStarted(TRUE)
-              addHandler(writeToFile, file=paste0(INIT_PATH, "/logs/", urlString, ".log"), level='DEBUG', 
-                         formatter=formatter.shiny)
+              #Set inventory string
+              urlString <- paste(lang, form, idx, run, sep = "-")
               
-              #Check if user is connected with StarWords app
-              if (nchar(idx) == 21){
-                fromSW <- TRUE
-              } else {
-                fromSW <- FALSE
-              }
-              
-              #Log info about opening inventory
-              loginfo(paste0(urlString, " inventory opened, ",  "fromSW=", fromSW))
+              if (!is.element(urlString, BUSY_URLS())){
                 
-              #Prevent from opening same url params more than once in the same moment
-              busyURLs <- BUSY_URLS()
-              busyURLs <- c(busyURLs, urlString)
-              BUSY_URLS(busyURLs)
-              
-              session$onSessionEnded(function() {
-                busyURLs <- isolate(BUSY_URLS())
-                busyURLs <- busyURLs[busyURLs != urlString]
-                BUSY_URLS(busyURLs)
-              })
+                ### START INVENTORY ###
+                inventoryStarted(TRUE)
+                addHandler(writeToFile, file=paste0(INIT_PATH, "/logs/", urlString, ".log"), level='DEBUG', 
+                           formatter=formatter.shiny)
                 
-              closeSession <- reactive({paste0(is.element(urlString, URLS_TO_CLOSE()))})
-              observeEvent(closeSession(), {
-                if (closeSession()){
-                  urlsToClose <- URLS_TO_CLOSE()
-                  urlsToClose <- urlsToClose[urlsToClose != urlString]
-                  URLS_TO_CLOSE(urlsToClose)
-                  session$close()
+                #Check if user is connected with StarWords app
+                if (nchar(idx) == 21){
+                  fromSW <- TRUE
+                } else {
+                  fromSW <- FALSE
                 }
-              }, ignoreInit = TRUE)
                 
-              if (type=="adaptive") {
-                runAdaptive(input, output, session, lang, form, idx, run, urlString, fromSW)
-              } else {
-                runStatic(input, output, session, lang, form, idx, run, urlString, fromSW)
+                #Log info about opening inventory
+                loginfo(paste0(urlString, " inventory opened, ",  "fromSW=", fromSW))
+                
+                #Prevent from opening same url params more than once in the same moment
+                busyURLs <- BUSY_URLS()
+                busyURLs <- c(busyURLs, urlString)
+                BUSY_URLS(busyURLs)
+                
+                session$onSessionEnded(function() {
+                  busyURLs <- isolate(BUSY_URLS())
+                  busyURLs <- busyURLs[busyURLs != urlString]
+                  BUSY_URLS(busyURLs)
+                })
+                
+                closeSession <- reactive({paste0(is.element(urlString, URLS_TO_CLOSE()))})
+                observeEvent(closeSession(), {
+                  if (closeSession()){
+                    urlsToClose <- URLS_TO_CLOSE()
+                    urlsToClose <- urlsToClose[urlsToClose != urlString]
+                    URLS_TO_CLOSE(urlsToClose)
+                    session$close()
+                  }
+                }, ignoreInit = TRUE)
+                
+                if (type == "adaptive") {
+                  runAdaptive(input, output, session, lang, form, idx, run, urlString, fromSW)
+                } else if (type == "static") {
+                  runStatic(input, output, session, lang, form, idx, run, urlString, fromSW)
+                } else {
+                  logerror(paste0("Not allowed type - '", type, "'. Type can be 'static' or 'adaptive'. Change name of form(s) type folder"))
+                }
+                
+              } else if (!waitingForClose() & !inventoryStarted()){
+                urlsToClose <- URLS_TO_CLOSE()
+                urlsToClose <- c(urlsToClose, urlString)
+                URLS_TO_CLOSE(urlsToClose)
+                waitingForClose(TRUE)
               }
-                
-            } else if (!waitingForClose() & !inventoryStarted()){
-              urlsToClose <- URLS_TO_CLOSE()
-              urlsToClose <- c(urlsToClose, urlString)
-              URLS_TO_CLOSE(urlsToClose)
-              waitingForClose(TRUE)
+              
+            } else {
+              
+              #Bad form
+              output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badForm", "text"], 
+                                                     paste0(availableForms, collapse = ", "),
+                                                     "<br><br>",
+                                                     settings[settings$text_type == "errorInfo", "text"],
+                                                     "<br><br>link:",
+                                                     getWholeURL(session)), collapse = " ")})
+              
             }
-            
+          
           } else {
             
-            #Bad form
-            output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badForm", "text"], 
-                                                   " type=static: ",
-                                                   availableStaticForms, 
-                                                   ", type=adaptive: ",
-                                                   availableAdaptiveForms,
+            #No type folder
+            output$sidebar <- renderText({paste0(c(settings[settings$text_type == "noType", "text"], 
+                                                   paste0(" ", type),
                                                    "<br><br>", 
                                                    settings[settings$text_type == "errorInfo", "text"],
                                                    "<br><br>link:",
@@ -119,9 +133,9 @@ server <- function(input, output, session) {
           
         } else {
           
-          #Bad type
+          #Not allowed type
           output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badType", "text"], 
-                                                 "static, adaptive",
+                                                 paste0(allowedTypes, collapse = ", "),
                                                  "<br><br>", 
                                                  settings[settings$text_type == "errorInfo", "text"],
                                                  "<br><br>link:",
@@ -132,7 +146,7 @@ server <- function(input, output, session) {
         
         #Bad language
         output$sidebar <- renderText({paste0(c("Bad value of lang parameter in URL. Accesible values are: ", 
-                                               availableLangs,
+                                               paste0(availableLangs, collapse = ", "),
                                                "<br><br>link:",
                                                getWholeURL(session)), collapse = " ")})
       }
