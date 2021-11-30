@@ -267,7 +267,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
         
         #Log info about done type
         loginfo(paste0(urlString, " part '", reactList$type, "' done"))
-        
+
         #Mark curent type as done
         reactList$userProgress[reactList$userProgress$type == reactList$type, "done"] <- TRUE
         addClass(paste0(reactList$type, "container"), "menuButtonContainerDone")
@@ -321,8 +321,8 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
             reactList(renderType(input, output, "end", reactList, staticList))
             
           } else {
-            
-            if (!reactList$userProgress[reactList$userProgress$type == type, "done"]){
+            print(type)
+            if (!reactList$userProgress[reactList$userProgress$type == type, "disabled"]){
               
               ### INVENTORY END ###
               loginfo(paste0(urlString, " form completed. Saving..."))
@@ -433,7 +433,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
       write.csv(isolate(reactList()$answers), answersFile, row.names = F, fileEncoding = "UTF-8")
       write.csv(isolate(reactList()$userProgress), progressFile, row.names = F, fileEncoding = "UTF-8")
       
-      if (reactList()$allEnabledDone) {
+      if (isolate(reactList()$allEnabledDone)) {
         sendLogs(urlString, idx, form, lang)
       }
       
