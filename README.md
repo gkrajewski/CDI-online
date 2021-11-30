@@ -3,6 +3,9 @@ In order to launch any inventory you have to provide a proper URL query eg. /?id
 Currently accesible langs and forms are in the www folder. Id could be any string, ids of length 21 mean a person connected with the StarWords app.
 
 ## Changes
+### v1.1
+* Fixed: Bad URL params message (issue #150)
+
 ### v1.0
 * Changed: 'Data urodzenia' not 'data urodzin'
 * Changed: Type adaptive not adaptative
