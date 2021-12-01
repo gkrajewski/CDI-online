@@ -42,14 +42,29 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   
   #Prepare vector of parts tested already and not
   groupsToTestBool <- vector(, length(groups))
+  startGroup <- c()
   
   for (i in 1:length(groups)) {
-    groupsToTestBool[i] <- is.na(subject[[paste0(groups[i], "Test")]])
+    
+    groupsToTestBool[i] <- FALSE
+    
+    if (is.na(subject[[paste0(groups[i], "Test")]])) {
+      
+      if (!is.na(subject[[paste0(groups[i], "Start")]])) {
+        
+        startGroup <- groups[i]
+        
+      } else {
+        
+        groupsToTestBool[i] <- TRUE
+        
+      }
+    }
   }
-  
+
   #Sample some parts order from parts that were not started already
   groupsToTest <- groups[groupsToTestBool]
-  groupsToTest <- sample(groupsToTest)
+  groupsToTest <- c(startGroup, sample(groupsToTest))
   
   #Prepare reactive variables
   values <- reactiveValues()

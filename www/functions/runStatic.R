@@ -321,7 +321,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
             reactList(renderType(input, output, "end", reactList, staticList))
             
           } else {
-            print(type)
+
             if (!reactList$userProgress[reactList$userProgress$type == type, "disabled"]){
               
               ### INVENTORY END ###
