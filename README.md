@@ -7,6 +7,8 @@ Currently deployed version: v1.0
 ## Changes
 ### v1.1
 * Fixed: Bad URL params message (issue #150)
+* Fixed: Random group order
+* Fixed: Saving results in static
 
 ### v1.0
 * Changed: 'Data urodzenia' not 'data urodzin'
