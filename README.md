@@ -2,6 +2,8 @@
 In order to launch any inventory you have to provide a proper URL query eg. /?id=test&form=wg&lang=pl&type=static
 Currently accesible langs and forms are in the www folder. Id could be any string, ids of length 21 mean a person connected with the StarWords app.
 
+Currently deployed version: v1.0
+
 ## Changes
 ### v1.1
 * Fixed: Bad URL params message (issue #150)
@@ -15,5 +17,5 @@ Currently accesible langs and forms are in the www folder. Id could be any strin
 * Fixed: End message in CAT before opportunity to give a comment to a last part (issue #168)
 * Fixed: Long waiting after confirmation of the last part in the static inventory (issue #110)
 
-last deploy (cdi dev): 16.11.2021 no version tag
+earlier deploy from 16.11.2021 had no version tag
 
