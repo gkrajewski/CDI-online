@@ -56,7 +56,6 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
     subjectFile <- paste0("CATsubjects/", urlString, ".rds")
     
     if (file.exists(subjectFile)){
-      
       subject <- readRDS(subjectFile)
       
     } else {
