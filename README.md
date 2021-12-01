@@ -5,6 +5,9 @@ Currently accesible langs and forms are in the www folder. Id could be any strin
 Currently deployed version: v1.0
 
 ## Changes
+### v1.2
+* Changed: two sex options for CAT instead of three
+
 ### v1.1
 * Fixed: Bad URL params message (issue #150)
 * Fixed: Random group order
