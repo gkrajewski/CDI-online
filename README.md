@@ -6,7 +6,8 @@ Currently deployed version: v1.0
 
 ## Changes
 ### v1.2
-* Changed: two sex options for CAT instead of three
+* Changed: two sex options for CAT instead of three (issue #174)
+* Changed: no endSettings file (issue #138)
 
 ### v1.1
 * Fixed: Bad URL params message (issue #150)
