@@ -1,3 +1,4 @@
 type,category,input_type,comment,css_class,binded_types,initially_disabled,conditions,answers_to_enable
 alternatives,,checkboxAlt,TRUE,,,FALSE,yesNo,all
 yesNo,,radio,TRUE,,,TRUE,,
+end,,,FALSE,,,TRUE,,

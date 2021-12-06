@@ -3,7 +3,7 @@ cdiNamePrefix;Inwentarz Rozwoju Mowy i Komunikacji
 cdiNameSufix;wersja adaptatywna
 birthQuestion;Data urodzenia dziecka
 genderQuestion;Płeć dziecka
-genders;dziewczynka,chłopiec,inna
+genders;dziewczynka,chłopiec
 btn;Start
 noGender;Proszę wybrać płeć dziecka.
 modalTitle;Uwaga!
