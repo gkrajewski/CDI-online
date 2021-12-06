@@ -76,6 +76,7 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
         subject[[paste0(subgroup, "Theta")]] = NA
         subject[[paste0(subgroup, "Start")]] = NA
         subject[[paste0(subgroup, "Comment")]] = NA
+        subject[[paste0(subgroup, "CommentEnd")]] = NA
       }
   
     }
@@ -141,7 +142,7 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
           subject$filler <- input$filler
           subject$fillerTxt <- input$fillerTxt
           loginfo(paste0(urlString, " starting test from the beginning."))
-          startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString)
+          startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString, fromSW)
           
         }
         
@@ -164,7 +165,7 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
         
         #Test started but not filled
         loginfo(paste0(urlString, " continuing with already started test."))
-        startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString)
+        startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString, fromSW)
         
       }
       
