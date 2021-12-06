@@ -5,3 +5,4 @@ starting_to_talk,,radio,FALSE,,,TRUE,,
 combine,,radio,FALSE,,,TRUE,sentences,"2,3"
 sentences,,sentences,FALSE,,,TRUE,,
 sentences,sentences10,sentences,FALSE,twoColumns,,,,
+end,,,FALSE,,,TRUE,,

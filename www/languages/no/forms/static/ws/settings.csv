@@ -8,3 +8,4 @@ word_endings2,,oneCheckboxGroup,FALSE,threeColumns,,TRUE,,
 combine,,radio,FALSE,,,TRUE,"sentences3,complexity","2,3"
 sentences3,,sentences,FALSE,,,TRUE,,
 complexity,,radioAlt,TRUE,,,TRUE,,
+end,,,FALSE,,,TRUE,,
