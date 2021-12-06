@@ -5,8 +5,12 @@ Currently accesible langs and forms are in the www folder. Id could be any strin
 Currently deployed version: v1.0
 
 ## Changes
+### v1.2
+* Start from comment in cat if refreshing during comment (issue #152)
+
 ### v1.1
 * Fixed: Bad URL params message (issue #150)
+* Fixed not good saving in static version
 
 ### v1.0
 * Changed: 'Data urodzenia' not 'data urodzin'
