@@ -6,11 +6,14 @@ Currently deployed version: v1.0
 
 ## Changes
 ### v1.2
-* Start from comment in cat if refreshing during comment (issue #152)
+* Changed: two sex options for CAT instead of three (issue #174)
+* Changed: no endSettings file (issue #138)
+* Changed: Start from comment in cat if refreshing during comment (issue #152)
 
 ### v1.1
 * Fixed: Bad URL params message (issue #150)
-* Fixed not good saving in static version
+* Fixed: Random group order
+* Fixed: Saving results in static
 
 ### v1.0
 * Changed: 'Data urodzenia' not 'data urodzin'

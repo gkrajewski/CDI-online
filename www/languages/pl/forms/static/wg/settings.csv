@@ -7,3 +7,4 @@ starting_to_talk,,radio,FALSE,,,TRUE,,
 combine,,radio,FALSE,,,TRUE,sentences10,"2,3"
 sentences10,,sentences,FALSE,twoColumns,,TRUE,,
 gestures,,oneCheckboxGroup,TRUE,,startWith,TRUE,,
+end,,,FALSE,,,TRUE,,
