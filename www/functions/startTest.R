@@ -1,4 +1,4 @@
-startTest <- function(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString){
+startTest <- function(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString, fromSW){
 
   #Get subject (children) age in months
   subjectAge <- interval(subject$birth, Sys.Date()) %/% months(1)
@@ -44,6 +44,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   groupsToTestBool <- vector(, length(groups))
   startGroup <- c()
   
+  start = "items"
   for (i in 1:length(groups)) {
     
     groupsToTestBool[i] <- FALSE
@@ -59,13 +60,18 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         groupsToTestBool[i] <- TRUE
         
       }
+    } else if (is.na(subject[[paste0(groups[i], "CommentEnd")]])) {
+      
+      startGroup <- groups[i]
+      start = "comment"
+      
     }
   }
 
   #Sample some parts order from parts that were not started already
   groupsToTest <- groups[groupsToTestBool]
   groupsToTest <- c(startGroup, sample(groupsToTest))
-  
+
   #Prepare reactive variables
   values <- reactiveValues()
   values$groupIdx <- 1
@@ -76,14 +82,48 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   values$groupsToSave <- c()
   values$sendLogs <- TRUE
   
-  #Prepare CAT design for given part
-  CATdesign <- prepareGroup(output = output, 
-                            input = input, 
-                            values = values,
-                            txt = txt, 
-                            startThetas = startThetas, 
-                            subjectAge = subjectAge, 
-                            urlString = urlString)
+  if (start=="comment") {
+    
+    loginfo(paste0("Starting part ", values$subgroup, " with comment"))
+    
+    values$designFile <- designFile <- paste0("CATdesigns/", urlString, "-", values$subgroup, ".rds")
+    CATdesign <- readRDS(isolate(values$designFile))
+    
+    if (values$groupIdx==length(groupsToTest)) {
+      btnLabel <- txt[txt$text_type == "endBtn", "text"]
+      values$completeEnd <- TRUE
+    } else {
+      btnLabel <- txt[txt$text_type == "continueBtn", "text"]
+      values$completeEnd <- FALSE
+    }
+    
+    commentInput = ""
+    if (!is.na(values$subject[[paste0(values$commentGroup, "Comment")]])) commentInput = values$subject[[paste0(values$commentGroup, "Comment")]]
+    
+    output$main <- renderUI({
+      list(
+        if (values$completeEnd) h5(txt[txt$text_type == "endText", "text"]),
+        div(class = "comment", textAreaInput("comment", label = txt[txt$text_type == "commentLabel", "text"], value = commentInput))
+      )
+    })
+    
+    output$sidebar <- renderUI({
+      actionButton("partEndBtn", label = btnLabel, class = "btn-primary")
+    })
+    
+  } else {
+    
+    loginfo(paste0("Starting part ", values$subgroup, " with items"))
+    
+    #Prepare CAT design for given part
+    CATdesign <- prepareGroup(output = output, 
+                              input = input, 
+                              values = values,
+                              txt = txt, 
+                              startThetas = startThetas, 
+                              subjectAge = subjectAge, 
+                              urlString = urlString)
+  }
   
   CATdesign <- reactiveVal(CATdesign)
   
@@ -105,7 +145,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     ){
       
       ### PART END ###
-      
+      CATdesign(updatedDesign)
       values$subject[[paste0(values$subgroup, "Test")]] <- "end"
       values$groupsToSave <- c(values$groupsToSave, isolate(values$subgroup))
       loginfo(paste0(urlString, " done with part", values$groupIdx))
@@ -118,15 +158,15 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       
       if (values$groupIdx==length(groupsToTest)) {
         btnLabel <- txt[txt$text_type == "endBtn", "text"]
-        completeEnd <- TRUE
+        values$completeEnd <- TRUE
       } else {
         btnLabel <- txt[txt$text_type == "continueBtn", "text"]
-        completeEnd <- FALSE
+        values$completeEnd <- FALSE
       }
       
       output$main <- renderUI({
         list(
-          if (completeEnd) h5(txt[txt$text_type == "endText", "text"]),
+          if (values$completeEnd) h5(txt[txt$text_type == "endText", "text"]),
           div(class = "comment", textAreaInput("comment", label = txt[txt$text_type == "commentLabel", "text"], value = ""))
         )
       })
@@ -134,77 +174,6 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       output$sidebar <- renderUI({
         actionButton("partEndBtn", label = btnLabel, class = "btn-primary")
       })
-      
-      observeEvent(input$partEndBtn, {
-        
-        #Save comment
-        answerFile <- paste0("answers/", urlString, "-", isolate(values$commentGroup), ".csv")
-        outputTable <- read.csv(answerFile)
-        outputTable$comment <- values$subject[[paste0(values$commentGroup, "Comment")]]
-        write.csv(outputTable, answerFile, row.names = F)
-        
-        #Update comment group
-        values$commentGroup <- values$subgroup
-        
-        if (completeEnd) {
-          
-          ### FORM COMPLETE END ###
-          
-          values$subject[["formEnded"]] <- TRUE
-          
-          showModal(modalDialog(
-            title = txt[txt$text_type == "end", "text"],
-            txt[txt$text_type == "thanks", "text"],
-            easyClose = FALSE,
-            footer = NULL
-          ))
-          
-          CATdesign(updatedDesign)
-
-          recurrentCallSW(idx, form, lang, done = "true", score="true")
-          
-          saveCAT(
-            CATdesign = isolate(CATdesign()),
-            designFile = isolate(values$designFile),
-            subject = isolate(values$subject),
-            subjectFile = subjectFile,
-            groupsToSave = isolate(values$groupsToSave),
-            txt = txt,
-            urlString = urlString,
-            form = form,
-            lang = lang,
-            sendLogs = isolate(values$sendLogs),
-            idx = idx
-          )
-          
-          values$groupsToSave <- c()
-          values$sendLogs <- FALSE
-        
-        } else {
-          
-          ### NOT FORM COMPLETE END - ONLY PART END ###
-          
-          saveRDS(isolate(CATdesign()), isolate(values$designFile))
-          
-          values$groupIdx <- values$groupIdx +1
-          values$subgroup <- groupsToTest[values$groupIdx]
-          values$itemsGroup <- items[items$group==values$subgroup, ]
-          
-          #Prepare CAT design for new part
-          CATdesign <- prepareGroup(output = output, 
-                                    input = input, 
-                                    values = values,
-                                    txt = txt, 
-                                    startThetas = startThetas, 
-                                    subjectAge = subjectAge, 
-                                    urlString = urlString)
-          
-          CATdesign(CATdesign)
-          
-        }
-        
-      }, once = TRUE, ignoreInit = TRUE)
-
 
     } else {
       
@@ -219,6 +188,77 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     }
     
   })
+  
+  # Action after ending one part of the test
+  observeEvent(input$partEndBtn, {
+    
+    #Comment part ended
+    values$subject[[paste0(values$subgroup, "CommentEnd")]] <- "end"
+    
+    #Save comment
+    answerFile <- paste0("answers/", urlString, "-", isolate(values$commentGroup), ".csv")
+    outputTable <- read.csv(answerFile)
+    outputTable$comment <- values$subject[[paste0(values$commentGroup, "Comment")]]
+    write.csv(outputTable, answerFile, row.names = F)
+    
+    #Update comment group
+    values$commentGroup <- values$subgroup
+    
+    if (values$completeEnd) {
+      
+      ### FORM COMPLETE END ###
+      
+      values$subject[["formEnded"]] <- TRUE
+      
+      showModal(modalDialog(
+        title = txt[txt$text_type == "end", "text"],
+        txt[txt$text_type == "thanks", "text"],
+        easyClose = FALSE,
+        footer = NULL
+      ))
+      
+      if (fromSW) recurrentCallSW(idx, form, lang, done = "true", score="true")
+
+      saveCAT(
+        CATdesign = isolate(CATdesign()),
+        designFile = isolate(values$designFile),
+        subject = isolate(values$subject),
+        subjectFile = subjectFile,
+        groupsToSave = isolate(values$groupsToSave),
+        txt = txt,
+        urlString = urlString,
+        form = form,
+        lang = lang,
+        sendLogs = isolate(values$sendLogs),
+        idx = idx
+      )
+      
+      values$groupsToSave <- c()
+      values$sendLogs <- FALSE
+      
+    } else {
+      
+      ### NOT FORM COMPLETE END - ONLY PART END ###
+      saveRDS(isolate(CATdesign()), isolate(values$designFile))
+      
+      values$groupIdx <- values$groupIdx +1
+      values$subgroup <- groupsToTest[values$groupIdx]
+      values$itemsGroup <- items[items$group==values$subgroup, ]
+      
+      #Prepare CAT design for new part
+      CATdesign <- prepareGroup(output = output, 
+                                input = input, 
+                                values = values,
+                                txt = txt, 
+                                startThetas = startThetas, 
+                                subjectAge = subjectAge, 
+                                urlString = urlString)
+      
+      CATdesign(CATdesign)
+      
+    }
+    
+  }, ignoreInit = TRUE)
   
   #Save ended parts when session ends
   session$onSessionEnded(function() {

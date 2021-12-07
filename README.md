@@ -8,6 +8,7 @@ Currently deployed version: v1.0
 ### v1.2
 * Changed: two sex options for CAT instead of three (issue #174)
 * Changed: no endSettings file (issue #138)
+* Changed: Start from comment in cat if refreshing during comment (issue #152)
 
 ### v1.1
 * Fixed: Bad URL params message (issue #150)

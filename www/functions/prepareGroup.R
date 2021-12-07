@@ -3,7 +3,7 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
   # STEP 1. Prepare everything for the group
   
   #Prepare mirtCAT design object
-  values$designFile <- designFile <- paste0("CATdesigns/", urlString, "-", values$subgroup, ".rds")
+  values$designFile <- paste0("CATdesigns/", urlString, "-", values$subgroup, ".rds")
   
   if (file.exists(values$designFile)){
 
