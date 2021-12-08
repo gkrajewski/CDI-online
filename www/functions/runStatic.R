@@ -22,8 +22,11 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
       txt <- rbind(uniTransl, transl)
       typeUniqueSettings <- settings[settings$category == "" | is.na(settings$category), ]
       
+      #Prepare list of types (order from translations is important for order of types in menu)
+      types <- unique(txt$item_type)
+      types <- types[types != ""]
+      
       #Modify items: bind some types into new one and treat old types as categories
-      types <- typeUniqueSettings$type
       for (type in types){
         bindedTypesStr <- typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"]
         if (!is.na(bindedTypesStr)){
