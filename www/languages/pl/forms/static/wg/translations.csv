@@ -1,6 +1,5 @@
 text_type;text;item_type;category
 cdiNameSufix;Słowa i Gesty;;
-sentences10Tooltip;Część „Wypowiedzi” uaktywnia się w zależności od odpowiedzi w części „Łączenie wyrazów”.;;
 longText;Kwestionariusz ten (M. Smoczyńska, 2015, Warszawa: Instytut Badań Edukacyjnych) jest polską adaptacją amerykańskiego inwentarza do badania rozwoju mowy najmłodszych dzieci („MacArthur-Bates Communicative Development Inventory”). Metoda ta opiera się na wiedzy rodziców (lub innych opiekunów) na temat rozwoju językowego dzieci i dotyczy rozumienia mowy, mówienia oraz porozumiewania się przy pomocy gestów. Znaczną część inwentarza stanowią pytania o najwcześniejsze słownictwo dzieci. Rodzice (lub inni opiekunowie) mają zaznaczyć słowa, które dziecko rozumie, a także te z nich, których używa ono w mowie. Nie należy dziecka przepytywać ani prosić o powtarzanie poszczególnych wyrazów, ani też „uczyć słówek”. Wystarczy, gdy rodzice (lub inni opiekunowie) odpowiedzą na pytania według własnej wiedzy o dziecku.;start;
 understandingBtn;Rozumienie;understanding;
 header;Rozumienie;understanding;
@@ -49,6 +48,7 @@ help; Po wybraniu odpowiedzi „Czasem” lub „Często” dostępna stanie si�
 sentences10Btn;Wypowiedzi;sentences10;
 header;Przykłady wypowiedzi;sentences10;
 instr;Jeśli Państwa dziecko łączy wyrazy „czasem” lub „często”, proszę podać przykłady rzeczywistych wypowiedzi dziecka:;sentences10;
+tooltip;Część „Wypowiedzi” uaktywnia się w zależności od odpowiedzi w części „Łączenie wyrazów”.;sentences10;
 gesturesBtn;Gesty;gestures;
 longText;Kiedy dzieci uczą się porozumiewać z innymi ludźmi, często posługują się gestami, aby wyrazić swoje pragnienia. Przy każdym z gestów na następnych stronach proszę postawić znaczek przy tym określeniu, które pasuje do tego, co Państwa dziecko aktualnie robi. ;gestures;firstPage
 header;Czynności i gesty;gestures;
