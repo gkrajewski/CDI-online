@@ -8,15 +8,23 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
       #Load settings and translations
       testPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/adaptive/", form)
       setwd(testPath)
-      uniTransl <- read.csv(paste0("../uniSettings&translations.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
+      
       transl <- read.csv(paste0("settings&translations.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
       
-      #Prepare settings and translations
-      translID <- paste(transl$text_type, transl$text)
-      uniTranslID <- paste(uniTransl$text_type, uniTransl$text)
-      uniTransl <- subset(uniTransl, !(uniTranslID %in% translID)) #Get things from uniTransl (uniSettings&translations) that are not in translations
-      txt <- rbind(uniTransl, transl)
-      
+      if (file.exists("../uniSettings&translations.csv")){
+        
+        uniTransl <- read.csv(paste0("../uniSettings&translations.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
+        translID <- paste(transl$text_type, transl$text)
+        uniTranslID <- paste(uniTransl$text_type, uniTransl$text)
+        uniTransl <- subset(uniTransl, !(uniTranslID %in% translID)) #Get things from uniTransl (uniSettings&translations) that are not in translations
+        txt <- rbind(uniTransl, transl)
+        
+      } else {
+        
+        txt <- transl
+        
+      }
+
       setwd(INIT_PATH)
       
       TRUE
