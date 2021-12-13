@@ -30,11 +30,11 @@ server <- function(input, output, session) {
 
         #Get language universal translations
         langPath <- paste0(LANGUAGES_PATH, "/", lang)
-        readingFile <- readInputFile(output = output, path = langPath, fileName = "preSettings.csv")
+        readingFile <- readInputFile(output = output, path = langPath, fileName = "uniTranslations.csv")
         
         if (readingFile$success){
           
-          settings <- readingFile$file
+          txt <- readingFile$file
           
           #Get allowed by app types
           allowedTypes <- c("static", "adaptive")
@@ -112,10 +112,10 @@ server <- function(input, output, session) {
               } else {
                 
                 #Bad form
-                output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badForm", "text"], 
+                output$sidebar <- renderText({paste0(c(txt[txt$text_type == "badForm", "text"], 
                                                        paste0(availableForms, collapse = ", "),
                                                        "<br><br>",
-                                                       settings[settings$text_type == "errorInfo", "text"],
+                                                       txt[txt$text_type == "errorInfo", "text"],
                                                        "<br><br>link:",
                                                        getWholeURL(session)), collapse = " ")})
                 
@@ -124,10 +124,10 @@ server <- function(input, output, session) {
             } else {
               
               #No type folder
-              output$sidebar <- renderText({paste0(c(settings[settings$text_type == "noType", "text"], 
+              output$sidebar <- renderText({paste0(c(txt[txt$text_type == "noType", "text"], 
                                                      paste0(" ", type),
                                                      "<br><br>", 
-                                                     settings[settings$text_type == "errorInfo", "text"],
+                                                     txt[txt$text_type == "errorInfo", "text"],
                                                      "<br><br>link:",
                                                      getWholeURL(session)), collapse = " ")})
               
@@ -136,10 +136,10 @@ server <- function(input, output, session) {
           } else {
             
             #Not allowed type
-            output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badType", "text"], 
+            output$sidebar <- renderText({paste0(c(txt[txt$text_type == "badType", "text"], 
                                                    paste0(allowedTypes, collapse = ", "),
                                                    "<br><br>", 
-                                                   settings[settings$text_type == "errorInfo", "text"],
+                                                   txt[txt$text_type == "errorInfo", "text"],
                                                    "<br><br>link:",
                                                    getWholeURL(session)), collapse = " ")})
           }
