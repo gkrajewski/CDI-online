@@ -76,7 +76,6 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   values <- reactiveValues()
   values$groupIdx <- 1
   values$subgroup <- groupsToTest[values$groupIdx]
-  values$commentGroup <- groupsToTest[values$groupIdx]
   values$itemsGroup <- items[items$group==values$subgroup, ]
   values$subject <- subject
   values$groupsToSave <- c()
@@ -98,7 +97,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     }
     
     commentInput = ""
-    if (!is.na(values$subject[[paste0(values$commentGroup, "Comment")]])) commentInput = values$subject[[paste0(values$commentGroup, "Comment")]]
+    if (!is.na(values$subject[[paste0(values$subgroup, "Comment")]])) commentInput = values$subject[[paste0(values$subgroup, "Comment")]]
     
     output$main <- renderUI({
       list(
@@ -108,7 +107,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     })
     
     output$sidebar <- renderUI({
-      actionButton("partEndBtn", label = btnLabel, class = "btn-primary")
+      actionButton(paste0("partEndBtn", values$subgroup), label = btnLabel, class = "btn-primary")
     })
     
   } else {
@@ -129,7 +128,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   
   #Add comment saving
   observeEvent(input$comment, {
-    values$subject[[paste0(values$commentGroup, "Comment")]] <- input$comment
+    values$subject[[paste0(values$subgroup, "Comment")]] <- input$comment
   })
   
   #Wait for question response
@@ -172,7 +171,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       })
       
       output$sidebar <- renderUI({
-        actionButton("partEndBtn", label = btnLabel, class = "btn-primary")
+        actionButton(paste0("partEndBtn", values$subgroup), label = btnLabel, class = "btn-primary")
       })
 
     } else {
@@ -190,19 +189,16 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   })
   
   # Action after ending one part of the test
-  observeEvent(input$partEndBtn, {
+  partEndActions <- function() {
     
     #Comment part ended
     values$subject[[paste0(values$subgroup, "CommentEnd")]] <- "end"
     
     #Save comment
-    answerFile <- paste0("answers/", urlString, "-", isolate(values$commentGroup), ".csv")
+    answerFile <- paste0("answers/", urlString, "-", isolate(values$subgroup), ".csv")
     outputTable <- read.csv(answerFile)
-    outputTable$comment <- values$subject[[paste0(values$commentGroup, "Comment")]]
+    outputTable$comment <- values$subject[[paste0(values$subgroup, "Comment")]]
     write.csv(outputTable, answerFile, row.names = F)
-    
-    #Update comment group
-    values$commentGroup <- values$subgroup
     
     if (values$completeEnd) {
       
@@ -218,7 +214,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       ))
       
       if (fromSW) recurrentCallSW(idx, form, lang, done = "true", score="true")
-
+      
       saveCAT(
         CATdesign = isolate(CATdesign()),
         designFile = isolate(values$designFile),
@@ -258,7 +254,14 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       
     }
     
-  }, ignoreInit = TRUE)
+  }
+  
+  
+  for (i in groupsToTest){
+    observeEvent(input[[paste0("partEndBtn", values$subgroup)]], {
+      partEndActions()
+    }, once=TRUE, ignoreInit = TRUE)
+  }
   
   #Save ended parts when session ends
   session$onSessionEnded(function() {
