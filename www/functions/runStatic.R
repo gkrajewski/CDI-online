@@ -15,7 +15,6 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
       settings <- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
       typeUniqueSettings <- settings[settings$category == "" | is.na(settings$category), ]
       
-
       setwd(langPath)
       
       if (file.exists("uniTranslations.csv")){

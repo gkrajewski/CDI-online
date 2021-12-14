@@ -28,20 +28,21 @@ server <- function(input, output, session) {
       
       if (is.element(lang, availableLangs)){
 
-        #Get language universal translations
+        #Read language-universal translations
         langPath <- paste0(LANGUAGES_PATH, "/", lang)
         readingFile <- readInputFile(output = output, path = langPath, fileName = "uniTranslations.csv")
         
         if (readingFile$success){
           
+          #Get language universal translations
           txt <- readingFile$file
           
-          #Get allowed by app types
+          #Prepare list of types allowed by the app 
           allowedTypes <- c("static", "adaptive")
           
           if (is.element(type, allowedTypes)) {
             
-            #Get available types for given language
+            #Get available types (created folders) for given language
             availableTypes <- list.files(path = paste0(langPath, "/forms/"), recursive = FALSE)
             
             if (is.element(type, availableTypes)){
@@ -49,7 +50,7 @@ server <- function(input, output, session) {
               #Get available forms for given type
               typePath <- paste0(langPath, "/forms/", type)
               availableForms <- list.files(path = paste0(langPath, "/forms/", type), recursive = FALSE)
-              availableForms <- availableForms[!endsWith(availableForms, ".csv")] #get rid of csv file
+              availableForms <- availableForms[!endsWith(availableForms, ".csv")] #get rid of csvs files
               
               if (is.element(form, availableForms)){
                 
@@ -85,6 +86,7 @@ server <- function(input, output, session) {
                   })
                   
                   closeSession <- reactive({paste0(is.element(urlString, URLS_TO_CLOSE()))})
+                  
                   observeEvent(closeSession(), {
                     if (closeSession()){
                       urlsToClose <- URLS_TO_CLOSE()
@@ -103,10 +105,12 @@ server <- function(input, output, session) {
                   }
                   
                 } else if (!waitingForClose() & !inventoryStarted()){
+                  
                   urlsToClose <- URLS_TO_CLOSE()
                   urlsToClose <- c(urlsToClose, urlString)
                   URLS_TO_CLOSE(urlsToClose)
                   waitingForClose(TRUE)
+                  
                 }
                 
               } else {
