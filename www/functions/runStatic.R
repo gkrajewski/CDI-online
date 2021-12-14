@@ -4,23 +4,36 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
   inputFilesRead <- tryCatch(
     expr = {
       
-      #Load files
+      #Load input files
       langPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/static")
       formPath <- paste0(langPath, "/", form)
-      setwd(langPath)
-      uniTransl <- read.csv("uniTranslations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
+
       setwd(formPath)
+      
       items <- read.csv("items.csv", encoding = "UTF-8", sep = ";", strip.white = T)[c("item_id", "definition", "type", "category")]
       transl <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
       settings <- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
-      setwd(INIT_PATH)
-      
-      #Prepare data frames
-      translID <- paste(transl$text_type, transl$item_type, transl$category)
-      uniTranslID <- paste(uniTransl$text_type, uniTransl$item_type, uniTransl$category)
-      uniTransl <- subset(uniTransl, !(uniTranslID %in% translID)) #Get things from uniTransl that are not in translations
-      txt <- rbind(uniTransl, transl)
       typeUniqueSettings <- settings[settings$category == "" | is.na(settings$category), ]
+      
+
+      setwd(langPath)
+      
+      if (file.exists("uniTranslations.csv")){
+        
+        #Get things from uniTransl that are not in translations
+        uniTransl <- read.csv("uniTranslations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
+        translID <- paste(transl$text_type, transl$item_type, transl$category)
+        uniTranslID <- paste(uniTransl$text_type, uniTransl$item_type, uniTransl$category)
+        uniTransl <- subset(uniTransl, !(uniTranslID %in% translID)) 
+        txt <- rbind(uniTransl, transl)
+        
+      } else {
+        
+        txt <- transl
+        
+      }
+      
+      setwd(INIT_PATH)
       
       #Prepare list of types (order from translations is important for order of types in menu)
       types <- unique(txt$item_type)
