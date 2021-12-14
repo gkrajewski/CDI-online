@@ -30,12 +30,9 @@ server <- function(input, output, session) {
 
         #Read language-universal translations
         langPath <- paste0(LANGUAGES_PATH, "/", lang)
-        readingFile <- readInputFile(output = output, path = langPath, fileName = "uniTranslations.csv")
+        txt <- readInputFile(output = output, path = langPath, fileName = "uniTranslations.csv")
         
-        if (readingFile$success){
-          
-          #Get language universal translations
-          txt <- readingFile$file
+        if (!is.null(txt)){
           
           #Prepare list of types allowed by the app 
           allowedTypes <- c("static", "adaptive")

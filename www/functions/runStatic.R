@@ -1,5 +1,11 @@
 runStatic <- function(input, output, session, lang, form, idx, run, urlString, fromSW){
   
+  # formPath <- paste0(langPath, "/", form)
+  # 
+  # readingFile <- readInputFile(output = output, path = formPath, fileName = "items.csv")
+  # if (readingFile$success)
+  
+  
   #Read and prepare items, translations and settings
   inputFilesRead <- tryCatch(
     expr = {

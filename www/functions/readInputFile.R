@@ -1,12 +1,6 @@
 readInputFile <- function(output, path, fileName){
   
-  # -Reads given file from given path-
-  #
-  # returns list of two values:
-  # 1 - boolean (TRUE if read successfully, FALSE if not)
-  # 2 - file (if read successfully)
-  #
-  
+  #Reads given file from given path. Returns file or NULL if error
   errorMsg <- paste0("There is problem with file <b> ", fileName, " </b> that should be located in <b>", path, "</b><br><br>")
   
   success <- tryCatch(
@@ -41,7 +35,6 @@ readInputFile <- function(output, path, fileName){
     
   )
   
-  output <- list(success = success, file = file)
-  return(output)
+  if (success) return(file) else return(NULL)
   
 }
