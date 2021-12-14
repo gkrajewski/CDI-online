@@ -1,83 +1,50 @@
-runStatic <- function(input, output, session, lang, form, idx, run, urlString, fromSW){
+runStatic <- function(input, output, session, lang, form, idx, run, urlString, txt, fromSW){
   
-  # formPath <- paste0(langPath, "/", form)
-  # 
-  # readingFile <- readInputFile(output = output, path = formPath, fileName = "items.csv")
-  # if (readingFile$success)
+  #Read items, translations & settings
+  typePath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/static")
+  formPath <- paste0(typePath, "/", form)
+  uniTxt2 <- txt
+  items <- readInputFile(output = output, path = formPath, fileName = "items.csv")
+  txt <- readInputFile(output = output, path = formPath, fileName = "translations.csv")
+  settings <- readInputFile(output = output, path = formPath, fileName = "settings.csv", sep = ",")
   
+  #Load type-universal translations (if they exists)
+  if (file.exists(paste0(typePath, "/uniTranslations.csv"))){
+    
+    #Merge form-specific translations with type-universal translations
+    uniTxt <- readInputFile(output = output, path = typePath, fileName = "uniTranslations.csv")
+    txt <- merge(txt, uniTxt, by = intersect(names(txt), names(uniTxt)), all = TRUE, sort = FALSE)
+    
+  }
   
-  #Read and prepare items, translations and settings
-  inputFilesRead <- tryCatch(
-    expr = {
-      
-      #Load input files
-      langPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/static")
-      formPath <- paste0(langPath, "/", form)
+  #Merge translations with language-universal translations
+  txt <- merge(txt, uniTxt2, by = intersect(names(txt), names(uniTxt2)), all = TRUE, sort = FALSE)
 
-      setwd(formPath)
-      
-      items <- read.csv("items.csv", encoding = "UTF-8", sep = ";", strip.white = T)[c("item_id", "definition", "type", "category")]
-      transl <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
-      settings <- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
-      typeUniqueSettings <- settings[settings$category == "" | is.na(settings$category), ]
-      
-      setwd(langPath)
-      
-      if (file.exists("uniTranslations.csv")){
-        
-        #Get things from uniTransl that are not in translations
-        uniTransl <- read.csv("uniTranslations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
-        translID <- paste(transl$text_type, transl$item_type, transl$category)
-        uniTranslID <- paste(uniTransl$text_type, uniTransl$item_type, uniTransl$category)
-        uniTransl <- subset(uniTransl, !(uniTranslID %in% translID)) 
-        txt <- rbind(uniTransl, transl)
-        
+  #Prepare list of types (order of first occurences in translations is important for order of types in menu)
+  types <- na.omit(unique(txt$item_type))
+  types <- types[types != ""]
+  
+  #Prepare settings specific for particular types
+  typeUniqueSettings <- settings[settings$category == "" | is.na(settings$category), ]
+  
+  #Modify items: bind some types into new types and treat old types as categories
+  for (type in types){
+    bindedTypesStr <- typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"]
+    if (!is.na(bindedTypesStr)){
+      if (bindedTypesStr == "startWith"){
+        items[substr(items$type, 1, nchar(type)) == type, "category"] <- items[substr(items$type, 1, nchar(type)) == type, "type"]
+        items[substr(items$type, 1, nchar(type)) == type, "type"] <- type
       } else {
-        
-        txt <- transl
-        
-      }
-      
-      setwd(INIT_PATH)
-      
-      #Prepare list of types (order from translations is important for order of types in menu)
-      types <- unique(txt$item_type)
-      types <- types[types != ""]
-      
-      #Modify items: bind some types into new one and treat old types as categories
-      for (type in types){
-        bindedTypesStr <- typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"]
-        if (!is.na(bindedTypesStr)){
-          if (bindedTypesStr == "startWith"){
-            items[substr(items$type, 1, nchar(type)) == type, "category"] <- items[substr(items$type, 1, nchar(type)) == type, "type"]
-            items[substr(items$type, 1, nchar(type)) == type, "type"] <- type
-          } else {
-            bindedTypes <- strsplit(typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"], ",")[[1]]
-            for (bindedType in bindedTypes){
-              items[substr(items$type, 1, nchar(bindedType)) == bindedType, "category"] <- items[substr(items$type, 1, nchar(bindedType)) == bindedType, "type"]
-              items[substr(items$type, 1, nchar(bindedType)) == bindedType, "type"] <- type
-            }
-          }
+        bindedTypes <- strsplit(typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"], ",")[[1]]
+        for (bindedType in bindedTypes){
+          items[substr(items$type, 1, nchar(bindedType)) == bindedType, "category"] <- items[substr(items$type, 1, nchar(bindedType)) == bindedType, "type"]
+          items[substr(items$type, 1, nchar(bindedType)) == bindedType, "type"] <- type
         }
       }
-      
-      TRUE
-    },
-    error = function(m){
-      msg <- paste0("There is problem with input files <br><br>", m)
-      logerror(msg)
-      output$sidebar <- renderText({msg})
-      return(FALSE)
-    },
-    warning = function(m){
-      msg <- paste0("There is problem with input files <br><br>", m)
-      logwarn(msg)
-      output$sidebar <- renderText({msg})
-      return(FALSE)
     }
-  )
+  }
 
-  if (inputFilesRead){
+  if (!is.null(items) & !is.null(txt) & !is.null(settings)){
     
     #Render nice message when error
     output$dcMessage <- renderUI({disconnectMessage(text = paste0(txt[txt$text_type == "error", "text"], " [", urlString, "]"), refresh = txt[txt$text_type == "refresh", "text"])})
@@ -91,7 +58,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
       firstCats <- c()
       i <- 1
       for (type in types){
-        uniqueCategories <- unique(txt[txt$item_type == type, "category"])
+        uniqueCategories <- na.omit(unique(txt[txt$item_type == type, "category"]))
         categoriesNum <- length(uniqueCategories)
         firstCat <- uniqueCategories[1]
         if (categoriesNum > 1 & uniqueCategories[1] == "") firstCat <- uniqueCategories[2]

@@ -96,7 +96,7 @@ server <- function(input, output, session) {
                   if (type == "adaptive") {
                     runAdaptive(input, output, session, lang, form, idx, run, urlString, fromSW)
                   } else if (type == "static") {
-                    runStatic(input, output, session, lang, form, idx, run, urlString, fromSW)
+                    runStatic(input, output, session, lang, form, idx, run, urlString, txt, fromSW)
                   } else {
                     logerror(paste0("Not allowed type - '", type, "'. Type can be 'static' or 'adaptive'. Change name of form(s) type folder"))
                   }
@@ -163,8 +163,8 @@ server <- function(input, output, session) {
                                            getWholeURL(session))})
       
       # Useful for testing
-      # updateQueryString(paste0("?id=", "test", "&form=", "ws", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
-      # session$reload()
+      updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
+      session$reload()
       
     }  
     
