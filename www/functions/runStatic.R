@@ -15,6 +15,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
       settings <- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
       typeUniqueSettings <- settings[settings$category == "" | is.na(settings$category), ]
       
+
       setwd(langPath)
       
       if (file.exists("uniTranslations.csv")){
@@ -34,8 +35,11 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
       
       setwd(INIT_PATH)
       
+      #Prepare list of types (order from translations is important for order of types in menu)
+      types <- unique(txt$item_type)
+      types <- types[types != ""]
+      
       #Modify items: bind some types into new one and treat old types as categories
-      types <- typeUniqueSettings$type
       for (type in types){
         bindedTypesStr <- typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"]
         if (!is.na(bindedTypesStr)){
@@ -120,7 +124,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
       if (userProgress[userProgress$type == type, "done"]) class <- paste(class, "menuButtonContainerDone")
       if (userProgress[userProgress$type == type, "current"]) class <- paste(class, "menuButtonContainerActive")
       title <- ""
-      if (is.element(paste0(type, "Tooltip"), txt$text_type)) title <- txt[txt$text_type == paste0(type, "Tooltip"), "text"]
+      if (is.element("tooltip", txt[txt$item_type == type, "text_type"])) title <- txt[txt$item_type == type & txt$text_type == "tooltip", "text"]
       buttonDiv <- div(title = title, id = paste0(type, "container"), class = class, actionButton(type, label = paste0(i, ". ", txt[txt$text_type == paste0(type,"Btn"), "text"]), class = "btn-primary"))
       if (userProgress[userProgress$type == type, "disabled"]) buttonDiv <- disabled(buttonDiv)
       
