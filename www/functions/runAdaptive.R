@@ -1,57 +1,75 @@
-runAdaptive <- function(input, output, session, lang, form, idx, run, urlString, fromSW){
+runAdaptive <- function(input, output, session, lang, form, idx, run, urlString, txt, fromSW){
   
   #Read translations & settings
-  inputFilesRead <- tryCatch(
+  uniTxt2 <- txt
+  typePath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/adaptive")
+  formPath <- paste0(typePath, "/", form)
+  txt <- readInputFile(output = output, path = formPath, fileName = "settings&translations.csv")
+  
+  #Load type-universal translations & settings (if they exists)
+  if (file.exists(paste0(typePath, "/uniSettings&Translations.csv"))){
     
-    expr = {
-      
-      #Load settings and translations
-      testPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/adaptive/", form)
-      setwd(testPath)
-      
-      transl <- read.csv(paste0("settings&translations.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
-      
-      if (file.exists("../uniSettings&translations.csv")){
-        
-        uniTransl <- read.csv(paste0("../uniSettings&translations.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
-        translID <- paste(transl$text_type, transl$text)
-        uniTranslID <- paste(uniTransl$text_type, uniTransl$text)
-        uniTransl <- subset(uniTransl, !(uniTranslID %in% translID)) #Get things from uniTransl (uniSettings&translations) that are not in translations
-        txt <- rbind(uniTransl, transl)
-        
-      } else {
-        
-        txt <- transl
-        
-      }
+    #Merge form-specific translations with type-universal translations
+    uniTxt <- readInputFile(output = output, path = typePath, fileName = "uniSettings&Translations.csv")
+    txt <- merge(txt, uniTxt, by = intersect(names(txt), names(uniTxt)), all = TRUE, sort = FALSE)
+    
+  }
+  
+  #Merge translations & settings with language-universal translations
+  txt <- merge(txt, uniTxt2, by = intersect(names(txt), names(uniTxt2)), all = TRUE, sort = FALSE)
+  
+  # #Read translations & settings
+  # inputFilesRead <- tryCatch(
+  #   
+  #   expr = {
+  #     
+  #     #Load settings and translations
+  #     testPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/adaptive/", form)
+  #     setwd(testPath)
+  #     
+  #     transl <- read.csv(paste0("settings&translations.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
+  #     
+  #     if (file.exists("../uniSettings&translations.csv")){
+  #       
+  #       uniTransl <- read.csv(paste0("../uniSettings&translations.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
+  #       translID <- paste(transl$text_type, transl$text)
+  #       uniTranslID <- paste(uniTransl$text_type, uniTransl$text)
+  #       uniTransl <- subset(uniTransl, !(uniTranslID %in% translID)) #Get things from uniTransl (uniSettings&translations) that are not in translations
+  #       txt <- rbind(uniTransl, transl)
+  #       
+  #     } else {
+  #       
+  #       txt <- transl
+  #       
+  #     }
+  # 
+  #     setwd(INIT_PATH)
+  #     
+  #     TRUE
+  #     
+  #   },
+  #   
+  #   error = function(m){
+  #     
+  #     msg <- paste0("There is problem with input file <br><br>", m)
+  #     logerror(msg)
+  #     output$sidebar <- renderText({msg})
+  #     return(FALSE)
+  #     
+  #   },
+  #   
+  #   warning = function(m){
+  #     
+  #     msg <- paste0("There is problem with input file <br><br>", m)
+  #     logwarn(msg)
+  #     output$sidebar <- renderText({msg})
+  #     return(FALSE)
+  #     
+  #   }
+  #   
+  # )
 
-      setwd(INIT_PATH)
-      
-      TRUE
-      
-    },
-    
-    error = function(m){
-      
-      msg <- paste0("There is problem with input file <br><br>", m)
-      logerror(msg)
-      output$sidebar <- renderText({msg})
-      return(FALSE)
-      
-    },
-    
-    warning = function(m){
-      
-      msg <- paste0("There is problem with input file <br><br>", m)
-      logwarn(msg)
-      output$sidebar <- renderText({msg})
-      return(FALSE)
-      
-    }
-    
-  )
-
-  if (inputFilesRead){
+  if (!is.null(txt)){
     
     #Add rendering nice message when error
     output$dcMessage <- renderUI({disconnectMessage(text = paste0(txt[txt$text_type == "error", "text"], " [", urlString, "]"), refresh = txt[txt$text_type == "refresh", "text"])})
@@ -150,7 +168,7 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
           subject$filler <- input$filler
           subject$fillerTxt <- input$fillerTxt
           loginfo(paste0(urlString, " starting test from the beginning."))
-          startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString, fromSW)
+          startTest(input, output, session, subject, formPath, subjectFile, lang, idx, form, txt, urlString, fromSW)
           
         }
         

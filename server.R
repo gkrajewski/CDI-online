@@ -94,7 +94,7 @@ server <- function(input, output, session) {
                   }, ignoreInit = TRUE)
                   
                   if (type == "adaptive") {
-                    runAdaptive(input, output, session, lang, form, idx, run, urlString, fromSW)
+                    runAdaptive(input, output, session, lang, form, idx, run, urlString, txt, fromSW)
                   } else if (type == "static") {
                     runStatic(input, output, session, lang, form, idx, run, urlString, txt, fromSW)
                   } else {
@@ -163,8 +163,8 @@ server <- function(input, output, session) {
                                            getWholeURL(session))})
       
       # Useful for testing
-      updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
-      session$reload()
+      # updateQueryString(paste0("?id=", "test", "&form=", "wg-cat", "&lang=", "pl", "&type=", "adaptive")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
+      # session$reload()
       
     }  
     

@@ -1,10 +1,10 @@
-startTest <- function(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString, fromSW){
+startTest <- function(input, output, session, subject, formPath, subjectFile, lang, idx, form, txt, urlString, fromSW){
 
   #Get subject (children) age in months
   subjectAge <- interval(subject$birth, Sys.Date()) %/% months(1)
   
   #Load items and start thetas
-  setwd(testPath)
+  setwd(formPath)
   items <- read.csv(paste0("items.csv"), encoding = "UTF-8", strip.white = T)
   startThetasFile <- "startThetas.csv"
   if (file.exists(startThetasFile)) {
