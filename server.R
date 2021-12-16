@@ -163,8 +163,8 @@ server <- function(input, output, session) {
                                            getWholeURL(session))})
       
       # Useful for testing
-      # updateQueryString(paste0("?id=", "test", "&form=", "wg-cat", "&lang=", "pl", "&type=", "adaptive")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
-      # session$reload()
+      updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl", "&type=", "static")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
+      session$reload()
       
     }  
     

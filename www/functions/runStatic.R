@@ -13,12 +13,12 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, t
     
     #Merge form-specific translations with type-universal translations
     uniTxt <- readInputFile(output = output, path = typePath, fileName = "uniTranslations.csv")
-    txt <- merge(txt, uniTxt, by = intersect(names(txt), names(uniTxt)), all = TRUE, sort = FALSE)
+    txt <- mergeTranslations(txt, uniTxt)
     
   }
   
   #Merge translations with language-universal translations
-  txt <- merge(txt, uniTxt2, by = intersect(names(txt), names(uniTxt2)), all = TRUE, sort = FALSE)
+  #txt <- mergeTranslations(txt, uniTxt2)
 
   #Prepare list of types (order of first occurences in translations is important for order of types in menu)
   types <- na.omit(unique(txt$item_type))
@@ -420,9 +420,9 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, t
       write.csv(isolate(reactList()$answers), answersFile, row.names = F, fileEncoding = "UTF-8")
       write.csv(isolate(reactList()$userProgress), progressFile, row.names = F, fileEncoding = "UTF-8")
       
-      if (isolate(reactList()$allEnabledDone)) {
-        sendLogs(urlString, idx, form, lang)
-      }
+      # if (isolate(reactList()$allEnabledDone)) {
+      #   sendLogs(urlString, idx, form, lang)
+      # }
       
     })
     
