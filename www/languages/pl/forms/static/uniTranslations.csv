@@ -28,7 +28,6 @@ endMsgTextSW;Bardzo dziękujemy za wypełnienie kwestionariusza! Więcej informa
 endMsgText;Dziękujemy za wypełnienie kwestionariusza! Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Państwa cenny! Państwa zaangażowanie w badanie jest bardzo ważne - pomoże nam szczegółowo opisać wczesny rozwój językowy dzieci jedno- i dwujęzycznych przyswajających język polski jako jeden ze swoich języków.;end;
 error;Wystąpił błąd. Proszę odświeżyć i spróbować ponownie. Jeśli błąd się powtarza prosimy o zrobienie screena tego ekranu i wysłanie na maila projekt.starwords@psych.uw.edu.pl lub przez media społecznościowe.;;
 refresh;Odśwież;;
-badForm;Zła wartość parametru form w adresie URL. Dostępne wartości to: ;;none
 inventoryOpened;Inwentarz jest już otwarty. Proszę zamknąć inwentarz jeśli jest otwarty gdzie indziej i/lub odświeżyć stronę.;;
 errorInfo;Prosimy przekleić link poniżej i wysłać na maila projekt.starwords@psych.uw.edu.pl. Pozwoli nam to na szybszą diagnozę i naprawę błędów.;;
 email;yes;;

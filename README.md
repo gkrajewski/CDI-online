@@ -5,3 +5,6 @@ Here we work on changes connected with input files
 * Changed: uniTranslations are optional files to use (issue #180)
 * Changed: preSettings are now uniTranslations (issue #184)
 * Added: New function for reading input files
+* Changed: Any NA in input files are changed into "" 
+* Added: Try catch binding of types
+

@@ -1,7 +1,7 @@
 runAdaptive <- function(input, output, session, lang, form, idx, run, urlString, txt, fromSW){
   
   #Read translations & settings
-  uniTxt2 <- txt
+  uniTxt2 <- txt[,c("text_type", "text")]
   typePath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/adaptive")
   formPath <- paste0(typePath, "/", form)
   txt <- readInputFile(output = output, path = formPath, fileName = "settings&translations.csv")
@@ -11,63 +11,12 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
     
     #Merge form-specific translations with type-universal translations
     uniTxt <- readInputFile(output = output, path = typePath, fileName = "uniSettings&Translations.csv")
-    txt <- merge(txt, uniTxt, by = intersect(names(txt), names(uniTxt)), all = TRUE, sort = FALSE)
+    txt <- mergeTranslations(txt, uniTxt, "adaptive")
     
   }
   
   #Merge translations & settings with language-universal translations
-  txt <- merge(txt, uniTxt2, by = intersect(names(txt), names(uniTxt2)), all = TRUE, sort = FALSE)
-  
-  # #Read translations & settings
-  # inputFilesRead <- tryCatch(
-  #   
-  #   expr = {
-  #     
-  #     #Load settings and translations
-  #     testPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/adaptive/", form)
-  #     setwd(testPath)
-  #     
-  #     transl <- read.csv(paste0("settings&translations.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
-  #     
-  #     if (file.exists("../uniSettings&translations.csv")){
-  #       
-  #       uniTransl <- read.csv(paste0("../uniSettings&translations.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
-  #       translID <- paste(transl$text_type, transl$text)
-  #       uniTranslID <- paste(uniTransl$text_type, uniTransl$text)
-  #       uniTransl <- subset(uniTransl, !(uniTranslID %in% translID)) #Get things from uniTransl (uniSettings&translations) that are not in translations
-  #       txt <- rbind(uniTransl, transl)
-  #       
-  #     } else {
-  #       
-  #       txt <- transl
-  #       
-  #     }
-  # 
-  #     setwd(INIT_PATH)
-  #     
-  #     TRUE
-  #     
-  #   },
-  #   
-  #   error = function(m){
-  #     
-  #     msg <- paste0("There is problem with input file <br><br>", m)
-  #     logerror(msg)
-  #     output$sidebar <- renderText({msg})
-  #     return(FALSE)
-  #     
-  #   },
-  #   
-  #   warning = function(m){
-  #     
-  #     msg <- paste0("There is problem with input file <br><br>", m)
-  #     logwarn(msg)
-  #     output$sidebar <- renderText({msg})
-  #     return(FALSE)
-  #     
-  #   }
-  #   
-  # )
+  txt <- mergeTranslations(txt, uniTxt2, "adaptive")
 
   if (!is.null(txt)){
     

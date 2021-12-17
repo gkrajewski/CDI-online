@@ -1,8 +1,5 @@
 renderCategory <- function(input, output, category, reactList, staticList){
-  
-  #Useful for debugging
-  #print(paste0("-- Type: ", isolate(reactList$type), ", Category: ", category, " --"))
-  
+
   #Set current category
   reactList$category <- category
   reactList$userProgress[reactList$userProgress$type == reactList$type, "category"] <- reactList$category
@@ -24,7 +21,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
     if (is.element(category, reactList$typeSettings$category)){
       reactList$settings <- reactList$typeSettings[reactList$typeSettings$category == category, ]
     } else {
-      reactList$settings <- reactList$typeSettings[reactList$typeSettings$category == "" | is.na(reactList$typeSettings$category), ]
+      reactList$settings <- reactList$typeSettings[reactList$typeSettings$category == "", ]
     }
     
     if (category == reactList$firstCat){
@@ -69,7 +66,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
     reactList$items <- reactList$typeItems
     reactList$txt <- reactList$typeTxt
     reactList$settings <- reactList$typeSettings
-    if (reactList$type != "postEnd" & reactList$type != "postEndSW") buttons <- list(actionButton("confBtn", class = "btn-primary", label = staticList$txt[staticList$txt$text_type == "confBtn", "text"]))
+    buttons <- list(actionButton("confBtn", class = "btn-primary", label = staticList$txt[staticList$txt$text_type == "confBtn", "text"]))
 
   }
 
@@ -77,7 +74,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
   inputObj <- list()
   notes <- list()
   commentField <- FALSE
-  if (!is.na(reactList$settings$input_type) & category != "firstPage"){
+  if (reactList$settings$input_type != "" & category != "firstPage"){
     
     #Mark current page as input
     reactList$inputPage <- TRUE

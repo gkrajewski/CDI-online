@@ -1,5 +1,5 @@
 renderType <- function(input, output, type, reactList, staticList){
-  
+
   #Set current type
   reactList$type <- type
   
@@ -17,7 +17,7 @@ renderType <- function(input, output, type, reactList, staticList){
 
   #Get type items, texts and settings
   reactList$typeItems <- staticList$items[staticList$items$type == type, ]
-  reactList$typeTxt <- na.omit(staticList$txt[staticList$txt$item_type == type, ])
+  reactList$typeTxt <- staticList$txt[staticList$txt$item_type == type, ]
   reactList$typeSettings <- staticList$settings[staticList$settings$type == type, ]
   
   #Render type header
