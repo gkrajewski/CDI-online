@@ -49,17 +49,26 @@ First we show the file structure, secondly we describe the content and possible 
 
 www \
 |–– functions \
-|–– languages * in this folder you create subfolders for any language that you will use for testing  
-    |–– example_language * you can name subfolders however you like, in our case we have pl (for Polish), en-gb (for English), no (for Norwegian)  \
+|–– languages * in this folder you create subfolders for any language that you will use for testing
+
+    |–– example_language * you can name subfolders however you like, in our case we have pl (for Polish), en-gb (for English), no (for Norwegian)  
+    
         |–– preSettings.csv
-&nbsp;
+
         |–– forms \
+        
             |–– static \
+            
             |–– adaptive * in this folder you can create subfolders for every form \
+            
                 |–– uniSettings&translations.csv \
+                
                 |–– example_form * you can name subfolders however you like \
+                
                     |–– items.csv \
+                    
                     |–– settings&translations.csv \
+                    
                     |–– startThetas.csv
 
         
