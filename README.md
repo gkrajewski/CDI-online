@@ -49,8 +49,8 @@ First we show the file structure, secondly we describe the content and possible 
 
 www \
 |–– functions \
-|–– languages * in this folder you create subfolders for any language that you will use for testing
-    |–– example_language * you can name subfolders however you like, in our case we have pl (for Polish), en-gb (for English), no (for Norwegian) \
+|–– languages * in this folder you create subfolders for any language that you will use for testing \\
+    |–– example_language * you can name subfolders however you like, in our case we have pl (for Polish), en-gb (for English), no (for Norwegian)  \
         |–– preSettings.csv \
         |–– forms \
             |–– static \
