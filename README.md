@@ -48,36 +48,52 @@ Adaptive module starts with a page that asks for age, gender and who's filling t
 First we show the file structure, secondly we describe the content and possible values for each input file.
 
 www
+
 |–– functions
+
 |–– languages * in this folder you create subfolders for any language that you will use for testing
+
     |–– example_language * you can name subfolders however you like, in our case we have pl (for Polish), en-gb (for English), no (for Norwegian)
+    
         |–– preSettings.csv 
+        
         |–– forms
+        
             |–– static
+            
             |–– adaptive * in this folder you can create subfolders for every form
+            
                 |–– uniSettings&translations.csv
+                
                 |–– example_form * you can name subfolders however you like
+                
                     |–– items.csv
+                    
                     |–– settings&translations.csv
+                    
                     |–– startThetas.csv
 
         
         
 #### preSettings.csv
 This file contains translations for errors that are generated when wrong values are passed in URL query. 
+
 The file contains two columns: text_type and text. Text_type contains error names:
 * badType: when type contains other value than "static" or "adaptive"
 * noType: when there's no folder with this type name. So type is defined as "static" or "adaptive", but given folder doesn't exist
 * badForm: when there's no folder with this form name
 * errorInfo: additional message that is displayed with every error. For example a message with contact information.
+
 Text column contains any message you would like to display when given error occurs.
 
 
 #### uniSettings&translations.csv
 Location: www/languages/example_language/forms/adaptive/
+
 This file may contain the same values as settings&translations.csv file in example_form folder. If you have many forms with similar parameters you can define them in uniSettings&translations.csv instead of repeating them in settings&translations files for every individual form. 
 
 ! IMPORTANT
+
 In case same parameters are defined in both uniSettings&translations.csv and settings&translations.csv, values from settings&translations.csv are used. Therefore settings&translations.csv takes priority over uniSettings&translations.csv.
 Parameters are defined by their name in text_type column. 
 
