@@ -1,816 +1,816 @@
-item_id;definition;type;category
-item_1;baa baa;word;sounds
-item_2;choo choo;word;sounds
-item_3;cockadoodledoo;word;sounds
-item_4;grr;word;sounds
-item_5;meow;word;sounds
-item_6;moo;word;sounds
-item_7;neigh;word;sounds
-item_8;oink / snort;word;sounds
-item_9;ooh-ooh (monkey);word;sounds
-item_10;ouch;word;sounds
-item_11;quack;word;sounds
-item_12;rraaah;word;sounds
-item_13;tweet tweet;word;sounds
-item_14;twit-twoo;word;sounds
-item_15;uh oh;word;sounds
-item_16;vroom;word;sounds
-item_17;whee;word;sounds
-item_18;woof;word;sounds
-item_19;yum;word;sounds
-item_20;alligator;word;animals
-item_21;animal;word;animals
-item_22;ant;word;animals
-item_23;bear;word;animals
-item_24;bee;word;animals
-item_25;bird;word;animals
-item_26;bug / beastie;word;animals
-item_27;bunny / rabbit;word;animals
-item_28;butterfly;word;animals
-item_29;cat / pussy cat;word;animals
-item_30;chicken;word;animals
-item_31;cow;word;animals
-item_32;crab;word;animals
-item_33;crocodile;word;animals
-item_34;deer;word;animals
-item_35;dinosaur;word;animals
-item_36;dog / doggie;word;animals
-item_37;donkey;word;animals
-item_38;duck;word;animals
-item_39;elephant;word;animals
-item_40;fish;word;animals
-item_41;fly;word;animals
-item_42;fox;word;animals
-item_43;frog;word;animals
-item_44;giraffe;word;animals
-item_45;goat;word;animals
-item_46;goose;word;animals
-item_47;hedgehog;word;animals
-item_48;hen;word;animals
-item_49;hippo;word;animals
-item_50;horse;word;animals
-item_51;kitten / kitty;word;animals
-item_52;lamb;word;animals
-item_53;lion;word;animals
-item_54;monkey;word;animals
-item_55;mouse;word;animals
-item_56;octopus;word;animals
-item_57;owl;word;animals
-item_58;panda;word;animals
-item_59;penguin;word;animals
-item_60;pig;word;animals
-item_61;pony;word;animals
-item_62;puppy;word;animals
-item_63;shark;word;animals
-item_64;sheep;word;animals
-item_65;snake;word;animals
-item_66;spider;word;animals
-item_67;squirrel;word;animals
-item_68;tiger;word;animals
-item_69;turkey;word;animals
-item_70;turtle;word;animals
-item_71;whale;word;animals
-item_72;zebra;word;animals
-item_73;aeroplane / plane;word;vehicles
-item_74;ambulance;word;vehicles
-item_75;bicycle / bike;word;vehicles
-item_76;boat;word;vehicles
-item_77;bus;word;vehicles
-item_78;car;word;vehicles
-item_79;crane;word;vehicles
-item_80;digger;word;vehicles
-item_81;fire engine;word;vehicles
-item_82;helicopter;word;vehicles
-item_83;lorry /truck;word;vehicles
-item_84;motorbike;word;vehicles
-item_85;police car;word;vehicles
-item_86;pram;word;vehicles
-item_87;pushchair / buggy / stroller;word;vehicles
-item_88;rocket;word;vehicles
-item_89;scooter;word;vehicles
-item_90;sleigh;word;vehicles
-item_91;tractor;word;vehicles
-item_92;trailer;word;vehicles
-item_93;train;word;vehicles
-item_94;van;word;vehicles
-item_95;ball;word;toys
-item_96;balloon;word;toys
-item_97;block;word;toys
-item_98;book;word;toys
-item_99;brick;word;toys
-item_100;bubbles;word;toys
-item_101;colouring;word;toys
-item_102;crayon;word;toys
-item_103;doll;word;toys
-item_104;game;word;toys
-item_105;Lego;word;toys
-item_106;pen;word;toys
-item_107;pencil;word;toys
-item_108;play dough;word;toys
-item_109;puzzle;word;toys
-item_110;story;word;toys
-item_111;teddy / teddy bear;word;toys
-item_112;toy;word;toys
-item_113;track / train track;word;toys
-item_114;apple;word;food_drink
-item_115;banana;word;food_drink
-item_116;beans;word;food_drink
-item_117;biscuit;word;food_drink
-item_118;blueberry;word;food_drink
-item_119;bread;word;food_drink
-item_120;butter / spread / marg;word;food_drink
-item_121;cake;word;food_drink
-item_122;carrots;word;food_drink
-item_123;cereal;word;food_drink
-item_124;cheese;word;food_drink
-item_125;chicken;word;food_drink
-item_126;chips;word;food_drink
-item_127;chocolate;word;food_drink
-item_128;chocolate biscuit;word;food_drink
-item_129;coffee;word;food_drink
-item_130;crisps;word;food_drink
-item_131;cucumber;word;food_drink
-item_132;drink;word;food_drink
-item_133;egg;word;food_drink
-item_134;fish;word;food_drink
-item_135;food;word;food_drink
-item_136;green beans;word;food_drink
-item_137;grapes;word;food_drink
-item_138;ham;word;food_drink
-item_139;ice;word;food_drink
-item_140;ice cream;word;food_drink
-item_141;ice lolly;word;food_drink
-item_142;jam;word;food_drink
-item_143;jelly;word;food_drink
-item_144;juice;word;food_drink
-item_145;lemon;word;food_drink
-item_146;lollipop;word;food_drink
-item_147;meat;word;food_drink
-item_148;melon;word;food_drink
-item_149;milk;word;food_drink
-item_150;muffin;word;food_drink
-item_151;nuts;word;food_drink
-item_152;onion;word;food_drink
-item_153;orange;word;food_drink
-item_154;pancake;word;food_drink
-item_155;pasta / spaghetti;word;food_drink
-item_156;peanut butter;word;food_drink
-item_157;pear;word;food_drink
-item_158;peas;word;food_drink
-item_159;pickle;word;food_drink
-item_160;pizza;word;food_drink
-item_161;plum;word;food_drink
-item_162;pop / fizzy drink / coke;word;food_drink
-item_163;popcorn;word;food_drink
-item_164;potato / spud / tattie;word;food_drink
-item_165;pudding;word;food_drink
-item_166;pumpkin;word;food_drink
-item_167;raisin;word;food_drink
-item_168;salt;word;food_drink
-item_169;sandwich / butty;word;food_drink
-item_170;sauce;word;food_drink
-item_171;sausages;word;food_drink
-item_172;soup;word;food_drink
-item_173;strawberry;word;food_drink
-item_174;sweetcorn / corn on the cob;word;food_drink
-item_175;sweets;word;food_drink
-item_176;tea / brew (drink);word;food_drink
-item_177;toast;word;food_drink
-item_178;tomato;word;food_drink
-item_179;tomato sauce / ketchup / dipdip;word;food_drink
-item_180;tuna;word;food_drink
-item_181;vanilla;word;food_drink
-item_182;vitamins;word;food_drink
-item_183;water;word;food_drink
-item_184;yoghurt;word;food_drink
-item_185;ankle;word;body_parts
-item_186;arm;word;body_parts
-item_187;belly / tummy;word;body_parts
-item_188;belly button / tummy button;word;body_parts
-item_189;boob / boobie *;word;body_parts
-item_190;buttocks / bum / bottom *;word;body_parts
-item_191;cheek;word;body_parts
-item_192;chin;word;body_parts
-item_193;ear / tab;word;body_parts
-item_194;elbow;word;body_parts
-item_195;eye;word;body_parts
-item_196;eyebrow;word;body_parts
-item_197;eyelash;word;body_parts
-item_198;face;word;body_parts
-item_199;finger;word;body_parts
-item_200;foot;word;body_parts
-item_201;hair;word;body_parts
-item_202;hand;word;body_parts
-item_203;head;word;body_parts
-item_204;knee;word;body_parts
-item_205;leg;word;body_parts
-item_206;lips;word;body_parts
-item_207;mouth;word;body_parts
-item_208;nail / fingernail;word;body_parts
-item_209;neck;word;body_parts
-item_210;nose;word;body_parts
-item_211;privates / penis / vagina *;word;body_parts
-item_212;shoulder;word;body_parts
-item_213;tooth / teeth;word;body_parts
-item_214;toe;word;body_parts
-item_215;tongue;word;body_parts
-item_216;bib;word;clothing
-item_217;boots;word;clothing
-item_218;button;word;clothing
-item_219;cardigan;word;clothing
-item_220;coat;word;clothing
-item_221;dress;word;clothing
-item_222;glasses / specs;word;clothing
-item_223;gloves;word;clothing
-item_224;hat;word;clothing
-item_225;jacket;word;clothing
-item_226;jeans;word;clothing
-item_227;jumper;word;clothing
-item_228;leggings;word;clothing
-item_229;nappy;word;clothing
-item_230;necklace;word;clothing
-item_231;pants / undies / knickers;word;clothing
-item_232;pyjamas / PJs / jim jams;word;clothing
-item_233;scarf;word;clothing
-item_234;shirt;word;clothing
-item_235;shoes;word;clothing
-item_236;shorts;word;clothing
-item_237;sock;word;clothing
-item_238;top;word;clothing
-item_239;trainers / daps / plimsolls;word;clothing
-item_240;trousers / pants / britches;word;clothing
-item_241;t-shirt;word;clothing
-item_242;vest;word;clothing
-item_243;zip;word;clothing
-item_244;bath tub / bath;word;furniture_rooms
-item_245;bathroom;word;furniture_rooms
-item_246;bed;word;furniture_rooms
-item_247;bedroom;word;furniture_rooms
-item_248;bench;word;furniture_rooms
-item_249;carpet;word;furniture_rooms
-item_250;chair;word;furniture_rooms
-item_251;cooker;word;furniture_rooms
-item_252;cot;word;furniture_rooms
-item_253;dining room;word;furniture_rooms
-item_254;door;word;furniture_rooms
-item_255;downstairs;word;furniture_rooms
-item_256;drawer;word;furniture_rooms
-item_257;floor;word;furniture_rooms
-item_258;garage;word;furniture_rooms
-item_259;high chair;word;furniture_rooms
-item_260;kitchen;word;furniture_rooms
-item_261;living room / lounge;word;furniture_rooms
-item_262;oven;word;furniture_rooms
-item_263;porch;word;furniture_rooms
-item_264;potty;word;furniture_rooms
-item_265;radiator;word;furniture_rooms
-item_266;refrigerator / fridge;word;furniture_rooms
-item_267;rocking chair;word;furniture_rooms
-item_268;room;word;furniture_rooms
-item_269;seat;word;furniture_rooms
-item_270;shelf;word;furniture_rooms
-item_271;shower;word;furniture_rooms
-item_272;sink;word;furniture_rooms
-item_273;sofa / settee / couch;word;furniture_rooms
-item_274;stairgate;word;furniture_rooms
-item_275;stairs;word;furniture_rooms
-item_276;stool;word;furniture_rooms
-item_277;table;word;furniture_rooms
-item_278;TV / television / telly;word;furniture_rooms
-item_279;toilet / lav / loo;word;furniture_rooms
-item_280;washing machine / washer ;word;furniture_rooms
-item_281;window;word;furniture_rooms
-item_282;upstairs;word;furniture_rooms
-item_283;bag;word;household
-item_284;bin;word;household
-item_285;blanket;word;household
-item_286;bottle;word;household
-item_287;box;word;household
-item_288;bowl;word;household
-item_289;broom;word;household
-item_290;brush;word;household
-item_291;bucket;word;household
-item_292;camera;word;household
-item_293;clock;word;household
-item_294;comb;word;household
-item_295;computer / laptop;word;household
-item_296;cup;word;household
-item_297;dish;word;household
-item_298;dummy / dodie / soother;word;household
-item_299;fork;word;household
-item_300;glass;word;household
-item_301;hammer;word;household
-item_302;hoover / vacuum;word;household
-item_303;jar;word;household
-item_304;jug;word;household
-item_305;kettle;word;household
-item_306;key;word;household
-item_307;knife;word;household
-item_308;lamp / light;word;household
-item_309;mat / rug;word;household
-item_310;medicine;word;household
-item_311;mirror;word;household
-item_312;money;word;household
-item_313;mop;word;household
-item_314;nail;word;household
-item_315;napkin;word;household
-item_316;paper;word;household
-item_317;penny;word;household
-item_318;picture;word;household
-item_319;pillow;word;household
-item_320;plant;word;household
-item_321;plate;word;household
-item_322;purse;word;household
-item_323;radio;word;household
-item_324;rubbish;word;household
-item_325;scissors;word;household
-item_326;sellotape;word;household
-item_327;soap;word;household
-item_328;spoon;word;household
-item_329;tap;word;household
-item_330;telephone / phone / mobile;word;household
-item_331;tissue;word;household
-item_332;toothbrush;word;household
-item_333;towel;word;household
-item_334;watch;word;household
-item_335;backyard;word;outside
-item_336;cloud;word;outside
-item_337;flag;word;outside
-item_338;flower;word;outside
-item_339;garden;word;outside
-item_340;grass;word;outside
-item_341;moon;word;outside
-item_342;mud;word;outside
-item_343;pavement;word;outside
-item_344;pond;word;outside
-item_345;puddle;word;outside
-item_346;rain;word;outside
-item_347;rainbow;word;outside
-item_348;road;word;outside
-item_349;rock;word;outside
-item_350;roof;word;outside
-item_351;seesaw;word;outside
-item_352;shovel / spade;word;outside
-item_353;sky;word;outside
-item_354;slide;word;outside
-item_355;snow;word;outside
-item_356;snowman;word;outside
-item_357;spade;word;outside
-item_358;star;word;outside
-item_359;stick;word;outside
-item_360;stone;word;outside
-item_361;sun;word;outside
-item_362;swing;word;outside
-item_363;tree;word;outside
-item_364;wall;word;outside
-item_365;water;word;outside
-item_366;watering can;word;outside
-item_367;wind;word;outside
-item_368;beach;word;places
-item_369;cafe;word;places
-item_370;church / mosque / synagogue *;word;places
-item_371;circus;word;places
-item_372;farm;word;places
-item_373;home;word;places
-item_374;house;word;places
-item_375;nursery / preschool;word;places
-item_376;outside;word;places
-item_377;park;word;places
-item_378;party;word;places
-item_379;picnic;word;places
-item_380;playground;word;places
-item_381;pool / swimmingpool;word;places
-item_382;restaurant;word;places
-item_383;school;word;places
-item_384;shop;word;places
-item_385;soft play;word;places
-item_386;work;word;places
-item_387;zoo;word;places
-item_388;aunt / auntie;word;people
-item_389;baby / bairn / wee one;word;people
-item_390;babysitter;word;people
-item_391;boy / laddie;word;people
-item_392;brother;word;people
-item_393;child;word;people
-item_394;child's own name;word;people
-item_395;daddy / dad / da;word;people
-item_396;doctor;word;people
-item_397;fire fighter / fireman;word;people
-item_398;friend;word;people
-item_399;girl / lassie;word;people
-item_400;grandma / nan / granny / nanny;word;people
-item_401;grandpa / grandad;word;people
-item_402;lady;word;people
-item_403;man;word;people
-item_404;mum / mummy / mam / ma;word;people
-item_405;people / folk;word;people
-item_406;person;word;people
-item_407;pet's name;word;people
-item_408;police / policeman;word;people
-item_409;postie / postman;word;people
-item_410;sister;word;people
-item_411;teacher;word;people
-item_412;uncle;word;people
-item_413;woman;word;people
-item_414;bath;word;games_routines
-item_415;bedtime;word;games_routines
-item_416;breakfast;word;games_routines
-item_417;brush teeth;word;games_routines
-item_418;bye / bye bye / cheerio;word;games_routines
-item_419;clap hands;word;games_routines
-item_420;dinner;word;games_routines
-item_421;don't / dinnae;word;games_routines
-item_422;good night / night night;word;games_routines
-item_423;hello / hi  / hiya;word;games_routines
-item_424;hush / shh;word;games_routines
-item_425;lunch;word;games_routines
-item_426;music;word;games_routines
-item_427;nap;word;games_routines
-item_428;no;word;games_routines
-item_429;OK / okay;word;games_routines
-item_430;oops;word;games_routines
-item_431;pat-a-cake;word;games_routines
-item_432;peekaboo / peepbo;word;games_routines
-item_433;please;word;games_routines
-item_434;(call on) phone;word;games_routines
-item_435;shopping;word;games_routines
-item_436;snack;word;games_routines
-item_437;sorry;word;games_routines
-item_438;tea (meal);word;games_routines
-item_439;thank you / ta;word;games_routines
-item_440;this little piggy;word;games_routines
-item_441;yes / yeah / aye;word;games_routines
-item_442;wait;word;games_routines
-item_443;want to;word;games_routines
-item_444;bite;word;action_words
-item_445;blow;word;action_words
-item_446;break;word;action_words
-item_447;bring;word;action_words
-item_448;bump;word;action_words
-item_449;call;word;action_words
-item_450;carry;word;action_words
-item_451;catch;word;action_words
-item_452;chase;word;action_words
-item_453;clap;word;action_words
-item_454;clean;word;action_words
-item_455;climb;word;action_words
-item_456;come;word;action_words
-item_457;cook;word;action_words
-item_458;cover;word;action_words
-item_459;cry / blub/ weep;word;action_words
-item_460;cuddle;word;action_words
-item_461;cut;word;action_words
-item_462;dance;word;action_words
-item_463;draw;word;action_words
-item_464;drink;word;action_words
-item_465;drive;word;action_words
-item_466;drop;word;action_words
-item_467;dry;word;action_words
-item_468;eat;word;action_words
-item_469;fall;word;action_words
-item_470;feed;word;action_words
-item_471;find;word;action_words
-item_472;finish;word;action_words
-item_473;fix;word;action_words
-item_474;get;word;action_words
-item_475;give;word;action_words
-item_476;go;word;action_words
-item_477;have;word;action_words
-item_478;hear;word;action_words
-item_479;help;word;action_words
-item_480;hide;word;action_words
-item_481;hit;word;action_words
-item_482;hug;word;action_words
-item_483;hurry;word;action_words
-item_484;jump;word;action_words
-item_485;kick;word;action_words
-item_486;kiss;word;action_words
-item_487;knock;word;action_words
-item_488;know;word;action_words
-item_489;like;word;action_words
-item_490;look;word;action_words
-item_491;love;word;action_words
-item_492;make;word;action_words
-item_493;open;word;action_words
-item_494;paint;word;action_words
-item_495;pick;word;action_words
-item_496;play;word;action_words
-item_497;pull;word;action_words
-item_498;push;word;action_words
-item_499;put;word;action_words
-item_500;read;word;action_words
-item_501;ride;word;action_words
-item_502;rub;word;action_words
-item_503;run;word;action_words
-item_504;say;word;action_words
-item_505;scratch;word;action_words
-item_506;scoot;word;action_words
-item_507;see;word;action_words
-item_508;share;word;action_words
-item_509;shout;word;action_words
-item_510;show;word;action_words
-item_511;shut / close;word;action_words
-item_512;sing;word;action_words
-item_513;sit;word;action_words
-item_514;sleep;word;action_words
-item_515;slide;word;action_words
-item_516;smell;word;action_words
-item_517;smile;word;action_words
-item_518;splash;word;action_words
-item_519;stand;word;action_words
-item_520;stay;word;action_words
-item_521;stop;word;action_words
-item_522;swim;word;action_words
-item_523;swing;word;action_words
-item_524;talk;word;action_words
-item_525;take;word;action_words
-item_526;tell;word;action_words
-item_527;throw;word;action_words
-item_528;tickle;word;action_words
-item_529;touch;word;action_words
-item_530;wait;word;action_words
-item_531;wake / wake up;word;action_words
-item_532;walk;word;action_words
-item_533;wash;word;action_words
-item_534;watch;word;action_words
-item_535;wipe;word;action_words
-item_536;wish;word;action_words
-item_537;work;word;action_words
-item_538;write;word;action_words
-item_539;all gone;word;descriptive_words
-item_540;asleep;word;descriptive_words
-item_541;awake;word;descriptive_words
-item_542;bad;word;descriptive_words
-item_543;bang;word;descriptive_words
-item_544;better;word;descriptive_words
-item_545;big;word;descriptive_words
-item_546;black;word;descriptive_words
-item_547;blue;word;descriptive_words
-item_548;broken;word;descriptive_words
-item_549;brown;word;descriptive_words
-item_550;careful;word;descriptive_words
-item_551;clean;word;descriptive_words
-item_552;cold;word;descriptive_words
-item_553;colour;word;descriptive_words
-item_554;dark;word;descriptive_words
-item_555;dirty / mucky;word;descriptive_words
-item_556;dry;word;descriptive_words
-item_557;empty;word;descriptive_words
-item_558;fast;word;descriptive_words
-item_559;fine;word;descriptive_words
-item_560;fun;word;descriptive_words
-item_561;gentle;word;descriptive_words
-item_562;good;word;descriptive_words
-item_563;green;word;descriptive_words
-item_564;happy;word;descriptive_words
-item_565;hard;word;descriptive_words
-item_566;heavy;word;descriptive_words
-item_567;high;word;descriptive_words
-item_568;hot;word;descriptive_words
-item_569;hungry;word;descriptive_words
-item_570;hurt;word;descriptive_words
-item_571;last;word;descriptive_words
-item_572;little;word;descriptive_words
-item_573;long;word;descriptive_words
-item_574;loud;word;descriptive_words
-item_575;messy;word;descriptive_words
-item_576;nasty;word;descriptive_words
-item_577;naughty;word;descriptive_words
-item_578;nice;word;descriptive_words
-item_579;noise / noisy;word;descriptive_words
-item_580;old;word;descriptive_words
-item_581;orange (colour);word;descriptive_words
-item_582;pink;word;descriptive_words
-item_583;pretty;word;descriptive_words
-item_584;purple;word;descriptive_words
-item_585;quiet;word;descriptive_words
-item_586;red;word;descriptive_words
-item_587;sad;word;descriptive_words
-item_588;scared;word;descriptive_words
-item_589;sick;word;descriptive_words
-item_590;sleepy;word;descriptive_words
-item_591;small;word;descriptive_words
-item_592;soft;word;descriptive_words
-item_593;square;word;descriptive_words
-item_594;stuck;word;descriptive_words
-item_595;tall;word;descriptive_words
-item_596;tasty;word;descriptive_words
-item_597;thirsty;word;descriptive_words
-item_598;tired;word;descriptive_words
-item_599;wet;word;descriptive_words
-item_600;windy;word;descriptive_words
-item_601;yellow;word;descriptive_words
-item_602;yucky;word;descriptive_words
-item_603;how;word;question_words
-item_604;what;word;question_words
-item_605;when;word;question_words
-item_606;where;word;question_words
-item_607;which;word;question_words
-item_608;who;word;question_words
-item_609;why;word;question_words
-item_610;after;word;time_words
-item_611;afternoon;word;time_words
-item_612;day;word;time_words
-item_613;later;word;time_words
-item_614;minute;word;time_words
-item_615;morning;word;time_words
-item_616;night;word;time_words
-item_617;now;word;time_words
-item_618;today;word;time_words
-item_619;tomorrow;word;time_words
-item_620;tonight;word;time_words
-item_621;he;word;pronouns
-item_622;her;word;pronouns
-item_623;him;word;pronouns
-item_624;his;word;pronouns
-item_625;I;word;pronouns
-item_626;it;word;pronouns
-item_627;me;word;pronouns
-item_628;mine;word;pronouns
-item_629;my;word;pronouns
-item_630;myself;word;pronouns
-item_631;our;word;pronouns
-item_632;she;word;pronouns
-item_633;that;word;pronouns
-item_634;they;word;pronouns
-item_635;this;word;pronouns
-item_636;us;word;pronouns
-item_637;we;word;pronouns
-item_638;you;word;pronouns
-item_639;your;word;pronouns
-item_640;above;word;prepositions
-item_641;around;word;prepositions
-item_642;at;word;prepositions
-item_643;away / way;word;prepositions
-item_644;back;word;prepositions
-item_645;by;word;prepositions
-item_646;down;word;prepositions
-item_647;here;word;prepositions
-item_648;in;word;prepositions
-item_649;inside;word;prepositions
-item_650;into;word;prepositions
-item_651;off;word;prepositions
-item_652;on;word;prepositions
-item_653;out;word;prepositions
-item_654;there;word;prepositions
-item_655;to;word;prepositions
-item_656;under;word;prepositions
-item_657;up;word;prepositions
-item_658;with;word;prepositions
-item_659;again;word;quantifiers
-item_660;all;word;quantifiers
-item_661;another;word;quantifiers
-item_662;bit;word;quantifiers
-item_663;each;word;quantifiers
-item_664;every;word;quantifiers
-item_665;lots;word;quantifiers
-item_666;more;word;quantifiers
-item_667;none;word;quantifiers
-item_668;not;word;quantifiers
-item_669;other;word;quantifiers
-item_670;same;word;quantifiers
-item_671;some;word;quantifiers
-item_672;am;word;helping_verbs
-item_673;are;word;helping_verbs
-item_674;be;word;helping_verbs
-item_675;can;word;helping_verbs
-item_676;could;word;helping_verbs
-item_677;did / did ya;word;helping_verbs
-item_678;do;word;helping_verbs
-item_679;does;word;helping_verbs
-item_680;don't / dinnae;word;helping_verbs
-item_681;going to / gonna;word;helping_verbs
-item_682;have to / hafta;word;helping_verbs
-item_683;is;word;helping_verbs
-item_684;lemme / let me;word;helping_verbs
-item_685;got to / gotta;word;helping_verbs
-item_686;need / need to;word;helping_verbs
-item_687;try / try to;word;helping_verbs
-item_688;want to / wanna;word;helping_verbs
-item_689;was;word;helping_verbs
-item_690;were;word;helping_verbs
-item_691;will;word;helping_verbs
-item_692;would;word;helping_verbs
-item_693;and;word;connecting_words
-item_694;because;word;connecting_words
-item_695;but;word;connecting_words
-item_696;if;word;connecting_words
-item_697;so;word;connecting_words
-item_698;then;word;connecting_words
-item_699;Does your child ever talk about past events or people who are not present? For example, a child who saw a parade last week might later say parade, clown, or band.;how_use_words;
-item_700;Does your child ever talk about something that's going to happen in the future, for example, saying ‘choo choo’ or ‘aeroplane’ before you leave the house for a trip, or saying ‘swing’ when you are going to the park?;how_use_words;
-item_701;Does your child talk about objects that are not present such as asking about a missing or absent toy, referring to a pet out of view, or asking about someone not present?;how_use_words;
-item_702;Does your child understand if you ask for something that is not in the room? For example, would your child go to the bedroom to get a teddy bear when you say ‘Where's the bear?’;how_use_words;
-item_703;Does your child ever pick up or point to an object and name an absent person to whom the object belongs? For example, a child might point to mummy's shoe and say ‘mummy’.;how_use_words;
-item_704;To talk about more than one thing, we add an ‘s’ to many words. Examples include carS (for more than one car), shoeS, dogS, and keyS. Has your child begun to do this?;word_endings;
-item_705;To talk about ownership, we add an ‘s’, for example, daddy'S key, kitty'S dish, and baby'S bottle. Has your child begun to do this?;word_endings;
-item_706;To talk about activities, we sometimes add ‘ing’ to verbs. Examples include lookING, suckING and cryING. Has your child begun to do this?;word_endings;
-item_707;To talk about things that happened in the past, we often add ‘ed’ to the verb. Examples include kissED, openED and pushED. Has your child begun to do this?;word_endings;
-item_708;children;word_forms;word_form_nouns
-item_709;men;word_forms;word_form_nouns
-item_710;teeth;word_forms;word_form_nouns
-item_711;feet;word_forms;word_form_nouns
-item_712;mice;word_forms;word_form_nouns
-item_713;ate;word_forms;word_form_verbs
-item_714;fell;word_forms;word_form_verbs
-item_715;made;word_forms;word_form_verbs
-item_716;blew;word_forms;word_form_verbs
-item_717;flew;word_forms;word_form_verbs
-item_718;ran;word_forms;word_form_verbs
-item_719;bought;word_forms;word_form_verbs
-item_720;got;word_forms;word_form_verbs
-item_721;sat;word_forms;word_form_verbs
-item_722;broke;word_forms;word_form_verbs
-item_723;had;word_forms;word_form_verbs
-item_724;saw;word_forms;word_form_verbs
-item_725;came;word_forms;word_form_verbs
-item_726;heard;word_forms;word_form_verbs
-item_727;took;word_forms;word_form_verbs
-item_728;drank;word_forms;word_form_verbs
-item_729;held;word_forms;word_form_verbs
-item_730;went;word_forms;word_form_verbs
-item_731;drove;word_forms;word_form_verbs
-item_732;lost;word_forms;word_form_verbs
-item_733;blockses;word_endings2;word_endings_nouns
-item_734;mans;word_endings2;word_endings_nouns
-item_735;sockses;word_endings2;word_endings_nouns
-item_736;childrens;word_endings2;word_endings_nouns
-item_737;mens;word_endings2;word_endings_nouns
-item_738;teeths;word_endings2;word_endings_nouns
-item_739;childs;word_endings2;word_endings_nouns
-item_740;mices;word_endings2;word_endings_nouns
-item_741;toeses;word_endings2;word_endings_nouns
-item_742;feets;word_endings2;word_endings_nouns
-item_743;mouses;word_endings2;word_endings_nouns
-item_744;tooths;word_endings2;word_endings_nouns
-item_745;foots;word_endings2;word_endings_nouns
-item_746;shoeses;word_endings2;word_endings_nouns
-item_747;ated;word_endings2;word_endings_verbs
-item_748;drinked;word_endings2;word_endings_verbs
-item_749;losted;word_endings2;word_endings_verbs
-item_750;blewed;word_endings2;word_endings_verbs
-item_751;eated;word_endings2;word_endings_verbs
-item_752;maked;word_endings2;word_endings_verbs
-item_753;blowed;word_endings2;word_endings_verbs
-item_754;falled;word_endings2;word_endings_verbs
-item_755;ranned;word_endings2;word_endings_verbs
-item_756;bringed;word_endings2;word_endings_verbs
-item_757;flied;word_endings2;word_endings_verbs
-item_758;runned;word_endings2;word_endings_verbs
-item_759;buyed;word_endings2;word_endings_verbs
-item_760;getted;word_endings2;word_endings_verbs
-item_761;seed;word_endings2;word_endings_verbs
-item_762;breaked ;word_endings2;word_endings_verbs
-item_763;goed;word_endings2;word_endings_verbs
-item_764;satted;word_endings2;word_endings_verbs
-item_765;broked;word_endings2;word_endings_verbs
-item_766;gotted;word_endings2;word_endings_verbs
-item_767;sitted;word_endings2;word_endings_verbs
-item_768;camed;word_endings2;word_endings_verbs
-item_769;haved;word_endings2;word_endings_verbs
-item_770;taked;word_endings2;word_endings_verbs
-item_771;comed;word_endings2;word_endings_verbs
-item_772;heared;word_endings2;word_endings_verbs
-item_773; wented ;word_endings2;word_endings_verbs
-item_774;doed;word_endings2;word_endings_verbs
-item_775;holded;word_endings2;word_endings_verbs
-item_776;dranked;word_endings2;word_endings_verbs
-item_777;losed;word_endings2;word_endings_verbs
-item_778;Has your child begun to combine words yet, such as ‘nother cracker’, or ‘doggie bite’?;combine;
-item_779;Two shoe. % Two shoes. % I have two shoes.;complexity;complexity1
-item_780;Two foot. % Two feet. % I have two feet.;complexity;complexity1
-item_781;Daddy car. % Daddy's car. % There's daddy's car.;complexity;complexity1
-item_782;Kitty sleep. % Kitty sleeping.  % Kitty is sleeping. * ;complexity;complexity2
-item_783;I make tower. % I making tower. % I'm making tower. * ;complexity;complexity2
-item_784;Baby crying. % Baby is crying. % The baby is crying.;complexity;complexity2
-item_785;Fix it. % You fix it? % Can you fix it?;complexity;complexity3
-item_786;Read story, mummy. % Read me story, mummy. % Read me a story, mummy.;complexity;complexity3
-item_787;No wash. % No wash dolly. % Don't wash dolly. % Don't wash my dolly.;complexity;complexity3
-item_788;Want juice. % Want more juice. % Want juice in there. % Want more juice in there.;complexity;complexity4
-item_789;There kitty. % There a kitty. % There's a kitty. % There's a little kitty.;complexity;complexity4
-item_790;Go bye-bye. % Wanna go bye-bye.;complexity;complexity4
-item_791;Where go? % Where mummy go? % Where did mummy go? % Where did my mummy go?;complexity;complexity5
-item_792;Fall down. % I fall down. % I fell down. ** ;complexity;complexity5
-item_793;More biscuit. % More biscuits. % More biscuits please.;complexity;complexity5
-item_794;These my tooth. % These my teeth. % These are my teeth.;complexity;complexity6
-item_795;Baby blanket. % Baby's blanket. % The baby's blanket.;complexity;complexity6
-item_796;Doggie kiss me. % Doggie kissed me. % The doggie kissed me. ** ;complexity;complexity6
-item_797;Coffee hot. % That coffee hot. % That coffee is hot.;complexity;complexity7
-item_798;No do it. % I no do it. % I can't do it.;complexity;complexity7
-item_799;I like read. % I like read stories. % I like to read. % I like to read stories.;complexity;complexity7
-item_800;Don't read. % Don't read book. % Don't want you read book. % Don't want you read that book.;complexity;complexity8
-item_801;Turn on light. % Turn on the light. % Turn on the light so I see. % Turn on the light so I can see.;complexity;complexity8
-item_802;I want. % I want that. % I want that one you got. % I want that one that you've got.;complexity;complexity8
-item_803;Want biscuits. % Want biscuits and juice.;complexity;complexity9
-item_804;Biscuit mummy. % Biscuit for mummy. % Mummy want biscuit. % Mummy wants a biscuit.;complexity;complexity9
-item_805;Pick up. % Daddy pick up. % Daddy pick me up. % Daddy picked me up. ** ;complexity;complexity9
-item_806;Kitty away. % Kitty go away. % Kitty went away. % The kitty went away. ** ;complexity;complexity10
-item_807;Doggie table. % Doggie on table. % Doggie is on table. % Doggie is on the table.;complexity;complexity10
-item_808;My truck. % That my truck. % That's my truck. % That's my big truck.;complexity;complexity10
-item_809;Baby eat. % Baby want eat. % Baby want to eat. % Baby wants to eat.;complexity;complexity11
-item_810;Look me. % Look me dancing. % Look at me I dancing. % Look at me: I'm dancing.;complexity;complexity11
-item_811;Look. % Look this. % Look what I got.;complexity;complexity11
-item_812;Where dolly? % Where's my dolly? % Where's my dolly name Sam? % Where's my dolly named Sam?;complexity;complexity12
-item_813;We made this. % Me and Paul made this.;complexity;complexity12
-item_814;I sing. % I sing song. % I sing song for you. % I sing a song for you.;complexity;complexity12
-item_815;Baby crying. % Baby's crying. % Baby crying 'cos sad. % Baby's crying 'cos she's sad.;complexity;complexity12
+item_id,definition,type,category
+item_1,baa baa,word,sounds
+item_2,choo choo,word,sounds
+item_3,cockadoodledoo,word,sounds
+item_4,grr,word,sounds
+item_5,meow,word,sounds
+item_6,moo,word,sounds
+item_7,neigh,word,sounds
+item_8,oink / snort,word,sounds
+item_9,ooh-ooh (monkey),word,sounds
+item_10,ouch,word,sounds
+item_11,quack,word,sounds
+item_12,rraaah,word,sounds
+item_13,tweet tweet,word,sounds
+item_14,twit-twoo,word,sounds
+item_15,uh oh,word,sounds
+item_16,vroom,word,sounds
+item_17,whee,word,sounds
+item_18,woof,word,sounds
+item_19,yum,word,sounds
+item_20,alligator,word,animals
+item_21,animal,word,animals
+item_22,ant,word,animals
+item_23,bear,word,animals
+item_24,bee,word,animals
+item_25,bird,word,animals
+item_26,bug / beastie,word,animals
+item_27,bunny / rabbit,word,animals
+item_28,butterfly,word,animals
+item_29,cat / pussy cat,word,animals
+item_30,chicken,word,animals
+item_31,cow,word,animals
+item_32,crab,word,animals
+item_33,crocodile,word,animals
+item_34,deer,word,animals
+item_35,dinosaur,word,animals
+item_36,dog / doggie,word,animals
+item_37,donkey,word,animals
+item_38,duck,word,animals
+item_39,elephant,word,animals
+item_40,fish,word,animals
+item_41,fly,word,animals
+item_42,fox,word,animals
+item_43,frog,word,animals
+item_44,giraffe,word,animals
+item_45,goat,word,animals
+item_46,goose,word,animals
+item_47,hedgehog,word,animals
+item_48,hen,word,animals
+item_49,hippo,word,animals
+item_50,horse,word,animals
+item_51,kitten / kitty,word,animals
+item_52,lamb,word,animals
+item_53,lion,word,animals
+item_54,monkey,word,animals
+item_55,mouse,word,animals
+item_56,octopus,word,animals
+item_57,owl,word,animals
+item_58,panda,word,animals
+item_59,penguin,word,animals
+item_60,pig,word,animals
+item_61,pony,word,animals
+item_62,puppy,word,animals
+item_63,shark,word,animals
+item_64,sheep,word,animals
+item_65,snake,word,animals
+item_66,spider,word,animals
+item_67,squirrel,word,animals
+item_68,tiger,word,animals
+item_69,turkey,word,animals
+item_70,turtle,word,animals
+item_71,whale,word,animals
+item_72,zebra,word,animals
+item_73,aeroplane / plane,word,vehicles
+item_74,ambulance,word,vehicles
+item_75,bicycle / bike,word,vehicles
+item_76,boat,word,vehicles
+item_77,bus,word,vehicles
+item_78,car,word,vehicles
+item_79,crane,word,vehicles
+item_80,digger,word,vehicles
+item_81,fire engine,word,vehicles
+item_82,helicopter,word,vehicles
+item_83,lorry /truck,word,vehicles
+item_84,motorbike,word,vehicles
+item_85,police car,word,vehicles
+item_86,pram,word,vehicles
+item_87,pushchair / buggy / stroller,word,vehicles
+item_88,rocket,word,vehicles
+item_89,scooter,word,vehicles
+item_90,sleigh,word,vehicles
+item_91,tractor,word,vehicles
+item_92,trailer,word,vehicles
+item_93,train,word,vehicles
+item_94,van,word,vehicles
+item_95,ball,word,toys
+item_96,balloon,word,toys
+item_97,block,word,toys
+item_98,book,word,toys
+item_99,brick,word,toys
+item_100,bubbles,word,toys
+item_101,colouring,word,toys
+item_102,crayon,word,toys
+item_103,doll,word,toys
+item_104,game,word,toys
+item_105,Lego,word,toys
+item_106,pen,word,toys
+item_107,pencil,word,toys
+item_108,play dough,word,toys
+item_109,puzzle,word,toys
+item_110,story,word,toys
+item_111,teddy / teddy bear,word,toys
+item_112,toy,word,toys
+item_113,track / train track,word,toys
+item_114,apple,word,food_drink
+item_115,banana,word,food_drink
+item_116,beans,word,food_drink
+item_117,biscuit,word,food_drink
+item_118,blueberry,word,food_drink
+item_119,bread,word,food_drink
+item_120,butter / spread / marg,word,food_drink
+item_121,cake,word,food_drink
+item_122,carrots,word,food_drink
+item_123,cereal,word,food_drink
+item_124,cheese,word,food_drink
+item_125,chicken,word,food_drink
+item_126,chips,word,food_drink
+item_127,chocolate,word,food_drink
+item_128,chocolate biscuit,word,food_drink
+item_129,coffee,word,food_drink
+item_130,crisps,word,food_drink
+item_131,cucumber,word,food_drink
+item_132,drink,word,food_drink
+item_133,egg,word,food_drink
+item_134,fish,word,food_drink
+item_135,food,word,food_drink
+item_136,green beans,word,food_drink
+item_137,grapes,word,food_drink
+item_138,ham,word,food_drink
+item_139,ice,word,food_drink
+item_140,ice cream,word,food_drink
+item_141,ice lolly,word,food_drink
+item_142,jam,word,food_drink
+item_143,jelly,word,food_drink
+item_144,juice,word,food_drink
+item_145,lemon,word,food_drink
+item_146,lollipop,word,food_drink
+item_147,meat,word,food_drink
+item_148,melon,word,food_drink
+item_149,milk,word,food_drink
+item_150,muffin,word,food_drink
+item_151,nuts,word,food_drink
+item_152,onion,word,food_drink
+item_153,orange,word,food_drink
+item_154,pancake,word,food_drink
+item_155,pasta / spaghetti,word,food_drink
+item_156,peanut butter,word,food_drink
+item_157,pear,word,food_drink
+item_158,peas,word,food_drink
+item_159,pickle,word,food_drink
+item_160,pizza,word,food_drink
+item_161,plum,word,food_drink
+item_162,pop / fizzy drink / coke,word,food_drink
+item_163,popcorn,word,food_drink
+item_164,potato / spud / tattie,word,food_drink
+item_165,pudding,word,food_drink
+item_166,pumpkin,word,food_drink
+item_167,raisin,word,food_drink
+item_168,salt,word,food_drink
+item_169,sandwich / butty,word,food_drink
+item_170,sauce,word,food_drink
+item_171,sausages,word,food_drink
+item_172,soup,word,food_drink
+item_173,strawberry,word,food_drink
+item_174,sweetcorn / corn on the cob,word,food_drink
+item_175,sweets,word,food_drink
+item_176,tea / brew (drink),word,food_drink
+item_177,toast,word,food_drink
+item_178,tomato,word,food_drink
+item_179,tomato sauce / ketchup / dipdip,word,food_drink
+item_180,tuna,word,food_drink
+item_181,vanilla,word,food_drink
+item_182,vitamins,word,food_drink
+item_183,water,word,food_drink
+item_184,yoghurt,word,food_drink
+item_185,ankle,word,body_parts
+item_186,arm,word,body_parts
+item_187,belly / tummy,word,body_parts
+item_188,belly button / tummy button,word,body_parts
+item_189,boob / boobie *,word,body_parts
+item_190,buttocks / bum / bottom *,word,body_parts
+item_191,cheek,word,body_parts
+item_192,chin,word,body_parts
+item_193,ear / tab,word,body_parts
+item_194,elbow,word,body_parts
+item_195,eye,word,body_parts
+item_196,eyebrow,word,body_parts
+item_197,eyelash,word,body_parts
+item_198,face,word,body_parts
+item_199,finger,word,body_parts
+item_200,foot,word,body_parts
+item_201,hair,word,body_parts
+item_202,hand,word,body_parts
+item_203,head,word,body_parts
+item_204,knee,word,body_parts
+item_205,leg,word,body_parts
+item_206,lips,word,body_parts
+item_207,mouth,word,body_parts
+item_208,nail / fingernail,word,body_parts
+item_209,neck,word,body_parts
+item_210,nose,word,body_parts
+item_211,privates / penis / vagina *,word,body_parts
+item_212,shoulder,word,body_parts
+item_213,tooth / teeth,word,body_parts
+item_214,toe,word,body_parts
+item_215,tongue,word,body_parts
+item_216,bib,word,clothing
+item_217,boots,word,clothing
+item_218,button,word,clothing
+item_219,cardigan,word,clothing
+item_220,coat,word,clothing
+item_221,dress,word,clothing
+item_222,glasses / specs,word,clothing
+item_223,gloves,word,clothing
+item_224,hat,word,clothing
+item_225,jacket,word,clothing
+item_226,jeans,word,clothing
+item_227,jumper,word,clothing
+item_228,leggings,word,clothing
+item_229,nappy,word,clothing
+item_230,necklace,word,clothing
+item_231,pants / undies / knickers,word,clothing
+item_232,pyjamas / PJs / jim jams,word,clothing
+item_233,scarf,word,clothing
+item_234,shirt,word,clothing
+item_235,shoes,word,clothing
+item_236,shorts,word,clothing
+item_237,sock,word,clothing
+item_238,top,word,clothing
+item_239,trainers / daps / plimsolls,word,clothing
+item_240,trousers / pants / britches,word,clothing
+item_241,t-shirt,word,clothing
+item_242,vest,word,clothing
+item_243,zip,word,clothing
+item_244,bath tub / bath,word,furniture_rooms
+item_245,bathroom,word,furniture_rooms
+item_246,bed,word,furniture_rooms
+item_247,bedroom,word,furniture_rooms
+item_248,bench,word,furniture_rooms
+item_249,carpet,word,furniture_rooms
+item_250,chair,word,furniture_rooms
+item_251,cooker,word,furniture_rooms
+item_252,cot,word,furniture_rooms
+item_253,dining room,word,furniture_rooms
+item_254,door,word,furniture_rooms
+item_255,downstairs,word,furniture_rooms
+item_256,drawer,word,furniture_rooms
+item_257,floor,word,furniture_rooms
+item_258,garage,word,furniture_rooms
+item_259,high chair,word,furniture_rooms
+item_260,kitchen,word,furniture_rooms
+item_261,living room / lounge,word,furniture_rooms
+item_262,oven,word,furniture_rooms
+item_263,porch,word,furniture_rooms
+item_264,potty,word,furniture_rooms
+item_265,radiator,word,furniture_rooms
+item_266,refrigerator / fridge,word,furniture_rooms
+item_267,rocking chair,word,furniture_rooms
+item_268,room,word,furniture_rooms
+item_269,seat,word,furniture_rooms
+item_270,shelf,word,furniture_rooms
+item_271,shower,word,furniture_rooms
+item_272,sink,word,furniture_rooms
+item_273,sofa / settee / couch,word,furniture_rooms
+item_274,stairgate,word,furniture_rooms
+item_275,stairs,word,furniture_rooms
+item_276,stool,word,furniture_rooms
+item_277,table,word,furniture_rooms
+item_278,TV / television / telly,word,furniture_rooms
+item_279,toilet / lav / loo,word,furniture_rooms
+item_280,washing machine / washer ,word,furniture_rooms
+item_281,window,word,furniture_rooms
+item_282,upstairs,word,furniture_rooms
+item_283,bag,word,household
+item_284,bin,word,household
+item_285,blanket,word,household
+item_286,bottle,word,household
+item_287,box,word,household
+item_288,bowl,word,household
+item_289,broom,word,household
+item_290,brush,word,household
+item_291,bucket,word,household
+item_292,camera,word,household
+item_293,clock,word,household
+item_294,comb,word,household
+item_295,computer / laptop,word,household
+item_296,cup,word,household
+item_297,dish,word,household
+item_298,dummy / dodie / soother,word,household
+item_299,fork,word,household
+item_300,glass,word,household
+item_301,hammer,word,household
+item_302,hoover / vacuum,word,household
+item_303,jar,word,household
+item_304,jug,word,household
+item_305,kettle,word,household
+item_306,key,word,household
+item_307,knife,word,household
+item_308,lamp / light,word,household
+item_309,mat / rug,word,household
+item_310,medicine,word,household
+item_311,mirror,word,household
+item_312,money,word,household
+item_313,mop,word,household
+item_314,nail,word,household
+item_315,napkin,word,household
+item_316,paper,word,household
+item_317,penny,word,household
+item_318,picture,word,household
+item_319,pillow,word,household
+item_320,plant,word,household
+item_321,plate,word,household
+item_322,purse,word,household
+item_323,radio,word,household
+item_324,rubbish,word,household
+item_325,scissors,word,household
+item_326,sellotape,word,household
+item_327,soap,word,household
+item_328,spoon,word,household
+item_329,tap,word,household
+item_330,telephone / phone / mobile,word,household
+item_331,tissue,word,household
+item_332,toothbrush,word,household
+item_333,towel,word,household
+item_334,watch,word,household
+item_335,backyard,word,outside
+item_336,cloud,word,outside
+item_337,flag,word,outside
+item_338,flower,word,outside
+item_339,garden,word,outside
+item_340,grass,word,outside
+item_341,moon,word,outside
+item_342,mud,word,outside
+item_343,pavement,word,outside
+item_344,pond,word,outside
+item_345,puddle,word,outside
+item_346,rain,word,outside
+item_347,rainbow,word,outside
+item_348,road,word,outside
+item_349,rock,word,outside
+item_350,roof,word,outside
+item_351,seesaw,word,outside
+item_352,shovel / spade,word,outside
+item_353,sky,word,outside
+item_354,slide,word,outside
+item_355,snow,word,outside
+item_356,snowman,word,outside
+item_357,spade,word,outside
+item_358,star,word,outside
+item_359,stick,word,outside
+item_360,stone,word,outside
+item_361,sun,word,outside
+item_362,swing,word,outside
+item_363,tree,word,outside
+item_364,wall,word,outside
+item_365,water,word,outside
+item_366,watering can,word,outside
+item_367,wind,word,outside
+item_368,beach,word,places
+item_369,cafe,word,places
+item_370,church / mosque / synagogue *,word,places
+item_371,circus,word,places
+item_372,farm,word,places
+item_373,home,word,places
+item_374,house,word,places
+item_375,nursery / preschool,word,places
+item_376,outside,word,places
+item_377,park,word,places
+item_378,party,word,places
+item_379,picnic,word,places
+item_380,playground,word,places
+item_381,pool / swimmingpool,word,places
+item_382,restaurant,word,places
+item_383,school,word,places
+item_384,shop,word,places
+item_385,soft play,word,places
+item_386,work,word,places
+item_387,zoo,word,places
+item_388,aunt / auntie,word,people
+item_389,baby / bairn / wee one,word,people
+item_390,babysitter,word,people
+item_391,boy / laddie,word,people
+item_392,brother,word,people
+item_393,child,word,people
+item_394,child's own name,word,people
+item_395,daddy / dad / da,word,people
+item_396,doctor,word,people
+item_397,fire fighter / fireman,word,people
+item_398,friend,word,people
+item_399,girl / lassie,word,people
+item_400,grandma / nan / granny / nanny,word,people
+item_401,grandpa / grandad,word,people
+item_402,lady,word,people
+item_403,man,word,people
+item_404,mum / mummy / mam / ma,word,people
+item_405,people / folk,word,people
+item_406,person,word,people
+item_407,pet's name,word,people
+item_408,police / policeman,word,people
+item_409,postie / postman,word,people
+item_410,sister,word,people
+item_411,teacher,word,people
+item_412,uncle,word,people
+item_413,woman,word,people
+item_414,bath,word,games_routines
+item_415,bedtime,word,games_routines
+item_416,breakfast,word,games_routines
+item_417,brush teeth,word,games_routines
+item_418,bye / bye bye / cheerio,word,games_routines
+item_419,clap hands,word,games_routines
+item_420,dinner,word,games_routines
+item_421,don't / dinnae,word,games_routines
+item_422,good night / night night,word,games_routines
+item_423,hello / hi  / hiya,word,games_routines
+item_424,hush / shh,word,games_routines
+item_425,lunch,word,games_routines
+item_426,music,word,games_routines
+item_427,nap,word,games_routines
+item_428,no,word,games_routines
+item_429,OK / okay,word,games_routines
+item_430,oops,word,games_routines
+item_431,pat-a-cake,word,games_routines
+item_432,peekaboo / peepbo,word,games_routines
+item_433,please,word,games_routines
+item_434,(call on) phone,word,games_routines
+item_435,shopping,word,games_routines
+item_436,snack,word,games_routines
+item_437,sorry,word,games_routines
+item_438,tea (meal),word,games_routines
+item_439,thank you / ta,word,games_routines
+item_440,this little piggy,word,games_routines
+item_441,yes / yeah / aye,word,games_routines
+item_442,wait,word,games_routines
+item_443,want to,word,games_routines
+item_444,bite,word,action_words
+item_445,blow,word,action_words
+item_446,break,word,action_words
+item_447,bring,word,action_words
+item_448,bump,word,action_words
+item_449,call,word,action_words
+item_450,carry,word,action_words
+item_451,catch,word,action_words
+item_452,chase,word,action_words
+item_453,clap,word,action_words
+item_454,clean,word,action_words
+item_455,climb,word,action_words
+item_456,come,word,action_words
+item_457,cook,word,action_words
+item_458,cover,word,action_words
+item_459,cry / blub/ weep,word,action_words
+item_460,cuddle,word,action_words
+item_461,cut,word,action_words
+item_462,dance,word,action_words
+item_463,draw,word,action_words
+item_464,drink,word,action_words
+item_465,drive,word,action_words
+item_466,drop,word,action_words
+item_467,dry,word,action_words
+item_468,eat,word,action_words
+item_469,fall,word,action_words
+item_470,feed,word,action_words
+item_471,find,word,action_words
+item_472,finish,word,action_words
+item_473,fix,word,action_words
+item_474,get,word,action_words
+item_475,give,word,action_words
+item_476,go,word,action_words
+item_477,have,word,action_words
+item_478,hear,word,action_words
+item_479,help,word,action_words
+item_480,hide,word,action_words
+item_481,hit,word,action_words
+item_482,hug,word,action_words
+item_483,hurry,word,action_words
+item_484,jump,word,action_words
+item_485,kick,word,action_words
+item_486,kiss,word,action_words
+item_487,knock,word,action_words
+item_488,know,word,action_words
+item_489,like,word,action_words
+item_490,look,word,action_words
+item_491,love,word,action_words
+item_492,make,word,action_words
+item_493,open,word,action_words
+item_494,paint,word,action_words
+item_495,pick,word,action_words
+item_496,play,word,action_words
+item_497,pull,word,action_words
+item_498,push,word,action_words
+item_499,put,word,action_words
+item_500,read,word,action_words
+item_501,ride,word,action_words
+item_502,rub,word,action_words
+item_503,run,word,action_words
+item_504,say,word,action_words
+item_505,scratch,word,action_words
+item_506,scoot,word,action_words
+item_507,see,word,action_words
+item_508,share,word,action_words
+item_509,shout,word,action_words
+item_510,show,word,action_words
+item_511,shut / close,word,action_words
+item_512,sing,word,action_words
+item_513,sit,word,action_words
+item_514,sleep,word,action_words
+item_515,slide,word,action_words
+item_516,smell,word,action_words
+item_517,smile,word,action_words
+item_518,splash,word,action_words
+item_519,stand,word,action_words
+item_520,stay,word,action_words
+item_521,stop,word,action_words
+item_522,swim,word,action_words
+item_523,swing,word,action_words
+item_524,talk,word,action_words
+item_525,take,word,action_words
+item_526,tell,word,action_words
+item_527,throw,word,action_words
+item_528,tickle,word,action_words
+item_529,touch,word,action_words
+item_530,wait,word,action_words
+item_531,wake / wake up,word,action_words
+item_532,walk,word,action_words
+item_533,wash,word,action_words
+item_534,watch,word,action_words
+item_535,wipe,word,action_words
+item_536,wish,word,action_words
+item_537,work,word,action_words
+item_538,write,word,action_words
+item_539,all gone,word,descriptive_words
+item_540,asleep,word,descriptive_words
+item_541,awake,word,descriptive_words
+item_542,bad,word,descriptive_words
+item_543,bang,word,descriptive_words
+item_544,better,word,descriptive_words
+item_545,big,word,descriptive_words
+item_546,black,word,descriptive_words
+item_547,blue,word,descriptive_words
+item_548,broken,word,descriptive_words
+item_549,brown,word,descriptive_words
+item_550,careful,word,descriptive_words
+item_551,clean,word,descriptive_words
+item_552,cold,word,descriptive_words
+item_553,colour,word,descriptive_words
+item_554,dark,word,descriptive_words
+item_555,dirty / mucky,word,descriptive_words
+item_556,dry,word,descriptive_words
+item_557,empty,word,descriptive_words
+item_558,fast,word,descriptive_words
+item_559,fine,word,descriptive_words
+item_560,fun,word,descriptive_words
+item_561,gentle,word,descriptive_words
+item_562,good,word,descriptive_words
+item_563,green,word,descriptive_words
+item_564,happy,word,descriptive_words
+item_565,hard,word,descriptive_words
+item_566,heavy,word,descriptive_words
+item_567,high,word,descriptive_words
+item_568,hot,word,descriptive_words
+item_569,hungry,word,descriptive_words
+item_570,hurt,word,descriptive_words
+item_571,last,word,descriptive_words
+item_572,little,word,descriptive_words
+item_573,long,word,descriptive_words
+item_574,loud,word,descriptive_words
+item_575,messy,word,descriptive_words
+item_576,nasty,word,descriptive_words
+item_577,naughty,word,descriptive_words
+item_578,nice,word,descriptive_words
+item_579,noise / noisy,word,descriptive_words
+item_580,old,word,descriptive_words
+item_581,orange (colour),word,descriptive_words
+item_582,pink,word,descriptive_words
+item_583,pretty,word,descriptive_words
+item_584,purple,word,descriptive_words
+item_585,quiet,word,descriptive_words
+item_586,red,word,descriptive_words
+item_587,sad,word,descriptive_words
+item_588,scared,word,descriptive_words
+item_589,sick,word,descriptive_words
+item_590,sleepy,word,descriptive_words
+item_591,small,word,descriptive_words
+item_592,soft,word,descriptive_words
+item_593,square,word,descriptive_words
+item_594,stuck,word,descriptive_words
+item_595,tall,word,descriptive_words
+item_596,tasty,word,descriptive_words
+item_597,thirsty,word,descriptive_words
+item_598,tired,word,descriptive_words
+item_599,wet,word,descriptive_words
+item_600,windy,word,descriptive_words
+item_601,yellow,word,descriptive_words
+item_602,yucky,word,descriptive_words
+item_603,how,word,question_words
+item_604,what,word,question_words
+item_605,when,word,question_words
+item_606,where,word,question_words
+item_607,which,word,question_words
+item_608,who,word,question_words
+item_609,why,word,question_words
+item_610,after,word,time_words
+item_611,afternoon,word,time_words
+item_612,day,word,time_words
+item_613,later,word,time_words
+item_614,minute,word,time_words
+item_615,morning,word,time_words
+item_616,night,word,time_words
+item_617,now,word,time_words
+item_618,today,word,time_words
+item_619,tomorrow,word,time_words
+item_620,tonight,word,time_words
+item_621,he,word,pronouns
+item_622,her,word,pronouns
+item_623,him,word,pronouns
+item_624,his,word,pronouns
+item_625,I,word,pronouns
+item_626,it,word,pronouns
+item_627,me,word,pronouns
+item_628,mine,word,pronouns
+item_629,my,word,pronouns
+item_630,myself,word,pronouns
+item_631,our,word,pronouns
+item_632,she,word,pronouns
+item_633,that,word,pronouns
+item_634,they,word,pronouns
+item_635,this,word,pronouns
+item_636,us,word,pronouns
+item_637,we,word,pronouns
+item_638,you,word,pronouns
+item_639,your,word,pronouns
+item_640,above,word,prepositions
+item_641,around,word,prepositions
+item_642,at,word,prepositions
+item_643,away / way,word,prepositions
+item_644,back,word,prepositions
+item_645,by,word,prepositions
+item_646,down,word,prepositions
+item_647,here,word,prepositions
+item_648,in,word,prepositions
+item_649,inside,word,prepositions
+item_650,into,word,prepositions
+item_651,off,word,prepositions
+item_652,on,word,prepositions
+item_653,out,word,prepositions
+item_654,there,word,prepositions
+item_655,to,word,prepositions
+item_656,under,word,prepositions
+item_657,up,word,prepositions
+item_658,with,word,prepositions
+item_659,again,word,quantifiers
+item_660,all,word,quantifiers
+item_661,another,word,quantifiers
+item_662,bit,word,quantifiers
+item_663,each,word,quantifiers
+item_664,every,word,quantifiers
+item_665,lots,word,quantifiers
+item_666,more,word,quantifiers
+item_667,none,word,quantifiers
+item_668,not,word,quantifiers
+item_669,other,word,quantifiers
+item_670,same,word,quantifiers
+item_671,some,word,quantifiers
+item_672,am,word,helping_verbs
+item_673,are,word,helping_verbs
+item_674,be,word,helping_verbs
+item_675,can,word,helping_verbs
+item_676,could,word,helping_verbs
+item_677,did / did ya,word,helping_verbs
+item_678,do,word,helping_verbs
+item_679,does,word,helping_verbs
+item_680,don't / dinnae,word,helping_verbs
+item_681,going to / gonna,word,helping_verbs
+item_682,have to / hafta,word,helping_verbs
+item_683,is,word,helping_verbs
+item_684,lemme / let me,word,helping_verbs
+item_685,got to / gotta,word,helping_verbs
+item_686,need / need to,word,helping_verbs
+item_687,try / try to,word,helping_verbs
+item_688,want to / wanna,word,helping_verbs
+item_689,was,word,helping_verbs
+item_690,were,word,helping_verbs
+item_691,will,word,helping_verbs
+item_692,would,word,helping_verbs
+item_693,and,word,connecting_words
+item_694,because,word,connecting_words
+item_695,but,word,connecting_words
+item_696,if,word,connecting_words
+item_697,so,word,connecting_words
+item_698,then,word,connecting_words
+item_699,"Does your child ever talk about past events or people who are not present? For example, a child who saw a parade last week might later say parade, clown, or band.",how_use_words,
+item_700,"Does your child ever talk about something that's going to happen in the future, for example, saying ‘choo choo’ or ‘aeroplane’ before you leave the house for a trip, or saying ‘swing’ when you are going to the park?",how_use_words,
+item_701,"Does your child talk about objects that are not present such as asking about a missing or absent toy, referring to a pet out of view, or asking about someone not present?",how_use_words,
+item_702,"Does your child understand if you ask for something that is not in the room? For example, would your child go to the bedroom to get a teddy bear when you say ‘Where's the bear?’",how_use_words,
+item_703,"Does your child ever pick up or point to an object and name an absent person to whom the object belongs? For example, a child might point to mummy's shoe and say ‘mummy’.",how_use_words,
+item_704,"To talk about more than one thing, we add an ‘s’ to many words. Examples include carS (for more than one car), shoeS, dogS, and keyS. Has your child begun to do this?",word_endings,
+item_705,"To talk about ownership, we add an ‘s’, for example, daddy'S key, kitty'S dish, and baby'S bottle. Has your child begun to do this?",word_endings,
+item_706,"To talk about activities, we sometimes add ‘ing’ to verbs. Examples include lookING, suckING and cryING. Has your child begun to do this?",word_endings,
+item_707,"To talk about things that happened in the past, we often add ‘ed’ to the verb. Examples include kissED, openED and pushED. Has your child begun to do this?",word_endings,
+item_708,children,word_forms,word_form_nouns
+item_709,men,word_forms,word_form_nouns
+item_710,teeth,word_forms,word_form_nouns
+item_711,feet,word_forms,word_form_nouns
+item_712,mice,word_forms,word_form_nouns
+item_713,ate,word_forms,word_form_verbs
+item_714,fell,word_forms,word_form_verbs
+item_715,made,word_forms,word_form_verbs
+item_716,blew,word_forms,word_form_verbs
+item_717,flew,word_forms,word_form_verbs
+item_718,ran,word_forms,word_form_verbs
+item_719,bought,word_forms,word_form_verbs
+item_720,got,word_forms,word_form_verbs
+item_721,sat,word_forms,word_form_verbs
+item_722,broke,word_forms,word_form_verbs
+item_723,had,word_forms,word_form_verbs
+item_724,saw,word_forms,word_form_verbs
+item_725,came,word_forms,word_form_verbs
+item_726,heard,word_forms,word_form_verbs
+item_727,took,word_forms,word_form_verbs
+item_728,drank,word_forms,word_form_verbs
+item_729,held,word_forms,word_form_verbs
+item_730,went,word_forms,word_form_verbs
+item_731,drove,word_forms,word_form_verbs
+item_732,lost,word_forms,word_form_verbs
+item_733,blockses,word_endings2,word_endings_nouns
+item_734,mans,word_endings2,word_endings_nouns
+item_735,sockses,word_endings2,word_endings_nouns
+item_736,childrens,word_endings2,word_endings_nouns
+item_737,mens,word_endings2,word_endings_nouns
+item_738,teeths,word_endings2,word_endings_nouns
+item_739,childs,word_endings2,word_endings_nouns
+item_740,mices,word_endings2,word_endings_nouns
+item_741,toeses,word_endings2,word_endings_nouns
+item_742,feets,word_endings2,word_endings_nouns
+item_743,mouses,word_endings2,word_endings_nouns
+item_744,tooths,word_endings2,word_endings_nouns
+item_745,foots,word_endings2,word_endings_nouns
+item_746,shoeses,word_endings2,word_endings_nouns
+item_747,ated,word_endings2,word_endings_verbs
+item_748,drinked,word_endings2,word_endings_verbs
+item_749,losted,word_endings2,word_endings_verbs
+item_750,blewed,word_endings2,word_endings_verbs
+item_751,eated,word_endings2,word_endings_verbs
+item_752,maked,word_endings2,word_endings_verbs
+item_753,blowed,word_endings2,word_endings_verbs
+item_754,falled,word_endings2,word_endings_verbs
+item_755,ranned,word_endings2,word_endings_verbs
+item_756,bringed,word_endings2,word_endings_verbs
+item_757,flied,word_endings2,word_endings_verbs
+item_758,runned,word_endings2,word_endings_verbs
+item_759,buyed,word_endings2,word_endings_verbs
+item_760,getted,word_endings2,word_endings_verbs
+item_761,seed,word_endings2,word_endings_verbs
+item_762,breaked ,word_endings2,word_endings_verbs
+item_763,goed,word_endings2,word_endings_verbs
+item_764,satted,word_endings2,word_endings_verbs
+item_765,broked,word_endings2,word_endings_verbs
+item_766,gotted,word_endings2,word_endings_verbs
+item_767,sitted,word_endings2,word_endings_verbs
+item_768,camed,word_endings2,word_endings_verbs
+item_769,haved,word_endings2,word_endings_verbs
+item_770,taked,word_endings2,word_endings_verbs
+item_771,comed,word_endings2,word_endings_verbs
+item_772,heared,word_endings2,word_endings_verbs
+item_773, wented ,word_endings2,word_endings_verbs
+item_774,doed,word_endings2,word_endings_verbs
+item_775,holded,word_endings2,word_endings_verbs
+item_776,dranked,word_endings2,word_endings_verbs
+item_777,losed,word_endings2,word_endings_verbs
+item_778,"Has your child begun to combine words yet, such as ‘nother cracker’, or ‘doggie bite’?",combine,
+item_779,Two shoe. % Two shoes. % I have two shoes.,complexity,complexity1
+item_780,Two foot. % Two feet. % I have two feet.,complexity,complexity1
+item_781,Daddy car. % Daddy's car. % There's daddy's car.,complexity,complexity1
+item_782,Kitty sleep. % Kitty sleeping.  % Kitty is sleeping. * ,complexity,complexity2
+item_783,I make tower. % I making tower. % I'm making tower. * ,complexity,complexity2
+item_784,Baby crying. % Baby is crying. % The baby is crying.,complexity,complexity2
+item_785,Fix it. % You fix it? % Can you fix it?,complexity,complexity3
+item_786,"Read story, mummy. % Read me story, mummy. % Read me a story, mummy.",complexity,complexity3
+item_787,No wash. % No wash dolly. % Don't wash dolly. % Don't wash my dolly.,complexity,complexity3
+item_788,Want juice. % Want more juice. % Want juice in there. % Want more juice in there.,complexity,complexity4
+item_789,There kitty. % There a kitty. % There's a kitty. % There's a little kitty.,complexity,complexity4
+item_790,Go bye-bye. % Wanna go bye-bye.,complexity,complexity4
+item_791,Where go? % Where mummy go? % Where did mummy go? % Where did my mummy go?,complexity,complexity5
+item_792,Fall down. % I fall down. % I fell down. ** ,complexity,complexity5
+item_793,More biscuit. % More biscuits. % More biscuits please.,complexity,complexity5
+item_794,These my tooth. % These my teeth. % These are my teeth.,complexity,complexity6
+item_795,Baby blanket. % Baby's blanket. % The baby's blanket.,complexity,complexity6
+item_796,Doggie kiss me. % Doggie kissed me. % The doggie kissed me. ** ,complexity,complexity6
+item_797,Coffee hot. % That coffee hot. % That coffee is hot.,complexity,complexity7
+item_798,No do it. % I no do it. % I can't do it.,complexity,complexity7
+item_799,I like read. % I like read stories. % I like to read. % I like to read stories.,complexity,complexity7
+item_800,Don't read. % Don't read book. % Don't want you read book. % Don't want you read that book.,complexity,complexity8
+item_801,Turn on light. % Turn on the light. % Turn on the light so I see. % Turn on the light so I can see.,complexity,complexity8
+item_802,I want. % I want that. % I want that one you got. % I want that one that you've got.,complexity,complexity8
+item_803,Want biscuits. % Want biscuits and juice.,complexity,complexity9
+item_804,Biscuit mummy. % Biscuit for mummy. % Mummy want biscuit. % Mummy wants a biscuit.,complexity,complexity9
+item_805,Pick up. % Daddy pick up. % Daddy pick me up. % Daddy picked me up. ** ,complexity,complexity9
+item_806,Kitty away. % Kitty go away. % Kitty went away. % The kitty went away. ** ,complexity,complexity10
+item_807,Doggie table. % Doggie on table. % Doggie is on table. % Doggie is on the table.,complexity,complexity10
+item_808,My truck. % That my truck. % That's my truck. % That's my big truck.,complexity,complexity10
+item_809,Baby eat. % Baby want eat. % Baby want to eat. % Baby wants to eat.,complexity,complexity11
+item_810,Look me. % Look me dancing. % Look at me I dancing. % Look at me: I'm dancing.,complexity,complexity11
+item_811,Look. % Look this. % Look what I got.,complexity,complexity11
+item_812,Where dolly? % Where's my dolly? % Where's my dolly name Sam? % Where's my dolly named Sam?,complexity,complexity12
+item_813,We made this. % Me and Paul made this.,complexity,complexity12
+item_814,I sing. % I sing song. % I sing song for you. % I sing a song for you.,complexity,complexity12
+item_815,Baby crying. % Baby's crying. % Baby crying 'cos sad. % Baby's crying 'cos she's sad.,complexity,complexity12
