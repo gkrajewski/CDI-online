@@ -11,12 +11,12 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
     
     #Merge form-specific translations with type-universal translations
     uniTxt <- readInputFile(output = output, path = typePath, fileName = "uniSettings&Translations.csv")
-    txt <- mergeTranslations(txt, uniTxt, "adaptive")
+    txt <- mergeTranslations(txt, uniTxt, output, "adaptive")
     
   }
   
   #Merge translations & settings with language-universal translations
-  txt <- mergeTranslations(txt, uniTxt2, "adaptive")
+  txt <- mergeTranslations(txt, uniTxt2, output, "adaptive")
 
   if (!is.null(txt)){
     

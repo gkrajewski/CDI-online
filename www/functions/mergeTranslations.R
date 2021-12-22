@@ -1,4 +1,4 @@
-mergeTranslations <- function(df1, df2, type = "static"){
+mergeTranslations <- function(df1, df2, output, type = "static"){
   
   #Merge two translations files, but the first one is more important than the second
   
@@ -16,6 +16,7 @@ mergeTranslations <- function(df1, df2, type = "static"){
       }
       
       df2 <- subset(df2, !(df2Str %in% df1Str)) #Get things from df2 that are not in df1
+      df3 <- rbind(df1, df2)
       
       TRUE
       
@@ -41,7 +42,7 @@ mergeTranslations <- function(df1, df2, type = "static"){
     
   )
   
-  if (success) return(rbind(df1, df2)) else return(NULL)
+  if (success) return(df3) else return(NULL)
   
 }
 

@@ -1,4 +1,4 @@
-readInputFile <- function(output, path, fileName, sep = ";"){
+readInputFile <- function(output, path, fileName, sep = ","){
   
   #Reads given file from given path. Returns file or NULL if error
   errorMsg <- paste0("There is problem with file <b> ", fileName, " </b> that should be located in <b>", path, "</b><br><br>")

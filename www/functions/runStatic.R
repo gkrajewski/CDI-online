@@ -6,19 +6,19 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, t
   uniTxt2 <- txt
   items <- readInputFile(output = output, path = formPath, fileName = "items.csv")
   txt <- readInputFile(output = output, path = formPath, fileName = "translations.csv")
-  settings <- readInputFile(output = output, path = formPath, fileName = "settings.csv", sep = ",")
+  settings <- readInputFile(output = output, path = formPath, fileName = "settings.csv")
   
   #Load type-universal translations (if they exists)
   if (file.exists(paste0(typePath, "/uniTranslations.csv"))){
     
     #Merge form-specific translations with type-universal translations
     uniTxt <- readInputFile(output = output, path = typePath, fileName = "uniTranslations.csv")
-    txt <- mergeTranslations(txt, uniTxt)
+    txt <- mergeTranslations(txt, uniTxt, output)
     
   }
   
   #Merge translations with language-universal translations
-  txt <- mergeTranslations(txt, uniTxt2)
+  txt <- mergeTranslations(txt, uniTxt2, output)
   
   if (!is.null(items) & !is.null(txt) & !is.null(settings)){
     
