@@ -8,4 +8,4 @@ Here we work on changes connected with input files
 * Added: New function for merging translations files
 * Changed: Any NA in input files are changed into "" 
 * Added: Try catch binding of types
-
+* Changed: new text_type - menuButton

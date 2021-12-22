@@ -116,8 +116,8 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, t
         answers <- data.frame(type = "none", category = "none", answer_type = "none", answer = as.character(startDate))
       }
       
-      #Prepare menu buttons (as many as types, except postEnd and postEndSW type)
-      menuButtons <- c(1:(length(setdiff(unique(types), c("postEnd", "postEndSW")))))
+      #Prepare menu buttons (as many as unique types)
+      menuButtons <- c(1:(length(types)))
       menuButtons <- lapply(menuButtons, function(i) {
         
         #Select type for given button
@@ -127,9 +127,13 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, t
         class <- "menuButtonContainer"
         if (userProgress[userProgress$type == type, "done"]) class <- paste(class, "menuButtonContainerDone")
         if (userProgress[userProgress$type == type, "current"]) class <- paste(class, "menuButtonContainerActive")
-        title <- ""
-        if (is.element("tooltip", txt[txt$item_type == type, "text_type"])) title <- txt[txt$item_type == type & txt$text_type == "tooltip", "text"]
-        buttonDiv <- div(title = title, id = paste0(type, "container"), class = class, actionButton(type, label = paste0(i, ". ", txt[txt$text_type == paste0(type,"Btn"), "text"]), class = "btn-primary"))
+        
+        buttonDiv <- div(title = txt[txt$item_type == type & txt$text_type == "tooltip", "text"],
+                         id = paste0(type, "container"),
+                         class = class,
+                         actionButton(type, label = paste0(i, ". ", txt[txt$item_type == type & txt$text_type == "menuButton", "text"]), class = "btn-primary")
+                         )
+        
         if (userProgress[userProgress$type == type, "disabled"]) buttonDiv <- disabled(buttonDiv)
         
         #Add button observer
