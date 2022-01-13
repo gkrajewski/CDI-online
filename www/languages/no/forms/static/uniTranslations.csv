@@ -21,10 +21,9 @@ header;Send inn svarene dine;end;
 endBtn;Send inn  ;end;
 instr;Hvis du har fylt ut alle svarene, kan du trykke på «Bekreft».;end;
 help;MERKNAD: Når du har trykket «Bekreft», kan du ikke lenger redigere svaret ditt.;end;
-help;Takk for at du fylte ut!;postEnd;
-help;Takk for at du fylte ut!;postEndSW;
-instr;Tusen takk for at du har fylt ut dette spørreskjemaet! Vi håper at du syntes det var interessant å reflektere over ditt barns språklige utvikling. Ditt bidrag til forskningen om barns språkutvikling er viktig - det vil hjelpe oss til å forstå den bedre.;postEnd;
-instr;Tusen takk for at du har fylt ut dette spørreskjemaet! Vi håper at du syntes det var interessant å reflektere over ditt barns språklige utvikling. Ditt bidrag til forskningen om barns språkutvikling er viktig - det vil hjelpe oss til å forstå den bedre.;postEndSW;
+endMsgTitle;Takk for at du fylte ut!;end;
+endMsgText;Tusen takk for at du har fylt ut dette spørreskjemaet! Vi håper at du syntes det var interessant å reflektere over ditt barns språklige utvikling. Ditt bidrag til forskningen om barns språkutvikling er viktig - det vil hjelpe oss til å forstå den bedre.;end;
+endMsgTextSW;Tusen takk for at du har fylt ut dette spørreskjemaet! Vi håper at du syntes det var interessant å reflektere over ditt barns språklige utvikling. Ditt bidrag til forskningen om barns språkutvikling er viktig - det vil hjelpe oss til å forstå den bedre.;end;
 error;Det har skjedd en feil. Oppdater siden og prøv igjen.;;
 refresh;Oppdater;;
 badForm;Det er en feil parameterverdi i URL-en. Mulige verdier er: ;;none
