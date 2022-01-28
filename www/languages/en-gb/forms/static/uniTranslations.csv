@@ -1,6 +1,6 @@
 text_type;text;item_type;category
 warning;IMPORTANT: Submitting the questionnaire will only be possible after confirming your answers in each section. You can pause filling the questionnaire at any time and your answers will be saved. To resume, for example on another device, please use exactly the same link (but please note that you will not be able to have the questionnaire open on two devices at the same time) .;start;
-help;NOTE: It will not be possible to go back to this part after you have confirmed your answers.;start;
+help;Please answer the three questions on this page and then click “Confirm”. Please note that after confirming it will not be possible to return to this page.;start;
 backBtn;Previous;;
 nextBtn;Next;;
 confBtn;Confirm;;

@@ -1,6 +1,6 @@
 text_type;text;item_type;category
 warning;VIKTIG: Det er bare mulig å sende inn svar på spørreskjemaet etter at alle delene av skjemaet er fylt ut. Du kan når som helst ta en pause i utfyllingen og du vil fremdeles beholde svarene. For å gå tilbake til skjemaet (f.eks. på en annen enhet), må du bruke nøyaktig samme lenke. Du kan ikke ha skjemaet oppe på flere enheter samtidig.;start;
-help;MERK: Svar først på de tre spørsmålene på denne siden og trykk på «Bekreft». Når du har trykket «Bekreft», kan du ikke gå tilbake til spørsmålene på denne siden.;start;
+help;Svar først på de tre spørsmålene på denne siden og trykk på «Bekreft». Når du har trykket «Bekreft», kan du ikke gå tilbake til spørsmålene på denne siden.;start;
 backBtn;Forrige;;
 nextBtn;Neste;;
 confBtn;Bekreft;;
