@@ -1,7 +1,6 @@
-runAdaptive <- function(input, output, session, lang, form, idx, run, urlString, txt, fromSW){
+runAdaptive <- function(input, output, session, lang, form, idx, run, urlString, fromSW){
   
   #Read translations & settings
-  uniTxt2 <- txt[,c("text_type", "text")]
   typePath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/adaptive")
   formPath <- paste0(typePath, "/", form)
   txt <- readInputFile(output = output, path = formPath, fileName = "settings&translations.csv")
@@ -15,9 +14,6 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
     
   }
   
-  #Merge translations & settings with language-universal translations
-  txt <- mergeTranslations(txt, uniTxt2, output, "adaptive")
-
   if (!is.null(txt)){
     
     #Add rendering nice message when error

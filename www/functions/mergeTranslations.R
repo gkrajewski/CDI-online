@@ -1,6 +1,6 @@
 mergeTranslations <- function(df1, df2, output, type = "static"){
   
-  #Merge two translations files, but the first one is more important than the second
+  #Merge two translations files. The first one is more important than the second
   
   errorMsg <- "There is problem with merging translations files. Investigate the translations and uniTranslations files for the current form <br><br>"
   success <- tryCatch(

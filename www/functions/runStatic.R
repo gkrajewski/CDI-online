@@ -1,9 +1,8 @@
-runStatic <- function(input, output, session, lang, form, idx, run, urlString, txt, fromSW){
+runStatic <- function(input, output, session, lang, form, idx, run, urlString, fromSW){
   
   #Read items, translations & settings
   typePath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/static")
   formPath <- paste0(typePath, "/", form)
-  uniTxt2 <- txt
   items <- readInputFile(output = output, path = formPath, fileName = "items.csv")
   txt <- readInputFile(output = output, path = formPath, fileName = "translations.csv")
   settings <- readInputFile(output = output, path = formPath, fileName = "settings.csv")
@@ -16,9 +15,6 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, t
     txt <- mergeTranslations(txt, uniTxt, output)
     
   }
-  
-  #Merge translations with language-universal translations
-  txt <- mergeTranslations(txt, uniTxt2, output)
   
   if (!is.null(items) & !is.null(txt) & !is.null(settings)){
     

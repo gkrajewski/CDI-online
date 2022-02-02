@@ -30,9 +30,9 @@ server <- function(input, output, session) {
 
         #Read language-universal translations
         langPath <- paste0(LANGUAGES_PATH, "/", lang)
-        txt <- readInputFile(output = output, path = langPath, fileName = "uniTranslations.csv")
+        eTxt <- readInputFile(output = output, path = langPath, fileName = "errorTranslations.csv")
         
-        if (!is.null(txt)){
+        if (!is.null(eTxt)){
           
           #Prepare list of types allowed by the app 
           allowedTypes <- c("static", "adaptive")
@@ -94,9 +94,9 @@ server <- function(input, output, session) {
                   }, ignoreInit = TRUE)
                   
                   if (type == "adaptive") {
-                    runAdaptive(input, output, session, lang, form, idx, run, urlString, txt, fromSW)
+                    runAdaptive(input, output, session, lang, form, idx, run, urlString, fromSW)
                   } else if (type == "static") {
-                    runStatic(input, output, session, lang, form, idx, run, urlString, txt, fromSW)
+                    runStatic(input, output, session, lang, form, idx, run, urlString, fromSW)
                   } else {
                     logerror(paste0("Not allowed type - '", type, "'. Type can be 'static' or 'adaptive'. Change name of form(s) type folder"))
                   }
@@ -113,10 +113,10 @@ server <- function(input, output, session) {
               } else {
                 
                 #Bad form
-                output$sidebar <- renderText({paste0(c(txt[txt$text_type == "badForm", "text"], 
+                output$sidebar <- renderText({paste0(c(eTxt[eTxt$text_type == "badForm", "text"], 
                                                        paste0(availableForms, collapse = ", "),
                                                        "<br><br>",
-                                                       txt[txt$text_type == "errorInfo", "text"],
+                                                       eTxt[eTxt$text_type == "errorInfo", "text"],
                                                        "<br><br>link:",
                                                        getWholeURL(session)), collapse = " ")})
                 
@@ -125,10 +125,10 @@ server <- function(input, output, session) {
             } else {
               
               #No type folder
-              output$sidebar <- renderText({paste0(c(txt[txt$text_type == "noType", "text"], 
+              output$sidebar <- renderText({paste0(c(eTxt[eTxt$text_type == "noType", "text"], 
                                                      paste0(" ", type),
                                                      "<br><br>", 
-                                                     txt[txt$text_type == "errorInfo", "text"],
+                                                     eTxt[eTxt$text_type == "errorInfo", "text"],
                                                      "<br><br>link:",
                                                      getWholeURL(session)), collapse = " ")})
               
@@ -137,10 +137,10 @@ server <- function(input, output, session) {
           } else {
             
             #Not allowed type
-            output$sidebar <- renderText({paste0(c(txt[txt$text_type == "badType", "text"], 
+            output$sidebar <- renderText({paste0(c(eTxt[eTxt$text_type == "badType", "text"], 
                                                    paste0(allowedTypes, collapse = ", "),
                                                    "<br><br>", 
-                                                   txt[txt$text_type == "errorInfo", "text"],
+                                                   eTxt[eTxt$text_type == "errorInfo", "text"],
                                                    "<br><br>link:",
                                                    getWholeURL(session)), collapse = " ")})
           }
@@ -162,7 +162,7 @@ server <- function(input, output, session) {
       output$sidebar <- renderText({paste0("No needed params in URL (lang, form and id) <br><br>link: ", 
                                            getWholeURL(session))})
       
-      # Useful for testing
+      #Useful for testing
       # updateQueryString(paste0("?id=", "test", "&form=", "ws", "&lang=", "pl", "&type=", "static")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
       # session$reload()
       
