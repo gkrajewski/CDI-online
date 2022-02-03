@@ -208,7 +208,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
     
     #Confirm type when confBtn clicked
     observeEvent(input$confBtn, {
-      
+
       reactList <- reactList()
       canConfirm <- TRUE
       
@@ -336,12 +336,20 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
                 additionalMessageTxt <- getAdditionalEndMessage(idx, urlString, "database", staticList$parameters, reactList$txt)
                 endMsgtxt <- paste(endMsgtxt, additionalMessageTxt)
               }
+              
               showModal(modalDialog(
                 title = reactList$txt[reactList$txt$text_type == "endMsgTitle", "text"],
                 reactList$txt[reactList$txt$text_type == endMsg, "text"],
                 easyClose = FALSE,
                 footer = NULL
               ))
+              
+              #Redirect automatically to new page
+              runjs(paste0('
+                setTimeout(function(){
+                  window.location.replace("http://multilada.pl");
+                }, 5000);
+              '))
               
               #Disable all types
               for (type in types){
