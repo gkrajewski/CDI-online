@@ -332,15 +332,10 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
               endMsgtxt <- reactList$txt[reactList$txt$text_type == endMsg, "text"]
               
               additionalMessage <- staticList$parameters[staticList$parameters$parameter=="additionalEndMessageFromDatabase", "value"]
-              print(staticList$parameters)
-              print(staticList$parameters$parameter)
-              print(additionalMessage)
               if (additionalMessage=="yes") {
                 additionalMessageTxt <- getAdditionalEndMessage(idx, urlString, "database", staticList$parameters, reactList$txt)
-                print(additionalMessageTxt)
                 endMsgtxt <- paste(endMsgtxt, additionalMessageTxt)
               }
-              browser()
               showModal(modalDialog(
                 title = reactList$txt[reactList$txt$text_type == "endMsgTitle", "text"],
                 reactList$txt[reactList$txt$text_type == endMsg, "text"],
