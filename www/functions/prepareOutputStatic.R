@@ -1,10 +1,11 @@
 prepareOutputStatic <- function(answers, id, lang, form, run, endDate, stringLimit){
   
-  startDate = answers[answers$type=="none", "answer"]
+  startDate = answers[answers$type=="none",]$answer
   startDate = as.POSIXct(startDate)
   answers = answers[answers$type!="none", ]
   
   split_by_type <- function(answer_type, answer) {
+    print(answer_type)
     if (answer_type=="oneCheckboxGroup") {
       answer = strsplit(answer, " ")
     }

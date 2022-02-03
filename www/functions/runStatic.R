@@ -13,6 +13,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
       items <- read.csv("items.csv", encoding = "UTF-8", sep = ";", strip.white = T)[c("item_id", "definition", "type", "category")]
       transl <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
       settings <- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
+      parameters <- read.csv("parameters.csv", encoding = "UTF-8", sep = ";", strip.white = T)
       setwd(INIT_PATH)
       
       #Prepare data frames
@@ -129,7 +130,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
     
     #Render current type
     reactList <- reactiveVal(list(userProgress = userProgress, answers = answers))
-    staticList <- list(types = types, items = items, txt = txt, settings = settings, lang = lang, fromSW = fromSW)
+    staticList <- list(types = types, items = items, txt = txt, settings = settings, parameters = parameters, lang = lang, fromSW = fromSW)
     reactList(renderType(input, output, types[match(TRUE, reactList()$userProgress$current)], reactList(), staticList))
     
     #Change category to next when nextBtn clicked
@@ -328,6 +329,18 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
               
               #Show info about end
               if (fromSW) endMsg <- "endMsgTextSW" else endMsg <- "endMsgText"
+              endMsgtxt <- reactList$txt[reactList$txt$text_type == endMsg, "text"]
+              
+              additionalMessage <- staticList$parameters[staticList$parameters$parameter=="additionalEndMessageFromDatabase", "value"]
+              print(staticList$parameters)
+              print(staticList$parameters$parameter)
+              print(additionalMessage)
+              if (additionalMessage=="yes") {
+                additionalMessageTxt <- getAdditionalEndMessage(idx, urlString, "database", staticList$parameters, reactList$txt)
+                print(additionalMessageTxt)
+                endMsgtxt <- paste(endMsgtxt, additionalMessageTxt)
+              }
+              browser()
               showModal(modalDialog(
                 title = reactList$txt[reactList$txt$text_type == "endMsgTitle", "text"],
                 reactList$txt[reactList$txt$text_type == endMsg, "text"],
