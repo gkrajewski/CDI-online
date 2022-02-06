@@ -239,9 +239,17 @@ renderCategory <- function(input, output, category, reactList, staticList){
   if (reactList$type == "end" & reactList$userProgress[reactList$userProgress$type == "end", "disabled"] == TRUE){
     
     if (staticList$fromSW) endMsg <- "endMsgTextSW" else endMsg <- "endMsgText"
+    endMsgtxt <- reactList$txt[reactList$txt$text_type == endMsg, "text"]
+    
+    additionalMessage <- staticList$parameters[staticList$parameters$parameter=="additionalEndMessageFromDatabase", "value"]
+    if (additionalMessage=="yes") {
+      additionalMessageTxt <- getAdditionalEndMessage(staticList$idx, staticList$urlString, "database", 
+                                                      staticList$parameters, staticList$txt)
+      endMsgtxt <- paste(endMsgtxt, "<br><br>", additionalMessageTxt)
+    }
     showModal(modalDialog(
       title = reactList$txt[reactList$txt$text_type == "endMsgTitle", "text"],
-      reactList$txt[reactList$txt$text_type == endMsg, "text"],
+      HTML(endMsgtxt),
       easyClose = FALSE,
       footer = NULL
     ))

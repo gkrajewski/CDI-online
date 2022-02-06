@@ -130,7 +130,8 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
     
     #Render current type
     reactList <- reactiveVal(list(userProgress = userProgress, answers = answers))
-    staticList <- list(types = types, items = items, txt = txt, settings = settings, parameters = parameters, lang = lang, fromSW = fromSW)
+    staticList <- list(types = types, items = items, txt = txt, settings = settings, parameters = parameters, 
+                       lang = lang, idx=idx, urlString = urlString, fromSW = fromSW)
     reactList(renderType(input, output, types[match(TRUE, reactList()$userProgress$current)], reactList(), staticList))
     
     #Change category to next when nextBtn clicked
@@ -333,12 +334,12 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
               
               additionalMessage <- staticList$parameters[staticList$parameters$parameter=="additionalEndMessageFromDatabase", "value"]
               if (additionalMessage=="yes") {
-                additionalMessageTxt <- getAdditionalEndMessage(idx, urlString, "database", staticList$parameters, reactList$txt)
-                endMsgtxt <- paste(endMsgtxt, additionalMessageTxt)
+                additionalMessageTxt <- getAdditionalEndMessage(idx, urlString, "database", staticList$parameters, staticList$txt)
+                endMsgtxt <- paste(endMsgtxt, "<br><br>", additionalMessageTxt)
               }
               showModal(modalDialog(
                 title = reactList$txt[reactList$txt$text_type == "endMsgTitle", "text"],
-                reactList$txt[reactList$txt$text_type == endMsg, "text"],
+                HTML(endMsgtxt),
                 easyClose = FALSE,
                 footer = NULL
               ))
@@ -371,37 +372,39 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
               loginfo(paste0(urlString, " csv file with asnwers saved"))
               
               #Save answers to database
-              endDate <- Sys.time()
-              tableName <- paste0("form_", form, "_", lang)
-              answers <- prepareOutputStatic(reactList$answers, idx, lang, form, run, endDate, STRING_LIMIT)
-              
-              query = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
-                          `id` VARCHAR(99) NOT NULL,
-                          `lang` VARCHAR(45) NULL,
-                          `form` VARCHAR(45) NULL,
-                          `run` VARCHAR(45) NULL,
-                          `start_date` DATETIME NULL,
-                          `end_date` DATETIME NULL,
-                          `type` VARCHAR(45) NULL,
-                          `category` VARCHAR(45) NULL,
-                          `answer_type` VARCHAR(45) NULL,
-                          `question_id` INT NULL,
-                          `answer_id` VARCHAR(45) NULL,
-                          `answer1` VARCHAR(", toString(STRING_LIMIT), ") CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
-                          `answer2` VARCHAR(100) NULL);")
-              
-              sendDatabase(username=Sys.getenv("DB_USERNAME"),
-                                           password=Sys.getenv("DB_PASSWORD"),
-                                           dbname=Sys.getenv("DB_NAME"),
-                                           host=Sys.getenv("DB_HOST"),
-                                           port=Sys.getenv("DB_PORT"),
-                                           id=urlString,
-                                           tableName=tableName,
-                                           tableCreate=query,
-                                           tableInput=answers)
+              if (staticList$parameters[staticList$parameters$parameter == "database", "value"]=="yes") {
+                endDate <- Sys.time()
+                tableName <- paste0("form_", form, "_", lang)
+                answers <- prepareOutputStatic(reactList$answers, idx, lang, form, run, endDate, STRING_LIMIT)
+                
+                query = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
+                            `id` VARCHAR(99) NOT NULL,
+                            `lang` VARCHAR(45) NULL,
+                            `form` VARCHAR(45) NULL,
+                            `run` VARCHAR(45) NULL,
+                            `start_date` DATETIME NULL,
+                            `end_date` DATETIME NULL,
+                            `type` VARCHAR(45) NULL,
+                            `category` VARCHAR(45) NULL,
+                            `answer_type` VARCHAR(45) NULL,
+                            `question_id` INT NULL,
+                            `answer_id` VARCHAR(45) NULL,
+                            `answer1` VARCHAR(", toString(STRING_LIMIT), ") CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
+                            `answer2` VARCHAR(100) NULL);")
+                
+                sendDatabase(username=Sys.getenv("DB_USERNAME"),
+                                             password=Sys.getenv("DB_PASSWORD"),
+                                             dbname=Sys.getenv("DB_NAME"),
+                                             host=Sys.getenv("DB_HOST"),
+                                             port=Sys.getenv("DB_PORT"),
+                                             id=urlString,
+                                             tableName=tableName,
+                                             tableCreate=query,
+                                             tableInput=answers)
+              }
               
               #Send e-mail
-              if (txt[txt$text_type == "email", "text"]=="yes") {
+              if (staticList$parameters[staticList$parameters$parameter == "email", "value"]=="yes") {
                 
                 loginfo(paste0(urlString, " sending email"))
                 sendMail(subjectText=paste0("[SHINYDATA] ", urlString),

@@ -1,33 +1,53 @@
 getAdditionalEndMessage <- function(id, urlString, type="database", parameters, txt){
   
-  if (type=="database") {
-    table = parameters[parameters$parameter=="additionalEndMessageTable", "value"]
-    val_col = parameters[parameters$parameter=="additionalEndMessageValueColumn", "value"]
-    id_col = parameters[parameters$parameter=="additionalEndMessageIdColumn", "value"]
-    db_name = Sys.getenv("DB_NAME")
+  additional_message <- tryCatch( 
+  
+    expr= {
+      if (type=="database") {
+      table = parameters[parameters$parameter=="additionalEndMessageTable", "value"]
+      val_col = parameters[parameters$parameter=="additionalEndMessageValueColumn", "value"]
+      id_col = parameters[parameters$parameter=="additionalEndMessageIdColumn", "value"]
+      db_name = Sys.getenv("DB_NAME")
+      
+      transaction1 = paste0("select @value:= ", val_col, " from `", db_name, "`.`", table,
+                            "` where ", id_col, " is null limit 1")
+      transaction2 = paste0("update `", db_name, "`.`", table, "` set id='",
+                            id, "' where ", val_col, "=@value and ", id_col, " is null")
+      query = paste0("select ", val_col, " from `", db_name, "`.`", table, "` where ", 
+                     id_col, "='", id, "'")
+      transaction = c(transaction1, transaction2)
+      
+      result = sendDatabase(username=Sys.getenv("DB_USERNAME"),
+                            password=Sys.getenv("DB_PASSWORD"),
+                            dbname=Sys.getenv("DB_NAME"),
+                            host=Sys.getenv("DB_HOST"),
+                            port=Sys.getenv("DB_PORT"),
+                            id="testing",
+                            tableName="vouchers",
+                            tableQuery=query)
+      
+      if (length(result$voucher)==0) {
+        result = sendDatabase(username=Sys.getenv("DB_USERNAME"),
+                              password=Sys.getenv("DB_PASSWORD"),
+                              dbname=Sys.getenv("DB_NAME"),
+                              host=Sys.getenv("DB_HOST"),
+                              port=Sys.getenv("DB_PORT"),
+                              id="testing",
+                              tableName="vouchers",
+                              transaction=transaction,
+                              tableQuery=query)
+      }
+      
+      message = paste(txt[txt$text_type=='additionalEndMessageFromDatabaseText', "text"], paste(result$voucher, collapse = ', '))
+      print(message)
+      return(message)
+      }
+    },
     
-    transaction1 = paste0("select @value:= ", val_col, " from `", db_name, "`.`", table,
-                          "` where ", id_col, " is null limit 1")
-    transaction2 = paste0("update `", db_name, "`.`", table, "` set id=' ",
-                          id, "' where ", val_col, "=@value and ", id_col, " is null")
-    query = paste0("select ", val_col, " from `", db_name, "`.`", table, "` where ", 
-                   id_col, "='", id, "'")
-    transaction = c(transaction1, transaction2)
-    
-    result = sendDatabase(username=Sys.getenv("DB_USERNAME"),
-                     password=Sys.getenv("DB_PASSWORD"),
-                     dbname=Sys.getenv("DB_NAME"),
-                     host=Sys.getenv("DB_HOST"),
-                     port=Sys.getenv("DB_PORT"),
-                     id="testing",
-                     tableName="vouchers",
-                     transaction=transaction,
-                     tableQuery=query)
-    
-    message = paste(txt[txt$text_type=='additionalEndMessageFromDatabaseText', "text"], result)
-    
-    return(message)
-  }
+    error = function(e) {
+        logerror(paste0(id, " Failed to get additional message! ", e))
+    }
+  )
   
 }
 

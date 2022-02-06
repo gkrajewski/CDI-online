@@ -1,0 +1,9 @@
+text_type;text
+rozumienieHeader;Rozumienie słów
+gestyHeader;Gesty
+mowaHeader;Produkcja słów
+continueBtn;Dalej
+rozumienieInstr;Proszę zaznaczać “tak”, jeśli twoje dziecko rozumie podane słowo
+gestyInstr;Proszę zaznaczać “tak”, jeśli twoje dziecko wykonuje podany gest
+mowaInstr;Proszę zaznaczać “tak”, jeśli twoje dziecko mówi podane słowo
+additionalEndMessageFromDatabaseText;Poniżej znajdą Państwo voucher do Empika. Prosimy pamiętac o skopiowaniu go przed zamknięciem lub odświeżeniem strony. <br><br>
