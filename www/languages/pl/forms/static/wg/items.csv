@@ -1,476 +1,476 @@
-item_id;definition;type;category;lexical_category;lexical_class;uni_lemma;complexity_category ;num_item_id
-item_1;Reaguje, gdy zawołać je po imieniu (np. odwraca głowę i patrzy w kierunku głosu)?;first_signs;;;;;;1
-item_2;"Reaguje na okrzyk „Nie!” (przerywając wykonywaną czynność choć na chwilę)? 
-";first_signs;;;;;;2
-item_3;Reaguje na słowa „Tu mama.” lub „Gdzie tata?” (szukając matki lub ojca wzrokiem)? ;first_signs;;;;;;3
-item_4;Chcesz jeść?;phrases;;;;;;4
-item_5;Chcesz spać?;phrases;;;;;;5
-item_6;Chcesz pić?;phrases;;;;;;6
-item_7;Cicho!;phrases;;;;;;7
-item_8;Uważaj!;phrases;;;;;;8
-item_9;Nie ruszaj!/Nie rusz!;phrases;;;;;;9
-item_10;Nie wolno!;phrases;;;;;;10
-item_11;Nie ruszaj się!;phrases;;;;;;11
-item_12;Wstań!;phrases;;;;;;12
-item_13;Siadaj!;phrases;;;;;;13
-item_14;Chodź!;phrases;;;;;;14
-item_15;Popatrz./Zobacz. ;phrases;;;;;;15
-item_16;Otwórz buzię. ;phrases;;;;;;16
-item_17;Daj mamusi ____. ;phrases;;;;;;17
-item_18;Przynieś ____. ;phrases;;;;;;18
-item_19;Rzuć piłkę. ;phrases;;;;;;19
-item_20;Daj buzi/całuska!;phrases;;;;;;20
-item_21;Zrób babci „moja moja”. ;phrases;;;;;;21
-item_22;Zrób „pa pa”. ;phrases;;;;;;22
-item_23;Zrób brawo/kosi-kosi!;phrases;;;;;;23
-item_24;Idziemy na spacer. ;phrases;;;;;;24
-item_25;Idziemy spać/lulać. ;phrases;;;;;;25
-item_26;Kasia/Tomek cacy. ;phrases;;;;;;26
-item_27;Mama jest w kuchni. ;phrases;;;;;;27
-item_28;gę gę;word;sounds;other;other;quack quack;;28
-item_29;hau hau;word;sounds;other;other;woof woof;;29
-item_30;ko ko ko;word;sounds;other;other;cluck cluck ;;30
-item_31;kwa kwa;word;sounds;other;other;quack quack;;31
-item_32;miau;word;sounds;other;other;meow;;32
-item_33;mee/bee;word;sounds;other;other;baa baa;;33
-item_34;muu [krowa];word;sounds;other;other;moo;;34
-item_35;pi pi pi/ćwir ćwir;word;sounds;other;other;tweet tweet;;35
-item_36;bam/bum/bęc;word;sounds;other;other;boom;;36
-item_37;brrum brrum [auto];word;sounds;other;other;vroom;;37
-item_38;tik tak;word;sounds;other;other;tick-tock;;38
-item_39;tralala/lalala;word;sounds;other;other;;;39
-item_40;baran;word;animals;nouns;nouns;ram;;40
-item_41;biedronka;word;animals;nouns;nouns;ladybug;;41
-item_42;bocian;word;animals;nouns;nouns;stork;;42
-item_43;gęś;word;animals;nouns;nouns;goose;;43
-item_44;jeż;word;animals;nouns;nouns;hedgehog;;44
-item_45;kaczka;word;animals;nouns;nouns;duck;;45
-item_46;kogut;word;animals;nouns;nouns;rooster;;46
-item_47;koń;word;animals;nouns;nouns;horse;;47
-item_48;kot;word;animals;nouns;nouns;cat;;48
-item_49;koza;word;animals;nouns;nouns;goat;;49
-item_50;krowa;word;animals;nouns;nouns;cow;;50
-item_51;królik;word;animals;nouns;nouns;rabbit;;51
-item_52;kura;word;animals;nouns;nouns;hen;;52
-item_53;lew;word;animals;nouns;nouns;lion;;53
-item_54;lis;word;animals;nouns;nouns;fox;;54
-item_55;małpa;word;animals;nouns;nouns;monkey;;55
-item_56;miś/niedźwiedź;word;animals;nouns;nouns;bear/teddybear;;56
-item_57;mucha;word;animals;nouns;nouns;housefly;;57
-item_58;myszka;word;animals;nouns;nouns;mouse;;58
-item_59;pies;word;animals;nouns;nouns;dog;;59
-item_60;pingwin;word;animals;nouns;nouns;penguin;;60
-item_61;ptaszek;word;animals;nouns;nouns;bird;;61
-item_62;robak;word;animals;nouns;nouns;bug;;62
-item_63;ryba;word;animals;nouns;nouns;fish (animal);;63
-item_64;słoń;word;animals;nouns;nouns;elephant;;64
-item_65;sowa;word;animals;nouns;nouns;owl;;65
-item_66;ślimak;word;animals;nouns;nouns;snail;;66
-item_67;świnka;word;animals;nouns;nouns;pig;;67
-item_68;tygrys;word;animals;nouns;nouns;tiger;;68
-item_69;wiewiórka;word;animals;nouns;nouns;squirrel;;69
-item_70;wilk;word;animals;nouns;nouns;wolf;;70
-item_71;zając;word;animals;nouns;nouns;hare;;71
-item_72;żaba;word;animals;nouns;nouns;frog;;72
-item_73;żółw;word;animals;nouns;nouns;turtle;;73
-item_74;żyrafa;word;animals;nouns;nouns;giraffe;;74
-item_75;auto/samochód ;word;vehicles;nouns;nouns;car;;75
-item_76;autobus;word;vehicles;nouns;nouns;bus;;76
-item_77;motor/motocykl;word;vehicles;nouns;nouns;motorcycle;;77
-item_78;pociąg;word;vehicles;nouns;nouns;train;;78
-item_79;rower;word;vehicles;nouns;nouns;bicycle;;79
-item_80;samolot ;word;vehicles;nouns;nouns;airplane;;80
-item_81;statek;word;vehicles;nouns;nouns;ship;;81
-item_82;traktor;word;vehicles;nouns;nouns;tractor;;82
-item_83;tramwaj;word;vehicles;nouns;nouns;tram;;83
-item_84;banan;word;food_drink;nouns;nouns;banana;;84
-item_85;budyń;word;food_drink;nouns;nouns;pudding;;85
-item_86;bułka;word;food_drink;nouns;nouns;roll;;86
-item_87;chleb;word;food_drink;nouns;nouns;bread;;87
-item_88;chrupki;word;food_drink;nouns;nouns;crisps;;88
-item_89;ciastko ;word;food_drink;nouns;nouns;cookie;;89
-item_90;cukier;word;food_drink;nouns;nouns;sugar;;90
-item_91;cukierek;word;food_drink;nouns;nouns;candy;;91
-item_92;czekolada;word;food_drink;nouns;nouns;chocolate;;92
-item_93;dżem ;word;food_drink;nouns;nouns;jam;;93
-item_94;herbata;word;food_drink;nouns;nouns;tea;;94
-item_95;jabłko;word;food_drink;nouns;nouns;apple;;95
-item_96;jajko;word;food_drink;nouns;nouns;egg;;96
-item_97;jedzenie/papu/am;word;food_drink;nouns;nouns;food;;97
-item_98;jogurt;word;food_drink;nouns;nouns;yoghurt;;98
-item_99;kaszka;word;food_drink;nouns;nouns;porridge;;99
-item_100;kawa;word;food_drink;nouns;nouns;coffe;;100
-item_101;kiełbasa;word;food_drink;nouns;nouns;sausage;;101
-item_102;makaron/kluski;word;food_drink;nouns;nouns;pasta;;102
-item_103;masło/margaryna ;word;food_drink;nouns;nouns;butter;;103
-item_104;mięso;word;food_drink;nouns;nouns;meat;;104
-item_105;mleko;word;food_drink;nouns;nouns;milk;;105
-item_106;paluszki;word;food_drink;nouns;nouns;breadsticks;;106
-item_107;picie;word;food_drink;nouns;nouns;drink (beverage);;107
-item_108;ser;word;food_drink;nouns;nouns;cheese;;108
-item_109;sok;word;food_drink;nouns;nouns;juice;;109
-item_110;szynka;word;food_drink;nouns;nouns;ham;;110
-item_111;woda;word;food_drink;nouns;nouns;water (beverage);;111
-item_112;ziemniaki/kartofle;word;food_drink;nouns;nouns;potatoes;;112
-item_113;zupa;word;food_drink;nouns;nouns;soup;;113
-item_114;bajka;word;toys;nouns;nouns;fairytale;;114
-item_115;balonik;word;toys;nouns;nouns;balloon;;115
-item_116;kartka/papier;word;toys;nouns;nouns;paper;;116
-item_117;klocki;word;toys;nouns;nouns;block;;117
-item_118;książka;word;toys;nouns;nouns;book;;118
-item_119;lalka;word;toys;nouns;nouns;doll;;119
-item_120;łopatka;word;toys;nouns;nouns;shovel;;120
-item_121;piłka;word;toys;nouns;nouns;ball;;121
-item_122;pisak/długopis ;word;toys;nouns;nouns;pen;;122
-item_123;smoczek;word;toys;nouns;nouns;pacifier;;123
-item_124;wiaderko;word;toys;nouns;nouns;pail;;124
-item_125;buty;word;clothing;nouns;nouns;shoes;;125
-item_126;czapka;word;clothing;nouns;nouns;cap;;126
-item_127;guzik;word;clothing;nouns;nouns;button;;127
-item_128;kapelusz;word;clothing;nouns;nouns;hat;;128
-item_129;kieszeń;word;clothing;nouns;nouns;pocket;;129
-item_130;koszula;word;clothing;nouns;nouns;shirt;;130
-item_131;kurtka;word;clothing;nouns;nouns;jacket;;131
-item_132;majtki;word;clothing;nouns;nouns;panties;;132
-item_133;pantofle/kapcie ;word;clothing;nouns;nouns;slippers;;133
-item_134;pieluszka/pampers;word;clothing;nouns;nouns;diaper;;134
-item_135;piżama;word;clothing;nouns;nouns;pajamas;;135
-item_136;rajstopy/rajtuzy ;word;clothing;nouns;nouns;tights;;136
-item_137;rękawiczki;word;clothing;nouns;nouns;gloves;;137
-item_138;skarpetki;word;clothing;nouns;nouns;sock;;138
-item_139;spodnie;word;clothing;nouns;nouns;pants;;139
-item_140;sukienka;word;clothing;nouns;nouns;dress (object);;140
-item_141;sweter;word;clothing;nouns;nouns;sweater;;141
-item_142;szalik;word;clothing;nouns;nouns;scarf;;142
-item_143;śliniaczek;word;clothing;nouns;nouns;bib;;143
-item_144;ubranie;word;clothing;nouns;nouns;cloth;;144
-item_145;broda;word;body_parts;nouns;nouns;beard/chin ;;145
-item_146;brzuch;word;body_parts;nouns;nouns;tummy;;146
-item_147;buzia;word;body_parts;nouns;nouns;face/mouth;;147
-item_148;czoło;word;body_parts;nouns;nouns;forehead;;148
-item_149;głowa;word;body_parts;nouns;nouns;head;;149
-item_150;język;word;body_parts;nouns;nouns;tongue;;150
-item_151;kolano;word;body_parts;nouns;nouns;knee;;151
-item_152;noga;word;body_parts;nouns;nouns;leg;;152
-item_153;nos;word;body_parts;nouns;nouns;nose;;153
-item_154;oko;word;body_parts;nouns;nouns;eye;;154
-item_155;palec;word;body_parts;nouns;nouns;finger/toe;;155
-item_156;paznokcie/pazurki;word;body_parts;nouns;nouns;nails;;156
-item_157;pępek;word;body_parts;nouns;nouns;belly button;;157
-item_158;plecy;word;body_parts;nouns;nouns;back;;158
-item_159;pupa;word;body_parts;nouns;nouns;bottom;;159
-item_160;ręka;word;body_parts;nouns;nouns;hand;;160
-item_161;szyja;word;body_parts;nouns;nouns;neck;;161
-item_162;ucho;word;body_parts;nouns;nouns;ear;;162
-item_163;włosy;word;body_parts;nouns;nouns;hair;;163
-item_164;ząb;word;body_parts;nouns;nouns;tooth;;164
-item_165;balkon;word;furniture_rooms;nouns;nouns;balcony;;165
-item_166;drzwi;word;furniture_rooms;nouns;nouns;door;;166
-item_167;dywan;word;furniture_rooms;nouns;nouns;carpet;;167
-item_168;fotel;word;furniture_rooms;nouns;nouns;armchair;;168
-item_169;krzesło;word;furniture_rooms;nouns;nouns;chair;;169
-item_170;kuchnia;word;furniture_rooms;nouns;nouns;kitchen;;170
-item_171;lodówka;word;furniture_rooms;nouns;nouns;refrigerator;;171
-item_172;łazienka;word;furniture_rooms;nouns;nouns;bathroom;;172
-item_173;łóżko;word;furniture_rooms;nouns;nouns;bed;;173
-item_174;odkurzacz;word;furniture_rooms;nouns;nouns;vacuum;;174
-item_175;okno;word;furniture_rooms;nouns;nouns;window;;175
-item_176;podłoga;word;furniture_rooms;nouns;nouns;floor;;176
-item_177;pokój;word;furniture_rooms;nouns;nouns;room;;177
-item_178;półka/regał;word;furniture_rooms;nouns;nouns;shelf;;178
-item_179;pralka;word;furniture_rooms;nouns;nouns;washing machine;;179
-item_180;schody;word;furniture_rooms;nouns;nouns;stairs;;180
-item_181;stół;word;furniture_rooms;nouns;nouns;table;;181
-item_182;szafa;word;furniture_rooms;nouns;nouns;wardrobe;;182
-item_183;szuflada;word;furniture_rooms;nouns;nouns;drawer;;183
-item_184;ściana;word;furniture_rooms;nouns;nouns;wall;;184
-item_185;telewizor;word;furniture_rooms;nouns;nouns;tv;;185
-item_186;ubikacja/ustęp ;word;furniture_rooms;nouns;nouns;toilet;;186
-item_187;wanna;word;furniture_rooms;nouns;nouns;bathtub;;187
-item_188;wózek;word;furniture_rooms;nouns;nouns;stroller;;188
-item_189;butelka;word;household;nouns;nouns;bottle;;189
-item_190;garnek;word;household;nouns;nouns;pot;;190
-item_191;gazeta;word;household;nouns;nouns;newspaper;;191
-item_192;grzebień;word;household;nouns;nouns;comb (object);;192
-item_193;klucz;word;household;nouns;nouns;keys;;193
-item_194;koc/kołdra;word;household;nouns;nouns;blanket;;194
-item_195;koszyk;word;household;nouns;nouns;basket;;195
-item_196;kubek;word;household;nouns;nouns;cup;;196
-item_197;lampa;word;household;nouns;nouns;lamp;;197
-item_198;lekarstwa/tabletki ;word;household;nouns;nouns;medicine;;198
-item_199;lustro;word;household;nouns;nouns;mirror;;199
-item_200;łyżka;word;household;nouns;nouns;spoon;;200
-item_201;mydło;word;household;nouns;nouns;soap;;201
-item_202;nocnik;word;household;nouns;nouns;potty;;202
-item_203;nożyczki;word;household;nouns;nouns;scissors;;203
-item_204;nóż;word;household;nouns;nouns;knife;;204
-item_205;okulary;word;household;nouns;nouns;glasses;;205
-item_206;pieniądze;word;household;nouns;nouns;money;;206
-item_207;poduszka;word;household;nouns;nouns;pillow;;207
-item_208;pudełko;word;household;nouns;nouns;box;;208
-item_209;radio;word;household;nouns;nouns;radio;;209
-item_210;ręcznik;word;household;nouns;nouns;towel;;210
-item_211;szczoteczka do zębów ;word;household;nouns;nouns;toothbrush;;211
-item_212;szklanka;word;household;nouns;nouns;glass;;212
-item_213;szmata/ścierka ;word;household;nouns;nouns;dishrag;;213
-item_214;śmieci;word;household;nouns;nouns;trash;;214
-item_215;talerz;word;household;nouns;nouns;plate;;215
-item_216;telefon/komórka ;word;household;nouns;nouns;telephone;;216
-item_217;torebka;word;household;nouns;nouns;bag;;217
-item_218;widelec;word;household;nouns;nouns;fork;;218
-item_219;zdjęcie/fotografia ;word;household;nouns;nouns;photo;;219
-item_220;zegarek;word;household;nouns;nouns;clock/watch;;220
-item_221;żelazko ;word;household;nouns;nouns;iron;;221
-item_222;deszcz;word;outside;nouns;nouns;rain;;222
-item_223;dom;word;outside;nouns;nouns;home/house;;223
-item_224;drzewo;word;outside;nouns;nouns;tree;;224
-item_225;kamień;word;outside;nouns;nouns;rock (object);;225
-item_226;kijek/patyk ;word;outside;nouns;nouns;stick;;226
-item_227;kościół;word;outside;nouns;nouns;church;;227
-item_228;księżyc;word;outside;nouns;nouns;moon;;228
-item_229;kwiatek;word;outside;nouns;nouns;flower;;229
-item_230;listek;word;outside;nouns;nouns;leaf;;230
-item_231;na dwór/na pole ;word;outside;nouns;nouns;outside;;231
-item_232;niebo;word;outside;nouns;nouns;sky;;232
-item_233;piasek/piaskownica;word;outside;nouns;nouns;sand/sandpit;;233
-item_234;praca;word;outside;nouns;nouns;work (place);;234
-item_235;sanki;word;outside;nouns;nouns;sled;;235
-item_236;sklep;word;outside;nouns;nouns;store;;236
-item_237;słońce;word;outside;nouns;nouns;sun;;237
-item_238;spacer;word;outside;nouns;nouns;walk;;238
-item_239;śnieg;word;outside;nouns;nouns;snow;;239
-item_240;trawa;word;outside;nouns;nouns;grass;;240
-item_241;ulica;word;outside;nouns;nouns;street;;241
-item_242;woda;word;outside;nouns;nouns;water (not beverage);;242
-item_243;ziemia;word;outside;nouns;nouns;earth;;243
-item_244;babcia;word;people;other;other;grandma;;244
-item_245;chłopiec;word;people;other;other;boy;;245
-item_246;ciocia;word;people;other;other;aunt;;246
-item_247;doktor/lekarz ;word;people;other;other;doctor;;247
-item_248;dziadek/dziadzio ;word;people;other;other;grandpa;;248
-item_249;dzidzi/dzidziuś ;word;people;other;other;baby;;249
-item_250;dzieci;word;people;other;other;children;;250
-item_251;dziewczynka;word;people;other;other;girl;;251
-item_252;imię zwierzątka;word;people;other;other;pet’s name ;;252
-item_253;ludzie;word;people;other;other;people;;253
-item_254;mama/mamusia ;word;people;other;other;mommy;;254
-item_255;pan;word;people;other;other;man;;255
-item_256;pani;word;people;other;other;lady;;256
-item_257;tata/tatuś;word;people;other;other;daddy;;257
-item_258;własne imię dziecka ;word;people;other;other;child’s own name;;258
-item_259;wujek;word;people;other;other;uncle;;259
-item_260;cześć;word;games_routines;other;other;hello/hi;;260
-item_261;dzień dobry ;word;games_routines;other;other;good morning;;261
-item_262;do widzenia ;word;games_routines;other;other;goodbye;;262
-item_263;dobranoc;word;games_routines;other;other;good night;;263
-item_264;dziękuję;word;games_routines;other;other;thank you ;;264
-item_265;proszę;word;games_routines;other;other;please;;265
-item_266;przepraszam;word;games_routines;other;other;sorry;;266
-item_267;halo;word;games_routines;other;other;halo;;267
-item_268;pa, pa ;word;games_routines;other;other;bye;;268
-item_269;tak;word;games_routines;other;other;yes;;269
-item_270;nie;word;games_routines;other;other;no;;270
-item_271;siusiu/siku/sisi;word;games_routines;other;other;pee;;271
-item_272;kupka;word;games_routines;other;other;poo;;272
-item_273;kosi-kosi łapci ;word;games_routines;other;other;;;273
-item_274;idzie rak nieborak ;word;games_routines;other;other;;;274
-item_275;sroczka kaszkę warzyła;word;games_routines;other;other;;;275
-item_276;be;word;descriptive_words;predicates;adjectives;yucky;;276
-item_277;biały;word;descriptive_words;predicates;adjectives;white;;277
-item_278;brudny;word;descriptive_words;predicates;adjectives;dirty;;278
-item_279;brzydki/brzydko;word;descriptive_words;predicates;adjectives/adverbs;ugly;;279
-item_280;cacy/cacany ;word;descriptive_words;predicates;adjectives;;;280
-item_281;chory;word;descriptive_words;predicates;adjectives;sick;;281
-item_282;cicho;word;descriptive_words;predicates;adverbs;quietly;;282
-item_283;ciemno;word;descriptive_words;predicates;adverbs;dark;;283
-item_284;ciepły/ciepło ;word;descriptive_words;predicates;adjectives/adverbs;warm;;284
-item_285;ciężki;word;descriptive_words;predicates;adjectives;hard;;285
-item_286;czarny;word;descriptive_words;predicates;adjectives;black;;286
-item_287;czysty;word;descriptive_words;predicates;adjectives;clean (description) ;;287
-item_288;dobry/dobrze;word;descriptive_words;predicates;adjectives/adverbs;good/well;;288
-item_289;duży;word;descriptive_words;predicates;adjectives;big;;289
-item_290;głodny;word;descriptive_words;predicates;adjectives;hungry;;290
-item_291;gorący/gorąco ;word;descriptive_words;predicates;adjectives/adverbs;hot;;291
-item_292;kochany;word;descriptive_words;predicates;adjectives;dear;;292
-item_293;ładny/ładnie ;word;descriptive_words;predicates;adjectives/adverbs;pretty;;293
-item_294;mały;word;descriptive_words;predicates;adjectives;little (description) ;;294
-item_295;mokry/mokro;word;descriptive_words;predicates;adjectives/adverbs;wet (description);;295
-item_296;(nie)grzeczny;word;descriptive_words;predicates;adjectives;naughty/polite;;296
-item_297;otwarty;word;descriptive_words;predicates;adjectives;open;;297
-item_298;prędko/szybko ;word;descriptive_words;predicates;adjectives/adverbs;fast;;298
-item_299;umyty;word;descriptive_words;predicates;adjectives;washed;;299
-item_300;zamknięty;word;descriptive_words;predicates;adjectives;closed;;300
-item_301;zepsuty;word;descriptive_words;predicates;adjectives;broken;;301
-item_302;zimny/zimno;word;descriptive_words;predicates;adjectives/adverbs;cold;;302
-item_303;zmęczony;word;descriptive_words;predicates;adjectives;tired;;303
-item_304;bać się ;word;action_words;predicates;verbs;be afraid of ;;304
-item_305;bawić się ;word;action_words;predicates;verbs;play;;305
-item_306;bić;word;action_words;predicates;verbs;beat;;306
-item_307;biec/biegać;word;action_words;predicates;verbs;run;;307
-item_308;boleć;word;action_words;predicates;verbs;hurt;;308
-item_309;budować;word;action_words;predicates;verbs;build;;309
-item_310;być (jest);word;action_words;predicates;verbs;be;;310
-item_311;chcieć;word;action_words;predicates;verbs;want;;311
-item_312;chodzić (chodź) ;word;action_words;predicates;verbs;walk;;312
-item_313;czesać;word;action_words;predicates;verbs;comb (action);;313
-item_314;czytać;word;action_words;predicates;verbs;read;;314
-item_315;dać;word;action_words;predicates;verbs;give;;315
-item_316;dmuchać;word;action_words;predicates;verbs;blow;;316
-item_317;dzwonić;word;action_words;predicates;verbs;call;;317
-item_318;gonić;word;action_words;predicates;verbs;chase;;318
-item_319;gotować;word;action_words;predicates;verbs;cook;;319
-item_320;grać;word;action_words;predicates;verbs;play;;320
-item_321;huśtać/bujać się ;word;action_words;predicates;verbs;swing;;321
-item_322;iść/pójść ;word;action_words;predicates;verbs;go;;322
-item_323;jechać/jeździć ;word;action_words;predicates;verbs;ride;;323
-item_324;jeść;word;action_words;predicates;verbs;eat;;324
-item_325;kąpać się;word;action_words;predicates;verbs;bathe;;325
-item_326;kochać;word;action_words;predicates;verbs;love;;326
-item_327;kopać;word;action_words;predicates;verbs;kick;;327
-item_328;kupić;word;action_words;predicates;verbs;buy;;328
-item_329;leżeć;word;action_words;predicates;verbs;lie;;329
-item_330;lubić;word;action_words;predicates;verbs;like;;330
-item_331;mieć (ma);word;action_words;predicates;verbs;have;;331
-item_332;myć (się);word;action_words;predicates;verbs;clean (action);;332
-item_333;nieść/nosić;word;action_words;predicates;verbs;carry;;333
-item_334;obudzić (się);word;action_words;predicates;verbs;wake up ;;334
-item_335;oglądać/obejrzeć ;word;action_words;predicates;verbs;watch;;335
-item_336;otworzyć;word;action_words;predicates;verbs;open (action);;336
-item_337;palić (się);word;action_words;predicates;verbs;burn;;337
-item_338;patrzeć (patrz);word;action_words;predicates;verbs;look;;338
-item_339;pić;word;action_words;predicates;verbs;drink (action);;339
-item_340;pisać;word;action_words;predicates;verbs;write;;340
-item_341;płakać;word;action_words;predicates;verbs;cry;;341
-item_342;prać;word;action_words;predicates;verbs;wash;;342
-item_343;przyjść;word;action_words;predicates;verbs;come;;343
-item_344;robić;word;action_words;predicates;verbs;do;;344
-item_345;rysować;word;action_words;predicates;verbs;draw;;345
-item_346;rzucać;word;action_words;predicates;verbs;throw;;346
-item_347;siedzieć;word;action_words;predicates;verbs;sit;;347
-item_348;skakać;word;action_words;predicates;verbs;jump;;348
-item_349;spać;word;action_words;predicates;verbs;sleep;;349
-item_350;stać;word;action_words;predicates;verbs;stand;;350
-item_351;stukać/pukać;word;action_words;predicates;verbs;knock;;351
-item_352;szukać;word;action_words;predicates;verbs;look for ;;352
-item_353;śpiewać;word;action_words;predicates;verbs;sing;;353
-item_354;tańczyć;word;action_words;predicates;verbs;dance;;354
-item_355;trzymać;word;action_words;predicates;verbs;hold;;355
-item_356;ubrać (się);word;action_words;predicates;verbs;get dressed ;;356
-item_357;uciekać;word;action_words;predicates;verbs;run away ;;357
-item_358;upaść/spaść;word;action_words;predicates;verbs;fall;;358
-item_359;usiąść/siadać ;word;action_words;predicates;verbs;sit down ;;359
-item_360;wstawać;word;action_words;predicates;verbs;stand up ;;360
-item_361;zamknąć;word;action_words;predicates;verbs;close;;361
-item_362;zaświecić/zapalić ;word;action_words;predicates;verbs;light (action);;362
-item_363;zdjąć/ściągnąć ;word;action_words;predicates;verbs;take off ;;363
-item_364;zepsuć;word;action_words;predicates;verbs;break;;364
-item_365;nie ma ;word;action_words;predicates;verbs;;;365
-item_366;(nie) wolno ;word;action_words;predicates;verbs;;;366
-item_367;tu;word;locations;function_words;function_words;there;;367
-item_368;tam;word;locations;function_words;function_words;;;368
-item_369;daleko;word;locations;function_words;function_words;far;;369
-item_370;wysoko;word;locations;function_words;function_words;high;;370
-item_371;na górę/na górze ;word;locations;function_words;function_words;up;;371
-item_372;na dół/na dole ;word;locations;function_words;function_words;down;;372
-item_373;już/już nie ;word;time_words;other;other;;;373
-item_374;jeszcze/jeszcze nie ;word;time_words;other;other;;;374
-item_375;teraz;word;time_words;other;other;now;;375
-item_376;zaraz;word;time_words;other;other;soon;;376
-item_377;potem/później ;word;time_words;other;other;later;;377
-item_378;noc/w nocy ;word;time_words;other;other;night;;378
-item_379;dużo;word;quantifiers;function_words;function_words;a lot;;379
-item_380;mało;word;quantifiers;function_words;function_words;A little ;;380
-item_381;trochę/troszkę ;word;quantifiers;function_words;function_words;some;;381
-item_382;jeszcze;word;quantifiers;function_words;function_words;yet;;382
-item_383;wszystko/wszyscy ;word;quantifiers;function_words;function_words;all;;383
-item_384;inny;word;quantifiers;function_words;function_words;different/another/other;;384
-item_385;drugi;word;quantifiers;function_words;function_words;second;;385
-item_386;sam/sama;word;quantifiers;function_words;function_words;alone;;386
-item_387;dosyć/dość ;word;quantifiers;function_words;function_words;enough;;387
-item_388;ja (mi, mnie) ;word;pronouns;function_words;function_words;I;;388
-item_389;ty (ci, cię) ;word;pronouns;function_words;function_words;you;;389
-item_390;my (nam, nas) ;word;pronouns;function_words;function_words;we;;390
-item_391;mój;word;pronouns;function_words;function_words;mine;;391
-item_392;twój;word;pronouns;function_words;function_words;your;;392
-item_393;nasz;word;pronouns;function_words;function_words;our;;393
-item_394;to;word;pronouns;function_words;function_words;it;;394
-item_395;coś;word;pronouns;function_words;function_words;something;;395
-item_396;nic;word;pronouns;function_words;function_words;none;;396
-item_397;ten;word;pronouns;function_words;function_words;this;;397
-item_398;tamten;word;pronouns;function_words;function_words;that;;398
-item_399;taki;word;pronouns;function_words;function_words;such;;399
-item_400;co to?/co to jest? ;word;question_words;function_words;function_words;what is this?;;400
-item_401;co?;word;question_words;function_words;function_words;what;;401
-item_402;co robi? ;word;question_words;function_words;function_words;;;402
-item_403;kto?;word;question_words;function_words;function_words;who;;403
-item_404;gdzie?;word;question_words;function_words;function_words;where (question);;404
-item_405;jak?;word;question_words;function_words;function_words;how;;405
-item_406;dlaczego?/czemu? ;word;question_words;function_words;function_words;why;;406
-item_407;jaki?;word;question_words;function_words;function_words;;;407
-item_408;Czy dziecko samorzutnie powtarza zasłyszane wypowiedzi bądź ich fragmenty? ;starting_to_talk;;;;;;408
-item_409;Czy poproszone o powtórzenie czegoś, chętnie powtarza? ;starting_to_talk;;;;;;409
-item_410;Niektóre dzieci chętnie wymieniają nazwy przedmiotów, tak jakby chciały się pochwalić, że je znają. Czy Państwa dziecko chętnie nazywa przedmioty?;starting_to_talk;;;;;;410
-item_411;Czy dziecko zaczęło już łączyć wyrazy? Czy tworzy takie zdania jak np. „dzidzi am”, „da mleko”, „tu kotek”, ‚mama śpi”?;combine;;;;;;411
-item_412;Wyciąga rękę, aby pokazać trzymany przedmiot.;gestures_first;;;;;;412
-item_413;Daje komuś trzymany przedmiot. ;gestures_first;;;;;;413
-item_414;Pokazuje palcem wskazującym ciekawy przedmiot lub zdarzenie. ;gestures_first;;;;;;414
-item_415;Robi „pa, pa!”, kiedy ktoś odchodzi. ;gestures_first;;;;;;415
-item_416;Podnosi rączki w górę na znak, żeby je wziąć na ręce. ;gestures_first;;;;;;416
-item_417;Kręci głową przecząco. ;gestures_first;;;;;;417
-item_418;Kiwa głową potakująco. ;gestures_first;;;;;;418
-item_419;Kładzie palec na ustach („cicho!”). ;gestures_first;;;;;;419
-item_420;Pokazuje, że czegoś chce, wyciągając rączkę w kierunku przedmiotu, otwierając i zamykając dłoń. ;gestures_first;;;;;;420
-item_421;Posyła całusy na odległość. ;gestures_first;;;;;;421
-item_422;Mlaszcze („mniam mniam”), żeby pokazać, że coś mu smakuje. ;gestures_first;;;;;;422
-item_423;Wzrusza ramionami lub rozkłada ręce, żeby pokazać, że czegoś nie ma. ;gestures_first;;;;;;423
-item_424;Bawi się w „nie ma, nie ma - a jest!” (Albo „a kuku!”);gestures_games;;;;;;424
-item_425;Bawi się w „sroczka kaszkę warzyła”. ;gestures_games;;;;;;425
-item_426;Pokazuje „jaki jestem duży!”/„jaka jestem duża!”. ;gestures_games;;;;;;426
-item_427;Bawi się w berka (tj. goni lub ucieka). ;gestures_games;;;;;;427
-item_428;Śpiewa. ;gestures_games;;;;;;428
-item_429;Tańczy. ;gestures_games;;;;;;429
-item_430;Je łyżką lub widelcem. ;gestures_objects;;;;;;430
-item_431;Pije płyny z kubeczka. ;gestures_objects;;;;;;431
-item_432;Czesze się szczotką lub grzebieniem. ;gestures_objects;;;;;;432
-item_433;Myje zęby. ;gestures_objects;;;;;;433
-item_434;Myje i wyciera twarz lub ręce. ;gestures_objects;;;;;;434
-item_435;Wkłada czapkę. ;gestures_objects;;;;;;435
-item_436;Wkłada buta lub skarpetkę. ;gestures_objects;;;;;;436
-item_437;Zakłada korale, bransoletkę lub zegarek. ;gestures_objects;;;;;;437
-item_438;Przykłada głowę do ręki i mruży oczy, żeby pokazać, że śpi. ;gestures_objects;;;;;;438
-item_439;Pokazuje, że coś jest gorące, dmuchając lub odsuwając palec. ;gestures_objects;;;;;;439
-item_440;Trzyma samolocik i lata nim. ;gestures_objects;;;;;;440
-item_441;Przykłada do ucha słuchawkę telefonu. ;gestures_objects;;;;;;441
-item_442;Wącha kwiatki. ;gestures_objects;;;;;;442
-item_443;Jeździ autkiem. ;gestures_objects;;;;;;443
-item_444;Rzuca piłką. ;gestures_objects;;;;;;444
-item_445;Przelewa płyny na niby. ;gestures_objects;;;;;;445
-item_446;Na niby miesza łyżeczką płyn w naczyniu. ;gestures_objects;;;;;;446
-item_447;Kładzenie do łóżka. ;gestures_parent;;;;;;447
-item_448;Przykrywanie kocykiem. ;gestures_parent;;;;;;448
-item_449;Karmienie z butelki. ;gestures_parent;;;;;;449
-item_450;Karmienie łyżką. ;gestures_parent;;;;;;450
-item_451;Czesanie. ;gestures_parent;;;;;;451
-item_452;Noszenie na rękach. ;gestures_parent;;;;;;452
-item_453;Wożenie w wózku. ;gestures_parent;;;;;;453
-item_454;Huśtanie, kołysanie, usypianie. ;gestures_parent;;;;;;454
-item_455;Całowanie, ściskanie. ;gestures_parent;;;;;;455
-item_456;Ubieranie (próba wkładania czapki czy butów lub skarpetek). ;gestures_parent;;;;;;456
-item_457;Mycie lub wycieranie. ;gestures_parent;;;;;;457
-item_458;Przewijanie lub wysadzanie. ;gestures_parent;;;;;;458
-item_459;Mówienie do lalki/misia. ;gestures_parent;;;;;;459
-item_460;Zamiata lub zmywa podłogę. ;gestures_adult;;;;;;460
-item_461;Wkłada klucz do zamka. ;gestures_adult;;;;;;461
-item_462;Stuka młotkiem. ;gestures_adult;;;;;;462
-item_463;Zapala i gasi światło. ;gestures_adult;;;;;;463
-item_464;„Czyta” (otwiera książkę, przewraca kartki). ;gestures_adult;;;;;;464
-item_465;Sprząta odkurzaczem. ;gestures_adult;;;;;;465
-item_466;Podlewa kwiatki. ;gestures_adult;;;;;;466
-item_467;Gra na instrumentach (trąbka, cymbałki, fortepian itp.). ;gestures_adult;;;;;;467
-item_468;Kręci kierownicą. ;gestures_adult;;;;;;468
-item_469;„Myje” naczynia. ;gestures_adult;;;;;;469
-item_470;Ściera kurz lub zmywa plamy. ;gestures_adult;;;;;;470
-item_471;„Pisze” ołówkiem, długopisem lub pisakiem. ;gestures_adult;;;;;;471
-item_472;Kopie łopatką. ;gestures_adult;;;;;;472
-item_473;Zakłada okulary. ;gestures_adult;;;;;;473
-item_474;Używa pilota lub przycisku do włączenia telewizora lub innych urządzeń. ;gestures_adult;;;;;;474
+item_id,definition,type,category,lexical_category,lexical_class,uni_lemma,complexity_category ,num_item_id
+item_1,"Reaguje, gdy zawołać je po imieniu (np. odwraca głowę i patrzy w kierunku głosu)?",first_signs,,,,,,1
+item_2,"Reaguje na okrzyk „Nie!” (przerywając wykonywaną czynność choć na chwilę)? 
+",first_signs,,,,,,2
+item_3,Reaguje na słowa „Tu mama.” lub „Gdzie tata?” (szukając matki lub ojca wzrokiem)? ,first_signs,,,,,,3
+item_4,Chcesz jeść?,phrases,,,,,,4
+item_5,Chcesz spać?,phrases,,,,,,5
+item_6,Chcesz pić?,phrases,,,,,,6
+item_7,Cicho!,phrases,,,,,,7
+item_8,Uważaj!,phrases,,,,,,8
+item_9,Nie ruszaj!/Nie rusz!,phrases,,,,,,9
+item_10,Nie wolno!,phrases,,,,,,10
+item_11,Nie ruszaj się!,phrases,,,,,,11
+item_12,Wstań!,phrases,,,,,,12
+item_13,Siadaj!,phrases,,,,,,13
+item_14,Chodź!,phrases,,,,,,14
+item_15,Popatrz./Zobacz. ,phrases,,,,,,15
+item_16,Otwórz buzię. ,phrases,,,,,,16
+item_17,Daj mamusi ____. ,phrases,,,,,,17
+item_18,Przynieś ____. ,phrases,,,,,,18
+item_19,Rzuć piłkę. ,phrases,,,,,,19
+item_20,Daj buzi/całuska!,phrases,,,,,,20
+item_21,Zrób babci „moja moja”. ,phrases,,,,,,21
+item_22,Zrób „pa pa”. ,phrases,,,,,,22
+item_23,Zrób brawo/kosi-kosi!,phrases,,,,,,23
+item_24,Idziemy na spacer. ,phrases,,,,,,24
+item_25,Idziemy spać/lulać. ,phrases,,,,,,25
+item_26,Kasia/Tomek cacy. ,phrases,,,,,,26
+item_27,Mama jest w kuchni. ,phrases,,,,,,27
+item_28,gę gę,word,sounds,other,other,quack quack,,28
+item_29,hau hau,word,sounds,other,other,woof woof,,29
+item_30,ko ko ko,word,sounds,other,other,cluck cluck ,,30
+item_31,kwa kwa,word,sounds,other,other,quack quack,,31
+item_32,miau,word,sounds,other,other,meow,,32
+item_33,mee/bee,word,sounds,other,other,baa baa,,33
+item_34,muu [krowa],word,sounds,other,other,moo,,34
+item_35,pi pi pi/ćwir ćwir,word,sounds,other,other,tweet tweet,,35
+item_36,bam/bum/bęc,word,sounds,other,other,boom,,36
+item_37,brrum brrum [auto],word,sounds,other,other,vroom,,37
+item_38,tik tak,word,sounds,other,other,tick-tock,,38
+item_39,tralala/lalala,word,sounds,other,other,,,39
+item_40,baran,word,animals,nouns,nouns,ram,,40
+item_41,biedronka,word,animals,nouns,nouns,ladybug,,41
+item_42,bocian,word,animals,nouns,nouns,stork,,42
+item_43,gęś,word,animals,nouns,nouns,goose,,43
+item_44,jeż,word,animals,nouns,nouns,hedgehog,,44
+item_45,kaczka,word,animals,nouns,nouns,duck,,45
+item_46,kogut,word,animals,nouns,nouns,rooster,,46
+item_47,koń,word,animals,nouns,nouns,horse,,47
+item_48,kot,word,animals,nouns,nouns,cat,,48
+item_49,koza,word,animals,nouns,nouns,goat,,49
+item_50,krowa,word,animals,nouns,nouns,cow,,50
+item_51,królik,word,animals,nouns,nouns,rabbit,,51
+item_52,kura,word,animals,nouns,nouns,hen,,52
+item_53,lew,word,animals,nouns,nouns,lion,,53
+item_54,lis,word,animals,nouns,nouns,fox,,54
+item_55,małpa,word,animals,nouns,nouns,monkey,,55
+item_56,miś/niedźwiedź,word,animals,nouns,nouns,bear/teddybear,,56
+item_57,mucha,word,animals,nouns,nouns,housefly,,57
+item_58,myszka,word,animals,nouns,nouns,mouse,,58
+item_59,pies,word,animals,nouns,nouns,dog,,59
+item_60,pingwin,word,animals,nouns,nouns,penguin,,60
+item_61,ptaszek,word,animals,nouns,nouns,bird,,61
+item_62,robak,word,animals,nouns,nouns,bug,,62
+item_63,ryba,word,animals,nouns,nouns,fish (animal),,63
+item_64,słoń,word,animals,nouns,nouns,elephant,,64
+item_65,sowa,word,animals,nouns,nouns,owl,,65
+item_66,ślimak,word,animals,nouns,nouns,snail,,66
+item_67,świnka,word,animals,nouns,nouns,pig,,67
+item_68,tygrys,word,animals,nouns,nouns,tiger,,68
+item_69,wiewiórka,word,animals,nouns,nouns,squirrel,,69
+item_70,wilk,word,animals,nouns,nouns,wolf,,70
+item_71,zając,word,animals,nouns,nouns,hare,,71
+item_72,żaba,word,animals,nouns,nouns,frog,,72
+item_73,żółw,word,animals,nouns,nouns,turtle,,73
+item_74,żyrafa,word,animals,nouns,nouns,giraffe,,74
+item_75,auto/samochód ,word,vehicles,nouns,nouns,car,,75
+item_76,autobus,word,vehicles,nouns,nouns,bus,,76
+item_77,motor/motocykl,word,vehicles,nouns,nouns,motorcycle,,77
+item_78,pociąg,word,vehicles,nouns,nouns,train,,78
+item_79,rower,word,vehicles,nouns,nouns,bicycle,,79
+item_80,samolot ,word,vehicles,nouns,nouns,airplane,,80
+item_81,statek,word,vehicles,nouns,nouns,ship,,81
+item_82,traktor,word,vehicles,nouns,nouns,tractor,,82
+item_83,tramwaj,word,vehicles,nouns,nouns,tram,,83
+item_84,banan,word,food_drink,nouns,nouns,banana,,84
+item_85,budyń,word,food_drink,nouns,nouns,pudding,,85
+item_86,bułka,word,food_drink,nouns,nouns,roll,,86
+item_87,chleb,word,food_drink,nouns,nouns,bread,,87
+item_88,chrupki,word,food_drink,nouns,nouns,crisps,,88
+item_89,ciastko ,word,food_drink,nouns,nouns,cookie,,89
+item_90,cukier,word,food_drink,nouns,nouns,sugar,,90
+item_91,cukierek,word,food_drink,nouns,nouns,candy,,91
+item_92,czekolada,word,food_drink,nouns,nouns,chocolate,,92
+item_93,dżem ,word,food_drink,nouns,nouns,jam,,93
+item_94,herbata,word,food_drink,nouns,nouns,tea,,94
+item_95,jabłko,word,food_drink,nouns,nouns,apple,,95
+item_96,jajko,word,food_drink,nouns,nouns,egg,,96
+item_97,jedzenie/papu/am,word,food_drink,nouns,nouns,food,,97
+item_98,jogurt,word,food_drink,nouns,nouns,yoghurt,,98
+item_99,kaszka,word,food_drink,nouns,nouns,porridge,,99
+item_100,kawa,word,food_drink,nouns,nouns,coffe,,100
+item_101,kiełbasa,word,food_drink,nouns,nouns,sausage,,101
+item_102,makaron/kluski,word,food_drink,nouns,nouns,pasta,,102
+item_103,masło/margaryna ,word,food_drink,nouns,nouns,butter,,103
+item_104,mięso,word,food_drink,nouns,nouns,meat,,104
+item_105,mleko,word,food_drink,nouns,nouns,milk,,105
+item_106,paluszki,word,food_drink,nouns,nouns,breadsticks,,106
+item_107,picie,word,food_drink,nouns,nouns,drink (beverage),,107
+item_108,ser,word,food_drink,nouns,nouns,cheese,,108
+item_109,sok,word,food_drink,nouns,nouns,juice,,109
+item_110,szynka,word,food_drink,nouns,nouns,ham,,110
+item_111,woda,word,food_drink,nouns,nouns,water (beverage),,111
+item_112,ziemniaki/kartofle,word,food_drink,nouns,nouns,potatoes,,112
+item_113,zupa,word,food_drink,nouns,nouns,soup,,113
+item_114,bajka,word,toys,nouns,nouns,fairytale,,114
+item_115,balonik,word,toys,nouns,nouns,balloon,,115
+item_116,kartka/papier,word,toys,nouns,nouns,paper,,116
+item_117,klocki,word,toys,nouns,nouns,block,,117
+item_118,książka,word,toys,nouns,nouns,book,,118
+item_119,lalka,word,toys,nouns,nouns,doll,,119
+item_120,łopatka,word,toys,nouns,nouns,shovel,,120
+item_121,piłka,word,toys,nouns,nouns,ball,,121
+item_122,pisak/długopis ,word,toys,nouns,nouns,pen,,122
+item_123,smoczek,word,toys,nouns,nouns,pacifier,,123
+item_124,wiaderko,word,toys,nouns,nouns,pail,,124
+item_125,buty,word,clothing,nouns,nouns,shoes,,125
+item_126,czapka,word,clothing,nouns,nouns,cap,,126
+item_127,guzik,word,clothing,nouns,nouns,button,,127
+item_128,kapelusz,word,clothing,nouns,nouns,hat,,128
+item_129,kieszeń,word,clothing,nouns,nouns,pocket,,129
+item_130,koszula,word,clothing,nouns,nouns,shirt,,130
+item_131,kurtka,word,clothing,nouns,nouns,jacket,,131
+item_132,majtki,word,clothing,nouns,nouns,panties,,132
+item_133,pantofle/kapcie ,word,clothing,nouns,nouns,slippers,,133
+item_134,pieluszka/pampers,word,clothing,nouns,nouns,diaper,,134
+item_135,piżama,word,clothing,nouns,nouns,pajamas,,135
+item_136,rajstopy/rajtuzy ,word,clothing,nouns,nouns,tights,,136
+item_137,rękawiczki,word,clothing,nouns,nouns,gloves,,137
+item_138,skarpetki,word,clothing,nouns,nouns,sock,,138
+item_139,spodnie,word,clothing,nouns,nouns,pants,,139
+item_140,sukienka,word,clothing,nouns,nouns,dress (object),,140
+item_141,sweter,word,clothing,nouns,nouns,sweater,,141
+item_142,szalik,word,clothing,nouns,nouns,scarf,,142
+item_143,śliniaczek,word,clothing,nouns,nouns,bib,,143
+item_144,ubranie,word,clothing,nouns,nouns,cloth,,144
+item_145,broda,word,body_parts,nouns,nouns,beard/chin ,,145
+item_146,brzuch,word,body_parts,nouns,nouns,tummy,,146
+item_147,buzia,word,body_parts,nouns,nouns,face/mouth,,147
+item_148,czoło,word,body_parts,nouns,nouns,forehead,,148
+item_149,głowa,word,body_parts,nouns,nouns,head,,149
+item_150,język,word,body_parts,nouns,nouns,tongue,,150
+item_151,kolano,word,body_parts,nouns,nouns,knee,,151
+item_152,noga,word,body_parts,nouns,nouns,leg,,152
+item_153,nos,word,body_parts,nouns,nouns,nose,,153
+item_154,oko,word,body_parts,nouns,nouns,eye,,154
+item_155,palec,word,body_parts,nouns,nouns,finger/toe,,155
+item_156,paznokcie/pazurki,word,body_parts,nouns,nouns,nails,,156
+item_157,pępek,word,body_parts,nouns,nouns,belly button,,157
+item_158,plecy,word,body_parts,nouns,nouns,back,,158
+item_159,pupa,word,body_parts,nouns,nouns,bottom,,159
+item_160,ręka,word,body_parts,nouns,nouns,hand,,160
+item_161,szyja,word,body_parts,nouns,nouns,neck,,161
+item_162,ucho,word,body_parts,nouns,nouns,ear,,162
+item_163,włosy,word,body_parts,nouns,nouns,hair,,163
+item_164,ząb,word,body_parts,nouns,nouns,tooth,,164
+item_165,balkon,word,furniture_rooms,nouns,nouns,balcony,,165
+item_166,drzwi,word,furniture_rooms,nouns,nouns,door,,166
+item_167,dywan,word,furniture_rooms,nouns,nouns,carpet,,167
+item_168,fotel,word,furniture_rooms,nouns,nouns,armchair,,168
+item_169,krzesło,word,furniture_rooms,nouns,nouns,chair,,169
+item_170,kuchnia,word,furniture_rooms,nouns,nouns,kitchen,,170
+item_171,lodówka,word,furniture_rooms,nouns,nouns,refrigerator,,171
+item_172,łazienka,word,furniture_rooms,nouns,nouns,bathroom,,172
+item_173,łóżko,word,furniture_rooms,nouns,nouns,bed,,173
+item_174,odkurzacz,word,furniture_rooms,nouns,nouns,vacuum,,174
+item_175,okno,word,furniture_rooms,nouns,nouns,window,,175
+item_176,podłoga,word,furniture_rooms,nouns,nouns,floor,,176
+item_177,pokój,word,furniture_rooms,nouns,nouns,room,,177
+item_178,półka/regał,word,furniture_rooms,nouns,nouns,shelf,,178
+item_179,pralka,word,furniture_rooms,nouns,nouns,washing machine,,179
+item_180,schody,word,furniture_rooms,nouns,nouns,stairs,,180
+item_181,stół,word,furniture_rooms,nouns,nouns,table,,181
+item_182,szafa,word,furniture_rooms,nouns,nouns,wardrobe,,182
+item_183,szuflada,word,furniture_rooms,nouns,nouns,drawer,,183
+item_184,ściana,word,furniture_rooms,nouns,nouns,wall,,184
+item_185,telewizor,word,furniture_rooms,nouns,nouns,tv,,185
+item_186,ubikacja/ustęp ,word,furniture_rooms,nouns,nouns,toilet,,186
+item_187,wanna,word,furniture_rooms,nouns,nouns,bathtub,,187
+item_188,wózek,word,furniture_rooms,nouns,nouns,stroller,,188
+item_189,butelka,word,household,nouns,nouns,bottle,,189
+item_190,garnek,word,household,nouns,nouns,pot,,190
+item_191,gazeta,word,household,nouns,nouns,newspaper,,191
+item_192,grzebień,word,household,nouns,nouns,comb (object),,192
+item_193,klucz,word,household,nouns,nouns,keys,,193
+item_194,koc/kołdra,word,household,nouns,nouns,blanket,,194
+item_195,koszyk,word,household,nouns,nouns,basket,,195
+item_196,kubek,word,household,nouns,nouns,cup,,196
+item_197,lampa,word,household,nouns,nouns,lamp,,197
+item_198,lekarstwa/tabletki ,word,household,nouns,nouns,medicine,,198
+item_199,lustro,word,household,nouns,nouns,mirror,,199
+item_200,łyżka,word,household,nouns,nouns,spoon,,200
+item_201,mydło,word,household,nouns,nouns,soap,,201
+item_202,nocnik,word,household,nouns,nouns,potty,,202
+item_203,nożyczki,word,household,nouns,nouns,scissors,,203
+item_204,nóż,word,household,nouns,nouns,knife,,204
+item_205,okulary,word,household,nouns,nouns,glasses,,205
+item_206,pieniądze,word,household,nouns,nouns,money,,206
+item_207,poduszka,word,household,nouns,nouns,pillow,,207
+item_208,pudełko,word,household,nouns,nouns,box,,208
+item_209,radio,word,household,nouns,nouns,radio,,209
+item_210,ręcznik,word,household,nouns,nouns,towel,,210
+item_211,szczoteczka do zębów ,word,household,nouns,nouns,toothbrush,,211
+item_212,szklanka,word,household,nouns,nouns,glass,,212
+item_213,szmata/ścierka ,word,household,nouns,nouns,dishrag,,213
+item_214,śmieci,word,household,nouns,nouns,trash,,214
+item_215,talerz,word,household,nouns,nouns,plate,,215
+item_216,telefon/komórka ,word,household,nouns,nouns,telephone,,216
+item_217,torebka,word,household,nouns,nouns,bag,,217
+item_218,widelec,word,household,nouns,nouns,fork,,218
+item_219,zdjęcie/fotografia ,word,household,nouns,nouns,photo,,219
+item_220,zegarek,word,household,nouns,nouns,clock/watch,,220
+item_221,żelazko ,word,household,nouns,nouns,iron,,221
+item_222,deszcz,word,outside,nouns,nouns,rain,,222
+item_223,dom,word,outside,nouns,nouns,home/house,,223
+item_224,drzewo,word,outside,nouns,nouns,tree,,224
+item_225,kamień,word,outside,nouns,nouns,rock (object),,225
+item_226,kijek/patyk ,word,outside,nouns,nouns,stick,,226
+item_227,kościół,word,outside,nouns,nouns,church,,227
+item_228,księżyc,word,outside,nouns,nouns,moon,,228
+item_229,kwiatek,word,outside,nouns,nouns,flower,,229
+item_230,listek,word,outside,nouns,nouns,leaf,,230
+item_231,na dwór/na pole ,word,outside,nouns,nouns,outside,,231
+item_232,niebo,word,outside,nouns,nouns,sky,,232
+item_233,piasek/piaskownica,word,outside,nouns,nouns,sand/sandpit,,233
+item_234,praca,word,outside,nouns,nouns,work (place),,234
+item_235,sanki,word,outside,nouns,nouns,sled,,235
+item_236,sklep,word,outside,nouns,nouns,store,,236
+item_237,słońce,word,outside,nouns,nouns,sun,,237
+item_238,spacer,word,outside,nouns,nouns,walk,,238
+item_239,śnieg,word,outside,nouns,nouns,snow,,239
+item_240,trawa,word,outside,nouns,nouns,grass,,240
+item_241,ulica,word,outside,nouns,nouns,street,,241
+item_242,woda,word,outside,nouns,nouns,water (not beverage),,242
+item_243,ziemia,word,outside,nouns,nouns,earth,,243
+item_244,babcia,word,people,other,other,grandma,,244
+item_245,chłopiec,word,people,other,other,boy,,245
+item_246,ciocia,word,people,other,other,aunt,,246
+item_247,doktor/lekarz ,word,people,other,other,doctor,,247
+item_248,dziadek/dziadzio ,word,people,other,other,grandpa,,248
+item_249,dzidzi/dzidziuś ,word,people,other,other,baby,,249
+item_250,dzieci,word,people,other,other,children,,250
+item_251,dziewczynka,word,people,other,other,girl,,251
+item_252,imię zwierzątka,word,people,other,other,pet’s name ,,252
+item_253,ludzie,word,people,other,other,people,,253
+item_254,mama/mamusia ,word,people,other,other,mommy,,254
+item_255,pan,word,people,other,other,man,,255
+item_256,pani,word,people,other,other,lady,,256
+item_257,tata/tatuś,word,people,other,other,daddy,,257
+item_258,własne imię dziecka ,word,people,other,other,child’s own name,,258
+item_259,wujek,word,people,other,other,uncle,,259
+item_260,cześć,word,games_routines,other,other,hello/hi,,260
+item_261,dzień dobry ,word,games_routines,other,other,good morning,,261
+item_262,do widzenia ,word,games_routines,other,other,goodbye,,262
+item_263,dobranoc,word,games_routines,other,other,good night,,263
+item_264,dziękuję,word,games_routines,other,other,thank you ,,264
+item_265,proszę,word,games_routines,other,other,please,,265
+item_266,przepraszam,word,games_routines,other,other,sorry,,266
+item_267,halo,word,games_routines,other,other,halo,,267
+item_268,"pa, pa ",word,games_routines,other,other,bye,,268
+item_269,tak,word,games_routines,other,other,yes,,269
+item_270,nie,word,games_routines,other,other,no,,270
+item_271,siusiu/siku/sisi,word,games_routines,other,other,pee,,271
+item_272,kupka,word,games_routines,other,other,poo,,272
+item_273,kosi-kosi łapci ,word,games_routines,other,other,,,273
+item_274,idzie rak nieborak ,word,games_routines,other,other,,,274
+item_275,sroczka kaszkę warzyła,word,games_routines,other,other,,,275
+item_276,be,word,descriptive_words,predicates,adjectives,yucky,,276
+item_277,biały,word,descriptive_words,predicates,adjectives,white,,277
+item_278,brudny,word,descriptive_words,predicates,adjectives,dirty,,278
+item_279,brzydki/brzydko,word,descriptive_words,predicates,adjectives/adverbs,ugly,,279
+item_280,cacy/cacany ,word,descriptive_words,predicates,adjectives,,,280
+item_281,chory,word,descriptive_words,predicates,adjectives,sick,,281
+item_282,cicho,word,descriptive_words,predicates,adverbs,quietly,,282
+item_283,ciemno,word,descriptive_words,predicates,adverbs,dark,,283
+item_284,ciepły/ciepło ,word,descriptive_words,predicates,adjectives/adverbs,warm,,284
+item_285,ciężki,word,descriptive_words,predicates,adjectives,hard,,285
+item_286,czarny,word,descriptive_words,predicates,adjectives,black,,286
+item_287,czysty,word,descriptive_words,predicates,adjectives,clean (description) ,,287
+item_288,dobry/dobrze,word,descriptive_words,predicates,adjectives/adverbs,good/well,,288
+item_289,duży,word,descriptive_words,predicates,adjectives,big,,289
+item_290,głodny,word,descriptive_words,predicates,adjectives,hungry,,290
+item_291,gorący/gorąco ,word,descriptive_words,predicates,adjectives/adverbs,hot,,291
+item_292,kochany,word,descriptive_words,predicates,adjectives,dear,,292
+item_293,ładny/ładnie ,word,descriptive_words,predicates,adjectives/adverbs,pretty,,293
+item_294,mały,word,descriptive_words,predicates,adjectives,little (description) ,,294
+item_295,mokry/mokro,word,descriptive_words,predicates,adjectives/adverbs,wet (description),,295
+item_296,(nie)grzeczny,word,descriptive_words,predicates,adjectives,naughty/polite,,296
+item_297,otwarty,word,descriptive_words,predicates,adjectives,open,,297
+item_298,prędko/szybko ,word,descriptive_words,predicates,adjectives/adverbs,fast,,298
+item_299,umyty,word,descriptive_words,predicates,adjectives,washed,,299
+item_300,zamknięty,word,descriptive_words,predicates,adjectives,closed,,300
+item_301,zepsuty,word,descriptive_words,predicates,adjectives,broken,,301
+item_302,zimny/zimno,word,descriptive_words,predicates,adjectives/adverbs,cold,,302
+item_303,zmęczony,word,descriptive_words,predicates,adjectives,tired,,303
+item_304,bać się ,word,action_words,predicates,verbs,be afraid of ,,304
+item_305,bawić się ,word,action_words,predicates,verbs,play,,305
+item_306,bić,word,action_words,predicates,verbs,beat,,306
+item_307,biec/biegać,word,action_words,predicates,verbs,run,,307
+item_308,boleć,word,action_words,predicates,verbs,hurt,,308
+item_309,budować,word,action_words,predicates,verbs,build,,309
+item_310,być (jest),word,action_words,predicates,verbs,be,,310
+item_311,chcieć,word,action_words,predicates,verbs,want,,311
+item_312,chodzić (chodź) ,word,action_words,predicates,verbs,walk,,312
+item_313,czesać,word,action_words,predicates,verbs,comb (action),,313
+item_314,czytać,word,action_words,predicates,verbs,read,,314
+item_315,dać,word,action_words,predicates,verbs,give,,315
+item_316,dmuchać,word,action_words,predicates,verbs,blow,,316
+item_317,dzwonić,word,action_words,predicates,verbs,call,,317
+item_318,gonić,word,action_words,predicates,verbs,chase,,318
+item_319,gotować,word,action_words,predicates,verbs,cook,,319
+item_320,grać,word,action_words,predicates,verbs,play,,320
+item_321,huśtać/bujać się ,word,action_words,predicates,verbs,swing,,321
+item_322,iść/pójść ,word,action_words,predicates,verbs,go,,322
+item_323,jechać/jeździć ,word,action_words,predicates,verbs,ride,,323
+item_324,jeść,word,action_words,predicates,verbs,eat,,324
+item_325,kąpać się,word,action_words,predicates,verbs,bathe,,325
+item_326,kochać,word,action_words,predicates,verbs,love,,326
+item_327,kopać,word,action_words,predicates,verbs,kick,,327
+item_328,kupić,word,action_words,predicates,verbs,buy,,328
+item_329,leżeć,word,action_words,predicates,verbs,lie,,329
+item_330,lubić,word,action_words,predicates,verbs,like,,330
+item_331,mieć (ma),word,action_words,predicates,verbs,have,,331
+item_332,myć (się),word,action_words,predicates,verbs,clean (action),,332
+item_333,nieść/nosić,word,action_words,predicates,verbs,carry,,333
+item_334,obudzić (się),word,action_words,predicates,verbs,wake up ,,334
+item_335,oglądać/obejrzeć ,word,action_words,predicates,verbs,watch,,335
+item_336,otworzyć,word,action_words,predicates,verbs,open (action),,336
+item_337,palić (się),word,action_words,predicates,verbs,burn,,337
+item_338,patrzeć (patrz),word,action_words,predicates,verbs,look,,338
+item_339,pić,word,action_words,predicates,verbs,drink (action),,339
+item_340,pisać,word,action_words,predicates,verbs,write,,340
+item_341,płakać,word,action_words,predicates,verbs,cry,,341
+item_342,prać,word,action_words,predicates,verbs,wash,,342
+item_343,przyjść,word,action_words,predicates,verbs,come,,343
+item_344,robić,word,action_words,predicates,verbs,do,,344
+item_345,rysować,word,action_words,predicates,verbs,draw,,345
+item_346,rzucać,word,action_words,predicates,verbs,throw,,346
+item_347,siedzieć,word,action_words,predicates,verbs,sit,,347
+item_348,skakać,word,action_words,predicates,verbs,jump,,348
+item_349,spać,word,action_words,predicates,verbs,sleep,,349
+item_350,stać,word,action_words,predicates,verbs,stand,,350
+item_351,stukać/pukać,word,action_words,predicates,verbs,knock,,351
+item_352,szukać,word,action_words,predicates,verbs,look for ,,352
+item_353,śpiewać,word,action_words,predicates,verbs,sing,,353
+item_354,tańczyć,word,action_words,predicates,verbs,dance,,354
+item_355,trzymać,word,action_words,predicates,verbs,hold,,355
+item_356,ubrać (się),word,action_words,predicates,verbs,get dressed ,,356
+item_357,uciekać,word,action_words,predicates,verbs,run away ,,357
+item_358,upaść/spaść,word,action_words,predicates,verbs,fall,,358
+item_359,usiąść/siadać ,word,action_words,predicates,verbs,sit down ,,359
+item_360,wstawać,word,action_words,predicates,verbs,stand up ,,360
+item_361,zamknąć,word,action_words,predicates,verbs,close,,361
+item_362,zaświecić/zapalić ,word,action_words,predicates,verbs,light (action),,362
+item_363,zdjąć/ściągnąć ,word,action_words,predicates,verbs,take off ,,363
+item_364,zepsuć,word,action_words,predicates,verbs,break,,364
+item_365,nie ma ,word,action_words,predicates,verbs,,,365
+item_366,(nie) wolno ,word,action_words,predicates,verbs,,,366
+item_367,tu,word,locations,function_words,function_words,there,,367
+item_368,tam,word,locations,function_words,function_words,,,368
+item_369,daleko,word,locations,function_words,function_words,far,,369
+item_370,wysoko,word,locations,function_words,function_words,high,,370
+item_371,na górę/na górze ,word,locations,function_words,function_words,up,,371
+item_372,na dół/na dole ,word,locations,function_words,function_words,down,,372
+item_373,już/już nie ,word,time_words,other,other,,,373
+item_374,jeszcze/jeszcze nie ,word,time_words,other,other,,,374
+item_375,teraz,word,time_words,other,other,now,,375
+item_376,zaraz,word,time_words,other,other,soon,,376
+item_377,potem/później ,word,time_words,other,other,later,,377
+item_378,noc/w nocy ,word,time_words,other,other,night,,378
+item_379,dużo,word,quantifiers,function_words,function_words,a lot,,379
+item_380,mało,word,quantifiers,function_words,function_words,A little ,,380
+item_381,trochę/troszkę ,word,quantifiers,function_words,function_words,some,,381
+item_382,jeszcze,word,quantifiers,function_words,function_words,yet,,382
+item_383,wszystko/wszyscy ,word,quantifiers,function_words,function_words,all,,383
+item_384,inny,word,quantifiers,function_words,function_words,different/another/other,,384
+item_385,drugi,word,quantifiers,function_words,function_words,second,,385
+item_386,sam/sama,word,quantifiers,function_words,function_words,alone,,386
+item_387,dosyć/dość ,word,quantifiers,function_words,function_words,enough,,387
+item_388,"ja (mi, mnie) ",word,pronouns,function_words,function_words,I,,388
+item_389,"ty (ci, cię) ",word,pronouns,function_words,function_words,you,,389
+item_390,"my (nam, nas) ",word,pronouns,function_words,function_words,we,,390
+item_391,mój,word,pronouns,function_words,function_words,mine,,391
+item_392,twój,word,pronouns,function_words,function_words,your,,392
+item_393,nasz,word,pronouns,function_words,function_words,our,,393
+item_394,to,word,pronouns,function_words,function_words,it,,394
+item_395,coś,word,pronouns,function_words,function_words,something,,395
+item_396,nic,word,pronouns,function_words,function_words,none,,396
+item_397,ten,word,pronouns,function_words,function_words,this,,397
+item_398,tamten,word,pronouns,function_words,function_words,that,,398
+item_399,taki,word,pronouns,function_words,function_words,such,,399
+item_400,co to?/co to jest? ,word,question_words,function_words,function_words,what is this?,,400
+item_401,co?,word,question_words,function_words,function_words,what,,401
+item_402,co robi? ,word,question_words,function_words,function_words,,,402
+item_403,kto?,word,question_words,function_words,function_words,who,,403
+item_404,gdzie?,word,question_words,function_words,function_words,where (question),,404
+item_405,jak?,word,question_words,function_words,function_words,how,,405
+item_406,dlaczego?/czemu? ,word,question_words,function_words,function_words,why,,406
+item_407,jaki?,word,question_words,function_words,function_words,,,407
+item_408,Czy dziecko samorzutnie powtarza zasłyszane wypowiedzi bądź ich fragmenty? ,starting_to_talk,,,,,,408
+item_409,"Czy poproszone o powtórzenie czegoś, chętnie powtarza? ",starting_to_talk,,,,,,409
+item_410,"Niektóre dzieci chętnie wymieniają nazwy przedmiotów, tak jakby chciały się pochwalić, że je znają. Czy Państwa dziecko chętnie nazywa przedmioty?",starting_to_talk,,,,,,410
+item_411,"Czy dziecko zaczęło już łączyć wyrazy? Czy tworzy takie zdania jak np. „dzidzi am”, „da mleko”, „tu kotek”, ‚mama śpi”?",combine,,,,,,411
+item_412,"Wyciąga rękę, aby pokazać trzymany przedmiot.",gestures_first,,,,,,412
+item_413,Daje komuś trzymany przedmiot. ,gestures_first,,,,,,413
+item_414,Pokazuje palcem wskazującym ciekawy przedmiot lub zdarzenie. ,gestures_first,,,,,,414
+item_415,"Robi „pa, pa!”, kiedy ktoś odchodzi. ",gestures_first,,,,,,415
+item_416,"Podnosi rączki w górę na znak, żeby je wziąć na ręce. ",gestures_first,,,,,,416
+item_417,Kręci głową przecząco. ,gestures_first,,,,,,417
+item_418,Kiwa głową potakująco. ,gestures_first,,,,,,418
+item_419,Kładzie palec na ustach („cicho!”). ,gestures_first,,,,,,419
+item_420,"Pokazuje, że czegoś chce, wyciągając rączkę w kierunku przedmiotu, otwierając i zamykając dłoń. ",gestures_first,,,,,,420
+item_421,Posyła całusy na odległość. ,gestures_first,,,,,,421
+item_422,"Mlaszcze („mniam mniam”), żeby pokazać, że coś mu smakuje. ",gestures_first,,,,,,422
+item_423,"Wzrusza ramionami lub rozkłada ręce, żeby pokazać, że czegoś nie ma. ",gestures_first,,,,,,423
+item_424,"Bawi się w „nie ma, nie ma - a jest!” (Albo „a kuku!”)",gestures_games,,,,,,424
+item_425,Bawi się w „sroczka kaszkę warzyła”. ,gestures_games,,,,,,425
+item_426,Pokazuje „jaki jestem duży!”/„jaka jestem duża!”. ,gestures_games,,,,,,426
+item_427,Bawi się w berka (tj. goni lub ucieka). ,gestures_games,,,,,,427
+item_428,Śpiewa. ,gestures_games,,,,,,428
+item_429,Tańczy. ,gestures_games,,,,,,429
+item_430,Je łyżką lub widelcem. ,gestures_objects,,,,,,430
+item_431,Pije płyny z kubeczka. ,gestures_objects,,,,,,431
+item_432,Czesze się szczotką lub grzebieniem. ,gestures_objects,,,,,,432
+item_433,Myje zęby. ,gestures_objects,,,,,,433
+item_434,Myje i wyciera twarz lub ręce. ,gestures_objects,,,,,,434
+item_435,Wkłada czapkę. ,gestures_objects,,,,,,435
+item_436,Wkłada buta lub skarpetkę. ,gestures_objects,,,,,,436
+item_437,"Zakłada korale, bransoletkę lub zegarek. ",gestures_objects,,,,,,437
+item_438,"Przykłada głowę do ręki i mruży oczy, żeby pokazać, że śpi. ",gestures_objects,,,,,,438
+item_439,"Pokazuje, że coś jest gorące, dmuchając lub odsuwając palec. ",gestures_objects,,,,,,439
+item_440,Trzyma samolocik i lata nim. ,gestures_objects,,,,,,440
+item_441,Przykłada do ucha słuchawkę telefonu. ,gestures_objects,,,,,,441
+item_442,Wącha kwiatki. ,gestures_objects,,,,,,442
+item_443,Jeździ autkiem. ,gestures_objects,,,,,,443
+item_444,Rzuca piłką. ,gestures_objects,,,,,,444
+item_445,Przelewa płyny na niby. ,gestures_objects,,,,,,445
+item_446,Na niby miesza łyżeczką płyn w naczyniu. ,gestures_objects,,,,,,446
+item_447,Kładzenie do łóżka. ,gestures_parent,,,,,,447
+item_448,Przykrywanie kocykiem. ,gestures_parent,,,,,,448
+item_449,Karmienie z butelki. ,gestures_parent,,,,,,449
+item_450,Karmienie łyżką. ,gestures_parent,,,,,,450
+item_451,Czesanie. ,gestures_parent,,,,,,451
+item_452,Noszenie na rękach. ,gestures_parent,,,,,,452
+item_453,Wożenie w wózku. ,gestures_parent,,,,,,453
+item_454,"Huśtanie, kołysanie, usypianie. ",gestures_parent,,,,,,454
+item_455,"Całowanie, ściskanie. ",gestures_parent,,,,,,455
+item_456,Ubieranie (próba wkładania czapki czy butów lub skarpetek). ,gestures_parent,,,,,,456
+item_457,Mycie lub wycieranie. ,gestures_parent,,,,,,457
+item_458,Przewijanie lub wysadzanie. ,gestures_parent,,,,,,458
+item_459,Mówienie do lalki/misia. ,gestures_parent,,,,,,459
+item_460,Zamiata lub zmywa podłogę. ,gestures_adult,,,,,,460
+item_461,Wkłada klucz do zamka. ,gestures_adult,,,,,,461
+item_462,Stuka młotkiem. ,gestures_adult,,,,,,462
+item_463,Zapala i gasi światło. ,gestures_adult,,,,,,463
+item_464,"„Czyta” (otwiera książkę, przewraca kartki). ",gestures_adult,,,,,,464
+item_465,Sprząta odkurzaczem. ,gestures_adult,,,,,,465
+item_466,Podlewa kwiatki. ,gestures_adult,,,,,,466
+item_467,"Gra na instrumentach (trąbka, cymbałki, fortepian itp.). ",gestures_adult,,,,,,467
+item_468,Kręci kierownicą. ,gestures_adult,,,,,,468
+item_469,„Myje” naczynia. ,gestures_adult,,,,,,469
+item_470,Ściera kurz lub zmywa plamy. ,gestures_adult,,,,,,470
+item_471,"„Pisze” ołówkiem, długopisem lub pisakiem. ",gestures_adult,,,,,,471
+item_472,Kopie łopatką. ,gestures_adult,,,,,,472
+item_473,Zakłada okulary. ,gestures_adult,,,,,,473
+item_474,Używa pilota lub przycisku do włączenia telewizora lub innych urządzeń. ,gestures_adult,,,,,,474

@@ -1,64 +1,64 @@
-text_type;text;item_type;category
-cdiNameSufix;Słowa i Gesty;;
-longText;Kwestionariusz ten (M. Smoczyńska, 2015, Warszawa: Instytut Badań Edukacyjnych) jest polską adaptacją amerykańskiego inwentarza do badania rozwoju mowy najmłodszych dzieci („MacArthur-Bates Communicative Development Inventory”). Metoda ta opiera się na wiedzy rodziców (lub innych opiekunów) na temat rozwoju językowego dzieci i dotyczy rozumienia mowy, mówienia oraz porozumiewania się przy pomocy gestów. Znaczną część inwentarza stanowią pytania o najwcześniejsze słownictwo dzieci. Rodzice (lub inni opiekunowie) mają zaznaczyć słowa, które dziecko rozumie, a także te z nich, których używa ono w mowie. Nie należy dziecka przepytywać ani prosić o powtarzanie poszczególnych wyrazów, ani też „uczyć słówek”. Wystarczy, gdy rodzice (lub inni opiekunowie) odpowiedzą na pytania według własnej wiedzy o dziecku.;start;
-understandingBtn;Rozumienie;understanding;
-header;Rozumienie;understanding;
-catHeader;Pierwsze przejawy rozumienia;understanding;first_signs
-longText;Dzieci, zanim zaczną mówić, rozumieją wiele słów i wyrażeń. Można to stwierdzić obserwując ich reakcje na znane słowa lub zwroty. Czy Państwa dziecko wykazuje poniższe reakcje?;understanding;first_signs
-choiceNames;Tak, Nie;understanding;first_signs
-catHeader;Rozumienie wypowiedzi dorosłych;understanding;phrases
-instr;Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać w polu na uwagi.;understanding;phrases
-wordBtn;Wyrazy;word;
-header;Lista wyrazów;word;
-longText;"Na kolejnych stronach przedstawiamy listę typowych wyrazów znanych małym dzieciom. Przy tych wyrazach, które Państwa dziecko rozumie, ale samo ich jeszcze nie mówi, proszę zaznaczyć R (= rozumie). Przy tych wyrazach, które dziecko nie tylko rozumie, ale i samo mówi, proszę zaznaczyć M (= rozumie i mówi). Jeżeli dziecko używa nieco innej formy, np. mówi „piesek”, a nie „pies”, proszę mimo to postawić znaczek przy słowie „pies”. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. „lybka” zamiast „rybka” lub „wiójka” zamiast „wiewiórka”). Proszę takie słowo także zaznaczyć, można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa, w polu na uwagi. Czasami dzieci wymyślają własne wyrazy, np. „dzi” zamiast „piłka”; także taką formę należy potraktować jako wyraz i zaznaczyć słowo „piłka”, wpisując dodatkowo „dzi” w polu na uwagi. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać w polu na uwagi właściwe określenie. Wszelkie wątpliwości można również wpisywać w polu na uwagi.";word;firstPage
-warning;" UWAGA: Kwestionariusz przeznaczony jest dla dzieci w różnym wieku. Proszę się nie martwić, jeśli Państwa dziecko jeszcze nie używa wszystkich słów i gestów, o które pytamy!
-  ";word;firstPage
-instr;R = tylko rozumie M = rozumie i mówi ;word;allInput
-choiceNames;R,M ;word;allInput
-catHeader;Odgłosy i wykrzykniki;word;sounds
-catHeader;Zwierzęta – prawdziwe lub zabawkowe;word;animals
-catHeader;Pojazdy - prawdziwe lub zabawkowe ;word;vehicles
-catHeader;Pokarmy i napoje ;word;food_drink
-catHeader;Zabawki;word;toys
-catHeader;Ubrania ;word;clothing
-catHeader;Części ciała ;word;body_parts
-catHeader;W domu: pomieszczenia, sprzęty, meble;word;furniture_rooms
-catHeader;Przedmioty domowego użytku ;word;household
-catHeader;Poza domem ;word;outside
-catHeader;Osoby ;word;people
-note;item_258%Proszę wpisać, jak dziecko mówi na siebie, np. „Ika”, „Maciuś”, „Dodo”, „dzidzi”. ;word;people
-catHeader;Formuły, zabawy, rutynowe czynności ;word;games_routines
-catHeader;Przymiotniki i przysłówki ;word;descriptive_words
-catHeader;Czasowniki ;word;action_words
-catHeader;Określenia miejsca;word;locations
-catHeader;Określenia czasu ;word;time_words
-note;item_373%w takich zdaniach np. „Już zrobiłem!” albo „Tatuś już nie śpi”.;word;time_words
-note;item_374%w takich zdaniach jak np. „Jeszcze pisać!”, „Jeszcze raz mi to zrób!” albo „Jeszcze nie wypiłam”. ;word;time_words
-catHeader;Określenia miary ;word;quantifiers
-note;item_382%w takich zdaniach jak np. „Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”. ;word;quantifiers
-note;item_383%w takich zdaniach jak np. „Ania wszystko wypiła.” albo „Wszystko zepsute.” albo „Wszyscy śpią”. ;word;quantifiers
-catHeader;Zaimki;word;pronouns
-catHeader;Pytania;word;question_words
-help;Przed zatwierdzeniem proszę sprawdzić, czy nie pominęli Państwo jakiejś strony? Czy na pewno zaznaczone są wszystkie wyrazy, które Państwa dziecko rozumie / mówi?;word;question_words
-starting_to_talkBtn;Naśladownictwo;starting_to_talk;
-header;Naśladownictwo;starting_to_talk;
-choiceNames;Tak, Nie;starting_to_talk;
-longText;To pytanie odnosi się do dzieci, które już znają dość dużo wyrazów. Jeśli Państwa dziecko jeszcze nie łączy wyrazów, proszę zaznaczyć „Jeszcze nie”.;combine;
-help; Po wybraniu odpowiedzi „Czasem” lub „Często” dostępna stanie się zakładka „Wypowiedzi”.;combine;
-sentences10Btn;Wypowiedzi;sentences10;
-header;Przykłady wypowiedzi;sentences10;
-instr;Jeśli Państwa dziecko łączy wyrazy „czasem” lub „często”, proszę podać przykłady rzeczywistych wypowiedzi dziecka:;sentences10;
-tooltip;Część „Wypowiedzi” uaktywnia się w zależności od odpowiedzi w części „Łączenie wyrazów”.;sentences10;
-gesturesBtn;Gesty;gestures;
-longText;Kiedy dzieci uczą się porozumiewać z innymi ludźmi, często posługują się gestami, aby wyrazić swoje pragnienia. Przy każdym z gestów na następnych stronach proszę postawić znaczek przy tym określeniu, które pasuje do tego, co Państwa dziecko aktualnie robi. ;gestures;firstPage
-header;Czynności i gesty;gestures;
-catHeader;Pierwsze gesty komunikatywne;gestures;gestures_first
-instr;Czy Państwa dziecko używa wymienionych niżej gestów? ;gestures;gestures_first
-catHeader;Zabawy i rytuały;gestures;gestures_games
-instr;Czy Państwa dziecko wykonuje wymienione niżej czynności?;gestures;gestures_games
-catHeader;Działania na przedmiotach;gestures;gestures_objects
-instr;Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;gestures;gestures_objects
-catHeader;Zabawa lalką lub misiem: czynności opiekuńcze;gestures;gestures_parent
-instr;Poniżej wypisano czynności opiekuńcze, jakie dzieci wykonują bawiąc się lalkami lub misiami. Proszę zaznaczyć te z nich, które zaobserwowali Państwo u swego dziecka.;gestures;gestures_parent
-catHeader;Naśladowanie innych czynności dorosłych (na przedmiotach lub zabawkach);gestures;gestures_adult
-instr;Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;gestures;gestures_adult
+text_type,text,item_type,category
+cdiNameSufix,Słowa i Gesty,,
+longText,"Kwestionariusz ten (M. Smoczyńska, 2015, Warszawa: Instytut Badań Edukacyjnych) jest polską adaptacją amerykańskiego inwentarza do badania rozwoju mowy najmłodszych dzieci („MacArthur-Bates Communicative Development Inventory”). Metoda ta opiera się na wiedzy rodziców (lub innych opiekunów) na temat rozwoju językowego dzieci i dotyczy rozumienia mowy, mówienia oraz porozumiewania się przy pomocy gestów. Znaczną część inwentarza stanowią pytania o najwcześniejsze słownictwo dzieci. Rodzice (lub inni opiekunowie) mają zaznaczyć słowa, które dziecko rozumie, a także te z nich, których używa ono w mowie. Nie należy dziecka przepytywać ani prosić o powtarzanie poszczególnych wyrazów, ani też „uczyć słówek”. Wystarczy, gdy rodzice (lub inni opiekunowie) odpowiedzą na pytania według własnej wiedzy o dziecku.",start,
+menuButton,Rozumienie,understanding,
+header,Rozumienie,understanding,
+catHeader,Pierwsze przejawy rozumienia,understanding,first_signs
+longText,"Dzieci, zanim zaczną mówić, rozumieją wiele słów i wyrażeń. Można to stwierdzić obserwując ich reakcje na znane słowa lub zwroty. Czy Państwa dziecko wykazuje poniższe reakcje?",understanding,first_signs
+choiceNames,"Tak, Nie",understanding,first_signs
+catHeader,Rozumienie wypowiedzi dorosłych,understanding,phrases
+instr,"Proszę zaznaczyć te wypowiedzi, które – Państwa zdaniem – dziecko rozumie. Jeśli na liście czegoś brakuje, proszę dopisać w polu na uwagi.",understanding,phrases
+menuButton,Wyrazy,word,
+header,Lista wyrazów,word,
+longText,"Na kolejnych stronach przedstawiamy listę typowych wyrazów znanych małym dzieciom. Przy tych wyrazach, które Państwa dziecko rozumie, ale samo ich jeszcze nie mówi, proszę zaznaczyć R (= rozumie). Przy tych wyrazach, które dziecko nie tylko rozumie, ale i samo mówi, proszę zaznaczyć M (= rozumie i mówi). Jeżeli dziecko używa nieco innej formy, np. mówi „piesek”, a nie „pies”, proszę mimo to postawić znaczek przy słowie „pies”. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. „lybka” zamiast „rybka” lub „wiójka” zamiast „wiewiórka”). Proszę takie słowo także zaznaczyć, można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa, w polu na uwagi. Czasami dzieci wymyślają własne wyrazy, np. „dzi” zamiast „piłka”; także taką formę należy potraktować jako wyraz i zaznaczyć słowo „piłka”, wpisując dodatkowo „dzi” w polu na uwagi. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać w polu na uwagi właściwe określenie. Wszelkie wątpliwości można również wpisywać w polu na uwagi.",word,firstPage
+warning," UWAGA: Kwestionariusz przeznaczony jest dla dzieci w różnym wieku. Proszę się nie martwić, jeśli Państwa dziecko jeszcze nie używa wszystkich słów i gestów, o które pytamy!
+  ",word,firstPage
+instr,R = tylko rozumie M = rozumie i mówi ,word,allInput
+choiceNames,"R,M ",word,allInput
+catHeader,Odgłosy i wykrzykniki,word,sounds
+catHeader,Zwierzęta – prawdziwe lub zabawkowe,word,animals
+catHeader,Pojazdy - prawdziwe lub zabawkowe ,word,vehicles
+catHeader,Pokarmy i napoje ,word,food_drink
+catHeader,Zabawki,word,toys
+catHeader,Ubrania ,word,clothing
+catHeader,Części ciała ,word,body_parts
+catHeader,"W domu: pomieszczenia, sprzęty, meble",word,furniture_rooms
+catHeader,Przedmioty domowego użytku ,word,household
+catHeader,Poza domem ,word,outside
+catHeader,Osoby ,word,people
+note,"item_258%Proszę wpisać, jak dziecko mówi na siebie, np. „Ika”, „Maciuś”, „Dodo”, „dzidzi”. ",word,people
+catHeader,"Formuły, zabawy, rutynowe czynności ",word,games_routines
+catHeader,Przymiotniki i przysłówki ,word,descriptive_words
+catHeader,Czasowniki ,word,action_words
+catHeader,Określenia miejsca,word,locations
+catHeader,Określenia czasu ,word,time_words
+note,item_373%w takich zdaniach np. „Już zrobiłem!” albo „Tatuś już nie śpi”.,word,time_words
+note,"item_374%w takich zdaniach jak np. „Jeszcze pisać!”, „Jeszcze raz mi to zrób!” albo „Jeszcze nie wypiłam”. ",word,time_words
+catHeader,Określenia miary ,word,quantifiers
+note,"item_382%w takich zdaniach jak np. „Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”. ",word,quantifiers
+note,item_383%w takich zdaniach jak np. „Ania wszystko wypiła.” albo „Wszystko zepsute.” albo „Wszyscy śpią”. ,word,quantifiers
+catHeader,Zaimki,word,pronouns
+catHeader,Pytania,word,question_words
+help,"Przed zatwierdzeniem proszę sprawdzić, czy nie pominęli Państwo jakiejś strony? Czy na pewno zaznaczone są wszystkie wyrazy, które Państwa dziecko rozumie / mówi?",word,question_words
+menuButton,Naśladownictwo,starting_to_talk,
+header,Naśladownictwo,starting_to_talk,
+choiceNames,"Tak, Nie",starting_to_talk,
+longText,"To pytanie odnosi się do dzieci, które już znają dość dużo wyrazów. Jeśli Państwa dziecko jeszcze nie łączy wyrazów, proszę zaznaczyć „Jeszcze nie”.",combine,
+help, Po wybraniu odpowiedzi „Czasem” lub „Często” dostępna stanie się zakładka „Wypowiedzi”.,combine,
+menuButton,Wypowiedzi,sentences10,
+header,Przykłady wypowiedzi,sentences10,
+instr,"Jeśli Państwa dziecko łączy wyrazy „czasem” lub „często”, proszę podać przykłady rzeczywistych wypowiedzi dziecka:",sentences10,
+tooltip,Część „Wypowiedzi” uaktywnia się w zależności od odpowiedzi w części „Łączenie wyrazów”.,sentences10,
+menuButton,Gesty,gestures,
+longText,"Kiedy dzieci uczą się porozumiewać z innymi ludźmi, często posługują się gestami, aby wyrazić swoje pragnienia. Przy każdym z gestów na następnych stronach proszę postawić znaczek przy tym określeniu, które pasuje do tego, co Państwa dziecko aktualnie robi. ",gestures,firstPage
+header,Czynności i gesty,gestures,
+catHeader,Pierwsze gesty komunikatywne,gestures,gestures_first
+instr,Czy Państwa dziecko używa wymienionych niżej gestów? ,gestures,gestures_first
+catHeader,Zabawy i rytuały,gestures,gestures_games
+instr,Czy Państwa dziecko wykonuje wymienione niżej czynności?,gestures,gestures_games
+catHeader,Działania na przedmiotach,gestures,gestures_objects
+instr,Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?,gestures,gestures_objects
+catHeader,Zabawa lalką lub misiem: czynności opiekuńcze,gestures,gestures_parent
+instr,"Poniżej wypisano czynności opiekuńcze, jakie dzieci wykonują bawiąc się lalkami lub misiami. Proszę zaznaczyć te z nich, które zaobserwowali Państwo u swego dziecka.",gestures,gestures_parent
+catHeader,Naśladowanie innych czynności dorosłych (na przedmiotach lub zabawkach),gestures,gestures_adult
+instr,Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?,gestures,gestures_adult

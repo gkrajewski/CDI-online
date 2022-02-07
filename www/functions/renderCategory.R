@@ -1,9 +1,9 @@
 renderCategory <- function(input, output, category, reactList, staticList){
-  
+
   #Set current category
   reactList$category <- category
   reactList$userProgress[reactList$userProgress$type == reactList$type, "category"] <- reactList$category
-  
+
   #Set category nr txt variable
   categoryNrTxt <- NULL
   
@@ -21,7 +21,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
     if (is.element(category, reactList$typeSettings$category)){
       reactList$settings <- reactList$typeSettings[reactList$typeSettings$category == category, ]
     } else {
-      reactList$settings <- reactList$typeSettings[reactList$typeSettings$category == "" | is.na(reactList$typeSettings$category), ]
+      reactList$settings <- reactList$typeSettings[reactList$typeSettings$category == "", ]
     }
     
     if (category == reactList$firstCat){
@@ -66,15 +66,15 @@ renderCategory <- function(input, output, category, reactList, staticList){
     reactList$items <- reactList$typeItems
     reactList$txt <- reactList$typeTxt
     reactList$settings <- reactList$typeSettings
-    if (reactList$type != "postEnd" & reactList$type != "postEndSW") buttons <- list(actionButton("confBtn", class = "btn-primary", label = staticList$txt[staticList$txt$text_type == "confBtn", "text"]))
+    buttons <- list(actionButton("confBtn", class = "btn-primary", label = staticList$txt[staticList$txt$text_type == "confBtn", "text"]))
 
   }
-  
+
   #Prepare input fields (if any)
   inputObj <- list()
   notes <- list()
   commentField <- FALSE
-  if (!is.na(reactList$settings$input_type) & category != "firstPage"){
+  if (reactList$settings$input_type != "" & category != "firstPage"){
     
     #Mark current page as input
     reactList$inputPage <- TRUE
@@ -116,18 +116,18 @@ renderCategory <- function(input, output, category, reactList, staticList){
 
     #Prepare rest of input fields (inputObj)
     if (reactList$settings$input_type == "radio" | reactList$settings$input_type == "manyCheckboxGroups" | reactList$settings$input_type == "radioAlt" | reactList$settings$input_type == "checkboxAlt"){
-      
+
       if (is.na(catAnswer)){
         selected <- c(rep("0,", nrow(reactList$items)))
       } else {
         selected <- strsplit(catAnswer, ",")[[1]]
       }
-      
+
       if (reactList$settings$input_type != "radioAlt" & reactList$settings$input_type != "checkboxAlt"){
         choiceNames <- strsplit(reactList$txt[reactList$txt$text_type == "choiceNames", "text"], ",")[[1]]
         choiceValues <- c(1 : length(choiceNames))
       } 
-      
+
       for (i in 1:nrow(reactList$items)){
         if (reactList$settings$input_type == "radio"){
           inputObj[[i]] <- createRadioQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i], reactList$items[i, "definition"], T)
@@ -143,7 +143,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
           inputObj[[i]] <- list(br(), createCheckboxQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i], noBreakInside = FALSE))
         }
       }
-      
+
     } else if (reactList$settings$input_type == "oneCheckboxGroup"){
       
       if (is.na(catAnswer)) catAnswer <- 0

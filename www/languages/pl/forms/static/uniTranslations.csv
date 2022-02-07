@@ -1,34 +1,33 @@
-text_type;text;item_type;category
-warning;WAŻNE: Zakończenie i przesłanie odpowiedzi będzie możliwe dopiero po zatwierdzeniu wszystkich części. W każdej chwili można przerwać wypełnianie, co nie spowoduje utraty dotychczasowych odpowiedzi. Żeby wrócić do wypełniania (np. na innym urządzeniu), trzeba użyć dokładnie tego samego linku. Proszę jednak pamiętać, że inwentarz nie może być otwarty na kilku urządzeniach na raz.;start;
-help;UWAGA: Po zatwierdzeniu tej części nie będzie już możliwości wrócenia do niej.;start;
-backBtn;Cofnij;;
-nextBtn;Dalej;;
-confBtn;Zatwierdź;;
-startBtn;Start;;
-dateLabel;Data urodzenia dziecka;;
-genderLabel;Płeć dziecka;;
-modalTitle;Uwaga!;;
-noGender;Proszę wskazać płeć dziecka.;;
-noFiller;Proszę wskazać osobę wypełniającą inwentarz.;;
-badDate;Podana data urodzenia wskazuje, że Państwa dziecko nie jest w wieku, dla którego przeznaczony jest ten kwestionariusz.;;
-genders;dziewczynka,chłopiec;;
-fillerLabel;Kim Państwo są dla dziecka?;;
-fillers;mama,tata,babcia,dziadek,niania,nauczyciel(-ka),inna odpowiedź (proszę wpisać):;;
-commentLabel;Uwagi;;
-cdiNamePrefix;Inwentarz Rozwoju Mowy i Komunikacji;;
-endTooltip;Zakończenie inwentarza będzie możliwe po zatwierdzeniu wszystkich części.;;
-header;Łączenie wyrazów;combine;
-combineBtn;Łączenie wyrazów ;combine;
-choiceNames;Jeszcze nie,Czasem,Często;combine;
-header;Zakończenie;end;
-endBtn;Zakończenie;end;
-instr;Jeśli wypełnili Państwo wszystkie części kwestionariusza, proszę kliknąć przycisk „Zatwierdź”. ;end;
-endMsgTitle;Dziękujemy za wypełnienie!;end;
-endMsgTextSW;Bardzo dziękujemy za wypełnienie kwestionariusza! Więcej informacji znajdą Państwo w zakładce „Wiedza”.;end;
-endMsgText;Dziękujemy za wypełnienie kwestionariusza! Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Państwa cenny! Państwa zaangażowanie w badanie jest bardzo ważne - pomoże nam szczegółowo opisać wczesny rozwój językowy dzieci jedno- i dwujęzycznych przyswajających język polski jako jeden ze swoich języków.;end;
-error;Wystąpił błąd. Proszę odświeżyć i spróbować ponownie. Jeśli błąd się powtarza prosimy o zrobienie screena tego ekranu i wysłanie na maila projekt.starwords@psych.uw.edu.pl lub przez media społecznościowe.;;
-refresh;Odśwież;;
-badForm;Zła wartość parametru form w adresie URL. Dostępne wartości to: ;;none
-inventoryOpened;Inwentarz jest już otwarty. Proszę zamknąć inwentarz jeśli jest otwarty gdzie indziej i/lub odświeżyć stronę.;;
-errorInfo;Prosimy przekleić link poniżej i wysłać na maila projekt.starwords@psych.uw.edu.pl. Pozwoli nam to na szybszą diagnozę i naprawę błędów.;;
-email;yes;;
+text_type,text,item_type,category
+warning,"WAŻNE: Zakończenie i przesłanie odpowiedzi będzie możliwe dopiero po zatwierdzeniu wszystkich części. W każdej chwili można przerwać wypełnianie, co nie spowoduje utraty dotychczasowych odpowiedzi. Żeby wrócić do wypełniania (np. na innym urządzeniu), trzeba użyć dokładnie tego samego linku. Proszę jednak pamiętać, że inwentarz nie może być otwarty na kilku urządzeniach na raz.",start,
+help,UWAGA: Po zatwierdzeniu tej części nie będzie już możliwości wrócenia do niej.,start,
+backBtn,Cofnij,,
+nextBtn,Dalej,,
+confBtn,Zatwierdź,,
+menuButton,Start,start,
+dateLabel,Data urodzenia dziecka,,
+genderLabel,Płeć dziecka,,
+modalTitle,Uwaga!,,
+noGender,Proszę wskazać płeć dziecka.,,
+noFiller,Proszę wskazać osobę wypełniającą inwentarz.,,
+badDate,"Podana data urodzenia wskazuje, że Państwa dziecko nie jest w wieku, dla którego przeznaczony jest ten kwestionariusz.",,
+genders,"dziewczynka,chłopiec",,
+fillerLabel,Kim Państwo są dla dziecka?,,
+fillers,"mama,tata,babcia,dziadek,niania,nauczyciel(-ka),inna odpowiedź (proszę wpisać):",,
+commentLabel,Uwagi,,
+cdiNamePrefix,Inwentarz Rozwoju Mowy i Komunikacji,,
+tooltip,Zakończenie inwentarza będzie możliwe po zatwierdzeniu wszystkich części.,end,
+header,Łączenie wyrazów,combine,
+menuButton,Łączenie wyrazów ,combine,
+choiceNames,"Jeszcze nie,Czasem,Często",combine,
+header,Zakończenie,end,
+menuButton,Zakończenie,end,
+instr,"Jeśli wypełnili Państwo wszystkie części kwestionariusza, proszę kliknąć przycisk „Zatwierdź”. ",end,
+endMsgTitle,Dziękujemy za wypełnienie!,end,
+endMsgTextSW,Bardzo dziękujemy za wypełnienie kwestionariusza! Więcej informacji znajdą Państwo w zakładce „Wiedza”.,end,
+endMsgText,"Dziękujemy za wypełnienie kwestionariusza! Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Państwa cenny! Państwa zaangażowanie w badanie jest bardzo ważne - pomoże nam szczegółowo opisać wczesny rozwój językowy dzieci jedno- i dwujęzycznych przyswajających język polski jako jeden ze swoich języków.",end,
+error,Wystąpił błąd. Proszę odświeżyć i spróbować ponownie. Jeśli błąd się powtarza prosimy o zrobienie screena tego ekranu i wysłanie na maila projekt.starwords@psych.uw.edu.pl lub przez media społecznościowe.,,
+refresh,Odśwież,,
+inventoryOpened,Inwentarz jest już otwarty. Proszę zamknąć inwentarz jeśli jest otwarty gdzie indziej i/lub odświeżyć stronę.,,
+errorInfo,Prosimy przekleić link poniżej i wysłać na maila projekt.starwords@psych.uw.edu.pl. Pozwoli nam to na szybszą diagnozę i naprawę błędów.,,
+email,yes,,

@@ -1,490 +1,490 @@
-item_id;definition;type;category;lexical_category;lexical_class;uni_lemma;complexity_category
-item_1;Reagerer når han/hun hører navnet sitt (ved f.eks. å snu seg mot den som snakker);understanding;first_signs;;;;
-item_2;"Reagerer på at noen sier “nei, nei” (ved å stoppe aktiviteten – i alle fall et øyeblikk)";understanding;first_signs;;;;
-item_3;"Reagerer når noen sier “der er pappa/mamma” ved å se etter ham/henne.";understanding;first_signs;;;;
-item_4;Er du sulten?;understanding;phrases;;;;
-item_5;Er du trøtt?;understanding;phrases;;;;
-item_6;Det var flink jente/gutt;understanding;phrases;;;;
-item_7;Gap opp;understanding;phrases;;;;
-item_8;Gi meg en klem;understanding;phrases;;;;
-item_9;Gi meg et kyss;understanding;phrases;;;;
-item_10;Gå og hent ________;understanding;phrases;;;;
-item_11;Ikke gjør det;understanding;phrases;;;;
-item_12;Ikke rør;understanding;phrases;;;;
-item_13;Kast ballen;understanding;phrases;;;;
-item_14;Klapp med hendene dine;understanding;phrases;;;;
-item_15;Kom hit;understanding;phrases;;;;
-item_16;La mamma få det;understanding;phrases;;;;
-item_17;Nå sier vi ha det;understanding;phrases;;;;
-item_18;På tide å legge seg;understanding;phrases;;;;
-item_19;Reis deg (opp);understanding;phrases;;;;
-item_20;Se her;understanding;phrases;;;;
-item_21;Sett deg (ned);understanding;phrases;;;;
-item_22;Skal vi kjøre en tur?;understanding;phrases;;;;
-item_23;Slutt (opp);understanding;phrases;;;;
-item_24;Spytt ut;understanding;phrases;;;;
-item_25;Stå stille;understanding;phrases;;;;
-item_26;Vil du ha mer?;understanding;phrases;;;;
-item_27;Vær forsiktig;understanding;phrases;;;;
-item_28;Vær stille;understanding;phrases;;;;
-item_29;Skifte bleie;understanding;phrases;;;;
-item_30;"Noen barn liker å etterlikne (imitere) det de nettopp har hørt (det kan være nye ord de holder på å lære og/eller deler av setninger, som f. eks. at de sier “jobb nå” etter at de har hørt at “mamma skal gå på jobb nå”). Hvor ofte hermer barnet ditt etter ord?";starting_to_talk;;;;;
-item_31;Noen barn liker å si navnet på ting de ser rundt seg. Det kan virke som om de er stolte over å vite hva tingene heter og at de liker å vise dette. Hvor ofte navngir barnet ditt ting det ser?;starting_to_talk;;;;;
-item_32;au;word;sounds;other;other;ouch;
-item_33;bææ;word;sounds;other;other;baa baa;
-item_34;brrr (bil-lyd);word;sounds;other;other;vroom;
-item_35;gakk gakk;word;sounds;other;other;quack quack;
-item_36;grr;word;sounds;other;other;grrr;
-item_37;kykeliky;word;sounds;other;other;cockadoodledoo;
-item_38;mjau;word;sounds;other;other;meow;
-item_39;møø;word;sounds;other;other;moo;
-item_40;nam - nam;word;sounds;other;other;yum yum;
-item_41;tøff-tøff;word;sounds;other;other;choo choo;
-item_42;voff voff;word;sounds;other;other;woof woof;
-item_43;and;word;animals;nouns;nouns;duck;
-item_44;(meite)mark;word;animals;nouns;nouns;worm;
-item_45;ape(katt);word;animals;nouns;nouns;monkey;
-item_46;bjørn;word;animals;nouns;nouns;bear;
-item_47;dyr;word;animals;nouns;nouns;animal;
-item_48;ekorn;word;animals;nouns;nouns;squirrel;
-item_49;elefant;word;animals;nouns;nouns;elephant;
-item_50;elg;word;animals;nouns;nouns;moose;
-item_51;fisk;word;animals;nouns;nouns;fish (animal);
-item_52;flue;word;animals;nouns;nouns;fly (animal);
-item_53;frosk;word;animals;nouns;nouns;frog;
-item_54;fugl;word;animals;nouns;nouns;bird;
-item_55;gås;word;animals;nouns;nouns;goose;
-item_56;gris;word;animals;nouns;nouns;pig;
-item_57;hest;word;animals;nouns;nouns;horse;
-item_58;hund;word;animals;nouns;nouns;dog;
-item_59;kanin;word;animals;nouns;nouns;bunny;
-item_60;katt;word;animals;nouns;nouns;cat;
-item_61;kattunge;word;animals;nouns;nouns;kitty;
-item_62;ku;word;animals;nouns;nouns;cow;
-item_63;kylling;word;animals;nouns;nouns;chicken (animal);
-item_64;lam;word;animals;nouns;nouns;lamb;
-item_65;(leke)bamse;word;animals;nouns;nouns;teddybear;
-item_66;løve;word;animals;nouns;nouns;lion;
-item_67;mus;word;animals;nouns;nouns;mouse;
-item_68;pingvin;word;animals;nouns;nouns;penguin;
-item_69;reinsdyr;word;animals;nouns;nouns;deer;
-item_70;rev;word;animals;nouns;nouns;fox;
-item_71;sau;word;animals;nouns;nouns;sheep;
-item_72;sjiraff;word;animals;nouns;nouns;giraffe;
-item_73;skilpadde;word;animals;nouns;nouns;turtle;
-item_74;sommerfugl;word;animals;nouns;nouns;butterfly;
-item_75;tiger;word;animals;nouns;nouns;tiger;
-item_76;ugle;word;animals;nouns;nouns;owl;
-item_77;valp;word;animals;nouns;nouns;puppy;
-item_78;veps;word;animals;nouns;nouns;bee;
-item_79;barnevogn;word;vehicles;nouns;nouns;stroller;
-item_80;bil;word;vehicles;nouns;nouns;car;
-item_81;brannbil;word;vehicles;nouns;nouns;firetruck;
-item_82;buss;word;vehicles;nouns;nouns;bus;
-item_83;fly;word;vehicles;nouns;nouns;airplane;
-item_84;lastebil;word;vehicles;nouns;nouns;truck;
-item_85;motorsykkel;word;vehicles;nouns;nouns;motorcycle;
-item_86;sykkel;word;vehicles;nouns;nouns;bicycle;
-item_87;tog;word;vehicles;nouns;nouns;train;
-item_88;ball;word;toys;nouns;nouns;ball;
-item_89;ballong;word;toys;nouns;nouns;balloon;
-item_90;bok;word;toys;nouns;nouns;book;
-item_91;klosser;word;toys;nouns;nouns;block;
-item_92;dukke;word;toys;nouns;nouns;doll;
-item_93;leke;word;toys;nouns;nouns;toy (object);
-item_94;(farge)blyant;word;toys;nouns;nouns;pen/pencil;
-item_95;såpebobler;word;toys;nouns;nouns;bubbles;
-item_96;appelsin;word;food_drink;nouns;nouns;orange (food);
-item_97;banan;word;food_drink;nouns;nouns;banana;
-item_98;bolle;word;food_drink;nouns;nouns;bun;
-item_99;brød;word;food_drink;nouns;nouns;bread;
-item_100;corn flakes;word;food_drink;nouns;nouns;cheerios;
-item_101;drikke;word;food_drink;nouns;nouns;drink (beverage);
-item_102;egg;word;food_drink;nouns;nouns;egg;
-item_103;eple;word;food_drink;nouns;nouns;apple;
-item_104;fisk;word;food_drink;nouns;nouns;fish (food);
-item_105;frokostblanding;word;food_drink;nouns;nouns;cereal;
-item_106;gulrot;word;food_drink;nouns;nouns;carrots;
-item_107;is;word;food_drink;nouns;nouns;ice cream;
-item_108;juice;word;food_drink;nouns;nouns;juice;
-item_109;kaffe;word;food_drink;nouns;nouns;coffee;
-item_110;kake;word;food_drink;nouns;nouns;cake;
-item_111;kjeks;word;food_drink;nouns;nouns;cracker;
-item_112;kjøtt;word;food_drink;nouns;nouns;meat;
-item_113;kylling;word;food_drink;nouns;nouns;chicken (food);
-item_114;mat;word;food_drink;nouns;nouns;food;
-item_115;melk;word;food_drink;nouns;nouns;milk;
-item_116;ost;word;food_drink;nouns;nouns;cheese;
-item_117;pasta;word;food_drink;nouns;nouns;pasta;
-item_118;pizza;word;food_drink;nouns;nouns;pizza;
-item_119;rosiner;word;food_drink;nouns;nouns;raisin;
-item_120;smør;word;food_drink;nouns;nouns;butter;
-item_121;spagetti;word;food_drink;nouns;nouns;pasta;
-item_122;sukkertøy;word;food_drink;nouns;nouns;candy;
-item_123;vann;word;food_drink;nouns;nouns;water (beverage);
-item_124;bleie;word;clothing;nouns;nouns;diaper;
-item_125;bukse;word;clothing;nouns;nouns;pants;
-item_126;genser;word;clothing;nouns;nouns;sweater;
-item_127;glidelås;word;clothing;nouns;nouns;zipper;
-item_128;halskjede;word;clothing;nouns;nouns;necklace;
-item_129;jakke;word;clothing;nouns;nouns;jacket;
-item_130;kjole;word;clothing;nouns;nouns;dress (object);
-item_131;knapp;word;clothing;nouns;nouns;button;
-item_132;lue;word;clothing;nouns;nouns;hat;
-item_133;pysjamas;word;clothing;nouns;nouns;pajamas;
-item_134;regntøy;word;clothing;nouns;nouns;coat;
-item_135;shorts;word;clothing;nouns;nouns;shorts;
-item_136;sko;word;clothing;nouns;nouns;shoe;
-item_137;smekke;word;clothing;nouns;nouns;bib;
-item_138;smokk;word;clothing;nouns;nouns;pacifier;
-item_139;sokker;word;clothing;nouns;nouns;sock;
-item_140;støvler;word;clothing;nouns;nouns;boots;
-item_141;strømpebukse;word;clothing;nouns;nouns;tights;
-item_142;t-skjorte;word;clothing;nouns;nouns;t-shirt;
-item_143;votter;word;clothing;nouns;nouns;mittens;
-item_144;ansikt;word;body_parts;nouns;nouns;face;
-item_145;arm;word;body_parts;nouns;nouns;arm;
-item_146;bein;word;body_parts;nouns;nouns;leg;
-item_147;finger;word;body_parts;nouns;nouns;finger;
-item_148;fot;word;body_parts;nouns;nouns;foot;
-item_149;hånd;word;body_parts;nouns;nouns;hand;
-item_150;hår;word;body_parts;nouns;nouns;hair;
-item_151;hode;word;body_parts;nouns;nouns;head;
-item_152;kinn;word;body_parts;nouns;nouns;cheek;
-item_153;kne;word;body_parts;nouns;nouns;knee;
-item_154;mage;word;body_parts;nouns;nouns;tummy;
-item_155;munn;word;body_parts;nouns;nouns;mouth;
-item_156;navle;word;body_parts;nouns;nouns;belly button;
-item_157;nese;word;body_parts;nouns;nouns;nose;
-item_158;øre;word;body_parts;nouns;nouns;ear;
-item_159;øye;word;body_parts;nouns;nouns;eye;
-item_160;tå;word;body_parts;nouns;nouns;toe;
-item_161;tenner;word;body_parts;nouns;nouns;tooth;
-item_162;tiss;word;body_parts;nouns;nouns;penis;
-item_163;tunge;word;body_parts;nouns;nouns;tongue;
-item_164;bilde;word;household;nouns;nouns;picture;
-item_165;børste;word;household;nouns;nouns;brush (object);
-item_166;briller;word;household;nouns;nouns;glasses;
-item_167;dyne;word;household;nouns;nouns;blanket;
-item_168;eske;word;household;nouns;nouns;box;
-item_169;flaske;word;household;nouns;nouns;bottle;
-item_170;gaffel;word;household;nouns;nouns;fork;
-item_171;glass;word;household;nouns;nouns;glass;
-item_172;hammer;word;household;nouns;nouns;hammer;
-item_173;håndkle;word;household;nouns;nouns;towel;
-item_174;kam;word;household;nouns;nouns;comb (object);
-item_175;klokke;word;household;nouns;nouns;clock;
-item_176;kniv;word;household;nouns;nouns;knife;
-item_177;kopp;word;household;nouns;nouns;cup;
-item_178;kost;word;household;nouns;nouns;broom;
-item_179;lampe;word;household;nouns;nouns;lamp;
-item_180;lommebok;word;household;nouns;nouns;purse;
-item_181;lys;word;household;nouns;nouns;light (object);
-item_182;medisin;word;household;nouns;nouns;medicine;
-item_183;nøkler;word;household;nouns;nouns;keys;
-item_184;papir;word;household;nouns;nouns;paper;
-item_185;penger;word;household;nouns;nouns;money;
-item_186;plante;word;household;nouns;nouns;plant;
-item_187;pute;word;household;nouns;nouns;pillow;
-item_188;radio;word;household;nouns;nouns;radio;
-item_189;saks;word;household;nouns;nouns;scissors;
-item_190;såpe;word;household;nouns;nouns;soap;
-item_191;skål;word;household;nouns;nouns;bowl;
-item_192;skje;word;household;nouns;nouns;spoon;
-item_193;søppel;word;household;nouns;nouns;trash;
-item_194;støvsuger;word;household;nouns;nouns;vacuum;
-item_195;tallerken;word;household;nouns;nouns;plate;
-item_196;tannbørste;word;household;nouns;nouns;toothbrush;
-item_197;telefon;word;household;nouns;nouns;telephone;
-item_198;teppe;word;household;nouns;nouns;blanket;
-item_199;bad;word;furniture_rooms;nouns;nouns;bathroom;
-item_200;badekar;word;furniture_rooms;nouns;nouns;bathtub;
-item_201;barnestol;word;furniture_rooms;nouns;nouns;high chair;
-item_202;bord;word;furniture_rooms;nouns;nouns;table;
-item_203;dør;word;furniture_rooms;nouns;nouns;door;
-item_204;garasje;word;furniture_rooms;nouns;nouns;garage;
-item_205;gyngestol;word;furniture_rooms;nouns;nouns;rocking chair;
-item_206;kjøkken;word;furniture_rooms;nouns;nouns;kitchen;
-item_207;kjøleskap;word;furniture_rooms;nouns;nouns;refrigerator;
-item_208;komfyr;word;furniture_rooms;nouns;nouns;stove;
-item_209;lekegrind;word;furniture_rooms;nouns;nouns;play pen;
-item_210;ovn;word;furniture_rooms;nouns;nouns;oven;
-item_211;potte;word;furniture_rooms;nouns;nouns;potty;
-item_212;seng;word;furniture_rooms;nouns;nouns;bed;
-item_213;skuff;word;furniture_rooms;nouns;nouns;drawer;
-item_214;sofa;word;furniture_rooms;nouns;nouns;couch;
-item_215;soverom;word;furniture_rooms;nouns;nouns;bedroom;
-item_216;stol;word;furniture_rooms;nouns;nouns;chair;
-item_217;stue;word;furniture_rooms;nouns;nouns;living room;
-item_218;trapp;word;furniture_rooms;nouns;nouns;stairs;
-item_219;TV;word;furniture_rooms;nouns;nouns;tv;
-item_220;vask;word;furniture_rooms;nouns;nouns;sink;
-item_221;vindu;word;furniture_rooms;nouns;nouns;window;
-item_222;blomst;word;outside;nouns;nouns;flower;
-item_223;himmel;word;outside;nouns;nouns;sky;
-item_224;huske;word;outside;nouns;nouns;swing (object);
-item_225;måne;word;outside;nouns;nouns;moon;
-item_226;regn;word;outside;nouns;nouns;rain;
-item_227;sklie;word;outside;nouns;nouns;slide (object);
-item_228;snø;word;outside;nouns;nouns;snow;
-item_229;sol;word;outside;nouns;nouns;sun;
-item_230;spade;word;outside;nouns;nouns;shovel;
-item_231;stein;word;outside;nouns;nouns;rock (object);
-item_232;stjerner;word;outside;nouns;nouns;star;
-item_233;tre;word;outside;nouns;nouns;tree;
-item_234;ute;word;outside;nouns;nouns;outside;
-item_235;vann;word;outside;nouns;nouns;water (not beverage);
-item_236;butikk;word;places;other;other;store;
-item_237;dyrehage;word;places;other;other;zoo;
-item_238;fest;word;places;other;other;party;
-item_239;hage;word;places;other;other;garden;
-item_240;hjem;word;places;other;other;home;
-item_241;hus;word;places;other;other;house;
-item_242;jobb;word;places;other;other;work (place);
-item_243;kirke;word;places;other;other;church;
-item_244;park;word;places;other;other;park;
-item_245;skole;word;places;other;other;school;
-item_246;strand;word;places;other;other;beach;
-item_247;svømmehall;word;places;other;other;pool;
-item_248;baby;word;people;other;other;baby;
-item_249;barn;word;people;other;other;child;
-item_250;barnets navn;word;people;other;other;child's own name;
-item_251;bestefar;word;people;other;other;grandpa;
-item_252;bestemor;word;people;other;other;grandma;
-item_253;bror;word;people;other;other;brother;
-item_254;dame;word;people;other;other;lady;
-item_255;farfar;word;people;other;other;grandpa;
-item_256;farmor;word;people;other;other;grandma;
-item_257;gutt;word;people;other;other;boy;
-item_258;jente;word;people;other;other;girl;
-item_259;mamma;word;people;other;other;mommy;
-item_260;mann;word;people;other;other;man;
-item_261;menneske;word;people;other;other;person;
-item_262;morfar;word;people;other;other;grandpa;
-item_263;mormor;word;people;other;other;grandma;
-item_264;oldefar;word;people;other;other;great grandpa;
-item_265;oldemor;word;people;other;other;great grandma;
-item_266;onkel;word;people;other;other;uncle;
-item_267;pappa;word;people;other;other;daddy;
-item_268;søster;word;people;other;other;sister;
-item_269;tante;word;people;other;other;aunt;
-item_270;bade;word;games_routines;other;other;bath;
-item_271;frokost;word;games_routines;other;other;breakfast;
-item_272;god natt;word;games_routines;other;other;good night;
-item_273;ha det;word;games_routines;other;other;bye;
-item_274;hei;word;games_routines;other;other;hi;
-item_275;hysj;word;games_routines;other;other;shh;
-item_276;ikke;word;games_routines;other;other;don't;
-item_277;ja;word;games_routines;other;other;yes;
-item_278;klappe kake;word;games_routines;other;other;pattycake;
-item_279;Borte! (lek hvor ansikt gjemmes og plutselig vises);word;games_routines;other;other;peekaboo;
-item_280;lunsj;word;games_routines;other;other;lunch;
-item_281;middag;word;games_routines;other;other;dinner;
-item_282;nei;word;games_routines;other;other;no;
-item_283;sovetid;word;games_routines;other;other;nap;
-item_284;takk;word;games_routines;other;other;thank you;
-item_285;vær så snill;word;games_routines;other;other;please;
-item_286;vent;word;games_routines;other;other;wait;
-item_287;vil;word;games_routines;other;other;wanna;
-item_288;bite;word;action_words;predicates;verbs;bite;
-item_289;blåse;word;action_words;predicates;verbs;blow;
-item_290;danse;word;action_words;predicates;verbs;dance;
-item_291;dra;word;action_words;predicates;verbs;go;
-item_292;drikke;word;action_words;predicates;verbs;drink (action);
-item_293;dytte;word;action_words;predicates;verbs;push;
-item_294;elske;word;action_words;predicates;verbs;love;
-item_295;få;word;action_words;predicates;verbs;get;
-item_296;falle;word;action_words;predicates;verbs;fall;
-item_297;forte seg;word;action_words;predicates;verbs;hurry;
-item_298;gå;word;action_words;predicates;verbs;walk;
-item_299;gi;word;action_words;predicates;verbs;give;
-item_300;gjøre seg ferdig;word;action_words;predicates;verbs;finish;
-item_301;gråte;word;action_words;predicates;verbs;cry;
-item_302;hente;word;action_words;predicates;verbs;get;
-item_303;hjelpe;word;action_words;predicates;verbs;help;
-item_304;holde øye med;word;action_words;predicates;verbs;watch (action);
-item_305;hoppe;word;action_words;predicates;verbs;jump;
-item_306;huske;word;action_words;predicates;verbs;swing (action);
-item_307;kaste;word;action_words;predicates;verbs;throw;
-item_308;kile;word;action_words;predicates;verbs;tickle;
-item_309;kjøre;word;action_words;predicates;verbs;drive;
-item_310;klemme;word;action_words;predicates;verbs;hug;
-item_311;kysse;word;action_words;predicates;verbs;kiss;
-item_312;legge;word;action_words;predicates;verbs;put;
-item_313;leke;word;action_words;predicates;verbs;play;
-item_314;lese;word;action_words;predicates;verbs;read;
-item_315;løpe;word;action_words;predicates;verbs;run;
-item_316;lukke;word;action_words;predicates;verbs;close;
-item_317;mate;word;action_words;predicates;verbs;feed;
-item_318;ødelegge;word;action_words;predicates;verbs;break;
-item_319;plaske;word;action_words;predicates;verbs;splash;
-item_320;ri;word;action_words;predicates;verbs;ride;
-item_321;rydde;word;action_words;predicates;verbs;clean (action);
-item_322;se;word;action_words;predicates;verbs;see;
-item_323;se på;word;action_words;predicates;verbs;look;
-item_324;si;word;action_words;predicates;verbs;say;
-item_325;skrive;word;action_words;predicates;verbs;write;
-item_326;slå;word;action_words;predicates;verbs;hit;
-item_327;smile;word;action_words;predicates;verbs;smile;
-item_328;sove;word;action_words;predicates;verbs;sleep;
-item_329;sparke;word;action_words;predicates;verbs;kick;
-item_330;spise;word;action_words;predicates;verbs;eat;
-item_331;stoppe;word;action_words;predicates;verbs;stop;
-item_332;svømme;word;action_words;predicates;verbs;swim;
-item_333;synge;word;action_words;predicates;verbs;sing;
-item_334;ta;word;action_words;predicates;verbs;take;
-item_335;ta på;word;action_words;predicates;verbs;touch;
-item_336;tegne;word;action_words;predicates;verbs;draw;
-item_337;tørke;word;action_words;predicates;verbs;dry (action);
-item_338;vaske;word;action_words;predicates;verbs;wash;
-item_339;vise;word;action_words;predicates;verbs;show;
-item_340;åpne;word;action_words;predicates;verbs;open (action);
-item_341;blå;word;descriptive_words;predicates;adjectives;blue;
-item_342;borte;word;descriptive_words;predicates;adjectives;all gone;
-item_343;bra;word;descriptive_words;predicates;adjectives;good;
-item_344;ekkelt;word;descriptive_words;predicates;adjectives;yucky;
-item_345;fin;word;descriptive_words;predicates;adjectives;fine;
-item_346;forsiktig;word;descriptive_words;predicates;adjectives;careful;
-item_347;fort;word;descriptive_words;predicates;adjectives;fast;
-item_348;frekk;word;descriptive_words;predicates;adjectives;bad;
-item_349;gammel;word;descriptive_words;predicates;adjectives;old;
-item_350;glad;word;descriptive_words;predicates;adjectives;happy;
-item_351;grei;word;descriptive_words;predicates;adjectives;easy;
-item_352;hard;word;descriptive_words;predicates;adjectives;hard;
-item_353;kald;word;descriptive_words;predicates;adjectives;cold;
-item_354;liten;word;descriptive_words;predicates;adjectives;little (description);
-item_355;mørkt;word;descriptive_words;predicates;adjectives;dark;
-item_356;myk;word;descriptive_words;predicates;adjectives;soft;
-item_357;ødelagt;word;descriptive_words;predicates;adjectives;broken;
-item_358;pen;word;descriptive_words;predicates;adjectives;pretty;
-item_359;redd;word;descriptive_words;predicates;adjectives;scared;
-item_360;ren;word;descriptive_words;predicates;adjectives;clean (description);
-item_361;rød;word;descriptive_words;predicates;adjectives;red;
-item_362;skitten;word;descriptive_words;predicates;adjectives;dirty;
-item_363;skjønn;word;descriptive_words;predicates;adjectives;beautiful;
-item_364;slem;word;descriptive_words;predicates;adjectives;naughty;
-item_365;sliten;word;descriptive_words;predicates;adjectives;sleepy;
-item_366;søt;word;descriptive_words;predicates;adjectives;cute;
-item_367;stor;word;descriptive_words;predicates;adjectives;big;
-item_368;sulten;word;descriptive_words;predicates;adjectives;hungry;
-item_369;syk;word;descriptive_words;predicates;adjectives;sick;
-item_370;tom;word;descriptive_words;predicates;adjectives;empty;
-item_371;tørr;word;descriptive_words;predicates;adjectives;dry (description);
-item_372;tørst;word;descriptive_words;predicates;adjectives;thirsty;
-item_373;trøtt;word;descriptive_words;predicates;adjectives;tired;
-item_374;varm;word;descriptive_words;predicates;adjectives;hot;
-item_375;våt;word;descriptive_words;predicates;adjectives;wet (description);
-item_376;vondt;word;descriptive_words;predicates;adjectives;hurt (description);
-item_377;dag;word;time_words;other;other;day;
-item_378;i dag;word;time_words;other;other;today;
-item_379;i kveld;word;time_words;other;other;tonight;
-item_380;i morgen;word;time_words;other;other;tomorrow;
-item_381;morgen;word;time_words;other;other;morning;
-item_382;nå;word;time_words;other;other;now;
-item_383;natt;word;time_words;other;other;night;
-item_384;senere;word;time_words;other;other;later;
-item_385;den;word;pronouns;function_words;function_words;the;
-item_386;denne;word;pronouns;function_words;function_words;this;
-item_387;det;word;pronouns;function_words;function_words;it;
-item_388;dette;word;pronouns;function_words;function_words;this;
-item_389;din;word;pronouns;function_words;function_words;your;
-item_390;du;word;pronouns;function_words;function_words;you;
-item_391;hans;word;pronouns;function_words;function_words;his;
-item_392;hennes;word;pronouns;function_words;function_words;her;
-item_393;jeg;word;pronouns;function_words;function_words;i;
-item_394;meg;word;pronouns;function_words;function_words;me;
-item_395;min;word;pronouns;function_words;function_words;my;
-item_396;hva;word;question_words;function_words;function_words;what;
-item_397;hvem;word;question_words;function_words;function_words;who;
-item_398;hvor;word;question_words;function_words;function_words;where (question);
-item_399;hvordan;word;question_words;function_words;function_words;how;
-item_400;hvorfor;word;question_words;function_words;function_words;why;
-item_401;når;word;question_words;function_words;function_words;when (question);
-item_402;av;word;locations;function_words;function_words;off;
-item_403;bak;word;locations;function_words;function_words;back (location);
-item_404;bort;word;locations;function_words;function_words;away;
-item_405;der;word;locations;function_words;function_words;there;
-item_406;i;word;locations;function_words;function_words;in;
-item_407;inn;word;locations;function_words;function_words;inside;
-item_408;inne;word;locations;function_words;function_words;inside;
-item_409;inni;word;locations;function_words;function_words;inside;
-item_410;ned;word;locations;function_words;function_words;down;
-item_411;nede;word;locations;function_words;function_words;down;
-item_412;opp;word;locations;function_words;function_words;up;
-item_413;oppe;word;locations;function_words;function_words;up;
-item_414;på;word;locations;function_words;function_words;on;
-item_415;under;word;locations;function_words;function_words;under;
-item_416;ut;word;locations;function_words;function_words;out;
-item_417;ute;word;locations;function_words;function_words;out;
-item_418;alle;word;quantifiers;function_words;function_words;all;
-item_419;en annen;word;quantifiers;function_words;function_words;another;
-item_420;ikke;word;quantifiers;function_words;function_words;not;
-item_421;ingen;word;quantifiers;function_words;function_words;none;
-item_422;ingenting;word;quantifiers;function_words;function_words;nothing;
-item_423;mer;word;quantifiers;function_words;function_words;more;
-item_424;noe;word;quantifiers;function_words;function_words;some;
-item_425;noen;word;quantifiers;function_words;function_words;any;
-item_426;samme;word;quantifiers;function_words;function_words;same;
-item_427;Strekker armen for å vise noe i hånden?;gestures_first;;;;;
-item_428;Rekker deg en leke hun/han holder?;gestures_first;;;;;
-item_429;Peker på noe som fanger oppmerksomheten?;gestures_first;;;;;
-item_430;Vinker ha det på egen hånd når noen drar?;gestures_first;;;;;
-item_431;Strekker armene opp for å bli løftet?;gestures_first;;;;;
-item_432;"Rister på hodet for ‘nei’?";gestures_first;;;;;
-item_433;"Nikker til ‘ja?’";gestures_first;;;;;
-item_434;Gestikulerer hysj ved fingeren mot munnen?;gestures_first;;;;;
-item_435;Vil ha noe ved å strekke armen og åpne og lukke hånden?;gestures_first;;;;;
-item_436;Sender slengkyss?;gestures_first;;;;;
-item_437;Smatter med leppene - nam-nam- for å vise at noe smaker godt?;gestures_first;;;;;
-item_438;Trekker på skuldrene for å vise at man ikke vet?;gestures_first;;;;;
-item_439;Leker hvor er _____? Der er _____! (Gjemmer ansiktet bak hendene og tar hendene bort);gestures_games;;;;;
-item_440;"Leker “bake kake søte” eller andre leker med hender og fingre.";gestures_games;;;;;
-item_441;Leker hvor stor er du – sååååååå stor.;gestures_games;;;;;
-item_442;Leker at man prøver å fange hverandre.;gestures_games;;;;;
-item_443;Synger.;gestures_games;;;;;
-item_444;Danser.;gestures_games;;;;;
-item_445;Spiser med skje eller gaffel.;gestures_objects;;;;;
-item_446;Drikker fra en kopp.;gestures_objects;;;;;
-item_447;Børster eller grer håret sitt selv.;gestures_objects;;;;;
-item_448;Pusser tennene.;gestures_objects;;;;;
-item_449;Vasker seg i ansiktet eller hendene med en klut.;gestures_objects;;;;;
-item_450;Setter på seg lue/solhatt selv.;gestures_objects;;;;;
-item_451;Tar på seg en sko eller sokk selv.;gestures_objects;;;;;
-item_452;Tar på seg halsbånd eller andre pyntesaker selv.;gestures_objects;;;;;
-item_453;Legger hodet på samlede hender og kniper øynene for å late som om hun/han sover.;gestures_objects;;;;;
-item_454;Blåser for å vise at noe er varmt.;gestures_objects;;;;;
-item_455;Holder et lekefly i hånda og later som om det flyr.;gestures_objects;;;;;
-item_456;Tar telefonen til øret.;gestures_objects;;;;;
-item_457;Lukter på blomstene.;gestures_objects;;;;;
-item_458;Dytter lekebiler rundt på gulvet og later som om de kjører.;gestures_objects;;;;;
-item_459;Kaster ball.;gestures_objects;;;;;
-item_460;Later som om man heller noe flytende fra en beholder til en annen.;gestures_objects;;;;;
-item_461;Later som om man rører med en skje i en gryte eller kopp.;gestures_objects;;;;;
-item_462;Legger dem i senga for å sove.;gestures_parent;;;;;
-item_463;Tar dyne over.;gestures_parent;;;;;
-item_464;Mater med en flaske.;gestures_parent;;;;;
-item_465;Mater med en skje.;gestures_parent;;;;;
-item_466;Børster/grer håret.;gestures_parent;;;;;
-item_467;Klapper barnet på ryggen for å få en rap.;gestures_parent;;;;;
-item_468;Triller i vogn.;gestures_parent;;;;;
-item_469;Vugger/rugger det i armene.;gestures_parent;;;;;
-item_470;Kysser eller klemmer på det.;gestures_parent;;;;;
-item_471;Prøver å kle på det.;gestures_parent;;;;;
-item_472;Tørker det i ansiktet eller hendene.;gestures_parent;;;;;
-item_473;Snakker til det.;gestures_parent;;;;;
-item_474;Prøver å ta på bleie.;gestures_parent;;;;;
-item_475;Feier med en kost.;gestures_adult;;;;;
-item_476;Putter nøkkel i nøkkelhullet (eller i nærheten av det).;gestures_adult;;;;;
-item_477;Banker med en hammer.;gestures_adult;;;;;
-item_478;Prøver å sage.;gestures_adult;;;;;
-item_479;Skriver på et tastatur.;gestures_adult;;;;;
-item_480;Leser (åpner bøker og blar i sidene).;gestures_adult;;;;;
-item_481;Støvsuger.;gestures_adult;;;;;
-item_482;Vanner planter.;gestures_adult;;;;;
-item_483;Spiller på musikkinstrumenter.;gestures_adult;;;;;
-item_484;Kjører bil ved å styre med et ratt.;gestures_adult;;;;;
-item_485;Vasker opp.;gestures_adult;;;;;
-item_486;Gjør rent med klut eller tørker støv.;gestures_adult;;;;;
-item_487;Skriver/tegner med blyant, tusj eller fargestifter.;gestures_adult;;;;;
-item_488;Graver med en spade (i sandkassen).;gestures_adult;;;;;
-item_489;Tar på seg (sol)briller.;gestures_adult;;;;;
+item_id,definition,type,category,lexical_category,lexical_class,uni_lemma,complexity_category
+item_1,Reagerer når han/hun hører navnet sitt (ved f.eks. å snu seg mot den som snakker),understanding,first_signs,,,,
+item_2,"Reagerer på at noen sier “nei, nei” (ved å stoppe aktiviteten – i alle fall et øyeblikk)",understanding,first_signs,,,,
+item_3,Reagerer når noen sier “der er pappa/mamma” ved å se etter ham/henne.,understanding,first_signs,,,,
+item_4,Er du sulten?,understanding,phrases,,,,
+item_5,Er du trøtt?,understanding,phrases,,,,
+item_6,Det var flink jente/gutt,understanding,phrases,,,,
+item_7,Gap opp,understanding,phrases,,,,
+item_8,Gi meg en klem,understanding,phrases,,,,
+item_9,Gi meg et kyss,understanding,phrases,,,,
+item_10,Gå og hent ________,understanding,phrases,,,,
+item_11,Ikke gjør det,understanding,phrases,,,,
+item_12,Ikke rør,understanding,phrases,,,,
+item_13,Kast ballen,understanding,phrases,,,,
+item_14,Klapp med hendene dine,understanding,phrases,,,,
+item_15,Kom hit,understanding,phrases,,,,
+item_16,La mamma få det,understanding,phrases,,,,
+item_17,Nå sier vi ha det,understanding,phrases,,,,
+item_18,På tide å legge seg,understanding,phrases,,,,
+item_19,Reis deg (opp),understanding,phrases,,,,
+item_20,Se her,understanding,phrases,,,,
+item_21,Sett deg (ned),understanding,phrases,,,,
+item_22,Skal vi kjøre en tur?,understanding,phrases,,,,
+item_23,Slutt (opp),understanding,phrases,,,,
+item_24,Spytt ut,understanding,phrases,,,,
+item_25,Stå stille,understanding,phrases,,,,
+item_26,Vil du ha mer?,understanding,phrases,,,,
+item_27,Vær forsiktig,understanding,phrases,,,,
+item_28,Vær stille,understanding,phrases,,,,
+item_29,Skifte bleie,understanding,phrases,,,,
+item_30,"Noen barn liker å etterlikne (imitere) det de nettopp har hørt (det kan være nye ord de holder på å lære og/eller deler av setninger, som f. eks. at de sier “jobb nå” etter at de har hørt at “mamma skal gå på jobb nå”). Hvor ofte hermer barnet ditt etter ord?",starting_to_talk,,,,,
+item_31,Noen barn liker å si navnet på ting de ser rundt seg. Det kan virke som om de er stolte over å vite hva tingene heter og at de liker å vise dette. Hvor ofte navngir barnet ditt ting det ser?,starting_to_talk,,,,,
+item_32,au,word,sounds,other,other,ouch,
+item_33,bææ,word,sounds,other,other,baa baa,
+item_34,brrr (bil-lyd),word,sounds,other,other,vroom,
+item_35,gakk gakk,word,sounds,other,other,quack quack,
+item_36,grr,word,sounds,other,other,grrr,
+item_37,kykeliky,word,sounds,other,other,cockadoodledoo,
+item_38,mjau,word,sounds,other,other,meow,
+item_39,møø,word,sounds,other,other,moo,
+item_40,nam - nam,word,sounds,other,other,yum yum,
+item_41,tøff-tøff,word,sounds,other,other,choo choo,
+item_42,voff voff,word,sounds,other,other,woof woof,
+item_43,and,word,animals,nouns,nouns,duck,
+item_44,(meite)mark,word,animals,nouns,nouns,worm,
+item_45,ape(katt),word,animals,nouns,nouns,monkey,
+item_46,bjørn,word,animals,nouns,nouns,bear,
+item_47,dyr,word,animals,nouns,nouns,animal,
+item_48,ekorn,word,animals,nouns,nouns,squirrel,
+item_49,elefant,word,animals,nouns,nouns,elephant,
+item_50,elg,word,animals,nouns,nouns,moose,
+item_51,fisk,word,animals,nouns,nouns,fish (animal),
+item_52,flue,word,animals,nouns,nouns,fly (animal),
+item_53,frosk,word,animals,nouns,nouns,frog,
+item_54,fugl,word,animals,nouns,nouns,bird,
+item_55,gås,word,animals,nouns,nouns,goose,
+item_56,gris,word,animals,nouns,nouns,pig,
+item_57,hest,word,animals,nouns,nouns,horse,
+item_58,hund,word,animals,nouns,nouns,dog,
+item_59,kanin,word,animals,nouns,nouns,bunny,
+item_60,katt,word,animals,nouns,nouns,cat,
+item_61,kattunge,word,animals,nouns,nouns,kitty,
+item_62,ku,word,animals,nouns,nouns,cow,
+item_63,kylling,word,animals,nouns,nouns,chicken (animal),
+item_64,lam,word,animals,nouns,nouns,lamb,
+item_65,(leke)bamse,word,animals,nouns,nouns,teddybear,
+item_66,løve,word,animals,nouns,nouns,lion,
+item_67,mus,word,animals,nouns,nouns,mouse,
+item_68,pingvin,word,animals,nouns,nouns,penguin,
+item_69,reinsdyr,word,animals,nouns,nouns,deer,
+item_70,rev,word,animals,nouns,nouns,fox,
+item_71,sau,word,animals,nouns,nouns,sheep,
+item_72,sjiraff,word,animals,nouns,nouns,giraffe,
+item_73,skilpadde,word,animals,nouns,nouns,turtle,
+item_74,sommerfugl,word,animals,nouns,nouns,butterfly,
+item_75,tiger,word,animals,nouns,nouns,tiger,
+item_76,ugle,word,animals,nouns,nouns,owl,
+item_77,valp,word,animals,nouns,nouns,puppy,
+item_78,veps,word,animals,nouns,nouns,bee,
+item_79,barnevogn,word,vehicles,nouns,nouns,stroller,
+item_80,bil,word,vehicles,nouns,nouns,car,
+item_81,brannbil,word,vehicles,nouns,nouns,firetruck,
+item_82,buss,word,vehicles,nouns,nouns,bus,
+item_83,fly,word,vehicles,nouns,nouns,airplane,
+item_84,lastebil,word,vehicles,nouns,nouns,truck,
+item_85,motorsykkel,word,vehicles,nouns,nouns,motorcycle,
+item_86,sykkel,word,vehicles,nouns,nouns,bicycle,
+item_87,tog,word,vehicles,nouns,nouns,train,
+item_88,ball,word,toys,nouns,nouns,ball,
+item_89,ballong,word,toys,nouns,nouns,balloon,
+item_90,bok,word,toys,nouns,nouns,book,
+item_91,klosser,word,toys,nouns,nouns,block,
+item_92,dukke,word,toys,nouns,nouns,doll,
+item_93,leke,word,toys,nouns,nouns,toy (object),
+item_94,(farge)blyant,word,toys,nouns,nouns,pen/pencil,
+item_95,såpebobler,word,toys,nouns,nouns,bubbles,
+item_96,appelsin,word,food_drink,nouns,nouns,orange (food),
+item_97,banan,word,food_drink,nouns,nouns,banana,
+item_98,bolle,word,food_drink,nouns,nouns,bun,
+item_99,brød,word,food_drink,nouns,nouns,bread,
+item_100,corn flakes,word,food_drink,nouns,nouns,cheerios,
+item_101,drikke,word,food_drink,nouns,nouns,drink (beverage),
+item_102,egg,word,food_drink,nouns,nouns,egg,
+item_103,eple,word,food_drink,nouns,nouns,apple,
+item_104,fisk,word,food_drink,nouns,nouns,fish (food),
+item_105,frokostblanding,word,food_drink,nouns,nouns,cereal,
+item_106,gulrot,word,food_drink,nouns,nouns,carrots,
+item_107,is,word,food_drink,nouns,nouns,ice cream,
+item_108,juice,word,food_drink,nouns,nouns,juice,
+item_109,kaffe,word,food_drink,nouns,nouns,coffee,
+item_110,kake,word,food_drink,nouns,nouns,cake,
+item_111,kjeks,word,food_drink,nouns,nouns,cracker,
+item_112,kjøtt,word,food_drink,nouns,nouns,meat,
+item_113,kylling,word,food_drink,nouns,nouns,chicken (food),
+item_114,mat,word,food_drink,nouns,nouns,food,
+item_115,melk,word,food_drink,nouns,nouns,milk,
+item_116,ost,word,food_drink,nouns,nouns,cheese,
+item_117,pasta,word,food_drink,nouns,nouns,pasta,
+item_118,pizza,word,food_drink,nouns,nouns,pizza,
+item_119,rosiner,word,food_drink,nouns,nouns,raisin,
+item_120,smør,word,food_drink,nouns,nouns,butter,
+item_121,spagetti,word,food_drink,nouns,nouns,pasta,
+item_122,sukkertøy,word,food_drink,nouns,nouns,candy,
+item_123,vann,word,food_drink,nouns,nouns,water (beverage),
+item_124,bleie,word,clothing,nouns,nouns,diaper,
+item_125,bukse,word,clothing,nouns,nouns,pants,
+item_126,genser,word,clothing,nouns,nouns,sweater,
+item_127,glidelås,word,clothing,nouns,nouns,zipper,
+item_128,halskjede,word,clothing,nouns,nouns,necklace,
+item_129,jakke,word,clothing,nouns,nouns,jacket,
+item_130,kjole,word,clothing,nouns,nouns,dress (object),
+item_131,knapp,word,clothing,nouns,nouns,button,
+item_132,lue,word,clothing,nouns,nouns,hat,
+item_133,pysjamas,word,clothing,nouns,nouns,pajamas,
+item_134,regntøy,word,clothing,nouns,nouns,coat,
+item_135,shorts,word,clothing,nouns,nouns,shorts,
+item_136,sko,word,clothing,nouns,nouns,shoe,
+item_137,smekke,word,clothing,nouns,nouns,bib,
+item_138,smokk,word,clothing,nouns,nouns,pacifier,
+item_139,sokker,word,clothing,nouns,nouns,sock,
+item_140,støvler,word,clothing,nouns,nouns,boots,
+item_141,strømpebukse,word,clothing,nouns,nouns,tights,
+item_142,t-skjorte,word,clothing,nouns,nouns,t-shirt,
+item_143,votter,word,clothing,nouns,nouns,mittens,
+item_144,ansikt,word,body_parts,nouns,nouns,face,
+item_145,arm,word,body_parts,nouns,nouns,arm,
+item_146,bein,word,body_parts,nouns,nouns,leg,
+item_147,finger,word,body_parts,nouns,nouns,finger,
+item_148,fot,word,body_parts,nouns,nouns,foot,
+item_149,hånd,word,body_parts,nouns,nouns,hand,
+item_150,hår,word,body_parts,nouns,nouns,hair,
+item_151,hode,word,body_parts,nouns,nouns,head,
+item_152,kinn,word,body_parts,nouns,nouns,cheek,
+item_153,kne,word,body_parts,nouns,nouns,knee,
+item_154,mage,word,body_parts,nouns,nouns,tummy,
+item_155,munn,word,body_parts,nouns,nouns,mouth,
+item_156,navle,word,body_parts,nouns,nouns,belly button,
+item_157,nese,word,body_parts,nouns,nouns,nose,
+item_158,øre,word,body_parts,nouns,nouns,ear,
+item_159,øye,word,body_parts,nouns,nouns,eye,
+item_160,tå,word,body_parts,nouns,nouns,toe,
+item_161,tenner,word,body_parts,nouns,nouns,tooth,
+item_162,tiss,word,body_parts,nouns,nouns,penis,
+item_163,tunge,word,body_parts,nouns,nouns,tongue,
+item_164,bilde,word,household,nouns,nouns,picture,
+item_165,børste,word,household,nouns,nouns,brush (object),
+item_166,briller,word,household,nouns,nouns,glasses,
+item_167,dyne,word,household,nouns,nouns,blanket,
+item_168,eske,word,household,nouns,nouns,box,
+item_169,flaske,word,household,nouns,nouns,bottle,
+item_170,gaffel,word,household,nouns,nouns,fork,
+item_171,glass,word,household,nouns,nouns,glass,
+item_172,hammer,word,household,nouns,nouns,hammer,
+item_173,håndkle,word,household,nouns,nouns,towel,
+item_174,kam,word,household,nouns,nouns,comb (object),
+item_175,klokke,word,household,nouns,nouns,clock,
+item_176,kniv,word,household,nouns,nouns,knife,
+item_177,kopp,word,household,nouns,nouns,cup,
+item_178,kost,word,household,nouns,nouns,broom,
+item_179,lampe,word,household,nouns,nouns,lamp,
+item_180,lommebok,word,household,nouns,nouns,purse,
+item_181,lys,word,household,nouns,nouns,light (object),
+item_182,medisin,word,household,nouns,nouns,medicine,
+item_183,nøkler,word,household,nouns,nouns,keys,
+item_184,papir,word,household,nouns,nouns,paper,
+item_185,penger,word,household,nouns,nouns,money,
+item_186,plante,word,household,nouns,nouns,plant,
+item_187,pute,word,household,nouns,nouns,pillow,
+item_188,radio,word,household,nouns,nouns,radio,
+item_189,saks,word,household,nouns,nouns,scissors,
+item_190,såpe,word,household,nouns,nouns,soap,
+item_191,skål,word,household,nouns,nouns,bowl,
+item_192,skje,word,household,nouns,nouns,spoon,
+item_193,søppel,word,household,nouns,nouns,trash,
+item_194,støvsuger,word,household,nouns,nouns,vacuum,
+item_195,tallerken,word,household,nouns,nouns,plate,
+item_196,tannbørste,word,household,nouns,nouns,toothbrush,
+item_197,telefon,word,household,nouns,nouns,telephone,
+item_198,teppe,word,household,nouns,nouns,blanket,
+item_199,bad,word,furniture_rooms,nouns,nouns,bathroom,
+item_200,badekar,word,furniture_rooms,nouns,nouns,bathtub,
+item_201,barnestol,word,furniture_rooms,nouns,nouns,high chair,
+item_202,bord,word,furniture_rooms,nouns,nouns,table,
+item_203,dør,word,furniture_rooms,nouns,nouns,door,
+item_204,garasje,word,furniture_rooms,nouns,nouns,garage,
+item_205,gyngestol,word,furniture_rooms,nouns,nouns,rocking chair,
+item_206,kjøkken,word,furniture_rooms,nouns,nouns,kitchen,
+item_207,kjøleskap,word,furniture_rooms,nouns,nouns,refrigerator,
+item_208,komfyr,word,furniture_rooms,nouns,nouns,stove,
+item_209,lekegrind,word,furniture_rooms,nouns,nouns,play pen,
+item_210,ovn,word,furniture_rooms,nouns,nouns,oven,
+item_211,potte,word,furniture_rooms,nouns,nouns,potty,
+item_212,seng,word,furniture_rooms,nouns,nouns,bed,
+item_213,skuff,word,furniture_rooms,nouns,nouns,drawer,
+item_214,sofa,word,furniture_rooms,nouns,nouns,couch,
+item_215,soverom,word,furniture_rooms,nouns,nouns,bedroom,
+item_216,stol,word,furniture_rooms,nouns,nouns,chair,
+item_217,stue,word,furniture_rooms,nouns,nouns,living room,
+item_218,trapp,word,furniture_rooms,nouns,nouns,stairs,
+item_219,TV,word,furniture_rooms,nouns,nouns,tv,
+item_220,vask,word,furniture_rooms,nouns,nouns,sink,
+item_221,vindu,word,furniture_rooms,nouns,nouns,window,
+item_222,blomst,word,outside,nouns,nouns,flower,
+item_223,himmel,word,outside,nouns,nouns,sky,
+item_224,huske,word,outside,nouns,nouns,swing (object),
+item_225,måne,word,outside,nouns,nouns,moon,
+item_226,regn,word,outside,nouns,nouns,rain,
+item_227,sklie,word,outside,nouns,nouns,slide (object),
+item_228,snø,word,outside,nouns,nouns,snow,
+item_229,sol,word,outside,nouns,nouns,sun,
+item_230,spade,word,outside,nouns,nouns,shovel,
+item_231,stein,word,outside,nouns,nouns,rock (object),
+item_232,stjerner,word,outside,nouns,nouns,star,
+item_233,tre,word,outside,nouns,nouns,tree,
+item_234,ute,word,outside,nouns,nouns,outside,
+item_235,vann,word,outside,nouns,nouns,water (not beverage),
+item_236,butikk,word,places,other,other,store,
+item_237,dyrehage,word,places,other,other,zoo,
+item_238,fest,word,places,other,other,party,
+item_239,hage,word,places,other,other,garden,
+item_240,hjem,word,places,other,other,home,
+item_241,hus,word,places,other,other,house,
+item_242,jobb,word,places,other,other,work (place),
+item_243,kirke,word,places,other,other,church,
+item_244,park,word,places,other,other,park,
+item_245,skole,word,places,other,other,school,
+item_246,strand,word,places,other,other,beach,
+item_247,svømmehall,word,places,other,other,pool,
+item_248,baby,word,people,other,other,baby,
+item_249,barn,word,people,other,other,child,
+item_250,barnets navn,word,people,other,other,child's own name,
+item_251,bestefar,word,people,other,other,grandpa,
+item_252,bestemor,word,people,other,other,grandma,
+item_253,bror,word,people,other,other,brother,
+item_254,dame,word,people,other,other,lady,
+item_255,farfar,word,people,other,other,grandpa,
+item_256,farmor,word,people,other,other,grandma,
+item_257,gutt,word,people,other,other,boy,
+item_258,jente,word,people,other,other,girl,
+item_259,mamma,word,people,other,other,mommy,
+item_260,mann,word,people,other,other,man,
+item_261,menneske,word,people,other,other,person,
+item_262,morfar,word,people,other,other,grandpa,
+item_263,mormor,word,people,other,other,grandma,
+item_264,oldefar,word,people,other,other,great grandpa,
+item_265,oldemor,word,people,other,other,great grandma,
+item_266,onkel,word,people,other,other,uncle,
+item_267,pappa,word,people,other,other,daddy,
+item_268,søster,word,people,other,other,sister,
+item_269,tante,word,people,other,other,aunt,
+item_270,bade,word,games_routines,other,other,bath,
+item_271,frokost,word,games_routines,other,other,breakfast,
+item_272,god natt,word,games_routines,other,other,good night,
+item_273,ha det,word,games_routines,other,other,bye,
+item_274,hei,word,games_routines,other,other,hi,
+item_275,hysj,word,games_routines,other,other,shh,
+item_276,ikke,word,games_routines,other,other,don't,
+item_277,ja,word,games_routines,other,other,yes,
+item_278,klappe kake,word,games_routines,other,other,pattycake,
+item_279,Borte! (lek hvor ansikt gjemmes og plutselig vises),word,games_routines,other,other,peekaboo,
+item_280,lunsj,word,games_routines,other,other,lunch,
+item_281,middag,word,games_routines,other,other,dinner,
+item_282,nei,word,games_routines,other,other,no,
+item_283,sovetid,word,games_routines,other,other,nap,
+item_284,takk,word,games_routines,other,other,thank you,
+item_285,vær så snill,word,games_routines,other,other,please,
+item_286,vent,word,games_routines,other,other,wait,
+item_287,vil,word,games_routines,other,other,wanna,
+item_288,bite,word,action_words,predicates,verbs,bite,
+item_289,blåse,word,action_words,predicates,verbs,blow,
+item_290,danse,word,action_words,predicates,verbs,dance,
+item_291,dra,word,action_words,predicates,verbs,go,
+item_292,drikke,word,action_words,predicates,verbs,drink (action),
+item_293,dytte,word,action_words,predicates,verbs,push,
+item_294,elske,word,action_words,predicates,verbs,love,
+item_295,få,word,action_words,predicates,verbs,get,
+item_296,falle,word,action_words,predicates,verbs,fall,
+item_297,forte seg,word,action_words,predicates,verbs,hurry,
+item_298,gå,word,action_words,predicates,verbs,walk,
+item_299,gi,word,action_words,predicates,verbs,give,
+item_300,gjøre seg ferdig,word,action_words,predicates,verbs,finish,
+item_301,gråte,word,action_words,predicates,verbs,cry,
+item_302,hente,word,action_words,predicates,verbs,get,
+item_303,hjelpe,word,action_words,predicates,verbs,help,
+item_304,holde øye med,word,action_words,predicates,verbs,watch (action),
+item_305,hoppe,word,action_words,predicates,verbs,jump,
+item_306,huske,word,action_words,predicates,verbs,swing (action),
+item_307,kaste,word,action_words,predicates,verbs,throw,
+item_308,kile,word,action_words,predicates,verbs,tickle,
+item_309,kjøre,word,action_words,predicates,verbs,drive,
+item_310,klemme,word,action_words,predicates,verbs,hug,
+item_311,kysse,word,action_words,predicates,verbs,kiss,
+item_312,legge,word,action_words,predicates,verbs,put,
+item_313,leke,word,action_words,predicates,verbs,play,
+item_314,lese,word,action_words,predicates,verbs,read,
+item_315,løpe,word,action_words,predicates,verbs,run,
+item_316,lukke,word,action_words,predicates,verbs,close,
+item_317,mate,word,action_words,predicates,verbs,feed,
+item_318,ødelegge,word,action_words,predicates,verbs,break,
+item_319,plaske,word,action_words,predicates,verbs,splash,
+item_320,ri,word,action_words,predicates,verbs,ride,
+item_321,rydde,word,action_words,predicates,verbs,clean (action),
+item_322,se,word,action_words,predicates,verbs,see,
+item_323,se på,word,action_words,predicates,verbs,look,
+item_324,si,word,action_words,predicates,verbs,say,
+item_325,skrive,word,action_words,predicates,verbs,write,
+item_326,slå,word,action_words,predicates,verbs,hit,
+item_327,smile,word,action_words,predicates,verbs,smile,
+item_328,sove,word,action_words,predicates,verbs,sleep,
+item_329,sparke,word,action_words,predicates,verbs,kick,
+item_330,spise,word,action_words,predicates,verbs,eat,
+item_331,stoppe,word,action_words,predicates,verbs,stop,
+item_332,svømme,word,action_words,predicates,verbs,swim,
+item_333,synge,word,action_words,predicates,verbs,sing,
+item_334,ta,word,action_words,predicates,verbs,take,
+item_335,ta på,word,action_words,predicates,verbs,touch,
+item_336,tegne,word,action_words,predicates,verbs,draw,
+item_337,tørke,word,action_words,predicates,verbs,dry (action),
+item_338,vaske,word,action_words,predicates,verbs,wash,
+item_339,vise,word,action_words,predicates,verbs,show,
+item_340,åpne,word,action_words,predicates,verbs,open (action),
+item_341,blå,word,descriptive_words,predicates,adjectives,blue,
+item_342,borte,word,descriptive_words,predicates,adjectives,all gone,
+item_343,bra,word,descriptive_words,predicates,adjectives,good,
+item_344,ekkelt,word,descriptive_words,predicates,adjectives,yucky,
+item_345,fin,word,descriptive_words,predicates,adjectives,fine,
+item_346,forsiktig,word,descriptive_words,predicates,adjectives,careful,
+item_347,fort,word,descriptive_words,predicates,adjectives,fast,
+item_348,frekk,word,descriptive_words,predicates,adjectives,bad,
+item_349,gammel,word,descriptive_words,predicates,adjectives,old,
+item_350,glad,word,descriptive_words,predicates,adjectives,happy,
+item_351,grei,word,descriptive_words,predicates,adjectives,easy,
+item_352,hard,word,descriptive_words,predicates,adjectives,hard,
+item_353,kald,word,descriptive_words,predicates,adjectives,cold,
+item_354,liten,word,descriptive_words,predicates,adjectives,little (description),
+item_355,mørkt,word,descriptive_words,predicates,adjectives,dark,
+item_356,myk,word,descriptive_words,predicates,adjectives,soft,
+item_357,ødelagt,word,descriptive_words,predicates,adjectives,broken,
+item_358,pen,word,descriptive_words,predicates,adjectives,pretty,
+item_359,redd,word,descriptive_words,predicates,adjectives,scared,
+item_360,ren,word,descriptive_words,predicates,adjectives,clean (description),
+item_361,rød,word,descriptive_words,predicates,adjectives,red,
+item_362,skitten,word,descriptive_words,predicates,adjectives,dirty,
+item_363,skjønn,word,descriptive_words,predicates,adjectives,beautiful,
+item_364,slem,word,descriptive_words,predicates,adjectives,naughty,
+item_365,sliten,word,descriptive_words,predicates,adjectives,sleepy,
+item_366,søt,word,descriptive_words,predicates,adjectives,cute,
+item_367,stor,word,descriptive_words,predicates,adjectives,big,
+item_368,sulten,word,descriptive_words,predicates,adjectives,hungry,
+item_369,syk,word,descriptive_words,predicates,adjectives,sick,
+item_370,tom,word,descriptive_words,predicates,adjectives,empty,
+item_371,tørr,word,descriptive_words,predicates,adjectives,dry (description),
+item_372,tørst,word,descriptive_words,predicates,adjectives,thirsty,
+item_373,trøtt,word,descriptive_words,predicates,adjectives,tired,
+item_374,varm,word,descriptive_words,predicates,adjectives,hot,
+item_375,våt,word,descriptive_words,predicates,adjectives,wet (description),
+item_376,vondt,word,descriptive_words,predicates,adjectives,hurt (description),
+item_377,dag,word,time_words,other,other,day,
+item_378,i dag,word,time_words,other,other,today,
+item_379,i kveld,word,time_words,other,other,tonight,
+item_380,i morgen,word,time_words,other,other,tomorrow,
+item_381,morgen,word,time_words,other,other,morning,
+item_382,nå,word,time_words,other,other,now,
+item_383,natt,word,time_words,other,other,night,
+item_384,senere,word,time_words,other,other,later,
+item_385,den,word,pronouns,function_words,function_words,the,
+item_386,denne,word,pronouns,function_words,function_words,this,
+item_387,det,word,pronouns,function_words,function_words,it,
+item_388,dette,word,pronouns,function_words,function_words,this,
+item_389,din,word,pronouns,function_words,function_words,your,
+item_390,du,word,pronouns,function_words,function_words,you,
+item_391,hans,word,pronouns,function_words,function_words,his,
+item_392,hennes,word,pronouns,function_words,function_words,her,
+item_393,jeg,word,pronouns,function_words,function_words,i,
+item_394,meg,word,pronouns,function_words,function_words,me,
+item_395,min,word,pronouns,function_words,function_words,my,
+item_396,hva,word,question_words,function_words,function_words,what,
+item_397,hvem,word,question_words,function_words,function_words,who,
+item_398,hvor,word,question_words,function_words,function_words,where (question),
+item_399,hvordan,word,question_words,function_words,function_words,how,
+item_400,hvorfor,word,question_words,function_words,function_words,why,
+item_401,når,word,question_words,function_words,function_words,when (question),
+item_402,av,word,locations,function_words,function_words,off,
+item_403,bak,word,locations,function_words,function_words,back (location),
+item_404,bort,word,locations,function_words,function_words,away,
+item_405,der,word,locations,function_words,function_words,there,
+item_406,i,word,locations,function_words,function_words,in,
+item_407,inn,word,locations,function_words,function_words,inside,
+item_408,inne,word,locations,function_words,function_words,inside,
+item_409,inni,word,locations,function_words,function_words,inside,
+item_410,ned,word,locations,function_words,function_words,down,
+item_411,nede,word,locations,function_words,function_words,down,
+item_412,opp,word,locations,function_words,function_words,up,
+item_413,oppe,word,locations,function_words,function_words,up,
+item_414,på,word,locations,function_words,function_words,on,
+item_415,under,word,locations,function_words,function_words,under,
+item_416,ut,word,locations,function_words,function_words,out,
+item_417,ute,word,locations,function_words,function_words,out,
+item_418,alle,word,quantifiers,function_words,function_words,all,
+item_419,en annen,word,quantifiers,function_words,function_words,another,
+item_420,ikke,word,quantifiers,function_words,function_words,not,
+item_421,ingen,word,quantifiers,function_words,function_words,none,
+item_422,ingenting,word,quantifiers,function_words,function_words,nothing,
+item_423,mer,word,quantifiers,function_words,function_words,more,
+item_424,noe,word,quantifiers,function_words,function_words,some,
+item_425,noen,word,quantifiers,function_words,function_words,any,
+item_426,samme,word,quantifiers,function_words,function_words,same,
+item_427,Strekker armen for å vise noe i hånden?,gestures_first,,,,,
+item_428,Rekker deg en leke hun/han holder?,gestures_first,,,,,
+item_429,Peker på noe som fanger oppmerksomheten?,gestures_first,,,,,
+item_430,Vinker ha det på egen hånd når noen drar?,gestures_first,,,,,
+item_431,Strekker armene opp for å bli løftet?,gestures_first,,,,,
+item_432,Rister på hodet for ‘nei’?,gestures_first,,,,,
+item_433,Nikker til ‘ja?’,gestures_first,,,,,
+item_434,Gestikulerer hysj ved fingeren mot munnen?,gestures_first,,,,,
+item_435,Vil ha noe ved å strekke armen og åpne og lukke hånden?,gestures_first,,,,,
+item_436,Sender slengkyss?,gestures_first,,,,,
+item_437,Smatter med leppene - nam-nam- for å vise at noe smaker godt?,gestures_first,,,,,
+item_438,Trekker på skuldrene for å vise at man ikke vet?,gestures_first,,,,,
+item_439,Leker hvor er _____? Der er _____! (Gjemmer ansiktet bak hendene og tar hendene bort),gestures_games,,,,,
+item_440,Leker “bake kake søte” eller andre leker med hender og fingre.,gestures_games,,,,,
+item_441,Leker hvor stor er du – sååååååå stor.,gestures_games,,,,,
+item_442,Leker at man prøver å fange hverandre.,gestures_games,,,,,
+item_443,Synger.,gestures_games,,,,,
+item_444,Danser.,gestures_games,,,,,
+item_445,Spiser med skje eller gaffel.,gestures_objects,,,,,
+item_446,Drikker fra en kopp.,gestures_objects,,,,,
+item_447,Børster eller grer håret sitt selv.,gestures_objects,,,,,
+item_448,Pusser tennene.,gestures_objects,,,,,
+item_449,Vasker seg i ansiktet eller hendene med en klut.,gestures_objects,,,,,
+item_450,Setter på seg lue/solhatt selv.,gestures_objects,,,,,
+item_451,Tar på seg en sko eller sokk selv.,gestures_objects,,,,,
+item_452,Tar på seg halsbånd eller andre pyntesaker selv.,gestures_objects,,,,,
+item_453,Legger hodet på samlede hender og kniper øynene for å late som om hun/han sover.,gestures_objects,,,,,
+item_454,Blåser for å vise at noe er varmt.,gestures_objects,,,,,
+item_455,Holder et lekefly i hånda og later som om det flyr.,gestures_objects,,,,,
+item_456,Tar telefonen til øret.,gestures_objects,,,,,
+item_457,Lukter på blomstene.,gestures_objects,,,,,
+item_458,Dytter lekebiler rundt på gulvet og later som om de kjører.,gestures_objects,,,,,
+item_459,Kaster ball.,gestures_objects,,,,,
+item_460,Later som om man heller noe flytende fra en beholder til en annen.,gestures_objects,,,,,
+item_461,Later som om man rører med en skje i en gryte eller kopp.,gestures_objects,,,,,
+item_462,Legger dem i senga for å sove.,gestures_parent,,,,,
+item_463,Tar dyne over.,gestures_parent,,,,,
+item_464,Mater med en flaske.,gestures_parent,,,,,
+item_465,Mater med en skje.,gestures_parent,,,,,
+item_466,Børster/grer håret.,gestures_parent,,,,,
+item_467,Klapper barnet på ryggen for å få en rap.,gestures_parent,,,,,
+item_468,Triller i vogn.,gestures_parent,,,,,
+item_469,Vugger/rugger det i armene.,gestures_parent,,,,,
+item_470,Kysser eller klemmer på det.,gestures_parent,,,,,
+item_471,Prøver å kle på det.,gestures_parent,,,,,
+item_472,Tørker det i ansiktet eller hendene.,gestures_parent,,,,,
+item_473,Snakker til det.,gestures_parent,,,,,
+item_474,Prøver å ta på bleie.,gestures_parent,,,,,
+item_475,Feier med en kost.,gestures_adult,,,,,
+item_476,Putter nøkkel i nøkkelhullet (eller i nærheten av det).,gestures_adult,,,,,
+item_477,Banker med en hammer.,gestures_adult,,,,,
+item_478,Prøver å sage.,gestures_adult,,,,,
+item_479,Skriver på et tastatur.,gestures_adult,,,,,
+item_480,Leser (åpner bøker og blar i sidene).,gestures_adult,,,,,
+item_481,Støvsuger.,gestures_adult,,,,,
+item_482,Vanner planter.,gestures_adult,,,,,
+item_483,Spiller på musikkinstrumenter.,gestures_adult,,,,,
+item_484,Kjører bil ved å styre med et ratt.,gestures_adult,,,,,
+item_485,Vasker opp.,gestures_adult,,,,,
+item_486,Gjør rent med klut eller tørker støv.,gestures_adult,,,,,
+item_487,"Skriver/tegner med blyant, tusj eller fargestifter.",gestures_adult,,,,,
+item_488,Graver med en spade (i sandkassen).,gestures_adult,,,,,
+item_489,Tar på seg (sol)briller.,gestures_adult,,,,,

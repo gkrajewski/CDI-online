@@ -1,5 +1,5 @@
 renderType <- function(input, output, type, reactList, staticList){
-  
+
   #Set current type
   reactList$type <- type
   
