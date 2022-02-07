@@ -1,22 +1,21 @@
 text_type;text
 cdiNamePrefix;Inwentarz Rozwoju Mowy i Komunikacji
-cdiNameSufix;wersja adaptatywna
 dateLabel;Data urodzenia dziecka
 genderLabel;Płeć dziecka
 genders;dziewczynka,chłopiec
 startBtn;Start
 noGender;Proszę wybrać płeć dziecka.
 modalTitle;Uwaga!
-testInstr;Proszę odpowiedzieć na pytanie.
-choiceNames;Nie, Tak
+testInstr;Proszę zaznaczyć ‚tak’ lub ‚nie’.
+choiceNames;nie, tak
 thanksMsgText;Dziękujemy za wypełnienie inwentarza!
 thanksMsgTitle;Koniec!
-alreadyFilled;Ten inwentarz został już przez Ciebie wypełniony.
+alreadyFilled;Ten inwentarz został już przez Państwa wypełniony.
 fillerLabel;Kim Państwo są dla dziecka?
 fillers;mama,tata,babcia,dziadek,niania,nauczyciel(-ka),inna odpowiedź (proszę wpisać):
 noFiller;Proszę wybrać osobę, która wypełnia kwestionariusz
-error;Wystąpił błąd. Proszę odświeżyć i spróbować ponownie. Jeśli błąd się powtarza prosimy o zrobienie screena tego komunikatu i wysłanie na maila projekt.starwords@psych.uw.edu.pl lub przez media społecznościowe.
+error;Wystąpił błąd. Proszę odświeżyć i spróbować ponownie. Jeśli błąd się powtarza, prosimy o zrobienie screena tego komunikatu i wysłanie do nas na maila projekt.starwords@psych.uw.edu.pl lub przez media społecznościowe.
 refresh;Odśwież
 commentLabel;Uwagi
-endText;Koniec testu. Proszę nacisnąć przycisk, aby zakończyć.
+endText;Proszę nacisnąć ‚Zakończ’, aby zakończyć.
 endBtn;Zakończ
