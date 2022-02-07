@@ -54,7 +54,7 @@ source(paste0(FUNCTIONS_PATH,"/renderTestingUI.R"))
 source(paste0(FUNCTIONS_PATH,"/getAdditionalEndMessage.R"))
 
 #Load file with secret variables
-readRenviron("Renviron_local")
+readRenviron(".Renviron")
 
 #Set mail things
 MAIL_USERNAME <- "cdishiny@gmail.com"
