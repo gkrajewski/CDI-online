@@ -5,6 +5,10 @@ Currently accesible langs and forms are in the www folder. Id could be any strin
 Currently deployed version: v1.2
 
 ## Changes
+### v1.4
+* Changed: error message (issue #208)
+* Changed: sidebar error messages (issue #209)
+
 ### v1.3
 * Fixed: app is not crashing when double clicking on buttons (issue #55)
 
