@@ -110,12 +110,13 @@ server <- function(input, output, session) {
             } else {
               
               #Bad form
-              output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badForm", "text"], 
-                                                     paste0(availableForms, collapse = ", "),
+              output$sidebar <- renderText({paste0(c(settings[settings$text_type == "noForm", "text"], 
                                                      "<br><br>",
                                                      settings[settings$text_type == "errorInfo", "text"],
                                                      "<br><br>link:",
                                                      getWholeURL(session)), collapse = " ")})
+              
+              logerror(paste0("Bad value of form parameter: ", form, ". Available values are: ", paste0(availableForms, collapse = ", ")))
               
             }
           
@@ -123,11 +124,12 @@ server <- function(input, output, session) {
             
             #No type folder
             output$sidebar <- renderText({paste0(c(settings[settings$text_type == "noType", "text"], 
-                                                   paste0(" ", type),
                                                    "<br><br>", 
                                                    settings[settings$text_type == "errorInfo", "text"],
                                                    "<br><br>link:",
                                                    getWholeURL(session)), collapse = " ")})
+            
+            logerror(paste0("Bad value of the form parameter: ", form, ". Available values are: ", paste0(availableTypes, collapse = ", ")))
             
           }
           
@@ -135,27 +137,30 @@ server <- function(input, output, session) {
           
           #Not allowed type
           output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badType", "text"], 
-                                                 paste0(allowedTypes, collapse = ", "),
                                                  "<br><br>", 
                                                  settings[settings$text_type == "errorInfo", "text"],
                                                  "<br><br>link:",
                                                  getWholeURL(session)), collapse = " ")})
+          
+          logerror(paste0("Bad value of the type parameter: ", type, ". Allowed values are: ", paste0(allowedTypes, collapse = ", ")))
         }
         
       } else {
         
         #Bad language
-        output$sidebar <- renderText({paste0(c("Bad value of lang parameter in URL. Accesible values are: ", 
-                                               paste0(availableLangs, collapse = ", "),
+        output$sidebar <- renderText({paste0(c("Bad value of the lang parameter in the URL.", 
                                                "<br><br>link:",
                                                getWholeURL(session)), collapse = " ")})
+        
+        logerror(paste0("Bad value of the lang parameter: ", lang, ". Available values are: ", paste0(availableLangs, collapse = ", ")))
       }
       
     } else {
       
       #No all needed parameters
-      output$sidebar <- renderText({paste0("No needed params in URL (lang, form and id) <br><br>link: ", 
+      output$sidebar <- renderText({paste0("Missing URL parameters. <br><br> link: ", 
                                            getWholeURL(session))})
+      logerror("Missing URL parameters (lang, form and id).")
       
       # Useful for testing
       # updateQueryString(paste0("?id=", "test", "&form=", "ws", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
