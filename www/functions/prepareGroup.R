@@ -31,7 +31,7 @@ prepareGroup <- function(output, input, values, txt, parameters, startThetas, su
   
   #Set maximum number of items in test (stop criterion)
   if (paste0(isolate(values$subgroup), "maxItemNr") %in% parameters$parameter) {
-    values$maxItemNr <- as.numeric(parameters[parameters$parameter == paste0(values$subgroup, "maxItemNr"), "value"])
+    values$maxItemNr <- as.numeric(parameters[parameters$parameter == paste0(isolate(values$subgroup), "maxItemNr"), "value"])
   } else {
     values$maxItemNr <- nrow(values$itemsGroup)
   }
@@ -42,7 +42,7 @@ prepareGroup <- function(output, input, values, txt, parameters, startThetas, su
   
   #Set minimum number of items in test 
   if (paste0(isolate(values$subgroup), "minItemNr") %in% parameters$parameter) {
-    values$minItemNr <- as.numeric(parameters[parameters$parameter == paste0(values$subgroup, "minItemNr"), "value"])
+    values$minItemNr <- as.numeric(parameters[parameters$parameter == paste0(isolate(values$subgroup), "minItemNr"), "value"])
   } else {
     values$minItemNr <- 0
   }
@@ -53,7 +53,7 @@ prepareGroup <- function(output, input, values, txt, parameters, startThetas, su
   
   #Set se_theta value 
   if (paste0(isolate(values$subgroup), "MirtSeTheta") %in% parameters$parameter) {
-    values$seTheta <- as.numeric(parameters[parameters$parameter == paste0(values$subgroup, "MirtSeTheta"), "value"])
+    values$seTheta <- as.numeric(parameters[parameters$parameter == paste0(isolate(values$subgroup), "MirtSeTheta"), "value"])
   } else {
     values$seTheta <- 0
   }
