@@ -6,7 +6,8 @@ Currently deployed version: v1.3
 
 ## Changes
 ### v1.4
-* Added: instr, longText and warning message for adaptive tests
+* Added: instructions for cat forms
+* Added: instr, longText and warning message for adaptive tests. Intro placed as LongText
 
 ### v1.3
 * Fixed: app is not crashing when double clicking on buttons (issue #55)
