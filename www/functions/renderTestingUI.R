@@ -15,7 +15,7 @@ renderTestingUI <- function(output, header, headerColor, txt, values){
   })
   
   output$sidebar <- renderUI({
-    div(class = "help-block", txt[txt$text_type == "testInstr", "text"])
+    div(class = "help-block", txt[txt$text_type == "sidebarInstr", "text"])
   })
   
 }

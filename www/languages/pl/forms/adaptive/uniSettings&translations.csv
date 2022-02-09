@@ -6,7 +6,7 @@ genders;dziewczynka,chłopiec
 btn;Start
 noGender;Proszę wybrać płeć dziecka.
 modalTitle;Uwaga!
-testInstr;Proszę zaznaczyć ‚tak’ lub ‚nie’.
+sidebarInstr;Proszę zaznaczyć ‚tak’ lub ‚nie’.
 choiceNames;nie, tak
 thanks;Dziękujemy za wypełnienie inwentarza!
 end;Koniec!

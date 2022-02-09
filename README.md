@@ -2,12 +2,14 @@
 In order to launch any inventory you have to provide a proper URL query eg. /?id=test&form=wg&lang=pl&type=static
 Currently accesible langs and forms are in the www folder. Id could be any string, ids of length 21 mean a person connected with the StarWords app.
 
-Currently deployed version: v1.2
+Currently deployed version: v1.3
 
 ## Changes
 ### v1.4
-* Changed: error message (issue #208)
-* Changed: sidebar error messages (issue #209)
+* Changed: general error text (issue #208)
+* Changed: sidebar URL errors texts (issue #209)
+* Added: instructions for cat forms
+* Added: instr, longText and warning message for adaptive tests. Intro placed as LongText
 
 ### v1.3
 * Fixed: app is not crashing when double clicking on buttons (issue #55)
