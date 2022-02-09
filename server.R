@@ -129,7 +129,7 @@ server <- function(input, output, session) {
                                                    "<br><br>link:",
                                                    getWholeURL(session)), collapse = " ")})
             
-            logerror(paste0("Bad value of the form parameter: ", form, ". Available values are: ", paste0(availableTypes, collapse = ", ")))
+            logerror(paste0("Bad value of the type parameter: ", form, ". Available values are: ", paste0(availableTypes, collapse = ", ")))
             
           }
           
