@@ -19,6 +19,8 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
       
       setwd(INIT_PATH)
       
+      loginfo("Translation input files were read in")
+      
       TRUE
       
     },
@@ -57,6 +59,7 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
     
     if (file.exists(subjectFile)){
       subject <- readRDS(subjectFile)
+      loginfo("Subject file was read in")
       
     } else {
       
@@ -78,6 +81,8 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
         subject[[paste0(subgroup, "Comment")]] = NA
         subject[[paste0(subgroup, "CommentEnd")]] = NA
       }
+      
+      loginfo("Subject file was created")
   
     }
     

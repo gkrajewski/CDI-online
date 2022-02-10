@@ -31,7 +31,17 @@ server <- function(input, output, session) {
         #Get language universal translations
         langPath <- paste0(LANGUAGES_PATH, "/", lang)
         setwd(langPath)
-        settings <- read.csv("preSettings.csv", encoding = "UTF-8", sep = ";", strip.white = T)
+        inputFilesRead <- tryCatch(
+          expr = {
+            settings <- read.csv("preSettings.csv", encoding = "UTF-8", sep = ";", strip.white = T)
+          },
+          error = function(m){
+            msg <- paste0("There is problem with input files <br><br>", m)
+            logerror(msg)
+            output$sidebar <- renderText({msg})
+            return(FALSE)
+          }
+        )
         setwd(INIT_PATH)
 
         #Get allowed by app types
@@ -93,8 +103,10 @@ server <- function(input, output, session) {
                 }, ignoreInit = TRUE)
                 
                 if (type == "adaptive") {
+                  loginfo(paste0(urlString, " starting adaptive test"))
                   runAdaptive(input, output, session, lang, form, idx, run, urlString, fromSW)
                 } else if (type == "static") {
+                  loginfo(paste0(urlString, " starting static test"))
                   runStatic(input, output, session, lang, form, idx, run, urlString, fromSW)
                 } else {
                   logerror(paste0("Not allowed type - '", type, "'. Type can be 'static' or 'adaptive'. Change name of form(s) type folder"))
