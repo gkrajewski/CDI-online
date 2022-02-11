@@ -155,7 +155,7 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
           
         }
         
-      })
+      }, once = TRUE)
       
     } else {
       
