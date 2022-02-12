@@ -34,7 +34,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     #Many parts form
     groups<-strsplit(txt[txt$text_type == "groups", "text"], ",")[[1]]
     
-    loginfo(paste0(" Following groups are defined: ", groups))
+    loginfo(paste0(" Following groups are defined: ", paste0(groups, collapse = ", ")))
     
   } else {
     
@@ -91,7 +91,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   groupsToTest <- groups[groupsToTestBool]
   groupsToTest <- c(startGroup, sample(groupsToTest))
   
-  loginfo(paste0(" This is the group order: ", groupsToTest))
+  loginfo(paste0(" This is the group order: ", paste0(groupsToTest, collapse=", ")))
 
   #Prepare reactive variables
   values <- reactiveValues()
@@ -179,7 +179,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       values$subject[[paste0(values$subgroup, "Test")]] <- "end"
       values$groupsToSave <- c(values$groupsToSave, isolate(values$subgroup))
       loginfo(paste0(" done with part ", isolate(values$groupIdx), " group: ", isolate(values$subgroup), 
-                     " groups to save: ", isolate(values$groupsToSave)))
+                     " groups to save: ", paste0(isolate(values$groupsToSave), collapse=", ")))
       loginfo(paste0(" Items answered ", isolate(values$items_answered), 
                      " se theta: ", updatedDesign$person$thetas_SE_history[length(updatedDesign$person$thetas_SE_history)]))
       

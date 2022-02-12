@@ -4,7 +4,7 @@ saveCAT <- function(CATdesign, designFile, subject, subjectFile, groupsToSave, u
   saveRDS(CATdesign, designFile)
   saveRDS(subject, subjectFile)
   
-  loginfo(paste0(" Groups to save: ", groupsToSave))
+  loginfo(paste0(" Groups to save: ", paste0(groupsToSave, collapse=", ")))
   
   #Save every part
   for (group in groupsToSave) {
