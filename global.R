@@ -52,6 +52,7 @@ source(paste0(FUNCTIONS_PATH,"/prepareGroup.R"))
 source(paste0(FUNCTIONS_PATH,"/saveCAT.R"))
 source(paste0(FUNCTIONS_PATH,"/renderTestingUI.R"))
 source(paste0(FUNCTIONS_PATH,"/getAdditionalEndMessage.R"))
+source(paste0(FUNCTIONS_PATH,"/redirect.R"))
 
 #Load file with secret variables
 readRenviron(".Renviron")

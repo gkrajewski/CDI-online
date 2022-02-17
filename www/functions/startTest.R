@@ -223,6 +223,9 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         footer = NULL
       ))
       
+      #Redirect automatically to a new page
+      if ("redirectionURL" %in% parameters$parameter) redirect(parameters)
+      
       if (fromSW) recurrentCallSW(idx, form, lang, done = "true", score="true")
       
       saveCAT(

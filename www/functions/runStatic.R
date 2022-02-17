@@ -345,13 +345,9 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
                 footer = NULL
               ))
               
-              #Redirect automatically to new page
-              runjs(paste0('
-                setTimeout(function(){
-                  window.location.replace("http://multilada.pl");
-                }, 5000);
-              '))
-              
+              #Redirect automatically to a new page
+              if ("redirectionURL" %in% staticList$parameters$parameter) redirect(staticList$parameters)
+
               #Disable all types
               for (type in types){
                 disable(type)
