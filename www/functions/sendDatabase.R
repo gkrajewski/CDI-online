@@ -9,7 +9,8 @@ sendDatabase <- function(username, password, dbname, host, port, id, tableName, 
                              dbname=dbname, 
                              host=host, 
                              port=port)
-      loginfo(paste0(id, " connected with database. Tables: ", paste(dbListTables(storiesDb), collapse=" "), " tableName=", tableName))
+
+      loginfo(paste0(id, " connected with database. tableName: ", tableName))
       result = ""
       
       if (!(tableName %in% dbListTables(storiesDb))) {

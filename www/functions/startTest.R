@@ -2,16 +2,30 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
 
   #Get subject (children) age in months
   subjectAge <- interval(subject$birth, Sys.Date()) %/% months(1)
+  loginfo(paste0("Subject Age: ", subjectAge))
   
   #Load items and start thetas
   setwd(testPath)
-  items <- read.csv(paste0("items.csv"), encoding = "UTF-8", strip.white = T)
-  startThetasFile <- "startThetas.csv"
-  if (file.exists(startThetasFile)) {
-    startThetas <- read.csv(paste0("startThetas.csv"), encoding = "UTF-8", strip.white = T, dec=",")
-  } else {
-    startThetas <- NA
-  }
+  inputFilesRead <- tryCatch(
+    expr = {
+      items <- read.csv(paste0("items.csv"), encoding = "UTF-8", strip.white = T)
+      startThetasFile <- "startThetas.csv"
+      if (file.exists(startThetasFile)) {
+        startThetas <- read.csv(paste0("startThetas.csv"), encoding = "UTF-8", strip.white = T, dec=",")
+      } else {
+        startThetas <- NA
+      }
+      loginfo(" Input files were read in")
+    },
+    error = function(m){
+      msg <- paste0(" There is problem with input files <br><br>", m)
+      logerror(msg)
+      output$sidebar <- renderText({msg})
+      return(FALSE)
+    }
+  )
+  
+  
   setwd(INIT_PATH)
 
   #Prepare parts settings
@@ -19,6 +33,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     
     #Many parts form
     groups<-strsplit(parameters[parameters$parameter=="groups", "value"], ",")[[1]]
+    
+    loginfo(paste0(" Following groups are defined: ", paste0(groups, collapse = ", ")))
     
   } else {
     
@@ -38,6 +54,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       parameters[parameters$parameter=="minItemNr", "parameter"] = paste0("group1", parameters[parameters$parameter=="minItemNr", "parameter"])
     }
     
+    loginfo(" Groups parameter was not defined")
   }
   
   #Prepare vector of parts tested already and not
@@ -56,6 +73,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         
         startGroup <- groups[i]
         
+        loginfo(paste0(" This is the start group: ", startGroup))
+        
       } else {
         
         groupsToTestBool[i] <- TRUE
@@ -72,6 +91,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   #Sample some parts order from parts that were not started already
   groupsToTest <- groups[groupsToTestBool]
   groupsToTest <- c(startGroup, sample(groupsToTest))
+  
+  loginfo(paste0(" This is the group order: ", paste0(groupsToTest, collapse=", ")))
 
   #Prepare reactive variables
   values <- reactiveValues()
@@ -84,17 +105,23 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   
   if (start=="comment") {
     
-    loginfo(paste0("Starting part ", values$subgroup, " with comment"))
+    loginfo(paste0(" Starting part ", values$subgroup, " with comment"))
     
     values$designFile <- designFile <- paste0("CATdesigns/", urlString, "-", values$subgroup, ".rds")
     CATdesign <- readRDS(isolate(values$designFile))
     
+    loginfo(paste0(" Design for group ", values$subgroup, " was read in"))
+    
     if (values$groupIdx==length(groupsToTest)) {
       btnLabel <- txt[txt$text_type == "endBtn", "text"]
       values$completeEnd <- TRUE
+      loginfo(paste0(" All parts of the form were completed. GroupIdx: ", isolate(values$groupIdx), 
+                     " groups in total: ", length(groupsToTest)))
     } else {
       btnLabel <- txt[txt$text_type == "continueBtn", "text"]
       values$completeEnd <- FALSE
+      loginfo(paste0(" Not all parts were completed. GroupIdx: ", isolate(values$groupIdx), 
+              " groups in total: ", length(groupsToTest)))
     }
     
     commentInput = ""
@@ -113,7 +140,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     
   } else {
     
-    loginfo(paste0("Starting part ", values$subgroup, " with items"))
+    loginfo(paste0(" Starting part ", isolate(values$subgroup), " with items"))
     
     #Prepare CAT design for given part
     CATdesign <- prepareGroup(output = output, 
@@ -124,6 +151,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
                               startThetas = startThetas, 
                               subjectAge = subjectAge, 
                               urlString = urlString)
+    
+    loginfo(paste0(" Created CATdesign for ", isolate(values$subgroup)))
   }
   
   CATdesign <- reactiveVal(CATdesign)
@@ -139,8 +168,10 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     #Update design
     updatedDesign <- updateDesign(CATdesign(), new_item = values$nextItem, new_response = input$question)
 
-    if ((length(na.omit(updatedDesign$person$items_answered)) >= values$minItemNr) &
-        ((length(na.omit(updatedDesign$person$items_answered)) >= values$maxItemNr) |
+    values$items_answered = length(na.omit(updatedDesign$person$items_answered))
+    
+    if ((values$items_answered >= values$minItemNr) &
+        ((values$items_answered >= values$maxItemNr) |
         (updatedDesign$person$thetas_SE_history[length(updatedDesign$person$thetas_SE_history)]<
          values$seTheta))
     ){
@@ -149,20 +180,28 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       CATdesign(updatedDesign)
       values$subject[[paste0(values$subgroup, "Test")]] <- "end"
       values$groupsToSave <- c(values$groupsToSave, isolate(values$subgroup))
-      loginfo(paste0(urlString, " done with part", values$groupIdx))
+      loginfo(paste0(" done with part ", isolate(values$groupIdx), " group: ", isolate(values$subgroup), 
+                     " groups to save: ", paste0(isolate(values$groupsToSave), collapse=", ")))
+      loginfo(paste0(" Items answered ", isolate(values$items_answered), 
+                     " se theta: ", updatedDesign$person$thetas_SE_history[length(updatedDesign$person$thetas_SE_history)]))
       
       #Save data
       endDate <- Sys.time()
       outputTable <- prepareOutputAdaptative(isolate(CATdesign()), isolate(values$itemsGroup$item) ,isolate(values$subject), lang, isolate(values$subgroup), endDate)
+      loginfo(paste0(" prepared output file for the group ", isolate(values$subgroup)))
       answerFile <- paste0("answers/", urlString, "-", isolate(values$subgroup), ".csv")
       write.csv(outputTable, answerFile, row.names = F)
       
       if (values$groupIdx==length(groupsToTest)) {
         btnLabel <- txt[txt$text_type == "endBtn", "text"]
         values$completeEnd <- TRUE
+        loginfo(paste0(" All parts of the form were completed. GroupIdx: ", isolate(values$groupIdx), 
+                       " groups in total: ", length(groupsToTest)))
       } else {
         btnLabel <- txt[txt$text_type == "continueBtn", "text"]
         values$completeEnd <- FALSE
+        loginfo(paste0(" Not all parts were completed. GroupIdx: ", isolate(values$groupIdx), 
+                       " groups in total: ", length(groupsToTest)))
       }
       
       output$main <- renderUI({
@@ -193,6 +232,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   # Action after ending one part of the test
   partEndActions <- function() {
     
+    loginfo(paste0(" Part ", isolate(values$subgroup), " was ended"))
+    
     #Comment part ended
     values$subject[[paste0(values$subgroup, "CommentEnd")]] <- "end"
     
@@ -203,6 +244,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     write.csv(outputTable, answerFile, row.names = F)
     
     if (values$completeEnd) {
+      
+      loginfo(" Form was ended")
       
       ### FORM COMPLETE END ###
       
@@ -250,6 +293,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       values$groupIdx <- values$groupIdx +1
       values$subgroup <- groupsToTest[values$groupIdx]
       values$itemsGroup <- items[items$group==values$subgroup, ]
+      
+      loginfo(paste0(" Another group starting. Group: ", isolate(values$subgroup), " group Idx: ", isolate(values$groupIdx)))
       
       #Prepare CAT design for new part
       CATdesign <- prepareGroup(output = output, 

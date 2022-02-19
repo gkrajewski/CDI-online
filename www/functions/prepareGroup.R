@@ -9,6 +9,8 @@ prepareGroup <- function(output, input, values, txt, parameters, startThetas, su
 
     CATdesign <- readRDS(isolate(values$designFile))
     
+    loginfo(paste0(" Design file for group: ", isolate(values$subgroup), " was read in "))
+    
   } else {
     
     #preapre startTheta
@@ -25,6 +27,7 @@ prepareGroup <- function(output, input, values, txt, parameters, startThetas, su
                          design_elements = TRUE, 
                          design = list(thetas.start = values$subject[[paste0(values$subgroup, "Theta")]]))
     
+    loginfo(paste0(" Design file for group: ", isolate(values$subgroup), " was created "))
   }
   
   values$nextItem <- findNextItem(CATdesign)
@@ -57,6 +60,9 @@ prepareGroup <- function(output, input, values, txt, parameters, startThetas, su
   } else {
     values$seTheta <- 0
   }
+  
+  loginfo(paste0(" Min number: ", isolate(values$minItemNr), " max number: ", isolate(values$maxItemNr), 
+                 " se theta: ", isolate(values$seTheta)))
   
   #STEP 2. Start test and display
   
