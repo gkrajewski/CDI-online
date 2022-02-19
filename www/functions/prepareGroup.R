@@ -73,7 +73,7 @@ prepareGroup <- function(output, input, values, txt, parameters, startThetas, su
   instrID = paste0(isolate(values$subgroup), "Instr") 
   
   if (instrID %in% txt$text_type) {
-
+    
     output$main <- renderUI({h5(txt[txt$text_type == instrID, "text"])})
     
     output$sidebar <- renderUI({
