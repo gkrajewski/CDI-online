@@ -5,6 +5,9 @@ Currently accesible langs and forms are in the www folder. Id could be any strin
 Currently deployed version: v1.4
 
 ## Changes
+### v1.5
+* Added: more informative error for database saving failure (issue #172)
+
 ### v1.4
 * Changed: general error text (issue #208)
 * Changed: sidebar URL errors texts (issue #209)
