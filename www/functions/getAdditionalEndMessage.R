@@ -10,7 +10,7 @@ getAdditionalEndMessage <- function(id, urlString, type="database", parameters, 
       db_name = Sys.getenv("DB_NAME")
       
       transaction1 = paste0("select @value:= ", val_col, " from `", db_name, "`.`", table,
-                            "` where ", id_col, " is null limit 1")
+                            "` where ", id_col, " is null limit 1 for update")
       transaction2 = paste0("update `", db_name, "`.`", table, "` set id='",
                             id, "' where ", val_col, "=@value and ", id_col, " is null")
       query = paste0("select ", val_col, " from `", db_name, "`.`", table, "` where ", 

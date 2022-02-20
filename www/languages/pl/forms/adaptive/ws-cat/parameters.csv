@@ -5,9 +5,9 @@ additionalEndMessageFromDatabase;no
 additionalEndMessageTable;vouchers
 additionalEndMessageValueColumn;voucher
 additionalEndMessageIdColumn;id
-MirtMethod;ML
-MirtCriteria;MI
-minItemNr;1
-maxItemNr;5
-MirtSeTheta;0.05
+mowaMirtMethod;ML
+mowaMirtCriteria;MI
+mowaminItemNr;1
+mowamaxItemNr;5
+mowaMirtSeTheta;0.05
 groups;mowa

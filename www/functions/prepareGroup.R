@@ -1,7 +1,6 @@
 prepareGroup <- function(output, input, values, txt, parameters, startThetas, subjectAge, urlString) {
   
   # STEP 1. Prepare everything for the group
-  
   #Prepare mirtCAT design object
   values$designFile <- paste0("CATdesigns/", urlString, "-", values$subgroup, ".rds")
   
@@ -20,6 +19,7 @@ prepareGroup <- function(output, input, values, txt, parameters, startThetas, su
     
     params <- values$itemsGroup[, c("a1", "d")]
     mirt_object <- generate.mirt_object(params, '2PL')
+    
     CATdesign <- mirtCAT(mo = mirt_object, 
                          method = parameters[parameters$parameter == paste0(values$subgroup, "MirtMethod"), "value"], 
                          criteria = parameters[parameters$parameter == paste0(values$subgroup, "MirtCriteria"), "value"], 

@@ -25,7 +25,6 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     }
   )
   
-  
   setwd(INIT_PATH)
 
   #Prepare parts settings
@@ -141,7 +140,6 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   } else {
     
     loginfo(paste0(" Starting part ", isolate(values$subgroup), " with items"))
-    
     #Prepare CAT design for given part
     CATdesign <- prepareGroup(output = output, 
                               input = input, 
