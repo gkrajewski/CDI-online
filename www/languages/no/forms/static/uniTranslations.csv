@@ -16,7 +16,6 @@ genders;jente, gutt;;
 commentLabel;Andre kommentarer;;
 cdiNamePrefix;Foreldrerapport for kommunikativ utvikling;;
 endTooltip;Du kan sende inn svarene dine når alle delene av skjemaet er fylt ut.;;
-sentences3Tooltip;Avsnittet “Setninger” blir aktivt avhengig av svaret i “Kombinasjon av ord” -delen.;;
 header;Send inn svarene dine;end;
 endBtn;Send inn  ;end;
 instr;Hvis du har fylt ut alle svarene, kan du trykke på «Bekreft».;end;
