@@ -5,7 +5,7 @@ Currently accesible langs and forms are in the www folder. Id could be any strin
 Currently deployed version: v1.4
 
 ## Changes
-### v1.4
+### v1.5
 * Changed: end message for adaptive inventory (issue #198)
 
 ### v1.4
