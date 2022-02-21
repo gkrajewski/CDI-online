@@ -6,6 +6,9 @@ Currently deployed version: v1.4
 
 ## Changes
 ### v1.4
+* Changed: end message for adaptive inventory (issue #198)
+
+### v1.4
 * Changed: general error text (issue #208)
 * Changed: sidebar URL errors texts (issue #209)
 * Added: instructions for cat forms
