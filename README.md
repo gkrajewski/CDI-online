@@ -6,6 +6,7 @@ Currently deployed version: v1.4
 
 ## Changes
 ### v1.5
+* Chnaged: app checks for existance of .Renviron file before reading it in (issue #192)
 * Changed: end message for adaptive inventory (issue #198)
 
 ### v1.4
