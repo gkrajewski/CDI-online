@@ -7,6 +7,8 @@ Currently deployed version: v1.4
 ## Changes
 ### v1.5
 * Added: more informative error for database saving failure (issue #172)
+* Chnaged: app checks for existance of .Renviron file before reading it in (issue #192)
+* Changed: end message for adaptive inventory (issue #198)
 
 ### v1.4
 * Changed: general error text (issue #208)
