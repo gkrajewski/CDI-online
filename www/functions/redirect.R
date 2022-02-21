@@ -15,7 +15,7 @@ redirect <- function(parameters){
           ' setTimeout(function(){
                             window.location.replace("', parameters[parameters$parameter=="redirectionURL", "value"], '");
                           },', redirectionTime, ');
-                        '
+          '
         )
       )
       
