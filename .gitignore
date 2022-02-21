@@ -8,10 +8,6 @@ TODO.txt
 CATsubjects/
 logs/
 CATdesigns/
-
-
-
-
-
-
-
+.DS_Store
+*.Rproj
+.Rproj.user
