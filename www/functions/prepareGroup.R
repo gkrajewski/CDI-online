@@ -1,13 +1,14 @@
 prepareGroup <- function(output, input, values, txt, parameters, startThetas, subjectAge, urlString) {
   
   # STEP 1. Prepare everything for the group
-  
   #Prepare mirtCAT design object
   values$designFile <- paste0("CATdesigns/", urlString, "-", values$subgroup, ".rds")
   
   if (file.exists(values$designFile)){
 
     CATdesign <- readRDS(isolate(values$designFile))
+    
+    loginfo(paste0(" Design file for group: ", isolate(values$subgroup), " was read in "))
     
   } else {
     
@@ -18,6 +19,7 @@ prepareGroup <- function(output, input, values, txt, parameters, startThetas, su
     
     params <- values$itemsGroup[, c("a1", "d")]
     mirt_object <- generate.mirt_object(params, '2PL')
+    
     CATdesign <- mirtCAT(mo = mirt_object, 
                          method = parameters[parameters$parameter == paste0(values$subgroup, "MirtMethod"), "value"], 
                          criteria = parameters[parameters$parameter == paste0(values$subgroup, "MirtCriteria"), "value"], 
@@ -25,13 +27,14 @@ prepareGroup <- function(output, input, values, txt, parameters, startThetas, su
                          design_elements = TRUE, 
                          design = list(thetas.start = values$subject[[paste0(values$subgroup, "Theta")]]))
     
+    loginfo(paste0(" Design file for group: ", isolate(values$subgroup), " was created "))
   }
   
   values$nextItem <- findNextItem(CATdesign)
   
   #Set maximum number of items in test (stop criterion)
   if (paste0(isolate(values$subgroup), "maxItemNr") %in% parameters$parameter) {
-    values$maxItemNr <- as.numeric(parameters[parameters$parameter == paste0(values$subgroup, "maxItemNr"), "value"])
+    values$maxItemNr <- as.numeric(parameters[parameters$parameter == paste0(isolate(values$subgroup), "maxItemNr"), "value"])
   } else {
     values$maxItemNr <- nrow(values$itemsGroup)
   }
@@ -42,7 +45,7 @@ prepareGroup <- function(output, input, values, txt, parameters, startThetas, su
   
   #Set minimum number of items in test 
   if (paste0(isolate(values$subgroup), "minItemNr") %in% parameters$parameter) {
-    values$minItemNr <- as.numeric(parameters[parameters$parameter == paste0(values$subgroup, "minItemNr"), "value"])
+    values$minItemNr <- as.numeric(parameters[parameters$parameter == paste0(isolate(values$subgroup), "minItemNr"), "value"])
   } else {
     values$minItemNr <- 0
   }
@@ -53,10 +56,13 @@ prepareGroup <- function(output, input, values, txt, parameters, startThetas, su
   
   #Set se_theta value 
   if (paste0(isolate(values$subgroup), "MirtSeTheta") %in% parameters$parameter) {
-    values$seTheta <- as.numeric(parameters[parameters$parameter == paste0(values$subgroup, "MirtSeTheta"), "value"])
+    values$seTheta <- as.numeric(parameters[parameters$parameter == paste0(isolate(values$subgroup), "MirtSeTheta"), "value"])
   } else {
     values$seTheta <- 0
   }
+  
+  loginfo(paste0(" Min number: ", isolate(values$minItemNr), " max number: ", isolate(values$maxItemNr), 
+                 " se theta: ", isolate(values$seTheta)))
   
   #STEP 2. Start test and display
   
@@ -73,7 +79,7 @@ prepareGroup <- function(output, input, values, txt, parameters, startThetas, su
   instrID = paste0(isolate(values$subgroup), "Instr") 
   
   if (instrID %in% txt$text_type) {
-
+    
     output$main <- renderUI({h5(txt[txt$text_type == instrID, "text"])})
     
     output$sidebar <- renderUI({

@@ -31,7 +31,17 @@ server <- function(input, output, session) {
         #Get language universal translations
         langPath <- paste0(LANGUAGES_PATH, "/", lang)
         setwd(langPath)
-        settings <- read.csv("preSettings.csv", encoding = "UTF-8", sep = ";", strip.white = T)
+        inputFilesRead <- tryCatch(
+          expr = {
+            settings <- read.csv("preSettings.csv", encoding = "UTF-8", sep = ";", strip.white = T)
+          },
+          error = function(m){
+            msg <- paste0("There is problem with input files <br><br>", m)
+            logerror(msg)
+            output$sidebar <- renderText({msg})
+            return(FALSE)
+          }
+        )
         setwd(INIT_PATH)
 
         #Get allowed by app types
@@ -93,8 +103,10 @@ server <- function(input, output, session) {
                 }, ignoreInit = TRUE)
                 
                 if (type == "adaptive") {
+                  loginfo(paste0(urlString, " starting adaptive test"))
                   runAdaptive(input, output, session, lang, form, idx, run, urlString, fromSW)
                 } else if (type == "static") {
+                  loginfo(paste0(urlString, " starting static test"))
                   runStatic(input, output, session, lang, form, idx, run, urlString, fromSW)
                 } else {
                   logerror(paste0("Not allowed type - '", type, "'. Type can be 'static' or 'adaptive'. Change name of form(s) type folder"))
@@ -110,12 +122,13 @@ server <- function(input, output, session) {
             } else {
               
               #Bad form
-              output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badForm", "text"], 
-                                                     paste0(availableForms, collapse = ", "),
+              output$sidebar <- renderText({paste0(c(settings[settings$text_type == "noForm", "text"], 
                                                      "<br><br>",
                                                      settings[settings$text_type == "errorInfo", "text"],
                                                      "<br><br>link:",
                                                      getWholeURL(session)), collapse = " ")})
+              
+              logerror(paste0("Bad value of form parameter: ", form, ". Available values are: ", paste0(availableForms, collapse = ", ")))
               
             }
           
@@ -123,11 +136,12 @@ server <- function(input, output, session) {
             
             #No type folder
             output$sidebar <- renderText({paste0(c(settings[settings$text_type == "noType", "text"], 
-                                                   paste0(" ", type),
                                                    "<br><br>", 
                                                    settings[settings$text_type == "errorInfo", "text"],
                                                    "<br><br>link:",
                                                    getWholeURL(session)), collapse = " ")})
+            
+            logerror(paste0("Bad value of the type parameter: ", form, ". Available values are: ", paste0(availableTypes, collapse = ", ")))
             
           }
           
@@ -135,27 +149,30 @@ server <- function(input, output, session) {
           
           #Not allowed type
           output$sidebar <- renderText({paste0(c(settings[settings$text_type == "badType", "text"], 
-                                                 paste0(allowedTypes, collapse = ", "),
                                                  "<br><br>", 
                                                  settings[settings$text_type == "errorInfo", "text"],
                                                  "<br><br>link:",
                                                  getWholeURL(session)), collapse = " ")})
+          
+          logerror(paste0("Bad value of the type parameter: ", type, ". Allowed values are: ", paste0(allowedTypes, collapse = ", ")))
         }
         
       } else {
         
         #Bad language
-        output$sidebar <- renderText({paste0(c("Bad value of lang parameter in URL. Accesible values are: ", 
-                                               paste0(availableLangs, collapse = ", "),
+        output$sidebar <- renderText({paste0(c("Bad value of the lang parameter in the URL.", 
                                                "<br><br>link:",
                                                getWholeURL(session)), collapse = " ")})
+        
+        logerror(paste0("Bad value of the lang parameter: ", lang, ". Available values are: ", paste0(availableLangs, collapse = ", ")))
       }
       
     } else {
       
       #No all needed parameters
-      output$sidebar <- renderText({paste0("No needed params in URL (lang, form and id) <br><br>link: ", 
+      output$sidebar <- renderText({paste0("Missing URL parameters. <br><br> link: ", 
                                            getWholeURL(session))})
+      logerror("Missing URL parameters (lang, form and id).")
       
       # Useful for testing
       updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
