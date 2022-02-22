@@ -26,6 +26,5 @@ instr;Thank you for filling the questionnaire! We hope that it was a valuable ex
 instr;Thank you for filling the questionnaire! We hope that it was a valuable experience that allowed you to reflect on your child's langauge development. Your participation in the study is very important for us – it will help us to describe early language development of mono- and bilingual children who acquire English as one of their languages.;postEnd;
 error;An error has occured. Please reload the page and try again.;;
 refresh;Reload;;
-badForm;Incorrect parameter value in the URL. Available values: ;;none
 inventoryOpened;The questionnaire is already open. Please close the questionnaire if it's open somewhere else and/or reload the page.;;
 email;no;;

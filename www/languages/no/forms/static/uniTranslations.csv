@@ -25,6 +25,5 @@ endMsgText;Tusen takk for at du har fylt ut dette spørreskjemaet! Vi håper at 
 endMsgTextSW;Tusen takk for at du har fylt ut dette spørreskjemaet! Vi håper at du syntes det var interessant å reflektere over ditt barns språklige utvikling. Ditt bidrag til forskningen om barns språkutvikling er viktig - det vil hjelpe oss til å forstå den bedre.;end;
 error;Det har skjedd en feil. Oppdater siden og prøv igjen.;;
 refresh;Oppdater;;
-badForm;Det er en feil parameterverdi i URL-en. Mulige verdier er: ;;none
 inventoryOpened;Spørreskjemaet er allerede åpnet et annet sted. Lukk skjemaet hvis du har åpnet det på en annen enhet eller oppdater siden. ;;
 email;no;;
