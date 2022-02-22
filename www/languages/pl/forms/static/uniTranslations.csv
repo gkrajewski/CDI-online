@@ -27,7 +27,7 @@ instr;Jeśli wypełnili Państwo wszystkie części kwestionariusza, proszę kli
 endMsgTitle;Dziękujemy za wypełnienie!;end;
 endMsgTextSW;Bardzo dziękujemy za wypełnienie kwestionariusza! Więcej informacji znajdą Państwo w zakładce „Wiedza”.;end;
 endMsgText;Dziękujemy za wypełnienie kwestionariusza! Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Państwa cenny! Państwa zaangażowanie w badanie jest bardzo ważne - pomoże nam szczegółowo opisać wczesny rozwój językowy dzieci jedno- i dwujęzycznych przyswajających język polski jako jeden ze swoich języków.;end;
-error;Nastąpiło przerwanie połączenia. Proszę odświeżyć i spróbować ponownie. Jeśli to się powtarza prosimy o zrobienie screena tego ekranu i wysłanie na maila multilada@psych.uw.edu.pl.;;
+error;Nastąpiło przerwanie połączenia. Proszę odświeżyć i spróbować ponownie. Jeśli to się powtarza, prosimy o zrobienie screena tego ekranu i wysłanie na maila multilada@psych.uw.edu.pl.;;
 refresh;Odśwież;;
 inventoryOpened;Inwentarz jest już otwarty. Proszę zamknąć inwentarz jeśli jest otwarty gdzie indziej i/lub odświeżyć stronę.;;
 email;yes;;
