@@ -2,11 +2,28 @@
 In order to launch any inventory you have to provide a proper URL query eg. /?id=test&form=wg&lang=pl&type=static
 Currently accesible langs and forms are in the www folder. Id could be any string, ids of length 21 mean a person connected with the StarWords app.
 
-Currently deployed version: v1.0
+Currently deployed version: v1.4
 
 ## Changes
+### v1.5
+* Added: more informative error for database saving failure (issue #172)
+* Chnaged: app checks for existance of .Renviron file before reading it in (issue #192)
+* Changed: end message for adaptive inventory (issue #198)
+
+### v1.4
+* Changed: general error text (issue #208)
+* Changed: sidebar URL errors texts (issue #209)
+* Added: instructions for cat forms
+* Added: instr, longText and warning message for adaptive tests. Intro placed as LongText
+* Added: more logs to adaptive version + main observer function in adaptive set once=True
+
+### v1.3
+* Fixed: app is not crashing when double clicking on buttons (issue #55)
+
 ### v1.2
-* Changed: two sex options for CAT instead of three
+* Changed: two sex options for CAT instead of three (issue #174)
+* Changed: no endSettings file (issue #138)
+* Changed: Start from comment in cat if refreshing during comment (issue #152)
 
 ### v1.1
 * Fixed: Bad URL params message (issue #150)

@@ -3,11 +3,13 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
   # STEP 1. Prepare everything for the group
   
   #Prepare mirtCAT design object
-  values$designFile <- designFile <- paste0("CATdesigns/", urlString, "-", values$subgroup, ".rds")
+  values$designFile <- paste0("CATdesigns/", urlString, "-", values$subgroup, ".rds")
   
   if (file.exists(values$designFile)){
 
     CATdesign <- readRDS(isolate(values$designFile))
+    
+    loginfo(paste0(" Design file for group: ", isolate(values$subgroup), " was read in "))
     
   } else {
     
@@ -25,6 +27,7 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
                          design_elements = TRUE, 
                          design = list(thetas.start = values$subject[[paste0(values$subgroup, "Theta")]]))
     
+    loginfo(paste0(" Design file for group: ", isolate(values$subgroup), " was created "))
   }
   
   values$nextItem <- findNextItem(CATdesign)
@@ -57,6 +60,9 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
   } else {
     values$seTheta <- 0
   }
+  
+  loginfo(paste0(" Min number: ", isolate(values$minItemNr), " max number: ", isolate(values$maxItemNr), 
+                 " se theta: ", isolate(values$seTheta)))
   
   #STEP 2. Start test and display
   

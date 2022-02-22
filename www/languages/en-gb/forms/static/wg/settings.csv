@@ -3,5 +3,6 @@ start,,demographic,FALSE,,,FALSE,"understanding,word,gestures",all
 understanding,first_signs,radio,FALSE,,,,,
 understanding,,oneCheckboxGroup,TRUE,threeColumns,"first_signs,phrases",TRUE,,
 word,,manyCheckboxGroups,TRUE,threeColumns,,TRUE,,
-gestures,gestures_first,radio,FALSE,,,TRUE
-gestures,,oneCheckboxGroup,FALSE,,"gestures_first,gestures_games,gestures_objects,gestures_parent,gestures_adult",TRUE
+gestures,gestures_first,radio,FALSE,,,TRUE,,
+gestures,,oneCheckboxGroup,FALSE,,"gestures_first,gestures_games,gestures_objects,gestures_parent,gestures_adult",TRUE,,
+end,,,FALSE,,,TRUE,,

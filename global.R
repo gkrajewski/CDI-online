@@ -27,11 +27,6 @@ if(!dir.exists(file.path(INIT_PATH, "CATdesigns"))) dir.create(file.path(INIT_PA
 if(!dir.exists(file.path(INIT_PATH, "CATsubjects"))) dir.create(file.path(INIT_PATH, "CATsubjects"))
 if(!dir.exists(file.path(INIT_PATH, "logs"))) dir.create(file.path(INIT_PATH, "logs"))
 
-#Load form-universal end settings
-setwd(WWW_PATH)
-END_SETTINGS <- read.csv("endSettings.csv", encoding = "UTF-8", strip.white = T)
-setwd(INIT_PATH)
-
 #Load functions
 source(paste0(FUNCTIONS_PATH,"/readFromURL.R"))
 source(paste0(FUNCTIONS_PATH,"/getWholeURL.R"))
@@ -58,7 +53,7 @@ source(paste0(FUNCTIONS_PATH,"/saveCAT.R"))
 source(paste0(FUNCTIONS_PATH,"/renderTestingUI.R"))
 
 #Load file with secret variables
-readRenviron(".Renviron")
+if (file.exists(".Renviron")) readRenviron(".Renviron")
 
 #Set mail things
 MAIL_USERNAME <- "cdishiny@gmail.com"
