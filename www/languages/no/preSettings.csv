@@ -1,3 +1,5 @@
 text_type;text
-badForm;Zła wartość parametru form w adresie URL. Dostępne wartości to: 
-errorInfo;Prosimy przekleić link poniżej i wysłać na maila projekt.starwords@psych.uw.edu.pl. Pozwoli nam to na szybszą diagnozę i naprawę błędów.
+badForm;Parameteren «form» i URLen har feil verdi. 
+noType;Parameteren «type» i URLen har feil verdi.
+badType;Parameteren «type» i URLen har feil verdi.
+errorInfo;Vennligst kopier følgende lenke og send den til multilada@psych.uw.edu.pl. Det vil hjelpe oss å finne og løse problemet.

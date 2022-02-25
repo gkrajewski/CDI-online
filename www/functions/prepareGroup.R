@@ -9,6 +9,8 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
 
     CATdesign <- readRDS(isolate(values$designFile))
     
+    loginfo(paste0(" Design file for group: ", isolate(values$subgroup), " was read in "))
+    
   } else {
     
     #preapre startTheta
@@ -25,6 +27,7 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
                          design_elements = TRUE, 
                          design = list(thetas.start = values$subject[[paste0(values$subgroup, "Theta")]]))
     
+    loginfo(paste0(" Design file for group: ", isolate(values$subgroup), " was created "))
   }
   
   values$nextItem <- findNextItem(CATdesign)
@@ -58,6 +61,9 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
     values$seTheta <- 0
   }
   
+  loginfo(paste0(" Min number: ", isolate(values$minItemNr), " max number: ", isolate(values$maxItemNr), 
+                 " se theta: ", isolate(values$seTheta)))
+  
   #STEP 2. Start test and display
   
   #save the start time
@@ -70,11 +76,22 @@ prepareGroup <- function(output, input, values, txt, startThetas, subjectAge, ur
   headerColor <- paste0(isolate(values$subgroup), "HeaderColor")
   
   #Render testing UI, display instruction first if available
-  instrID = paste0(isolate(values$subgroup), "Instr") 
+  headerInstrID <- paste0(isolate(values$subgroup), "HeaderInstr")
+  instrID <- paste0(isolate(values$subgroup), "Instr") 
+  longID <- paste0(isolate(values$subgroup), "LongText") 
+  warningID <- paste0(isolate(values$subgroup), "Warning") 
   
-  if (instrID %in% txt$text_type) {
+  if (is.element(headerInstrID, txt$text_type) | is.element(instrID, txt$text_type) | 
+      is.element(longID, txt$text_type) | is.element(warningID, txt$text_type)) {
+    
+    output$main <- renderUI(list(
+    
+      if (is.element(headerInstrID, txt$text_type)) h3(txt[txt$text_type == headerInstrID, "text"]),
+      if (is.element(instrID, txt$text_type)) h5(txt[txt$text_type == instrID, "text"]),
+      if (is.element(longID, txt$text_type)) p(txt[txt$text_type == longID, "text"]),
+      if (is.element(warningID, txt$text_type)) p(class = "warning", strong(txt[txt$text_type == warningID, "text"]))
 
-    output$main <- renderUI({h5(txt[txt$text_type == instrID, "text"])})
+    ))
     
     output$sidebar <- renderUI({
       actionButton(instrID, label = txt[txt$text_type == "continueBtn", "text"], class = "btn-primary")

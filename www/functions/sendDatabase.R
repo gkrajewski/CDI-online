@@ -9,7 +9,7 @@ sendDatabase <- function(username, password, dbname, host, port, id, tableName, 
                              dbname=dbname, 
                              host=host, 
                              port=port)
-      loginfo(paste0(id, " connected with database. Tables: ", paste(dbListTables(storiesDb), collapse=" "), " tableName=", tableName))
+      loginfo(paste0(id, " connected with database. tableName: ", tableName))
       
       if (!(tableName %in% dbListTables(storiesDb))) {
         rsInsert <- dbSendQuery(storiesDb, tableCreate)
@@ -29,7 +29,8 @@ sendDatabase <- function(username, password, dbname, host, port, id, tableName, 
       dbDisconnect(storiesDb)
     },
     error = function(e) {
-      logerror(paste0(id, " DATABASE SAVING FAILED! ", e))
+      logerror(paste0(id, " DATABASE SAVING FAILED! Tried to save table: ", 
+                      tableName, " to database: ", dbname, " ", e))
     }
   )
   

@@ -10,5 +10,5 @@ CATsubjects/
 logs/
 CATdesigns/
 .DS_Store
-.Rproj.user
 *.Rproj
+.Rproj.user
