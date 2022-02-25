@@ -218,7 +218,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       # Render next item
       values$nextItem <- findNextItem(updatedDesign)
       updateRadioButtons(session, "question",
-                         label = paste0(values$itemsGroup$question[values$nextItem], ' "', values$itemsGroup$item[values$nextItem], '"?'),
+                         label = paste0(values$itemsGroup$question[values$nextItem], ' ', values$itemsGroup$item[values$nextItem], '?'),
                          selected = character(0))
 
       CATdesign(updatedDesign)
