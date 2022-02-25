@@ -29,7 +29,8 @@ sendDatabase <- function(username, password, dbname, host, port, id, tableName, 
       dbDisconnect(storiesDb)
     },
     error = function(e) {
-      logerror(paste0(id, " DATABASE SAVING FAILED! ", e))
+      logerror(paste0(id, " DATABASE SAVING FAILED! Tried to save table: ", 
+                      tableName, " to database: ", dbname, " ", e))
     }
   )
   
