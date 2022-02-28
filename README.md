@@ -5,6 +5,8 @@ Currently deployed version: v1.5
 ### v1.6
 * Changed: CAT items displayed without an unnecessary new line
 * Changed: Removed brackets
+* Added: Text saying about a need for wait when the CAT is loading (issue #177)
+
 
 ### v1.5
 * Added: more informative error for database saving failure (issue #172)

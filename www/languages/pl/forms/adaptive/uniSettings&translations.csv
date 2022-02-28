@@ -7,6 +7,7 @@ btn;Start
 noGender;Proszę wybrać płeć dziecka.
 modalTitle;Uwaga!
 sidebarInstr;Proszę zaznaczyć ‚tak’ lub ‚nie’.
+firstPageSidebarInstr;Prosimy o cierpliwość. Uruchomienie formularza może zająć kilka sekund.
 choiceNames;nie, tak
 thanks;Bardzo dziękujemy za wypełnienie kwestionariusza! Więcej informacji znajdą Państwo w zakładce „Wiedza”
 end;Koniec!
