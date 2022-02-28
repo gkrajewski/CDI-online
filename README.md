@@ -4,6 +4,7 @@ Currently deployed version: v1.5
 ## Changes
 ### v1.6
 * Changed: CAT items displayed without an unnecessary new line
+* Removed brackets
 
 ### v1.5
 * Added: more informative error for database saving failure (issue #172)
