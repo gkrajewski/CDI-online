@@ -110,3 +110,7 @@ h5 {
 .warning {
 	margin-bottom: 20px;
 }
+
+#question {
+	width: auto;
+}
