@@ -6,6 +6,7 @@ Currently deployed version: v1.5
 * Changed: CAT items displayed without an unnecessary new line
 * Changed: Removed brackets
 * Added: Text saying about a need for wait when the CAT is loading (issue #177)
+* Changed: Correct CAT settings&translations
 
 
 ### v1.5
