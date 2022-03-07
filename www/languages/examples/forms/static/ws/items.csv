@@ -1,0 +1,46 @@
+item_id;definition;type;category
+item_1;baa baa;word;sounds
+item_2;alligator;word;animals
+item_3;aeroplane / plane;word;vehicles
+item_4;ambulance;word;vehicles
+item_5;toy;word;toys
+item_6;apple;word;food_drink
+item_7;tongue;word;body_parts
+item_8;t-shirt;word;clothing
+item_9;table;word;furniture_rooms
+item_10;clock;word;household
+item_11;backyard;word;outside
+item_12;beach;word;places
+item_13;grandma / nan / granny / nanny;word;people
+item_14;bath;word;games_routines
+item_15;good night / night night;word;games_routines
+item_16;hello / hi  / hiya;word;games_routines
+item_17;bite;word;action_words
+item_18;bang;word;descriptive_words
+item_19;how;word;question_words
+item_20;after;word;time_words
+item_21;he;word;pronouns
+item_22;around;word;prepositions
+item_23;every;word;quantifiers
+item_24;am;word;helping_verbs
+item_25;and;word;connecting_words
+item_26;Does your child ever pick up or point to an object and name an absent person to whom the object belongs? For example, a child might point to mummy's shoe and say ‘mummy’.;how_use_words;
+item_27;To talk about ownership, we add an ‘s’, for example, daddy'S key, kitty'S dish, and baby'S bottle. Has your child begun to do this?;word_endings;
+item_28;children;word_forms;word_form_nouns
+item_29;ate;word_forms;word_form_verbs
+item_30;blockses;word_endings2;word_endings_nouns
+item_31;ated;word_endings2;word_endings_verbs
+item_32;Has your child begun to combine words yet, such as ‘nother cracker’, or ‘doggie bite’?;combine;
+item_33;Two shoe. % Two shoes. % I have two shoes.;complexity;complexity1
+item_34;Kitty sleep. % Kitty sleeping.  % Kitty is sleeping. * ;complexity;complexity2
+item_35;Fix it. % You fix it? % Can you fix it?;complexity;complexity3
+item_36;Want juice. % Want more juice. % Want juice in there. % Want more juice in there.;complexity;complexity4
+item_37;Where go? % Where mummy go? % Where did mummy go? % Where did my mummy go?;complexity;complexity5
+item_38;These my tooth. % These my teeth. % These are my teeth.;complexity;complexity6
+item_39;Coffee hot. % That coffee hot. % That coffee is hot.;complexity;complexity7
+item_40;I want. % I want that. % I want that one you got. % I want that one that you've got.;complexity;complexity8
+item_41;Pick up. % Daddy pick up. % Daddy pick me up. % Daddy picked me up. ** ;complexity;complexity9
+item_42;Kitty away. % Kitty go away. % Kitty went away. % The kitty went away. ** ;complexity;complexity10
+item_43;Baby eat. % Baby want eat. % Baby want to eat. % Baby wants to eat.;complexity;complexity11
+item_44;Look me. % Look me dancing. % Look at me I dancing. % Look at me: I'm dancing.;complexity;complexity11
+item_45;Baby crying. % Baby's crying. % Baby crying 'cos sad. % Baby's crying 'cos she's sad.;complexity;complexity12

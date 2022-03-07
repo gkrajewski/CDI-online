@@ -1,10 +1,9 @@
 text_type;text;item_type;category
 cdiNameSufix;Words and Sentences;;
-longText;This is the UK Communicative Development Inventory (UK-CDI) Words and Sentences, which was created by Katie Alcock (Lancaster University), Jessica Horst (University of Sussex), Kerstin Meints (University of Lincoln), and Caroline Rowland (Max Planck Institute for Psycholinguistics) and is an adaptation of the American questionnaire concerning speech development in young children. In this questionnaire we are asking parents (or other guardians) of 16 to 30 month old children learning to speak English, who will tell us what words their children can say. If you decide you do not want to share your answers with us before submitting the questionnaire, simply close your browser. If you change your mind afterwards, just let us know. You can do this without giving any explanation.;start;
+longText;Start section first page text;start;
 header ;Word list ;word;
 wordBtn ;Words;word;
-longText;In this section, you will be asked about words that your child UNDERSTANDS AND SAYS. Your child UNDERSTANDS AND SAYS a word on the list if they know what the word means AND they say it by themselves. Here are some examples. DO check the box if your child says the word when trying to name an object or describe something that happened. DO check the box if you think he/she has a meaning for that word. It's fine if your child can't say the whole word or says it his/her own ‘special’ way. If you use another word in your family (e.g. Nana for Grandma), that is ok too. Different words (e.g. ‘baby’ for ‘doll’), local or dialect words (e.g. ‘bairn’ for ‘baby’), baby-talk words (e.g. ‘goggy’ for ‘dog’) are OK. DON'T check the box if your child is just stringing sounds together. This is not a real word that means something. DON'T ask your child to repeat the words on the list. This doesn't count! Please do NOT include foreign words (e.g. ‘aqua’ for ‘water’). If your child knows the word in English as well, that's OK, but not if they only say it in the other language. If your child understands or says a DIFFERENT WORD please check in the appropriate box and write down your word in the comment box at the bottom of each page. If you have any additional comments, you can type them in the box at the bottom of the page too.;word;firstPage
-warning;NOTE: This questionnaire is for children of many ages and it has a long list of words. Your child may not be able to understand or say a lot of the words on the form. That is perfectly fine! ;word;firstPage
+longText;Words section first page text ;word;firstPage
 catHeader;Sounds;word;sounds
 catHeader;Animal words;word;animals
 catHeader;Vehicle words;word;vehicles
@@ -39,12 +38,12 @@ header;Word endings (part 1);word_endings;
 choiceNames;Not yet, Sometimes, Often;word_endings;
 word_formsBtn;Word forms ;word_forms;
 header;Word forms;word_forms;
-longText;Following are some words children learn. Please mark any of these words that your child uses.;word_forms;firstPage
+longText;Word forms long text;word_forms;firstPage
 catHeader;Nouns;word_forms;word_form_nouns
 catHeader;Verbs;word_forms;word_form_verbs
 word_endings2Btn;Word endings (part 2);word_endings2;
 header;Word endings (part 2);word_endings2;
-longText;Young children often place the wrong endings on words. For example, a child might say “Auntie goed home.” Mistakes like this are often a sign of progress in language. In the following lists, please mark all the mistakes of this kind you have heard your child say recently.;word_endings2;firstPage
+longText;Word ending part 2 text;word_endings2;firstPage
 catHeader;Nouns;word_endings2;word_endings_nouns
 catHeader;Verbs;word_endings2;word_endings_verbs
 combineBtn;Combining words ;combine;

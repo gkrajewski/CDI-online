@@ -1,0 +1,41 @@
+item_id;definition;type;category
+item_1;Respond when his or her name is called (e.g. by turning and looking at the speaker);first_signs;
+item_2;Respond to ‘no’ (by stopping what she or he is doing, at least for a moment);first_signs;
+item_3;Are you hungry?;phrases;
+item_4;baa baa;word;sounds
+item_5;tweet-tweet;word;sounds
+item_6;snake;word;animals
+item_7;spider;word;animals
+item_8;pram;word;vehicles
+item_9;ball;word;toys
+item_10;toy;word;toys
+item_11;yoghurt;word;food_drink
+item_12;arm;word;body_parts
+item_13;tooth/teeth;word;body_parts
+item_14;bib;word;clothing
+item_15;zip;word;clothing
+item_16;bath/bathtub;word;furniture_rooms
+item_17;upstairs;word;furniture_rooms
+item_18;bag;word;household
+item_19;flower;word;outside
+item_20;aunt/auntie;word;people
+item_21;bath;word;games_routines
+item_22;bite;word;action_words
+item_23;yellow;word;descriptive_words
+item_24;how;word;question_words
+item_25;day;word;time_words
+item_26;he;word;pronouns
+item_27;back;word;locations
+item_28;again;word;quantifiers
+item_29;Extends an arm to show you something she or he is holding.;gestures;gestures_first;
+item_30;Shrugs to indicate ‘all gone’ or ‘where did it go’.;gestures;gestures_first;
+item_31;Plays ‘peekaboo’ / ‘peepo’.;gestures;gestures_games;
+item_32;Plays ‘pattycake’ / ‘pat-a-cake’.;gestures;gestures_games;
+item_33;Plays chasing games.;gestures;gestures_games;
+item_34;Comb or brush own hair.;gestures;gestures_objects;
+item_35;Brush teeth.;gestures;gestures_objects;
+item_36;Pretend to ‘drink’ from a cup or other object.;gestures;gestures_objects;
+item_37;Put to bed.;gestures;gestures_parent;
+item_38;Try to put nappy on it.;gestures;gestures_parent;
+item_39;Dig with a spade.;gestures;gestures_adult;
+item_40;Put on glasses.;gestures;gestures_adult;
