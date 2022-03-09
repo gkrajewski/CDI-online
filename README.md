@@ -7,7 +7,7 @@ Currently deployed version: v1.5
 * Changed: Removed brackets
 * Added: Text saying about a need for wait when the CAT is loading (issue #177)
 * Changed: Correct CAT settings&translations
-
+* Changed: question in CAT is displayed above the item, question may be null. Column id added to items
 
 ### v1.5
 * Added: more informative error for database saving failure (issue #172)
