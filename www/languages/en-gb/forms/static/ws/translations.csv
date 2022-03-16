@@ -15,21 +15,19 @@ warning; *or the word used in your family;word;body_parts
 catHeader;Words for clothes;word;clothing
 catHeader;Words for furniture and rooms;word;furniture_rooms
 catHeader;Words for small household items;word;household
-catHeader;Outside words;word;outside
-catHeader;Places to go;word;places
-warning; *or the word used in your family;word;places
-catHeader ;Words for people;word;people
+catHeader;Outside words and places to go;word;outside_places
+catHeader;Words for people;word;people
 warning; If a word refers to a person/people mark the word even if your child only says the name of the person (e.g. ‘Adam’ for ‘baby’).;word;people
-catHeader ;Words for games and routines;word;games_routines
-catHeader ;Action words;word;action_words
-catHeader ;Describing words;word;descriptive_words
-catHeader ;Question words;word;question_words
-catHeader ;Words about time;word;time_words
-catHeader ;Words about people and things;word;pronouns
-catHeader ;Words about places;word;prepositions
-catHeader ;Words about amounts ;word;quantifiers
-catHeader ;Helping verbs;word;helping_verbs
-catHeader ;Connecting words;word;connecting_words
+catHeader;Words for games and routines;word;games_routines
+catHeader;Action words;word;action_words
+catHeader;Describing words;word;descriptive_words
+catHeader;Question words;word;question_words
+catHeader;Words about time;word;time_words
+catHeader;Words about people and things;word;pronouns
+catHeader;Words about places;word;prepositions
+catHeader;Words about amounts ;word;quantifiers
+catHeader;Helping verbs;word;helping_verbs
+catHeader;Connecting words;word;connecting_words
 help;Please make sure you have completed all of the pages, before finishing this part. Did you mark all the words that your child understands and says?;word;connecting_words
 how_use_wordsBtn;How children use words;how_use_words;
 header;How children use words;how_use_words;
