@@ -253,7 +253,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       additionalMessage <- parameters[parameters$parameter=="additionalEndMessageFromDatabase", "value"]
       
       if (additionalMessage=="yes") {
-        additionalMessageTxt <- getAdditionalEndMessage(idx, urlString, "database", parameters, txt)
+        additionalMessageTxt <- getAdditionalEndMessage(urlString, "database", parameters, txt)
         endMsgtxt <- paste(endMsgtxt, "<br><br>", additionalMessageTxt)
       }
       

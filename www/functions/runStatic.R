@@ -334,7 +334,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
               
               additionalMessage <- staticList$parameters[staticList$parameters$parameter=="additionalEndMessageFromDatabase", "value"]
               if (additionalMessage=="yes") {
-                additionalMessageTxt <- getAdditionalEndMessage(idx, urlString, "database", staticList$parameters, staticList$txt)
+                additionalMessageTxt <- getAdditionalEndMessage(urlString, "database", staticList$parameters, staticList$txt)
                 endMsgtxt <- paste(endMsgtxt, "<br><br>", additionalMessageTxt)
               }
               showModal(modalDialog(

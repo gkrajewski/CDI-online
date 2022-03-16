@@ -1,4 +1,4 @@
-getAdditionalEndMessage <- function(id, urlString, type="database", parameters, txt){
+getAdditionalEndMessage <- function(id, type="database", parameters, txt){
   
   additional_message <- tryCatch( 
   
@@ -22,7 +22,7 @@ getAdditionalEndMessage <- function(id, urlString, type="database", parameters, 
                             dbname=Sys.getenv("DB_NAME"),
                             host=Sys.getenv("DB_HOST"),
                             port=Sys.getenv("DB_PORT"),
-                            id="testing",
+                            id=id,
                             tableName="vouchers",
                             tableQuery=query)
       
