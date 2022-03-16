@@ -121,7 +121,10 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
       
       #Sidebar
       output$sidebar <- renderUI({
-        actionButton("startBtn", label = txt[txt$text_type == "startBtn", "text"], class = "btn-primary")
+        list(
+          if (is.element("firstPageSidebarInstr", txt$text_type)) div(class="help-block", txt[txt$text_type == "firstPageSidebarInstr", "text"]),
+          actionButton("startBtn", label = txt[txt$text_type == "startBtn", "text"], class = "btn-primary")
+        )
       })
       
       #Awaiting confirmation

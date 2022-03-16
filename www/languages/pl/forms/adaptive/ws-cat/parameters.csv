@@ -8,6 +8,6 @@ additionalEndMessageIdColumn;id
 mowaMirtMethod;ML
 mowaMirtCriteria;MI
 mowaminItemNr;1
-mowamaxItemNr;5
-mowaMirtSeTheta;0.05
+mowamaxItemNr;75
+mowaMirtSeTheta;0.1
 groups;mowa

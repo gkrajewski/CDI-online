@@ -1,14 +1,24 @@
 # CDI online
-In order to launch any inventory you have to provide a proper URL query eg. /?id=test&form=wg&lang=pl&type=static
-Currently accesible langs and forms are in the www folder. Id could be any string, ids of length 21 mean a person connected with the StarWords app.
-
-Currently deployed version: v1.4
+Currently deployed version: v1.5
 
 ## Changes
-### v1.5
+
+### v1.6
+* Changed: CAT items displayed without an unnecessary new line
+* Changed: Removed brackets
+* Added: Text saying about a need for wait when the CAT is loading (issue #177)
+* Changed: Correct CAT settings&translations
 * Added: static form has another input file called parameters.csv with parameters for external connections 
 * Changed: files in adaptive were divided into translations.csv and parameters.csv
 * Added: functionality to display end message based on database query (for vouchers)
+
+
+### v1.5
+* Added: more informative error for database saving failure (issue #172)
+* Changed: app checks for existance of .Renviron file before reading it in (issue #192)
+* Changed: end message for adaptive inventory (issue #198)
+* Added: Correct Norwegian and English translations
+
 
 ### v1.4
 * Changed: general error text (issue #208)

@@ -1,5 +1,5 @@
 text_type;text
-noForm;Zła wartość parametru form w adresie URL.
-noType;Zła wartość parametru type w adresie URL.
-badType;Zła wartość parametru type w adresie URL.
+noForm;Zła wartość parametru ‚form’ w adresie URL.
+noType;Zła wartość parametru ‚type’ w adresie URL.
+badType;Zła wartość parametru ‚type’ w adresie URL.
 errorInfo;Prosimy przekleić link poniżej i wysłać na maila multilada@psych.uw.edu.pl. Pozwoli nam to na szybszą diagnozę i naprawę błędów.
