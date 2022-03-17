@@ -7,6 +7,7 @@ Currently deployed version: v1.5
 * Changed: Removed brackets
 * Added: Text saying about a need for wait when the CAT is loading (issue #177)
 * Changed: Correct CAT settings&translations
+* Changed: Updated word list in UK:WS
 
 
 ### v1.5
