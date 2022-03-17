@@ -3,11 +3,13 @@ Currently deployed version: v1.5
 
 ## Changes
 ### v1.6
-* Changed: CAT items displayed without an unnecessary new line
-* Changed: Removed brackets
+* Changed: CAT items displayed without an unnecessary new line and quotes
 * Added: Text saying about a need for wait when the CAT is loading (issue #177)
 * Changed: Correct CAT settings&translations
-* Changed: question in CAT is displayed above the item, question may be null. Column id added to items
+* Changed: Question in CAT is displayed above the item, question may be null. Column id added to items
+* Changed: CAT items as in static mode, CAT item questions contain category headers
+(also notes for lexical items and category questions for gestures)
+* Changed: Updated word list in UK:WS
 
 ### v1.5
 * Added: more informative error for database saving failure (issue #172)
