@@ -185,7 +185,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       
       #Save data
       endDate <- Sys.time()
-      outputTable <- prepareOutputAdaptative(isolate(CATdesign()), isolate(values$itemsGroup$item) ,isolate(values$subject), lang, isolate(values$subgroup), endDate)
+      outputTable <- prepareOutputAdaptative(isolate(CATdesign()), isolate(values$itemsGroup$id) ,isolate(values$subject), lang, isolate(values$subgroup), endDate)
       loginfo(paste0(" prepared output file for the group ", isolate(values$subgroup)))
       answerFile <- paste0("answers/", urlString, "-", isolate(values$subgroup), ".csv")
       write.csv(outputTable, answerFile, row.names = F)
@@ -217,9 +217,9 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       
       # Render next item
       values$nextItem <- findNextItem(updatedDesign)
-      updateRadioButtons(session, "question",
-                         label = paste0(values$itemsGroup$question[values$nextItem], ' ', values$itemsGroup$item[values$nextItem], '?'),
-                         selected = character(0))
+      #updateRadioButtons(session, "question",
+      #                   label = paste0(values$itemsGroup$question[values$nextItem], ' ', values$itemsGroup$item[values$nextItem], '?'),
+      #                   selected = character(0))
 
       CATdesign(updatedDesign)
       
