@@ -97,10 +97,10 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
           if (is.element("instr", txt$text_type)) h5(txt[txt$text_type == "instr", "text"]),
           if (is.element("longText", txt$text_type)) p(txt[txt$text_type == "longText", "text"]),
           if (is.element("warning", txt$text_type)) p(class = "warning", strong(txt[txt$text_type == "warning", "text"])),
-          
           dateInput(
             "birth",
-            txt[txt$text_type == "birthQuestion", "text"]
+            txt[txt$text_type == "birthQuestion", "text"],
+            language = lang,
           ),
           radioButtons(
             "gender",
