@@ -126,8 +126,13 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     commentInput = ""
     if (!is.na(values$subject[[paste0(values$subgroup, "Comment")]])) commentInput = values$subject[[paste0(values$subgroup, "Comment")]]
     
+    header <- paste0(isolate(values$subgroup), "Header")
+    headerColor <- paste0(isolate(values$subgroup), "HeaderColor")
+    
     output$main <- renderUI({
       list(
+        if (header %in% txt$text_type & headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"], style=paste0("color: ", txt[txt$text_type == headerColor, "text"], ";")),
+        if (header %in% txt$text_type & !headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"]),
         if (values$completeEnd) h5(txt[txt$text_type == "endText", "text"]),
         div(class = "comment", textAreaInput("comment", label = txt[txt$text_type == "commentLabel", "text"], value = commentInput))
       )
@@ -202,8 +207,13 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
                        " groups in total: ", length(groupsToTest)))
       }
       
+      header <- paste0(isolate(values$subgroup), "Header")
+      headerColor <- paste0(isolate(values$subgroup), "HeaderColor")
+      
       output$main <- renderUI({
         list(
+          if (header %in% txt$text_type & headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"], style=paste0("color: ", txt[txt$text_type == headerColor, "text"], ";")),
+          if (header %in% txt$text_type & !headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"]),
           if (values$completeEnd) h5(txt[txt$text_type == "endText", "text"]),
           div(class = "comment", textAreaInput("comment", label = txt[txt$text_type == "commentLabel", "text"], value = ""))
         )
