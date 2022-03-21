@@ -1,0 +1,30 @@
+text_type;text;item_type;category
+warning;VIKTIG: Det er bare mulig å sende inn svar på spørreskjemaet etter at alle delene av skjemaet er fylt ut. Du kan når som helst ta en pause i utfyllingen og du vil fremdeles beholde svarene. For å gå tilbake til skjemaet (f.eks. på en annen enhet), må du bruke nøyaktig samme lenke. Du kan ikke ha skjemaet oppe på flere enheter samtidig.;start;
+help;Svar først på de tre spørsmålene på denne siden og trykk på «Bekreft». Når du har trykket «Bekreft», kan du ikke gå tilbake til spørsmålene på denne siden.;start;
+backBtn;Forrige;;
+nextBtn;Neste;;
+confBtn;Bekreft;;
+startBtn;Start;;
+dateLabel;Barnets fødselsdato;;
+genderLabel;Barnets kjønn;;
+modalTitle;Advarsel;;
+fillerLabel;Hvilken relasjon har du til barnet? ;;
+fillers;mor / forelder 1, far / forelder 2, bestemor, bestefar, barnepasser, lærer, annet;;
+noGender;Hvilket kjønn har barnet?;;
+badDate;Fødselsdatoen som du har oppgitt, tyder på at barnet ditt ikke er innenfor det aldersspennet som dette spørreskjemaet gjelder. ;;
+genders;jente, gutt;;
+commentLabel;Andre kommentarer;;
+cdiNamePrefix;Foreldrerapport for kommunikativ utvikling;;
+endTooltip;Du kan sende inn svarene dine når alle delene av skjemaet er fylt ut.;;
+header;Send inn svarene dine;end;
+endBtn;Send inn  ;end;
+instr;Hvis du har fylt ut alle svarene, kan du trykke på «Bekreft».;end;
+help;MERKNAD: Når du har trykket «Bekreft», kan du ikke lenger redigere svaret ditt.;end;
+endMsgTitle;Takk for at du fylte ut!;end;
+endMsgText;Tusen takk for at du har fylt ut dette spørreskjemaet! Vi håper at du syntes det var interessant å reflektere over ditt barns språklige utvikling. Ditt bidrag til forskningen om barns språkutvikling er viktig - det vil hjelpe oss til å forstå den bedre.;end;
+endMsgTextSW;Tusen takk for at du har fylt ut dette spørreskjemaet! Vi håper at du syntes det var interessant å reflektere over ditt barns språklige utvikling. Ditt bidrag til forskningen om barns språkutvikling er viktig - det vil hjelpe oss til å forstå den bedre.;end;
+error;Du har mistet forbindelsen. Oppdater siden og prøv igjen. Hvis du fortsatt er frakoblet, vennligst ta et skjermbilde og send det til multilada@psych.uw.edu.pl.;;
+refresh;Oppdater;;
+inventoryOpened;Spørreskjemaet er allerede åpnet et annet sted. Lukk skjemaet hvis du har åpnet det på en annen enhet eller oppdater siden. ;;
+email;yes;;
+;;;blabla

@@ -1,5 +1,7 @@
 readFromURL <- function(parameter, session, caseInvariance = TRUE) {
   
+  #Reads given parameter value from URL query
+  
   query <- parseQueryString(session$clientData$url_search)
   
   if (!is.null(query[[parameter]])){

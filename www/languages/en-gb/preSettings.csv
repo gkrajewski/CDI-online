@@ -1,0 +1,5 @@
+text_type;text
+badForm;Wrong value of parameter ‘form’ in the URL. 
+noType;Wrong value of parameter ‘type’ in the URL.
+badType;Wrong value of parameter ‘type’ in the URL.
+errorInfo;Please copy the following link and email it to multilada@psych.uw.edu.pl. It will help us find and fix the error.
