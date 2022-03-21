@@ -1,4 +1,5 @@
-sendDatabase <- function(username, password, dbname, host, port, id, tableName, tableCreate=NULL, tableInput=NULL, transaction=NULL, tableQuery=NULL){
+sendDatabase <- function(username, password, dbname, host, port, id, tableName, 
+                         tableCreate=NULL, tableInput=NULL, transaction=NULL, tableQuery=NULL){
   
   
   dbConnection <- tryCatch( 
