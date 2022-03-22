@@ -346,7 +346,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
               ))
               
               #Redirect automatically to a new page
-              if ("redirectionURL" %in% staticList$parameters$parameter) redirect(staticList$parameters)
+              if ("redirectionURL" %in% staticList$parameters$parameter) redirect(staticList$parameters, idx)
 
               #Disable all types
               for (type in types){

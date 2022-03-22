@@ -1,4 +1,4 @@
-redirect <- function(parameters){
+redirect <- function(parameters, idx){
   
   tryCatch(
     
@@ -10,10 +10,20 @@ redirect <- function(parameters){
         redirectionTime <- 5000
       }
       
+      redirectionURL <- parameters[parameters$parameter=="redirectionURL", "value"]
+      
+      if ("redirectionId" %in% parameters$parameter){
+        
+        if (parameters[parameters$parameter=="redirectionId", "value"] == "yes") {
+          redirectionURL <- paste0(redirectionURL, "/?id=", idx)
+        }
+                                 
+      } 
+      
       runjs(
         paste0(
           ' setTimeout(function(){
-                            window.location.replace("', parameters[parameters$parameter=="redirectionURL", "value"], '");
+                            window.location.replace("', redirectionURL, '");
                           },', redirectionTime, ');
           '
         )
