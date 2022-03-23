@@ -209,7 +209,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
     
     #Confirm type when confBtn clicked
     observeEvent(input$confBtn, {
-      
+
       reactList <- reactList()
       canConfirm <- TRUE
       
@@ -337,6 +337,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
                 additionalMessageTxt <- getAdditionalEndMessage(urlString, "database", staticList$parameters, staticList$txt)
                 endMsgtxt <- paste(endMsgtxt, "<br><br>", additionalMessageTxt)
               }
+              
               showModal(modalDialog(
                 title = reactList$txt[reactList$txt$text_type == "endMsgTitle", "text"],
                 HTML(endMsgtxt),
@@ -344,6 +345,9 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
                 footer = NULL
               ))
               
+              #Redirect automatically to a new page
+              if ("redirectionURL" %in% staticList$parameters$parameter) redirect(staticList$parameters, idx)
+
               #Disable all types
               for (type in types){
                 disable(type)

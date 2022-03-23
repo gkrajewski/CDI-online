@@ -175,7 +175,7 @@ server <- function(input, output, session) {
       logerror("Missing URL parameters (lang, form and id).")
       
       # Useful for testing
-      # updateQueryString(paste0("?id=", "test", "&form=", "ws", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
+      # updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
       # session$reload()
       
     }  
