@@ -353,7 +353,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
                 disable(type)
                 reactList$userProgress[reactList$userProgress$type == type, "disabled"] <- TRUE
               }
-              reactList(renderType(input, output, "end", reactList, staticList))
+              #reactList(renderType(input, output, "end", reactList, staticList))
               
               #Count score and call StarWords database
               if (fromSW){
