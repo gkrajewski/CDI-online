@@ -53,7 +53,7 @@ source(paste0(FUNCTIONS_PATH,"/saveCAT.R"))
 source(paste0(FUNCTIONS_PATH,"/renderTestingUI.R"))
 
 #Load file with secret variables
-if (file.exists(".Renviron")) readRenviron(".Renviron")
+#if (file.exists(".Renviron")) readRenviron(".Renviron")
 
 #Set mail things
 MAIL_USERNAME <- "cdishiny@gmail.com"
