@@ -63,3 +63,4 @@ instr;Poniżej wypisano czynności opiekuńcze, jakie dzieci wykonują bawiąc s
 catHeader;Naśladowanie innych czynności dorosłych (na przedmiotach lub zabawkach);gestures;gestures_adult
 instr;Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;gestures;gestures_adult
 additionalEndMessageFromDatabaseText;Poniżej znajdą Państwo voucher do Empika. Prosimy pamiętac o skopiowaniu go przed zamknięciem lub odświeżeniem strony. <br><br>;;
+redirectionBtn;Przekieruj;end;

@@ -338,21 +338,38 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
                 endMsgtxt <- paste(endMsgtxt, "<br><br>", additionalMessageTxt)
               }
               
+              #Prepare redirection
+              if ("redirectionURL" %in% staticList$parameters$parameter){
+                
+                footer <- actionButton("redirect", reactList$txt[reactList$txt$text_type == "redirectionBtn", "text"])
+                
+                observeEvent(input$redirect, {
+                  redirect(staticList$parameters, idx)
+                }, once = TRUE)
+                
+              } else {
+                
+                footer <- NULL
+                
+              }
+              
+              #Show end message
               showModal(modalDialog(
                 title = reactList$txt[reactList$txt$text_type == "endMsgTitle", "text"],
                 HTML(endMsgtxt),
                 easyClose = FALSE,
-                footer = NULL
+                footer = footer
               ))
               
-              #Redirect automatically to a new page
-              if ("redirectionURL" %in% staticList$parameters$parameter) redirect(staticList$parameters, idx)
-
+              #Disable redirection button for now (if created)
+              if ("redirectionURL" %in% staticList$parameters$parameter) disable("redirect")
+              
               #Disable all types
               for (type in types){
                 disable(type)
                 reactList$userProgress[reactList$userProgress$type == type, "disabled"] <- TRUE
               }
+              
               #reactList(renderType(input, output, "end", reactList, staticList))
               
               #Count score and call StarWords database
@@ -430,6 +447,9 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
               
               #Send logs to database
               sendLogs(urlString, idx, form, lang)
+              
+              #Enable redirection button (if created)
+              if ("redirectionURL" %in% staticList$parameters$parameter) enable("redirect")
               
             }
             
