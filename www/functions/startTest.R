@@ -257,16 +257,36 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         endMsgtxt <- paste(endMsgtxt, "<br><br>", additionalMessageTxt)
       }
       
+      #Prepare redirection
+      if ("redirectionURL" %in% parameters$parameter){
+        
+        footer <- list(
+          actionButton("redirect", txt[txt$text_type == "redirectionBtn", "text"]),
+          div(id="redirectionText", txt[txt$text_type == "redirectionText", "text"])
+        )
+        
+        observeEvent(input$redirect, {
+          redirect(parameters, idx)
+        }, once = TRUE)
+        
+      } else {
+        
+        footer <- NULL
+        
+      }
+      
+      #Show ending message
       showModal(modalDialog(
         title = txt[txt$text_type == "thanksMsgTitle", "text"],
         HTML(endMsgtxt),
         easyClose = FALSE,
-        footer = NULL
+        footer = footer
       ))
       
-      #Redirect automatically to a new page
-      if ("redirectionURL" %in% parameters$parameter) redirect(parameters, idx)
+      #Disable redirection button for now (if created)
+      if ("redirectionURL" %in% parameters$parameter) disable("redirect")
       
+      #Call SW
       if (fromSW) recurrentCallSW(idx, form, lang, done = "true", score="true")
       
       saveCAT(
@@ -285,6 +305,9 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       
       values$groupsToSave <- c()
       values$sendLogs <- FALSE
+      
+      #Enable redirection button (if created)
+      if ("redirectionURL" %in% parameters$parameter) enable("redirect")
       
     } else {
       
