@@ -341,7 +341,10 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
               #Prepare redirection
               if ("redirectionURL" %in% staticList$parameters$parameter){
                 
-                footer <- actionButton("redirect", reactList$txt[reactList$txt$text_type == "redirectionBtn", "text"])
+                footer <- list(
+                  actionButton("redirect", reactList$txt[reactList$txt$text_type == "redirectionBtn", "text"]),
+                  div(id="redirectionText", reactList$txt[reactList$txt$text_type == "redirectionText", "text"])
+                  )
                 
                 observeEvent(input$redirect, {
                   redirect(staticList$parameters, idx)
