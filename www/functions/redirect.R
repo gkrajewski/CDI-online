@@ -1,4 +1,4 @@
-redirect <- function(parameters, idx){
+redirect <- function(parameters, idx, lang, form, type){
   
   tryCatch(
     
@@ -12,12 +12,22 @@ redirect <- function(parameters, idx){
       
       redirectionURL <- parameters[parameters$parameter=="redirectionURL", "value"]
       
-      if ("redirectionId" %in% parameters$parameter){
+      if ("redirectionParams" %in% parameters$parameter){
         
-        if (parameters[parameters$parameter=="redirectionId", "value"] == "yes") {
-          redirectionURL <- paste0(redirectionURL, "/?id=", idx)
+        redirectionURL <- paste0(redirectionURL, "/?")
+        paramsList <- as.list(strsplit(parameters[parameters$parameter=="redirectionParams", "value"], ",")[[1]]) #Split into list based on comma
+        paramsList <- gsub(" ", "", paramsList) #Remove whitespaces
+        firstParam <- TRUE
+        
+        for (param in paramsList){
+          if (!firstParam) redirectionURL <- paste0(redirectionURL, "&")
+          if (param == "id") redirectionURL <- paste0(redirectionURL, "id=", idx)
+          if (param == "form") redirectionURL <- paste0(redirectionURL, "form=", form)
+          if (param == "lang") redirectionURL <- paste0(redirectionURL, "lang=", lang)
+          if (param == "type") redirectionURL <- paste0(redirectionURL, "type=", type)
+          firstParam <- FALSE
         }
-                                 
+        
       } 
       
       runjs(
@@ -33,7 +43,7 @@ redirect <- function(parameters, idx){
     
     error = function(m){
       
-      msg <- paste0("Person couldn't be redirected to the given URL.", m)
+      msg <- paste0("Problem with redirection to the given URL.", m)
       logerror(msg)
       
     },

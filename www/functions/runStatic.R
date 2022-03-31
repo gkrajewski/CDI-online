@@ -209,6 +209,8 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
     
     #Confirm type when confBtn clicked
     observeEvent(input$confBtn, {
+      
+      redirect(staticList$parameters, idx, lang, form, "static")
 
       reactList <- reactList()
       canConfirm <- TRUE
