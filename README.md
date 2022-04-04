@@ -1,7 +1,13 @@
 # CDI online
-Currently deployed version: v1.5
+Currently deployed version: v1.6
 
 ## Changes
+### v1.7
+* Added: static form has another input file called parameters.csv with parameters for external connections 
+* Changed: files in adaptive were divided into translations.csv and parameters.csv
+* Added: functionality to display end message based on database query (for vouchers)
+* Added: functionality to redirect to a given URL after finishing the test.
+
 ### v1.6
 * Changed: CAT items displayed without an unnecessary new line and quotes
 * Added: Text saying about a need for wait when the CAT is loading (issue #177)
@@ -16,6 +22,7 @@ Currently deployed version: v1.5
 * Changed: app checks for existance of .Renviron file before reading it in (issue #192)
 * Changed: end message for adaptive inventory (issue #198)
 * Added: Correct Norwegian and English translations
+
 
 ### v1.4
 * Changed: general error text (issue #208)

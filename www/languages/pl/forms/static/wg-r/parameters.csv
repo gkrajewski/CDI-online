@@ -1,0 +1,10 @@
+parameter;value
+email;yes
+database;yes
+additionalEndMessageFromDatabase;no
+additionalEndMessageTable;vouchers
+additionalEndMessageValueColumn;voucher
+additionalEndMessageIdColumn;id
+redirectionURL;https://multilada.pl/
+redirectionTime;1
+redirectionParams;lang, type,id
