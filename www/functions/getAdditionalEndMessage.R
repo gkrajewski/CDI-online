@@ -38,7 +38,8 @@ getAdditionalEndMessage <- function(id, type="database", parameters, txt){
                               tableQuery=query)
       }
       
-      message = paste(txt[txt$text_type=='additionalEndMessageFromDatabaseText', "text"], paste(result$voucher, collapse = ', '))
+      message = paste(txt[txt$text_type=='additionalEndMessageFromDatabaseText', "text"], 
+                      "<center><strong>", paste(result$voucher, collapse = ', '), "</strong></center>")
       print(message)
       return(message)
       }
