@@ -50,3 +50,5 @@ instr;Proszę podać przykłady rzeczywistych wypowiedzeń dziecka złożonych z
 catHeader ;Trzy najdłuższe zdania ;sentences;sentences3
 instr ;Proszę podać przykłady trzech najdłuższych zdań, jakie ostatnio słyszeli Państwo od swego dziecka. (Chodzi o wypowiedzi samodzielne, a nie wierszyki, piosenki itp.);sentences;sentences3
 additionalEndMessageFromDatabaseText;Poniżej znajdą Państwo kod (e-kartę) o wartości 40 zł do wykorzystania w sklepie internetowym empik.com. Polecamy zrobić zrzut ekranu aby zachować numer e-karty na później! <br><br>;;
+redirectionBtn;Przekieruj;;
+redirectionText;Jeśli przycisk pozwalający na przekierowanie nie jest jeszcze aktywny powinno to nastąpić za krótką chwilę.;;
