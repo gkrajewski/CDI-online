@@ -340,7 +340,6 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
               
               #Prepare redirection
               if ("redirectionURL" %in% staticList$parameters$parameter){
-                
                 footer <- list(
                   actionButton("redirect", reactList$txt[reactList$txt$text_type == "redirectionBtn", "text"]),
                   div(id="redirectionText", reactList$txt[reactList$txt$text_type == "redirectionText", "text"])
@@ -394,7 +393,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
               #Save csv with answers
               write.csv(reactList$answers, answersFile, row.names = F)
               loginfo(paste0(urlString, " csv file with asnwers saved"))
-              
+
               #Save answers to database
               if (staticList$parameters[staticList$parameters$parameter == "database", "value"]=="yes") {
                 endDate <- Sys.time()
@@ -426,7 +425,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
                                              tableCreate=query,
                                              tableInput=answers)
               }
-              
+
               #Send e-mail
               if (staticList$parameters[staticList$parameters$parameter == "email", "value"]=="yes") {
                 
@@ -454,14 +453,15 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
               #Enable redirection button (if created)
               if ("redirectionURL" %in% staticList$parameters$parameter) enable("redirect")
               
+              reactList(reactList)
             }
-            
+
           }
-          
+
         }#end reactList$allEnabledDone
-        
+
       }#end canConfirm
-      
+
     })#end observeEvent
     
     #Save data to file when session ends
@@ -469,7 +469,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
       
       write.csv(isolate(reactList()$answers), answersFile, row.names = F, fileEncoding = "UTF-8")
       write.csv(isolate(reactList()$userProgress), progressFile, row.names = F, fileEncoding = "UTF-8")
-      
+
       if (isolate(reactList()$allEnabledDone)) {
         sendLogs(urlString, idx, form, lang)
       }
