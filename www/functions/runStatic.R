@@ -346,7 +346,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
                   )
                 
                 observeEvent(input$redirect, {
-                  redirect(staticList$parameters, idx, lang, form, type)
+                  redirect(staticList$parameters, idx, lang, form, "static")
                 }, once = TRUE)
                 
               } else {
