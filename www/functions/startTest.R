@@ -276,7 +276,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         )
         
         observeEvent(input$redirect, {
-          redirect(parameters, idx)
+          redirect(parameters, idx, lang, form, type)
         }, once = TRUE)
         
       } else {
