@@ -1,43 +1,59 @@
-startTest <- function(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString, fromSW){
+startTest <- function(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, parameters, urlString, fromSW, run){
 
   #Get subject (children) age in months
   subjectAge <- interval(subject$birth, Sys.Date()) %/% months(1)
+  loginfo(paste0("Subject Age: ", subjectAge))
   
   #Load items and start thetas
   setwd(testPath)
-  items <- read.csv(paste0("items.csv"), encoding = "UTF-8", strip.white = T)
-  startThetasFile <- "startThetas.csv"
-  if (file.exists(startThetasFile)) {
-    startThetas <- read.csv(paste0("startThetas.csv"), encoding = "UTF-8", strip.white = T, dec=",")
-  } else {
-    startThetas <- NA
-  }
-  setwd(INIT_PATH)
+  inputFilesRead <- tryCatch(
+    expr = {
+      items <- read.csv(paste0("items.csv"), encoding = "UTF-8", strip.white = T)
+      startThetasFile <- "startThetas.csv"
+      if (file.exists(startThetasFile)) {
+        startThetas <- read.csv(paste0("startThetas.csv"), encoding = "UTF-8", strip.white = T, dec=",")
+      } else {
+        startThetas <- NA
+      }
+      loginfo(" Input files were read in")
+    },
+    error = function(m){
+      msg <- paste0(" There is problem with input files <br><br>", m)
+      logerror(msg)
+      output$sidebar <- renderText({msg})
+      return(FALSE)
+    }
+  )
   
+  setwd(INIT_PATH)
+
   #Prepare parts settings
-  if ("groups" %in% txt$text_type) {
+  if ("groups" %in% parameters$parameter) {
     
     #Many parts form
-    groups<-strsplit(txt[txt$text_type == "groups", "text"], ",")[[1]]
+    groups<-strsplit(parameters[parameters$parameter=="groups", "value"], ",")[[1]]
+    
+    loginfo(paste0(" Following groups are defined: ", paste0(groups, collapse = ", ")))
     
   } else {
     
     #One part form
     groups <- c("group1")
     items$group <- "group1"
-    txt[txt$text_type == "MirtMethod", "text_type"] = paste0("group1", txt[txt$text_type == "MirtMethod", "text_type"])
-    txt[txt$text_type == "MirtCriteria", "text_type"] = paste0("group1", txt[txt$text_type == "MirtCriteria", "text_type"])
+    parameters[parameters$parameter=="MirtMethod", "parameter"] = paste0("group1", parameters[parameters$parameter=="MirtMethod", "parameter"])
+    parameters[parameters$parameter=="MirtCriteria", "parameter"] = paste0("group1", parameters[parameters$parameter=="MirtCriteria", "parameter"])
     
-    if ("MirtSeTheta" %in% txt$text_type) {
-      txt[txt$text_type == "MirtSeTheta", "text_type"] = paste0("group1", txt[txt$text_type == "MirtSeTheta", "text_type"])
+    if ("MirtSeTheta" %in% parameters$parameter) {
+      parameters[parameters$parameter=="MirtSeTheta", "parameter"] = paste0("group1", parameters[parameters$parameter=="MirtSeTheta", "parameter"])
     }
-    if ("maxItemNr" %in% txt$text_type) {
-      txt[txt$text_type == "maxItemNr", "text_type"] = paste0("group1", txt[txt$text_type == "maxItemNr", "text_type"])
+    if ("maxItemNr" %in% parameters$parameter) {
+      parameters[parameters$parameter=="maxItemNr", "parameter"] = paste0("group1", parameters[parameters$parameter=="maxItemNr", "parameter"])
     }
-    if ("minItemNr" %in% txt$text_type) {
-      txt[txt$text_type == "minItemNr", "text_type"] = paste0("group1", txt[txt$text_type == "minItemNr", "text_type"])
+    if ("minItemNr" %in% parameters$parameter) {
+      parameters[parameters$parameter=="minItemNr", "parameter"] = paste0("group1", parameters[parameters$parameter=="minItemNr", "parameter"])
     }
     
+    loginfo(" Groups parameter was not defined")
   }
   
   #Prepare vector of parts tested already and not
@@ -45,6 +61,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   startGroup <- c()
   
   start = "items"
+
   for (i in 1:length(groups)) {
     
     groupsToTestBool[i] <- FALSE
@@ -54,6 +71,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       if (!is.na(subject[[paste0(groups[i], "Start")]])) {
         
         startGroup <- groups[i]
+        
+        loginfo(paste0(" This is the start group: ", startGroup))
         
       } else {
         
@@ -71,6 +90,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   #Sample some parts order from parts that were not started already
   groupsToTest <- groups[groupsToTestBool]
   groupsToTest <- c(startGroup, sample(groupsToTest))
+  
+  loginfo(paste0(" This is the group order: ", paste0(groupsToTest, collapse=", ")))
 
   #Prepare reactive variables
   values <- reactiveValues()
@@ -83,24 +104,35 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   
   if (start=="comment") {
     
-    loginfo(paste0("Starting part ", values$subgroup, " with comment"))
+    loginfo(paste0(" Starting part ", values$subgroup, " with comment"))
     
     values$designFile <- designFile <- paste0("CATdesigns/", urlString, "-", values$subgroup, ".rds")
     CATdesign <- readRDS(isolate(values$designFile))
     
+    loginfo(paste0(" Design for group ", values$subgroup, " was read in"))
+    
     if (values$groupIdx==length(groupsToTest)) {
       btnLabel <- txt[txt$text_type == "endBtn", "text"]
       values$completeEnd <- TRUE
+      loginfo(paste0(" All parts of the form were completed. GroupIdx: ", isolate(values$groupIdx), 
+                     " groups in total: ", length(groupsToTest)))
     } else {
       btnLabel <- txt[txt$text_type == "continueBtn", "text"]
       values$completeEnd <- FALSE
+      loginfo(paste0(" Not all parts were completed. GroupIdx: ", isolate(values$groupIdx), 
+              " groups in total: ", length(groupsToTest)))
     }
     
     commentInput = ""
     if (!is.na(values$subject[[paste0(values$subgroup, "Comment")]])) commentInput = values$subject[[paste0(values$subgroup, "Comment")]]
     
+    header <- paste0(isolate(values$subgroup), "Header")
+    headerColor <- paste0(isolate(values$subgroup), "HeaderColor")
+    
     output$main <- renderUI({
       list(
+        if (header %in% txt$text_type & headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"], style=paste0("color: ", txt[txt$text_type == headerColor, "text"], ";")),
+        if (header %in% txt$text_type & !headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"]),
         if (values$completeEnd) h5(txt[txt$text_type == "endText", "text"]),
         div(class = "comment", textAreaInput("comment", label = txt[txt$text_type == "commentLabel", "text"], value = commentInput))
       )
@@ -112,16 +144,18 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     
   } else {
     
-    loginfo(paste0("Starting part ", values$subgroup, " with items"))
-    
+    loginfo(paste0(" Starting part ", isolate(values$subgroup), " with items"))
     #Prepare CAT design for given part
     CATdesign <- prepareGroup(output = output, 
                               input = input, 
                               values = values,
                               txt = txt, 
+                              parameters = parameters,
                               startThetas = startThetas, 
                               subjectAge = subjectAge, 
                               urlString = urlString)
+    
+    loginfo(paste0(" Created CATdesign for ", isolate(values$subgroup)))
   }
   
   CATdesign <- reactiveVal(CATdesign)
@@ -137,8 +171,10 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     #Update design
     updatedDesign <- updateDesign(CATdesign(), new_item = values$nextItem, new_response = input$question)
 
-    if ((length(na.omit(updatedDesign$person$items_answered)) >= values$minItemNr) &
-        ((length(na.omit(updatedDesign$person$items_answered)) >= values$maxItemNr) |
+    values$items_answered = length(na.omit(updatedDesign$person$items_answered))
+    
+    if ((values$items_answered >= values$minItemNr) &
+        ((values$items_answered >= values$maxItemNr) |
         (updatedDesign$person$thetas_SE_history[length(updatedDesign$person$thetas_SE_history)]<
          values$seTheta))
     ){
@@ -147,24 +183,37 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       CATdesign(updatedDesign)
       values$subject[[paste0(values$subgroup, "Test")]] <- "end"
       values$groupsToSave <- c(values$groupsToSave, isolate(values$subgroup))
-      loginfo(paste0(urlString, " done with part", values$groupIdx))
+      loginfo(paste0(" done with part ", isolate(values$groupIdx), " group: ", isolate(values$subgroup), 
+                     " groups to save: ", paste0(isolate(values$groupsToSave), collapse=", ")))
+      loginfo(paste0(" Items answered ", isolate(values$items_answered), 
+                     " se theta: ", updatedDesign$person$thetas_SE_history[length(updatedDesign$person$thetas_SE_history)]))
       
       #Save data
       endDate <- Sys.time()
-      outputTable <- prepareOutputAdaptative(isolate(CATdesign()), isolate(values$itemsGroup$item) ,isolate(values$subject), lang, isolate(values$subgroup), endDate)
+      outputTable <- prepareOutputAdaptative(isolate(CATdesign()), isolate(values$itemsGroup$id) ,isolate(values$subject), lang, isolate(values$subgroup), endDate)
+      loginfo(paste0(" prepared output file for the group ", isolate(values$subgroup)))
       answerFile <- paste0("answers/", urlString, "-", isolate(values$subgroup), ".csv")
       write.csv(outputTable, answerFile, row.names = F)
       
       if (values$groupIdx==length(groupsToTest)) {
         btnLabel <- txt[txt$text_type == "endBtn", "text"]
         values$completeEnd <- TRUE
+        loginfo(paste0(" All parts of the form were completed. GroupIdx: ", isolate(values$groupIdx), 
+                       " groups in total: ", length(groupsToTest)))
       } else {
         btnLabel <- txt[txt$text_type == "continueBtn", "text"]
         values$completeEnd <- FALSE
+        loginfo(paste0(" Not all parts were completed. GroupIdx: ", isolate(values$groupIdx), 
+                       " groups in total: ", length(groupsToTest)))
       }
+      
+      header <- paste0(isolate(values$subgroup), "Header")
+      headerColor <- paste0(isolate(values$subgroup), "HeaderColor")
       
       output$main <- renderUI({
         list(
+          if (header %in% txt$text_type & headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"], style=paste0("color: ", txt[txt$text_type == headerColor, "text"], ";")),
+          if (header %in% txt$text_type & !headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"]),
           if (values$completeEnd) h5(txt[txt$text_type == "endText", "text"]),
           div(class = "comment", textAreaInput("comment", label = txt[txt$text_type == "commentLabel", "text"], value = ""))
         )
@@ -178,9 +227,9 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       
       # Render next item
       values$nextItem <- findNextItem(updatedDesign)
-      updateRadioButtons(session, "question",
-                         label = paste0(values$itemsGroup$question[values$nextItem], ' "', values$itemsGroup$item[values$nextItem], '"?'),
-                         selected = character(0))
+      #updateRadioButtons(session, "question",
+      #                   label = paste0(values$itemsGroup$question[values$nextItem], ' ', values$itemsGroup$item[values$nextItem], '?'),
+      #                   selected = character(0))
 
       CATdesign(updatedDesign)
       
@@ -190,6 +239,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   
   # Action after ending one part of the test
   partEndActions <- function() {
+    
+    loginfo(paste0(" Part ", isolate(values$subgroup), " was ended"))
     
     #Comment part ended
     values$subject[[paste0(values$subgroup, "CommentEnd")]] <- "end"
@@ -202,17 +253,50 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     
     if (values$completeEnd) {
       
+      loginfo(" Form was ended")
+      
       ### FORM COMPLETE END ###
       
       values$subject[["formEnded"]] <- TRUE
       
+      endMsgtxt <- txt[txt$text_type == "thanksMsgText", "text"]
+      additionalMessage <- parameters[parameters$parameter=="additionalEndMessageFromDatabase", "value"]
+      
+      if (additionalMessage=="yes") {
+        additionalMessageTxt <- getAdditionalEndMessage(urlString, "database", parameters, txt)
+        endMsgtxt <- paste(endMsgtxt, "<br><br>", additionalMessageTxt)
+      }
+      
+      #Prepare redirection
+      if ("redirectionURL" %in% parameters$parameter){
+        
+        footer <- list(
+          actionButton("redirect", txt[txt$text_type == "redirectionBtn", "text"], class = "btn-primary"),
+          div(id="redirectionText", txt[txt$text_type == "redirectionText", "text"])
+        )
+        
+        observeEvent(input$redirect, {
+          redirect(parameters, idx, lang, form, "adaptive", run)
+        }, once = TRUE)
+        
+      } else {
+        
+        footer <- NULL
+        
+      }
+      
+      #Show ending message
       showModal(modalDialog(
-        title = txt[txt$text_type == "end", "text"],
-        txt[txt$text_type == "thanks", "text"],
+        title = txt[txt$text_type == "thanksMsgTitle", "text"],
+        HTML(endMsgtxt),
         easyClose = FALSE,
-        footer = NULL
+        footer = footer
       ))
       
+      #Disable redirection button for now (if created)
+      if ("redirectionURL" %in% parameters$parameter) disable("redirect")
+      
+      #Call SW
       if (fromSW) recurrentCallSW(idx, form, lang, done = "true", score="true")
       
       saveCAT(
@@ -221,8 +305,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         subject = isolate(values$subject),
         subjectFile = subjectFile,
         groupsToSave = isolate(values$groupsToSave),
-        txt = txt,
         urlString = urlString,
+        parameters = parameters,
         form = form,
         lang = lang,
         sendLogs = isolate(values$sendLogs),
@@ -231,6 +315,9 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       
       values$groupsToSave <- c()
       values$sendLogs <- FALSE
+      
+      #Enable redirection button (if created)
+      if ("redirectionURL" %in% parameters$parameter) enable("redirect")
       
     } else {
       
@@ -241,11 +328,14 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       values$subgroup <- groupsToTest[values$groupIdx]
       values$itemsGroup <- items[items$group==values$subgroup, ]
       
+      loginfo(paste0(" Another group starting. Group: ", isolate(values$subgroup), " group Idx: ", isolate(values$groupIdx)))
+      
       #Prepare CAT design for new part
       CATdesign <- prepareGroup(output = output, 
                                 input = input, 
                                 values = values,
                                 txt = txt, 
+                                parameters = parameters,
                                 startThetas = startThetas, 
                                 subjectAge = subjectAge, 
                                 urlString = urlString)
@@ -273,7 +363,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       subjectFile = subjectFile,
       groupsToSave = isolate(values$groupsToSave),
       urlString = urlString,
-      txt = txt,
+      parameters = parameters,
       form = form,
       lang = lang,
       sendLogs = isolate(values$sendLogs),

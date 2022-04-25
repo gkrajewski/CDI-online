@@ -110,3 +110,17 @@ h5 {
 .warning {
 	margin-bottom: 20px;
 }
+
+#question {
+	width: auto;
+}
+
+.modal-footer {
+	text-align: center;
+}
+
+#redirectionText {
+	text-align: center;
+	font-size: 13px;
+	margin-top: 10px;
+}

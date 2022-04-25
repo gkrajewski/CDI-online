@@ -44,5 +44,5 @@ chooseTheta <- function(startThetas, subjectGender, subjectAge, group) {
     startTheta <- startThetasFile[startThetasFile["gender"]==subjectGender, "theta"][1]
   }
   
-  return(startTheta)
+  return(as.numeric(startTheta))
 }
