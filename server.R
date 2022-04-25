@@ -8,6 +8,8 @@ server <- function(input, output, session) {
   inventoryStarted <- reactiveVal(FALSE)
   
   observe({
+    
+    Sys.sleep(5)
       
     #Read parameters values from URL
     idx <- readFromURL("id", session, caseInvariance = FALSE)
@@ -172,6 +174,7 @@ server <- function(input, output, session) {
       #No all needed parameters
       output$sidebar <- renderText({paste0("Missing URL parameters. <br><br> link: ", 
                                            getWholeURL(session))})
+      output$cdiNameSufix <- renderText({})
       logerror("Missing URL parameters (lang, form and id).")
       
       # Useful for testing
