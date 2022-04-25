@@ -1,7 +1,10 @@
 # CDI online
-Currently deployed version: v1.6
+Currently deployed version: v1.7
 
 ## Changes
+### v1.8
+
+
 ### v1.7
 * Added: static form has another input file called parameters.csv with parameters for external connections 
 * Changed: files in adaptive were divided into translations.csv and parameters.csv
