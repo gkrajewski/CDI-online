@@ -1,4 +1,4 @@
-redirect <- function(parameters, idx, lang, form, type){
+redirect <- function(parameters, idx, lang, form, type, run){
   
   tryCatch(
     
@@ -25,6 +25,7 @@ redirect <- function(parameters, idx, lang, form, type){
           if (param == "form") redirectionURL <- paste0(redirectionURL, "form=", form)
           if (param == "lang") redirectionURL <- paste0(redirectionURL, "lang=", lang)
           if (param == "type") redirectionURL <- paste0(redirectionURL, "type=", type)
+          if (param == "run") redirectionURL <- paste0(redirectionURL, "run=", run)
           firstParam <- FALSE
         }
         

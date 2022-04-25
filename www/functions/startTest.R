@@ -1,4 +1,4 @@
-startTest <- function(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, parameters, urlString, fromSW){
+startTest <- function(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, parameters, urlString, fromSW, run){
 
   #Get subject (children) age in months
   subjectAge <- interval(subject$birth, Sys.Date()) %/% months(1)
@@ -276,7 +276,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         )
         
         observeEvent(input$redirect, {
-          redirect(parameters, idx, lang, form, "adaptive")
+          redirect(parameters, idx, lang, form, "adaptive", run)
         }, once = TRUE)
         
       } else {

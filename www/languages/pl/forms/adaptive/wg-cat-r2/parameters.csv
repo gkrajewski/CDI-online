@@ -26,4 +26,4 @@ mowaminItemNr;1
 gestyminItemNr;1
 redirectionURL;https://multilada.pl/
 redirectionTime;1
-redirectionParams;id,lang
+redirectionParams;id,lang, run

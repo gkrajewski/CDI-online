@@ -7,4 +7,4 @@ additionalEndMessageValueColumn;voucher
 additionalEndMessageIdColumn;id
 redirectionURL;https://multilada.pl/
 redirectionTime;1
-redirectionParams;lang, type,id
+redirectionParams;lang, type,id,run

@@ -155,7 +155,7 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
           subject$filler <- input$filler
           subject$fillerTxt <- input$fillerTxt
           loginfo(paste0(urlString, " starting test from the beginning."))
-          startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, parameters, urlString, fromSW)
+          startTest(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, parameters, urlString, fromSW, run)
         }
         
       }, once = TRUE)
