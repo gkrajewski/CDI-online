@@ -3,7 +3,7 @@ Currently deployed version: v1.7
 
 ## Changes
 ### v1.8
-
+* Changed: color of redirection button (now it's more visible when it's active)
 
 ### v1.7
 * Added: static form has another input file called parameters.csv with parameters for external connections 
