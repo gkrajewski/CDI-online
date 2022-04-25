@@ -14,7 +14,7 @@ ui <- fluidPage(
   ),
   
   div(id="version", "v1.7"),
-  h1(textOutput("cdiNamePrefix")),
+  h1(textOutput("cdiNamePrefix")), 
   h2(textOutput("cdiNameSufix")),
   uiOutput("menu"),
   h3(textOutput("header")), #name of current type
@@ -30,7 +30,7 @@ ui <- fluidPage(
     
     mainPanel(
       
-      uiOutput("main"),
+      withSpinner(uiOutput("main"), type=2, color.background = '#FFF')
       
     ),
     
