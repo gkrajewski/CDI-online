@@ -271,7 +271,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       if ("redirectionURL" %in% parameters$parameter){
         
         footer <- list(
-          actionButton("redirect", txt[txt$text_type == "redirectionBtn", "text"]),
+          actionButton("redirect", txt[txt$text_type == "redirectionBtn", "text"], class = "btn-primary"),
           div(id="redirectionText", txt[txt$text_type == "redirectionText", "text"])
         )
         
