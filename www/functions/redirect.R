@@ -7,7 +7,7 @@ redirect <- function(parameters, idx, lang, form, type, run){
       if ("redirectionTime" %in% parameters$parameter){
         redirectionTime <- parameters[parameters$parameter=="redirectionTime", "value"]
       } else {
-        redirectionTime <- 5000
+        redirectionTime <- 0
       }
       
       redirectionURL <- parameters[parameters$parameter=="redirectionURL", "value"]
