@@ -8,8 +8,6 @@ server <- function(input, output, session) {
   inventoryStarted <- reactiveVal(FALSE)
   
   observe({
-    
-    Sys.sleep(5)
       
     #Read parameters values from URL
     idx <- readFromURL("id", session, caseInvariance = FALSE)
@@ -129,6 +127,7 @@ server <- function(input, output, session) {
                                                      settings[settings$text_type == "errorInfo", "text"],
                                                      "<br><br>link:",
                                                      getWholeURL(session)), collapse = " ")})
+              output$cdiNameSufix <- renderText({})
               
               logerror(paste0("Bad value of form parameter: ", form, ". Available values are: ", paste0(availableForms, collapse = ", ")))
               
@@ -142,6 +141,7 @@ server <- function(input, output, session) {
                                                    settings[settings$text_type == "errorInfo", "text"],
                                                    "<br><br>link:",
                                                    getWholeURL(session)), collapse = " ")})
+            output$cdiNameSufix <- renderText({})
             
             logerror(paste0("Bad value of the type parameter: ", form, ". Available values are: ", paste0(availableTypes, collapse = ", ")))
             
@@ -155,6 +155,7 @@ server <- function(input, output, session) {
                                                  settings[settings$text_type == "errorInfo", "text"],
                                                  "<br><br>link:",
                                                  getWholeURL(session)), collapse = " ")})
+          output$cdiNameSufix <- renderText({})
           
           logerror(paste0("Bad value of the type parameter: ", type, ". Allowed values are: ", paste0(allowedTypes, collapse = ", ")))
         }
@@ -165,6 +166,7 @@ server <- function(input, output, session) {
         output$sidebar <- renderText({paste0(c("Bad value of the lang parameter in the URL.", 
                                                "<br><br>link:",
                                                getWholeURL(session)), collapse = " ")})
+        output$cdiNameSufix <- renderText({})
         
         logerror(paste0("Bad value of the lang parameter: ", lang, ". Available values are: ", paste0(availableLangs, collapse = ", ")))
       }
