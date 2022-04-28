@@ -242,7 +242,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
     endMsgtxt <- reactList$txt[reactList$txt$text_type == endMsg, "text"]
     
     additionalMessage <- staticList$parameters[staticList$parameters$parameter=="additionalEndMessageFromDatabase", "value"]
-    if (additionalMessage=="yes") {
+    if (length(additionalMessage)>0 && additionalMessage=="yes") {
       additionalMessageTxt <- getAdditionalEndMessage(staticList$urlString, "database", 
                                                       staticList$parameters, staticList$txt)
       endMsgtxt <- paste(endMsgtxt, "<br><br>", additionalMessageTxt)

@@ -169,7 +169,7 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
         endMsgtxt <- txt[txt$text_type == "alreadyFilled", "text"]
         additionalMessage <- parameters[parameters$parameter=="additionalEndMessageFromDatabase", "value"]
         
-        if (additionalMessage=="yes") {
+        if (length(additionalMessage)>0 && additionalMessage=="yes") {
           additionalMessageTxt <- getAdditionalEndMessage(urlString, "database", parameters, txt)
           endMsgtxt <- paste(endMsgtxt, "<br><br>", additionalMessageTxt)
         }
