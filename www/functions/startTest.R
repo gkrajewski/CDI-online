@@ -1,4 +1,4 @@
-startTest <- function(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, parameters, urlString, fromSW){
+startTest <- function(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, parameters, urlString, fromSW, run){
 
   #Get subject (children) age in months
   subjectAge <- interval(subject$birth, Sys.Date()) %/% months(1)
@@ -271,12 +271,12 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       if ("redirectionURL" %in% parameters$parameter){
         
         footer <- list(
-          actionButton("redirect", txt[txt$text_type == "redirectionBtn", "text"]),
+          actionButton("redirect", txt[txt$text_type == "redirectionBtn", "text"], class = "btn-primary"),
           div(id="redirectionText", txt[txt$text_type == "redirectionText", "text"])
         )
         
         observeEvent(input$redirect, {
-          redirect(parameters, idx, lang, form, "adaptive")
+          redirect(parameters, idx, lang, form, "adaptive", run)
         }, once = TRUE)
         
       } else {
