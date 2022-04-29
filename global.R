@@ -1,6 +1,7 @@
 #Load libraries
 library(shinythemes)
 library(shinyjs)
+library(shinycssloaders)
 library(httr) #http requests
 library(lubridate) #dates
 library(fresh)

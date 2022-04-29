@@ -14,8 +14,8 @@ ui <- fluidPage(
   ),
   
   div(id="version", "v1.7"),
-  h1(textOutput("cdiNamePrefix")),
-  h2(textOutput("cdiNameSufix")),
+  h1(textOutput("cdiNamePrefix")), 
+  h2(withSpinner(textOutput("cdiNameSufix"), type=2, color.background = '#FFF', proxy.height = "50px")),
   uiOutput("menu"),
   h3(textOutput("header")), #name of current type
   
@@ -30,7 +30,7 @@ ui <- fluidPage(
     
     mainPanel(
       
-      uiOutput("main"),
+      uiOutput("main")
       
     ),
     
