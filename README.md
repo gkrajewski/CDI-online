@@ -6,6 +6,7 @@ Currently deployed version: v1.7
 * Changed: color of redirection button (now it's more visible when it's active)
 * Added: possibility of adding the run parameter to the redirection URL
 * Changed: redirection time is 0 by default (issue #235)
+* Added: moving circle when the app is loading (issue #54)
 
 ### v1.7
 * Added: static form has another input file called parameters.csv with parameters for external connections 
