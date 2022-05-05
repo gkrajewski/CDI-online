@@ -1,0 +1,15 @@
+text_type;text;item_type;category
+cdiNameSufix;Språk hos barn 30–48 måneder;;
+longText;Introduction here?;start;
+wordBtn;Ord;word;
+header;Sjekkliste over ordforrådet;word;
+longText;"Nedenfor følger lister med ord fra fire områder. Kryss av for hvert ord du har hørt barnet ditt si spontant. (Du skal altså ikke be barnet ditt si ordet.) Det spiller ingen rolle om barnet ditt uttaler ordene annerledes (f.eks. «raff» for «giraff» eller «mek» for «melk»). Du skal ikke krysse av hvis barnet sier et ord som betyr det samme (f.eks. «kjele» for «gryte»). Mange barn kan bare noen av ordene. Første område er ord som har med mat å gjøre, og det andre er ord om kroppen. De neste områdene handler om tanker og ideer og om følelser.";word;firstPage
+catHeader;Ord om mat;word;eating
+catHeader;Ord om kropp;word;body_parts
+catHeader;Ord om tanker og ideer;word;thoughts_ideas
+catHeader;Ord om følelser;word;feelings
+help;"Sjekk om du har gått glipp av noen av sidene før du bekrefter. Er du sikker på at du har krysset av for alle ordene barnet ditt sier?";word;feelings
+complexityBtn;Setningskompleksitet;complexity;
+header;Setningskompleksitet;complexity;
+longText;"Barn uttrykker seg ofte i korte setninger, men kan av og til også bruke mer avanserte uttrykk. Angi hvilket alternativ som ligner mest på slik barnet ditt snakker akkurat nå. Det uttrykket vi spør etter, er markert i fet skrift. Parentes viser til variasjon i betydning.";complexity;
+choiceNames;Alltid A, Oftest A, Like ofte, Oftest B, Alltid B;complexity;
