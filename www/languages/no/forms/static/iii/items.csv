@@ -104,8 +104,8 @@ item_102;"A: Jeg har en far (slektning) || B: Jeg har en far (slektning) som bor
 item_103;"A: Vi skal dra || B: Vi skal dra til mormor";complexity;;;;;
 item_104;"A: Jeg rydder senere || B: Jeg rydder senere når Eva har gått";complexity;;;;;
 item_105;"A: Skru på lyset || B: Skru på lyset så jeg kan se";complexity;;;;;
-item_106;"A: Jeg løper / B: Jeg løper hvis hunden kommer";complexity;;;;;
-item_107;"A: Jeg fikk en is // B: Jeg fikk en is med sjokoladestrø";complexity;;;;;
-item_108;"A: Jeg synger en sang     B: Jeg synger en sang for deg";complexity;;;;;
-item_109;"A: Frosken ble overkjørt     B: Frosken ble overkjørt av bilen";complexity;;;;;
-item_110;"A: Hunden bjeffer     B: Hunden bjeffer fordi en katt løp forbi";complexity;;;;;
+item_106;"A: Jeg løper || B: Jeg løper hvis hunden kommer";complexity;;;;;
+item_107;"A: Jeg fikk en is || B: Jeg fikk en is med sjokoladestrø";complexity;;;;;
+item_108;"A: Jeg synger en sang || B: Jeg synger en sang for deg";complexity;;;;;
+item_109;"A: Frosken ble overkjørt || B: Frosken ble overkjørt av bilen";complexity;;;;;
+item_110;"A: Hunden bjeffer || B: Hunden bjeffer fordi en katt løp forbi";complexity;;;;;
