@@ -1,5 +1,6 @@
 # CDI online
 Currently deployed version: v1.7
+Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7Y9-YTqJgnltQb0/edit#heading=h.cfni66gw85m0
 
 ## Changes
 ### v1.8
