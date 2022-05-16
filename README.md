@@ -8,6 +8,7 @@ Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7
 * Added: possibility of adding the run parameter to the redirection URL
 * Changed: redirection time is 0 by default (issue #235)
 * Added: moving circle when the app is loading (issue #54)
+* Removed: testing forms (wg-r, ws-v etc.)
 
 ### v1.7
 * Added: static form has another input file called parameters.csv with parameters for external connections 
