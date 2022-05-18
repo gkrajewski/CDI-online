@@ -12,5 +12,5 @@ instr;"Poniżej znajdują się przykłady wypowiedzi, które dzieci mogą tworzy
 cdiNameSufix;Typowe wypowiedzi dzieci w wieku 3-4 lat;;
 cdiNamePrefix;Jak mówi Twój trzylatek?;;
 instr;Bardzo dziękujemy za wypełnienie kwestionariusza!;postEnd;
-yesNoTooltip;Zakładka “Dodatkowe pytania” włączy się po wypełnieniu i zatwierdzeniu części “Przykłady wypowiedzi”;;
+tooltip;Zakładka “Dodatkowe pytania” włączy się po wypełnieniu i zatwierdzeniu części “Przykłady wypowiedzi”;yesNo;
 instr;Bardzo dziękujemy za wypełnienie kwestionariusza!;postEndSW;

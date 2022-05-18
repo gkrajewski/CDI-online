@@ -16,7 +16,7 @@ fillerLabel;What is your relationship to the child?;;
 fillers;mother,father,grandmother,grandfather,nanny or childminder,nursery teacher,other (please indicate);;
 commentLabel; Comments;;
 cdiNamePrefix;UK Communicative Development Inventory;;
-endTooltip;Submitting the questionnaire will be possible after confirming your answers in each section.;;
+tooltip;Submitting the questionnaire will be possible after confirming your answers in each section.;end;
 header;Submitting your answers;end;
 endBtn;Finish;end;
 instr;If you have filled all parts of the questionnaire please click the “Confirm” button. ;end;
