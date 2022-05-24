@@ -63,3 +63,4 @@ instr;Poniżej wypisano czynności opiekuńcze, jakie dzieci wykonują bawiąc s
 catHeader;Naśladowanie innych czynności dorosłych (na przedmiotach lub zabawkach);gestures;gestures_adult
 instr;Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;gestures;gestures_adult
 additionalEndMessageFromDatabaseText;Poniżej znajdą Państwo kod (e-kartę) o wartości 40 zł do wykorzystania w sklepie internetowym empik.com. Polecamy zrobić zrzut ekranu aby zachować numer e-karty na później! <br><br>;;
+additionalEndMessageFromDatabaseNoText;Niestety wystąpił błąd i nie jesteśmy w stanie wyświetlić voucheru. Prosimy skontaktować się z nami mailowo: multilada@psych.uw.edu.pl;;
