@@ -2,7 +2,7 @@ text_type;text;item_type;category
 cdiNameSufix;Words and Sentences;;
 longText;This is the UK Communicative Development Inventory (UK-CDI) Words and Sentences, which was created by Katie Alcock (Lancaster University), Jessica Horst (University of Sussex), Kerstin Meints (University of Lincoln), and Caroline Rowland (Max Planck Institute for Psycholinguistics) and is an adaptation of the American questionnaire concerning speech development in young children. In this questionnaire we are asking parents (or other guardians) of 16 to 30 month old children learning to speak English, who will tell us what words their children can say. If you decide you do not want to share your answers with us before submitting the questionnaire, simply close your browser. If you change your mind afterwards, just let us know. You can do this without giving any explanation.;start;
 header ;Word list ;word;
-wordBtn ;Words;word;
+menuButton;Words;word;
 longText;In this section, you will be asked about words that your child UNDERSTANDS AND SAYS. Your child UNDERSTANDS AND SAYS a word on the list if they know what the word means AND they say it by themselves. Here are some examples. DO check the box if your child says the word when trying to name an object or describe something that happened. DO check the box if you think he/she has a meaning for that word. It's fine if your child can't say the whole word or says it his/her own ‘special’ way. If you use another word in your family (e.g. Nana for Grandma), that is ok too. Different words (e.g. ‘baby’ for ‘doll’), local or dialect words (e.g. ‘bairn’ for ‘baby’), baby-talk words (e.g. ‘goggy’ for ‘dog’) are OK. DON'T check the box if your child is just stringing sounds together. This is not a real word that means something. DON'T ask your child to repeat the words on the list. This doesn't count! Please do NOT include foreign words (e.g. ‘aqua’ for ‘water’). If your child knows the word in English as well, that's OK, but not if they only say it in the other language. If your child understands or says a DIFFERENT WORD please check in the appropriate box and write down your word in the comment box at the bottom of each page. If you have any additional comments, you can type them in the box at the bottom of the page too.;word;firstPage
 warning;NOTE: This questionnaire is for children of many ages and it has a long list of words. Your child may not be able to understand or say a lot of the words on the form. That is perfectly fine! ;word;firstPage
 catHeader;Sounds;word;sounds
@@ -29,33 +29,33 @@ catHeader;Words about amounts ;word;quantifiers
 catHeader;Helping verbs;word;helping_verbs
 catHeader;Connecting words;word;connecting_words
 help;Please make sure you have completed all of the pages, before finishing this part. Did you mark all the words that your child understands and says?;word;connecting_words
-how_use_wordsBtn;How children use words;how_use_words;
+menuButton;How children use words;how_use_words;
 header;How children use words;how_use_words;
 choiceNames;Not yet, Sometimes, Often;how_use_words;
-word_endingsBtn;Word endings (part 1);word_endings;
+menuButton;Word endings (part 1);word_endings;
 header;Word endings (part 1);word_endings;
 choiceNames;Not yet, Sometimes, Often;word_endings;
-word_formsBtn;Word forms ;word_forms;
+menuButton;Word forms ;word_forms;
 header;Word forms;word_forms;
 longText;Following are some words children learn. Please mark any of these words that your child uses.;word_forms;firstPage
 catHeader;Nouns;word_forms;word_form_nouns
 catHeader;Verbs;word_forms;word_form_verbs
-word_endings2Btn;Word endings (part 2);word_endings2;
+menuButton;Word endings (part 2);word_endings2;
 header;Word endings (part 2);word_endings2;
 longText;Young children often place the wrong endings on words. For example, a child might say “Auntie goed home.” Mistakes like this are often a sign of progress in language. In the following lists, please mark all the mistakes of this kind you have heard your child say recently.;word_endings2;firstPage
 catHeader;Nouns;word_endings2;word_endings_nouns
 catHeader;Verbs;word_endings2;word_endings_verbs
-combineBtn;Combining words ;combine;
+menuButton;Combining words ;combine;
 header;Combining words ;combine;
 choiceNames;Not yet, Sometimes, Often;combine;
 help;“The longest sentences” and “Complexity” sections become available after selecting “Sometimes” or “Often”.;combine;
 header;The longest sentences ;sentences3;
-sentences3Btn;The longest sentences ;sentences3;
-sentences3Tooltip;Availability of this section depends on your answer in the “Combining words” section.;sentences3;
+menuButton;The longest sentences ;sentences3;
+tooltip;Availability of this section depends on your answer in the “Combining words” section.;sentences3;
 instr;Examples: Please list three of the longest sentences you have heard your child say recently. If you cannot remember any, you can leave the boxes empty.;sentences3;
 header;Complexity;complexity;
-complexityBtn;Complexity;complexity;
-complexityTooltip;Availability of this section depends on your answer in the “Combining words” section.;complexity;
+menuButton;Complexity;complexity;
+tooltip;Availability of this section depends on your answer in the “Combining words” section.;complexity;
 instr;In each of the following groups of examples, please mark the one that sounds MOST like the way your child talks right now. Please answer all the questions. If your child is only using shorter or less complex sentences than the options provided, please click on the first of the boxes. If your child is saying sentences even longer or more complicated than the options listed, just click the last box.;complexity;complexity1
 instr;In each of the following groups of examples, please mark the one that sounds MOST like the way your child talks right now. Please answer all the questions. If your child is only using shorter or less complex sentences than the options provided, please click on the first of the boxes. If your child is saying sentences even longer or more complicated than the options listed, just click the last box.;complexity;complexity2
 instr;In each of the following groups of examples, please mark the one that sounds MOST like the way your child talks right now. Please answer all the questions. If your child is only using shorter or less complex sentences than the options provided, please click on the first of the boxes. If your child is saying sentences even longer or more complicated than the options listed, just click the last box.;complexity;complexity3

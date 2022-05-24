@@ -4,7 +4,7 @@ help;Proszę odpowiedzieć na trzy pytania na tej stronie i kliknąć „Zatwier
 backBtn;Cofnij;;
 nextBtn;Dalej;;
 confBtn;Zatwierdź;;
-startBtn;Start;;
+menuButton;Start;start;
 dateLabel;Data urodzenia dziecka;;
 genderLabel;Płeć dziecka;;
 modalTitle;Uwaga!;;
@@ -16,13 +16,13 @@ fillerLabel;Kim Państwo są dla dziecka?;;
 fillers;mama,tata,babcia,dziadek,niania,nauczyciel(-ka),inna odpowiedź (proszę wpisać):;;
 commentLabel;Uwagi;;
 cdiNamePrefix;Inwentarz Rozwoju Mowy i Komunikacji;;
-endTooltip;Zakończenie inwentarza będzie możliwe po zatwierdzeniu wszystkich części.;;
-sentencesTooltip;Zakładka „Wypowiedzi” staje się dostępna w zależności od odpowiedzi udzielonych w zakładce „Łączenie wyrazów”.;;
+tooltip;Zakończenie inwentarza będzie możliwe po zatwierdzeniu wszystkich części.;end;
+tooltip;Zakładka „Wypowiedzi” staje się dostępna w zależności od odpowiedzi udzielonych w zakładce „Łączenie wyrazów”.;sentences;
 header;Łączenie wyrazów;combine;
-combineBtn;Łączenie wyrazów ;combine;
+menuButton;Łączenie wyrazów ;combine;
 choiceNames;Jeszcze nie,Czasem,Często;combine;
 header;Zakończenie;end;
-endBtn;Zakończenie;end;
+menuButton;Zakończenie;end;
 instr;Jeśli wypełnili Państwo wszystkie części kwestionariusza, proszę kliknąć przycisk „Zatwierdź”. ;end;
 endMsgTitle;Dziękujemy za wypełnienie!;end;
 endMsgTextSW;Bardzo dziękujemy za wypełnienie kwestionariusza! Więcej informacji znajdą Państwo w zakładce „Wiedza” w aplikacji StarWords.;end;
@@ -30,4 +30,5 @@ endMsgText;Dziękujemy za wypełnienie kwestionariusza! Mamy nadzieję, że czas
 error;Nastąpiło przerwanie połączenia. Proszę odświeżyć i spróbować ponownie. Jeśli to się powtarza, prosimy o zrobienie screena tego ekranu i wysłanie na maila multilada@psych.uw.edu.pl.;;
 refresh;Odśwież;;
 inventoryOpened;Inwentarz jest już otwarty. Proszę zamknąć inwentarz jeśli jest otwarty gdzie indziej i/lub odświeżyć stronę.;;
-;;;blabla
+additionalEndMessageFromDatabaseText;Poniżej znajdą Państwo kod (e-kartę) o wartości 40 zł do wykorzystania w sklepie internetowym empik.com. Polecamy zrobić zrzut ekranu aby zachować numer e-karty na później! <br><br>;;
+additionalEndMessageFromDatabaseNoText;Niestety wystąpił błąd i nie jesteśmy w stanie wyświetlić voucheru. Prosimy skontaktować się z nami mailowo: multilada@psych.uw.edu.pl;;
