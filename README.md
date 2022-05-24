@@ -12,6 +12,7 @@ Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7
 * Changed: vouchers are optional and situation with missing vouchers is handled (issue #240)
 * Added: missing parameters.csv files for no and en-gb forms
 * Changed: tooltips are created like other translations (issue #133)
+* Changed: menuButtons are created like other translations (new menuButton text_type)
 
 ### v1.7
 * Added: static form has another input file called parameters.csv with parameters for external connections 
