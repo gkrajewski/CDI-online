@@ -13,6 +13,8 @@ Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7
 * Added: missing parameters.csv files for no and en-gb forms
 * Changed: tooltips are created like other translations (issue #133)
 * Changed: menuButtons are created like other translations (new menuButton text_type)
+* Changed: No blabla needed in translations files and fixed bug with treating 
+initially_disabled values as strings instead of booleans (issue #238)
 
 ### v1.7
 * Added: static form has another input file called parameters.csv with parameters for external connections 
