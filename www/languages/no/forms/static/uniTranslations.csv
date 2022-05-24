@@ -15,7 +15,7 @@ badDate;Fødselsdatoen som du har oppgitt, tyder på at barnet ditt ikke er inne
 genders;jente, gutt;;
 commentLabel;Andre kommentarer;;
 cdiNamePrefix;Foreldrerapport for kommunikativ utvikling;;
-endTooltip;Du kan sende inn svarene dine når alle delene av skjemaet er fylt ut.;;
+tooltip;Du kan sende inn svarene dine når alle delene av skjemaet er fylt ut.;end;
 header;Send inn svarene dine;end;
 endBtn;Send inn  ;end;
 instr;Hvis du har fylt ut alle svarene, kan du trykke på «Bekreft».;end;

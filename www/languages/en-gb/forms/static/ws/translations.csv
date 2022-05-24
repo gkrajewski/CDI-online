@@ -51,11 +51,11 @@ choiceNames;Not yet, Sometimes, Often;combine;
 help;“The longest sentences” and “Complexity” sections become available after selecting “Sometimes” or “Often”.;combine;
 header;The longest sentences ;sentences3;
 sentences3Btn;The longest sentences ;sentences3;
-sentences3Tooltip;Availability of this section depends on your answer in the “Combining words” section.;sentences3;
+tooltip;Availability of this section depends on your answer in the “Combining words” section.;sentences3;
 instr;Examples: Please list three of the longest sentences you have heard your child say recently. If you cannot remember any, you can leave the boxes empty.;sentences3;
 header;Complexity;complexity;
 complexityBtn;Complexity;complexity;
-complexityTooltip;Availability of this section depends on your answer in the “Combining words” section.;complexity;
+tooltip;Availability of this section depends on your answer in the “Combining words” section.;complexity;
 instr;In each of the following groups of examples, please mark the one that sounds MOST like the way your child talks right now. Please answer all the questions. If your child is only using shorter or less complex sentences than the options provided, please click on the first of the boxes. If your child is saying sentences even longer or more complicated than the options listed, just click the last box.;complexity;complexity1
 instr;In each of the following groups of examples, please mark the one that sounds MOST like the way your child talks right now. Please answer all the questions. If your child is only using shorter or less complex sentences than the options provided, please click on the first of the boxes. If your child is saying sentences even longer or more complicated than the options listed, just click the last box.;complexity;complexity2
 instr;In each of the following groups of examples, please mark the one that sounds MOST like the way your child talks right now. Please answer all the questions. If your child is only using shorter or less complex sentences than the options provided, please click on the first of the boxes. If your child is saying sentences even longer or more complicated than the options listed, just click the last box.;complexity;complexity3

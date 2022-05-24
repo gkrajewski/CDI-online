@@ -51,11 +51,11 @@ choiceNames;Ikke ennå,Noen ganger,Ofte;combine;
 help;Avsnittene “De tre lengste setningene” og “Kompleksitet” blir aktivert hvis du velger svaret “Noen ganger” eller “Ofte” her.;combine;
 header;De tre lengste setningene;sentences3;
 sentences3Btn;De tre lengste setningene;sentences3;
-sentences3Tooltip;Dette avsnittet åpnes avhengig av svarene dine i “Kombinere ord”.;sentences3;
+tooltip;Dette avsnittet åpnes avhengig av svarene dine i “Kombinere ord”.;sentences3;
 instr;Eksempler: Skriv de tre lengste setningene du har hørt barnet ditt si nylig;sentences3;
 header;Kompleksitet;complexity;
 complexityBtn;Kompleksitet;complexity;
-complexityTooltip;Dette avsnittet åpnes avhengig av svarene dine i “Kombinere ord”.;complexity;
+tooltip;Dette avsnittet åpnes avhengig av svarene dine i “Kombinere ord”.;complexity;
 instr;I de følgende parene skal du krysse av det alternativet som ligner mest på måten barnet ditt snakker akkurat nå. Om barnet sier setninger som er lengre og mer sammensatte enn eksemplene, velger du den andre/siste setningen, som er den mest komplekse av de to. De setningene som er for vanskelige for ditt barn nå, krysser du ikke av, men hopper bare over.;complexity;complexity1
 instr;I de følgende parene skal du krysse av det alternativet som ligner mest på måten barnet ditt snakker akkurat nå. Om barnet sier setninger som er lengre og mer sammensatte enn eksemplene, velger du den andre/siste setningen, som er den mest komplekse av de to. De setningene som er for vanskelige for ditt barn nå, krysser du ikke av, men hopper bare over.;complexity;complexity2
 instr;I de følgende parene skal du krysse av det alternativet som ligner mest på måten barnet ditt snakker akkurat nå. Om barnet sier setninger som er lengre og mer sammensatte enn eksemplene, velger du den andre/siste setningen, som er den mest komplekse av de to. De setningene som er for vanskelige for ditt barn nå, krysser du ikke av, men hopper bare over.;complexity;complexity3

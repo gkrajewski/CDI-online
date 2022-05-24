@@ -108,9 +108,15 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
       class <- "menuButtonContainer"
       if (userProgress[userProgress$type == type, "done"]) class <- paste(class, "menuButtonContainerDone")
       if (userProgress[userProgress$type == type, "current"]) class <- paste(class, "menuButtonContainerActive")
-      title <- ""
-      if (is.element(paste0(type, "Tooltip"), txt$text_type)) title <- txt[txt$text_type == paste0(type, "Tooltip"), "text"]
-      buttonDiv <- div(title = title, id = paste0(type, "container"), class = class, actionButton(type, label = paste0(i, ". ", txt[txt$text_type == paste0(type,"Btn"), "text"]), class = "btn-primary"))
+      
+      buttonDiv <- div(
+        title = txt[txt$item_type == type & txt$text_type == "tooltip", "text"],
+        id = paste0(type, "container"),
+        class = class,
+        actionButton(type, label = paste0(i, ". ", txt[txt$text_type == paste0(type,"Btn"), "text"]),
+                     class = "btn-primary")
+        )
+      
       if (userProgress[userProgress$type == type, "disabled"]) buttonDiv <- disabled(buttonDiv)
       
       #Add button observer
