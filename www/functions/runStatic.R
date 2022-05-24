@@ -5,38 +5,34 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
     expr = {
       
       #Load files
-      langPath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/static")
-      formPath <- paste0(langPath, "/", form)
-      setwd(langPath)
-      uniTransl <- read.csv("uniTranslations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
-      setwd(formPath)
-      items <- read.csv("items.csv", encoding = "UTF-8", sep = ";", strip.white = T)[c("item_id", "definition", "type", "category")]
-      transl <- read.csv("translations.csv", encoding = "UTF-8", sep = ";", strip.white = T)
-      settings <- read.csv("settings.csv", encoding = "UTF-8", strip.white = T)
-      parameters <- read.csv("parameters.csv", encoding = "UTF-8", sep = ";", strip.white = T)
-      setwd(INIT_PATH)
+      typePath <- paste0(LANGUAGES_PATH, "/", lang, "/forms/static")
+      formPath <- paste0(typePath, "/", form)
+      
+      uniTransl <- readInputFile(path = typePath, fileName = "uniTranslations.csv")
+      items <- readInputFile(path = formPath, fileName = "items.csv")
+      transl <- readInputFile(path = formPath, fileName = "translations.csv")
+      settings <- readInputFile(path = formPath, fileName = "settings.csv", sep=",")
+      parameters <- readInputFile(path = formPath, fileName = "parameters.csv")
       
       #Prepare data frames
       translID <- paste(transl$text_type, transl$item_type, transl$category)
       uniTranslID <- paste(uniTransl$text_type, uniTransl$item_type, uniTransl$category)
       uniTransl <- subset(uniTransl, !(uniTranslID %in% translID)) #Get things from uniTransl that are not in translations
       txt <- rbind(uniTransl, transl)
-      typeUniqueSettings <- settings[settings$category == "" | is.na(settings$category), ]
+      typeUniqueSettings <- settings[settings$category == "", ]
       
       #Modify items: bind some types into new one and treat old types as categories
       types <- typeUniqueSettings$type
       for (type in types){
         bindedTypesStr <- typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"]
-        if (!is.na(bindedTypesStr)){
-          if (bindedTypesStr == "startWith"){
-            items[substr(items$type, 1, nchar(type)) == type, "category"] <- items[substr(items$type, 1, nchar(type)) == type, "type"]
-            items[substr(items$type, 1, nchar(type)) == type, "type"] <- type
-          } else {
-            bindedTypes <- strsplit(typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"], ",")[[1]]
-            for (bindedType in bindedTypes){
-              items[substr(items$type, 1, nchar(bindedType)) == bindedType, "category"] <- items[substr(items$type, 1, nchar(bindedType)) == bindedType, "type"]
-              items[substr(items$type, 1, nchar(bindedType)) == bindedType, "type"] <- type
-            }
+        if (bindedTypesStr == "startWith"){
+          items[substr(items$type, 1, nchar(type)) == type, "category"] <- items[substr(items$type, 1, nchar(type)) == type, "type"]
+          items[substr(items$type, 1, nchar(type)) == type, "type"] <- type
+        } else {
+          bindedTypes <- strsplit(typeUniqueSettings[typeUniqueSettings$type == type, "binded_types"], ",")[[1]]
+          for (bindedType in bindedTypes){
+            items[substr(items$type, 1, nchar(bindedType)) == bindedType, "category"] <- items[substr(items$type, 1, nchar(bindedType)) == bindedType, "type"]
+            items[substr(items$type, 1, nchar(bindedType)) == bindedType, "type"] <- type
           }
         }
       }
@@ -82,7 +78,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
       userProgress <- data.frame(
         type = types,
         done = FALSE,
-        disabled = typeUniqueSettings$initially_disabled,
+        disabled = as.logical(typeUniqueSettings$initially_disabled),
         current = c(TRUE, rep(FALSE, length(types) - 1)), #Make 1st type as current
         category = firstCats
       )
@@ -261,7 +257,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
           }
         }
       }
-      
+
       #Confirm type
       if (canConfirm){
         
@@ -280,7 +276,6 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
         
         #Enable/disable some types
         conditionedTypes <- typeUniqueSettings[typeUniqueSettings$type == reactList$type, "conditions"]
-        if (is.na(conditionedTypes)) conditionedTypes <- ""
         if (conditionedTypes != ""){
           conditionedTypes <- strsplit(conditionedTypes, ",")[[1]]
           conditionedAnswer <- reactList$answers[reactList$answers$type == reactList$type, "answer"]
@@ -304,7 +299,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
             }
           }
         }
-        
+
         #Render 1st not done type (from left)
         reactList$allEnabledDone <- TRUE
         for (type in types){
@@ -314,7 +309,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
             break
           }
         }
-        
+
         #Render end type or postend message
         if(reactList$allEnabledDone){
           
