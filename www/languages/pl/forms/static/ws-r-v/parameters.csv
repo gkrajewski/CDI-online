@@ -1,8 +1,0 @@
-parameter;value
-email;yes
-database;yes
-additionalEndMessageFromDatabase;yes
-additionalEndMessageTable;vouchers
-additionalEndMessageValueColumn;voucher
-additionalEndMessageIdColumn;id
-redirectionURL;https://multilada.pl/
