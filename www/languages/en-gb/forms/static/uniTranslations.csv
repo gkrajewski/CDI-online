@@ -4,7 +4,7 @@ help;Please answer the three questions on this page and then click “Confirm”
 backBtn;Previous;;
 nextBtn;Next;;
 confBtn;Confirm;;
-startBtn;Start;;
+menuButton;Start;start;
 dateLabel;Your child's date of birth;;
 genderLabel;Your child's sex;;
 modalTitle;Warning!;;
@@ -18,7 +18,7 @@ commentLabel; Comments;;
 cdiNamePrefix;UK Communicative Development Inventory;;
 tooltip;Submitting the questionnaire will be possible after confirming your answers in each section.;end;
 header;Submitting your answers;end;
-endBtn;Finish;end;
+menuButton;Finish;end;
 instr;If you have filled all parts of the questionnaire please click the “Confirm” button. ;end;
 endMsgTitle;Thank you for filling the questionnaire!;end;
 endMsgTextSW;Thank you for filling the questionnaire! We hope that it was a valuable experience that allowed you to reflect on your child's langauge development. Your participation in the study is very important for us – it will help us to describe early language development of mono- and bilingual children who acquire English as one of their languages.;end;
