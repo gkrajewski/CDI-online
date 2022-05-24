@@ -9,7 +9,7 @@ Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7
 * Changed: redirection time is 0 by default (issue #235)
 * Added: moving circle when the app is loading (issue #54)
 * Removed: testing forms (wg-r, ws-v etc.)
-* Changed: vouchers are optional and situation with missing vouchers handled (issue #240)
+* Changed: vouchers are optional and situation with missing vouchers is handled (issue #240)
 * Added: missing parameters.csv files for no and en-gb forms
 
 ### v1.7
