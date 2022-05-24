@@ -32,14 +32,20 @@ getAdditionalEndMessage <- function(id, type="database", parameters, txt){
                               dbname=Sys.getenv("DB_NAME"),
                               host=Sys.getenv("DB_HOST"),
                               port=Sys.getenv("DB_PORT"),
-                              id="testing",
+                              id=id,
                               tableName="vouchers",
                               transaction=transaction,
                               tableQuery=query)
       }
       
-      message = paste(txt[txt$text_type=='additionalEndMessageFromDatabaseText', "text"], 
-                      "<center><strong>", paste(result$voucher, collapse = ', '), "</strong></center>")
+      if (length(result$voucher)==0) {
+        message = txt[txt$text_type=='additionalEndMessageFromDatabaseNoText', "text"]
+      } else 
+      {
+        message = paste(txt[txt$text_type=='additionalEndMessageFromDatabaseText', "text"], 
+                        "<center><strong>", paste(result$voucher, collapse = ', '), "</strong></center>")
+      }
+      
       print(message)
       return(message)
       }
