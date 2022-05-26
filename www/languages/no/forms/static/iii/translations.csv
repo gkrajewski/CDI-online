@@ -1,6 +1,9 @@
 text_type;text;item_type;category
 cdiNameSufix;Språk hos barn 30–48 måneder;;
-longText;Introduction here?;start;
+longText;(Introduction here?);start;
+menuButton;(Label needed);communication_level;
+header;Barnets allmenne kommunikasjonsnivå;communication_level;
+choiceNames;"Barnet mitt snakker ennå ikke.", "Barnet mitt snakker, men jeg forstår ham/henne ikke.", "Barnet mitt snakker i ettordsytringer som «bamse» eller «se».", "Barnet mitt snakker i ytringer på to-tre ord som «få bamse» eller «vil ha is».", "Barnet mitt snakker i korte, fullstendige setninger som «jeg fikk en bil» eller «kan du hoppe?».", "Barnet mitt snakker ofte i lange setninger som «jeg så en hund på gaten» eller «da jeg var i barnehagen lekte jeg med klosser».";communication_level;
 menuButton;Ord;word;
 header;Sjekkliste over ordforrådet;word;
 longText;"Nedenfor følger lister med ord fra fire områder. Kryss av for hvert ord du har hørt barnet ditt si spontant. (Du skal altså ikke be barnet ditt si ordet.) Det spiller ingen rolle om barnet ditt uttaler ordene annerledes (f.eks. «raff» for «giraff» eller «mek» for «melk»). Du skal ikke krysse av hvis barnet sier et ord som betyr det samme (f.eks. «kjele» for «gryte»). Mange barn kan bare noen av ordene. Første område er ord som har med mat å gjøre, og det andre er ord om kroppen. De neste områdene handler om tanker og ideer og om følelser.";word;firstPage
