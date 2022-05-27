@@ -278,7 +278,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
         conditionedTypes <- typeUniqueSettings[typeUniqueSettings$type == reactList$type, "conditions"]
         if (conditionedTypes != ""){
           conditionedTypes <- strsplit(conditionedTypes, ",")[[1]]
-          conditionedAnswer <- reactList$answers[reactList$answers$type == reactList$type, "answer"]
+          conditionedAnswer <- reactList$answers[reactList$answers$type == reactList$type & reactList$answers$answer_type == settings[settings$type == reactList$type, 'input_type'], "answer"]
           possibleAnswers <- typeUniqueSettings[typeUniqueSettings$type == reactList$type, "answers_to_enable"]
           possibleAnswers <- strsplit(possibleAnswers, ";")[[1]]
           for (i in 1:length(conditionedTypes)){
