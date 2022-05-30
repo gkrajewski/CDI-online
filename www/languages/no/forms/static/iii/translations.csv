@@ -17,6 +17,11 @@ catHeader;Ord om følelser;word;feelings
 help;"Sjekk om du har gått glipp av noen av sidene før du bekrefter. Er du sikker på at du har krysset av for alle ordene barnet ditt sier?";word;feelings
 menuButton;Setningskompleksitet;complexity;
 tooltip;"Conditional on the first question";complexity;
-header;Setningskompleksitet;complexity;
+header;Setningskompleksitet (doesn't have to be the same as the button above);complexity;
 longText;"Barn uttrykker seg ofte i korte setninger, men kan av og til også bruke mer avanserte uttrykk. Angi hvilket alternativ som ligner mest på slik barnet ditt snakker akkurat nå. Det uttrykket vi spør etter, er markert i fet skrift. Parentes viser til variasjon i betydning.";complexity;
 choiceNames;Alltid A, Oftest A, Like ofte, Oftest B, Alltid B;complexity;
+menuButton;Setningsoppbygging;grammar;
+tooltip;"Conditional on the first question";grammar;
+header;Setningsoppbygging (button label may be shorter and this header may be longer);grammar;
+longText;"Kryss av for hvor ofte barnet ditt snakker slik det er beskrevet.";grammar;
+choiceNames;Aldri, Noen ganger i måneden, Flere ganger i uke, Hver dag;grammar;
