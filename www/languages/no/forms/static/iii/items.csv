@@ -1,5 +1,5 @@
 item_id;definition;type;category;lexical_category;lexical_class;uni_lemma;complexity_category
-item_1;"Hvilket av utsagnene under passer best for barnet ditt?";communication_level;;;;;
+item_1;"Barnet mitt snakker ennå ikke."%"Barnet mitt snakker, men jeg forstår ham/henne ikke."%"Barnet mitt snakker i ettordsytringer som «bamse» eller «se»."%"Barnet mitt snakker i ytringer på to-tre ord som «få bamse» eller «vil ha is»."%"Barnet mitt snakker i korte, fullstendige setninger som «jeg fikk en bil» eller «kan du hoppe?»."%"Barnet mitt snakker ofte i lange setninger som «jeg så en hund på gaten» eller «da jeg var i barnehagen lekte jeg med klosser».";communication_level;;;;;
 item_2;Blande;word;eating;predicates;verbs;;
 item_3;Brenne (seg);word;eating;predicates;verbs;;
 item_4;Vaske opp;word;eating;predicates;verbs;;

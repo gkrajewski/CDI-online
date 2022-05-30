@@ -1,6 +1,6 @@
 type,category,input_type,comment,css_class,binded_types,initially_disabled,conditions,answers_to_enable
 start,,demographic,FALSE,,,FALSE,communication_level,all
-communication_level,,radio,TRUE,,,TRUE,"word,complexity","3,4,5,6"
+communication_level,,radioAlt,TRUE,,,TRUE,"word,complexity","3,4,5,6"
 word,,oneCheckboxGroup,TRUE,threeColumns,,TRUE,,
 complexity,,radio,TRUE,,,TRUE,,
 end,,,FALSE,,,TRUE,,
