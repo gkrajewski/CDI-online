@@ -25,3 +25,7 @@ tooltip;"Conditional on the first question";grammar;
 header;Setningsoppbygging (button label may be shorter and this header may be longer);grammar;
 longText;"Kryss av for hvor ofte barnet ditt snakker slik det er beskrevet.";grammar;
 choiceNames;Aldri, Noen ganger i måneden, Flere ganger i uke, Hver dag;grammar;
+menuButton;Uttale;pronunciation;
+header;Uttale;pronunciation;
+longText;"Har personer som ikke kjenner barnet ditt vanskelig med å forstå hva han/hun sier?";pronunciation;pronunciation1
+longText;"Hvordan vil du bedømme uttalen til barnet ditt i forhold til andre barn i samme alder?";pronunciation;pronunciation2

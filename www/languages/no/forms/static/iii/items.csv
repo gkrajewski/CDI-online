@@ -118,3 +118,5 @@ item_116;"Mindre og minst kan også brukes for å sammenligne størrelsen på ti
 item_117;"Bruker barnet ditt passiv form, f.eks. maten lages av pappa eller gutten ble dyttet avjenta?";grammar;;;;;
 item_118;"Forteller barnet ditt om noe han/hun har gjort ved å binde setninger sammen med ogtil lange setninger? (F.eks. vi badet og spiste is og spilte fotball og lekte indianer.)";grammar;;;;;
 item_119;"Bruker barnet ditt men når han/hun forteller om noe han/hun har vært med på? (F.eks. vi badet, men Stine var ikke med.)";grammar;;;;;
+item_120;Nei, aldri%Ja, av og til%Ja, ofte%Ja, alltid;pronunciation;pronunciation1;;;;
+item_121;Litt yngre barn%Barn i samme alder%Litt eldre barn;pronunciation;pronunciation2;;;;
