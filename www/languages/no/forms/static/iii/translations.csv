@@ -29,3 +29,7 @@ menuButton;Uttale;pronunciation;
 header;Uttale;pronunciation;
 longText;"Har personer som ikke kjenner barnet ditt vanskelig med å forstå hva han/hun sier?";pronunciation;pronunciation1
 longText;"Hvordan vil du bedømme uttalen til barnet ditt i forhold til andre barn i samme alder?";pronunciation;pronunciation2
+menuButton;Språk om språk;metalinguistic;
+header;Språk om språk;metalinguistic;
+choiceNames;Ja, Nei;metalinguistic;
+longText;"Do we want to keep the Yes/No format or do we prefer to convert it to single checkboxes?";metalinguistic;

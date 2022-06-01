@@ -120,3 +120,10 @@ item_118;"Forteller barnet ditt om noe han/hun har gjort ved å binde setninger 
 item_119;"Bruker barnet ditt men når han/hun forteller om noe han/hun har vært med på? (F.eks. vi badet, men Stine var ikke med.)";grammar;;;;;
 item_120;Nei, aldri%Ja, av og til%Ja, ofte%Ja, alltid;pronunciation;pronunciation1;;;;
 item_121;Litt yngre barn%Barn i samme alder%Litt eldre barn;pronunciation;pronunciation2;;;;
+item_122;"Legger barnet ditt merke til at visse ord høres like ut ved at de rimer (f.eks. bil – pil)?";metalinguistic;;;;;
+item_123;"Har du hørt barnet ditt dele opp ord i stavelser? (f.eks ba-de, sko-le, le-ke)";metalinguistic;;;;;
+item_124;"Har barnet ditt vist at han/hun forstår at en del mennesker snakker et annet språk, f.eks. ved å herme etter slik de snakker eller ved å spørre om språket?";metalinguistic;;;;;
+item_125;"Er barnet ditt interessert i bokstaver?";metalinguistic;;;;;
+item_126;"Vet barnet ditt hvordan noen bokstaver lyder?";metalinguistic;;;;;
+item_127;"Kan barnet ditt skrive noen bokstaver selv?";metalinguistic;;;;;
+item_128;"Kan barnet ditt skrive noen ord selv? (F.eks. mamma eller navnet sitt.)";metalinguistic;;;;;
