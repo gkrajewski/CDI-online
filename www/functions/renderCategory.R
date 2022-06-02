@@ -124,7 +124,12 @@ renderCategory <- function(input, output, category, reactList, staticList){
       }
       
       if (reactList$settings$input_type != "radioAlt" & reactList$settings$input_type != "checkboxAlt"){
-        choiceNames <- strsplit(reactList$txt[reactList$txt$text_type == "choiceNames", "text"], ",")[[1]]
+        choiceNames <- reactList$txt[reactList$txt$text_type == "choiceNames", "text"]
+        if (grepl('%', choiceNames)){
+          choiceNames <- strsplit(choiceNames, "%")[[1]]
+        } else {
+          choiceNames <- strsplit(choiceNames, ",")[[1]]
+        }
         choiceValues <- c(1 : length(choiceNames))
       } 
       
