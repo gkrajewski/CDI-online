@@ -16,6 +16,7 @@ Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7
 * Changed: No blabla needed in translations files and fixed bug with treating 
 initially_disabled values as strings instead of booleans (issue #238)
 * Fixed: Bug with types conditioning (issue #252)
+* Added: New input_type: radioVertical (issue #254)
 
 ### v1.7
 * Added: static form has another input file called parameters.csv with parameters for external connections 
