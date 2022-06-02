@@ -115,7 +115,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
     }
 
     #Prepare rest of input fields (inputObj)
-    if (reactList$settings$input_type == "radio" | reactList$settings$input_type == "manyCheckboxGroups" | reactList$settings$input_type == "radioAlt" | reactList$settings$input_type == "checkboxAlt"){
+    if (reactList$settings$input_type == "radio" | reactList$settings$input_type == "radioVertical" | reactList$settings$input_type == "manyCheckboxGroups" | reactList$settings$input_type == "radioAlt" | reactList$settings$input_type == "checkboxAlt"){
       
       if (is.na(catAnswer)){
         selected <- c(rep("0,", nrow(reactList$items)))
@@ -131,6 +131,8 @@ renderCategory <- function(input, output, category, reactList, staticList){
       for (i in 1:nrow(reactList$items)){
         if (reactList$settings$input_type == "radio"){
           inputObj[[i]] <- createRadioQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i], reactList$items[i, "definition"], T)
+        } else if (reactList$settings$input_type == "radioVertical"){
+          inputObj[[i]] <- createRadioQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i], reactList$items[i, "definition"])
         } else if (reactList$settings$input_type == "radioAlt"){
           choiceNames <-  strsplit(reactList$items[i, "definition"], "%")[[1]]
           choiceValues <- c(1 : length(choiceNames))

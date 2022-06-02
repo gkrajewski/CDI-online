@@ -173,7 +173,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
           catAnswer <- paste(sentencesList, collapse = "#")
         } else if (inputType() == "oneCheckboxGroup"){
           catAnswer <- paste(input$oneCheckboxGroup, collapse =  " ")
-        } else if (inputType() == "radio" | inputType() == "manyCheckboxGroups" | inputType() == "radioAlt" | inputType() == "checkboxAlt"){
+        } else if (inputType() == "radio" | inputType() == "radioVertical" | inputType() == "manyCheckboxGroups" | inputType() == "radioAlt" | inputType() == "checkboxAlt"){
           answersPattern <- c()
           for (i in 1:nrow(currItems())){
             id <- paste0("mQ", i)
