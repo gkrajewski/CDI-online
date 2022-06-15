@@ -1,0 +1,54 @@
+item_id;definition;language;form;type;category;lexical_category;lexical_class;uni_lemma;complexity_category ;num_item_id
+item_1;A. Wracałem(-am) do domu. Widziałem(-am) kolegę.%B. Wracając do domu, widziałem(-am) kolegę.;Polish;CDI3;alternatives;grupa1;;;;;1
+item_2;A. Pada deszcz i nie wyjdziemy.%B. Nie wyjdziemy, bo pada deszcz.;Polish;CDI3;alternatives;grupa1;;;;;2
+item_3;A. Jest ładna pogoda i pójdziemy na spacer.%B. Jest ładna pogoda, więc pójdziemy na spacer.;Polish;CDI3;alternatives;grupa1;;;;;3
+item_4;A. Chcę jogurt i płatki.%B. Chcę jogurt z płatkami.;Polish;CDI3;alternatives;grupa1;;;;;4
+item_5;A. Mam worek.%B. Mam worek z butami.;Polish;CDI3;alternatives;grupa1;;;;;5
+item_6;A. Jechałem(-am) do przedszkola i śpiewałem(-am) piosenkę.%B. Jadąc do przedszkola, śpiewałem(-am) piosenkę.;Polish;CDI3;alternatives;grupa1;;;;;6
+item_7;A. Chcę banana.%B. Chciał(a)bym banana.;Polish;CDI3;alternatives;grupa1;;;;;7
+item_8;A. Naklejki są krzywo.%B. Naklejki są przyklejone krzywo.;Polish;CDI3;alternatives;grupa2;;;;;8
+item_9;A. Tata lubi pierogi.%B. Tata powiedział, że lubi pierogi.;Polish;CDI3;alternatives;grupa2;;;;;9
+item_10;A. Braciszek zrobił kanapkę. Braciszek jej nie je.%B. Braciszek zrobił kanapkę, ale jej nie je.;Polish;CDI3;alternatives;grupa2;;;;;10
+item_11;A. Tata przyjdzie. Nakarmi kota.%B. Jak tata przyjdzie, to nakarmi kota.;Polish;CDI3;alternatives;grupa2;;;;;11
+item_12;A. Przyjedzie ciocia. Będziemy się bawić.%B. Przyjdzie ciocia i będziemy się bawić.;Polish;CDI3;alternatives;grupa2;;;;;12
+item_13;A. Babcia przyjedzie.%B. Babcia powiedziała, że przyjedzie.;Polish;CDI3;alternatives;grupa2;;;;;13
+item_14;A. Myję nogi. Będą czyste.%B. Myję nogi, żeby były czyste.;Polish;CDI3;alternatives;grupa2;;;;;14
+item_15;A. Chcę kanapkę z serem.%B. Chciał(a)bym kanapkę z serem.;Polish;CDI3;alternatives;grupa3;;;;;15
+item_16;A. Będzie ciepło. Pójdę na spacer.%B. Pójdę na spacer, jeśli będzie ciepło.;Polish;CDI3;alternatives;grupa3;;;;;16
+item_17;A. Babcia dała mi książeczkę. Oglądam książeczkę.%B. Oglądam książeczkę, która dała mi babcia.;Polish;CDI3;alternatives;grupa3;;;;;17
+item_18;A. Będzie padać. Zostaniemy w domu.%B. Jeśli będzie padać, zostaniemy w domu.;Polish;CDI3;alternatives;grupa3;;;;;18
+item_19;A. Widzę ptaszki.%B. Widzę ptaszki, które latają po niebie.;Polish;CDI3;alternatives;grupa3;;;;;19
+item_20;A. Odkręć wodę.%B. Odkręć wodę, żebym umył(-a) rączki.;Polish;CDI3;alternatives;grupa3;;;;;20
+item_21;A. Mama śpi.%B. Mama śpi, bo jest zmęczona.;Polish;CDI3;alternatives;grupa3;;;;;21
+item_22;Czy Twoje dziecko używa form czasowników zakończonych na ""-ąc"", np. ""wracając"", ""rozmawiając"", ""jadąc""?;Polish;CDI3;yesNo;wprost;;;;22
+item_23;Czy Twoje dziecko używa słowa ""więc"", żeby połączyć dwa zdania, np. ""Jest ładna pogoda, więc pójdziemy na spacer""?;Polish;CDI3;yesNo;wprost;;;;23
+item_24;Czy Twoje dziecko używa słowa ""bo"" (""ponieważ""), żeby połączyć dwa zdania, np. ""Nie wyjdziemy, bo pada deszcz""?;Polish;CDI3;yesNo;wprost;;;;24
+item_25;Czy Twoje dziecko dodaje ""-bym"", ""-byś"", ""-byście"" itp. do czasowników., np. ""Chciałbym cukierka""?;Polish;CDI3;yesNo;wprost;;;;25
+item_26;Czy Twoje dziecko opowiada o tym, co ktoś powiedział, mówiąc ""... powiedział(a), że...""?;Polish;CDI3;yesNo;wprost;;;;26
+item_27;Czy Twoje dziecko używa słowa ""i"", żeby połączyć dwa zdania, np. ""Jem kanapkę i piję soczek""?;Polish;CDI3;yesNo;wprost;;;;27
+item_28;Czy Twoje dziecko używa słów ""mogę"" albo ""musimy"" itp. w zdaniach takich jak ""Mogę zjeść"", ""Musimy iść""?;Polish;CDI3;yesNo;wprost;;;;28
+item_29;Czy Twoje dziecko używa słów ""żebym"", ""żebyś"", ""abym"", ""abyś"" itp. w zdaniach takich jak: ""Chcę, żebyś narysowała misia"", ""Zapal światło, abym mógł widzieć""?;Polish;CDI3;yesNo;wprost;;;;29
+item_30;Czy Twoje dziecko używa form rzeczowników odpowiadających na pytania ""o/na/w kim? czym?"", zakończonych na ""-ach"", np. ""o zabawkach"", ""na drzewach""?;Polish;CDI3;yesNo;wprost;;;;30
+item_31;Czy Twoje dziecko używa słowa ""jeśli"" (""jeżeli""), żeby połączyć dwa zdania, np. ""Pójdę na spacer, jeśli będzie ciepło""?;Polish;CDI3;yesNo;wprost;;;;31
+item_32;Czy Twoje dziecko używa słów ""która"", ""które"" (""co"") itp., żeby połączyć dwa zdania, np. ""Jem ciasto, które zrobiła mama""?;Polish;CDI3;yesNo;wprost;;;;32
+item_33;Czy Twoje dziecko używa form rzeczowników odpowiadających na pytania ""kim? czym?"", zakończonych na ""-ami"", np. ""lalkami"", ""samochodami"", ""płatkami""?;Polish;CDI3;yesNo;wprost;;;;33
+item_34;Czy Twoje dziecko używa słowa ""ale"", żeby połączyć dwa zdania, np. ""Szukam misia, ale nie mogę go znaleźć""?;Polish;CDI3;yesNo;wprost;;;;34
+item_35;Czy Twoje dziecko używa słowa ""jak"" i/lub ""kiedy"", by łączyć dwa zdania, np. ""Jak wrócę do domu, to zjem obiad""?;Polish;CDI3;yesNo;wprost;;;;35
+item_36;Czy Twoje dziecko używa słowa ""żeby"" (""aby"") w zdaniach takich jak ""Myję nogi, żeby były czyste""?;Polish;CDI3;yesNo;wprost;;;;36
+item_37;muzeum;;;word;places;nouns;nouns;musuem;;37
+item_38;sklep;;;word;places;nouns;nouns;shop;;38
+item_39;kino;;;word;places;nouns;nouns;cinema;;39
+item_40;szkoła;;;word;places;nouns;nouns;school;;40
+item_41;restauracja;;;word;places;nouns;nouns;restaurant;;41
+item_42;gę gę;;;word;sounds;other;other;quack quack;;42
+item_43;hau hau;;;word;sounds;other;other;woof woof;;43
+item_44;ko ko ko;;;word;sounds;other;other;cluck cluck;;44
+item_45;kwa kwa;;;word;sounds;other;other;quack quack;;45
+item_46;miau;;;word;sounds;other;other;meow;;46
+item_47;mee/bee;;;word;sounds;other;other;baa baa;;47
+item_48;muu [krowa];;;word;sounds;other;other;moo;;48
+item_49;pi pi pi;;;word;sounds;other;other;tweet tweet;;49
+item_50;bam/bum/bęc;;;word;sounds;other;other;boom;;50
+item_51;brrum brrum [auto];;;word;sounds;other;other;vroom;;51
+item_52;tik tak;;;word;sounds;other;other;tick-tock;;52
+item_53;tralala/lalala;;;word;sounds;other;other;;;53
