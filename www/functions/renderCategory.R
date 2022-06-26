@@ -228,7 +228,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
     list(
       if (is.element("catHeader", reactList$txt$text_type)) h4(reactList$txt[reactList$txt$text_type == "catHeader", "text"]),
       if (is.element("instr", reactList$txt$text_type)) h5(reactList$txt[reactList$txt$text_type == "instr", "text"]),
-      if (is.element("longText", reactList$txt$text_type)) p(reactList$txt[reactList$txt$text_type == "longText", "text"]),
+      if (is.element("longText", reactList$txt$text_type)) HTML(reactList$txt[reactList$txt$text_type == "longText", "text"]),
       if (is.element("warning", reactList$txt$text_type)) p(class = "warning", strong(reactList$txt[reactList$txt$text_type == "warning", "text"])),
       if (length(inputObj) > 0) div(class=reactList$settings$css_class, inputObj),
       if (length(notes) > 0) notes,
