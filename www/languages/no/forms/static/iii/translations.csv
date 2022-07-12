@@ -3,7 +3,7 @@ cdiNameSufix;Språk hos barn 30–48 måneder;;
 longText;(Introduction here?);start;
 menuButton;(Label needed);communication_level;
 header;Barnets allmenne kommunikasjonsnivå;communication_level;
-longText;"Hvilket av utsagnene under passer best for barnet ditt?";communication_level;
+longText;"Hvilket av utsagnene nedenfor passer best for barnet ditt?";communication_level;
 warning;"Bolded looks better but is less consistent with other questions?";communication_level;
 help;"Explain conditioning here and in tooltips for inactive buttons above";communication_level;
 menuButton;Ord;word;
@@ -18,16 +18,16 @@ help;"Sjekk om du har gått glipp av noen av sidene før du bekrefter. Er du sik
 menuButton;Setningskompleksitet;complexity;
 tooltip;"Conditional on the first question";complexity;
 header;Setningskompleksitet (doesn't have to be the same as the button above);complexity;
-longText;"Barn uttrykker seg ofte i korte setninger, men kan av og til også bruke mer avanserte uttrykk. Angi hvilket alternativ som ligner mest på slik barnet ditt snakker akkurat nå. Det uttrykket vi spør etter, er markert i fet skrift. Parentes viser til variasjon i betydning.";complexity;
+longText;"Barn uttrykker seg ofte i korte setninger, men kan av og til også bruke mer avanserte uttrykk. Angi hvilket alternativ som ligner mest på slik barnet ditt snakker akkurat nå. Det uttrykket vi spør etter, er markert i <br>fet skrift</br>. Parentes viser til variasjon i betydning.";complexity;
 choiceNames;Alltid A, Oftest A, Like ofte, Oftest B, Alltid B;complexity;
 menuButton;Setningsoppbygging;grammar;
 tooltip;"Conditional on the first question";grammar;
 header;Setningsoppbygging (button label may be shorter and this header may be longer);grammar;
 longText;"Kryss av for hvor ofte barnet ditt snakker slik det er beskrevet.";grammar;
-choiceNames;Aldri, Noen ganger i måneden, Flere ganger i uke, Hver dag;grammar;
+choiceNames;Aldri, Noen ganger i måneden, Flere ganger i uka, Hver dag;grammar;
 menuButton;Uttale;pronunciation;
 header;Uttale;pronunciation;
-longText;"Har personer som ikke kjenner barnet ditt vanskelig med å forstå hva han/hun sier?";pronunciation;pronunciation1
+longText;"Har personer som ikke kjenner barnet ditt, vansker med å forstå hva han/hun sier?";pronunciation;pronunciation1
 longText;"Hvordan vil du bedømme uttalen til barnet ditt i forhold til andre barn i samme alder?";pronunciation;pronunciation2
 menuButton;Språk om språk;metalinguistic;
 header;Språk om språk;metalinguistic;
