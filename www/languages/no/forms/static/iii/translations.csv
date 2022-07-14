@@ -18,7 +18,7 @@ help;"Sjekk om du har gått glipp av noen av sidene før du bekrefter. Er du sik
 menuButton;Setningskompleksitet;complexity;
 tooltip;"Conditional on the first question";complexity;
 header;Setningskompleksitet (doesn't have to be the same as the button above);complexity;
-longText;"Barn uttrykker seg ofte i korte setninger, men kan av og til også bruke mer avanserte uttrykk. Angi hvilket alternativ som ligner mest på slik barnet ditt snakker akkurat nå. Det uttrykket vi spør etter, er markert i <br>fet skrift</br>. Parentes viser til variasjon i betydning.";complexity;
+longText;"Barn uttrykker seg ofte i korte setninger, men kan av og til også bruke mer avanserte uttrykk. Angi hvilket alternativ som ligner mest på slik barnet ditt snakker akkurat nå. Det uttrykket vi spør etter, er markert i <strong>fet skrift</strong>. Parentes viser til variasjon i betydning.";complexity;
 choiceNames;Alltid A, Oftest A, Like ofte, Oftest B, Alltid B;complexity;
 menuButton;Setningsoppbygging;grammar;
 tooltip;"Conditional on the first question";grammar;
