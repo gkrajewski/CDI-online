@@ -20,5 +20,3 @@ refresh;Odśwież
 commentLabel;Uwagi
 endText;Proszę nacisnąć ‚Zakończ’, aby zakończyć.
 endBtn;Zakończ
-additionalEndMessageFromDatabaseText;Poniżej znajdą Państwo kod (e-kartę) o wartości 40 zł do wykorzystania w sklepie internetowym empik.com. Polecamy zrobić zrzut ekranu aby zachować numer e-karty na później! <br><br>
-additionalEndMessageFromDatabaseNoText;Niestety wystąpił błąd i nie jesteśmy w stanie wyświetlić voucheru. Prosimy skontaktować się z nami mailowo: multilada@psych.uw.edu.pl
