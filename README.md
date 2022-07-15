@@ -4,6 +4,7 @@ Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7
 
 ## Changes
 ### v1.8
+* Added: HTML text formatting (issue #244)
 * Changed: color of redirection button (now it's more visible when it's active)
 * Added: possibility of adding the run parameter to the redirection URL
 * Changed: redirection time is 0 by default (issue #235)
