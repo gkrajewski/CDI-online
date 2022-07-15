@@ -396,7 +396,7 @@ item_394;ładny;word;descriptive_words;predicates;adjectives;pretty;;394
 item_395;mały;word;descriptive_words;predicates;adjectives;small;;395
 item_396;mądry;word;descriptive_words;predicates;adjectives;smart;;396
 item_397;mokry;word;descriptive_words;predicates;adjectives;wet;;397
-item_398;nie(grzeczny) ;word;descriptive_words;predicates;adjectives;naughty/polite ;;398
+item_398;(nie)grzeczny;word;descriptive_words;predicates;adjectives;naughty/polite ;;398
 item_399;nowy;word;descriptive_words;predicates;adjectives;new;;399
 item_400;otwarty;word;descriptive_words;predicates;adjectives;open;;400
 item_401;piękny/śliczny ;word;descriptive_words;predicates;adjectives;beautiful;;401
