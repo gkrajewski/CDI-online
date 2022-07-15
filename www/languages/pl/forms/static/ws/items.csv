@@ -607,23 +607,23 @@ item_605;wy/was/wam;word;pronouns;function_words;function_words;you;;605
 item_606;oni/one/ich/je/im;word;pronouns;function_words;function_words;them ;;606
 item_607;się;word;pronouns;function_words;function_words;;;614
 item_608;sobie;word;pronouns;function_words;function_words;myself;;622
-item_609;mój;word;pronouns;function_words;function_words;my;;623
-item_610;twój;word;pronouns;function_words;function_words;your;;624
-item_611;jego;word;pronouns;function_words;function_words;his;;625
-item_612;jej;word;pronouns;function_words;function_words;her;;626
-item_613;nasz;word;pronouns;function_words;function_words;our;;627
-item_614;wasz;word;pronouns;function_words;function_words;your;;628
-item_615;ich;word;pronouns;function_words;function_words;their;;629
-item_616;swój;word;pronouns;function_words;function_words;;;630
-item_617;to;word;pronouns2;function_words;function_words;this;;631
-item_618;coś;word;pronouns2;function_words;function_words;something;;632
-item_619;ktoś;word;pronouns2;function_words;function_words;someone;;633
-item_620;nic;word;pronouns2;function_words;function_words;nothing;;634
-item_621;nikt;word;pronouns2;function_words;function_words;nobody;;635
-item_622;ten;word;pronouns2;function_words;function_words;this;;636
-item_623;tamten;word;pronouns2;function_words;function_words;that;;637
-item_624;taki;word;pronouns2;function_words;function_words;such;;638
-item_625;jakiś;word;pronouns2;function_words;function_words;;;639
+item_609;mój;word;pronouns2;function_words;function_words;my;;623
+item_610;twój;word;pronouns2;function_words;function_words;your;;624
+item_611;jego;word;pronouns2;function_words;function_words;his;;625
+item_612;jej;word;pronouns2;function_words;function_words;her;;626
+item_613;nasz;word;pronouns2;function_words;function_words;our;;627
+item_614;wasz;word;pronouns2;function_words;function_words;your;;628
+item_615;ich;word;pronouns2;function_words;function_words;their;;629
+item_616;swój;word;pronouns2;function_words;function_words;;;630
+item_617;to;word;pronouns3;function_words;function_words;this;;631
+item_618;coś;word;pronouns3;function_words;function_words;something;;632
+item_619;ktoś;word;pronouns3;function_words;function_words;someone;;633
+item_620;nic;word;pronouns3;function_words;function_words;nothing;;634
+item_621;nikt;word;pronouns3;function_words;function_words;nobody;;635
+item_622;ten;word;pronouns3;function_words;function_words;this;;636
+item_623;tamten;word;pronouns3;function_words;function_words;that;;637
+item_624;taki;word;pronouns3;function_words;function_words;such;;638
+item_625;jakiś;word;pronouns3;function_words;function_words;;;639
 item_626;co to?/co to jest? ;word;question_words;function_words;function_words;what is this?;;640
 item_627;co?;word;question_words;function_words;function_words;what;;641
 item_628;co robi? ;word;question_words;function_words;function_words;;;642

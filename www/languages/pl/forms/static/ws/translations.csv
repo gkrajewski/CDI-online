@@ -29,8 +29,9 @@ note;item_574,item_573%Proszę zaznaczyć odpowiednie kółko, nawet jeśli dzie
 catHeader ;Określenia miary ;word;quantifiers 
 note ;item_585%w takich zdaniach jak np. „Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”. ;word;quantifiers
 note;item_591%w takich zdaniach jak np. „Zjem tylko serek”. ;word;quantifiers
-catHeader ;Zaimki osobowe i dzierżawcze ;word;pronouns 
-catHeader ;Zaimki wskazujące i nieokreślone;word;pronouns2 
+catHeader ;Zaimki osobowe (kto? kogo? komu?);word;pronouns 
+catHeader ;Zaimki dzierżawcze (czyj?);word;pronouns2 
+catHeader ;Zaimki wskazujące i nieokreślone;word;pronouns3 
 catHeader ;Pytania ;word;question_words
 catHeader ;Przysłówki modalne;word;modal_adverbs
 catHeader;Przyimki ;word;prepositions
