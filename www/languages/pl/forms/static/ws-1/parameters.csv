@@ -1,0 +1,6 @@
+parameter;value
+email;yes
+database;yes
+additionalEndMessageFromDatabase;no
+redirectionURL;https://cdi.multilada.pl/wp-1-1-aux-pl/
+redirectionParams;id,run
