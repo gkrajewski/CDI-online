@@ -54,5 +54,8 @@ choiceNames;Tak, Nie;yesNo;wprost
 instr;Dziękujemy! Poniżej znajdą Państwo jeszcze listę pytań dotyczących tego, jak Państwa dziecko posługuje się językiem. Odpowiadając na nie, proszę pamiętać, że pytamy o rzeczy, które mogą pojawiać się w różnym wieku, a w dodatku dzieci rozwijają się w różnym tempie: proszę się nie martwić, jeśli na większość tych pytań odpowiedzą Państwo przecząco. Proszę się też nie przejmować, jeśli Państwa dziecko popełnia błędy. Np. jeśli mówi „w kubeku”, a my pytamy, czy używa form takich jak „w kubku”, proszę odpowiedzieć TAK! Podobnie, jeśli pytamy, czy Państwa dziecko dodaje „-bym” do czasowników, proszę odpowiedzieć twierdząco, jeśli Państwa dziecko mówi np. „chciałambym”.;yesNo;wprost
 cdiNameSufix;Typowe wypowiedzi dzieci w wieku 3-4 lat;;
 cdiNamePrefix;CDI-III-Badanie pilotażowe;;
+additionalEndMessageFromDatabaseText;Poniżej znajdą Państwo kod (e-kartę) o wartości 40 zł do wykorzystania w sklepie internetowym empik.com. Polecamy zrobić zrzut ekranu aby zachować numer e-karty na później!;;
+additionalEndMessageFromDatabaseNoText;Prosimy o kontakt mailowy na adres multilada@psych.uw.edu.pl w celu uzyskania vouchera.;;
 instr;Bardzo dziękujemy za wypełnienie kwestionariusza!;postEnd;
 instr;Bardzo dziękujemy za wypełnienie kwestionariusza!;postEndSW;
+

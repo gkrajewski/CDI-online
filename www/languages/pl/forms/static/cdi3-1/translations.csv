@@ -3,7 +3,7 @@ header ;Lista słów używanych przez dziecko ;word;
 menuButton;Wyrazy;word;
 longText;"Dzieci rozumieją znacznie więcej słów niż same używają w mowie. Ten kwestionariusz dotyczy tylko tych słów, które Państwa dziecko spontanicznie mówi. Nie chodzi o to, co dziecko jest w stanie powtórzyć, ale o słowa, których samo z siebie używa. Proszę uważnie przeczytać listę wyrazów i zaznaczyć te z nich, które słyszeli Państwo od swego dziecka. Jeżeli dziecko używa nieco innej formy, np. mówi „piesek”, a nie „pies”, proszę mimo to postawić znaczek przy słowie „pies”. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. „lybka” zamiast „rybka” lub „wiójka” zamiast „wiewiórka”). Proszę takie słowo także zaznaczyć, można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa, w polu na uwagi. Czasami dzieci wymyślają własne wyrazy, np. „dzi” zamiast „piłka”; także taką formę należy potraktować jako wyraz i zaznaczyć słowo „piłka”, wpisując dodatkowo „dzi” w polu na uwagi. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać w polu na uwagi właściwe określenie. Wszelkie wątpliwości można również wpisywać w polu na uwagi.";word;firstPage
 warning;UWAGA: Kwestionariusz przeznaczony jest dla dzieci w różnym wieku. Proszę się nie martwić, jeśli Państwa dziecko jeszcze nie używa wszystkich słów, o które pytamy. ;word;firstPage
-catHeader;1. Ciało/Organizm ;word;body1;
+catHeader;1. Ciało/Organizm;word;body1;
 note;item_40%lub inne określenie, używane w Państwa rodzinie;word;body1
 catHeader;2. Ciało/Organizm ;word;body2;
 catHeader;3. Ciało/Organizm ;word;body3;
@@ -54,5 +54,7 @@ choiceNames;Tak, Nie;yesNo;wprost
 instr;Dziękujemy! Poniżej znajdą Państwo jeszcze listę pytań dotyczących tego, jak Państwa dziecko posługuje się językiem. Odpowiadając na nie, proszę pamiętać, że pytamy o rzeczy, które mogą pojawiać się w różnym wieku, a w dodatku dzieci rozwijają się w różnym tempie: proszę się nie martwić, jeśli na większość tych pytań odpowiedzą Państwo przecząco. Proszę się też nie przejmować, jeśli Państwa dziecko popełnia błędy. Np. jeśli mówi „w kubeku”, a my pytamy, czy używa form takich jak „w kubku”, proszę odpowiedzieć TAK! Podobnie, jeśli pytamy, czy Państwa dziecko dodaje „-bym” do czasowników, proszę odpowiedzieć twierdząco, jeśli Państwa dziecko mówi np. „chciałambym”.;yesNo;wprost
 cdiNameSufix;Typowe wypowiedzi dzieci w wieku 3-4 lat;;
 cdiNamePrefix;CDI-III-Badanie pilotażowe;;
+additionalEndMessageFromDatabaseText;Poniżej znajdą Państwo kod (e-kartę) o wartości 40 zł do wykorzystania w sklepie internetowym empik.com. Polecamy zrobić zrzut ekranu aby zachować numer e-karty na później!;voucher;
+additionalEndMessageFromDatabaseNoText;Prosimy o kontakt mailowy na adres multilada@psych.uw.edu.pl w celu uzyskania vouchera.;;
 instr;Bardzo dziękujemy za wypełnienie kwestionariusza!;postEnd;
 instr;Bardzo dziękujemy za wypełnienie kwestionariusza!;postEndSW;
