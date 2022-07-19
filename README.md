@@ -4,6 +4,7 @@ Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7
 
 ## Changes
 ### v1.8
+* Added bold for norwegian CDI-III
 * Corrected vouchers settings and translations
 * Added forms with redirection
 * Added: dependency managment renv.lock file (issue #257)
