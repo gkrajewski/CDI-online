@@ -4,6 +4,9 @@ Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7
 
 ## Changes
 ### v1.8
+* Corrected vouchers settings and translations
+* Added forms with redirection
+* Added: dependency managment renv.lock file (issue #257)
 * Fixed: sendLogs function
 * Added: HTML text formatting (issue #244)
 * Changed: color of redirection button (now it's more visible when it's active)
