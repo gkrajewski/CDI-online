@@ -1,10 +1,7 @@
 parameter;value
 email;yes
 database;yes
-additionalEndMessageFromDatabase;yes
-additionalEndMessageTable;vouchers
-additionalEndMessageValueColumn;voucher
-additionalEndMessageIdColumn;id
+additionalEndMessageFromDatabase;no
 groups;mowa,rozumienie,gesty
 rozumienieMirtMethod;ML
 rozumienieMirtCriteria;MI

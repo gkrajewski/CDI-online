@@ -1,3 +1,4 @@
 parameter;value
 email;yes
 database;yes
+additionalEndMessageFromDatabase;no
