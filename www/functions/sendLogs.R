@@ -8,8 +8,10 @@ sendLogs <- function(urlString, idx, form, lang){
       
       #Copy text from broken rows (no log type) to previous rows
       brokenRows <- which(logs[,2] == '')
-      for (row in brokenRows) logs[row - 1,3] <- paste(logs[row - 1, 3], logs[row,1])
-      logs <- logs[-brokenRows, ]
+      if (length(brokenRows) > 0){
+        for (row in brokenRows) logs[row - 1,3] <- paste(logs[row - 1, 3], logs[row,1])
+        logs <- logs[-brokenRows, ]
+      } 
       
       colnames(logs) <- c("date", "level", "text")
       logs$date <- as.POSIXct(logs$date)
