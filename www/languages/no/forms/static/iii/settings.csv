@@ -1,0 +1,9 @@
+type,category,input_type,comment,css_class,binded_types,initially_disabled,conditions,answers_to_enable
+start,,demographic,FALSE,,,FALSE,communication_level,all
+communication_level,,radioAlt,TRUE,,,TRUE,"word,complexity,grammar,pronunciation,metalinguistic","3,4,5,6"
+word,,oneCheckboxGroup,TRUE,threeColumns,,TRUE,,
+complexity,,radio,TRUE,,,TRUE,,
+grammar,,radio,TRUE,,,TRUE,,
+pronunciation,,radioAlt,TRUE,,,TRUE,,
+metalinguistic,,radio,TRUE,,,TRUE,,
+end,,,FALSE,,,TRUE,,
