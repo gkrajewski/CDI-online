@@ -7,7 +7,7 @@ createRadioQuestion <- function(questionId, choiceNames, choiceValues, selected,
   radioGroup <- (
     radioButtons(
       questionId,
-      label = questionLabel,
+      label = HTML(questionLabel),
       selected = selected,
       choiceNames = choiceNames,
       choiceValues = choiceValues,
