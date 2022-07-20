@@ -10,7 +10,7 @@ createCheckboxQuestion <- function(questionId, choiceNames, choiceValues, select
   
   checkboxGroup <- checkboxGroupInput(
     questionId,
-    label = questionLabel,
+    label = HTML(questionLabel),
     selected = selected,
     choiceNames = choiceNames,
     choiceValues = choiceValues,
