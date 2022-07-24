@@ -1,5 +1,6 @@
 renderTestingUI <- function(output, header, headerColor, txt, parameters, values){
   
+  headerText = txt[txt$text_type == header, "text"]
   question = values$itemsGroup$question[values$nextItem]
   label = values$itemsGroup$item[values$nextItem]
   names = strsplit(txt[txt$text_type == "choiceNames", "text"], ",")[[1]]
@@ -17,10 +18,9 @@ renderTestingUI <- function(output, header, headerColor, txt, parameters, values
   output$main <- renderUI({
     list(
       if (header %in% txt$text_type & headerColor %in% parameters$parameter) {
-        h3(txt[txt$text_type == header, "text"], 
-           style=paste0("color: ", parameters[parameters$parameter == headerColor, "value"], ";"))
+        h3(headerText, style=paste0("color: ", parameters[parameters$parameter == headerColor, "value"], ";"))
         },
-      if (header %in% txt$text_type & !headerColor %in% parameters$parameter) h3(txt[txt$text_type == header, "text"]),
+      if (header %in% txt$text_type & !headerColor %in% parameters$parameter) h3(headerText),
       p(tags$b(question)),
       radioButtons(
         "question",
