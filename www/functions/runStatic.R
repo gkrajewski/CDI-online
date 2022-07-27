@@ -430,14 +430,9 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
               if (staticList$parameters[staticList$parameters$parameter == "email", "value"]=="yes") {
                 
                 loginfo(paste0(urlString, " sending email"))
-                sendMail(subjectText=paste0("[SHINYDATA] ", urlString),
-                         txt="Inventory completed.",
+                sendMail(subject=paste0("[SHINYDATA] ", urlString),
+                         body="Inventory completed.",
                          id=urlString,
-                         host="smtp.gmail.com",
-                         port=465,
-                         username=MAIL_USERNAME,
-                         password=Sys.getenv("GMAIL_PASSWORD"),
-                         recipients=EMAILS_RECIPIENTS,
                          attach=answersFile
                 )
                 

@@ -6,7 +6,7 @@ library(httr) #http requests
 library(lubridate) #dates
 library(fresh)
 library(shinydisconnect) #handling disconnects in a nice visual way
-library(emayili) #sending mails
+library(sendgridr) #sending mails
 library(RMariaDB) #connecting with MySQL database
 library(dplyr) #preparing output file
 library(tidyr) #preparing output file
@@ -60,8 +60,9 @@ source(paste0(FUNCTIONS_PATH,"/readInputFile.R"))
 if (file.exists(".Renviron")) readRenviron(".Renviron")
 
 #Set mail things
-MAIL_USERNAME <- "cdishiny@gmail.com"
-EMAILS_RECIPIENTS <- c("cdishiny@gmail.com", "projekt.starwords@psych.uw.edu.pl")
+auth_set()
+MAIL_USERNAME <- "cdishiny@onet.pl"
+EMAILS_RECIPIENTS <- c("cdishiny@onet.pl", "projekt.starwords@psych.uw.edu.pl")
 
 #Set parameters of saving results in database
 STRING_LIMIT <- 2000
