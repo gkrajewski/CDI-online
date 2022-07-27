@@ -4,10 +4,14 @@ createRadioQuestion <- function(questionId, choiceNames, choiceValues, selected,
   
   choiceNames <- lapply(choiceNames, function(x) HTML(x))
   
+  if (!is.null(questionLabel)){
+    questionLabel = HTML(questionLabel)
+  }
+  
   radioGroup <- (
     radioButtons(
       questionId,
-      label = HTML(questionLabel),
+      label = questionLabel,
       selected = selected,
       choiceNames = choiceNames,
       choiceValues = choiceValues,
