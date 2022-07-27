@@ -3,6 +3,9 @@ Currently deployed version: v1.8 <br>
 Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7Y9-YTqJgnltQb0/edit#heading=h.cfni66gw85m0
 
 ## Changes
+### v1.9
+* Fixed: irregular columns with some input types
+
 ### v1.8
 * Added bold for norwegian CDI-III
 * Corrected vouchers settings and translations
