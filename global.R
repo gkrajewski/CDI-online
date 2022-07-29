@@ -59,10 +59,8 @@ source(paste0(FUNCTIONS_PATH,"/readInputFile.R"))
 #Load file with secret variables
 if (file.exists(".Renviron")) readRenviron(".Renviron")
 
-#Set mail things
+#Authenticate Sendgrid
 auth_set()
-MAIL_USERNAME <- "cdishiny@onet.pl"
-EMAILS_RECIPIENTS <- c("cdishiny@onet.pl", "projekt.starwords@psych.uw.edu.pl")
 
 #Set parameters of saving results in database
 STRING_LIMIT <- 2000

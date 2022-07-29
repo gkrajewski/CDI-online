@@ -1,12 +1,12 @@
-sendMail <- function(subject, body, id, host="smtp.sendgrid.net", port = 465, username = "cdishiny@onet.pl", recipients = c("cdishiny@onet.pl", "projekt.starwords@psych.uw.edu.pl"), attach=NULL){
+sendMail <- function(subject, body, id, host="smtp.sendgrid.net", port = 465, sender = "cdishiny@gmail.com", recipient = "cdishiny@gmail.com", attach=NULL){
   
   tryCatch(
     
     expr = {
       
       mail() |>
-        from("cdishiny@onet.pl", "CDI Shiny") |>
-        to("cdishiny@onet.pl", "") |>
+        from(sender, "CDI Shiny") |>
+        to(recipient, "") |>
         subject(subject) |>
         body(body)  |>
         attachments(attach) |>
@@ -17,7 +17,9 @@ sendMail <- function(subject, body, id, host="smtp.sendgrid.net", port = 465, us
     },
     
     error = function(e) {
+      
       logerror(paste0(id, " EMAIL SENDING FAILED! ", e))
+      
     }
     
   )

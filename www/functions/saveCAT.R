@@ -17,14 +17,9 @@ saveCAT <- function(CATdesign, designFile, subject, subjectFile, groupsToSave, u
       
       #Send e-mail
       loginfo(paste0(urlString, "-", group, " sending email."))
-      sendMail(subjectText=paste0("[SHINYDATA] ", urlString, "-", group),
-               txt="Inventory completed.",
+      sendMail(subject=paste0("[SHINYDATA] ", urlString, "-", group),
+               body="Inventory completed.",
                id=paste0(urlString, " group=", group),
-               host="smtp.gmail.com",
-               port=465,
-               username=MAIL_USERNAME,
-               password=Sys.getenv("GMAIL_PASSWORD"),
-               recipients=EMAILS_RECIPIENTS,
                attach=answerFile
       )
       
