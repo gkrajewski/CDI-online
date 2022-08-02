@@ -5,6 +5,7 @@ Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7
 ## Changes
 ### v1.9
 * Fixed: irregular columns with some input types
+* Added: HTML tags for adaptive forms
 
 ### v1.8
 * Added bold for norwegian CDI-III
