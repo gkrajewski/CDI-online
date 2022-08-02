@@ -7,6 +7,7 @@ Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7
 * Fixed: irregular columns with some input types
 * Added: HTML tags for adaptive forms
 * Fixed: HTML tags for norwegian forms
+* Added: sending e-mails with Sendgridr
 
 ### v1.8
 * Added bold for norwegian CDI-III
