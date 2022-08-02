@@ -81,14 +81,9 @@ callSW <- function(idx, form, lang, done, score){
     
     error = function(e) {
       logerror(paste0(idx, " PINGING SW FAILED! ", e))
-      sendMail(subjectText=paste0("[SHINYERROR] ",lang, "-", form, "-", idx,  " CANNOT MAKE CALL"),
-               txt=paste0("done: ", done, "\nform: ", form, "\nid: ", idx, "\nscore: ", score, "\n\n", e),
-               id=paste0("id=", idx, " form=", form, " lang=", lang),
-               host="smtp.gmail.com",
-               port=465,
-               username=MAIL_USERNAME,
-               password=Sys.getenv("GMAIL_PASSWORD"),
-               recipients=EMAILS_RECIPIENTS
+      sendMail(subject=paste0("[SHINYERROR] ",lang, "-", form, "-", idx,  " CANNOT MAKE CALL"),
+               body=paste0("done: ", done, "\nform: ", form, "\nid: ", idx, "\nscore: ", score, "\n\n", e),
+               id=paste0("id=", idx, " form=", form, " lang=", lang)
       )
     }
     

@@ -1,31 +1,27 @@
-sendMail <- function(subjectText, txt, id, host, port, username, password, recipients, attach=NULL){
+sendMail <- function(subject, body, id, host="smtp.sendgrid.net", port = 465, sender = "cdishiny@gmail.com", recipient = "cdishiny@gmail.com", attach=NULL){
   
-  emailSender <- tryCatch(
+  tryCatch(
     
     expr = {
       
-      email <- envelope() %>%
-        from(username) %>%
-        to(recipients) %>%
-        subject(subjectText) %>%
-        text(txt)
-      
-      if (!is.null(attach)) {
-        email <- email %>%
-          attachment(c(attach))
-      }
-      
-      smtp <- emayili::server(host = host,
-                              port = port,
-                              username = username,
-                              password = password)
-      
-      smtp(email, verbose = TRUE)
+      mail() |>
+        from(sender, "CDI Shiny") |>
+        to(recipient, "") |>
+        subject(subject) |>
+        body(body)  |>
+        attachments(attach) |>
+        send()
       
       loginfo(paste0(id, ". EMAIL sent"))
+      
     },
+    
     error = function(e) {
+      
       logerror(paste0(id, " EMAIL SENDING FAILED! ", e))
+      
     }
+    
   )
+  
 }
