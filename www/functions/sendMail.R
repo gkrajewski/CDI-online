@@ -1,4 +1,4 @@
-sendMail <- function(subject, body, id, host="smtp.sendgrid.net", port = 465, sender = "cdishiny@gmail.com", recipient = "cdishiny@gmail.com", attach=NULL){
+sendMail <- function(subject, body, id, host="smtp.sendgrid.net", port = 465, sender = "cdishiny@gmail.com", recipient = "projekt.starwords@psych.uw.edu.pl", attach=NULL){
   
   tryCatch(
     
