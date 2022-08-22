@@ -1,281 +1,282 @@
-item_id;definition;language;form;type;category;lexical_category;lexical_class;uni_lemma;complexity_category ;num_item_id
-item_1;A. Mama śpi.%B. Mama śpi, bo jest zmęczona.;Polish;CDI3;alternatives;grupa1;;;;;1
-item_2;A. Przyjedzie ciocia. Będziemy się bawić.%B. Przyjedzie ciocia i będziemy się bawić.;Polish;CDI3;alternatives;grupa1;;;;;2
-item_3;A. Babcia przyjedzie.%B. Babcia powiedziała, że przyjedzie.;Polish;CDI3;alternatives;grupa1;;;;;3
-item_4;A. Pada deszcz i nie wyjdziemy.%B. Nie wyjdziemy, bo pada deszcz.;Polish;CDI3;alternatives;grupa1;;;;;4
-item_5;A. Myję nogi. Będą czyste.%B. Myję nogi, żeby były czyste.;Polish;CDI3;alternatives;grupa1;;;;;5
-item_6;A. Wracałem(-am) do domu. Widziałem(-am) kolegę.%B. Wracając do domu, widziałem(-am) kolegę.;Polish;CDI3;alternatives;grupa1;;;;;6
-item_7;A. Naklejki są krzywo.%B. Naklejki są przyklejone krzywo.;Polish;CDI3;alternatives;grupa1;;;;;7
-item_8;A. Babcia dała mi książeczkę. Oglądam książeczkę.%B. Oglądam książeczkę, którą dała mi babcia.;Polish;CDI3;alternatives;grupa2;;;;;8
-item_9;A. Będzie ciepło. Pójdę na spacer.%B. Pójdę na spacer, jeśli będzie ciepło.;Polish;CDI3;alternatives;grupa2;;;;;9
-item_10;A. Chcę banana.%B. Chciał(a)bym banana.	;Polish;CDI3;alternatives;grupa2;;;;;10
-item_11;A. Będzie padać. Zostaniemy w domu.%B. Jeśli będzie padać, zostaniemy w domu.;Polish;CDI3;alternatives;grupa2;;;;;11
-item_12;A. Jest ładna pogoda i pójdziemy na spacer.%B. Jest ładna pogoda, więc pójdziemy na spacer.;Polish;CDI3;alternatives;grupa2;;;;;12
-item_13;A. Tata przyjdzie. Nakarmi kota.%B. Jak tata przyjdzie, to nakarmi kota.;Polish;CDI3;alternatives;grupa2;;;;;13
-item_14;A. Jechałem(-am) do przedszkola i śpiewałem(-am) piosenkę.%B. Jadąc do przedszkola, śpiewałem(-am) piosenkę.;Polish;CDI3;alternatives;grupa2;;;;;14
-item_15;A. Braciszek zrobił kanapkę. Braciszek jej nie je.%B. Braciszek zrobił kanapkę, ale jej nie je.;Polish;CDI3;alternatives;grupa3;;;;;15
-item_16;A. Tata lubi pierogi.%B. Tata powiedział, że lubi pierogi.;Polish;CDI3;alternatives;grupa3;;;;;16
-item_17;A. Widzę ptaszki.%B. Widzę ptaszki, które latają po niebie.;Polish;CDI3;alternatives;grupa3;;;;;17
-item_18;A. Chcę kanapkę z serem.%B. Chciał(a)bym kanapkę z serem.;Polish;CDI3;alternatives;grupa3;;;;;18
+item_id;definition;language;form;type;category;lexical_category;lexical_class;uni_lemma;complexity_category;num_item_id
+item_37;biodro;Polish;CDI3;word;body1;nouns;nouns;;;37
+item_38;flegma;Polish;CDI3;word;body1;nouns;nouns;;;38
+item_39;głowa;Polish;CDI3;word;body1;nouns;nouns;;;39
+item_40;glut/smark/gil;Polish;CDI3;word;body1;nouns;nouns;;;40
+item_41;gorączka;Polish;CDI3;word;body1;nouns;nouns;;;41
+item_42;jelita;Polish;CDI3;word;body1;nouns;nouns;;;42
+item_43;kaszel;Polish;CDI3;word;body1;nouns;nouns;;;43
+item_44;kciuk;Polish;CDI3;word;body1;nouns;nouns;;;44
+item_45;kolano;Polish;CDI3;word;body1;nouns;nouns;;;45
+item_46;kości;Polish;CDI3;word;body1;nouns;nouns;;;46
+item_47;kręgosłup;Polish;CDI3;word;body1;nouns;nouns;;;47
+item_48;krew;Polish;CDI3;word;body1;nouns;nouns;;;48
+item_49;łydka;Polish;CDI3;word;body1;nouns;nouns;;;49
+item_50;mózg;Polish;CDI3;word;body1;nouns;nouns;;;50
+item_51;neuron;Polish;CDI3;word;body1;nouns;nouns;;;51
+item_52;oskrzela;Polish;CDI3;word;body1;nouns;nouns;;;52
+item_53;plecy;Polish;CDI3;word;body1;nouns;nouns;;;53
+item_54;płuca;Polish;CDI3;word;body1;nouns;nouns;;;54
+item_55;serce;Polish;CDI3;word;body1;nouns;nouns;;;55
+item_56;siniak;Polish;CDI3;word;body1;nouns;nouns;;;56
+item_57;skaleczenie;Polish;CDI3;word;body1;nouns;nouns;;;57
+item_58;skroń;Polish;CDI3;word;body1;nouns;nouns;;;58
+item_59;szkielet;Polish;CDI3;word;body1;nouns;nouns;;;59
+item_60;tętnica;Polish;CDI3;word;body1;nouns;nouns;;;60
+item_61;udo;Polish;CDI3;word;body1;nouns;nouns;;;61
+item_62;usta;Polish;CDI3;word;body1;nouns;nouns;;;62
+item_63;wątroba;Polish;CDI3;word;body1;nouns;nouns;;;63
+item_64;zadrapanie;Polish;CDI3;word;body1;nouns;nouns;;;64
+item_65;żebra;Polish;CDI3;word;body1;nouns;nouns;;;65
+item_66;żołądek;Polish;CDI3;word;body1;nouns;nouns;;;66
+item_67;żyła;Polish;CDI3;word;body1;nouns;nouns;;;67
+item_68;chory;Polish;CDI3;word;body2;adjectives;adjectives;;;68
+item_69;spocony;Polish;CDI3;word;body2;adjectives;adjectives;;;69
+item_70;spragniony;Polish;CDI3;word;body2;adjectives;adjectives;;;70
+item_71;zdrowy;Polish;CDI3;word;body2;adjecitves;adjectives;;;71
+item_72;zmęczony;Polish;CDI3;word;body2;adjectives;adjectives;;;72
+item_73;boleć;Polish;CDI3;word;body3;verbs;verbs;;;73
+item_74;goić (się);Polish;CDI3;word;body3;verbs;verbs;;;74
+item_75;kaszleć/kasłać;Polish;CDI3;word;body3;verbs;verbs;;;75
+item_76;kichać;Polish;CDI3;word;body3;verbs;verbs;;;76
+item_77;pocić się;Polish;CDI3;word;body3;verbs;verbs;;;77
+item_78;smarkać;Polish;CDI3;word;body3;verbs;verbs;;;78
+item_79;bakalie;Polish;CDI3;word;kitchen1;nouns;nouns;;;79
+item_80;barszcz;Polish;CDI3;word;kitchen1;nouns;nouns;;;80
+item_81;czereśnie;Polish;CDI3;word;kitchen1;nouns;nouns;;;81
+item_82;dynia;Polish;CDI3;word;kitchen1;nouns;nouns;;;82
+item_83;gruszka;Polish;CDI3;word;kitchen1;nouns;nouns;;;83
+item_84;gryz;Polish;CDI3;word;kitchen1;nouns;nouns;;;84
+item_85;jagody;Polish;CDI3;word;kitchen1;nouns;nouns;;;85
+item_86;kuchenka;Polish;CDI3;word;kitchen1;nouns;nouns;;;86
+item_87;majonez;Polish;CDI3;word;kitchen1;nouns;nouns;;;87
+item_88;maliny;Polish;CDI3;word;kitchen1;nouns;nouns;;;88
+item_89;musztarda;Polish;CDI3;word;kitchen1;nouns;nouns;;;89
+item_90;patelnia;Polish;CDI3;word;kitchen1;nouns;nouns;;;90
+item_91;piekarnik/piec;Polish;CDI3;word;kitchen1;nouns;nouns;;;91
+item_92;rodzynki;Polish;CDI3;word;kitchen1;nouns;nouns;;;92
+item_93;rogalik;Polish;CDI3;word;kitchen1;nouns;nouns;;;93
+item_94;smak;Polish;CDI3;word;kitchen1;nouns;nouns;;;94
+item_95;tort;Polish;CDI3;word;kitchen1;nouns;nouns;;;95
+item_96;wiśnie;Polish;CDI3;word;kitchen1;nouns;nouns;;;96
+item_97;zapach;Polish;CDI3;word;kitchen1;nouns;nouns;;;97
+item_98;gorzki;Polish;CDI3;word;kitchen2;adjectives;adjectives;;;98
+item_99;kwaśny;Polish;CDI3;word;kitchen2;adjectives;adjectives;;;99
+item_100;pikantny;Polish;CDI3;word;kitchen2;adjectives;adjectives;;;100
+item_101;przypalone;Polish;CDI3;word;kitchen2;adjectives;adjectives;;;101
+item_102;pusty;Polish;CDI3;word;kitchen2;adjectives;adjectives;;;102
+item_103;słodki;Polish;CDI3;word;kitchen2;adjectives;adjectives;;;103
+item_104;słony;Polish;CDI3;word;kitchen2;adjectives;adjectives;;;104
+item_105;smaczny;Polish;CDI3;word;kitchen2;adjectives;adjectives;;;105
+item_106;gotować;Polish;CDI3;word;kitchen3;verbs;verbs;;;106
+item_107;karmić;Polish;CDI3;word;kitchen3;verbs;verbs;;;107
+item_108;obierać;Polish;CDI3;word;kitchen3;verbs;verbs;;;108
+item_109;odcedzać;Polish;CDI3;word;kitchen3;verbs;verbs;;;109
+item_110;studzić;Polish;CDI3;word;kitchen3;verbs;verbs;;;110
+item_111;kroić;Polish;CDI3;word;kitchen3;verbs;verbs;;;111
+item_112;lizać;Polish;CDI3;word;kitchen3;verbs;verbs;;;112
+item_113;podgrzewać;Polish;CDI3;word;kitchen3;verbs;verbs;;;113
+item_114;siekać;Polish;CDI3;word;kitchen3;verbs;verbs;;;114
+item_115;słodzić;Polish;CDI3;word;kitchen3;verbs;verbs;;;115
+item_116;smakować (smakuje);Polish;CDI3;word;kitchen3;verbs;verbs;;;116
+item_117;smażyć;Polish;CDI3;word;kitchen3;verbs;verbs;;;117
+item_118;solić;Polish;CDI3;word;kitchen3;verbs;verbs;;;118
+item_119;ubijać;Polish;CDI3;word;kitchen3;verbs;verbs;;;119
+item_120;ucierać;Polish;CDI3;word;kitchen3;verbs;verbs;;;120
+item_121;ugniatać;Polish;CDI3;word;kitchen3;verbs;verbs;;;121
+item_122;upiec;Polish;CDI3;word;kitchen3;verbs;verbs;;;122
+item_123;wąchać;Polish;CDI3;word;kitchen3;verbs;verbs;;;123
+item_124;wlewać/nalewać;Polish;CDI3;word;kitchen3;verbs;verbs;;;124
+item_125;zmywać (naczynia);Polish;CDI3;word;kitchen3;verbs;verbs;;;125
+item_126;marzenie;Polish;CDI3;word;mental1;nouns;nouns;;;126
+item_127;nadzieja;Polish;CDI3;word;mental1;nouns;nouns;;;127
+item_128;obietnica;Polish;CDI3;word;mental1;nouns;nouns;;;128
+item_129;pomysł;Polish;CDI3;word;mental1;nouns;nouns;;;129
+item_130;sen;Polish;CDI3;word;mental1;nouns;nouns;;;130
+item_131;przekonany;Polish;CDI3;word;mental2;adjectives;adjectives;;;131
+item_132;sprytny;Polish;CDI3;word;mental2;adjectives;adjectives;;;132
+item_133;szalony;Polish;CDI3;word;mental2;adjectives;adjectives;;;133
+item_134;zwariowany;Polish;CDI3;word;mental2;adjectives;adjectives;;;134
+item_135;czuć;Polish;CDI3;word;mental3;verbs;verbs;;;135
+item_136;czytać;Polish;CDI3;word;mental3;verbs;verbs;;;136
+item_137;kłamać;Polish;CDI3;word;mental3;verbs;verbs;;;137
+item_138;liczyć;Polish;CDI3;word;mental3;verbs;verbs;;;138
+item_139;marzyć;Polish;CDI3;word;mental3;verbs;verbs;;;139
+item_140;mylić (się);Polish;CDI3;word;mental3;verbs;verbs;;;140
+item_141;myśleć (o...);Polish;CDI3;word;mental3;verbs;verbs;;;141
+item_142;obiecywać;Polish;CDI3;word;mental3;verbs;verbs;;;142
+item_143;oczekiwać;Polish;CDI3;word;mental3;verbs;verbs;;;143
+item_144;"okazywać się (okazało się, że...)";Polish;CDI3;word;mental3;verbs;verbs;;;144
+item_145;ostrzegać;Polish;CDI3;word;mental3;verbs;verbs;;;145
+item_146;oszukiwać;Polish;CDI3;word;mental3;verbs;verbs;;;146
+item_147;pisać;Polish;CDI3;word;mental3;verbs;verbs;;;147
+item_148;przypominać;Polish;CDI3;word;mental3;verbs;verbs;;;148
+item_149;rozmyślać;Polish;CDI3;word;mental3;verbs;verbs;;;149
+item_150;rozumieć;Polish;CDI3;word;mental3;verbs;verbs;;;150
+item_151;sądzić;Polish;CDI3;word;mental3;verbs;verbs;;;151
+item_152;spodziewać się;Polish;CDI3;word;mental3;verbs;verbs;;;152
+item_153;starać się;Polish;CDI3;word;mental3;verbs;verbs;;;153
+item_154;śnić (się);Polish;CDI3;word;mental3;verbs;verbs;;;154
+item_155;tłumaczyć;Polish;CDI3;word;mental3;verbs;verbs;;;155
+item_156;uczyć (się);Polish;CDI3;word;mental3;verbs;verbs;;;156
+item_157;udawać;Polish;CDI3;word;mental3;verbs;verbs;;;157
+item_158;wierzyć;Polish;CDI3;word;mental3;verbs;verbs;;;158
+item_159;"wydawać się / wydaje (mi) się, że...";Polish;CDI3;word;mental3;verbs;verbs;;;159
+item_160;wyjaśniać;Polish;CDI3;word;mental3;verbs;verbs;;;160
+item_161;wyobrażać (sobie);Polish;CDI3;word;mental3;verbs;verbs;;;161
+item_162;pamiętać;Polish;CDI3;word;mental3;verbs;verbs;;;162
+item_163;zapominać;Polish;CDI3;word;mental3;verbs;verbs;;;163
+item_164;zastanawiać się;Polish;CDI3;word;mental3;verbs;verbs;;;164
+item_165;zgadywać;Polish;CDI3;word;mental3;verbs;verbs;;;165
+item_166;gubić (się);Polish;CDI3;word;mental3;verbs;verbs;;;166
+item_167;gniew;Polish;CDI3;word;emotion1;nouns;nouns;;;167
+item_168;niespodzianka;Polish;CDI3;word;emotion1;nouns;nouns;;;168
+item_169;nuda;Polish;CDI3;word;emotion1;nouns;nouns;;;169
+item_170;ohyda!;Polish;CDI3;word;emotion1;nouns;nouns;;;170
+item_171;wstyd;Polish;CDI3;word;emotion1;nouns;nouns;;;171
+item_172;"życzenia (np. świąteczne, urodzinowe)";Polish;CDI3;word;emotion1;nouns;nouns;;;172
+item_173;ciekawski;Polish;CDI3;word;emotion2;adjectives;adjectives;;;173
+item_174;ciekawy;Polish;CDI3;word;emotion2;adjectives;adjectives;;;174
+item_175;dumny;Polish;CDI3;word;emotion2;adjectives;adjectives;;;175
+item_176;dzielny;Polish;CDI3;word;emotion2;adjectives;adjectives;;;176
+item_177;groźny;Polish;CDI3;word;emotion2;adjectives;adjectives;;;177
+item_178;nieśmiały;Polish;CDI3;word;emotion2;adjectives;adjectives;;;178
+item_179;nudny;Polish;CDI3;word;emotion2;adjectives;adjectives;;;179
+item_180;obrażony;Polish;CDI3;word;emotion2;adjectives;adjectives;;;180
+item_181;obrzydliwy;Polish;CDI3;word;emotion2;adjectives;adjectives;;;181
+item_182;odważny;Polish;CDI3;word;emotion2;adjectives;adjectives;;;182
+item_183;ohydny;Polish;CDI3;word;emotion2;adjectives;adjectives;;;183
+item_184;przestraszony;Polish;CDI3;word;emotion2;adjectives;adjectives;;;184
+item_185;rozdrażniony;Polish;CDI3;word;emotion2;adjectives;adjectives;;;185
+item_186;śmieszny;Polish;CDI3;word;emotion2;adjectives;adjectives;;;186
+item_187;smutny;Polish;CDI3;word;emotion2;adjectives;adjectives;;;187
+item_188;straszny;Polish;CDI3;word;emotion2;adjectives;adjectives;;;188
+item_189;szczęśliwy;Polish;CDI3;word;emotion2;adjectives;adjectives;;;189
+item_190;wesoły;Polish;CDI3;word;emotion2;adjectives;adjectives;;;190
+item_191;wkurzony;Polish;CDI3;word;emotion2;adjectives;adjectives;;;191
+item_192;wściekły;Polish;CDI3;word;emotion2;adjectives;adjectives;;;192
+item_193;zabawny;Polish;CDI3;word;emotion2;adjectives;adjectives;;;193
+item_194;zadowolony;Polish;CDI3;word;emotion2;adjectives;adjectives;;;194
+item_195;zaskakujący;Polish;CDI3;word;emotion2;adjectives;adjectives;;;195
+item_196;zdenerwowany;Polish;CDI3;word;emotion2;adjectives;adjectives;;;196
+item_197;zdziwiony;Polish;CDI3;word;emotion2;adjectives;adjectives;;;197
+item_198;złośliwy;Polish;CDI3;word;emotion2;adjectives;adjectives;;;198
+item_199;zmartwiony;Polish;CDI3;word;emotion2;adjectives;adjectives;;;199
+item_200;znudzony;Polish;CDI3;word;emotion2;adjectives;adjectives;;;200
+item_201;dbać;Polish;CDI3;word;emotion3;verbs;verbs;;;201
+item_202;dokuczać;Polish;CDI3;word;emotion3;verbs;verbs;;;202
+item_203;głaskać;Polish;CDI3;word;emotion3;verbs;verbs;;;203
+item_204;gniewać się;Polish;CDI3;word;emotion3;verbs;verbs;;;204
+item_205;kochać;Polish;CDI3;word;emotion3;verbs;verbs;;;205
+item_206;martwić się;Polish;CDI3;word;emotion3;verbs;verbs;;;206
+item_207;nienawidzieć;Polish;CDI3;word;emotion3;verbs;verbs;;;207
+item_208;nudzić się;Polish;CDI3;word;emotion3;verbs;verbs;;;208
+item_209;pocieszać;Polish;CDI3;word;emotion3;verbs;verbs;;;209
+item_210;przytulić;Polish;CDI3;word;emotion3;verbs;verbs;;;210
+item_211;opiekować się;Polish;CDI3;word;emotion3;verbs;verbs;;;211
+item_212;tęsknić;Polish;CDI3;word;emotion3;verbs;verbs;;;212
+item_213;uwielbiać;Polish;CDI3;word;emotion3;verbs;verbs;;;213
+item_214;wkurzać się;Polish;CDI3;word;emotion3;verbs;verbs;;;214
+item_215;wstydzić się;Polish;CDI3;word;emotion3;verbs;verbs;;;215
+item_216;żałować;Polish;CDI3;word;emotion3;verbs;verbs;;;216
+item_217;bałagan;Polish;CDI3;word;child_world1;nouns;nouns;;;217
+item_218;beksa;Polish;CDI3;word;child_world1;nouns;nouns;;;218
+item_219;cyfra;Polish;CDI3;word;child_world1;nouns;nouns;;;219
+item_220;dentysta;Polish;CDI3;word;child_world1;nouns;nouns;;;220
+item_221;drzemka;Polish;CDI3;word;child_world1;nouns;nouns;;;221
+item_222;dzik;Polish;CDI3;word;child_world1;nouns;nouns;;;222
+item_223;film;Polish;CDI3;word;child_world1;nouns;nouns;;;223
+item_224;golas;Polish;CDI3;word;child_world1;nouns;nouns;;;224
+item_225;kąt;Polish;CDI3;word;child_world1;nouns;nouns;;;225
+item_226;klej;Polish;CDI3;word;child_world1;nouns;nouns;;;226
+item_227;kółko;Polish;CDI3;word;child_world1;nouns;nouns;;;227
+item_228;kolorowanka;Polish;CDI3;word;child_world1;nouns;nouns;;;228
+item_229;komar;Polish;CDI3;word;child_world1;nouns;nouns;;;229
+item_230;kreska;Polish;CDI3;word;child_world1;nouns;nouns;;;230
+item_231;kropka;Polish;CDI3;word;child_world1;nouns;nouns;;;231
+item_232;kryjówka;Polish;CDI3;word;child_world1;nouns;nouns;;;232
+item_233;kwadrat;Polish;CDI3;word;child_world1;nouns;nouns;;;233
+item_234;liczba;Polish;CDI3;word;child_world1;nouns;nouns;;;234
+item_235;linijka;Polish;CDI3;word;child_world1;nouns;nouns;;;235
+item_236;litera/literka;Polish;CDI3;word;child_world1;nouns;nouns;;;236
+item_237;maska;Polish;CDI3;word;child_world1;nouns;nouns;;;237
+item_238;ogon;Polish;CDI3;word;child_world1;nouns;nouns;;;238
+item_239;okładka;Polish;CDI3;word;child_world1;nouns;nouns;;;239
+item_240;okrąg;Polish;CDI3;word;child_world1;nouns;nouns;;;240
+item_241;osa;Polish;CDI3;word;child_world1;nouns;nouns;;;241
+item_242;owad;Polish;CDI3;word;child_world1;nouns;nouns;;;242
+item_243;owca;Polish;CDI3;word;child_world1;nouns;nouns;;;243
+item_244;piosenka;Polish;CDI3;word;child_world1;nouns;nouns;;;244
+item_245;plac zabaw;Polish;CDI3;word;child_world1;nouns;nouns;;;245
+item_246;porządek;Polish;CDI3;word;child_world1;nouns;nouns;;;246
+item_247;przedstawienie;Polish;CDI3;word;child_world1;nouns;nouns;;;247
+item_248;pszczoła;Polish;CDI3;word;child_world1;nouns;nouns;;;248
+item_249;rozdział;Polish;CDI3;word;child_world1;nouns;nouns;;;249
+item_250;słowo;Polish;CDI3;word;child_world1;nouns;nouns;;;250
+item_251;smok;Polish;CDI3;word;child_world1;nouns;nouns;;;251
+item_252;strona (stronica);Polish;CDI3;word;child_world1;nouns;nouns;;;252
+item_253;sylaba;Polish;CDI3;word;child_world1;nouns;nouns;;;253
+item_254;trójkąt;Polish;CDI3;word;child_world1;nouns;nouns;;;254
+item_255;wierszyk;Polish;CDI3;word;child_world1;nouns;nouns;;;255
+item_256;wykrzyknik;Polish;CDI3;word;child_world1;nouns;nouns;;;256
+item_257;wyraz;Polish;CDI3;word;child_world1;nouns;nouns;;;257
+item_258;żart;Polish;CDI3;word;child_world1;nouns;nouns;;;258
+item_259;zastrzyk;Polish;CDI3;word;child_world1;nouns;nouns;;;259
+item_260;ziarenko;Polish;CDI3;word;child_world1;nouns;nouns;;;260
+item_261;znak zapytania;Polish;CDI3;word;child_world1;nouns;nouns;;;261
+item_262;zwierzę;Polish;CDI3;word;child_world1;nouns;nouns;;;262
+item_263;dorosły;Polish;CDI3;word;child_world2;adjectives;adjectives;;;263
+item_264;goły;Polish;CDI3;word;child_world2;adjectives;adjectives;;;264
+item_265;magiczny;Polish;CDI3;word;child_world2;adjectives;adjectives;;;265
+item_266;przebrany/przebieraniec;Polish;CDI3;word;child_world2;adjectives;adjectives;;;266
+item_267;ubrany;Polish;CDI3;word;child_world2;adjectives;adjectives;;;267
+item_268;zaczarowany;Polish;CDI3;word;child_world2;adjectives;adjectives;;;268
+item_269;kolorować;Polish;CDI3;word;child_world3;verbs;verbs;;;269
+item_270;lepić;Polish;CDI3;word;child_world3;verbs;verbs;;;270
+item_271;leżakować;Polish;CDI3;word;child_world3;verbs;verbs;;;271
+item_272;liczyć;Polish;CDI3;word;child_world3;verbs;verbs;;;272
+item_273;nocować;Polish;CDI3;word;child_world3;verbs;verbs;;;273
+item_274;dzielić się;Polish;CDI3;word;child_world3;verbs;verbs;;;274
+item_275;sadzić;Polish;CDI3;word;child_world3;verbs;verbs;;;275
+item_276;przegrywać;Polish;CDI3;word;child_world3;verbs;verbs;;;276
+item_277;rosnąć;Polish;CDI3;word;child_world3;verbs;verbs;;;277
+item_278;ubrudzić (się);Polish;CDI3;word;child_world3;verbs;verbs;;;278
+item_279;wygrywać;Polish;CDI3;word;child_world3;verbs;verbs;;;279
+item_280;zaczarować;Polish;CDI3;word;child_world3;verbs;verbs;;;280
+item_281;żartować;Polish;CDI3;word;child_world3;verbs;verbs;;;281
+item_13;"A. Tata przyjdzie. Nakarmi kota.%B. Jak tata przyjdzie, to nakarmi kota.";Polish;CDI3;alternatives;grupa1;;;;;13
+item_15;"A. Braciszek zrobił kanapkę. Braciszek jej nie je.%B. Braciszek zrobił kanapkę, ale jej nie je.";Polish;CDI3;alternatives;grupa1;;;;;15
+item_17;"A. Widzę ptaszki.%B. Widzę ptaszki, które latają po niebie.";Polish;CDI3;alternatives;grupa1;;;;;17
+item_18;A. Chcę kanapkę z serem.%B. Chciał(a)bym kanapkę z serem.;Polish;CDI3;alternatives;grupa1;;;;;18
+item_21;"A. Odkręć wodę.%B. Odkręć wodę, żebym umył(-a) rączki.";Polish;CDI3;alternatives;grupa1;;;;;21
+item_6;"A. Wracałem(-am) do domu. Widziałem(-am) kolegę.%B. Wracając do domu, widziałem(-am) kolegę.";Polish;CDI3;alternatives;grupa1;;;;;6
+item_16;"A. Tata lubi pierogi.%B. Tata powiedział, że lubi pierogi.";Polish;CDI3;alternatives;grupa1;;;;;16
+item_9;"A. Będzie ciepło. Pójdę na spacer.%B. Pójdę na spacer, jeśli będzie ciepło.";Polish;CDI3;alternatives;grupa2;;;;;9
+item_14;"A. Jechałem(-am) do przedszkola i śpiewałem(-am) piosenkę.%B. Jadąc do przedszkola, śpiewałem(-am) piosenkę.";Polish;CDI3;alternatives;grupa2;;;;;14
+item_12;"A. Jest ładna pogoda i pójdziemy na spacer.%B. Jest ładna pogoda, więc pójdziemy na spacer.";Polish;CDI3;alternatives;grupa2;;;;;12
+item_20;A. Chcę jogurt i płatki.%B. Chcę jogurt z płatkami.;Polish;CDI3;alternatives;grupa2;;;;;20
+item_1;"A. Mama śpi.%B. Mama śpi, bo jest zmęczona.";Polish;CDI3;alternatives;grupa2;;;;;1
+item_3;"A. Babcia przyjedzie.%B. Babcia powiedziała, że przyjedzie.";Polish;CDI3;alternatives;grupa2;;;;;3
+item_11;"A. Będzie padać. Zostaniemy w domu.%B. Jeśli będzie padać, zostaniemy w domu.";Polish;CDI3;alternatives;grupa2;;;;;11
+item_2;A. Przyjedzie ciocia. Będziemy się bawić.%B. Przyjedzie ciocia i będziemy się bawić.;Polish;CDI3;alternatives;grupa3;;;;;2
+item_10;A. Chcę banana.%B. Chciał(a)bym banana.;Polish;CDI3;alternatives;grupa3;;;;;10
+item_5;"A. Myję nogi. Będą czyste.%B. Myję nogi, żeby były czyste.";Polish;CDI3;alternatives;grupa3;;;;;5
+item_8;"A. Babcia dała mi książeczkę. Oglądam książeczkę.%B. Oglądam książeczkę, którą dała mi babcia.";Polish;CDI3;alternatives;grupa3;;;;;8
+item_7;A. Naklejki są krzywo.%B. Naklejki są przyklejone krzywo.;Polish;CDI3;alternatives;grupa3;;;;;7
 item_19;A. Mam worek.%B. Mam worek z butami.;Polish;CDI3;alternatives;grupa3;;;;;19
-item_20;A. Chcę jogurt i płatki.%B. Chcę jogurt z płatkami.;Polish;CDI3;alternatives;grupa3;;;;;20
-item_21;A. Odkręć wodę.%B. Odkręć wodę, żebym umył(-a) rączki.;Polish;CDI3;alternatives;grupa3;;;;;21
-item_22;Czy Twoje dziecko dodaje ""-bym"", ""-byś"", ""-byście"" itp. do czasowników., np. ""Chciałbym cukierka""?;Polish;CDI3;yesNo;wprost;;;;22
-item_23;Czy Twoje dziecko opowiada o tym, co ktoś powiedział, mówiąc ""... powiedział(a), że...""?;Polish;CDI3;yesNo;wprost;;;;23
-item_24;Czy Twoje dziecko używa form czasowników zakończonych na ""-ąc"", np. ""wracając"", ""rozmawiając"", ""jadąc""?;Polish;CDI3;yesNo;wprost;;;;24
-item_25;Czy Twoje dziecko używa form rzeczowników odpowiadających na pytania ""kim? czym?"", zakończonych na ""-ami"", np. ""lalkami"", ""samochodami"", ""płatkami""?;Polish;CDI3;yesNo;wprost;;;;25
-item_26;Czy Twoje dziecko używa form rzeczowników odpowiadających na pytania ""o/na/w kim? czym?"", zakończonych na ""-ach"", np. ""o zabawkach"", ""na drzewach""?;Polish;CDI3;yesNo;wprost;;;;26
-item_27;Czy Twoje dziecko używa słowa ""ale"", żeby połączyć dwa zdania, np. ""Szukam misia, ale nie mogę go znaleźć""?;Polish;CDI3;yesNo;wprost;;;;27
-item_28;Czy Twoje dziecko używa słowa ""bo"" (""ponieważ""), żeby połączyć dwa zdania, np. ""Nie wyjdziemy, bo pada deszcz""?;Polish;CDI3;yesNo;wprost;;;;28
-item_29;Czy Twoje dziecko używa słowa ""i"", żeby połączyć dwa zdania, np. ""Jem kanapkę i piję soczek""?;Polish;CDI3;yesNo;wprost;;;;29
-item_30;Czy Twoje dziecko używa słowa ""jak"" i/lub ""kiedy"", by łączyć dwa zdania, np. ""Jak wrócę do domu, to zjem obiad""?;Polish;CDI3;yesNo;wprost;;;;30
-item_31;Czy Twoje dziecko używa słowa ""jeśli"" (""jeżeli""), żeby połączyć dwa zdania, np. ""Pójdę na spacer, jeśli będzie ciepło""?;Polish;CDI3;yesNo;wprost;;;;31
-item_32;Czy Twoje dziecko używa słowa ""więc"", żeby połączyć dwa zdania, np. ""Jest ładna pogoda, więc pójdziemy na spacer""?;Polish;CDI3;yesNo;wprost;;;;32
-item_33;Czy Twoje dziecko używa słowa ""żeby"" (""aby"") w zdaniach takich jak ""Myję nogi, żeby były czyste""?;Polish;CDI3;yesNo;wprost;;;;33
-item_34;Czy Twoje dziecko używa słów ""która"", ""które"" (""co"") itp., żeby połączyć dwa zdania, np. ""Jem ciasto, które zrobiła mama""?;Polish;CDI3;yesNo;wprost;;;;34
-item_35;Czy Twoje dziecko używa słów ""mogę"" albo ""musimy"" itp. w zdaniach takich jak ""Mogę zjeść"", ""Musimy iść""?;Polish;CDI3;yesNo;wprost;;;;35
-item_36;Czy Twoje dziecko używa słów ""żebym"", ""żebyś"", ""abym"", ""abyś"" itp. w zdaniach takich jak: ""Chcę, żebyś narysowała misia"", ""Zapal światło, abym mógł widzieć""?;Polish;CDI3;yesNo;wprost;;;;36
-item_37;biodro;;;word;body1;nouns;nouns;;;37
-item_38;flegma;;;word;body1;nouns;nouns;;;38
-item_39;głowa;;;word;body1;nouns;nouns;;;39
-item_40;glut/smark/gil;;;word;body1;nouns;nouns;;;40
-item_41;gorączka;;;word;body1;nouns;nouns;;;41
-item_42;jelita;;;word;body1;nouns;nouns;;;42
-item_43;kaszel;;;word;body1;nouns;nouns;;;43
-item_44;kciuk;;;word;body1;nouns;nouns;;;44
-item_45;kolano;;;word;body1;nouns;nouns;;;45
-item_46;kości;;;word;body1;nouns;nouns;;;46
-item_47;kręgosłup;;;word;body1;nouns;nouns;;;47
-item_48;krew;;;word;body1;nouns;nouns;;;48
-item_49;łydka;;;word;body1;nouns;nouns;;;49
-item_50;mózg;;;word;body1;nouns;nouns;;;50
-item_51;neuron;;;word;body1;nouns;nouns;;;51
-item_52;oskrzela;;;word;body1;nouns;nouns;;;52
-item_53;plecy;;;word;body1;nouns;nouns;;;53
-item_54;płuca;;;word;body1;nouns;nouns;;;54
-item_55;serce;;;word;body1;nouns;nouns;;;55
-item_56;siniak;;;word;body1;nouns;nouns;;;56
-item_57;skaleczenie;;;word;body1;nouns;nouns;;;57
-item_58;skroń;;;word;body1;nouns;nouns;;;58
-item_59;szkielet;;;word;body1;nouns;nouns;;;59
-item_60;tętnica;;;word;body1;nouns;nouns;;;60
-item_61;udo;;;word;body1;nouns;nouns;;;61
-item_62;usta;;;word;body1;nouns;nouns;;;62
-item_63;wątroba;;;word;body1;nouns;nouns;;;63
-item_64;zadrapanie;;;word;body1;nouns;nouns;;;64
-item_65;żebra;;;word;body1;nouns;nouns;;;65
-item_66;żołądek;;;word;body1;nouns;nouns;;;66
-item_67;żyła;;;word;body1;nouns;nouns;;;67
-item_68;chory;;;word;body2;adjectives;adjectives;;;68
-item_69;spocony;;;word;body2;adjectives;adjectives;;;69
-item_70;spragniony;;;word;body2;adjectives;adjectives;;;70
-item_71;zdrowy;;;word;body2;adjecitves;adjectives;;;71
-item_72;zmęczony;;;word;body2;adjectives;adjectives;;;72
-item_73;boleć;;;word;body3;verbs;verbs;;;73
-item_74;goić (się);;;word;body3;verbs;verbs;;;74
-item_75;kaszleć;;;word;body3;verbs;verbs;;;75
-item_76;kichać;;;word;body3;verbs;verbs;;;76
-item_77;pocić się;;;word;body3;verbs;verbs;;;77
-item_78;smarkać;;;word;body3;verbs;verbs;;;78
-item_79;bakalie;;;word;kitchen1;nouns;nouns;;;79
-item_80;barszcz;;;word;kitchen1;nouns;nouns;;;80
-item_81;czereśnie;;;word;kitchen1;nouns;nouns;;;81
-item_82;dynia;;;word;kitchen1;nouns;nouns;;;82
-item_83;gruszka;;;word;kitchen1;nouns;nouns;;;83
-item_84;gryz;;;word;kitchen1;nouns;nouns;;;84
-item_85;jagody;;;word;kitchen1;nouns;nouns;;;85
-item_86;kuchenka;;;word;kitchen1;nouns;nouns;;;86
-item_87;majonez;;;word;kitchen1;nouns;nouns;;;87
-item_88;maliny;;;word;kitchen1;nouns;nouns;;;88
-item_89;musztarda;;;word;kitchen1;nouns;nouns;;;89
-item_90;patelnia;;;word;kitchen1;nouns;nouns;;;90
-item_91;piekanrik/piec;;;word;kitchen1;nouns;nouns;;;91
-item_92;rodzynki;;;word;kitchen1;nouns;nouns;;;92
-item_93;rogal(ik);;;word;kitchen1;nouns;nouns;;;93
-item_94;smak;;;word;kitchen1;nouns;nouns;;;94
-item_95;tort;;;word;kitchen1;nouns;nouns;;;95
-item_96;wiśnie;;;word;kitchen1;nouns;nouns;;;96
-item_97;zapach;;;word;kitchen1;nouns;nouns;;;97
-item_98;gorzki;;;word;kitchen2;adjectives;adjectives;;;98
-item_99;kwaśny;;;word;kitchen2;adjectives;adjectives;;;99
-item_100;pikantny;;;word;kitchen2;adjectives;adjectives;;;100
-item_101;przypalone/spalone;;;word;kitchen2;adjectives;adjectives;;;101
-item_102;słodki;;;word;kitchen2;adjectives;adjectives;;;102
-item_103;słony;;;word;kitchen2;adjectives;adjectives;;;103
-item_104;smaczny;;;word;kitchen2;adjectives;adjectives;;;104
-item_105;gotować;;;word;kitchen3;verbs;verbs;;;105
-item_106;karmić;;;word;kitchen3;verbs;verbs;;;106
-item_107;obierać;;;word;kitchen3;verbs;verbs;;;107
-item_108;odcedzać;;;word;kitchen3;verbs;verbs;;;108
-item_109;(o)studzić;;;word;kitchen3;verbs;verbs;;;109
-item_110;(po)kroić;;;word;kitchen3;verbs;verbs;;;110
-item_111;(po)lizać;;;word;kitchen3;verbs;verbs;;;111
-item_112;podgrzewać;;;word;kitchen3;verbs;verbs;;;112
-item_113;siekać;;;word;kitchen3;verbs;verbs;;;113
-item_114;słodzić;;;word;kitchen3;verbs;verbs;;;114
-item_115;smakować/smakuje;;;word;kitchen3;verbs;verbs;;;115
-item_116;smażyć;;;word;kitchen3;verbs;verbs;;;116
-item_117;solić;;;word;kitchen3;verbs;verbs;;;117
-item_118;ubijać;;;word;kitchen3;verbs;verbs;;;118
-item_119;ucierać;;;word;kitchen3;verbs;verbs;;;119
-item_120;ugniatać/rozgniatać;;;word;kitchen3;verbs;verbs;;;120
-item_121;(u)piec;;;word;kitchen3;verbs;verbs;;;121
-item_122;wąchać;;;word;kitchen3;verbs;verbs;;;122
-item_123;wlewać/nalewać;;;word;kitchen3;verbs;verbs;;;123
-item_124;zmywać (naczynia);;;word;kitchen3;verbs;verbs;;;124
-item_125;marzenie;;;word;mental1;nouns;nouns;;;125
-item_126;nadzieja;;;word;mental1;nouns;nouns;;;126
-item_127;obietnica;;;word;mental1;nouns;nouns;;;127
-item_128;pomysł;;;word;mental1;nouns;nouns;;;128
-item_129;sen;;;word;mental1;nouns;nouns;;;129
-item_130;przekonany;;;word;mental2;adjectives;adjectives;;;130
-item_131;sprytny;;;word;mental2;adjectives;adjectives;;;131
-item_132;szalony;;;word;mental2;adjectives;adjectives;;;132
-item_280;zwariowany;;;word;mental2;adjectives;adjectives;;;280
-item_133;czuć;;;word;mental3;adjectives;adjectives;;;133
-item_134;czytać;;;word;mental3;verbs;verbs;;;134
-item_135;kłamać;;;word;mental3;verbs;verbs;;;135
-item_136;liczyć;;;word;mental3;verbs;verbs;;;136
-item_137;marzyć;;;word;mental3;verbs;verbs;;;137
-item_138;mylić (się);;;word;mental3;verbs;verbs;;;138
-item_139;myśleć (o...);;;word;mental3;verbs;verbs;;;139
-item_140;obiecywać;;;word;mental3;verbs;verbs;;;140
-item_141;oczekiwać;;;word;mental3;verbs;verbs;;;141
-item_142;okazywać się (okazało się, że...);;;word;mental3;verbs;verbs;;;142
-item_143;ostrzegać;;;word;mental3;verbs;verbs;;;143
-item_144;oszukiwać;;;word;mental3;verbs;verbs;;;144
-item_145;pisać;;;word;mental3;verbs;verbs;;;145
-item_146;przypominać;;;word;mental3;verbs;verbs;;;146
-item_147;rozmyślać;;;word;mental3;verbs;verbs;;;147
-item_148;rozumieć;;;word;mental3;verbs;verbs;;;148
-item_149;sądzić;;;word;mental3;verbs;verbs;;;149
-item_150;spodziewać się;;;word;mental3;verbs;verbs;;;150
-item_151;starać się;;;word;mental3;verbs;verbs;;;151
-item_152;śnić (się);;;word;mental3;verbs;verbs;;;152
-item_153;tłumaczyć;;;word;mental3;verbs;verbs;;;153
-item_154;uczyć (się);;;word;mental3;verbs;verbs;;;154
-item_155;udawać;;;word;mental3;verbs;verbs;;;155
-item_156;wierzyć;;;word;mental3;verbs;verbs;;;156
-item_157;wydawać się/wydaje (mi) się, że...;;;word;mental3;verbs;verbs;;;157
-item_158;wyjaśniać;;;word;mental3;verbs;verbs;;;158
-item_159;wyobrażać (sobie);;;word;mental3;verbs;verbs;;;159
-item_160;(za)pamiętać;;;word;mental3;verbs;verbs;;;160
-item_161;zapominać;;;word;mental3;verbs;verbs;;;161
-item_162;zastanawiać się;;;word;mental3;verbs;verbs;;;162
-item_163;zgadywać;;;word;mental3;verbs;verbs;;;163
-item_164;(z)gubić (się);;;word;mental3;verbs;verbs;;;164
-item_165;gniew;;;word;emotion1;nouns;nouns;;;165
-item_166;niespodzianka;;;word;emotion1;nouns;nouns;;;166
-item_167;nuda;;;word;emotion1;nouns;nouns;;;167
-item_168;ohyda!;;;word;emotion1;nouns;nouns;;;168
-item_169;wstyd;;;word;emotion1;nouns;nouns;;;169
-item_170;życzenia (np. urodzinowe);;;word;emotion1;nouns;nouns;;;170
-item_171;ciekawski;;;word;emotion2;adjectives;adjectives;;;171
-item_172;ciekawy;;;word;emotion2;adjectives;adjectives;;;172
-item_173;dumny;;;word;emotion2;adjectives;adjectives;;;173
-item_174;dzielny;;;word;emotion2;adjectives;adjectives;;;174
-item_175;groźny;;;word;emotion2;adjectives;adjectives;;;175
-item_176;nieśmiały;;;word;emotion2;adjectives;adjectives;;;176
-item_177;nudny;;;word;emotion2;adjectives;adjectives;;;177
-item_178;obrażony;;;word;emotion2;adjectives;adjectives;;;178
-item_179;obrzydliwy;;;word;emotion2;adjectives;adjectives;;;179
-item_180;odważny;;;word;emotion2;adjectives;adjectives;;;180
-item_181;ohydny;;;word;emotion2;adjectives;adjectives;;;181
-item_182;przestraszony;;;word;emotion2;adjectives;adjectives;;;182
-item_183;rozdrażniony;;;word;emotion2;adjectives;adjectives;;;183
-item_184;śmieszny;;;word;emotion2;adjectives;adjectives;;;184
-item_185;smutny;;;word;emotion2;adjectives;adjectives;;;185
-item_186;straszny;;;word;emotion2;adjectives;adjectives;;;186
-item_187;szczęśliwy;;;word;emotion2;adjectives;adjectives;;;187
-item_188;wesoły;;;word;emotion2;adjectives;adjectives;;;188
-item_189;wkurzony;;;word;emotion2;adjectives;adjectives;;;189
-item_190;wściekły;;;word;emotion2;adjectives;adjectives;;;190
-item_191;zabwany;;;word;emotion2;adjectives;adjectives;;;191
-item_192;zadowolony;;;word;emotion2;adjectives;adjectives;;;192
-item_193;zaskakujący;;;word;emotion2;adjectives;adjectives;;;193
-item_194;zdenerwowany;;;word;emotion2;adjectives;adjectives;;;194
-item_195;zdziwiony;;;word;emotion2;adjectives;adjectives;;;195
-item_196;złośliwy;;;word;emotion2;adjectives;adjectives;;;196
-item_197;zmartwiony;;;word;emotion2;adjectives;adjectives;;;197
-item_198;znudzony;;;word;emotion2;adjectives;adjectives;;;198
-item_199;dbać;;;word;emotion3;verbs;verbs;;;199
-item_200;dokuczać;;;word;emotion3;verbs;verbs;;;200
-item_201;głaskać;;;word;emotion3;verbs;verbs;;;201
-item_202;gniewać się;;;word;emotion3;verbs;verbs;;;202
-item_203;kochać;;;word;emotion3;verbs;verbs;;;203
-item_204;martwić się;;;word;emotion3;verbs;verbs;;;204
-item_205;nienawidzić;;;word;emotion3;verbs;verbs;;;205
-item_206;nudzić się;;;word;emotion3;verbs;verbs;;;206
-item_207;pocieszać;;;word;emotion3;verbs;verbs;;;207
-item_208;(przy)tulić;;;word;emotion3;verbs;verbs;;;208
-item_209;opiekować się;;;word;emotion3;verbs;verbs;;;209
-item_210;tęsknić;;;word;emotion3;verbs;verbs;;;210
-item_211;uwilebiać;;;word;emotion3;verbs;verbs;;;211
-item_212;wkurzać się;;;word;emotion3;verbs;verbs;;;212
-item_213;wstydzić się;;;word;emotion3;verbs;verbs;;;213
-item_214;żałować;;;word;emotion3;verbs;verbs;;;214
-item_215;bałagan;;;word;w1;nouns;nouns;;;215
-item_216;beksa;;;word;w1;nouns;nouns;;;216
-item_217;cyfra;;;word;w1;nouns;nouns;;;217
-item_218;dentysta;;;word;w1;nouns;nouns;;;218
-item_219;drzemka;;;word;w1;nouns;nouns;;;219
-item_220;dzik;;;word;w1;nouns;nouns;;;220
-item_221;film;;;word;w1;nouns;nouns;;;221
-item_222;golas;;;word;w1;nouns;nouns;;;222
-item_223;kąt;;;word;w1;nouns;nouns;;;223
-item_224;klej;;;word;w1;nouns;nouns;;;224
-item_225;kółko;;;word;w1;nouns;nouns;;;225
-item_226;kolorowanka;;;word;w1;nouns;nouns;;;226
-item_227;komar;;;word;w1;nouns;nouns;;;227
-item_228;kreska;;;word;w1;nouns;nouns;;;228
-item_229;kropka;;;word;w1;nouns;nouns;;;229
-item_230;kryjówka;;;word;w1;nouns;nouns;;;230
-item_231;kwadrat;;;word;w1;nouns;nouns;;;231
-item_232;liczba;;;word;w1;nouns;nouns;;;232
-item_233;linijka;;;word;w1;nouns;nouns;;;233
-item_234;litera/literka;;;word;w1;nouns;nouns;;;234
-item_235;maska;;;word;w1;nouns;nouns;;;235
-item_236;ogon(ek);;;word;w1;nouns;nouns;;;236
-item_237;okładka;;;word;w1;nouns;nouns;;;237
-item_238;okrąg;;;word;w1;nouns;nouns;;;238
-item_239;osa;;;word;w1;nouns;nouns;;;239
-item_240;owad;;;word;w1;nouns;nouns;;;240
-item_241;owca;;;word;w1;nouns;nouns;;;241
-item_242;piosenka;;;word;w1;nouns;nouns;;;242
-item_243;plac zabaw;;;word;w1;nouns;nouns;;;243
-item_244;porządek;;;word;w1;nouns;nouns;;;244
-item_245;przedstawienie;;;word;w1;nouns;nouns;;;245
-item_246;pszczoła;;;word;w1;nouns;nouns;;;246
-item_247;rozdział;;;word;w1;nouns;nouns;;;247
-item_248;słowo;;;word;w1;nouns;nouns;;;248
-item_249;smok;;;word;w1;nouns;nouns;;;249
-item_250;strona/stronnica;;;word;w1;nouns;nouns;;;250
-item_251;sylaba;;;word;w1;nouns;nouns;;;251
-item_252;trójkąt;;;word;w1;nouns;nouns;;;252
-item_253;wierszyk;;;word;w1;nouns;nouns;;;253
-item_254;wykrzyknik;;;word;w1;nouns;nouns;;;254
-item_255;wyraz;;;word;w1;nouns;nouns;;;255
-item_256;żart;;;word;w1;nouns;nouns;;;256
-item_257;zastrzyk;;;word;w1;nouns;nouns;;;257
-item_258;zierenko/ziarno;;;word;w1;nouns;nouns;;;258
-item_259;znak zapytania;;;word;w1;nouns;nouns;;;259
-item_260;zwierzę;;;word;w1;nouns;nouns;;;260
-item_261;dorosły;;;word;w2;adjectives;adjectives;;;261
-item_262;goły;;;word;w2;adjectives;adjectives;;;262
-item_263;magiczny;;;word;w2;adjectives;adjectives;;;263
-item_264;przebrany/przebieraniec;;;word;w2;adjectives;adjectives;;;264
-item_265;ubrany;;;word;w2;adjectives;adjectives;;;265
-item_266;zaczarowany;;;word;w2;adjectives;adjectives;;;266
-item_267;kolorować;;;word;w3;verbs;verbs;;;267
-item_268;lepić;;;word;w3;verbs;verbs;;;268
-item_269;leżakować;;;word;w3;verbs;verbs;;;269
-item_270;liczyć;;;word;w3;verbs;verbs;;;270
-item_271;nocować;;;word;w3;verbs;verbs;;;271
-item_272;(po)dzielić się;;;word;w3;verbs;verbs;;;272
-item_273;(po)sadzić;;;word;w3;verbs;verbs;;;273
-item_274;przegrywać;;;word;w3;verbs;verbs;;;274
-item_275;rosnąć;;;word;w3;verbs;verbs;;;275
-item_276;ubrudzić (się);;;word;w3;verbs;verbs;;;276
-item_277;wygrywać;;;word;w3;verbs;verbs;;;277
-item_278;(za)czarować;;;word;w3;verbs;verbs;;;278
-item_279;żartować;;;word;w3;verbs;verbs;;;279
+item_4;"A. Pada deszcz i nie wyjdziemy.%B. Nie wyjdziemy, bo pada deszcz.";Polish;CDI3;alternatives;grupa3;;;;;4
+item_34;"Czy Twoje dziecko używa słowa „jeśli” („jeżeli”), żeby połączyć dwa zdania, np. „Pójdę na spacer, jeśli będzie ciepło”?";Polish;CDI3;yesNo;wprost;;;;;34
+item_28;"Czy Twoje dziecko używa słowa „i”, żeby połączyć dwa zdania, np. „Jem kanapkę i piję soczek”?";Polish;CDI3;yesNo;wprost;;;;;28
+item_33;"Czy Twoje dziecko używa słowa „żeby” („aby”) w zdaniach takich jak „Myję nogi, żeby były czyste”?";Polish;CDI3;yesNo;wprost;;;;;33
+item_31;"Czy Twoje dziecko używa form rzeczowników odpowiadających na pytania „kim? czym?”, zakończonych na „-ami”, np. „lalkami”, „samochodami”, „płatkami”?";Polish;CDI3;yesNo;wprost;;;;;31
+item_30;"Czy Twoje dziecko używa słów „mogę” albo „musimy” itp. w zdaniach takich jak „Mogę zjeść”, „Musimy iść”?";Polish;CDI3;yesNo;wprost;;;;;30
+item_23;"Czy Twoje dziecko używa form czasowników zakończonych na „-ąc”, np. „wracając”, „rozmawiając”, „jadąc”?";Polish;CDI3;yesNo;wprost;;;;;23
+item_27;"Czy Twoje dziecko używa słów „żebym”, „żebyś”, „abym”, „abyś” itp. w zdaniach takich jak: „Chcę, żebyś narysowała misia”, „Zapal światło, abym mógł widzieć”?";Polish;CDI3;yesNo;wprost;;;;;27
+item_24;"Czy Twoje dziecko używa słowa „bo” („ponieważ”), żeby połączyć dwa zdania, np. „Nie wyjdziemy, bo pada deszcz”?";Polish;CDI3;yesNo;wprost;;;;;24
+item_35;"Czy Twoje dziecko opowiada o tym, co ktoś powiedział, mówiąc „... powiedział(a), że...”?";Polish;CDI3;yesNo;wprost;;;;;35
+item_22;"Czy Twoje dziecko używa słów „która”, „które” („co”) itp., żeby połączyć dwa zdania, np. „Jem ciasto, które zrobiła mama”?";Polish;CDI3;yesNo;wprost;;;;;22
+item_26;"Czy Twoje dziecko dodaje „-bym”, „-byś”, „-byście” itp. do czasowników., np. „Chciałbym cukierka”?";Polish;CDI3;yesNo;wprost;;;;;26
+item_29;"Czy Twoje dziecko używa słowa „jak” i/lub „kiedy”, by łączyć dwa zdania, np. „Jak wrócę do domu, to zjem obiad”?";Polish;CDI3;yesNo;wprost;;;;;29
+item_36;"Czy Twoje dziecko używa słowa „więc”, żeby połączyć dwa zdania, np. „Jest ładna pogoda, więc pójdziemy na spacer”?";Polish;CDI3;yesNo;wprost;;;;;36
+item_25;"Czy Twoje dziecko używa słowa „ale”, żeby połączyć dwa zdania, np. „Szukam misia, ale nie mogę go znaleźć”?";Polish;CDI3;yesNo;wprost;;;;;25
+item_32;"Czy Twoje dziecko używa form rzeczowników odpowiadających na pytania „o/na/w kim? czym?”, zakończonych na „-ach”, np. „o zabawkach”, „na drzewach”?";Polish;CDI3;yesNo;wprost;;;;;32
