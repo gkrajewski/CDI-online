@@ -1,4 +1,4 @@
-startTest <- function(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, urlString, fromSW){
+startTest <- function(input, output, session, subject, testPath, subjectFile, lang, idx, form, txt, parameters, urlString, fromSW, run){
 
   #Get subject (children) age in months
   subjectAge <- interval(subject$birth, Sys.Date()) %/% months(1)
@@ -25,14 +25,13 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     }
   )
   
-  
   setwd(INIT_PATH)
-  
+
   #Prepare parts settings
-  if ("groups" %in% txt$text_type) {
+  if ("groups" %in% parameters$parameter) {
     
     #Many parts form
-    groups<-strsplit(txt[txt$text_type == "groups", "text"], ",")[[1]]
+    groups<-strsplit(parameters[parameters$parameter=="groups", "value"], ",")[[1]]
     
     loginfo(paste0(" Following groups are defined: ", paste0(groups, collapse = ", ")))
     
@@ -41,17 +40,17 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
     #One part form
     groups <- c("group1")
     items$group <- "group1"
-    txt[txt$text_type == "MirtMethod", "text_type"] = paste0("group1", txt[txt$text_type == "MirtMethod", "text_type"])
-    txt[txt$text_type == "MirtCriteria", "text_type"] = paste0("group1", txt[txt$text_type == "MirtCriteria", "text_type"])
+    parameters[parameters$parameter=="MirtMethod", "parameter"] = paste0("group1", parameters[parameters$parameter=="MirtMethod", "parameter"])
+    parameters[parameters$parameter=="MirtCriteria", "parameter"] = paste0("group1", parameters[parameters$parameter=="MirtCriteria", "parameter"])
     
-    if ("MirtSeTheta" %in% txt$text_type) {
-      txt[txt$text_type == "MirtSeTheta", "text_type"] = paste0("group1", txt[txt$text_type == "MirtSeTheta", "text_type"])
+    if ("MirtSeTheta" %in% parameters$parameter) {
+      parameters[parameters$parameter=="MirtSeTheta", "parameter"] = paste0("group1", parameters[parameters$parameter=="MirtSeTheta", "parameter"])
     }
-    if ("maxItemNr" %in% txt$text_type) {
-      txt[txt$text_type == "maxItemNr", "text_type"] = paste0("group1", txt[txt$text_type == "maxItemNr", "text_type"])
+    if ("maxItemNr" %in% parameters$parameter) {
+      parameters[parameters$parameter=="maxItemNr", "parameter"] = paste0("group1", parameters[parameters$parameter=="maxItemNr", "parameter"])
     }
-    if ("minItemNr" %in% txt$text_type) {
-      txt[txt$text_type == "minItemNr", "text_type"] = paste0("group1", txt[txt$text_type == "minItemNr", "text_type"])
+    if ("minItemNr" %in% parameters$parameter) {
+      parameters[parameters$parameter=="minItemNr", "parameter"] = paste0("group1", parameters[parameters$parameter=="minItemNr", "parameter"])
     }
     
     loginfo(" Groups parameter was not defined")
@@ -62,6 +61,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   startGroup <- c()
   
   start = "items"
+
   for (i in 1:length(groups)) {
     
     groupsToTestBool[i] <- FALSE
@@ -145,12 +145,12 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
   } else {
     
     loginfo(paste0(" Starting part ", isolate(values$subgroup), " with items"))
-    
     #Prepare CAT design for given part
     CATdesign <- prepareGroup(output = output, 
                               input = input, 
                               values = values,
                               txt = txt, 
+                              parameters = parameters,
                               startThetas = startThetas, 
                               subjectAge = subjectAge, 
                               urlString = urlString)
@@ -259,13 +259,44 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       
       values$subject[["formEnded"]] <- TRUE
       
+      endMsgtxt <- txt[txt$text_type == "thanksMsgText", "text"]
+      additionalMessage <- parameters[parameters$parameter=="additionalEndMessageFromDatabase", "value"]
+      
+      if (length(additionalMessage)>0 && additionalMessage=="yes") {
+        additionalMessageTxt <- getAdditionalEndMessage(urlString, "database", parameters, txt)
+        endMsgtxt <- paste(endMsgtxt, "<br><br>", additionalMessageTxt)
+      }
+      
+      #Prepare redirection
+      if ("redirectionURL" %in% parameters$parameter){
+        
+        footer <- list(
+          actionButton("redirect", txt[txt$text_type == "redirectionBtn", "text"], class = "btn-primary"),
+          div(id="redirectionText", txt[txt$text_type == "redirectionText", "text"])
+        )
+        
+        observeEvent(input$redirect, {
+          redirect(parameters, idx, lang, form, "adaptive", run)
+        }, once = TRUE)
+        
+      } else {
+        
+        footer <- NULL
+        
+      }
+      
+      #Show ending message
       showModal(modalDialog(
-        title = txt[txt$text_type == "end", "text"],
-        txt[txt$text_type == "thanks", "text"],
+        title = txt[txt$text_type == "thanksMsgTitle", "text"],
+        HTML(endMsgtxt),
         easyClose = FALSE,
-        footer = NULL
+        footer = footer
       ))
       
+      #Disable redirection button for now (if created)
+      if ("redirectionURL" %in% parameters$parameter) disable("redirect")
+      
+      #Call SW
       if (fromSW) recurrentCallSW(idx, form, lang, done = "true", score="true")
       
       saveCAT(
@@ -274,8 +305,8 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
         subject = isolate(values$subject),
         subjectFile = subjectFile,
         groupsToSave = isolate(values$groupsToSave),
-        txt = txt,
         urlString = urlString,
+        parameters = parameters,
         form = form,
         lang = lang,
         sendLogs = isolate(values$sendLogs),
@@ -284,6 +315,9 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       
       values$groupsToSave <- c()
       values$sendLogs <- FALSE
+      
+      #Enable redirection button (if created)
+      if ("redirectionURL" %in% parameters$parameter) enable("redirect")
       
     } else {
       
@@ -301,6 +335,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
                                 input = input, 
                                 values = values,
                                 txt = txt, 
+                                parameters = parameters,
                                 startThetas = startThetas, 
                                 subjectAge = subjectAge, 
                                 urlString = urlString)
@@ -328,7 +363,7 @@ startTest <- function(input, output, session, subject, testPath, subjectFile, la
       subjectFile = subjectFile,
       groupsToSave = isolate(values$groupsToSave),
       urlString = urlString,
-      txt = txt,
+      parameters = parameters,
       form = form,
       lang = lang,
       sendLogs = isolate(values$sendLogs),

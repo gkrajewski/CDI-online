@@ -127,6 +127,7 @@ server <- function(input, output, session) {
                                                      settings[settings$text_type == "errorInfo", "text"],
                                                      "<br><br>link:",
                                                      getWholeURL(session)), collapse = " ")})
+              output$cdiNameSufix <- renderText({})
               
               logerror(paste0("Bad value of form parameter: ", form, ". Available values are: ", paste0(availableForms, collapse = ", ")))
               
@@ -140,6 +141,7 @@ server <- function(input, output, session) {
                                                    settings[settings$text_type == "errorInfo", "text"],
                                                    "<br><br>link:",
                                                    getWholeURL(session)), collapse = " ")})
+            output$cdiNameSufix <- renderText({})
             
             logerror(paste0("Bad value of the type parameter: ", form, ". Available values are: ", paste0(availableTypes, collapse = ", ")))
             
@@ -153,6 +155,7 @@ server <- function(input, output, session) {
                                                  settings[settings$text_type == "errorInfo", "text"],
                                                  "<br><br>link:",
                                                  getWholeURL(session)), collapse = " ")})
+          output$cdiNameSufix <- renderText({})
           
           logerror(paste0("Bad value of the type parameter: ", type, ". Allowed values are: ", paste0(allowedTypes, collapse = ", ")))
         }
@@ -163,6 +166,7 @@ server <- function(input, output, session) {
         output$sidebar <- renderText({paste0(c("Bad value of the lang parameter in the URL.", 
                                                "<br><br>link:",
                                                getWholeURL(session)), collapse = " ")})
+        output$cdiNameSufix <- renderText({})
         
         logerror(paste0("Bad value of the lang parameter: ", lang, ". Available values are: ", paste0(availableLangs, collapse = ", ")))
       }
@@ -172,10 +176,11 @@ server <- function(input, output, session) {
       #No all needed parameters
       output$sidebar <- renderText({paste0("Missing URL parameters. <br><br> link: ", 
                                            getWholeURL(session))})
+      output$cdiNameSufix <- renderText({})
       logerror("Missing URL parameters (lang, form and id).")
       
       # Useful for testing
-      # updateQueryString(paste0("?id=", "test", "&form=", "ws", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
+      # updateQueryString(paste0("?id=", "test", "&form=", "wg", "&lang=", "pl")) #/?id=IlYaL6gzKieyRx92YUl1a&form=wg&lang=pl
       # session$reload()
       
     }  

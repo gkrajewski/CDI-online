@@ -4,7 +4,7 @@ help;Svar først på de tre spørsmålene på denne siden og trykk på «Bekreft
 backBtn;Forrige;;
 nextBtn;Neste;;
 confBtn;Bekreft;;
-startBtn;Start;;
+menuButton;Start;start;
 dateLabel;Barnets fødselsdato;;
 genderLabel;Barnets kjønn;;
 modalTitle;Advarsel;;
@@ -15,9 +15,9 @@ badDate;Fødselsdatoen som du har oppgitt, tyder på at barnet ditt ikke er inne
 genders;jente, gutt;;
 commentLabel;Andre kommentarer;;
 cdiNamePrefix;Foreldrerapport for kommunikativ utvikling;;
-endTooltip;Du kan sende inn svarene dine når alle delene av skjemaet er fylt ut.;;
+tooltip;Du kan sende inn svarene dine når alle delene av skjemaet er fylt ut.;end;
 header;Send inn svarene dine;end;
-endBtn;Send inn  ;end;
+menuButton;Send inn  ;end;
 instr;Hvis du har fylt ut alle svarene, kan du trykke på «Bekreft».;end;
 help;MERKNAD: Når du har trykket «Bekreft», kan du ikke lenger redigere svaret ditt.;end;
 endMsgTitle;Takk for at du fylte ut!;end;
@@ -26,5 +26,3 @@ endMsgTextSW;Tusen takk for at du har fylt ut dette spørreskjemaet! Vi håper a
 error;Du har mistet forbindelsen. Oppdater siden og prøv igjen. Hvis du fortsatt er frakoblet, vennligst ta et skjermbilde og send det til multilada@psych.uw.edu.pl.;;
 refresh;Oppdater;;
 inventoryOpened;Spørreskjemaet er allerede åpnet et annet sted. Lukk skjemaet hvis du har åpnet det på en annen enhet eller oppdater siden. ;;
-email;yes;;
-;;;blabla

@@ -6,6 +6,12 @@ createCheckboxQuestion <- function(questionId, choiceNames, choiceValues, select
     selected <- strsplit(selected, " ")[[1]]
   }
   
+  choiceNames <- lapply(choiceNames, function(x) HTML(x))
+  
+  if (!is.null(questionLabel)){
+    questionLabel = HTML(questionLabel)
+  }
+  
   checkboxGroup <- checkboxGroupInput(
     questionId,
     label = questionLabel,

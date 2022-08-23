@@ -115,7 +115,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
     }
 
     #Prepare rest of input fields (inputObj)
-    if (reactList$settings$input_type == "radio" | reactList$settings$input_type == "manyCheckboxGroups" | reactList$settings$input_type == "radioAlt" | reactList$settings$input_type == "checkboxAlt"){
+    if (reactList$settings$input_type == "radio" | reactList$settings$input_type == "radioVertical" | reactList$settings$input_type == "manyCheckboxGroups" | reactList$settings$input_type == "radioAlt" | reactList$settings$input_type == "checkboxAlt"){
       
       if (is.na(catAnswer)){
         selected <- c(rep("0,", nrow(reactList$items)))
@@ -124,13 +124,20 @@ renderCategory <- function(input, output, category, reactList, staticList){
       }
       
       if (reactList$settings$input_type != "radioAlt" & reactList$settings$input_type != "checkboxAlt"){
-        choiceNames <- strsplit(reactList$txt[reactList$txt$text_type == "choiceNames", "text"], ",")[[1]]
+        choiceNames <- reactList$txt[reactList$txt$text_type == "choiceNames", "text"]
+        if (grepl('%', choiceNames)){
+          choiceNames <- strsplit(choiceNames, "%")[[1]]
+        } else {
+          choiceNames <- strsplit(choiceNames, ",")[[1]]
+        }
         choiceValues <- c(1 : length(choiceNames))
       } 
       
       for (i in 1:nrow(reactList$items)){
         if (reactList$settings$input_type == "radio"){
           inputObj[[i]] <- createRadioQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i], reactList$items[i, "definition"], T)
+        } else if (reactList$settings$input_type == "radioVertical"){
+          inputObj[[i]] <- createRadioQuestion(paste0("mQ", i), choiceNames, choiceValues, selected[i], reactList$items[i, "definition"])
         } else if (reactList$settings$input_type == "radioAlt"){
           choiceNames <-  strsplit(reactList$items[i, "definition"], "%")[[1]]
           choiceValues <- c(1 : length(choiceNames))
@@ -221,7 +228,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
     list(
       if (is.element("catHeader", reactList$txt$text_type)) h4(reactList$txt[reactList$txt$text_type == "catHeader", "text"]),
       if (is.element("instr", reactList$txt$text_type)) h5(reactList$txt[reactList$txt$text_type == "instr", "text"]),
-      if (is.element("longText", reactList$txt$text_type)) p(reactList$txt[reactList$txt$text_type == "longText", "text"]),
+      if (is.element("longText", reactList$txt$text_type)) p(HTML(reactList$txt[reactList$txt$text_type == "longText", "text"])),
       if (is.element("warning", reactList$txt$text_type)) p(class = "warning", strong(reactList$txt[reactList$txt$text_type == "warning", "text"])),
       if (length(inputObj) > 0) div(class=reactList$settings$css_class, inputObj),
       if (length(notes) > 0) notes,
@@ -239,9 +246,17 @@ renderCategory <- function(input, output, category, reactList, staticList){
   if (reactList$type == "end" & reactList$userProgress[reactList$userProgress$type == "end", "disabled"] == TRUE){
     
     if (staticList$fromSW) endMsg <- "endMsgTextSW" else endMsg <- "endMsgText"
+    endMsgtxt <- reactList$txt[reactList$txt$text_type == endMsg, "text"]
+    
+    additionalMessage <- staticList$parameters[staticList$parameters$parameter=="additionalEndMessageFromDatabase", "value"]
+    if (length(additionalMessage)>0 && additionalMessage=="yes") {
+      additionalMessageTxt <- getAdditionalEndMessage(staticList$urlString, "database", 
+                                                      staticList$parameters, staticList$txt)
+      endMsgtxt <- paste(endMsgtxt, "<br><br>", additionalMessageTxt)
+    }
     showModal(modalDialog(
       title = reactList$txt[reactList$txt$text_type == "endMsgTitle", "text"],
-      reactList$txt[reactList$txt$text_type == endMsg, "text"],
+      HTML(endMsgtxt),
       easyClose = FALSE,
       footer = NULL
     ))

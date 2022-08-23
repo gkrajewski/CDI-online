@@ -1,21 +1,20 @@
 text_type;text
 cdiNamePrefix;Inwentarz Rozwoju Mowy i Komunikacji
-birthQuestion;Data urodzenia dziecka
-genderQuestion;Płeć dziecka
+dateLabel;Data urodzenia dziecka
+genderLabel;Płeć dziecka
 genders;dziewczynka,chłopiec
-btn;Start
+startBtn;Start
 noGender;Proszę wybrać płeć dziecka.
 modalTitle;Uwaga!
 sidebarInstr;Proszę zaznaczyć ‚tak’ lub ‚nie’.
 firstPageSidebarInstr;Prosimy o cierpliwość. Uruchomienie formularza może zająć kilka sekund.
 choiceNames;nie, tak
-thanks;Bardzo dziękujemy za wypełnienie kwestionariusza! Więcej informacji znajdą Państwo w zakładce „Wiedza” w aplikacji StarWords.
-end;Koniec!
+thanksMsgText;Bardzo dziękujemy za wypełnienie kwestionariusza! Więcej informacji znajdą Państwo w zakładce „Wiedza”
+thanksMsgTitle;Koniec!
 alreadyFilled;Ten inwentarz został już przez Państwa wypełniony.
-fillerQuestion;Kim Państwo są dla dziecka?
+fillerLabel;Kim Państwo są dla dziecka?
 fillers;mama,tata,babcia,dziadek,niania,nauczyciel(-ka),inna odpowiedź (proszę wpisać):
 noFiller;Proszę wybrać osobę, która wypełnia kwestionariusz
-email;yes
 error;Nastąpiło przerwanie połączenia. Proszę odświeżyć i spróbować ponownie. Jeśli to się powtarza, prosimy o zrobienie screena tego ekranu i wysłanie na maila multilada@psych.uw.edu.pl.
 refresh;Odśwież
 commentLabel;Uwagi

@@ -1,11 +1,12 @@
 #Load libraries
 library(shinythemes)
 library(shinyjs)
+library(shinycssloaders)
 library(httr) #http requests
 library(lubridate) #dates
 library(fresh)
 library(shinydisconnect) #handling disconnects in a nice visual way
-library(emayili) #sending mails
+library(sendgridr) #sending mails
 library(RMariaDB) #connecting with MySQL database
 library(dplyr) #preparing output file
 library(tidyr) #preparing output file
@@ -51,13 +52,15 @@ source(paste0(FUNCTIONS_PATH,"/sendLogs.R"))
 source(paste0(FUNCTIONS_PATH,"/prepareGroup.R"))
 source(paste0(FUNCTIONS_PATH,"/saveCAT.R"))
 source(paste0(FUNCTIONS_PATH,"/renderTestingUI.R"))
+source(paste0(FUNCTIONS_PATH,"/getAdditionalEndMessage.R"))
+source(paste0(FUNCTIONS_PATH,"/redirect.R"))
+source(paste0(FUNCTIONS_PATH,"/readInputFile.R"))
 
 #Load file with secret variables
 #if (file.exists(".Renviron")) readRenviron(".Renviron")
 
-#Set mail things
-MAIL_USERNAME <- "cdishiny@gmail.com"
-EMAILS_RECIPIENTS <- c("cdishiny@gmail.com", "projekt.starwords@psych.uw.edu.pl")
+#Authenticate Sendgrid
+auth_set()
 
 #Set parameters of saving results in database
 STRING_LIMIT <- 2000

@@ -1,7 +1,44 @@
 # CDI online
-Currently deployed version: v1.5
+Currently deployed version: v1.9 <br>
+Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7Y9-YTqJgnltQb0/edit#heading=h.cfni66gw85m0 <br>
+Making a renv snapshot: renv::snapshot()
 
 ## Changes
+### v1.9
+* Fixed: irregular columns with some input types
+* Added: HTML tags for adaptive forms
+* Fixed: HTML tags for norwegian forms
+* Added: sending e-mails with Sendgridr
+* Fixed: config files of the pilot of Polish CDI-III
+
+### v1.8
+* Added bold for norwegian CDI-III
+* Corrected vouchers settings and translations
+* Added forms with redirection
+* Added: dependency managment renv.lock file (issue #257)
+* Fixed: sendLogs function
+* Added: HTML text formatting (issue #244)
+* Changed: color of redirection button (now it's more visible when it's active)
+* Added: possibility of adding the run parameter to the redirection URL
+* Changed: redirection time is 0 by default (issue #235)
+* Added: moving circle when the app is loading (issue #54)
+* Removed: testing forms (wg-r, ws-v etc.)
+* Changed: vouchers are optional and situation with missing vouchers is handled (issue #240)
+* Added: missing parameters.csv files for no and en-gb forms
+* Changed: tooltips are created like other translations (issue #133)
+* Changed: menuButtons are created like other translations (new menuButton text_type)
+* Changed: No blabla needed in translations files and fixed bug with treating 
+initially_disabled values as strings instead of booleans (issue #238)
+* Fixed: Bug with types conditioning (issue #252)
+* Added: New input_type: radioVertical (issue #254)
+* Changed: choiceNames can contain commas if separated by % (issue #255)
+
+### v1.7
+* Added: static form has another input file called parameters.csv with parameters for external connections 
+* Changed: files in adaptive were divided into translations.csv and parameters.csv
+* Added: functionality to display end message based on database query (for vouchers)
+* Added: functionality to redirect to a given URL after finishing the test.
+
 ### v1.6
 * Changed: CAT items displayed without an unnecessary new line and quotes
 * Added: Text saying about a need for wait when the CAT is loading (issue #177)
@@ -16,6 +53,7 @@ Currently deployed version: v1.5
 * Changed: app checks for existance of .Renviron file before reading it in (issue #192)
 * Changed: end message for adaptive inventory (issue #198)
 * Added: Correct Norwegian and English translations
+
 
 ### v1.4
 * Changed: general error text (issue #208)
