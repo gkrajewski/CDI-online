@@ -1,61 +1,38 @@
 text_type;text;item_type;category
-header ;Lista słów używanych przez dziecko ;word;
+cdiNamePrefix;Jak mówi Twój trzylatek?;;
+cdiNameSufix;Pilotażowe badanie języka dzieci w wieku 3-4 lat;;
+header;Lista słów używanych przez dziecko;word;
 menuButton;Wyrazy;word;
-longText;"Dzieci rozumieją znacznie więcej słów niż same używają w mowie. Ten kwestionariusz dotyczy tylko tych słów, które Państwa dziecko spontanicznie mówi. Nie chodzi o to, co dziecko jest w stanie powtórzyć, ale o słowa, których samo z siebie używa. Proszę uważnie przeczytać listę wyrazów i zaznaczyć te z nich, które słyszeli Państwo od swego dziecka. Jeżeli dziecko używa nieco innej formy, np. mówi „piesek”, a nie „pies”, proszę mimo to postawić znaczek przy słowie „pies”. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. „lybka” zamiast „rybka” lub „wiójka” zamiast „wiewiórka”). Proszę takie słowo także zaznaczyć, można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa, w polu na uwagi. Czasami dzieci wymyślają własne wyrazy, np. „dzi” zamiast „piłka”; także taką formę należy potraktować jako wyraz i zaznaczyć słowo „piłka”, wpisując dodatkowo „dzi” w polu na uwagi. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać w polu na uwagi właściwe określenie. Wszelkie wątpliwości można również wpisywać w polu na uwagi.";word;firstPage
-warning;UWAGA: Kwestionariusz przeznaczony jest dla dzieci w różnym wieku. Proszę się nie martwić, jeśli Państwa dziecko jeszcze nie używa wszystkich słów, o które pytamy. ;word;firstPage
-catHeader;1. Ciało/Organizm ;word;body1;
-note;item_40%lub inne określenie, używane w Państwa rodzinie;word;body1
-catHeader;2. Ciało/Organizm ;word;body2;
-catHeader;3. Ciało/Organizm ;word;body3;
-catHeader;4. Ciało/Organizm ;word;body4;
-catHeader;5. Ciało/Organizm ;word;body5;
-catHeader;6. Ciało/Organizm ;word;body6;
-catHeader;7. Ciało/Organizm ;word;body7;
-catHeader;1. Kuchnia;word;kitchen1;
-catHeader;2. Kuchnia;word;kitchen2;
-catHeader;3. Kuchnia;word;kitchen3;
-catHeader;4. Kuchnia;word;kitchen4;
-catHeader;5. Kuchnia;word;kitchen5;
-catHeader;6. Kuchnia;word;kitchen6;
-catHeader;7. Kuchnia;word;kitchen7;
-catHeader;1. Umysł;word;mental1;
-catHeader;2. Umysł;word;mental2;
-catHeader;3. Umysł;word;mental3;
-catHeader;4. Umysł;word;mental4;
-catHeader;5. Umysł;word;mental5;
-catHeader;6. Umysł;word;mental6;
-catHeader;7. Umysł;word;mental7;
-catHeader;1. Emocje;word;emotion1;
-catHeader;2. Emocje;word;emotion2;
-catHeader;3. Emocje;word;emotion3;
-catHeader;4. Emocje;word;emotion4;
-catHeader;5. Emocje;word;emotion5;
-catHeader;6. Emocje;word;emotion6;
-catHeader;7. Emocje;word;emotion7;
-catHeader;1. Świat dziecka;word;w1;
-catHeader;2. Świat dziecka;word;w2;
-catHeader;3. Świat dziecka;word;w3;
-catHeader;4. Świat dziecka;word;w4;
-catHeader;5. Świat dziecka;word;w5;
-catHeader;6. Świat dziecka;word;w6;
-catHeader;7. Świat dziecka;word;w7;
-catHeader;8. Świat dziecka;word;w8;
-catHeader;9. Świat dziecka;word;w9;
+longText;"Dzieci rozumieją znacznie więcej słów niż same używają w mowie. Ten kwestionariusz dotyczy tylko tych słów, które Państwa dziecko spontanicznie mówi. Nie chodzi o to, co dziecko jest w stanie powtórzyć, ale o słowa, których samo z siebie używa. Proszę uważnie przeczytać listę wyrazów i zaznaczyć te z nich, które słyszeli Państwo od swego dziecka. Jeżeli dziecko używa nieco innej formy, np. mówi „główka”, a nie „głowa”, proszę mimo to zaznaczyć słowo „głowa”. Tak samo należy postąpić, jeśli dziecko wymawia jakieś słowo inaczej (np. „oblazony” zamiast „obrażony”). Proszę takie słowo także zaznaczyć, można też wpisać brzmienie wyrazu w takiej formie, w jakiej dziecko go używa, w polu na uwagi. Podobnie, jeśli w rodzinie funkcjonuje inne określenie niż podane w kwestionariuszu, proszę zaznaczyć odpowiednią pozycję i dopisać w polu na uwagi właściwe określenie. Mogą Państwo również wykorzystać to pole, żeby podzielić się z nami wszelkimi innymi uwagami.";word;firstPage
+warning;"UWAGA:  Ten kwestionariusz zawiera jedynie próbkę słów, jakich Państwa dziecko może używać. Państwa dziecko na pewno zna wiele innych słów, których nie ma na tej liście. Zapewne nie zna też wszystkich słów, które się na niej znajdują. Proszę się tym nie martwić, bo w tym badaniu dopiero chcemy ustalić, o jakie wyrazy i w jakim wieku dziecka warto pytać.";word;firstPage
+catHeader;Ciało/Organizm (1/3);word;body1
+note;"item_40%lub inne określenie, używane w Państwa rodzinie";word;body1
+catHeader;Ciało/Organizm (2/3);word;body2
+catHeader;Ciało/Organizm (3/3);word;body3
+catHeader;Kuchnia (1/3);word;kitchen1
+catHeader;Kuchnia (2/3);word;kitchen2
+catHeader;Kuchnia (3/3);word;kitchen3
+catHeader;Umysł (1/3);word;mental1
+catHeader;Umysł (2/3);word;mental2
+catHeader;Umysł (3/3);word;mental3
+catHeader;Emocje (1/3);word;emotion1
+catHeader;Emocje (2/3);word;emotion2
+catHeader;Emocje (3/3);word;emotion3
+catHeader;Świat dziecka (1/3);word;child_world1
+catHeader;Świat dziecka (2/3);word;child_world2
+catHeader;Świat dziecka (3/3);word;child_world3
 menuButton;Przykłady wypowiedzi;alternatives;
 header;Przykłady wypowiedzi;alternatives;
-longText;W przykładach, które tu zebraliśmy, nie pytamy o konkretne słowa (Państwa dziecko może na przykład znać inne nazwy owoców niż zaproponowane przez nas). Nie interesują nas też błędy, które Państwa dziecko może popełniać, używając wyrażeń, których przykłady tu zamieszczamy. Np. jeśli Państwa dziecko mówi „w kubeku”, a my pytamy, czy używa form takich jak „w kubku”, proszę odpowiedzieć TAK! Podobnie, jeśli pytamy, czy Państwa dziecko dodaje „-bym” do czasowników, proszę odpowiedzieć twierdząco, jeśli Państwa dziecko mówi np. „chciałambym”. Takie błędy są zupełnie naturalne w mowie dzieci i świadczą o jej rozwoju. ;alternatives;firstPage
-warning; Prosimy nie przejmować się, jeśli odpowiadając na nasze pytania pomyślą Państwo, że Państwa dziecko „źle” wypada. Pytamy tutaj o rzeczy, które pojawiają się w mowie dzieci w różnym wieku, i tak naprawdę dopiero chcemy ustalić, o co i w jakim wieku dziecka warto pytać. Oraz jak! Z tego właśnie powodu, jeżeli będą Państwo mieli jakiekolwiek uwagi do naszych pytań, przykładów i instrukcji, bardzo prosimy o wpisywanie ich w okienkach na dole każdej strony. Państwa uwagi, szczególnie te krytyczne, bardzo nam pomogą.;alternatives;firstPage
-instr;"Poniżej znajdują się przykłady wypowiedzi, które dzieci mogą tworzyć w różnym wieku. Ułożyliśmy je parami: w każdej parze jedna wersja jest mniej, a druga bardziej złożona. Proszę zaznaczyć wersję, która przypomina wypowiedzi Państwa dziecka. Nie chodzi nam o dokładnie takie sformułowania, jakich użyliśmy w przykładach. Również wyrazy używane przez Państwa dziecko mogą być inne (mogą też występować w nich błędy, np. ""kubeku"" zamiast ""kubku"" lub ""dałambym"" zamiast ""dałabym""). Jeżeli obie wersje przypominają wypowiedzi Państwa dziecka, mogą Państwo zaznaczyć obie, a jeśli Państwa dziecko jeszcze w ogóle nie tworzy takich wypowiedzi, proszę nie zaznaczać żadnej z nich.";alternatives;grupa1
-instr;"Poniżej znajdują się przykłady wypowiedzi, które dzieci mogą tworzyć w różnym wieku. Ułożyliśmy je parami: w każdej parze jedna wersja jest mniej, a druga bardziej złożona. Proszę zaznaczyć wersję, która przypomina wypowiedzi Państwa dziecka. Nie chodzi nam o dokładnie takie sformułowania, jakich użyliśmy w przykładach. Również wyrazy używane przez Państwa dziecko mogą być inne (mogą też występować w nich błędy, np. ""kubeku"" zamiast ""kubku"" lub ""dałambym"" zamiast ""dałabym""). Jeżeli obie wersje przypominają wypowiedzi Państwa dziecka, mogą Państwo zaznaczyć obie, a jeśli Państwa dziecko jeszcze w ogóle nie tworzy takich wypowiedzi, proszę nie zaznaczać żadnej z nich.";alternatives;grupa2
-instr;"Poniżej znajdują się przykłady wypowiedzi, które dzieci mogą tworzyć w różnym wieku. Ułożyliśmy je parami: w każdej parze jedna wersja jest mniej, a druga bardziej złożona. Proszę zaznaczyć wersję, która przypomina wypowiedzi Państwa dziecka. Nie chodzi nam o dokładnie takie sformułowania, jakich użyliśmy w przykładach. Również wyrazy używane przez Państwa dziecko mogą być inne (mogą też występować w nich błędy, np. ""kubeku"" zamiast ""kubku"" lub ""dałambym"" zamiast ""dałabym""). Jeżeli obie wersje przypominają wypowiedzi Państwa dziecka, mogą Państwo zaznaczyć obie, a jeśli Państwa dziecko jeszcze w ogóle nie tworzy takich wypowiedzi, proszę nie zaznaczać żadnej z nich.";alternatives;grupa3
+longText;"Na kolejnych stronach znajdują się przykłady wypowiedzi, które dzieci mogą tworzyć w różnym wieku. W przykładach, które tu zebraliśmy, nie pytamy o konkretne słowa (Państwa dziecko może na przykład znać inne nazwy owoców lub potraw niż zaproponowane przez nas). Nie interesują nas też błędy, które Państwa dziecko może popełniać, używając wyrażeń, których przykłady tu zamieszczamy. Proszę się nie przejmować, jeśli Państwa dziecko mówi na przykład „chciałambym” zamiast „chciałabym”. Takie błędy są zupełnie naturalne w mowie dzieci i świadczą o jej rozwoju.";alternatives;firstPage
+warning;"Prosimy nie przejmować się, jeśli odpowiadając na nasze pytania pomyślą Państwo, że Państwa dziecko „źle” wypada. Pytamy tutaj o rzeczy, które pojawiają się w mowie dzieci w różnym wieku, i tak naprawdę dopiero chcemy ustalić, o co i w jakim wieku dziecka warto pytać.";alternatives;firstPage
+instr;"Poniższe przykłady wypowiedzi ułożyliśmy parami: w każdej parze jedna wersja jest mniej, a druga bardziej złożona. Proszę zaznaczyć wersję, która przypomina wypowiedzi Państwa dziecka. Nie chodzi nam o dokładnie takie sformułowania, jakich użyliśmy w przykładach. Również wyrazy używane przez Państwa dziecko mogą być inne (mogą też występować w nich błędy, np. „chciałambym” zamiast „chciałabym”). Jeżeli obie wersje przypominają wypowiedzi Państwa dziecka, mogą Państwo zaznaczyć obie, a jeśli Państwa dziecko jeszcze w ogóle nie tworzy takich wypowiedzi, proszę nie zaznaczać żadnej z nich.";alternatives;grupa1
+instr;"Poniższe przykłady wypowiedzi ułożyliśmy parami: w każdej parze jedna wersja jest mniej, a druga bardziej złożona. Proszę zaznaczyć wersję, która przypomina wypowiedzi Państwa dziecka. Nie chodzi nam o dokładnie takie sformułowania, jakich użyliśmy w przykładach. Również wyrazy używane przez Państwa dziecko mogą być inne (mogą też występować w nich błędy, np. „chciałambym” zamiast „chciałabym”). Jeżeli obie wersje przypominają wypowiedzi Państwa dziecka, mogą Państwo zaznaczyć obie, a jeśli Państwa dziecko jeszcze w ogóle nie tworzy takich wypowiedzi, proszę nie zaznaczać żadnej z nich.";alternatives;grupa2
+instr;"Poniższe przykłady wypowiedzi ułożyliśmy parami: w każdej parze jedna wersja jest mniej, a druga bardziej złożona. Proszę zaznaczyć wersję, która przypomina wypowiedzi Państwa dziecka. Nie chodzi nam o dokładnie takie sformułowania, jakich użyliśmy w przykładach. Również wyrazy używane przez Państwa dziecko mogą być inne (mogą też występować w nich błędy, np. „chciałambym” zamiast „chciałabym”). Jeżeli obie wersje przypominają wypowiedzi Państwa dziecka, mogą Państwo zaznaczyć obie, a jeśli Państwa dziecko jeszcze w ogóle nie tworzy takich wypowiedzi, proszę nie zaznaczać żadnej z nich.";alternatives;grupa3
 menuButton;Dodatkowe pytania;yesNo;wprost
 header;Dodatkowe pytania;yesNo;wprost
-choiceNames;Tak, Nie;yesNo;wprost
-instr;Dziękujemy! Poniżej znajdą Państwo jeszcze listę pytań dotyczących tego, jak Państwa dziecko posługuje się językiem. Odpowiadając na nie, proszę pamiętać, że pytamy o rzeczy, które mogą pojawiać się w różnym wieku, a w dodatku dzieci rozwijają się w różnym tempie: proszę się nie martwić, jeśli na większość tych pytań odpowiedzą Państwo przecząco. Proszę się też nie przejmować, jeśli Państwa dziecko popełnia błędy. Np. jeśli mówi „w kubeku”, a my pytamy, czy używa form takich jak „w kubku”, proszę odpowiedzieć TAK! Podobnie, jeśli pytamy, czy Państwa dziecko dodaje „-bym” do czasowników, proszę odpowiedzieć twierdząco, jeśli Państwa dziecko mówi np. „chciałambym”.;yesNo;wprost
-cdiNameSufix;Typowe wypowiedzi dzieci w wieku 3-4 lat;;
-cdiNamePrefix;CDI-III-Badanie pilotażowe;;
-additionalEndMessageFromDatabaseText;Poniżej znajdą Państwo kod (e-kartę) o wartości 40 zł do wykorzystania w sklepie internetowym empik.com. Polecamy zrobić zrzut ekranu aby zachować numer e-karty na później!;;
-additionalEndMessageFromDatabaseNoText;Prosimy o kontakt mailowy na adres multilada@psych.uw.edu.pl w celu uzyskania vouchera.;;
-instr;Bardzo dziękujemy za wypełnienie kwestionariusza!;postEnd;
-instr;Bardzo dziękujemy za wypełnienie kwestionariusza!;postEndSW;
-
+choiceNames;"Tak, Nie";yesNo;wprost
+instr;"Poniżej znajdą Państwo jeszcze listę pytań dotyczących tego, jak Państwa dziecko posługuje się językiem. Odpowiadając na nie, proszę pamiętać, że pytamy o rzeczy, które mogą pojawiać się w różnym wieku, a w dodatku dzieci rozwijają się w różnym tempie: proszę się nie martwić, jeśli na większość tych pytań odpowiedzą Państwo przecząco. Proszę się też nie przejmować, jeśli Państwa dziecko popełnia błędy. Np. jeśli pytamy, czy Państwa dziecko dodaje „-bym” do czasowników, proszę odpowiedzieć twierdząco, jeśli Państwa dziecko mówi np. „chciałambym”.";yesNo;wprost
+additionalEndMessageFromDatabaseText;"Poniżej znajduje się kod (e-karta) o wartości 40 zł do wykorzystania w sklepie internetowym empik.com. Proszę zrobić zrzut ekranu lub w inny sposób zanotować kod, aby móc go później wykorzystać!";;
+additionalEndMessageFromDatabaseNoText;Prosimy o kontakt mailowy na adres projekt.starwords@psych.uw.edu.pl w celu uzyskania kodu (e-karty) o wartości 40 zł do wykorzystania w sklepie internetowym empik.com.;;
+instr;"Jeśli wypełnili Państwo wszystkie części kwestionariusza, proszę kliknąć przycisk „Zatwierdź”. Na ekranie pojawi się wtedy kod (e-karta) o wartości 40 zł do wykorzystania w sklepie internetowym empik.com. Proszę nie zapomnieć go zapisać!";end;
+endMsgText;Dziękujemy za wypełnienie kwestionariusza! Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Państwa cenny! Państwa zaangażowanie w badanie jest bardzo ważne — pomoże nam szczegółowo opisać rozwój językowy dzieci.;end;
