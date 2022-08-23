@@ -1,5 +1,5 @@
 # CDI online
-Currently deployed version: v1.8 <br>
+Currently deployed version: v1.9 <br>
 Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7Y9-YTqJgnltQb0/edit#heading=h.cfni66gw85m0 <br>
 Making a renv snapshot: renv::snapshot()
 
@@ -9,6 +9,7 @@ Making a renv snapshot: renv::snapshot()
 * Added: HTML tags for adaptive forms
 * Fixed: HTML tags for norwegian forms
 * Added: sending e-mails with Sendgridr
+* Fixed: config files of the pilot of Polish CDI-III
 
 ### v1.8
 * Added bold for norwegian CDI-III
