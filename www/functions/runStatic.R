@@ -168,7 +168,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
         if (inputType() == "sentences"){
           sentencesList <- list()
           for (i in 1:sentencesNr()){
-            sentencesList[[i]] <- input[[paste0("s", i)]]
+            sentencesList[[i]] <- gsub('[#]', '', input[[paste0("s", i)]])
           }
           catAnswer <- paste(sentencesList, collapse = "#")
         } else if (inputType() == "oneCheckboxGroup"){
@@ -186,7 +186,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
           }
           catAnswer <- paste(answersPattern, collapse = ",")
         } else if (inputType() == "demographic"){
-          catAnswer <- paste(input$birthDate, input$gender, input$filler, input$fillerTxt, sep = "#")
+          catAnswer <- paste(input$birthDate, input$gender, gsub('[#]', '', input$filler), gsub('[#]', '', input$fillerTxt), sep = "#")
         }
         catAnswer
       } else {
@@ -197,14 +197,33 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
     observeEvent(catAnswer(),{
       if (!is.null(catAnswer())){
         reactList <- reactList()
-        reactList$answers[reactList$answers$type == reactList$type & reactList$answers$category == reactList$category & reactList$answers$answer_type == reactList$settings$input_type, "answer"] <- catAnswer()
+        catAns = catAnswer()
+
+        if (inputType() == "oneCheckboxGroup") {
+          choiceValues <- c(1 : nrow(currItems()))*(-1)
+          chosen <- unlist(strsplit(catAnswer(), " "))
+
+          if(length(chosen) > 0){
+            for (i in chosen) {
+              choiceValues[as.numeric(i)] = abs(choiceValues[as.numeric(i)])
+            }
+          }
+
+          catAns <- paste0(choiceValues, collapse = " ")
+        }
+
+        reactList$answers[reactList$answers$type == reactList$type & reactList$answers$category == reactList$category & reactList$answers$answer_type == reactList$settings$input_type, "answer"] <- catAns
         reactList(reactList)
       }
     }, ignoreInit = TRUE)
     
     observeEvent(input$comment, {
       reactList <- reactList()
-      reactList$answers[reactList$answers$type == reactList$type & reactList$answers$category == reactList$category & reactList$answers$answer_type == "comment", "answer"] <- input$comment
+      comment_tmp = input$comment
+      if (comment_tmp == '') {
+        comment_tmp = NA
+      }
+      reactList$answers[reactList$answers$type == reactList$type & reactList$answers$category == reactList$category & reactList$answers$answer_type == "comment", "answer"] <- comment_tmp
       reactList(reactList)
     })
     
@@ -398,7 +417,11 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
               if (staticList$parameters[staticList$parameters$parameter == "database", "value"]=="yes") {
                 endDate <- Sys.time()
                 tableName <- paste0("form_", form, "_", lang)
-                answers <- prepareOutputStatic(reactList$answers, idx, lang, form, run, endDate, STRING_LIMIT)
+
+                answers <- prepareOutputStatic(reactList$answers, idx, lang, form, run, endDate, reactList$typeItems, STRING_LIMIT)
+                
+                #reversing answers order
+                answers = answers[nrow(answers):1, ]
                 
                 query = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
                             `id` VARCHAR(99) NOT NULL,

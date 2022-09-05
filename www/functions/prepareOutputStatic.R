@@ -1,4 +1,4 @@
-prepareOutputStatic <- function(answers, id, lang, form, run, endDate, stringLimit){
+prepareOutputStatic <- function(answers, id, lang, form, run, endDate, typeItems, stringLimit){
   
   startDate = answers[answers$type=="none", "answer"]
   startDate = as.POSIXct(startDate)
@@ -8,10 +8,10 @@ prepareOutputStatic <- function(answers, id, lang, form, run, endDate, stringLim
     if (answer_type=="oneCheckboxGroup") {
       answer = strsplit(answer, " ")
     }
-    else if(answer_type=="sentences" |answer_type=="demographic") {
+    else if(answer_type=="sentences" | answer_type=="demographic") {
       answer = strsplit(answer, "#")
     }
-    else if(answer_type=="radio" |answer_type=="radioAlt" | answer_type=="checkboxAlt" |
+    else if(answer_type=="radio" | answer_type=="radioAlt" | answer_type=="checkboxAlt" |
             answer_type=="manyCheckboxGroups" ) {
       answer = strsplit(answer, ",")
     }
@@ -38,7 +38,7 @@ prepareOutputStatic <- function(answers, id, lang, form, run, endDate, stringLim
   
   a$answer=NULL
   
-  a$answer_id = as.character(a$answer_id )
+  a$answer_id = as.character(a$answer_id)
   a[a$answer_id==1 & a$answer_type=="demographic", "answer_id"] = "birth_date"
   a[a$answer_id==2 & a$answer_type=="demographic", "answer_id"] = "sex"
   a[a$answer_id==3 & a$answer_type=="demographic", "answer_id"] = "guardian"
