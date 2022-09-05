@@ -1,5 +1,4 @@
 getAdditionalEndMessage <- function(id, type="database", parameters, txt){
-  
   additional_message <- tryCatch( 
   
     expr= {
@@ -53,6 +52,9 @@ getAdditionalEndMessage <- function(id, type="database", parameters, txt){
     
     error = function(e) {
         logerror(paste0(id, " Failed to get additional message! ", e))
+        message = txt[txt$text_type=='additionalEndMessageFromDatabaseNoText', "text"]
+        print(message)
+        return(message)
     }
   )
   
