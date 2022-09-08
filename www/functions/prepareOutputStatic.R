@@ -30,7 +30,7 @@ prepareOutputStatic <- function(answers, id, lang, form, run, endDate, typeItems
   a$answer2[(a$answer_type=="manyCheckboxGroups" | a$answer_type=="checkboxAlt" ) & 
               (a$answer1=="1 2" | a$answer1=="2")] = 1
   a$answer2[(a$answer_type=="manyCheckboxGroups" | a$answer_type=="checkboxAlt" ) & 
-              (a$answer1=="1") ] = 0
+              (a$answer1=="1" | a$answer1=="0") ] = 0
   a$answer1[(a$answer_type=="manyCheckboxGroups" | a$answer_type=="checkboxAlt" ) & 
               (a$answer1=="1 2" | a$answer1=="1")] = 1
   a$answer1[(a$answer_type=="manyCheckboxGroups" | a$answer_type=="checkboxAlt" ) & 

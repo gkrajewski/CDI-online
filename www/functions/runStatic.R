@@ -200,12 +200,12 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
         catAns = catAnswer()
 
         if (inputType() == "oneCheckboxGroup") {
-          choiceValues <- c(1 : nrow(currItems()))*(-1)
+          choiceValues <- replicate(nrow(currItems()), 0)
           chosen <- unlist(strsplit(catAnswer(), " "))
 
           if(length(chosen) > 0){
             for (i in chosen) {
-              choiceValues[as.numeric(i)] = abs(choiceValues[as.numeric(i)])
+              choiceValues[as.numeric(i)] = 1
             }
           }
 
