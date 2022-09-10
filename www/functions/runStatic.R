@@ -419,10 +419,7 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
                 tableName <- paste0("form_", form, "_", lang)
 
                 answers <- prepareOutputStatic(reactList$answers, idx, lang, form, run, endDate, reactList$typeItems, STRING_LIMIT)
-                
-                #reversing answers order
-                answers = answers[nrow(answers):1, ]
-                
+
                 query = paste0("CREATE TABLE `", Sys.getenv("DB_NAME"), "`.`",tableName,"` (
                             `id` VARCHAR(99) NOT NULL,
                             `lang` VARCHAR(45) NULL,

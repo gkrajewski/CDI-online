@@ -20,6 +20,9 @@ prepareOutputStatic <- function(answers, id, lang, form, run, endDate, typeItems
   
   answers$answer = mapply(split_by_type, answers$answer_type, answers$answer)
   
+  #reversing answers order
+  answers <- answers[nrow(answers):1, ]
+  
   a = answers %>% mutate(question_id = row_number()) %>% unnest(answer)
   
   a = a %>% group_by(question_id) %>% mutate(answer_id = row_number())
