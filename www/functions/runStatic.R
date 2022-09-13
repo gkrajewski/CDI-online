@@ -220,9 +220,12 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
     observeEvent(input$comment, {
       reactList <- reactList()
       comment_tmp = input$comment
+      comment_tmp <- gsub("\n", " ", comment_tmp)
+      comment_tmp <- trimws(comment_tmp)
       if (comment_tmp == '') {
         comment_tmp = NA
       }
+      
       reactList$answers[reactList$answers$type == reactList$type & reactList$answers$category == reactList$category & reactList$answers$answer_type == "comment", "answer"] <- comment_tmp
       reactList(reactList)
     })
