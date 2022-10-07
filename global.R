@@ -14,6 +14,7 @@ library(logging)
 library(mirtCAT)
 library(tidyverse) #add_row method
 options(stringsAsFactors = FALSE)
+library(keyring)
 
 #Specify paths
 WWW_PATH <- paste0(getwd(),"/www")
@@ -60,7 +61,19 @@ source(paste0(FUNCTIONS_PATH,"/readInputFile.R"))
 if (file.exists(".Renviron")) readRenviron(".Renviron")
 
 #Authenticate Sendgrid
-auth_set()
+
+tryCatch({
+  service <- "apikey"
+  keyring <- "sendgridr"
+  username <- "sendgridr"
+  password <- Sys.getenv("SENDGRID_API")
+  kb <- keyring::backend_file$new()
+  kb$keyring_create(keyring = keyring, password = password)
+  kb$set_with_value(service = service, username = username, password = password, keyring = keyring)
+  kb$keyring_lock(keyring)
+  },
+  error=function() {}
+)
 
 #Set parameters of saving results in database
 STRING_LIMIT <- 2000
