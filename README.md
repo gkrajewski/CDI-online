@@ -4,6 +4,9 @@ Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7
 Making a renv snapshot: renv::snapshot()
 
 ## Changes
+### v1.10
+* Fixed: proper vouchers table name logging
+
 ### v1.9
 * Fixed: irregular columns with some input types
 * Added: HTML tags for adaptive forms

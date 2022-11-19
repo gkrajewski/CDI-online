@@ -23,7 +23,7 @@ getAdditionalEndMessage <- function(id, type="database", parameters, txt){
                             host=Sys.getenv("DB_HOST"),
                             port=Sys.getenv("DB_PORT"),
                             id=id,
-                            tableName="vouchers",
+                            tableName=table,
                             tableQuery=query)
       
       if (length(result$voucher)==0) {
@@ -33,7 +33,7 @@ getAdditionalEndMessage <- function(id, type="database", parameters, txt){
                               host=Sys.getenv("DB_HOST"),
                               port=Sys.getenv("DB_PORT"),
                               id=id,
-                              tableName="vouchers",
+                              tableName=table,
                               transaction=transaction,
                               tableQuery=query)
       }
