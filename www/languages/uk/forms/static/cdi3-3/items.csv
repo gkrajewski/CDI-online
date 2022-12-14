@@ -2,7 +2,7 @@
 item_37;бедро;Ukrainian;CDI3;word;body1;nouns;nouns;;;37
 item_38;флегма;Ukrainian;CDI3;word;body1;nouns;nouns;;;38
 item_39;голова;Ukrainian;CDI3;word;body1;nouns;nouns;;;39
-item_40;соплі, шмарклі або інший вислів, котрий вживаєте в родині;Ukrainian;CDI3;word;body1;nouns;nouns;;;40
+item_40;соплі, шмарклі;Ukrainian;CDI3;word;body1;nouns;nouns;;;40
 item_41;гарячка;Ukrainian;CDI3;word;body1;nouns;nouns;;;41
 item_42;кишечник;Ukrainian;CDI3;word;body1;nouns;nouns;;;42
 item_43;кашель;Ukrainian;CDI3;word;body1;nouns;nouns;;;43
@@ -96,7 +96,6 @@ item_130;сон;Ukrainian;CDI3;word;mental1;nouns;nouns;;;130
 item_131;переконаний;Ukrainian;CDI3;word;mental2;adjectives;adjectives;;;131
 item_132;розумний;Ukrainian;CDI3;word;mental2;adjectives;adjectives;;;132
 item_133;шалений;Ukrainian;CDI3;word;mental2;adjectives;adjectives;;;133
-item_134;шалений;Ukrainian;CDI3;word;mental2;adjectives;adjectives;;;134
 item_135;відчувати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;135
 item_136;читати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;136
 item_137;брехати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;137
