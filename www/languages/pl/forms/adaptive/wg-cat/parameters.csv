@@ -1,5 +1,5 @@
 parameter;value
-email;yes
+email;no
 database;yes
 additionalEndMessageFromDatabase;no
 groups;mowa,rozumienie,gesty
