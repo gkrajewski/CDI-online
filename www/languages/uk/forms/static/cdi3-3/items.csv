@@ -1,0 +1,282 @@
+﻿item_id;definition;language;form;type;category;lexical_category;lexical_class;uni_lemma;complexity_category;num_item_id
+item_37;бедро;Ukrainian;CDI3;word;body1;nouns;nouns;;;37
+item_38;флегма;Ukrainian;CDI3;word;body1;nouns;nouns;;;38
+item_39;голова;Ukrainian;CDI3;word;body1;nouns;nouns;;;39
+item_40;соплі, шмарклі або інший вислів, котрий вживаєте в родині;Ukrainian;CDI3;word;body1;nouns;nouns;;;40
+item_41;гарячка;Ukrainian;CDI3;word;body1;nouns;nouns;;;41
+item_42;кишечник;Ukrainian;CDI3;word;body1;nouns;nouns;;;42
+item_43;кашель;Ukrainian;CDI3;word;body1;nouns;nouns;;;43
+item_44;мізинець;Ukrainian;CDI3;word;body1;nouns;nouns;;;44
+item_45;коліно;Ukrainian;CDI3;word;body1;nouns;nouns;;;45
+item_46;кістки;Ukrainian;CDI3;word;body1;nouns;nouns;;;46
+item_47;хребет;Ukrainian;CDI3;word;body1;nouns;nouns;;;47
+item_48;кров;Ukrainian;CDI3;word;body1;nouns;nouns;;;48
+item_49;лидка;Ukrainian;CDI3;word;body1;nouns;nouns;;;49
+item_50;мозок;Ukrainian;CDI3;word;body1;nouns;nouns;;;50
+item_51;нейрон;Ukrainian;CDI3;word;body1;nouns;nouns;;;51
+item_52;бронхи;Ukrainian;CDI3;word;body1;nouns;nouns;;;52
+item_53;спина;Ukrainian;CDI3;word;body1;nouns;nouns;;;53
+item_54;легені;Ukrainian;CDI3;word;body1;nouns;nouns;;;54
+item_55;серце;Ukrainian;CDI3;word;body1;nouns;nouns;;;55
+item_56;синець;Ukrainian;CDI3;word;body1;nouns;nouns;;;56
+item_57;поранення;Ukrainian;CDI3;word;body1;nouns;nouns;;;57
+item_58;скроня;Ukrainian;CDI3;word;body1;nouns;nouns;;;58
+item_59;скелет;Ukrainian;CDI3;word;body1;nouns;nouns;;;59
+item_60;артерія;Ukrainian;CDI3;word;body1;nouns;nouns;;;60
+item_61;стегно;Ukrainian;CDI3;word;body1;nouns;nouns;;;61
+item_62;вуста;Ukrainian;CDI3;word;body1;nouns;nouns;;;62
+item_63;печінка;Ukrainian;CDI3;word;body1;nouns;nouns;;;63
+item_64;подряпина;Ukrainian;CDI3;word;body1;nouns;nouns;;;64
+item_65;ребра;Ukrainian;CDI3;word;body1;nouns;nouns;;;65
+item_66;шлунок;Ukrainian;CDI3;word;body1;nouns;nouns;;;66
+item_67;вена;Ukrainian;CDI3;word;body1;nouns;nouns;;;67
+item_68;хворий;Ukrainian;CDI3;word;body2;adjectives;adjectives;;;68
+item_69;спітнілий;Ukrainian;CDI3;word;body2;adjectives;adjectives;;;69
+item_70;спраглий;Ukrainian;CDI3;word;body2;adjectives;adjectives;;;70
+item_71;здоровий;Ukrainian;CDI3;word;body2;adjecitves;adjectives;;;71
+item_72;втомлений;Ukrainian;CDI3;word;body2;adjectives;adjectives;;;72
+item_73;боліти;Ukrainian;CDI3;word;body3;verbs;verbs;;;73
+item_74;гоїтися;Ukrainian;CDI3;word;body3;verbs;verbs;;;74
+item_75;кашляти;Ukrainian;CDI3;word;body3;verbs;verbs;;;75
+item_76;пчихати;Ukrainian;CDI3;word;body3;verbs;verbs;;;76
+item_77;потіти;Ukrainian;CDI3;word;body3;verbs;verbs;;;77
+item_78;шморгати;Ukrainian;CDI3;word;body3;verbs;verbs;;;78
+item_79;бакалія;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;79
+item_80;борщ;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;80
+item_81;черешня;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;81
+item_82;диня;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;82
+item_83;грушка;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;83
+item_84;вкусити (яблуко);Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;84
+item_85;чорниці;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;85
+item_86;плита;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;86
+item_87;майонез;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;87
+item_88;малина;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;88
+item_89;гірчиця;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;89
+item_90;сковорідка;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;90
+item_91;духовка;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;91
+item_92;родзинки;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;92
+item_93;рогалик;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;93
+item_94;смак;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;94
+item_95;торт;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;95
+item_96;вишня;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;96
+item_97;запах;Ukrainian;CDI3;word;kitchen1;nouns;nouns;;;97
+item_98;гіркий;Ukrainian;CDI3;word;kitchen2;adjectives;adjectives;;;98
+item_99;кислий;Ukrainian;CDI3;word;kitchen2;adjectives;adjectives;;;99
+item_100;пікантний;Ukrainian;CDI3;word;kitchen2;adjectives;adjectives;;;100
+item_101;припалений;Ukrainian;CDI3;word;kitchen2;adjectives;adjectives;;;101
+item_102;пустий;Ukrainian;CDI3;word;kitchen2;adjectives;adjectives;;;102
+item_103;солодкий;Ukrainian;CDI3;word;kitchen2;adjectives;adjectives;;;103
+item_104;солоний;Ukrainian;CDI3;word;kitchen2;adjectives;adjectives;;;104
+item_105;смачний;Ukrainian;CDI3;word;kitchen2;adjectives;adjectives;;;105
+item_106;готувати;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;106
+item_107;годувати;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;107
+item_108;чистити;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;108
+item_109;відціджувати;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;109
+item_110;охолоджувати;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;110
+item_111;різати;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;111
+item_112;лизати;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;112
+item_113;підігрівати;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;113
+item_114;сікти;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;114
+item_115;цукрувати;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;115
+item_116;смакувати;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;116
+item_117;смажити;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;117
+item_118;солити;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;118
+item_119;збивати;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;119
+item_120;розтерати;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;120
+item_121;потовкти;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;121
+item_122;пекти;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;122
+item_123;нюхати;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;123
+item_124;наливати;Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;124
+item_125;мити (посуд);Ukrainian;CDI3;word;kitchen3;verbs;verbs;;;125
+item_126;мрія;Ukrainian;CDI3;word;mental1;nouns;nouns;;;126
+item_127;надія;Ukrainian;CDI3;word;mental1;nouns;nouns;;;127
+item_128;обіцянка;Ukrainian;CDI3;word;mental1;nouns;nouns;;;128
+item_129;думка;Ukrainian;CDI3;word;mental1;nouns;nouns;;;129
+item_130;сон;Ukrainian;CDI3;word;mental1;nouns;nouns;;;130
+item_131;переконаний;Ukrainian;CDI3;word;mental2;adjectives;adjectives;;;131
+item_132;розумний;Ukrainian;CDI3;word;mental2;adjectives;adjectives;;;132
+item_133;шалений;Ukrainian;CDI3;word;mental2;adjectives;adjectives;;;133
+item_134;шалений;Ukrainian;CDI3;word;mental2;adjectives;adjectives;;;134
+item_135;відчувати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;135
+item_136;читати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;136
+item_137;брехати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;137
+item_138;рахувати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;138
+item_139;мріяти;Ukrainian;CDI3;word;mental3;verbs;verbs;;;139
+item_140;помилятися;Ukrainian;CDI3;word;mental3;verbs;verbs;;;140
+item_141;думати про..;Ukrainian;CDI3;word;mental3;verbs;verbs;;;141
+item_142;обіцяти;Ukrainian;CDI3;word;mental3;verbs;verbs;;;142
+item_143;очікувати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;143
+item_144;виявлятися;Ukrainian;CDI3;word;mental3;verbs;verbs;;;144
+item_145;застерігати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;145
+item_146;обманювати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;146
+item_147;писати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;147
+item_148;нагадувати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;148
+item_149;роздумувати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;149
+item_150;розуміти;Ukrainian;CDI3;word;mental3;verbs;verbs;;;150
+item_151;вважати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;151
+item_152;сподіватися;Ukrainian;CDI3;word;mental3;verbs;verbs;;;152
+item_153;старатися;Ukrainian;CDI3;word;mental3;verbs;verbs;;;153
+item_154;снитися;Ukrainian;CDI3;word;mental3;verbs;verbs;;;154
+item_155;пояснювати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;155
+item_156;вчити(ся);Ukrainian;CDI3;word;mental3;verbs;verbs;;;156
+item_157;вдавати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;157
+item_158;вірити;Ukrainian;CDI3;word;mental3;verbs;verbs;;;158
+item_159;здаватися;Ukrainian;CDI3;word;mental3;verbs;verbs;;;159
+item_160;вияснити;Ukrainian;CDI3;word;mental3;verbs;verbs;;;160
+item_161;уявляти собі;Ukrainian;CDI3;word;mental3;verbs;verbs;;;161
+item_162;(за)пам'ятати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;162
+item_163;забувати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;163
+item_164;задуматися;Ukrainian;CDI3;word;mental3;verbs;verbs;;;164
+item_165;вгадувати;Ukrainian;CDI3;word;mental3;verbs;verbs;;;165
+item_166;за(губити)ся;Ukrainian;CDI3;word;mental3;verbs;verbs;;;166
+item_167;гнів;Ukrainian;CDI3;word;emotion1;nouns;nouns;;;167
+item_168;несподіванка;Ukrainian;CDI3;word;emotion1;nouns;nouns;;;168
+item_169;нудьга;Ukrainian;CDI3;word;emotion1;nouns;nouns;;;169
+item_170;огида!;Ukrainian;CDI3;word;emotion1;nouns;nouns;;;170
+item_171;сором;Ukrainian;CDI3;word;emotion1;nouns;nouns;;;171
+item_172;вітання;Ukrainian;CDI3;word;emotion1;nouns;nouns;;;172
+item_173;допитливий;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;173
+item_174;цікавий;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;174
+item_175;гордий;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;175
+item_176;хоробрий;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;176
+item_177;грізний;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;177
+item_178;несміливий;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;178
+item_179;нудний;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;179
+item_180;ображений;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;180
+item_181;бридкий;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;181
+item_182;сміливий;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;182
+item_183;огидний;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;183
+item_184;наляканий;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;184
+item_185;роздратований;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;185
+item_186;смішний;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;186
+item_187;сумний;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;187
+item_188;страшний;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;188
+item_189;щасливий;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;189
+item_190;веселий;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;190
+item_191;розлючений;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;191
+item_192;злющий;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;192
+item_193;кумедний;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;193
+item_194;задоволений;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;194
+item_195;неочікуваний;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;195
+item_196;знервований;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;196
+item_197;здивований;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;197
+item_198;зловмисний;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;198
+item_199;стурбований;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;199
+item_200;набридливий;Ukrainian;CDI3;word;emotion2;adjectives;adjectives;;;200
+item_201;піклуватися;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;201
+item_202;дражнити;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;202
+item_203;гладити;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;203
+item_204;гніватися;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;204
+item_205;любити;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;205
+item_206;переживати;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;206
+item_207;ненавидіти;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;207
+item_208;нудьгувати;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;208
+item_209;втішати;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;209
+item_210;обіймати;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;210
+item_211;опікуватися;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;211
+item_212;сумувати;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;212
+item_213;обожнювати;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;213
+item_214;злитися;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;214
+item_215;соромитися;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;215
+item_216;жаліти;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;216
+item_217;безпорядок;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;217
+item_218;плакса;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;218
+item_219;цифра;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;219
+item_220;стоматолог;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;220
+item_221;сон (після обіду);Ukrainian;CDI3;word;child_world1;nouns;nouns;;;221
+item_222;кабан;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;222
+item_223;фільм;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;223
+item_224;голяк;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;224
+item_225;кут;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;225
+item_226;клей;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;226
+item_227;коло;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;227
+item_228;розмальовка;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;228
+item_229;комар;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;229
+item_230;риска;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;230
+item_231;крапка;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;231
+item_232;хованка;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;232
+item_233;квадрат;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;233
+item_234;цифра;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;234
+item_235;лінійка;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;235
+item_236;буква;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;236
+item_237;маска;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;237
+item_238;хвіст;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;238
+item_239;обкладинк;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;239
+item_240;коло;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;240
+item_241;оса;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;241
+item_242;комаха;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;242
+item_243;вівцїя;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;243
+item_244;пісенька;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;244
+item_245;майданчик;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;245
+item_246;порядок;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;246
+item_247;вистава;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;247
+item_248;бджола;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;248
+item_249;розділ;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;249
+item_250;слово;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;250
+item_251;дракон;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;251
+item_252;сторінка;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;252
+item_253;склад;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;253
+item_254;трикутник;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;254
+item_255;віршик;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;255
+item_256;знак оклику;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;256
+item_257;вираз;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;257
+item_258;жарт;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;258
+item_259;укол;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;259
+item_260;зернятко;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;260
+item_261;знак питання;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;261
+item_262;тварина;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;262
+item_263;дорослий;Ukrainian;CDI3;word;child_world2;adjectives;adjectives;;;263
+item_264;голий;Ukrainian;CDI3;word;child_world2;adjectives;adjectives;;;264
+item_265;чарівний;Ukrainian;CDI3;word;child_world2;adjectives;adjectives;;;265
+item_266;карнавал;Ukrainian;CDI3;word;child_world2;adjectives;adjectives;;;266
+item_267;вдітий;Ukrainian;CDI3;word;child_world2;adjectives;adjectives;;;267
+item_268;зачарований;Ukrainian;CDI3;word;child_world2;adjectives;adjectives;;;268
+item_269;розмальовувати;Ukrainian;CDI3;word;child_world3;verbs;verbs;;;269
+item_270;ліпити;Ukrainian;CDI3;word;child_world3;verbs;verbs;;;270
+item_271;спатки;Ukrainian;CDI3;word;child_world3;verbs;verbs;;;271
+item_272;рахувати;Ukrainian;CDI3;word;child_world3;verbs;verbs;;;272
+item_273;ночувати;Ukrainian;CDI3;word;child_world3;verbs;verbs;;;273
+item_274;ділитися;Ukrainian;CDI3;word;child_world3;verbs;verbs;;;274
+item_275;садити;Ukrainian;CDI3;word;child_world3;verbs;verbs;;;275
+item_276;програвати;Ukrainian;CDI3;word;child_world3;verbs;verbs;;;276
+item_277;рости;Ukrainian;CDI3;word;child_world3;verbs;verbs;;;277
+item_278;замазати(ся);Ukrainian;CDI3;word;child_world3;verbs;verbs;;;278
+item_279;вигравати;Ukrainian;CDI3;word;child_world3;verbs;verbs;;;279
+item_280;чарувати;Ukrainian;CDI3;word;child_world3;verbs;verbs;;;280
+item_281;жартувати;Ukrainian;CDI3;word;child_world3;verbs;verbs;;;281
+item_2;А. Приїде тітка. Будемо гратися.%Б. Прийде тітка і ми будемо гратися.;Ukrainian;CDI3;alternatives;grupa3;;;;;2
+item_16;А. Тато любить вареники.%Б. Тато сказав, що любить вареники.;Ukrainian;CDI3;alternatives;grupa1;;;;;16
+item_19;А. Я маю мішок (кульок).%Б. У мене є (мішок) кульок з взуттям.;Ukrainian;CDI3;alternatives;grupa3;;;;;19
+item_18;А. Я хочу бутерброд із сиром.%Б. Я хотів (хотіла) би бутерброд із сиром.;Ukrainian;CDI3;alternatives;grupa1;;;;;18
+item_13;А. Тато прийде. Нагодує кота.%Б. Як тато прийде, то погодує кота.;Ukrainian;CDI3;alternatives;grupa1;;;;;13
+item_8;А. Бабуся дала мені книжечку. Роздивляюся книжечку.%Б. Я дивлюся книжку, яку мені дала бабуся.;Ukrainian;CDI3;alternatives;grupa3;;;;;8
+item_1;А. Мама спить.%Б. Мама спить, бо втомилася.;Ukrainian;CDI3;alternatives;grupa2;;;;;1
+item_17;А. Я бачу птахів.%Б. Я бачу птахів, що літають у небі.;Ukrainian;CDI3;alternatives;grupa1;;;;;17
+item_9;А. Буде тепло. Я піду гуляти.%Б. Я піду гуляти, якщо буде тепло.;Ukrainian;CDI3;alternatives;grupa2;;;;;9
+item_7;A. Наклейки криво.%Б. Наклейки наклеєні криво.;Ukrainian;CDI3;alternatives;grupa3;;;;;7
+item_21;А. Відкрий воду.%Б. Відкрути воду, щоб я помила (помив) руки.;Ukrainian;CDI3;alternatives;grupa1;;;;;21
+item_12;А. Гарна погода і ми підемо гуляти.%Б. Погода гарна, тому ми підемо гуляти.;Ukrainian;CDI3;alternatives;grupa2;;;;;12
+item_4;А. Йде дощ, і ми не підемо.%Б. Ми не підемо, бо йде дощ.;Ukrainian;CDI3;alternatives;grupa3;;;;;4
+item_20;А. Я хочу йогурт і пластівці.%Б. Я хочу йогурт з пластівцями.;Ukrainian;CDI3;alternatives;grupa2;;;;;20
+item_15;А. Братик зробив бутерброд. Братик його не їсть.%Б. Братик зробив бутерброд, але не їсть його.;Ukrainian;CDI3;alternatives;grupa1;;;;;15
+item_3;А. Прийде бабуся.%Б. Бабуся сказала, що прийде.;Ukrainian;CDI3;alternatives;grupa2;;;;;3
+item_11;А. Буде дощ. Ми залишимося вдома.%Б. Якщо буде дощ, ми залишимося вдома.;Ukrainian;CDI3;alternatives;grupa2;;;;;11
+item_10;А. Я хочу банан.%Б. Я хотів (хотіла) би банан.;Ukrainian;CDI3;alternatives;grupa3;;;;;10
+item_14;А. Я їхала (їхав) в садок і співала (співав) пісеньку.%Б. Як я їхав (їхала) в садок, я співав (співала) пісеньку.;Ukrainian;CDI3;alternatives;grupa2;;;;;14
+item_6;А. Я йшов (йшла) додому. Я бачив (дачила) друга.%Б. Повертаючись додому, я побачив друга.;Ukrainian;CDI3;alternatives;grupa1;;;;;6
+item_5;А. Я мию ноги. Вони будуть чисті.%Б. Я мию ноги, щоб вони були чисті.;Ukrainian;CDI3;alternatives;grupa3;;;;;5
+item_36;Чи використовує ваша дитина слово «отож», щоб зв’язати два речення, наприклад «Гарна погода, отож підемо погуляти»?;Ukrainian;CDI3;yesNo;wprost;;;;;36
+item_29;Чи використовує ваша дитина слова «як» і/або «коли», щоб зв'язати два речення, наприклад «як (коли) я прийду додому, я буду вечеряти»?;Ukrainian;CDI3;yesNo;wprost;;;;;29
+item_35;Чи ваша дитина розповідає про те, що хтось сказав, кажучи «... він сказав (вона сказала), що ...»?;Ukrainian;CDI3;yesNo;wprost;;;;;35
+item_24;Чи використовує ваша дитина слово «тому що», щоб поєднати два речення, наприклад «Ми не підемо, тому що йде дощ»?;Ukrainian;CDI3;yesNo;wprost;;;;;24
+item_26;Чи додає ваша дитина «-би», «-б», тощо до дієслів, наприклад, «я хотів би цукерку»?;Ukrainian;CDI3;yesNo;wprost;;;;;26
+item_28;Чи використовує ваша дитина слово «і», щоб поєднати два речення, наприклад «Я їм бутерброд і п’ю сік»?;Ukrainian;CDI3;yesNo;wprost;;;;;28
+item_30;Чи вживає ваша дитина слова «можна», «треба» тощо в таких реченнях, як «Я можу їсти», «Ми повинні йти»?;Ukrainian;CDI3;yesNo;wprost;;;;;30
+item_23;Чи використовує ваша дитина дієслівні форми, що закінчуються на «-ючи», наприклад «повертаючись», «розмовляючи», «водячи»?;Ukrainian;CDI3;yesNo;wprost;;;;;23
+item_34;Чи використовує ваша дитина слово «якщо», щоб поєднати два речення, наприклад «Я піду гуляти, якщо буде тепло»?;Ukrainian;CDI3;yesNo;wprost;;;;;34
+item_31;Чи використовує ваша дитина форми іменника, які відповідають на питання «Хто? Що?» Питання, що закінчуються на «-ами», наприклад «ляльками», «машинами»?;Ukrainian;CDI3;yesNo;wprost;;;;;31
+item_22;Чи використовує ваша дитина слова «яка», «який» («що») тощо, щоб поєднати два речення, наприклад, «Я їм торт, який спекла мама»?;Ukrainian;CDI3;yesNo;wprost;;;;;22
+item_27;"Чи вживає ваша дитина слова «щоб я», «щоб ти», «що я», «що ти» тощо в реченнях, наприклад: «Я хочу, щоб ти намалював ведмедика», «Увімкни світло, щоб я бачила""";Ukrainian;CDI3;yesNo;wprost;;;;;27
+item_33;Чи вживає ваша дитина слово «щоб» в таких реченнях, як «Я мию ноги, щоб вони були чистими»?;Ukrainian;CDI3;yesNo;wprost;;;;;33
+item_25;Чи використовує ваша дитина слово «але», щоб поєднати два речення, наприклад «Я шукаю плюшевого ведмедика, але не можу його знайти»?;Ukrainian;CDI3;yesNo;wprost;;;;;25
+item_32;Чи використовує ваша дитина форми іменників, що питання «про/на/в кому? чому?», що закінчуються на «-ах», наприклад, «на іграшках», «на деревах»?;Ukrainian;CDI3;yesNo;wprost;;;;;32
