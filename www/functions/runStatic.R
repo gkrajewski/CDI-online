@@ -141,9 +141,9 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
     })
     
     #Change category to previous when backBtn clicked
-    observeEvent(input$backBtn, {
-      if (reactList()$categoryNr != 1) reactList(renderCategory(input, output, reactList()$categories[reactList()$categoryNr - 1], reactList(), staticList))
-    })
+    # observeEvent(input$backBtn, {
+    #   if (reactList()$categoryNr != 1) reactList(renderCategory(input, output, reactList()$categories[reactList()$categoryNr - 1], reactList(), staticList))
+    # })
     
     #Add input saving
     inputType <- reactive({
