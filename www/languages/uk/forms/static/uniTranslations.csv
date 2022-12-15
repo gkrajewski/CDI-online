@@ -1,0 +1,14 @@
+﻿text_type;text;item_type;category
+backBtn;Скасувати;;
+nextBtn;Далі;;
+confBtn;Затвердити;;
+menuButton;Почати;start;
+modalTitle;Зауваження!;;
+commentLabel;Коментарі;;
+tooltip;Zakończenie inwentarza będzie możliwe po zatwierdzeniu wszystkich części.;end;
+header;Висновок;end;
+menuButton;Висновок;end;
+endMsgTitle;Дякуємо за заповнення!;end;
+error;Nastąpiło przerwanie połączenia. Proszę odświeżyć i spróbować ponownie. Jeśli to się powtarza, prosimy o zrobienie screena tego ekranu i wysłanie na maila multilada@psych.uw.edu.pl.;;
+refresh;Оновити;;
+inventoryOpened;Inwentarz jest już otwarty. Proszę zamknąć inwentarz jeśli jest otwarty gdzie indziej i/lub odświeżyć stronę.;;

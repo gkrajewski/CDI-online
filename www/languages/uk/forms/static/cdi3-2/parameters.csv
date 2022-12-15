@@ -1,0 +1,6 @@
+parameter;value
+email;no
+database;yes
+additionalEndMessageFromDatabase;no
+redirectionURL;https://cdi.multilada.pl/pilot-aux-uk/
+redirectionParams;run
