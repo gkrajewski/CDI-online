@@ -60,7 +60,7 @@ source(paste0(FUNCTIONS_PATH,"/readInputFile.R"))
 if (file.exists(".Renviron")) readRenviron(".Renviron")
 
 #Authenticate Sendgrid
-auth_set()
+# auth_set()
 
 #Set parameters of saving results in database
 STRING_LIMIT <- 2000
