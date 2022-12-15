@@ -47,7 +47,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
         
         #Not last not first category
         buttons <- list(
-#          actionButton("backBtn", label = staticList$txt[staticList$txt$text_type == "backBtn", "text"]),
+          actionButton("backBtn", label = staticList$txt[staticList$txt$text_type == "backBtn", "text"]),
           actionButton("nextBtn", label = staticList$txt[staticList$txt$text_type == "nextBtn", "text"])
         )
         
