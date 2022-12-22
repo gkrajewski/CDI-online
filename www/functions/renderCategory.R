@@ -39,7 +39,7 @@ renderCategory <- function(input, output, category, reactList, staticList){
 
         #Last category 
         buttons <- list(
-#          actionButton("backBtn", label = staticList$txt[staticList$txt$text_type == "backBtn", "text"]),
+          actionButton("backBtn", label = staticList$txt[staticList$txt$text_type == "backBtn", "text"]),
           actionButton("confBtn", class = "btn-primary", label = staticList$txt[staticList$txt$text_type == "confBtn", "text"])
         )
         
