@@ -178,7 +178,7 @@ item_213;обожнювати;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;213
 item_214;злитися;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;214
 item_215;соромитися;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;215
 item_216;жаліти;Ukrainian;CDI3;word;emotion3;verbs;verbs;;;216
-item_217;безпорядок;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;217
+item_217;безпорядок/безлад;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;217
 item_218;плакса;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;218
 item_219;цифра;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;219
 item_220;стоматолог;Ukrainian;CDI3;word;child_world1;nouns;nouns;;;220
@@ -228,7 +228,7 @@ item_263;дорослий;Ukrainian;CDI3;word;child_world2;adjectives;adjectives
 item_264;голий;Ukrainian;CDI3;word;child_world2;adjectives;adjectives;;;264
 item_265;чарівний;Ukrainian;CDI3;word;child_world2;adjectives;adjectives;;;265
 item_266;карнавал;Ukrainian;CDI3;word;child_world2;adjectives;adjectives;;;266
-item_267;вдітий;Ukrainian;CDI3;word;child_world2;adjectives;adjectives;;;267
+item_267;вдітий/одягнутий;Ukrainian;CDI3;word;child_world2;adjectives;adjectives;;;267
 item_268;зачарований;Ukrainian;CDI3;word;child_world2;adjectives;adjectives;;;268
 item_269;розмальовувати;Ukrainian;CDI3;word;child_world3;verbs;verbs;;;269
 item_270;ліпити;Ukrainian;CDI3;word;child_world3;verbs;verbs;;;270
@@ -264,7 +264,7 @@ item_10;А. Я хочу банан.%Б. Я хотів (хотіла) би бан
 item_14;А. Я їхала (їхав) в садок і співала (співав) пісеньку.%Б. Як я їхав (їхала) в садок, я співав (співала) пісеньку.;Ukrainian;CDI3;alternatives;grupa2;;;;;14
 item_6;А. Я йшов (йшла) додому. Я бачив (дачила) друга.%Б. Повертаючись додому, я побачив друга.;Ukrainian;CDI3;alternatives;grupa1;;;;;6
 item_5;А. Я мию ноги. Вони будуть чисті.%Б. Я мию ноги, щоб вони були чисті.;Ukrainian;CDI3;alternatives;grupa3;;;;;5
-item_36;Чи використовує ваша дитина слово «отож», щоб зв’язати два речення, наприклад «Гарна погода, отож підемо погуляти»?;Ukrainian;CDI3;yesNo;wprost;;;;;36
+item_36;Чи використовує ваша дитина слово «отже», щоб зв’язати два речення, наприклад «Гарна погода, отже підемо погуляти»?;Ukrainian;CDI3;yesNo;wprost;;;;;36
 item_29;Чи використовує ваша дитина слова «як» і/або «коли», щоб зв'язати два речення, наприклад «як (коли) я прийду додому, я буду вечеряти»?;Ukrainian;CDI3;yesNo;wprost;;;;;29
 item_35;Чи ваша дитина розповідає про те, що хтось сказав, кажучи «... він сказав (вона сказала), що ...»?;Ukrainian;CDI3;yesNo;wprost;;;;;35
 item_24;Чи використовує ваша дитина слово «тому що», щоб поєднати два речення, наприклад «Ми не підемо, тому що йде дощ»?;Ukrainian;CDI3;yesNo;wprost;;;;;24
