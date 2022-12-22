@@ -139,7 +139,6 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
     observeEvent(input$nextBtn, {
       disable("nextBtn")
       disable("backBtn")
-      Sys.sleep(3)
       if (reactList()$categoryNr < reactList()$categoriesNr) {
         reactList(renderCategory(input, output, reactList()$categories[reactList()$categoryNr + 1], reactList(), staticList))
       }
@@ -149,7 +148,6 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
      observeEvent(input$backBtn, {
        disable("backBtn")
        disable("nextBtn")
-       Sys.sleep(3)
        if (reactList()$categoryNr != 1) {
          reactList(renderCategory(input, output, reactList()$categories[reactList()$categoryNr - 1], reactList(), staticList))
        }
