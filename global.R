@@ -6,7 +6,7 @@ library(httr) #http requests
 library(lubridate) #dates
 library(fresh)
 library(shinydisconnect) #handling disconnects in a nice visual way
-library(sendgridr) #sending mails
+#library(sendgridr) #sending mails
 library(RMariaDB) #connecting with MySQL database
 library(dplyr) #preparing output file
 library(tidyr) #preparing output file
