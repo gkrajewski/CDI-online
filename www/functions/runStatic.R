@@ -142,7 +142,6 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
       if (reactList()$categoryNr < reactList()$categoriesNr) {
         reactList(renderCategory(input, output, reactList()$categories[reactList()$categoryNr + 1], reactList(), staticList))
       }
-      Sys.sleep(1)
     })
     
     #Change category to previous when backBtn clicked
@@ -152,7 +151,6 @@ runStatic <- function(input, output, session, lang, form, idx, run, urlString, f
        if (reactList()$categoryNr != 1) {
          reactList(renderCategory(input, output, reactList()$categories[reactList()$categoryNr - 1], reactList(), staticList))
        }
-       Sys.sleep(1)
      })
     
     #Add input saving
