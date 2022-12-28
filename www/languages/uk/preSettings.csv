@@ -1,5 +1,5 @@
 text_type;text
-noForm;Zła wartość parametru ‚form’ w adresie URL.
-noType;Zła wartość parametru ‚type’ w adresie URL.
-badType;Zła wartość parametru ‚type’ w adresie URL.
-errorInfo;Prosimy przekleić link poniżej i wysłać na maila multilada@psych.uw.edu.pl. Pozwoli nam to na szybszą diagnozę i naprawę błędów.
+noForm;Неправильне значення параметру 'form' в URL-адресі.
+noType;Неправильне значення параметру 'type' в URL-адресі.
+badType;Неправильне значення параметру 'type' в URL-адресі.
+errorInfo;Будь ласка, вставте посилання нижче та надішліть на електронну адресу o.belyavska@uw.edu.pl. Це дозволить нам швидше діагностувати та усувати несправності.
