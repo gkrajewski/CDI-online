@@ -14,7 +14,7 @@ noGender;Hvilket kjønn har barnet?;;
 badDate;Fødselsdatoen som du har oppgitt, tyder på at barnet ditt ikke er innenfor det aldersspennet som dette spørreskjemaet gjelder. ;;
 genders;jente, gutt;;
 commentLabel;Andre kommentarer;;
-cdiNamePrefix;Foreldrerapport for kommunikativ utvikling;;
+cdiNamePrefix;Foreldrerapport om kommunikativ utvikling;;
 tooltip;Du kan sende inn svarene dine når alle delene av skjemaet er fylt ut.;end;
 header;Send inn svarene dine;end;
 menuButton;Send inn  ;end;
