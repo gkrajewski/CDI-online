@@ -1,3 +1,6 @@
 parameter;value
 email;no
-database;no
+database;yes
+additionalEndMessageFromDatabase;no
+redirectionURL;https://cdi.multilada.pl/screentime-no/
+redirectionParams;id,run
