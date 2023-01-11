@@ -1,13 +1,13 @@
 text_type;text;item_type;category
 cdiNameSufix;Språk hos barn 30–48 måneder;;
-longText;(Introduction here?);start;
-menuButton;(Label needed);communication_level;
+longText;Her er skjemaet om barns språkutvikling hos barn i alderen 30–48 måneder.;start;
+menuButton;Kommunikasjonsnivå;communication_level;
 header;Barnets allmenne kommunikasjonsnivå;communication_level;
 longText;"Hvilket av utsagnene nedenfor passer best for barnet ditt?";communication_level;
 warning;"Bolded looks better but is less consistent with other questions?";communication_level;
-help;"Explain conditioning here and in tooltips for inactive buttons above";communication_level;
+help;"Om du krysset av på de to første alternativene, er du ferdig. Om du krysset av for de siste, går du videre i skjemaet. Trykk bekreft nedenfor.";communication_level;
 menuButton;Ord;word;
-tooltip;"Conditional on the first question";word;
+tooltip;"Dette avsnittet åpnes avhengig av svarene dine i “Kommunikasjonsnivå”";word;
 header;Sjekkliste over ordforrådet;word;
 longText;"Nedenfor følger lister med ord fra fire områder. Kryss av for hvert ord du har hørt barnet ditt si spontant. (Du skal altså ikke be barnet ditt si ordet.) Det spiller ingen rolle om barnet ditt uttaler ordene annerledes (f.eks. «raff» for «giraff» eller «mek» for «melk»). Du skal ikke krysse av hvis barnet sier et ord som betyr det samme (f.eks. «kjele» for «gryte»). Mange barn kan bare noen av ordene. Første område er ord som har med mat å gjøre, og det andre er ord om kroppen. De neste områdene handler om tanker og ideer og om følelser.";word;firstPage
 catHeader;Ord om mat;word;eating
@@ -15,19 +15,19 @@ catHeader;Ord om kropp;word;body_parts
 catHeader;Ord om tanker og ideer;word;thoughts_ideas
 catHeader;Ord om følelser;word;feelings
 help;"Sjekk om du har gått glipp av noen av sidene før du bekrefter. Er du sikker på at du har krysset av for alle ordene barnet ditt sier?";word;feelings
-menuButton;Setningskompleksitet;complexity;
-tooltip;"Conditional on the first question";complexity;
-header;Setningskompleksitet (doesn't have to be the same as the button above);complexity;
+menuButton;Kompleksitet;complexity;
+tooltip;"Dette avsnittet åpnes avhengig av svarene dine i “Kommunikasjonsnivå”";complexity;
+header;Setningskompleksitet;complexity;
 longText;"Barn uttrykker seg ofte i korte setninger, men kan av og til også bruke mer avanserte uttrykk. Angi hvilket alternativ som ligner mest på slik barnet ditt snakker akkurat nå. Det uttrykket vi spør etter, er markert i <b>fet skrift</b>. Parentes viser til variasjon i betydning.";complexity;
 choiceNames;Alltid A, Oftest A, Like ofte, Oftest B, Alltid B;complexity;
-menuButton;Setningsoppbygging;grammar;
-tooltip;"Conditional on the first question";grammar;
-header;Setningsoppbygging (button label may be shorter and this header may be longer);grammar;
+menuButton;Oppbygging;grammar;
+tooltip;"Dette avsnittet åpnes avhengig av svarene dine i “Kommunikasjonsnivå”";grammar;
+header;Setningsoppbygging;grammar;
 longText;"Kryss av for hvor ofte barnet ditt snakker slik det er beskrevet.";grammar;
 choiceNames;Aldri, Noen ganger i måneden, Flere ganger i uka, Hver dag;grammar;
 menuButton;Uttale;pronunciation;
 header;Uttale;pronunciation;
-longText;"Har personer som ikke kjenner barnet ditt, vansker med å forstå hva han/hun sier?";pronunciation;pronunciation1
+longText;"Har personer som ikke kjenner barnet ditt, vansker med å forstå hva han/hun/hen sier?";pronunciation;pronunciation1
 longText;"Hvordan vil du bedømme uttalen til barnet ditt i forhold til andre barn i samme alder?";pronunciation;pronunciation2
 menuButton;Språk om språk;metalinguistic;
 header;Språk om språk;metalinguistic;
