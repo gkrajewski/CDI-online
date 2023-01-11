@@ -1,10 +1,8 @@
 text_type;text;item_type;category
 cdiNameSufix;Språk hos barn 30–48 måneder;;
-longText;Her er skjemaet om barns språkutvikling hos barn i alderen 30–48 måneder.;start;
 menuButton;Kommunikasjonsnivå;communication_level;
 header;Barnets allmenne kommunikasjonsnivå;communication_level;
-longText;"Hvilket av utsagnene nedenfor passer best for barnet ditt?";communication_level;
-warning;"Bolded looks better but is less consistent with other questions?";communication_level;
+warning;"Hvilket av utsagnene nedenfor passer best for barnet ditt?";communication_level;
 help;"Om du krysset av på de to første alternativene, er du ferdig. Om du krysset av for de siste, går du videre i skjemaet. Trykk bekreft nedenfor.";communication_level;
 menuButton;Ord;word;
 tooltip;"Dette avsnittet åpnes avhengig av svarene dine i “Kommunikasjonsnivå”";word;
@@ -32,4 +30,3 @@ longText;"Hvordan vil du bedømme uttalen til barnet ditt i forhold til andre ba
 menuButton;Språk om språk;metalinguistic;
 header;Språk om språk;metalinguistic;
 choiceNames;Ja, Nei;metalinguistic;
-longText;"Do we want to keep the Yes/No format or do we prefer to convert it to single checkboxes?";metalinguistic;
