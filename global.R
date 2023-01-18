@@ -57,7 +57,7 @@ source(paste0(FUNCTIONS_PATH,"/redirect.R"))
 source(paste0(FUNCTIONS_PATH,"/readInputFile.R"))
 
 #Load file with secret variables
-#if (file.exists(".Renviron")) readRenviron(".Renviron")
+if (file.exists(".Renviron")) readRenviron(".Renviron")
 
 #Authenticate Sendgrid
 # auth_set()
