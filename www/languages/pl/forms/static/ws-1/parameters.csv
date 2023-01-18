@@ -1,6 +1,6 @@
 parameter;value
-email;yes
+email;no
 database;yes
 additionalEndMessageFromDatabase;no
 redirectionURL;https://cdi.multilada.pl/wp-1-1-aux-pl/
-redirectionParams;id,run
+redirectionParams;id,form,run

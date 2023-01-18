@@ -1,5 +1,5 @@
 item_id;definition;type;category;lexical_category;lexical_class;uni_lemma;complexity_category
-item_1;"Barnet mitt snakker ennå ikke."%"Barnet mitt snakker, men jeg forstår ham/henne/hen ikke."%"Barnet mitt snakker i ettordsytringer som «bamse» eller «se»."%"Barnet mitt snakker i ytringer på to-tre ord som «få bamse» eller «vil ha is»."%"Barnet mitt snakker i korte, fullstendige setninger som «jeg fikk en bil» eller «kan du hoppe?»."%"Barnet mitt snakker ofte i lange setninger som «jeg så en hund på gaten» eller «da jeg var i barnehagen lekte jeg med klosser».";communication_level;;;;;
+item_1;"Barnet mitt snakker ennå ikke."%"Barnet mitt snakker, men jeg forstår ham/henne/hen ikke."%"Barnet mitt snakker i ettordsytringer som «bamse» eller «se»."%"Barnet mitt snakker i ytringer på to-tre ord som «få bamse» eller «vil ha is»."%"Barnet mitt snakker i korte, fullstendige setninger som «jeg fikk en bil» eller «kan du hoppe?»."%"Barnet mitt snakker ofte i lange setninger som «jeg så en hund på gaten» eller «da jeg var i barnehagen, lekte jeg med klosser».";communication_level;;;;;
 item_2;Blande;word;eating;predicates;verbs;;
 item_3;Brenne (seg);word;eating;predicates;verbs;;
 item_4;Vaske opp;word;eating;predicates;verbs;;
@@ -70,7 +70,7 @@ item_68;Undersøke;word;thoughts_ideas;predicates;verbs;;
 item_69;Enig;word;thoughts_ideas;predicates;adjectives;;
 item_70;Oppdage;word;thoughts_ideas;predicates;verbs;;
 item_71;Advare;word;thoughts_ideas;predicates;verbs;;
-item_72;(Gå seg) vill/Bort;word;thoughts_ideas;predicates;verbs;;
+item_72;(Gå seg) vill/bort;word;thoughts_ideas;predicates;verbs;;
 item_73;Ønske;word;thoughts_ideas;predicates;verbs;;
 item_74;Sint;word;feelings;predicates;adjectives;;
 item_75;Flau;word;feelings;predicates;adjectives;;
@@ -101,7 +101,7 @@ item_99;Angre;word;feelings;predicates;verbs;;
 item_100;Ekkelt;word;feelings;predicates;adjectives;;
 item_101;Elske;word;feelings;predicates;verbs;;
 item_102;"A: Jeg vil ha dukken <br> B: Jeg vil ha dukken <u>som kan lukke øynene</u>";complexity;;;;;
-item_103;"A: Jeg har en far (slektning) <br> B: Jeg har en far (slektning) <u>som bor</u> i Drammen (sted)";complexity;;;;;
+item_103;"A: Jeg har en farfar (slektning) <br> B: Jeg har en farfar (slektning) <u>som bor</u> i Drammen (sted)";complexity;;;;;
 item_104;"A: Vi skal dra <br> B: Vi skal dra <u>til</u> mormor";complexity;;;;;
 item_105;"A: Jeg rydder senere <br> B: Jeg rydder senere <u>når</u> Eva har gått";complexity;;;;;
 item_106;"A: Skru på lyset <br> B: Skru på lyset <u>så</u> jeg kan se";complexity;;;;;
@@ -116,7 +116,7 @@ item_114;"Bruker barnet ditt ordene <u>mer</u> og <u>mest</u> for å sammenligne
 item_115;"Bruker barnet ditt ordene <u>mindre</u> og <u>minst</u> for å sammenligne mengder (f.eks. <u>minst</u> grøt og <u>mindre</u> melk)?";grammar;;;;;
 item_116;"<u>Mindre</u> og <u>minst</u> kan også brukes for å sammenligne størrelsen på ting, f.eks. den røde stolen er <u>mindre</u> enn den svarte. Gjør barnet ditt det?";grammar;;;;;
 item_117;"Bruker barnet ditt passiv form, f.eks. maten <u>lages av</u> pappa eller gutten <u>ble dyttet av</u> jenta?";grammar;;;;;
-item_118;"Forteller barnet ditt om noe han/hun/hen har gjort ved å binde setninger sammen med <u>og</u> til lange setninger? (F.eks. vi badet <u>og</u> spiste is <u>og</u> spilte fotball <u>og</u> lekte indianer.)";grammar;;;;;
+item_118;"Forteller barnet ditt om noe han/hun/hen har gjort ved å binde setninger sammen med <u>og</u> til lange setninger? (F.eks. vi badet <u>og</u> spiste is <u>og</u> spilte fotball <u>og</u> lekte politi.)";grammar;;;;;
 item_119;"Bruker barnet ditt <u>men</u> når han/hun/hen forteller om noe han/hun/hen har vært med på? (F.eks. vi badet, <u>men</u> Stine var ikke med)";grammar;;;;;
 item_120;Nei, aldri%Ja, av og til%Ja, ofte%Ja, alltid;pronunciation;pronunciation1;;;;
 item_121;Litt yngre barn%Barn i samme alder%Litt eldre barn;pronunciation;pronunciation2;;;;

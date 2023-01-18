@@ -62,3 +62,5 @@ catHeader;Zabawa lalką lub misiem: czynności opiekuńcze;gestures;gestures_par
 instr;Poniżej wypisano czynności opiekuńcze, jakie dzieci wykonują bawiąc się lalkami lub misiami. Proszę zaznaczyć te z nich, które zaobserwowali Państwo u swego dziecka.;gestures;gestures_parent
 catHeader;Naśladowanie innych czynności dorosłych (na przedmiotach lub zabawkach);gestures;gestures_adult
 instr;Czy Państwa dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;gestures;gestures_adult
+endMsgText;"Bardzo dziękujemy za wypełnienie kwestionariusza! Po kliknięciu przycisku „Dalej” zostaną Państwo automatycznie przekierowani do formularza, w którym poprosimy Państwa o dane kontaktowe, żeby móc przekazać Państwu drobny upominek od zespołu badawczego.";end;
+redirectionBtn;Dalej;end;

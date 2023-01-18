@@ -6,7 +6,7 @@ library(httr) #http requests
 library(lubridate) #dates
 library(fresh)
 library(shinydisconnect) #handling disconnects in a nice visual way
-library(sendgridr) #sending mails
+#library(sendgridr) #sending mails
 library(RMariaDB) #connecting with MySQL database
 library(dplyr) #preparing output file
 library(tidyr) #preparing output file
@@ -60,7 +60,7 @@ source(paste0(FUNCTIONS_PATH,"/readInputFile.R"))
 #if (file.exists(".Renviron")) readRenviron(".Renviron")
 
 #Authenticate Sendgrid
-auth_set()
+# auth_set()
 
 #Set parameters of saving results in database
 STRING_LIMIT <- 2000

@@ -50,3 +50,5 @@ catHeader;Wypowiedzenia wielowyrazowe;sentences;sentences10
 instr;Proszę podać przykłady rzeczywistych wypowiedzeń dziecka złożonych z dwu lub więcej wyrazów:;sentences;sentences10
 catHeader ;Trzy najdłuższe zdania ;sentences;sentences3
 instr ;Proszę podać przykłady trzech najdłuższych zdań, jakie ostatnio słyszeli Państwo od swego dziecka. (Chodzi o wypowiedzi samodzielne, a nie wierszyki, piosenki itp.);sentences;sentences3
+endMsgText;"Bardzo dziękujemy za wypełnienie kwestionariusza! Po kliknięciu przycisku „Dalej” zostaną Państwo automatycznie przekierowani do formularza, w którym poprosimy Państwa o dane kontaktowe, żeby móc przekazać Państwu drobny upominek od zespołu badawczego.";end;
+redirectionBtn;Dalej;end;
