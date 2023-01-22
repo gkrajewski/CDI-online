@@ -52,5 +52,4 @@ catHeader;Å leke at man er mor eller far;gestures;gestures_parent
 instr;Her er ting som små barn av og til gjør med kosedyr eller dukker. Kryss av de handlingene du har sett ditt barn gjøre.;gestures;gestures_parent
 catHeader;Herme etter det de voksne gjør;gestures;gestures_adult
 instr;Gjør barnet ditt noe av det følgende, eller prøver han/hun å gjøre det?;gestures;gestures_adult
-endMsgText;"Takk for at du fylte ut dette spørreskjemaet! Når du trykker på “Neste”, får du informasjon om hvordan du kan få en hilsen fra oss som du skal få som takk for hjelpen.";end;
-redirectionBtn;Neste;end;
+redirectionText;"Når du trykker på «Neste», får du informasjon om hvordan du kan få en hilsen fra oss som du skal få som takk for hjelpen.";end;
