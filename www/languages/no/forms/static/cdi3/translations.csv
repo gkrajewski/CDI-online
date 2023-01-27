@@ -2,6 +2,7 @@ text_type;text;item_type;category
 cdiNameSufix;Språk hos barn 30–48 måneder;;
 menuButton;Kommunikasjonsnivå;communication_level;
 header;Barnets allmenne kommunikasjonsnivå;communication_level;
+longText;VIKTIG: Du kan når som helst ta en pause i utfyllingen og du vil fremdeles beholde svarene. For å gå tilbake til skjemaet (f.eks. på en annen enhet), må du bruke nøyaktig samme lenke. Du kan ikke ha skjemaet oppe på flere enheter samtidig.;communication_level;
 warning;"Hvilket av utsagnene nedenfor passer best for barnet ditt?";communication_level;
 help;"Om du krysset av på de to første alternativene, er du ferdig. Om du krysset av for de siste, går du videre i skjemaet. Trykk bekreft nedenfor.";communication_level;
 menuButton;Ord;word;
