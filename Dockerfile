@@ -44,10 +44,8 @@ RUN R -e "install.packages('shinycssloaders', repos='http://cran.rstudio.com/')"
 
 # make all app files readable (solves issue when dev in Windows, but building in Ubuntu)
 RUN mkdir /srv/shiny-server/cdi
-RUN mkdir /srv/shiny-server/cdi/answers
-RUN mkdir /srv/shiny-server/cdi/designs
-RUN mkdir /srv/shiny-server/cdi/subjects
-RUN mkdir /srv/shiny-server/cdi/usersProgress
+RUN mkdir /srv/shiny-server/cdi/CATdesigns
+RUN mkdir /srv/shiny-server/cdi/CATsubjects
 RUN mkdir /srv/shiny-server/cdi/logs
 
 # COPY . /srv/shiny-server/
