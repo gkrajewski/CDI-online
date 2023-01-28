@@ -2,7 +2,7 @@ ui <- fluidPage(
 
   #Needed to be able to use shinyjs library
   useShinyjs(), 
-  tags$script(src = "disabler.js"),
+  tags$script(src = "disabler_1_10_01.js"),
   
   #Set main UI theme
   theme = shinytheme("flatly"),
