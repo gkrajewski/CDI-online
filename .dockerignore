@@ -3,11 +3,9 @@
 .Renviron
 .Rhistory
 rsconnect/
-answers/
-usersProgress/
 CATsubjects/
 logs/
 CATdesigns/
-.DS_Store
+*/.DS_Store
 *.Rproj
 .Rproj.user/

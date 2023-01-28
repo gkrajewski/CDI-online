@@ -1,15 +1,24 @@
 let lock = false;
 
+get_buttons = function(){
+	var btns = []
+	for (let button of document.getElementsByTagName('button')){
+		if  (["backBtn", "nextBtn", "confBtn"].includes(button.id)){
+			btns.push(button);
+		}
+	}
+	return btns;
+}
+
 check_buttons = function(){
 	//console.log("Checking buttons...");
-	var buttons = document.getElementsByTagName('button');
-	for (button of buttons){
+	buttons = get_buttons();
+	for (let button of buttons){
 		button.addEventListener("click", button_disabler);
 	}
 
-	buttons = document.getElementsByTagName('button');
-
-	for (button of buttons){
+	buttons = get_buttons();
+	for (let button of buttons){
 		if (lock){
 			button.disabled = true;
 		} else {
