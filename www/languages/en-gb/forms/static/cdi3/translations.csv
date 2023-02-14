@@ -2,8 +2,16 @@ text_type;text;item_type;category
 cdiNamePrefix;MacArthur Communicative Development Inventory: U.K. Short Form;;
 cdiNameSufix;3-year vocabulary measure;;
 longText;This is the MacArthur Communicative Development Inventory: U.K. Short Form, 3-year vocabulary measure, which was created by Ginette Dionne (Université Laval), Philip S Dale (University of New Mexico), Michel Boivin (Laval University), and Robert Plomin (King's College London) and is partly based on the American questionnaire concerning speech development in young children. In this questionnaire we are asking parents (or other guardians) of 3 years old children learning to speak English, who will tell us what words their children can say. If you decide you do not want to share your answers with us before submitting the questionnaire, simply close your browser. If you change your mind afterwards, just let us know. You can do this without giving any explanation.;start;
-header ;Word list ;word;
+header;Word list ;word;
 menuButton;Words;word;
 longText;In this section, you will be asked about words that your child UNDERSTANDS AND SAYS. Your child UNDERSTANDS AND SAYS a word on the list if they know what the word means AND they say it by themselves. Here are some examples. DO check the box if your child says the word when trying to name an object or describe something that happened. DO check the box if you think he/she has a meaning for that word. It's fine if your child can't say the whole word or says it his/her own ‘special’ way. If you use another word in your family (e.g. Nana for Grandma), that is ok too. Different words (e.g. ‘baby’ for ‘doll’), local or dialect words (e.g. ‘bairn’ for ‘baby’), baby-talk words (e.g. ‘goggy’ for ‘dog’) are OK. DON'T check the box if your child is just stringing sounds together. This is not a real word that means something. DON'T ask your child to repeat the words on the list. This doesn't count! Please do NOT include foreign words (e.g. ‘aqua’ for ‘water’). If your child knows the word in English as well, that's OK, but not if they only say it in the other language. If your child understands or says a DIFFERENT WORD please check in the appropriate box and write down your word in the comment box at the bottom of each page. If you have any additional comments, you can type them in the box at the bottom of the page too.;word;
 warning;NOTE: This questionnaire is for children of many ages and it has a long list of words. Your child may not be able to understand or say a lot of the words on the form. That is perfectly fine! ;word;
-;;word;
+header;Combining words;combine;
+menuButton;Combining words;combine;
+choiceNames;Yes, No;combine;
+header;Complexity;complexity;
+menuButton;Complexity;complexity;
+instr;In each of the following pairs of examples, please mark the one that sounds MOST like the way your child talks right now.;complexity;
+header;Abstract language;abstract;
+menuButton;Abstract language;abstract;
+choiceNames;Yes, No;abstract;
