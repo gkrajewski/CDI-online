@@ -1,7 +1,7 @@
 type,category,input_type,comment,css_class,binded_types,initially_disabled,conditions,answers_to_enable
-start,,demographic,FALSE,,,FALSE,"word,combine,complexity,abstract",all
+start,,demographic,FALSE,,,FALSE,"word,combine,abstract",all
 word,,oneCheckboxGroup,TRUE,threeColumns,,TRUE,,
-combine,,radio,FALSE,,,TRUE,,
+combine,,radio,FALSE,,,TRUE,complexity,1
 complexity,,radioAlt,FALSE,,,TRUE,,
 abstract,,radio,FALSE,,,TRUE,,
 end,,,FALSE,,,TRUE,,
