@@ -1,0 +1,10 @@
+parameter;value
+email;no
+database;yes
+additionalEndMessageFromDatabase;no
+groups;comp
+compMirtMethod;ML
+compMirtCriteria;MI
+compMirtSeTheta;0.15
+compmaxItemNr;35
+compminItemNr;1
