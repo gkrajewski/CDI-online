@@ -10,6 +10,7 @@ genderLabel;Barnets kjønn;;
 modalTitle;Advarsel;;
 fillerLabel;Hvilken relasjon har du til barnet? ;;
 fillers;mor / forelder 1, far / forelder 2, bestemor, bestefar, barnepasser, lærer, annet;;
+noFiller;Velg hvem som skal fylle ut spørreskjemaet.;;
 noGender;Hvilket kjønn har barnet?;;
 badDate;Fødselsdatoen som du har oppgitt, tyder på at barnet ditt ikke er innenfor det aldersspennet som dette spørreskjemaet gjelder. ;;
 genders;jente, gutt;;
