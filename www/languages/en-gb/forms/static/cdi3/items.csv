@@ -99,7 +99,7 @@ item_97;computer;word;
 item_98;camping;word;
 item_99;angry;word;
 item_100;however;word;
-item_101;Has your child begun to combine words yet, such as ‘nother cracker’, or ‘doggie bite’?;combine;
+item_101;Has your child begun to combine words yet?;combine;
 item_102;Mummy pick me up. % Mummy picked me up.;complexity;
 item_103;That my truck. % That’s my truck.;complexity;
 item_104;Coffee hot. % That coffee hot.;complexity;
