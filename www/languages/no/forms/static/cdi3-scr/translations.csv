@@ -33,3 +33,6 @@ menuButton;Språk om språk;metalinguistic;
 tooltip;"Dette avsnittet åpnes avhengig av svarene dine i “Kommunikasjonsnivå”";metalinguistic;
 header;Språk om språk;metalinguistic;
 choiceNames;Ja, Nei;metalinguistic;
+endMsgTitle;;end;
+endMsgText;Tusen takk for at du har fylt ut dette spørreskjemaet! Når du trykker på «Neste», blir du sendt videre til et kort skjema om familiens skjermbruk.;end;
+redirectionText;;end;
