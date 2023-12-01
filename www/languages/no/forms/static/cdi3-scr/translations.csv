@@ -34,5 +34,5 @@ tooltip;"Dette avsnittet åpnes avhengig av svarene dine i “Kommunikasjonsniv�
 header;Språk om språk;metalinguistic;
 choiceNames;Ja, Nei;metalinguistic;
 endMsgTitle;;end;
-endMsgText;Tusen takk for at du har fylt ut dette spørreskjemaet! Når du trykker på «Neste», blir du sendt videre til et kort skjema om familiens skjermbruk.;end;
+endMsgText;Når du trykker på «Neste», får du noen spørsmål om familiens skjermbruk.;end;
 redirectionText;;end;
