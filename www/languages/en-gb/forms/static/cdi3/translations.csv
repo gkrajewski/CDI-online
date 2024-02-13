@@ -6,6 +6,7 @@ header;Word list;word;
 menuButton;Words;word;
 longText;"In this section we will ask you to read a list of words and mark those that you have heard from your child. Please note that children understand more words than they use in speech. This part is only about the words that the child spontaneously says, not the words the child is able to repeat. If your child uses a slightly different form, e.g. says ‘veggie’ for ‘vegetable’ please still mark the word ‘vegetable’. Do the same if your child pronounces a word differently (e.g., ‘deir’ instead of ‘their’). Similarly, if there is a different term in the family than the one given in the questionnaire, please mark the appropriate word and add the accurate term in the comment box. You may also use this field to share any other comments.";word;
 warning;NOTE: This questionnaire contains only a sample of the words your child may use. Your child is sure to know many other words that are not on this list. They probably also do not know all the words that are on the list. Please do not worry about this.;word;
+catHeader;;word;word
 header;Combining words;combine;
 menuButton;Combining words;combine;
 choiceNames;Yes,No;combine;
