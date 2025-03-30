@@ -21,7 +21,7 @@ header;Dodatkowe pytania;yesNo;wprost
 choiceNames;"Tak, Nie";yesNo;wprost
 tooltip;Zakończenie kwestionariusza i uzyskanie drobnego upominku będzie możliwe po zatwierdzeniu wszystkich części.;end;
 instr;"Poniżej znajdą Państwo jeszcze listę pytań dotyczących tego, jak Państwa dziecko posługuje się językiem. Odpowiadając na nie, proszę pamiętać, że pytamy o rzeczy, które mogą pojawiać się w różnym wieku, a w dodatku dzieci rozwijają się w różnym tempie: proszę się nie martwić, jeśli na większość tych pytań odpowiedzą Państwo przecząco. Proszę się też nie przejmować, jeśli Państwa dziecko popełnia błędy. Np. jeśli pytamy, czy Państwa dziecko dodaje „-bym” do czasowników, proszę odpowiedzieć twierdząco, jeśli Państwa dziecko mówi np. „chciałambym”.";yesNo;wprost
-additionalEndMessageFromDatabaseText;"Poniżej znajduje się e-kod (elektroniczna karta podarunkowa) Biedronki o wartości 40 zł. Proszę go zanotować lub zrobić zrzut ekranu.";;
-additionalEndMessageFromDatabaseNoText;"Coś poszło nie tak. Prosimy o kontakt mailowy na adres projekt.starwords@psych.uw.edu.pl w celu uzyskania e-kodu (elektronicznej karty podarunkowej) Biedronki.";;
-instr;"W podziękowaniu za wypełnienie kwestionariusza mamy dla Państwa drobny upominek. Po kliknięciu przycisku „Zatwierdź” na ekranie pojawi się e-kod (elektroniczna karta podarunkowa) Biedronki o wartości 40 zł. Proszę koniecznie go zapisać!";end;
+additionalEndMessageFromDatabaseText;"Poniżej znajduje się e-kod (voucher). Proszę go zanotować lub zrobić zrzut ekranu.";;
+additionalEndMessageFromDatabaseNoText;"Coś poszło nie tak. Prosimy o kontakt mailowy na adres projekt.starwords@psych.uw.edu.pl w celu uzyskania e-kodu (vouchera).";;
+instr;"W podziękowaniu za wypełnienie kwestionariusza mamy dla Państwa drobny upominek. Po kliknięciu przycisku „Zatwierdź” pojawi się on na ekranie.";end;
 endMsgText;"Dziękujemy za udział w badaniu! Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Państwa cenny. Państwa zaangażowanie jest bardzo ważne — pomoże nam lepiej zrozumieć rozwój językowy dzieci.";end;

@@ -106,8 +106,8 @@ longText;Poniżej znajdziesz jeszcze listę pytań dotyczących tego, jak Twoje 
 choiceNames;jeszcze nie, czasem, często;sentences;questions
 help;Czy odpowiedziałaś_eś na wszystkie pytania?;sentences;questions
 tooltip;Zakończenie kwestionariusza i uzyskanie drobnego upominku będzie możliwe po zatwierdzeniu wszystkich części.;end;
-instr;W podziękowaniu za wypełnienie kwestionariusza mamy dla Ciebie drobny upominek. Po kliknięciu przycisku „Zatwierdź” na ekranie pojawi się e-kod (elektroniczna karta podarunkowa) Biedronki o wartości 40 zł. Zapisz go koniecznie!;end;
+instr;W podziękowaniu za wypełnienie kwestionariusza mamy dla Ciebie drobny upominek. Zobaczysz go po kliknięciu przycisku „Zatwierdź”.;end;
 endMsgTitle;Dziękujemy za wypełnienie kwestionariusza!;end;
-additionalEndMessageFromDatabaseText;"Poniżej znajduje się e-kod (elektroniczna karta podarunkowa) Biedronki o wartości 40 zł. Zanotuj go albo zrób zrzut ekranu.";;
-additionalEndMessageFromDatabaseNoText;"Coś poszło nie tak. Prosimy o kontakt mailowy na adres multilada@psych.uw.edu.pl w celu uzyskania e-kodu (elektronicznej karty podarunkowej) Biedronki.";;
+additionalEndMessageFromDatabaseText;"Poniżej znajduje się e-kod (voucher). Zanotuj go albo zrób zrzut ekranu.";;
+additionalEndMessageFromDatabaseNoText;"Coś poszło nie tak. Prosimy o kontakt mailowy na adres multilada@psych.uw.edu.pl w celu uzyskania e-kodu (vouchera).";;
 endMsgText;Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Ciebie cenny! Twoje zaangażowanie w badanie jest bardzo ważne - pomoże nam szczegółowo opisać wczesny rozwój językowy dzieci.;end;
