@@ -1,0 +1,115 @@
+text_type;text;item_type;category
+cdiNamePrefix;„Od słowa do zdania”;;
+cdiNameSufix;Jak mówi Twoje dziecko;;
+longText;Kwestionariusz, który wypełniasz, służy do badania rozwoju mowy małych dzieci. Używamy go wierząc, że to Ty znasz najlepiej swoje dziecko i jego rozwój. Odpowiadając na pytania, nie przepytuj dziecka, nie proś go o powtarzanie poszczególnych wyrazów, ani nie ucz „nowych słówek”. Zaufaj swojej intuicji, a w razie potrzeby poobserwuj dziecko trochę. Odpowiedz na poniższe trzy pytania i kliknij przycisk „Zatwierdź”. Jeśli uważasz, że jest coś jeszcze, co powinniśmy wiedzieć o Twoim dziecku (np. problemy zdrowotne, kontakt z innymi językami), możesz użyć pola na uwagi, żeby nam o tym powiedzieć.;start;
+warning;WAŻNE: Możesz wrócić do wypełniania później, nie tracąc dotychczasowych odpowiedzi: skorzystaj z tego samego linku. Żeby zakończyć wypełnianie, musisz zatwierdzić każdą sekcję.;start;
+help;Pamiętaj, że po zatwierdzeniu odpowiedzi nie będzie już można wrócić na tę stronę.;start;
+noGender;Wskaż płeć dziecka.;;
+noFiller;Odpowiedz, kim jesteś dla dziecka.;;
+fillerLabel;Kim jesteś dla dziecka?;;
+fillers;mama,tata,inna odpowiedź (proszę wpisać):;;
+badDate;Podana data urodzenia wskazuje, że Twoje dziecko nie jest w wieku, dla którego przeznaczony jest ten kwestionariusz.;;
+menuButton;Pytania wstępne;demographic_additional;
+warning;Do udziału w tym badaniu zapraszamy rodziców dzieci mieszkających w Polsce.;demographic_additional;demographic_voivodeship
+help;Zanim przejdziesz do kolejnych zakładek, odpowiedz na wszystkie pytania wstępne.;demographic_additional;demographic_voivodeship
+choiceNames;dolnośląskie, kujawsko-pomorskie, lubelskie, lubuskie, łódzkie, małopolskie, mazowieckie, opolskie, podkarpackie, podlaskie, pomorskie, śląskie, świętokrzyskie, warmińsko-mazurskie, wielkopolskie, zachodniopomorskie;demographic_additional;demographic_voivodeship
+help;Zanim przejdziesz do kolejnych zakładek, odpowiedz na wszystkie pytania wstępne.;demographic_additional;demographic_residencesize
+choiceNames;wieś, małe miasto (poniżej 100 000 mieszkańców), duże miasto (co najmniej 100 000 mieszkańców);demographic_additional;demographic_residencesize
+help;Jeśli odpowiedziałaś_eś na wszystkie pytania wstępne, kliknij przycisk „Zatwierdź”, żeby przejść dalej.;demographic_additional;demographic_education
+choiceNames;podstawowe, zawodowe, średnie, niepełne wyższe, wyższe;demographic_additional;demographic_education
+menuButton;Słowa;word;
+tooltip;Ta zakładka staje się dostępna po zatwierdzeniu odpowiedzi na pytania wstępne.;word;
+header;Lista słów;word;
+longText;"<p>Na kolejnych stronach przedstawiamy listę typowych słów znanych małym dzieciom. Przeczytaj ją uważnie i zaznacz słowa, których używa Twoje dziecko.</p><p><strong>Zaznacz słowo</strong>, jeśli Twoje dziecko <strong>wypowiada je samo z siebie</strong>, spontanicznie (pamiętaj, że dzieci rozumieją więcej słów, niż same wypowiadają; nie chodzi nam też o słowa, które Twoje dziecko jest w stanie powtórzyć).</p><p>Zaznacz słowo również, gdy:<strong><br /></strong></p><ul><li> dziecko używa go w innej formie, np. „piesek” zamiast „pies”,</li><li>wymawia je nieco inaczej, np. „lybka” zamiast „rybka” lub „wiójka” zamiast „wiewiórka”,</li><li>używa własnego określenia, np. „dzi” zamiast „piłka”,</li><li>w Waszej rodzinie używa się innego określenia niż to podane w kwestionariuszu.</li></ul><p><strong><br />Uwagi<br /></strong></p>W polu „Uwagi”, które znajduje się na dole każdej strony, możesz dopisać inne formy słów z listy lub możesz dopisać inne formy lub własne określenia używane przez dziecko lub rodzinę.<strong><br /></strong></p>";word;firstPage
+warning;UWAGA: Kwestionariusz przeznaczony jest dla dzieci w różnym wieku. Nie martw się, jeśli Twoje dziecko nie używa jeszcze wielu słów, o które pytamy!;word;firstPage
+catHeader;Odgłosy i wykrzykniki;word;sounds
+catHeader;Zwierzęta – prawdziwe lub zabawkowe;word;animals
+catHeader;Pojazdy - prawdziwe lub zabawkowe;word;vehicles
+catHeader;Pokarmy i napoje;word;food_drink
+catHeader;Zabawki;word;toys
+catHeader;Ubrania;word;clothing
+catHeader;Części ciała;word;body_parts
+catHeader;W domu: pomieszczenia, sprzęty, meble;word;furniture_rooms
+catHeader;Przedmioty domowego użytku;word;household
+catHeader;Na dworze;word;outside
+catHeader;Miejsca, gdzie można pójść;word;places
+catHeader;Osoby;word;people
+note;item_356%Proszę wpisać, jak dziecko mówi na siebie, np. „Ika”, „Maciuś”, „Dodo”, „dzidzi”.;word;people
+catHeader;Formuły, zabawy, rutynowe czynności;word;games_routines
+catHeader;Nazwy cech: przymiotniki;word;descriptive_words
+catHeader;Nazwy cech: przysłówki;word;descriptive_words2
+catHeader;Nazwy czynności: czasowniki;word;action_words
+catHeader;Określenia miejsca;word;locations
+catHeader;Określenia czasu;word;time_words
+note;item_563%w takich zdaniach jak np. „Jeszcze pisać!”, „Jeszcze raz mi to zrób!” albo „Jeszcze nie wypiłam”.;word;time_words
+note;item_574,item_573%Proszę zaznaczyć odpowiednie słowo, nawet jeśli dziecko używa tych określeń błędnie, np. „Jutro Jaś jadł lody.” albo „Ciocia przyjdzie wczoraj”.;word;time_words
+catHeader;Określenia miary;word;quantifiers
+note;item_585%w takich zdaniach jak np. „Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”.;word;quantifiers
+note;item_591%w takich zdaniach jak np. „Zjem tylko serek”.;word;quantifiers
+catHeader;Zaimki osobowe (kto? kogo? komu?);word;pronouns
+catHeader;Zaimki dzierżawcze (czyj?);word;pronouns2
+catHeader;Zaimki wskazujące i nieokreślone;word;pronouns3
+catHeader;Pytania;word;question_words
+catHeader;Przysłówki modalne;word;modal_adverbs
+catHeader;Przyimki;word;prepositions
+catHeader;Spójniki;word;connecting_words
+note;item_667%w takich zdaniach jak np. „Jak mama przyjdzie, (to) da mi jeść”.;word;connecting_words
+note;item_668%w takich zdaniach jak np. „To nie pies, tylko kot”.;word;connecting_words
+help;Przed zatwierdzeniem sprawdź, czy nie pominęłaś_eś jakiejś strony? Czy na pewno zaznaczone są wszystkie wyrazy, które Twoje dziecko mówi?;word;connecting_words
+menuButton;Naśladownictwo;starting_to_talk;
+tooltip;Ta zakładka staje się dostępna po zatwierdzeniu odpowiedzi na pytania wstępne.;starting_to_talk;
+header;Naśladownictwo;starting_to_talk;
+choiceNames;Tak, Nie;starting_to_talk;
+help;Czy odpowiedziałaś_eś na wszystkie pytania?;starting_to_talk;
+menuButton;Poza tu i teraz;deixis;
+tooltip;Ta zakładka staje się dostępna po zatwierdzeniu odpowiedzi na pytania wstępne.;deixis;
+header;Poza tu i teraz;deixis;
+choiceNames;jeszcze nie, czasem, często;deixis;
+help;Czy odpowiedziałaś_eś na wszystkie pytania?;deixis;
+menuButton;Odmiana słów;inflection;
+tooltip;Ta zakładka staje się dostępna po zatwierdzeniu odpowiedzi na pytania wstępne.;inflection;
+catHeader;Formy;inflection;noun_form
+longText;W języku polskim wielu słów używamy w różnych formach, w zależności od tego, co chcemy powiedzieć. Dzieci zazwyczaj używają słowa najpierw tylko w jednej formie (np. „tata”, „Nie ma <b>tata</b>”), a z czasem uczą się używać innych jego form (np. „Nie ma <b>taty</b>”, „Dam <b>tacie</b>”).<br><br>W tej części kwestionariusza pytamy o różne formy słów, których Twoje dziecko może używać w codziennych rozmowach. Nie chodzi o to, co dziecko jest w stanie powtórzyć, np. w rymowankach albo kiedy mu czytasz, ale o formy, których używa samo z siebie.<br><br><b><u>Słowa na poniższej liście to tylko przykłady.</u></b> Zaznacz „mamę, lalkę, piłkę”, nawet jeśli Twoje dziecko nie używa tych konkretnych słów w tej formie, ale mówi np. „zupkę” albo „bajkę”. <b><u>Nie przejmuj się też błędami</u></b>, które Twoje dziecko może popełniać. Zaznacz na przykład „kotkowi, rowerkowi”, jeśli Twoje dziecko mówi „piesowi”. Takie błędy są zupełnie naturalne w mowie dzieci i świadczą o jej rozwoju.;inflection;noun_form
+warning;Czy Twoje dziecko używa form takich jak na przykład:;inflection;noun_form
+catHeader;Formy;inflection;adjective_adverb
+warning;Czy Twoje dziecko (np. porównując coś do czegoś) używa form takich jak na przykład:;inflection;adjective_adverb
+catHeader;Konteksty;inflection;noun_context
+choiceNames;jeszcze nie, czasem, często;inflection;noun_context
+longText;Słowa mogą przybierać różne formy w zależności od kontekstu wypowiedzi. Odpowiadając na pytania poniżej, zaznacz „czasem” lub „często”, nawet jeśli Twoje dziecko nie używa słów, które podajemy jako przykłady, ale używa innych w podobnych kontekstach.<br><br>Będziemy wdzięczni, zwłaszcza jeśli zaznaczasz „jeszcze nie”, za <b><u>podanie w polu na uwagi przykładu</u></b>, jak Twoje dziecko mówi w podobnych kontekstach, np. „Boję piesa”, „Boję (się)… pies [wskazując na psa]” lub „Nie psa” zamiast „Nie ma psa”.<br><br>;inflection;noun_context
+catHeader;Czas;inflection;verb_tense
+longText;Również w tej części użyte przez nas słowa to tylko przykłady. Zaznacz „czasem” lub „często”, jeśli Twoje dziecko używa jakichkolwiek słów w tej formie, niekoniecznie tych, które podaliśmy. Nie interesują nas też błędy, które Twoje dziecko może popełniać. Nie przejmuj się, jeśli Twoje dziecko mówi na przykład „poszłem” zamiast „poszedłem”. Takie błędy są zupełnie naturalne w mowie dzieci i świadczą o jej rozwoju.;inflection;verb_tense
+choiceNames;jeszcze nie, czasem, często;inflection;verb_tense
+catHeader;Osoby;inflection;verb_person
+instr;Gdy Twoje dziecko opowiada o tym, co właśnie...;inflection;verb_person
+choiceNames;jeszcze nie, czasem, często;inflection;verb_person
+help;Czy odpowiedziałaś_eś na wszystkie pytania?;inflection;verb_person
+menuButton;Łączenie słów;combine;
+tooltip;Ta zakładka staje się dostępna po zatwierdzeniu odpowiedzi na pytania wstępne.;combine;
+header;Łączenie słów;combine;
+longText;<strong>UWAGA: Poniższe pytanie oraz sekcja „Zdania” odnoszą się do dzieci, które już znają dość dużo słów. Jeśli Twoje dziecko jeszcze nie łączy słów, zaznacz „Jeszcze nie”, a sekcja „Zdania” pozostanie nieaktywna.</strong>;combine;
+help;Po wybraniu odpowiedzi „czasem” lub „często” dostępna stanie się zakładka „Zdania”.;combine;
+choiceNames;jeszcze nie,czasem,często;combine;
+menuButton;Zdania;sentences;
+tooltip;Zakładka „Zdania” staje się dostępna w zależności od odpowiedzi udzielonych w zakładce „Łączenie słów”.;sentences;
+catHeader;Trzy najdłuższe zdania;sentences;sentences3
+longText;W poniższych polach wpisz zapamiętane lub zanotowane typowe wypowiedzenia dziecka, a także przykłady zdań szczególnie złożonych. Prosimy o podanie przykładów rzeczywistych wypowiedzi dziecka, nawet jeśli uważasz, że dziecko „mówi już wszystko”.;sentences;sentences3
+warning;Podaj przykłady trzech najdłuższych zdań, jakie ostatnio słyszałaś_eś od swojego dziecka. Chodzi o wypowiedzi samodzielne, a nie wierszyki, piosenki itp.;sentences;sentences3
+catHeader;Przykłady zdań;sentences;alternatives_simple_1
+longText;Na kolejnych stronach znajdują się przykłady zdań, które dzieci mogą tworzyć w różnym wieku. Zaznaczając te, które przypominają wypowiedzi Twojego dziecka, nie przejmuj się, jeśli pomyślisz, że Twoje dziecko „źle” wypada. Pytamy tutaj o rzeczy, które pojawiają się w mowie dzieci w różnym wieku, i tak naprawdę dopiero chcemy ustalić, o co i w jakim wieku dziecka warto pytać.<br><br>;sentences;alternatives_simple_1
+warning;Poniższe przykłady zdań ułożyliśmy parami: w każdej parze jedna wersja jest mniej, a druga bardziej złożona. Zaznacz wersję, która przypomina wypowiedzi Twojego dziecka. Nie chodzi nam o dokładnie takie sformułowania, jakich użyliśmy w przykładach. Również wyrazy używane przez Twoje dziecko mogą być inne (np. inne nazwy potraw czy przedmiotów). Mogą też występować w nich błędy, np. „chciałambym” zamiast „chciałabym”). Jeżeli obie wersje przypominają wypowiedzi Twojego dziecka, możesz zaznaczyć obie, a jeśli Twoje dziecko jeszcze w ogóle nie tworzy takich wypowiedzi, nie zaznaczaj żadnej z nich.;sentences;alternatives_simple_1
+catHeader;Przykłady zdań;sentences;alternatives_simple_2
+warning;Poniższe przykłady zdań ułożyliśmy parami: w każdej parze jedna wersja jest mniej, a druga bardziej złożona. Zaznacz wersję, która przypomina wypowiedzi Twojego dziecka. Nie chodzi nam o dokładnie takie sformułowania, jakich użyliśmy w przykładach. Również wyrazy używane przez Twoje dziecko mogą być inne (np. inne nazwy potraw czy przedmiotów). Mogą też występować w nich błędy, np. „chciałambym” zamiast „chciałabym”). Jeżeli obie wersje przypominają wypowiedzi Twojego dziecka, możesz zaznaczyć obie, a jeśli Twoje dziecko jeszcze w ogóle nie tworzy takich wypowiedzi, nie zaznaczaj żadnej z nich.;sentences;alternatives_simple_2
+catHeader;Przykłady zdań;sentences;alternatives_simple_3
+warning;Poniższe przykłady zdań ułożyliśmy parami: w każdej parze jedna wersja jest mniej, a druga bardziej złożona. Zaznacz wersję, która przypomina wypowiedzi Twojego dziecka. Nie chodzi nam o dokładnie takie sformułowania, jakich użyliśmy w przykładach. Również wyrazy używane przez Twoje dziecko mogą być inne (np. inne nazwy potraw czy przedmiotów). Mogą też występować w nich błędy, np. „chciałambym” zamiast „chciałabym”). Jeżeli obie wersje przypominają wypowiedzi Twojego dziecka, możesz zaznaczyć obie, a jeśli Twoje dziecko jeszcze w ogóle nie tworzy takich wypowiedzi, nie zaznaczaj żadnej z nich.;sentences;alternatives_simple_3
+catHeader;Przykłady zdań;sentences;alternatives_complex
+warning;Poniższe przykłady zdań ułożyliśmy parami: w każdej parze jedna wersja jest mniej, a druga bardziej złożona. Zaznacz wersję, która przypomina wypowiedzi Twojego dziecka. Nie chodzi nam o dokładnie takie sformułowania, jakich użyliśmy w przykładach. Również wyrazy używane przez Twoje dziecko mogą być inne (np. inne nazwy potraw czy przedmiotów). Mogą też występować w nich błędy, np. „chciałambym” zamiast „chciałabym”). Jeżeli obie wersje przypominają wypowiedzi Twojego dziecka, możesz zaznaczyć obie, a jeśli Twoje dziecko jeszcze w ogóle nie tworzy takich wypowiedzi, nie zaznaczaj żadnej z nich.;sentences;alternatives_complex
+catHeader;Dodatkowe pytania;sentences;questions
+longText;Poniżej znajdziesz jeszcze listę pytań dotyczących tego, jak Twoje dziecko posługuje się językiem. Odpowiadając na nie, pamiętaj, że pytamy o rzeczy, które mogą pojawiać się w różnym wieku, a w dodatku dzieci rozwijają się w różnym tempie: nie martw się, jeśli na większość tych pytań odpowiesz przecząco. Nie przejmuj się też, jeśli Twoje dziecko popełnia błędy. Np. jeśli pytamy, czy Twoje dziecko dodaje „-bym” do czasowników, odpowiedz twierdząco, jeśli Twoje dziecko mówi np. „chciałambym”.;sentences;questions
+choiceNames;jeszcze nie, czasem, często;sentences;questions
+help;Czy odpowiedziałaś_eś na wszystkie pytania?;sentences;questions
+tooltip;Zakończenie kwestionariusza i uzyskanie drobnego upominku będzie możliwe po zatwierdzeniu wszystkich części.;end;
+instr;W podziękowaniu za wypełnienie kwestionariusza mamy dla Ciebie drobny upominek. Zobaczysz go po kliknięciu przycisku „Zatwierdź”.;end;
+endMsgTitle;Dziękujemy za wypełnienie kwestionariusza!;end;
+additionalEndMessageFromDatabaseText;"Poniżej znajduje się e-kod (voucher). Zanotuj go albo zrób zrzut ekranu.";;
+additionalEndMessageFromDatabaseNoText;"Coś poszło nie tak. Prosimy o kontakt mailowy na adres multilada@psych.uw.edu.pl w celu uzyskania e-kodu (vouchera).";;
+endMsgText;Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Ciebie cenny! Twoje zaangażowanie w badanie jest bardzo ważne - pomoże nam szczegółowo opisać wczesny rozwój językowy dzieci.;end;
