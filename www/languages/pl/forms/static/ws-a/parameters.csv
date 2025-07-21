@@ -2,6 +2,3 @@ parameter;value
 email;no
 database;yes
 additionalEndMessageFromDatabase;yes
-additionalEndMessageTable;vouchers
-additionalEndMessageValueColumn;voucher
-additionalEndMessageIdColumn;id
