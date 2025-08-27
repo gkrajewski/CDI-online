@@ -5,13 +5,13 @@ additionalEndMessageFromDatabase;no
 groups;mowa,rozumienie,gesty
 rozumienieMirtMethod;ML
 rozumienieMirtCriteria;MI
-rozumienieHeaderColor;lightsalmon
+rozumienieHeaderColor;"#df454f"
 gestyMirtMethod;ML
 gestyMirtCriteria;MI
-gestyHeaderColor;lightsteelblue
+gestyHeaderColor;"#7BB9CC"
 mowaMirtMethod;ML
 mowaMirtCriteria;MI
-mowaHeaderColor;lightgreen
+mowaHeaderColor;"#87b95d"
 rozumienieMirtSeTheta;0.1
 mowaMirtSeTheta;0.17
 gestyMirtSeTheta;0.2
