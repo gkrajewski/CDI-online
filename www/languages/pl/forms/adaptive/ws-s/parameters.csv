@@ -5,6 +5,6 @@ additionalEndMessageFromDatabase;no
 mowaMirtMethod;ML
 mowaMirtCriteria;MI
 mowaminItemNr;1
-mowamaxItemNr;75
-mowaMirtSeTheta;0.1
+mowamaxItemNr;51
+mowaMirtSeTheta;0.111
 groups;mowa
