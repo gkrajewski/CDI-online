@@ -64,5 +64,5 @@ catHeader;Naśladowanie innych czynności dorosłych (na przedmiotach lub zabawk
 instr;Czy Twoje dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;gestures;gestures_adult
 instr;Jeśli wypełniłaś_eś wszystkie części kwestionariusza, kliknij przycisk „Zatwierdź”.;end;
 endMsgTitle;Dziękujemy za wypełnienie kwestionariusza!;end;
-endMsgText;W ciągu tygodnia prześlemy link do kolejnego kwestionariusza na podany wcześniej adres email. W razie wątpliwości prosimy o kontakt: odslowadozdania@uw.edu.pl. Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Ciebie cenny! Twoje zaangażowanie w badanie jest bardzo ważne - pomoże nam szczegółowo opisać wczesny rozwój językowy dzieci.;end;
+endMsgText;Bardzo dziękujemy za udział w tej części naszego projektu! Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Ciebie cenny! Twoje zaangażowanie jest bardzo ważne - dzięki niemu możemy udoskonalać narzędzia do oceny rozwoju językowego dzieci.;end;
 

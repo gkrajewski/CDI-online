@@ -110,4 +110,4 @@ help;Czy odpowiedziałaś_eś na wszystkie pytania?;sentences;questions
 tooltip;Zakończenie kwestionariusza będzie możliwe po zatwierdzeniu wszystkich części.;end;
 instr;Jeśli wypełniłaś_eś wszystkie części kwestionariusza, kliknij przycisk „Zatwierdź”.;end;
 endMsgTitle;Dziękujemy za wypełnienie kwestionariusza!;end;
-endMsgText; W ciągu tygodnia prześlemy link do kolejnego kwestionariusza na podany wcześniej adres email. W razie wątpliwości prosimy o kontakt: odslowadozdania@uw.edu.pl. Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Ciebie cenny! Twoje zaangażowanie w badanie jest bardzo ważne - pomoże nam szczegółowo opisać wczesny rozwój językowy dzieci.;end;
+endMsgText; Bardzo dziękujemy za udział w tej części naszego projektu! Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Ciebie cenny! Twoje zaangażowanie jest bardzo ważne - dzięki niemu możemy udoskonalać narzędzia do oceny rozwoju językowego dzieci.;end;
