@@ -88,7 +88,7 @@ prepareGroup <- function(output, input, values, txt, parameters, startThetas, su
       if (header %in% txt$text_type & headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"], style=paste0("color: ", txt[txt$text_type == headerColor, "text"], ";")),
       if (header %in% txt$text_type & !headerColor %in% txt$text_type) h3(txt[txt$text_type == header, "text"]),
       if (is.element(instrID, txt$text_type)) h5(txt[txt$text_type == instrID, "text"]),
-      if (is.element(longID, txt$text_type)) p(txt[txt$text_type == longID, "text"]),
+      if (is.element(longID, txt$text_type)) p(HTML(txt[txt$text_type == longID, "text"])),
       if (is.element(warningID, txt$text_type)) p(class = "warning", strong(txt[txt$text_type == warningID, "text"]))
 
     ))

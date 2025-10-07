@@ -1,0 +1,10 @@
+parameter;value
+email;no
+database;yes
+additionalEndMessageFromDatabase;no
+mowaMirtMethod;ML
+mowaMirtCriteria;MI
+mowaminItemNr;1
+mowamaxItemNr;51
+mowaMirtSeTheta;0.111
+groups;mowa
