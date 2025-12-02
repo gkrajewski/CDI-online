@@ -1,0 +1,15 @@
+type,category,input_type,comment,css_class,binded_types,initially_disabled,conditions,answers_to_enable
+start,,demographic,TRUE,,,FALSE,demographic_additional,all
+demographic_additional,,radioVertical,TRUE,,,TRUE,"word,starting_to_talk,deixis,inflection,combine",all
+word,,oneCheckboxGroup,TRUE,threeColumns,,TRUE,,
+starting_to_talk,,radio,FALSE,,,TRUE,,
+deixis,,radio,TRUE,,,TRUE,,
+inflection,,oneCheckboxGroup,TRUE,,,TRUE,,
+inflection,noun_context,radio,TRUE,,,TRUE,,
+inflection,verb_tense,radio,TRUE,,,TRUE,,
+inflection,verb_person,radio,TRUE,,,TRUE,,
+combine,,radio,FALSE,,,TRUE,sentences,"2,3"
+sentences,,checkboxAlt,TRUE,,,TRUE,,
+sentences,questions,radio,TRUE,,,TRUE,,
+sentences,sentences3,sentences,FALSE,,,TRUE,,
+end,,,FALSE,,,TRUE,,
