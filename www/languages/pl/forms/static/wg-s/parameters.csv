@@ -1,4 +1,6 @@
 parameter;value
 email;no
 database;yes
-additionalEndMessageFromDatabase;yes
+additionalEndMessageFromDatabase;no
+redirectionURL;https://apps.multilada.pl/cdi/?lang=pl&type=adaptive
+redirectionParams;id,run,form
