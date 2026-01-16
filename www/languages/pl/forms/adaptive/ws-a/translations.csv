@@ -13,4 +13,4 @@ endText;Naciśnij „Zatwierdź”, aby zakończyć tę część.
 endBtn;Zatwierdź
 thanksMsgTitle;Uwaga!
 thanksMsgText;"Po kliknięciu przycisku „Dalej” nastąpi przekierowanie do drugiej części. Odśwież stronę, jeśli będzie trwało to zbyt długo."
-redirectionBtn;Dalej;end;
+redirectionBtn;Dalej
