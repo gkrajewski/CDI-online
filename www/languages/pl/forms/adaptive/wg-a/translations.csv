@@ -1,5 +1,11 @@
 text_type;text
 cdiNameSufix;Wersja adaptatywna dla rodziców młodszych dzieci
+noGender;Wskaż płeć dziecka.
+fillerLabel;Kim jesteś dla dziecka?
+fillers;mama,tata,inna odpowiedź (proszę wpisać):
+noFiller;Odpowiedz, kim jesteś dla dziecka.
+sidebarInstr;Zaznacz „tak” lub „nie”.
+alreadyFilled;Ten inwentarz został już przez Ciebie wypełniony.
 rozumienieHeader;Rozumienie
 gestyHeader;Czynności i gesty
 mowaHeader;Mowa
@@ -8,6 +14,8 @@ longText;"<p>Kwestionariusz, który wypełniasz, służy do badania początków 
 mowaLongText;"<p>Na kolejnych stronach przedstawiamy typowe słowa znane małym dzieciom.</p><p> <strong>Zaznacz „tak”</strong>, jeśli Twoje dziecko <strong>wypowiada je samo z siebie</strong>, spontanicznie (pamiętaj, że dzieci rozumieją więcej słów, niż same wypowiadają; nie chodzi nam też o słowa, które Twoje dziecko jest w stanie powtórzyć).</p><p>Zaznacz „tak” również, gdy:<strong><br /></strong></p><ul><li> dziecko używa go w innej formie, np. „piesek” zamiast „pies”,</li><li>wymawia je nieco inaczej, np. „lybka” zamiast „rybka” lub „wiójka” zamiast „wiewiórka”,</li><li>używa własnego określenia, np. „dzi” zamiast „piłka”,</li><li>w Waszej rodzinie używa się innego określenia niż to podane w kwestionariuszu.</li></ul><p>W polu „Uwagi”, które znajduje się na końcu sekcji, możesz dopisać inne formy wyrazów z listy lub własne określenia używane przez dziecko lub rodzinę</p><p><b>UWAGA: Kwestionariusz przeznaczony jest dla dzieci w różnym wieku. Nie martw się, jeśli Twoje dziecko nie zna jeszcze wielu słów, o które pytamy!</b></p>"
 gestyLongText;"<p>Kiedy dzieci uczą się porozumiewać z innymi ludźmi, często posługują się gestami, aby wyrazić swoje pragnienia. Często też naśladują dorosłych nie tylko w mowie, ale również w zabawie, udając np. czynności opiekuńcze.</p><p>Przy każdym z gestów i każdej z czynności, które pojawią się na kolejnych stronach, zaznacz „tak” przy tym określeniu, które pasuje do tego, co Twoje dziecko aktualnie robi. Na końcu pojawi się pole, które możesz wykorzystać, żeby podzielić się z nami swoimi uwagami.</p>"
 rozumienieLongText;"<p>Na kolejnych stronach przedstawiamy typowe słowa znane małym dzieciom.</p><p><b>Zaznacz „tak”</b>, jeśli Twoje dziecko <b>je rozumie.</b></p><p>W polu „Uwagi”, które znajduje się na końcu sekcji, możesz dopisać inne formy lub możesz dopisać inne formy wyrazów z listy lub własne określenia używane przez dziecko lub rodzinę.</p>"
+endText;Naciśnij „Zatwierdź”, aby zakończyć tę część.
+endBtn;Zatwierdź
 thanksMsgTitle;Uwaga!
 thanksMsgText;"Po kliknięciu przycisku „Dalej” nastąpi przekierowanie do drugiej części. Odśwież stronę, jeśli będzie trwało to zbyt długo."
 redirectionBtn;Dalej;end;
