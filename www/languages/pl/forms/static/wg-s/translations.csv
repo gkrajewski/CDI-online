@@ -3,6 +3,12 @@ cdiNameSufix;Słowa i Gesty;;
 tooltip;Część „Wypowiedzi” uaktywnia się w zależności od odpowiedzi w części „Łączenie wyrazów”.;sentences10;
 longText;Kwestionariusz, który wypełniasz, służy do badania początków rozwoju mowy małych dzieci. Używamy go wierząc, że to Ty znasz najlepiej swoje dziecko i jego rozwój. Odpowiadając na pytania, nie przepytuj dziecka, nie proś go o powtarzanie poszczególnych wyrazów, ani nie ucz „nowych słówek”. Zaufaj swojej intuicji, a w razie potrzeby poobserwuj dziecko trochę.;start;
 warning;Możesz wrócić do wypełniania później, nie tracąc dotychczasowych odpowiedzi: skorzystaj z tego samego linku. Żeby zakończyć wypełnianie, musisz zatwierdzić każdą sekcję.;start;
+help;Pamiętaj, że po zatwierdzeniu odpowiedzi nie będzie już można wrócić na tę stronę.;start;
+noGender;Wskaż płeć dziecka.;;
+noFiller;Odpowiedz, kim jesteś dla dziecka.;;
+fillerLabel;Kim jesteś dla dziecka?;;
+fillers;mama,tata,inna odpowiedź (proszę wpisać):;;
+badDate;Podana data urodzenia wskazuje, że Twoje dziecko nie jest w wieku, dla którego przeznaczony jest ten kwestionariusz.;;
 menuButton;Rozumienie;understanding;
 header;Rozumienie;understanding;
 catHeader;Pierwsze przejawy rozumienia;understanding;first_signs

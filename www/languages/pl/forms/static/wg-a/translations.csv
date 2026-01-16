@@ -3,6 +3,12 @@ cdiNameSufix;Słowa i Gesty;;
 tooltip;Część „Wypowiedzi” uaktywnia się w zależności od odpowiedzi w części „Łączenie wyrazów”.;sentences10;
 longText;Kwestionariusz, który wypełniasz, służy do badania początków rozwoju mowy małych dzieci. Używamy go wierząc, że to Ty znasz najlepiej swoje dziecko i jego rozwój. Odpowiadając na pytania, nie przepytuj dziecka, nie proś go o powtarzanie poszczególnych wyrazów, ani nie ucz „nowych słówek”. Zaufaj swojej intuicji, a w razie potrzeby poobserwuj dziecko trochę.;start;
 warning;Możesz wrócić do wypełniania później, nie tracąc dotychczasowych odpowiedzi: skorzystaj z tego samego linku. Żeby zakończyć wypełnianie, musisz zatwierdzić każdą sekcję.;start;
+help;Pamiętaj, że po zatwierdzeniu odpowiedzi nie będzie już można wrócić na tę stronę.;start;
+noGender;Wskaż płeć dziecka.;;
+noFiller;Odpowiedz, kim jesteś dla dziecka.;;
+fillerLabel;Kim jesteś dla dziecka?;;
+fillers;mama,tata,inna odpowiedź (proszę wpisać):;;
+badDate;Podana data urodzenia wskazuje, że Twoje dziecko nie jest w wieku, dla którego przeznaczony jest ten kwestionariusz.;;
 menuButton;Rozumienie;understanding;
 header;Rozumienie;understanding;
 catHeader;Pierwsze przejawy rozumienia;understanding;first_signs
@@ -62,7 +68,7 @@ catHeader;Zabawa lalką lub misiem: czynności opiekuńcze;gestures;gestures_par
 instr;Poniżej wypisano czynności opiekuńcze, jakie dzieci wykonują bawiąc się lalkami lub misiami. Zaznacz te z nich, które obserwujesz u swego dziecka.;gestures;gestures_parent
 catHeader;Naśladowanie innych czynności dorosłych (na przedmiotach lub zabawkach);gestures;gestures_adult
 instr;Czy Twoje dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;gestures;gestures_adult
-instr;Jeśli wypełniłaś_eś wszystkie części kwestionariusza, kliknij przycisk „Zatwierdź”.;end;
-endMsgTitle;Dziękujemy za wypełnienie kwestionariusza!;end;
+instr;Jeśli wypełniłaś_eś wszystko, kliknij przycisk „Zatwierdź”.;end;
+endMsgTitle;Dziękujemy!;end;
 endMsgText;Bardzo dziękujemy za udział w tej części naszego projektu! Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Ciebie cenny! Twoje zaangażowanie jest bardzo ważne - dzięki niemu możemy udoskonalać narzędzia do oceny rozwoju językowego dzieci.;end;
 

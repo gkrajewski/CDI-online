@@ -108,6 +108,6 @@ longText;Poniżej znajdziesz jeszcze listę pytań dotyczących tego, jak Twoje 
 choiceNames;jeszcze nie, czasem, często;sentences;questions
 help;Czy odpowiedziałaś_eś na wszystkie pytania?;sentences;questions
 tooltip;Zakończenie kwestionariusza będzie możliwe po zatwierdzeniu wszystkich części.;end;
-instr;Jeśli wypełniłaś_eś wszystkie części kwestionariusza, kliknij przycisk „Zatwierdź”.;end;
-endMsgTitle;Dziękujemy za wypełnienie kwestionariusza!;end;
+instr;Jeśli wypełniłaś_eś wszystko, kliknij przycisk „Zatwierdź”.;end;
+endMsgTitle;Dziękujemy!;end;
 endMsgText; Bardzo dziękujemy za udział w tej części naszego projektu! Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Ciebie cenny! Twoje zaangażowanie jest bardzo ważne - dzięki niemu możemy udoskonalać narzędzia do oceny rozwoju językowego dzieci.;end;
