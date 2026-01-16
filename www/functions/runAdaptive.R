@@ -13,9 +13,7 @@ runAdaptive <- function(input, output, session, lang, form, idx, run, urlString,
       parameters <- read.csv(paste0("parameters.csv"), encoding = "UTF-8", sep = ";", strip.white = T)
       
       #Prepare settings and translations
-      translID <- paste(transl$text_type, transl$text)
-      uniTranslID <- paste(uniTransl$text_type, uniTransl$text)
-      uniTransl <- subset(uniTransl, !(uniTranslID %in% translID)) #Get things from uniTransl (uniSettings&translations) that are not in translations
+      uniTransl <- subset(uniTransl, !(uniTransl$text_type %in% transl$text_type)) #Get things from uniTransl (uniSettings&translations) that are not in translations
       txt <- rbind(uniTransl, transl)
       
       setwd(INIT_PATH)
