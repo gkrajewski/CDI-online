@@ -108,6 +108,7 @@ longText;Poniżej znajdziesz jeszcze listę pytań dotyczących tego, jak Twoje 
 choiceNames;jeszcze nie, czasem, często;sentences;questions
 help;Czy odpowiedziałaś_eś na wszystkie pytania?;sentences;questions
 tooltip;Zakończenie kwestionariusza będzie możliwe po zatwierdzeniu wszystkich części.;end;
-instr;Jeśli wypełniłaś_eś wszystkie części kwestionariusza, kliknij przycisk „Zatwierdź”.;end;
-endMsgTitle;Dziękujemy za wypełnienie kwestionariusza!;end;
-endMsgText; Bardzo dziękujemy za udział w tej części naszego projektu! Za chwilę nastąpi przekierowanie do drugiej części.;end;
+instr;Jeśli wypełniłaś_eś wszystko, kliknij przycisk „Zatwierdź”.;end;
+endMsgTitle;Uwaga!;end;
+endMsgText;"Po kliknięciu przycisku „Dalej” nastąpi przekierowanie do drugiej części. Odśwież stronę, jeśli będzie trwało to zbyt długo.";end;
+redirectionBtn;Dalej;end;
