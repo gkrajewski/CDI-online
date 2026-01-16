@@ -70,5 +70,5 @@ catHeader;Naśladowanie innych czynności dorosłych (na przedmiotach lub zabawk
 instr;Czy Twoje dziecko wykonuje lub próbuje wykonywać którąś z wymienionych niżej czynności?;gestures;gestures_adult
 instr;Jeśli wypełniłaś_eś wszystko, kliknij przycisk „Zatwierdź”.;end;
 endMsgTitle;Dziękujemy!;end;
-endMsgText;Bardzo dziękujemy za udział w tej części naszego projektu! Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Ciebie cenny! Twoje zaangażowanie jest bardzo ważne - dzięki niemu możemy udoskonalać narzędzia do oceny rozwoju językowego dzieci.;end;
-
+endMsgText;Bardzo dziękujemy za udział w tej części projektu. Mamy nadzieję, że czas refleksji nad rozwojem językowym dziecka był dla Ciebie cenny! Twoje zaangażowanie jest bardzo ważne - dzięki niemu możemy udoskonalać narzędzia do oceny rozwoju językowego. W ramach podziękowania przygotowaliśmy zestaw kolorowanek dla Twojego dziecka. Kliknij przycisk poniżej, żeby uzyskać do niego dostęp.;end;
+redirectionBtn;Kolorowanki;end;

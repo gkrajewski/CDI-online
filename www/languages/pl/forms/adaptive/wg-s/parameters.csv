@@ -2,6 +2,8 @@ parameter;value
 email;no
 database;yes
 additionalEndMessageFromDatabase;no
+redirectionURL;https://cdi.multilada.pl/kolorowanki
+redirectionParams;id,run
 groups;mowa,rozumienie,gesty
 rozumienieMirtMethod;ML
 rozumienieMirtCriteria;MI
