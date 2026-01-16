@@ -9,14 +9,6 @@ noFiller;Odpowiedz, kim jesteś dla dziecka.;;
 fillerLabel;Kim jesteś dla dziecka?;;
 fillers;mama,tata,inna odpowiedź (proszę wpisać):;;
 badDate;Podana data urodzenia wskazuje, że Twoje dziecko nie jest w wieku, dla którego przeznaczony jest ten kwestionariusz.;;
-menuButton;Pytania wstępne;demographic_additional;
-warning;Do udziału w tym badaniu zapraszamy rodziców dzieci mieszkających w Polsce.;demographic_additional;demographic_voivodeship
-help;Zanim przejdziesz do kolejnych zakładek, odpowiedz na wszystkie pytania wstępne.;demographic_additional;demographic_voivodeship
-choiceNames;dolnośląskie, kujawsko-pomorskie, lubelskie, lubuskie, łódzkie, małopolskie, mazowieckie, opolskie, podkarpackie, podlaskie, pomorskie, śląskie, świętokrzyskie, warmińsko-mazurskie, wielkopolskie, zachodniopomorskie;demographic_additional;demographic_voivodeship
-help;Zanim przejdziesz do kolejnych zakładek, odpowiedz na wszystkie pytania wstępne.;demographic_additional;demographic_residencesize
-choiceNames;wieś, małe miasto (poniżej 100 000 mieszkańców), duże miasto (co najmniej 100 000 mieszkańców);demographic_additional;demographic_residencesize
-help;Jeśli odpowiedziałaś_eś na wszystkie pytania wstępne, kliknij przycisk „Zatwierdź”, żeby przejść dalej.;demographic_additional;demographic_education
-choiceNames;podstawowe, zawodowe, średnie, niepełne wyższe, wyższe;demographic_additional;demographic_education
 menuButton;Słowa;word;
 tooltip;Ta zakładka staje się dostępna po zatwierdzeniu odpowiedzi na pytania wstępne.;word;
 header;Lista słów;word;

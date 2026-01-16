@@ -1,7 +1,4 @@
 org_item_id;definition;type;category;gram_label;gram_category;lexical_category;lexical_class;uni_lemma;origin;item_id
-item_2;W jakim województwie mieszkasz?;demographic_additional;demographic_voivodeship;;;;;;demo_add;item_001d
-item_3;Jaka jest wielkość miejscowości, w której mieszkasz?;demographic_additional;demographic_residencesize;;;;;;demo_add;item_002d
-item_1;Jaki jest Twój poziom wyształcenia?;demographic_additional;demographic_education;;;;;;demo_add;item_003d
 item_1;gę gę;word;sounds;;;other;other;quack quack;WS;item_001
 item_2;hau hau;word;sounds;;;other;other;woof woof;WS;item_002
 item_3;ko ko ko;word;sounds;;;other;other;cluck cluck;WS;item_003
