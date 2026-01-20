@@ -5,6 +5,10 @@ Making a renv snapshot: renv::snapshot()
 
 ## Changes
 
+### v1.12
+
+* Fixed: local translations prioritised over uniTranslations in adaptive forms
+
 ### v1.11
 
 * Added: redirection URL may contain parameters with fixed values
