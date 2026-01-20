@@ -4,7 +4,7 @@ understanding,first_signs,radio,FALSE,,,,,
 understanding,,oneCheckboxGroup,TRUE,threeColumns,"first_signs,phrases",TRUE,,
 word,,manyCheckboxGroups,TRUE,threeColumns,,TRUE,,
 starting_to_talk,,radio,FALSE,,,TRUE,,
-combine,,radio,FALSE,,,TRUE,sentences10,"2,3"
+combine,,radio,FALSE,,,TRUE,,
 sentences10,,sentences,FALSE,twoColumns,,TRUE,,
 gestures,,oneCheckboxGroup,TRUE,,startWith,TRUE,,
 end,,,FALSE,,,TRUE,,

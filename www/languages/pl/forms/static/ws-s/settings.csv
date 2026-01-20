@@ -1,6 +1,5 @@
 type,category,input_type,comment,css_class,binded_types,initially_disabled,conditions,answers_to_enable
-start,,demographic,TRUE,,,FALSE,demographic_additional,all
-demographic_additional,,radioVertical,TRUE,,,TRUE,"word,starting_to_talk,deixis,inflection,combine",all
+start,,demographic,TRUE,,,FALSE,"word,starting_to_talk,deixis,inflection,combine",all
 word,,oneCheckboxGroup,TRUE,threeColumns,,TRUE,,
 starting_to_talk,,radio,FALSE,,,TRUE,,
 deixis,,radio,TRUE,,,TRUE,,

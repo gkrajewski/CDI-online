@@ -1,4 +1,6 @@
 parameter;value
 email;no
 database;yes
-additionalEndMessageFromDatabase;yes
+additionalEndMessageFromDatabase;no
+redirectionURL;https://cdi.multilada.pl/kolorowanki
+redirectionParams;id,run

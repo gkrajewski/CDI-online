@@ -1,0 +1,801 @@
+a1,d,item,question,group,id
+1.02611068853327,-1.30892391337898,gę gę,ODGŁOSY I WYKRZYKNIKI: Czy dziecko rozumie...,rozumienie,item_1
+1.43421192633833,-0.498823598847783,gę gę,ODGŁOSY I WYKRZYKNIKI: Czy dziecko mówi...,mowa,item_1
+0.501418998227468,-0.892179917566651,ko ko ko,ODGŁOSY I WYKRZYKNIKI: Czy dziecko rozumie...,rozumienie,item_3
+1.94682580090804,0.647702193059241,ko ko ko,ODGŁOSY I WYKRZYKNIKI: Czy dziecko mówi...,mowa,item_3
+0.818491996278921,-0.949219283377016,kwa kwa,ODGŁOSY I WYKRZYKNIKI: Czy dziecko rozumie...,rozumienie,item_4
+2.05972911660214,0.0487652295933858,kwa kwa,ODGŁOSY I WYKRZYKNIKI: Czy dziecko mówi...,mowa,item_4
+0.765710504368871,-1.20964863932927,mee/bee,ODGŁOSY I WYKRZYKNIKI: Czy dziecko rozumie...,rozumienie,item_6
+1.98418835430273,-0.0590436044031849,mee/bee,ODGŁOSY I WYKRZYKNIKI: Czy dziecko mówi...,mowa,item_6
+0.370334212127909,-1.01116520614857,muu [krowa],ODGŁOSY I WYKRZYKNIKI: Czy dziecko rozumie...,rozumienie,item_7
+2.11632292007086,0.672585685774641,muu [krowa],ODGŁOSY I WYKRZYKNIKI: Czy dziecko mówi...,mowa,item_7
+1.21253709832413,-1.29815584544748,pi pi pi/ćwir ćwir,ODGŁOSY I WYKRZYKNIKI: Czy dziecko rozumie...,rozumienie,item_8
+2.02235991163911,-0.613759054361284,pi pi pi/ćwir ćwir,ODGŁOSY I WYKRZYKNIKI: Czy dziecko mówi...,mowa,item_8
+0.339422886890221,-1.20898728367334,bam/bum/bęc,ODGŁOSY I WYKRZYKNIKI: Czy dziecko rozumie...,rozumienie,item_9
+1.65421754139538,0.265861715722846,bam/bum/bęc,ODGŁOSY I WYKRZYKNIKI: Czy dziecko mówi...,mowa,item_9
+0.250309712934054,-1.04654026015342,brrum brrum [auto],ODGŁOSY I WYKRZYKNIKI: Czy dziecko rozumie...,rozumienie,item_10
+1.91309780505983,1.08675919955383,brrum brrum [auto],ODGŁOSY I WYKRZYKNIKI: Czy dziecko mówi...,mowa,item_10
+1.02080025929705,-1.25512757646319,tik tak,ODGŁOSY I WYKRZYKNIKI: Czy dziecko rozumie...,rozumienie,item_11
+1.69570585841733,-0.561800097883454,tik tak,ODGŁOSY I WYKRZYKNIKI: Czy dziecko mówi...,mowa,item_11
+0.77639924976799,-1.41694522422101,tralala/lalala,ODGŁOSY I WYKRZYKNIKI: Czy dziecko rozumie...,rozumienie,item_12
+1.68920152169401,-0.159434113400228,tralala/lalala,ODGŁOSY I WYKRZYKNIKI: Czy dziecko mówi...,mowa,item_12
+1.30642632520351,-0.811527239083929,miś/niedźwiedź,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_32
+1.81134965676675,-0.438320470313616,miś/niedźwiedź,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_32
+0.472130700934136,0.352048798933848,auto/samochód,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_56
+2.50412506942142,2.46523759867051,auto/samochód,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_56
+2.06561329941483,-1.85368225982113,motor/motocykl,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_62
+2.1746429894375,-1.42406940249279,motor/motocykl,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_62
+0.599757855395831,-0.847756973912721,jedzenie/papu/am,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_92
+2.02861168081597,0.629345256617677,jedzenie/papu/am,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_92
+3.53942796028797,-2.80420829304337,makaron/kluski,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_105
+3.22305062255379,-2.18070917467462,makaron/kluski,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_105
+4.07501407123318,-4.19029583623018,masło/margaryna,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_108
+3.46471707596039,-3.37521983746495,masło/margaryna,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_108
+3.3240354209627,-2.13210311991409,ziemniaki/kartofle,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_134
+3.062524421389,-1.59386157786055,ziemniaki/kartofle,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_134
+3.34516013161218,-2.16940586562251,kartka/papier,ZABAWKI: Czy dziecko rozumie...,rozumienie,item_140
+3.12621239904946,-1.66419808839464,kartka/papier,ZABAWKI: Czy dziecko mówi...,mowa,item_140
+2.98505035485312,-1.86335769830037,pisak/długopis,ZABAWKI: Czy dziecko rozumie...,rozumienie,item_149
+3.10067491264042,-1.40265939266788,pisak/długopis,ZABAWKI: Czy dziecko mówi...,mowa,item_149
+3.15420095244287,-2.07156642735719,pantofle/kapcie,UBRANIA: Czy dziecko rozumie...,rozumienie,item_165
+3.30073864339374,-1.58921220171517,pantofle/kapcie,UBRANIA: Czy dziecko mówi...,mowa,item_165
+2.2227083623905,0.168615629186348,pieluszka/pampers,UBRANIA: Czy dziecko rozumie...,rozumienie,item_167
+3.26712171789103,0.862897353143174,pieluszka/pampers,UBRANIA: Czy dziecko mówi...,mowa,item_167
+3.46429655605632,-2.24458507273017,rajstopy/rajtuzy,UBRANIA: Czy dziecko rozumie...,rozumienie,item_169
+3.28931040105481,-1.77464255563654,rajstopy/rajtuzy,UBRANIA: Czy dziecko mówi...,mowa,item_169
+3.6041160444695,-3.3924987979087,paznokcie/pazurki,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_192
+3.57231886235555,-3.08073963309723,paznokcie/pazurki,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_192
+3.93084459986364,-3.8995030473496,półka/regał,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_221
+3.82841770067265,-3.61101874635542,półka/regał,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_221
+3.74817552377564,-2.96623878456611,ubikacja/ustęp,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_232
+3.55448751775094,-2.37409357943651,ubikacja/ustęp,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_232
+2.91505422145763,-1.02143554043118,koc/kołdra,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_244
+3.21073987871418,-0.55866979948788,koc/kołdra,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_244
+3.56836693408616,-3.11397540639541,lekarstwa/tabletki,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_248
+3.46458976119251,-2.71839339893784,lekarstwa/tabletki,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_248
+2.90749904276278,-1.07972696763158,szczoteczka do zębów,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_268
+3.09700757132353,-0.65209365882968,szczoteczka do zębów,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_268
+4.22088236922205,-3.39112334839395,szmata/ścierka,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_271
+3.90260863493532,-2.83106487694942,szmata/ścierka,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_271
+1.89537238455314,0.167534593457878,telefon/komórka,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_275
+3.08112537386936,0.978153168694126,telefon/komórka,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_275
+3.67729150850031,-2.28542975895359,zdjęcie/fotografia,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_280
+3.61460508576799,-1.7807277952225,zdjęcie/fotografia,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_280
+3.64725638441465,-2.3757021144285,kijek/patyk,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_295
+3.58953909164504,-1.86157908492312,kijek/patyk,POZA DOMEM: Czy dziecko mówi...,mowa,item_295
+3.72864480429799,-1.99171266420066,piasek/piaskownica,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_303
+3.74877152184612,-1.41810863179937,piasek/piaskownica,POZA DOMEM: Czy dziecko mówi...,mowa,item_303
+2.37562309303279,-0.741885965853353,na dwór/na pole,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_321
+2.9939183359563,-0.240587122238756,na dwór/na pole,POZA DOMEM: Czy dziecko mówi...,mowa,item_321
+2.82793562833423,-2.31275589450351,doktor/lekarz,OSOBY: Czy dziecko rozumie...,rozumienie,item_336
+2.811145096532,-1.98781053169285,doktor/lekarz,OSOBY: Czy dziecko mówi...,mowa,item_336
+0.581800111804886,-0.580362739880241,dzidzi/dzidziuś,OSOBY: Czy dziecko rozumie...,rozumienie,item_338
+1.97064397135143,0.574086076429837,dzidzi/dzidziuś,OSOBY: Czy dziecko mówi...,mowa,item_338
+1.16935516168613,-1.07889835341683,imię zwierzątka,OSOBY: Czy dziecko rozumie...,rozumienie,item_343
+1.75146147969574,-0.600040666417056,imię zwierzątka,OSOBY: Czy dziecko mówi...,mowa,item_343
+0.442275449788719,0.276515566148684,własne imię dziecka,OSOBY: Czy dziecko rozumie...,rozumienie,item_356
+1.03094143809637,0.9269907040957,własne imię dziecka,OSOBY: Czy dziecko mówi...,mowa,item_356
+1.78950052117637,-0.960095032076566,dzień dobry,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko rozumie...",rozumienie,item_359
+1.92669525266943,-0.723013287137294,dzień dobry,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_359
+2.23169549906514,-1.70876568645589,do widzenia,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko rozumie...",rozumienie,item_360
+2.47247807718959,-1.34906590459163,do widzenia,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_360
+-0.238807515923391,-0.308141247077335,"pa, pa","FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko rozumie...",rozumienie,item_366
+2.0739776308688,3.56413048030598,"pa, pa","FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_366
+1.23117713978507,-1.38611845163004,siusiu/siku/sisi,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko rozumie...",rozumienie,item_372
+2.51159926680441,-0.596838755543136,siusiu/siku/sisi,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_372
+0.497060009267079,0.258998674976803,kosi-kosi łapci,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko rozumie...",rozumienie,item_374
+1.23377536750711,1.10192795890774,kosi-kosi łapci,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_374
+1.1304679255563,0.471626239829531,idzie rak nieborak,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko rozumie...",rozumienie,item_375
+1.41455648424381,0.741189488862745,idzie rak nieborak,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_375
+1.09293324773542,-0.222153991995392,sroczka kaszkę warzyła,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko rozumie...",rozumienie,item_376
+1.32207010792079,0.016560465016881,sroczka kaszkę warzyła,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_376
+2.18135467615078,-1.81991145458612,brzydki/brzydko,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_380
+2.38024054575328,-1.49160780586706,brzydki/brzydko,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_380
+0.872983218331527,-0.43929523100616,cacy/cacany,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_381
+1.65405215345991,0.245366175173015,cacy/cacany,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_381
+2.87185041788719,-2.23415411268198,ciepły/ciepło,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_383
+3.43344803464327,-1.79396326885808,ciepły/ciepło,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_383
+2.41848770023862,-1.49649411604769,dobry/dobrze,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_388
+2.50682499679323,-1.14948143877947,dobry/dobrze,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_388
+2.32817216341422,-1.7123876727754,gorący/gorąco,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_392
+2.88894752100515,-1.19620150149519,gorący/gorąco,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_392
+2.58203629641472,-1.78015361425632,ładny/ładnie,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_394
+2.61384652697352,-1.42522058391816,ładny/ładnie,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_394
+3.89809591628966,-2.91665518477055,mokry/mokro,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_397
+3.68371631424515,-2.29656876950015,mokry/mokro,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_397
+2.76073160181441,-1.34106873363889,(nie)grzeczny,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_398
+2.78797871795006,-0.941394425234995,(nie)grzeczny,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_398
+3.55932566709977,-2.60021306508282,zimny/zimno,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_408
+3.74849845624705,-2.07390457498868,zimny/zimno,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_408
+3.125486116527,-2.30416480089132,prędko/szybko,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_421
+2.91536212492095,-1.89517224225013,prędko/szybko,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_421
+2.47433944767459,-2.28535578172989,bać się,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_423
+2.40365844069342,-1.94187593615935,bać się,CZASOWNIKI: Czy dziecko mówi...,mowa,item_423
+2.80365956264064,-0.306858237824894,bawić się,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_424
+3.24338989591182,0.19672024151418,bawić się,CZASOWNIKI: Czy dziecko mówi...,mowa,item_424
+4.37545370536087,-2.2952991712553,biec/biegać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_426
+4.15717688059818,-1.6808047714493,biec/biegać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_426
+3.02282975581143,-2.94120889121122,być (jest),CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_429
+3.0263069146562,-2.47974700183864,być (jest),CZASOWNIKI: Czy dziecko mówi...,mowa,item_429
+1.68233985248584,-0.153848761561106,chodzić (chodź),CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_432
+2.13654398981364,0.248739541130209,chodzić (chodź),CZASOWNIKI: Czy dziecko mówi...,mowa,item_432
+1.98931694102674,-0.725206524008397,huśtać/bujać się,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_448
+2.59200974607396,-0.25174995941807,huśtać/bujać się,CZASOWNIKI: Czy dziecko mówi...,mowa,item_448
+1.91585694409116,-0.400084481947791,iść/pójść,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_449
+2.57142562283057,0.0734181794104875,iść/pójść,CZASOWNIKI: Czy dziecko mówi...,mowa,item_449
+2.81023921113944,-0.984003284898442,jechać/jeździć,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_450
+3.31171100074759,-0.440858840793288,jechać/jeździć,CZASOWNIKI: Czy dziecko mówi...,mowa,item_450
+1.61147923154667,0.482361866471581,kąpać się,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_452
+2.47692577147617,1.17125106303277,kąpać się,CZASOWNIKI: Czy dziecko mówi...,mowa,item_452
+2.12327639268314,-1.94060774528782,mieć (ma),CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_463
+2.79928089698525,-1.43243158938166,mieć (ma),CZASOWNIKI: Czy dziecko mówi...,mowa,item_463
+2.3903980184308,-0.736085583327443,myć (się),CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_468
+3.12936370187336,-0.218090912302355,myć (się),CZASOWNIKI: Czy dziecko mówi...,mowa,item_468
+3.93253388927728,-3.15797003707835,nieść/nosić,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_472
+3.42371816751653,-2.46457000892099,nieść/nosić,CZASOWNIKI: Czy dziecko mówi...,mowa,item_472
+4.04040605565315,-2.81950338723117,obudzić (się),CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_473
+3.46113821443877,-2.11394864344865,obudzić (się),CZASOWNIKI: Czy dziecko mówi...,mowa,item_473
+3.83343418791587,-1.79131632749148,oglądać/obejrzeć,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_474
+3.54901268696868,-1.19447072244059,oglądać/obejrzeć,CZASOWNIKI: Czy dziecko mówi...,mowa,item_474
+3.14578065245063,-3.90413035044837,palić (się),CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_477
+2.71536086379925,-3.42910294863568,palić (się),CZASOWNIKI: Czy dziecko mówi...,mowa,item_477
+3.16056337016661,-1.50221715850423,patrzeć (patrz),CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_478
+2.98670995893713,-1.04536812857604,patrzeć (patrz),CZASOWNIKI: Czy dziecko mówi...,mowa,item_478
+2.6344112994145,-1.54718826494837,stukać/pukać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_507
+2.7108451816219,-1.11312455719126,stukać/pukać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_507
+3.28493971960404,-0.892530436555429,ubrać (się),CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_514
+3.35202797784836,-0.413486275074755,ubrać (się),CZASOWNIKI: Czy dziecko mówi...,mowa,item_514
+2.83080234165465,-1.84297110796107,upaść/spaść,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_518
+2.93561407610047,-1.28294842564419,upaść/spaść,CZASOWNIKI: Czy dziecko mówi...,mowa,item_518
+3.0577471143714,-1.04831075116923,usiąść/siadać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_519
+3.06373982645016,-0.564750675548323,usiąść/siadać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_519
+3.13491401734238,-1.91676143319945,zaświecić/zapalić,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_531
+2.99553131594313,-1.44018492560889,zaświecić/zapalić,CZASOWNIKI: Czy dziecko mówi...,mowa,item_531
+3.59789732158759,-2.33541921468421,zdjąć/ściągnąć,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_532
+3.3319576171265,-1.81275133479323,zdjąć/ściągnąć,CZASOWNIKI: Czy dziecko mówi...,mowa,item_532
+0.743888495992132,-0.0825890461582728,nie ma,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_542
+2.18112471237765,1.05659462212968,nie ma,CZASOWNIKI: Czy dziecko mówi...,mowa,item_542
+1.13105662048927,0.486793882437395,(nie) wolno,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_545
+1.77744495055751,1.05775990136145,(nie) wolno,CZASOWNIKI: Czy dziecko mówi...,mowa,item_545
+2.8547287811237,-1.54634425274415,na górę/na górze,OKREŚLENIA MIEJSCA: Czy dziecko rozumie...,rozumienie,item_554
+2.88328305146705,-1.11636623343393,na górę/na górze,OKREŚLENIA MIEJSCA: Czy dziecko mówi...,mowa,item_554
+3.05242070767741,-1.87115331118119,na dół/na dole,OKREŚLENIA MIEJSCA: Czy dziecko rozumie...,rozumienie,item_555
+2.99273596747342,-1.45855493750286,na dół/na dole,OKREŚLENIA MIEJSCA: Czy dziecko mówi...,mowa,item_555
+2.29507701817392,-1.82269509983753,już/już nie,OKREŚLENIA CZASU (w takich zdaniach np. „Już zrobiłem!” albo „Tatuś już nie śpi”):: Czy dziecko rozumie...,rozumienie,item_562
+2.28903457283946,-1.42465748804754,już/już nie,OKREŚLENIA CZASU (w takich zdaniach np. „Już zrobiłem!” albo „Tatuś już nie śpi”):: Czy dziecko mówi...,mowa,item_562
+2.78924267115106,-2.53105594657918,jeszcze/jeszcze nie,"OKREŚLENIA CZASU (w takich zdaniach jak np. „Jeszcze pisać!”, „Jeszcze raz mi to zrób!” albo „Jeszcze nie wypiłam”):: Czy dziecko rozumie...",rozumienie,item_563
+2.56284827522611,-2.10743264086464,jeszcze/jeszcze nie,"OKREŚLENIA CZASU (w takich zdaniach jak np. „Jeszcze pisać!”, „Jeszcze raz mi to zrób!” albo „Jeszcze nie wypiłam”):: Czy dziecko mówi...",mowa,item_563
+3.13420787034427,-2.98638540710902,potem/później,OKREŚLENIA CZASU: Czy dziecko rozumie...,rozumienie,item_566
+2.71744353865286,-2.53101356390436,potem/później,OKREŚLENIA CZASU: Czy dziecko mówi...,mowa,item_566
+2.97268283693791,-2.85316526530534,noc/w nocy,OKREŚLENIA CZASU: Czy dziecko rozumie...,rozumienie,item_577
+2.77051136049837,-2.39409859787366,noc/w nocy,OKREŚLENIA CZASU: Czy dziecko mówi...,mowa,item_577
+2.95523286358374,-3.60911149484668,trochę/troszkę,OKREŚLENIA MIARY: Czy dziecko rozumie...,rozumienie,item_582
+2.71634792819749,-3.32784005346654,trochę/troszkę,OKREŚLENIA MIARY: Czy dziecko mówi...,mowa,item_582
+3.03372772908689,-3.21799708691621,wszystko/wszyscy,OKREŚLENIA MIARY (w takich zdaniach jak np. „Ania wszystko wypiła.” albo „Wszystko zepsute.” albo „Wszyscy śpią”):: Czy dziecko rozumie...,rozumienie,item_586
+2.72617128951936,-2.818087851119,wszystko/wszyscy,OKREŚLENIA MIARY (w takich zdaniach jak np. „Ania wszystko wypiła.” albo „Wszystko zepsute.” albo „Wszyscy śpią”):: Czy dziecko mówi...,mowa,item_586
+2.31191015274506,-1.85374227827251,sam/sama,OKREŚLENIA MIARY: Czy dziecko rozumie...,rozumienie,item_592
+2.77856577294712,-1.35813005174586,sam/sama,OKREŚLENIA MIARY: Czy dziecko mówi...,mowa,item_592
+2.73852605531078,-2.899801162056,dosyć/dość,OKREŚLENIA MIARY: Czy dziecko rozumie...,rozumienie,item_595
+2.50416103805215,-2.54316050874309,dosyć/dość,OKREŚLENIA MIARY: Czy dziecko mówi...,mowa,item_595
+1.54790541239519,-1.44851537607153,"ja (mi, mnie)",ZAIMKI: Czy dziecko rozumie...,rozumienie,item_600
+2.42420304640504,-0.806345068373512,"ja (mi, mnie)",ZAIMKI: Czy dziecko mówi...,mowa,item_600
+2.14461625569139,-1.89544692505538,"ty (ci, cię)",ZAIMKI: Czy dziecko rozumie...,rozumienie,item_601
+2.56756493782545,-1.36831327063121,"ty (ci, cię)",ZAIMKI: Czy dziecko mówi...,mowa,item_601
+3.38667385847275,-3.66923142146473,"my (nam, nas)",ZAIMKI: Czy dziecko rozumie...,rozumienie,item_604
+3.12648867536213,-3.12101888761367,"my (nam, nas)",ZAIMKI: Czy dziecko mówi...,mowa,item_604
+1.23705082174655,-0.504388531281707,co to?/co to jest?,PYTANIA: Czy dziecko rozumie...,rozumienie,item_626
+1.98015556748799,0.0561971057126511,co to?/co to jest?,PYTANIA: Czy dziecko mówi...,mowa,item_626
+1.39943274005211,-1.71957287486969,co?,PYTANIA: Czy dziecko rozumie...,rozumienie,item_627
+2.09097822477505,-1.17672389319862,co?,PYTANIA: Czy dziecko mówi...,mowa,item_627
+2.55670013411405,-1.63929435348752,co robi?,PYTANIA: Czy dziecko rozumie...,rozumienie,item_628
+2.40013610833302,-1.24707058951113,co robi?,PYTANIA: Czy dziecko mówi...,mowa,item_628
+1.87660042907616,-1.35393141428395,kto?,PYTANIA: Czy dziecko rozumie...,rozumienie,item_629
+2.18874138660048,-0.981849374035944,kto?,PYTANIA: Czy dziecko mówi...,mowa,item_629
+1.49646830136282,-0.715210896097984,gdzie?,PYTANIA: Czy dziecko rozumie...,rozumienie,item_631
+1.80904516857053,-0.425079448644277,gdzie?,PYTANIA: Czy dziecko mówi...,mowa,item_631
+3.17121113681278,-3.51930327877007,jak?,PYTANIA: Czy dziecko rozumie...,rozumienie,item_633
+3.00824348261684,-3.09977664945037,jak?,PYTANIA: Czy dziecko mówi...,mowa,item_633
+3.3918684391391,-3.85358254701628,dlaczego?/czemu?,PYTANIA: Czy dziecko rozumie...,rozumienie,item_634
+3.06880198225317,-3.40345385875317,dlaczego?/czemu?,PYTANIA: Czy dziecko mówi...,mowa,item_634
+3.50371208807947,-3.98808023363715,jaki?,PYTANIA: Czy dziecko rozumie...,rozumienie,item_636
+3.07273888854234,-3.38439830041914,jaki?,PYTANIA: Czy dziecko mówi...,mowa,item_636
+1.77877551231778,1.73955056130557,hau hau,ODGŁOSY I WYKRZYKNIKI: Czy dziecko mówi...,mowa,item_2
+1.51406581781812,1.28765749413246,dziadek/dziadzio,OSOBY: Czy dziecko mówi...,mowa,item_337
+2.0095085737311,3.90819069028186,mama/mamusia,OSOBY: Czy dziecko mówi...,mowa,item_349
+1.77453745496904,3.49929061428979,tata/tatuś,OSOBY: Czy dziecko mówi...,mowa,item_355
+2.597971632836,4.00161381646112,"Wyciąga rękę, aby pokazać trzymany przedmiot.",PIERWSZE GESTY KOMUNIKATYWNE: Czy Państwa dziecko używa poniższego gestu?,gesty,item_A_1
+2.5484742781775,3.76502997019385,Daje komuś trzymany przedmiot.,PIERWSZE GESTY KOMUNIKATYWNE: Czy Państwa dziecko używa poniższego gestu?,gesty,item_A_2
+2.4340845127178,1.8287036134721,Pokazuje palcem wskazującym ciekawy przedmiot lub zdarzenie.,PIERWSZE GESTY KOMUNIKATYWNE: Czy Państwa dziecko używa poniższego gestu?,gesty,item_A_3
+2.18690991021062,2.98566985432823,"Robi „pa, pa!”, kiedy ktoś odchodzi.",PIERWSZE GESTY KOMUNIKATYWNE: Czy Państwa dziecko używa poniższego gestu?,gesty,item_A_4
+2.10810404640349,4.15464296295138,"Podnosi rączki w górę na znak, żeby je wziąć na ręce.",PIERWSZE GESTY KOMUNIKATYWNE: Czy Państwa dziecko używa poniższego gestu?,gesty,item_A_5
+1.67670997104221,1.22717461356097,Kręci głową przecząco.,PIERWSZE GESTY KOMUNIKATYWNE: Czy Państwa dziecko używa poniższego gestu?,gesty,item_A_6
+1.64826156731144,-0.278173767276989,Kiwa głową potakująco.,PIERWSZE GESTY KOMUNIKATYWNE: Czy Państwa dziecko używa poniższego gestu?,gesty,item_A_7
+1.90415681660628,-1.56158095264651,Kładzie palec na ustach („cicho!”).,PIERWSZE GESTY KOMUNIKATYWNE: Czy Państwa dziecko używa poniższego gestu?,gesty,item_A_8
+1.50491857469091,1.93628332099984,"Pokazuje, że czegoś chce, wyciągając rączkę w kierunku przedmiotu, otwierając i zamykając dłoń.",PIERWSZE GESTY KOMUNIKATYWNE: Czy Państwa dziecko używa poniższego gestu?,gesty,item_A_9
+2.15866054225465,-0.46698767480396,Posyła całusy na odległość.,PIERWSZE GESTY KOMUNIKATYWNE: Czy Państwa dziecko używa poniższego gestu?,gesty,item_A_10
+1.25462270659615,0.31006482534737,"Mlaszcze („mniam mniam”), żeby pokazać, że coś mu smakuje.",PIERWSZE GESTY KOMUNIKATYWNE: Czy Państwa dziecko używa poniższego gestu?,gesty,item_A_11
+2.15468827353641,-0.114362335039184,"Wzrusza ramionami lub rozkłada ręce, żeby pokazać, że czegoś nie ma.",PIERWSZE GESTY KOMUNIKATYWNE: Czy Państwa dziecko używa poniższego gestu?,gesty,item_A_12
+1.53865087434708,2.6751977293894,"Bawi się w „nie ma, nie ma - a jest!” (Albo „a kuku!”)",ZABAWY I RYTUAŁY: Czy Państwa dziecko wykonuje poniższą czynność?,gesty,item_B_1
+0.837150424002107,0.0235675490581877,Bawi się w „sroczka kaszkę warzyła”.,ZABAWY I RYTUAŁY: Czy Państwa dziecko wykonuje poniższą czynność?,gesty,item_B_2
+1.3250844736252,-0.0492135805389597,Pokazuje „jaki jestem duży!”/„jaka jestem duża!”.,ZABAWY I RYTUAŁY: Czy Państwa dziecko wykonuje poniższą czynność?,gesty,item_B_3
+1.81877135067843,0.390573389137849,Bawi się w berka (tj. goni lub ucieka).,ZABAWY I RYTUAŁY: Czy Państwa dziecko wykonuje poniższą czynność?,gesty,item_B_4
+1.38091337691746,-0.114468997529624,Śpiewa.,ZABAWY I RYTUAŁY: Czy Państwa dziecko wykonuje poniższą czynność?,gesty,item_B_5
+2.31110511989224,1.86520877828976,Tańczy.,ZABAWY I RYTUAŁY: Czy Państwa dziecko wykonuje poniższą czynność?,gesty,item_B_6
+1.99335318202216,0.403840598360213,Je łyżką lub widelcem.,DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_1
+1.50902385275962,1.14693569195005,Pije płyny z kubeczka.,DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_2
+2.89582245882398,0.338459030691065,Czesze się szczotką lub grzebieniem.,DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_3
+2.04207385749393,-0.18667156021535,Myje zęby.,DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_4
+3.05430907799958,-1.1563390153141,Myje i wyciera twarz lub ręce.,DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_5
+2.29645017393732,-0.419639317992068,Wkłada czapkę.,DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_6
+2.59603651835705,-0.737335822358108,Wkłada buta lub skarpetkę.,DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_7
+2.44502618808681,-0.922704870853335,"Zakłada korale, bransoletkę lub zegarek.",DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_8
+1.46565284678476,-0.490753384004518,"Przykłada głowę do ręki i mruży oczy, żeby pokazać, że śpi.",DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_9
+2.49261650428218,-0.89249882908896,"Pokazuje, że coś jest gorące, dmuchając lub odsuwając palec.",DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_10
+1.50095317838131,-2.16917000928548,Trzyma samolocik i lata nim.,DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_11
+3.19985824524316,1.94798206077711,Przykłada do ucha słuchawkę telefonu.,DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_12
+2.49072793998233,-0.370178825123771,Wącha kwiatki.,DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_13
+2.05932521151075,0.937766945507842,Jeździ autkiem.,DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_14
+2.28136681117919,2.40554939363178,Rzuca piłką.,DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_15
+2.28582132135132,-1.8239765306149,Przelewa płyny na niby.,DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_16
+2.67469210048319,-0.569884197904091,Na niby miesza łyżeczką płyn w naczyniu.,DZIAŁANIA NA PRZEDMIOTACH: Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_C_17
+2.8889075808461,-1.72207800525586,Kładzenie do łóżka.,ZABAWA LALKĄ LUB MISIEM — CZYNNOŚCI OPIEKUŃCZE: Czy w zabawach dziecka lalką lub misiem zaobserwowali Państwo poniższą czynność?,gesty,item_D_1
+2.88581892900724,-2.44548278129372,Przykrywanie kocykiem.,ZABAWA LALKĄ LUB MISIEM — CZYNNOŚCI OPIEKUŃCZE: Czy w zabawach dziecka lalką lub misiem zaobserwowali Państwo poniższą czynność?,gesty,item_D_2
+2.66705645250214,-2.40564761371643,Karmienie z butelki.,ZABAWA LALKĄ LUB MISIEM — CZYNNOŚCI OPIEKUŃCZE: Czy w zabawach dziecka lalką lub misiem zaobserwowali Państwo poniższą czynność?,gesty,item_D_3
+3.14396046931776,-2.48079429003912,Karmienie łyżką.,ZABAWA LALKĄ LUB MISIEM — CZYNNOŚCI OPIEKUŃCZE: Czy w zabawach dziecka lalką lub misiem zaobserwowali Państwo poniższą czynność?,gesty,item_D_4
+2.97695118321095,-2.34466791936279,Czesanie.,ZABAWA LALKĄ LUB MISIEM — CZYNNOŚCI OPIEKUŃCZE: Czy w zabawach dziecka lalką lub misiem zaobserwowali Państwo poniższą czynność?,gesty,item_D_5
+2.77147449668365,-0.899805040062963,Noszenie na rękach.,ZABAWA LALKĄ LUB MISIEM — CZYNNOŚCI OPIEKUŃCZE: Czy w zabawach dziecka lalką lub misiem zaobserwowali Państwo poniższą czynność?,gesty,item_D_6
+2.64381979441303,-1.84372456420267,Wożenie w wózku.,ZABAWA LALKĄ LUB MISIEM — CZYNNOŚCI OPIEKUŃCZE: Czy w zabawach dziecka lalką lub misiem zaobserwowali Państwo poniższą czynność?,gesty,item_D_7
+2.75939931521579,-2.31785598758515,"Huśtanie, kołysanie, usypianie.",ZABAWA LALKĄ LUB MISIEM — CZYNNOŚCI OPIEKUŃCZE: Czy w zabawach dziecka lalką lub misiem zaobserwowali Państwo poniższą czynność?,gesty,item_D_8
+2.0672927643845602,0.151085965567062,"Całowanie, ściskanie.",ZABAWA LALKĄ LUB MISIEM — CZYNNOŚCI OPIEKUŃCZE: Czy w zabawach dziecka lalką lub misiem zaobserwowali Państwo poniższą czynność?,gesty,item_D_9
+2.69450163822571,-2.59494472707931,Ubieranie (próba wkładania czapki czy butów lub skarpetek).,ZABAWA LALKĄ LUB MISIEM — CZYNNOŚCI OPIEKUŃCZE: Czy w zabawach dziecka lalką lub misiem zaobserwowali Państwo poniższą czynność?,gesty,item_D_10
+3.12734103466188,-3.73466208948333,Mycie lub wycieranie.,ZABAWA LALKĄ LUB MISIEM — CZYNNOŚCI OPIEKUŃCZE: Czy w zabawach dziecka lalką lub misiem zaobserwowali Państwo poniższą czynność?,gesty,item_D_11
+3.26630771567507,-5.21894460319772,Przewijanie lub wysadzanie.,ZABAWA LALKĄ LUB MISIEM — CZYNNOŚCI OPIEKUŃCZE: Czy w zabawach dziecka lalką lub misiem zaobserwowali Państwo poniższą czynność?,gesty,item_D_12
+1.66281750348129,-1.53308403111602,Mówienie do lalki/misia.,ZABAWA LALKĄ LUB MISIEM — CZYNNOŚCI OPIEKUŃCZE: Czy w zabawach dziecka lalką lub misiem zaobserwowali Państwo poniższą czynność?,gesty,item_D_13
+1.23431205892119,0.244244402645734,Stuka młotkiem.,NAŚLADOWANIE INNYCH CZYNNOŚCI DOROSŁYCH (na przedmiotach lub zabawkach): Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_E_3
+1.732096844319,1.01829992067336,Zapala i gasi światło.,NAŚLADOWANIE INNYCH CZYNNOŚCI DOROSŁYCH (na przedmiotach lub zabawkach): Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_E_4
+1.60241801598796,1.68271193320259,"„Czyta” (otwiera książkę, przewraca kartki).",NAŚLADOWANIE INNYCH CZYNNOŚCI DOROSŁYCH (na przedmiotach lub zabawkach): Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_E_5
+1.30212948580814,-0.0709633782254849,"Gra na instrumentach (trąbka, cymbałki, fortepian itp.).",NAŚLADOWANIE INNYCH CZYNNOŚCI DOROSŁYCH (na przedmiotach lub zabawkach): Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_E_8
+1.36861955335672,0.0810539734442144,Kręci kierownicą.,NAŚLADOWANIE INNYCH CZYNNOŚCI DOROSŁYCH (na przedmiotach lub zabawkach): Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_E_9
+1.83928944536178,-2.53028513539806,„Myje” naczynia.,NAŚLADOWANIE INNYCH CZYNNOŚCI DOROSŁYCH (na przedmiotach lub zabawkach): Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_E_10
+1.94935039939572,1.58107291105958,Używa pilota lub przycisku do włączenia telewizora lub innych urządzeń.,NAŚLADOWANIE INNYCH CZYNNOŚCI DOROSŁYCH (na przedmiotach lub zabawkach): Czy Państwa dziecko wykonuje lub próbuje wykonywać poniższą czynność?,gesty,item_E_15
+2.16755867901332,-2.01099443351442,baran,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_13
+2.29588773974172,-2.18618713426781,biedronka,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_14
+2.63615582794208,-2.94568505548466,bocian,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_15
+2.10286733757713,-2.38208120959657,gęś,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_17
+3.00225067400523,-3.67798680219733,jeż,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_19
+1.42078668924034,-0.947501565253297,kaczka,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_20
+1.97482762543847,-1.76850497444511,kogut,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_21
+1.57506673131424,-1.01227724208542,koń,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_22
+2.4969779933645,-2.66665606627028,koza,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_24
+1.32852467514126,-0.577975779101187,krowa,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_25
+2.22470276140999,-2.16304463525892,królik,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_26
+1.3363816697792399,-0.633506566847885,kura,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_27
+2.10290550892448,-2.38876683122901,lew,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_29
+2.8466601500195,-3.68460997117096,lis,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_30
+2.21386302474983,-2.24988522217308,małpa,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_31
+2.01785498475351,-1.7959544787213,mucha,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_35
+2.17900308443442,-2.12433682371446,myszka,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_36
+2.96342668047207,-3.73970966477353,pingwin,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_39
+1.8909532799608,-0.896131717521659,ptaszek,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_40
+3.17307163766378,-3.57775702031564,robak,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_41
+2.26881932562639,-1.58251039123059,ryba,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_42
+2.44884318665941,-2.22593916791623,słoń,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_43
+2.43728029542699,-3.11703316206094,sowa,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_44
+2.94457095753967,-3.33496588068502,ślimak,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_45
+2.10044208506056,-1.57236330262134,świnka,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_46
+2.56061356053126,-2.94762690984109,tygrys,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_47
+3.00534754220974,-3.50259047526959,wiewiórka,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_49
+2.82459854868516,-3.64519832232109,wilk,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_50
+3.14482319565409,-3.28287677235785,zając,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_51
+1.9584313314747,-1.55738277709178,żaba,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_53
+2.7089029426331,-3.15648901413812,żółw,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_54
+2.64840632307998,-2.6661451410819,żyrafa,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_55
+1.97851174755734,-1.91317295036595,autobus,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_57
+2.03132022075602,-1.85223307793839,pociąg,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_63
+2.6071725273525,-1.41063045411832,rower,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_65
+2.44154868345995,-1.94434486502524,samolot,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_66
+2.97334785821936,-3.37515466438944,statek,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_67
+1.97363018698624,-1.53915778506427,traktor,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_68
+2.33811971960434,-3.16688653686567,tramwaj,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko rozumie...,rozumienie,item_69
+1.68900228444296,-0.298599032032507,banan,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_70
+2.45315078135625,-2.83160075567979,budyń,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_73
+2.15325972817761,-0.678375880238984,bułka,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_74
+2.17229300363456,-0.48897379443078,chleb,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_77
+1.72473768334334,0.0240898263328639,chrupki,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_78
+2.14140002583595,-0.767603990185205,ciastko,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_80
+2.99146700182493,-3.39826961356812,cukier,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_81
+2.4886511112186,-1.95757856094735,cukierek,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_82
+2.1730565423231,-1.45175674702409,czekolada,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_83
+3.00636268134919,-3.43751139749942,dżem,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_84
+2.07680414795245,-1.11989615912664,herbata,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_89
+2.1776392653283,-0.314126615399761,jabłko,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_90
+1.87781393448356,-1.40733508460192,jajko,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_91
+2.22532151800226,-1.52614794024589,jogurt,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_93
+1.55324787776542,-0.569658365262743,kaszka,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_97
+2.76127369846793,-3.38579069486163,kawa,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_98
+2.7727328384208,-2.3656862652851,kiełbasa,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_100
+3.23634597704079,-2.33905821521854,mięso,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_109
+1.37454795795003,-0.113468080590194,mleko,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_111
+2.68230507790987,-1.9052257586197,paluszki,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_115
+0.982141899729178,0.0602881141780354,picie,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_117
+3.40051303232801,-3.36693181909338,ser,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_126
+2.27296593428175,-1.3827075448613,sok,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_127
+3.40897263670248,-3.18531151336471,szynka,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_130
+2.29749158362631,-1.40316232605061,woda,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_133
+2.37674465646858,-0.640138348172782,zupa,POKARMY I NAPOJE: Czy dziecko rozumie...,rozumienie,item_135
+1.27501670287995,-0.278727956980364,bajka,ZABAWKI: Czy dziecko rozumie...,rozumienie,item_136
+2.09222097162316,-0.88704414085045,balonik,ZABAWKI: Czy dziecko rozumie...,rozumienie,item_137
+2.12668964035255,0.102642823013207,klocki,ZABAWKI: Czy dziecko rozumie...,rozumienie,item_141
+1.95869077232452,0.136866597370495,książka,ZABAWKI: Czy dziecko rozumie...,rozumienie,item_143
+0.926537166511972,-0.669537480593578,lalka,ZABAWKI: Czy dziecko rozumie...,rozumienie,item_144
+3.52164872669787,-2.49909032423509,łopatka,ZABAWKI: Czy dziecko rozumie...,rozumienie,item_145
+0.79983930578324,0.212129838165497,smoczek,ZABAWKI: Czy dziecko rozumie...,rozumienie,item_151
+3.37485807971136,-2.14471746465091,wiaderko,ZABAWKI: Czy dziecko rozumie...,rozumienie,item_152
+1.6570516006336,0.50589643248576,buty,UBRANIA: Czy dziecko rozumie...,rozumienie,item_155
+2.27420246467101,0.280173964074732,czapka,UBRANIA: Czy dziecko rozumie...,rozumienie,item_157
+2.76944828366023,-2.54632888848614,guzik,UBRANIA: Czy dziecko rozumie...,rozumienie,item_158
+3.41778646761299,-4.06905880234181,kapelusz,UBRANIA: Czy dziecko rozumie...,rozumienie,item_160
+3.77084077875659,-3.92436807228003,kieszeń,UBRANIA: Czy dziecko rozumie...,rozumienie,item_161
+3.2797365138994,-3.60430331630395,koszula,UBRANIA: Czy dziecko rozumie...,rozumienie,item_162
+3.23337972125036,-0.597710924526729,kurtka,UBRANIA: Czy dziecko rozumie...,rozumienie,item_163
+3.07000125547054,-3.49660706163433,majtki,UBRANIA: Czy dziecko rozumie...,rozumienie,item_164
+3.08044552146415,-2.1939953376367902,piżama,UBRANIA: Czy dziecko rozumie...,rozumienie,item_168
+2.99330739372002,-2.3423903705272,rękawiczki,UBRANIA: Czy dziecko rozumie...,rozumienie,item_170
+2.92661772246212,-0.508182799533028,skarpetki,UBRANIA: Czy dziecko rozumie...,rozumienie,item_171
+3.82780312152615,-1.15429650277083,spodnie,UBRANIA: Czy dziecko rozumie...,rozumienie,item_172
+3.07973082710461,-2.88712639914183,sukienka,UBRANIA: Czy dziecko rozumie...,rozumienie,item_173
+3.67709912286629,-3.01634124544055,sweter,UBRANIA: Czy dziecko rozumie...,rozumienie,item_174
+3.6067825251509,-3.13994648849756,szalik,UBRANIA: Czy dziecko rozumie...,rozumienie,item_175
+2.22559250310559,-1.56789034017331,śliniaczek,UBRANIA: Czy dziecko rozumie...,rozumienie,item_176
+3.50952477230473,-1.45665669889552,ubranie,UBRANIA: Czy dziecko rozumie...,rozumienie,item_177
+2.95676342061669,-3.13626993332353,broda,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_178
+2.66669328286994,-0.509664663886399,brzuch,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_179
+1.9565790843656,-0.117815299485746,buzia,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_180
+3.13802301507982,-2.88789914348396,czoło,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_181
+2.89312204642555,-0.485251767615569,głowa,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_183
+2.97166187343949,-1.52030704961817,język,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_184
+3.515979396565,-3.42532210405635,kolano,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_185
+2.35682069816911,-0.388933160974728,noga,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_188
+1.326521874761,0.48403115136927,nos,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_189
+1.13983704943348,0.411750364110177,oko,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_190
+3.00732404388326,-1.17380426594745,palec,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_191
+2.43368864636645,-1.37699896678909,pępek,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_193
+4.10858877718777,-3.83858863049957,plecy,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_194
+2.31278970769044,-1.01505871367854,pupa,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_196
+2.8929087572879,-0.517998558159374,ręka,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_197
+3.65944389070226,-3.62343099037851,szyja,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_200
+2.25858994026883,-0.204839234602186,ucho,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_201
+2.9476696320469,-0.27895516998269,włosy,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_202
+3.35429423806729,-1.30893958245607,ząb,CZĘŚCI CIAŁA: Czy dziecko rozumie...,rozumienie,item_203
+2.54419386977044,-2.56947711822711,balkon,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_204
+3.21180659235972,-0.0906446322653125,drzwi,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_206
+3.41687542836902,-2.41903448884018,dywan,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_207
+3.44461409315036,-2.42751023289302,fotel,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_209
+3.56367248317497,-1.12250603753417,krzesło,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_212
+3.52030584814218,-1.00403473641562,kuchnia,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_213
+3.8367331711201,-1.60305793248337,lodówka,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_214
+3.60011520228221,-0.551982616352361,łazienka,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_215
+3.62906932521403,-0.228801462855568,łóżko,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_216
+2.49928268138173,-0.961102680861884,odkurzacz,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_217
+3.26721182110055,-0.870192071207285,okno,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_218
+4.16410456151262,-2.22744543632509,podłoga,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_219
+4.05068945996029,-1.69685445088286,pokój,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_220
+3.49537971804501,-1.48929540083323,pralka,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_222
+3.53566449209183,-1.58708537445205,schody,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_224
+4.26403062471872,-1.44485227671447,stół,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_226
+4.10376761557944,-2.72980100392767,szafa,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_228
+3.12822951052595,-2.11594047608014,szuflada,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_229
+4.2904172151907,-3.39306573464704,ściana,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_230
+2.80273510621985,0.00961702610473779,telewizor,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_231
+2.94069832200745,-1.00161307368884,wanna,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_233
+2.83931093475228,-0.037902125064769,wózek,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko rozumie...",rozumienie,item_234
+1.78999482646904,0.70213771237606,butelka,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_236
+3.69832544774311,-2.44604907805511,garnek,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_239
+2.96794642222061,-2.13357684109997,gazeta,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_240
+3.15037767440784,-1.84335354434656,grzebień,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_241
+3.27617190896541,-1.3421410603999,klucz,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_243
+3.23375596186291,-3.52111289690366,koszyk,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_245
+3.10151399035112,-0.713589495396352,kubek,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_246
+2.40614096329211,-1.26303024368495,lampa,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_247
+3.35816529055382,-1.2677162172759,lustro,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_249
+2.79734931376966,-0.0833528497169659,łyżka,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_250
+4.28975746385789,-2.99851600554014,mydło,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_254
+2.43755583749422,-1.18822023323569,nocnik,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_256
+4.3351577714673,-3.8414488993255,nożyczki,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_257
+4.0281326061596,-3.73035316295955,nóż,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_258
+2.91128967414644,-1.26418665531883,okulary,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_260
+3.29110864698102,-3.05445287435758,pieniądze,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_261
+3.2628730875128,-1.00473695098559,poduszka,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_262
+4.02873378719305,-3.34961271577703,pudełko,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_263
+3.27091467061003,-2.86112637433177,radio,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_264
+4.8357505043824,-2.70258742513864,ręcznik,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_265
+3.59869961853695,-2.49214517892439,szklanka,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_270
+3.80309409868944,-2.01855337039041,śmieci,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_273
+4.66813413638828,-2.37457735146304,talerz,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_274
+3.90183765487315,-2.44518889152893,torebka,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_277
+4.22300377848837,-2.88552519909545,widelec,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_278
+3.1517780274146,-1.99402163054882,zegarek,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_281
+3.71016284586387,-3.43370546240938,żelazko,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko rozumie...,rozumienie,item_282
+3.08666201907091,-2.16494935840752,deszcz,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_287
+3.07479483237382,-1.24809745385702,drzewo,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_290
+3.6380022895008,-2.51409187291072,kamień,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_294
+3.35943943362805,-4.00828210264258,księżyc,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_296
+2.86912396426583,-0.697723990585812,kwiatek,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_297
+2.72810915480311,-1.58243195673016,listek,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_298
+3.20939991132574,-2.55853510084988,niebo,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_301
+3.45216445210673,-4.981794011161,sanki,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_305
+3.15919241368867,-1.95981444379266,słońce,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_306
+3.27219590429625,-4.47193405885853,śnieg,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_307
+3.96945750986721,-1.90995589401329,trawa,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_308
+3.81304369252856,-3.4013129177862,ulica,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_309
+3.08950066946897,-1.17258381925243,woda,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_311
+4.06195858731501,-3.55961040636447,ziemia,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_312
+2.56203606498256,-0.771950298169879,dom,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_314
+2.97975574743149,-3.29048753261489,kościół,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_317
+3.00731315896882,-3.58164461233281,praca,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_325
+3.50488662103258,-2.27950721932552,sklep,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_327
+2.53516821659223,-0.311233125220805,spacer,POZA DOMEM: Czy dziecko rozumie...,rozumienie,item_328
+2.84297760878762,-1.71371939843469,chłopiec,OSOBY: Czy dziecko rozumie...,rozumienie,item_333
+0.988099150535331,-0.32844073300887,ciocia,OSOBY: Czy dziecko rozumie...,rozumienie,item_334
+1.19061579288295,-0.174893565806215,dzieci,OSOBY: Czy dziecko rozumie...,rozumienie,item_339
+2.71470861730302,-1.43255373879263,dziewczynka,OSOBY: Czy dziecko rozumie...,rozumienie,item_340
+3.11957435331553,-3.0640141238175,ludzie,OSOBY: Czy dziecko rozumie...,rozumienie,item_348
+1.74641443856131,-0.998083647817468,wujek,OSOBY: Czy dziecko rozumie...,rozumienie,item_357
+0.977021600256523,-0.0457229237938109,cześć,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko rozumie...",rozumienie,item_358
+2.56512864058757,-1.80604851006087,dobranoc,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko rozumie...",rozumienie,item_361
+1.90924044948367,-1.04133290128863,dziękuję,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko rozumie...",rozumienie,item_362
+1.80529728081062,-0.890879090462003,proszę,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko rozumie...",rozumienie,item_363
+3.39748318470435,-3.16896922349791,przepraszam,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko rozumie...",rozumienie,item_364
+0.823093250073278,-0.667298436731976,halo,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko rozumie...",rozumienie,item_365
+1.87244056978982,-1.36173243289086,kupka,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko rozumie...",rozumienie,item_373
+0.121455271875001,-0.786646467624155,be,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_377
+3.53242387478113,-5.01174521280829,biały,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_378
+3.25854999973183,-2.24370215194428,brudny,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_379
+3.62024194905729,-3.83461267925812,chory,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_382
+4.2691518531638,-4.16511664049226,ciężki,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_384
+3.48332682172041,-5.3655107744997,czarny,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_385
+3.81296014393578,-3.34031229877154,czysty,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_387
+2.83931246145758,-1.93685809342153,duży,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_389
+2.8971462820654,-2.02126375904942,głodny,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_390
+2.4226984657875,-1.54616888644391,kochany,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_393
+3.20868885110738,-2.55810786193038,mały,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_395
+4.28077646695083,-4.09076472563727,otwarty,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_400
+3.70032018987251,-2.89673979716246,umyty,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_404
+3.92716183587031,-2.93445045838086,zamknięty,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_405
+4.40123109216236,-4.08071556326294,zepsuty,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_407
+2.99427775507587,-2.81474891851754,zmęczony,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_409
+1.6809917312235,-0.941332627476311,cicho,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_412
+3.29259034314173,-2.1952289046034,ciemno,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko rozumie...,rozumienie,item_413
+2.81221415317027,-2.21346749525885,bić,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_425
+3.100494041797,-2.56313711710058,boleć,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_427
+3.54346398951662,-2.80671532555778,budować,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_428
+2.68022054930734,-1.96941010934299,chcieć,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_431
+3.03621969253491,-1.00221573699108,czesać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_436
+2.85454538831441,-1.27151080586929,czytać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_438
+1.25799884199947,-0.460604561614258,dać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_439
+3.57079775909359,-2.2585746255832,dmuchać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_440
+3.11031427522772,-1.09883413854498,dzwonić,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_443
+2.93037838894148,-2.30630913914018,gonić,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_444
+4.21555882008413,-3.07028569190661,gotować,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_445
+3.91087608657668,-2.6675296476826,grać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_446
+1.3386368559692,0.22131391751958,jeść,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_451
+2.55129830664641,-1.51662918304531,kochać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_454
+3.59418641826994,-2.75456982424936,kopać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_455
+4.27981884186726,-4.15249936310422,kupić,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_457
+3.48645799068005,-1.52379565175956,leżeć,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_460
+4.11618088295517,-4.04452246224564,lubić,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_461
+4.35393921461596,-2.41654592707466,otworzyć,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_476
+1.26943445113049,0.227255131087279,pić,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_479
+3.98907120318044,-3.22019389467049,pisać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_480
+3.27317907109638,-1.38917962241223,płakać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_482
+4.17622084004784,-3.59473535534064,prać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_488
+3.09404753844342,-2.0981783436579,przyjść,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_491
+4.38596023124217,-3.71491188317689,robić,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_495
+4.15262726105951,-2.79691061160884,rysować,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_497
+3.06139506091004,-1.0835336363259,rzucać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_498
+3.28850502722175,-0.863838755380825,siedzieć,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_500
+3.2154495394155,-2.29383366394094,skakać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_501
+1.96078118120251,-0.26842547456956,spać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_504
+3.13423728986161,-1.64712008254808,stać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_506
+3.87047547366778,-2.01409853139902,szukać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_508
+2.85951196229072,-1.50289510319357,śpiewać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_511
+2.42412417693449,-0.0847281512121315,tańczyć,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_512
+3.35762282445923,-1.60500231185727,trzymać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_513
+2.8639414914578,-1.55022812462414,uciekać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_515
+3.10682623708618,-1.15524923132103,wstawać,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_525
+3.56734796529947,-1.65738340739012,zamknąć,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_529
+4.84940505306503,-3.97417013753923,zepsuć,CZASOWNIKI: Czy dziecko rozumie...,rozumienie,item_533
+1.0952628685336,-0.674155048831207,tam,OKREŚLENIA MIEJSCA: Czy dziecko rozumie...,rozumienie,item_547
+3.32974956493246,-2.79319173587761,daleko,OKREŚLENIA MIEJSCA: Czy dziecko rozumie...,rozumienie,item_550
+3.02957267982,-2.17948322789248,wysoko,OKREŚLENIA MIEJSCA: Czy dziecko rozumie...,rozumienie,item_552
+2.95690331734193,-2.65820548374018,teraz,OKREŚLENIA CZASU: Czy dziecko rozumie...,rozumienie,item_564
+2.65693223991593,-2.44202650231575,zaraz,OKREŚLENIA CZASU: Czy dziecko rozumie...,rozumienie,item_565
+2.66324829765638,-2.26876783470371,dużo,OKREŚLENIA MIARY: Czy dziecko rozumie...,rozumienie,item_580
+2.95441909995563,-2.80319825288783,mało,OKREŚLENIA MIARY: Czy dziecko rozumie...,rozumienie,item_581
+2.5185325447213,-2.11122301930369,jeszcze,"OKREŚLENIA MIARY (w takich zdaniach jak np. „Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”):: Czy dziecko rozumie...",rozumienie,item_585
+3.55146712270881,-4.69204572829107,inny,OKREŚLENIA MIARY: Czy dziecko rozumie...,rozumienie,item_587
+3.53378400070084,-4.4981948842674,drugi,OKREŚLENIA MIARY: Czy dziecko rozumie...,rozumienie,item_588
+2.19535796155802,-1.89984540293747,mój,ZAIMKI: Czy dziecko rozumie...,rozumienie,item_609
+3.30503527034631,-2.58030816397757,twój,ZAIMKI: Czy dziecko rozumie...,rozumienie,item_610
+3.46094805878079,-4.17463344304909,nasz,ZAIMKI: Czy dziecko rozumie...,rozumienie,item_613
+1.85416148732643,-2.08065694318306,to,ZAIMKI: Czy dziecko rozumie...,rozumienie,item_617
+3.5235688404769,-4.55525165992994,coś,ZAIMKI: Czy dziecko rozumie...,rozumienie,item_618
+2.95358088953027,-3.20150588482509,nic,ZAIMKI: Czy dziecko rozumie...,rozumienie,item_620
+2.6872218126487,-3.31840381705611,ten,ZAIMKI: Czy dziecko rozumie...,rozumienie,item_622
+2.99056766235112,-3.91696725755999,tamten,ZAIMKI: Czy dziecko rozumie...,rozumienie,item_623
+3.12805188038213,-4.05998632500369,taki,ZAIMKI: Czy dziecko rozumie...,rozumienie,item_624
+1.8349070336381,1.46585733891687,miau,ODGŁOSY I WYKRZYKNIKI: Czy dziecko mówi...,mowa,item_5
+2.37408332513743,-1.68694761810449,baran,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_13
+2.35505783608538,-1.8997003102718,biedronka,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_14
+2.59134877050088,-2.5708393802044,bocian,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_15
+2.27742970503967,-2.12391902777917,gęś,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_17
+2.86555061598048,-3.24380586688726,jeż,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_19
+2.15411302874884,-0.429273119959579,kaczka,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_20
+2.27890489227813,-1.35366318189359,kogut,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_21
+2.46663732441063,-0.436984467659621,koń,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_22
+2.06359636080735,1.60120693136648,kot,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_23
+2.60275004499125,-2.25052208713287,koza,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_24
+2.25728238476689,0.123632806286861,krowa,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_25
+2.36438831014157,-1.79492544555239,królik,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_26
+2.2870475691937,-0.00940423845892289,kura,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_27
+2.4147066568463,-2.06868927400496,lew,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_29
+2.7538610958838,-3.31193300007028,lis,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_30
+2.21555053662725,-1.83008114019363,małpa,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_31
+2.28463600618412,-1.39484775402746,mucha,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_35
+2.38982556474981,-1.73676306867315,myszka,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_36
+2.05241476539693,1.88690137706942,pies,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_38
+2.7482989720484,-3.36316093320466,pingwin,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_39
+2.46343441963439,-0.446828058545536,ptaszek,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_40
+2.94048343920719,-3.06335032965056,robak,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_41
+2.52077152397405,-1.15893300017183,ryba,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_42
+2.6604419791215,-1.90585824046607,słoń,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_43
+2.53095255180514,-2.73708197108356,sowa,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_44
+2.78514856045562,-2.9773277464243,ślimak,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_45
+2.50629405091155,-1.17173445635863,świnka,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_46
+2.44107080295422,-2.5705829952018,tygrys,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_47
+2.78304639758032,-3.12295751300222,wiewiórka,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_49
+2.6913806859133,-3.28709589179779,wilk,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_50
+2.96183073179321,-2.82460706710848,zając,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_51
+2.23017692320303,-1.17508586361119,żaba,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_53
+2.46957044910844,-2.75927372534727,żółw,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_54
+2.44933016632105,-2.30902163801796,żyrafa,ZWIERZĘTA – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_55
+2.0428539704946,-1.54964141605372,autobus,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_57
+2.17360024262161,-1.40145982509202,pociąg,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_63
+2.79878451314704,-0.949503194681874,rower,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_65
+2.58989134827278,-1.5317384753783,samolot,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_66
+2.9084688005301,-3.04157156196043,statek,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_67
+2.41179439303934,-1.05832105025017,traktor,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_68
+2.2051049146801,-2.89466587400535,tramwaj,POJAZDY – PRAWDZIWE LUB ZABAWKOWE: Czy dziecko mówi...,mowa,item_69
+2.34099398318711,0.223881342150724,banan,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_70
+2.24986881555943,-2.48756288874881,budyń,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_73
+2.90887774131203,-0.108068398148898,bułka,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_74
+2.6064951796991,0.0275928292993841,chleb,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_77
+2.14409653903066,0.478033528830356,chrupki,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_78
+2.75144560558571,-0.266180833146057,ciastko,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_80
+2.66777468072351,-2.89864295619076,cukier,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_81
+2.52571506240943,-1.5085156889911,cukierek,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_82
+2.24547810620795,-1.08416619496829,czekolada,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_83
+2.75699893224556,-3.025557894591,dżem,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_84
+2.23753220879952,-0.745794233407504,herbata,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_89
+2.85600629464315,0.239191017473447,jabłko,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_90
+2.76244234172188,-0.856310535096993,jajko,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_91
+2.20091469030872,-1.1350334266918,jogurt,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_93
+1.70423122905732,-0.234582536321951,kaszka,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_97
+2.78786073754512,-2.86713160300558,kawa,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_98
+2.54707971448194,-1.88845327599021,kiełbasa,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_100
+3.11748452176787,-1.81269735516676,mięso,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_109
+1.9949315439011,0.409676007227482,mleko,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_111
+2.69308756529732,-1.51353117356818,paluszki,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_115
+2.12542911863679,0.892156750987638,picie,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_117
+3.27611994129576,-2.84848514720874,ser,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_126
+2.62987594684103,-0.918413076260648,sok,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_127
+3.03550848848573,-2.65956478322787,szynka,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_130
+2.78592939038104,-0.935210826902071,woda,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_133
+2.87121924062333,-0.101776295159937,zupa,POKARMY I NAPOJE: Czy dziecko mówi...,mowa,item_135
+2.41685565050101,0.462750594471312,bajka,ZABAWKI: Czy dziecko mówi...,mowa,item_136
+2.68771927500496,-0.411704691890633,balonik,ZABAWKI: Czy dziecko mówi...,mowa,item_137
+2.70543727613987,0.659517135115999,klocki,ZABAWKI: Czy dziecko mówi...,mowa,item_141
+2.3950886718152,0.5754522814258,książka,ZABAWKI: Czy dziecko mówi...,mowa,item_143
+1.91964484172596,0.111695551105627,lalka,ZABAWKI: Czy dziecko mówi...,mowa,item_144
+3.5039779297008,-1.98644045440201,łopatka,ZABAWKI: Czy dziecko mówi...,mowa,item_145
+2.573968810253,1.36604547224522,piłka,ZABAWKI: Czy dziecko mówi...,mowa,item_148
+1.43233643690152,0.790272840330121,smoczek,ZABAWKI: Czy dziecko mówi...,mowa,item_151
+3.33953585731079,-1.65873167934142,wiaderko,ZABAWKI: Czy dziecko mówi...,mowa,item_152
+3.69638458333835,1.82939754004895,buty,UBRANIA: Czy dziecko mówi...,mowa,item_155
+3.65989991309478,1.15704201510739,czapka,UBRANIA: Czy dziecko mówi...,mowa,item_157
+2.76793290801009,-2.22561471283079,guzik,UBRANIA: Czy dziecko mówi...,mowa,item_158
+3.31081190984808,-3.78866076445034,kapelusz,UBRANIA: Czy dziecko mówi...,mowa,item_160
+3.70361616389462,-3.68092510008119,kieszeń,UBRANIA: Czy dziecko mówi...,mowa,item_161
+3.1019989957923,-3.29817208720145,koszula,UBRANIA: Czy dziecko mówi...,mowa,item_162
+2.79716249417853,-2.96639727295267,majtki,UBRANIA: Czy dziecko mówi...,mowa,item_164
+2.91785920501168,-1.70625065689314,piżama,UBRANIA: Czy dziecko mówi...,mowa,item_168
+2.78304718030233,-1.93350957680009,rękawiczki,UBRANIA: Czy dziecko mówi...,mowa,item_170
+3.53268560232968,0.0767790346823278,skarpetki,UBRANIA: Czy dziecko mówi...,mowa,item_171
+4.04241737361951,-0.537323612440719,spodnie,UBRANIA: Czy dziecko mówi...,mowa,item_172
+2.87109772857381,-2.4497907177494,sukienka,UBRANIA: Czy dziecko mówi...,mowa,item_173
+3.36098577090121,-2.46468204782776,sweter,UBRANIA: Czy dziecko mówi...,mowa,item_174
+3.22576477931685,-2.56595590929911,szalik,UBRANIA: Czy dziecko mówi...,mowa,item_175
+2.17137445598488,-1.30209534726512,śliniaczek,UBRANIA: Czy dziecko mówi...,mowa,item_176
+3.62159314662687,-0.943880916253342,ubranie,UBRANIA: Czy dziecko mówi...,mowa,item_177
+2.87118621474777,-2.82110561200701,broda,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_178
+3.29078242608187,0.0960336091203108,brzuch,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_179
+2.57935473062471,0.419593142104248,buzia,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_180
+2.92756111786607,-2.46523707131291,czoło,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_181
+3.63588725660809,0.163590260632222,głowa,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_183
+2.98564788572842,-1.10591849623009,język,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_184
+3.33622086430747,-2.95978786170449,kolano,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_185
+2.95748997702558,0.132721536332775,noga,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_188
+2.38327575538638,1.24261822214849,nos,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_189
+2.68701707599851,1.5557167825988,oko,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_190
+3.24069138608752,-0.69116144846215,palec,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_191
+2.78394777229499,-0.969258257325263,pępek,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_193
+3.95923521059823,-3.33030903224643,plecy,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_194
+3.32074622578584,-0.484958274319088,pupa,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_196
+3.31777870472946,-0.00680006739229179,ręka,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_197
+3.458218832583,-3.14466084934852,szyja,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_200
+3.20270331178874,0.409241590162345,ucho,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_201
+3.55112859403182,0.320454374900893,włosy,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_202
+3.42478587872725,-0.821728387763814,ząb,CZĘŚCI CIAŁA: Czy dziecko mówi...,mowa,item_203
+2.37772154460551,-2.2772794388989,balkon,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_204
+4.07186656468711,0.636652721573163,drzwi,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_206
+3.21242004691838,-1.92307595550667,dywan,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_207
+3.1390896556307,-1.8921905995754,fotel,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_209
+3.59822752509279,-0.578955133166253,krzesło,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_212
+3.74063448162902,-0.460194966022473,kuchnia,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_213
+3.68882936137922,-1.04690003849401,lodówka,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_214
+3.78858131493204,0.021760370051163,łazienka,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_215
+4.23974136121121,0.451627692733982,łóżko,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_216
+2.73703396445537,-0.557752337884478,odkurzacz,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_217
+3.95945601307317,-0.248204710274002,okno,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_218
+3.88449952590918,-1.60894252003787,podłoga,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_219
+4.01089903456448,-1.11571545327304,pokój,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_220
+3.4263251744426,-0.945702124483291,pralka,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_222
+3.45795231316498,-1.0913725007379,schody,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_224
+4.42254702664233,-0.777115108113015,stół,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_226
+3.8034608598018,-2.13780990655977,szafa,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_228
+2.86714898951459,-1.70632321950769,szuflada,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_229
+3.82966425625331,-2.73504931167187,ściana,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_230
+3.37621127307119,0.568766658958029,telewizor,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_231
+2.91603238325125,-0.546636754754278,wanna,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_233
+3.47305620952696,0.574618339497288,wózek,"W DOMU: POMIESZCZENIA, SPRZĘTY, MEBLE: Czy dziecko mówi...",mowa,item_234
+2.5266956599557,1.298760649472,butelka,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_236
+3.47319590442402,-1.92826188673428,garnek,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_239
+2.72886264170717,-1.72346006412996,gazeta,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_240
+3.09496115708789,-1.45958315302875,grzebień,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_241
+3.67183622398197,-0.810039389920393,klucz,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_243
+3.0262352062132,-3.1722064756048,koszyk,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_245
+3.47765953134447,-0.176659860156578,kubek,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_246
+2.73462089549544,-0.805979195194471,lampa,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_247
+3.20897223436445,-0.797198361604868,lustro,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_249
+3.32021340706656,0.451021282179344,łyżka,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_250
+4.13289001759695,-2.39589567672411,mydło,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_254
+2.76131182888417,-0.810967550295415,nocnik,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_256
+4.37385647799387,-3.49231713505206,nożyczki,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_257
+3.82570629129491,-3.1925938412202,nóż,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_258
+3.00651463852143,-0.786183555414014,okulary,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_260
+2.98467345805244,-2.57100001551051,pieniądze,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_261
+3.5039086855513,-0.471360287892005,poduszka,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_262
+3.57917029777338,-2.71255315954563,pudełko,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_263
+3.06775143254313,-2.30384187674552,radio,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_264
+4.39240101046066,-1.92739542081111,ręcznik,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_265
+3.40787337874645,-1.99880115294977,szklanka,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_270
+3.94948518572248,-1.45328355810036,śmieci,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_273
+4.59924803363815,-1.62432739847799,talerz,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_274
+3.58555932487173,-1.82987977432755,torebka,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_277
+3.88166440532141,-2.2466849277535,widelec,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_278
+3.32459490310462,-1.44601999914325,zegarek,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_281
+3.4244689094093,-2.94936455974007,żelazko,PRZEDMIOTY DOMOWEGO UŻYTKU: Czy dziecko mówi...,mowa,item_282
+3.47844023385647,-1.67254913170112,deszcz,POZA DOMEM: Czy dziecko mówi...,mowa,item_287
+3.17867081330117,-0.767451196688112,drzewo,POZA DOMEM: Czy dziecko mówi...,mowa,item_290
+3.45111420499473,-1.9567648711263,kamień,POZA DOMEM: Czy dziecko mówi...,mowa,item_294
+3.11691712550342,-3.51826349650647,księżyc,POZA DOMEM: Czy dziecko mówi...,mowa,item_296
+3.78044677206773,-0.0856936137754084,kwiatek,POZA DOMEM: Czy dziecko mówi...,mowa,item_297
+2.65939930740261,-1.1745036012641,listek,POZA DOMEM: Czy dziecko mówi...,mowa,item_298
+3.0054440564903,-2.0705242445597,niebo,POZA DOMEM: Czy dziecko mówi...,mowa,item_301
+3.36750761959049,-4.94479451620257,sanki,POZA DOMEM: Czy dziecko mówi...,mowa,item_305
+3.11312313708183,-1.53830160277597,słońce,POZA DOMEM: Czy dziecko mówi...,mowa,item_306
+3.03495765365112,-4.27414696879189,śnieg,POZA DOMEM: Czy dziecko mówi...,mowa,item_307
+3.65518943117893,-1.27027999012339,trawa,POZA DOMEM: Czy dziecko mówi...,mowa,item_308
+3.4792374876211,-2.87139015974641,ulica,POZA DOMEM: Czy dziecko mówi...,mowa,item_309
+3.63590860960651,-0.616591145389944,woda,POZA DOMEM: Czy dziecko mówi...,mowa,item_311
+3.52314079173449,-2.8793699657774,ziemia,POZA DOMEM: Czy dziecko mówi...,mowa,item_312
+3.67552244890824,-0.163356484228724,dom,POZA DOMEM: Czy dziecko mówi...,mowa,item_314
+2.85494315580566,-2.9295783821658,kościół,POZA DOMEM: Czy dziecko mówi...,mowa,item_317
+2.83265686188983,-3.22001770531765,praca,POZA DOMEM: Czy dziecko mówi...,mowa,item_325
+3.290111626149,-1.75361039264594,sklep,POZA DOMEM: Czy dziecko mówi...,mowa,item_327
+3.3391725032714,0.348398781526192,spacer,POZA DOMEM: Czy dziecko mówi...,mowa,item_328
+2.15722326899831,3.22076032478191,babcia,OSOBY: Czy dziecko mówi...,mowa,item_331
+2.95372684077737,-1.28202139244312,chłopiec,OSOBY: Czy dziecko mówi...,mowa,item_333
+2.21265895793372,0.578020516562765,ciocia,OSOBY: Czy dziecko mówi...,mowa,item_334
+2.20508483669152,0.500096642193805,dzieci,OSOBY: Czy dziecko mówi...,mowa,item_339
+3.01478032395179,-0.954975925442915,dziewczynka,OSOBY: Czy dziecko mówi...,mowa,item_340
+2.87068903371652,-2.64650586468838,ludzie,OSOBY: Czy dziecko mówi...,mowa,item_348
+2.78969392472474,-0.856019931512745,pan,OSOBY: Czy dziecko mówi...,mowa,item_350
+2.80843716716635,-0.992142505112169,pani,OSOBY: Czy dziecko mówi...,mowa,item_351
+2.17115601809495,-0.583606892993723,wujek,OSOBY: Czy dziecko mówi...,mowa,item_357
+2.12471062540621,0.852757269881504,cześć,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_358
+2.63387170657472,-1.44404623983341,dobranoc,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_361
+2.48763941856826,-0.629775762750497,dziękuję,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_362
+2.10094908162683,-0.568967606879023,proszę,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_363
+3.2858005803847,-2.74681888762211,przepraszam,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_364
+2.13495623697831,0.360033679868451,halo,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_365
+2.51756471707368,1.39951536104789,tak,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_367
+2.20381163015956,1.96126510829408,nie,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_368
+2.73399731053851,-0.783530528501528,kupka,"FORMUŁY, ZABAWY, RUTYNOWE CZYNNOŚCI: Czy dziecko mówi...",mowa,item_373
+1.68290101353248,1.21969561123165,be,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_377
+3.12368308764477,-4.64074734281097,biały,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_378
+3.60880452312777,-1.73379524445207,brudny,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_379
+3.28507381673827,-3.3018789167316,chory,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_382
+3.74334954364096,-3.44061269353512,ciężki,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_384
+3.49999110263892,-5.58548893184013,czarny,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_385
+3.46361670238041,-2.75338096746247,czysty,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_387
+2.93111937215121,-1.39403016515198,duży,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_389
+2.99232603692978,-1.54921969978642,głodny,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_390
+2.34389062253048,-1.20274033738292,kochany,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_393
+3.06234639050091,-2.03126435531898,mały,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_395
+3.86218822196472,-3.49007529396199,otwarty,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_400
+3.52669412561747,-2.37672705067815,umyty,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_404
+3.66345121679056,-2.420051943995,zamknięty,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_405
+3.9680316765614,-3.37834442662544,zepsuty,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_407
+2.65302263187692,-2.38345746502036,zmęczony,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_409
+2.58815709771549,-0.444285905140635,cicho,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_412
+3.26795877447866,-1.64705275129676,ciemno,PRZYMIOTNIKI I PRZYSŁÓWKI: Czy dziecko mówi...,mowa,item_413
+2.73371084313458,-1.79755119593234,bić,CZASOWNIKI: Czy dziecko mówi...,mowa,item_425
+3.39252283732449,-1.99223779317683,boleć,CZASOWNIKI: Czy dziecko mówi...,mowa,item_427
+3.20001846463073,-2.28535551104334,budować,CZASOWNIKI: Czy dziecko mówi...,mowa,item_428
+2.75111993497029,-1.55303974375683,chcieć,CZASOWNIKI: Czy dziecko mówi...,mowa,item_431
+3.07562221899329,-0.530863605631271,czesać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_436
+2.83249405002566,-0.81861949416955,czytać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_438
+2.32434640204688,0.310285182243142,dać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_439
+3.41654584599787,-1.7223206509827,dmuchać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_440
+3.32683547558608,-0.5476561295513,dzwonić,CZASOWNIKI: Czy dziecko mówi...,mowa,item_443
+2.71507604417019,-1.9099832288051,gonić,CZASOWNIKI: Czy dziecko mówi...,mowa,item_444
+3.84389409338365,-2.46720573395679,gotować,CZASOWNIKI: Czy dziecko mówi...,mowa,item_445
+3.43252276896594,-1.97911146894077,grać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_446
+2.71842459013535,1.20667335766132,jeść,CZASOWNIKI: Czy dziecko mówi...,mowa,item_451
+2.60787452304276,-1.0921456565957,kochać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_454
+3.10166784625231,-2.12305256919819,kopać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_455
+3.72654587015052,-3.42900668357782,kupić,CZASOWNIKI: Czy dziecko mówi...,mowa,item_457
+3.38343995403505,-0.97617198757002,leżeć,CZASOWNIKI: Czy dziecko mówi...,mowa,item_460
+3.54311158703025,-3.29276393302939,lubić,CZASOWNIKI: Czy dziecko mówi...,mowa,item_461
+3.88572224111268,-1.67851888803421,otworzyć,CZASOWNIKI: Czy dziecko mówi...,mowa,item_476
+2.27887918495665,0.963850907506417,pić,CZASOWNIKI: Czy dziecko mówi...,mowa,item_479
+3.91349159598823,-2.56367133753302,pisać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_480
+3.27891431861086,-0.840717946783518,płakać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_482
+3.97023708887331,-3.09226610645029,prać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_488
+2.77343374838314,-1.63757211997578,przyjść,CZASOWNIKI: Czy dziecko mówi...,mowa,item_491
+3.83225773408332,-2.95105178200582,robić,CZASOWNIKI: Czy dziecko mówi...,mowa,item_495
+3.9060996023006,-2.17409137290555,rysować,CZASOWNIKI: Czy dziecko mówi...,mowa,item_497
+3.10066181258317,-0.622805190115117,rzucać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_498
+3.50707325535055,-0.324227399575262,siedzieć,CZASOWNIKI: Czy dziecko mówi...,mowa,item_500
+3.15505434776929,-1.80676078846926,skakać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_501
+2.91910938521718,0.371639034880996,spać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_504
+2.98370720703929,-1.16053901341604,stać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_506
+3.65933463439397,-1.40682582907891,szukać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_508
+2.93603250496918,-1.02149943233739,śpiewać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_511
+2.99343051607716,0.458263352706292,tańczyć,CZASOWNIKI: Czy dziecko mówi...,mowa,item_512
+3.14189634741138,-1.09470991567603,trzymać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_513
+2.78919540988423,-1.15721178016278,uciekać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_515
+3.0004702940104,-0.679291319476984,wstawać,CZASOWNIKI: Czy dziecko mówi...,mowa,item_525
+3.37824008537588,-1.11261663756559,zamknąć,CZASOWNIKI: Czy dziecko mówi...,mowa,item_529
+4.21130931730522,-3.12687838730352,zepsuć,CZASOWNIKI: Czy dziecko mówi...,mowa,item_533
+2.38931528121069,0.793100614834104,tu,OKREŚLENIA MIEJSCA: Czy dziecko mówi...,mowa,item_546
+2.46666005477095,0.146235362234365,tam,OKREŚLENIA MIEJSCA: Czy dziecko mówi...,mowa,item_547
+3.12755284674929,-2.3503698802645,daleko,OKREŚLENIA MIEJSCA: Czy dziecko mówi...,mowa,item_550
+2.82677780412754,-1.73656161979845,wysoko,OKREŚLENIA MIEJSCA: Czy dziecko mówi...,mowa,item_552
+2.61959717591604,-2.17166924725859,teraz,OKREŚLENIA CZASU: Czy dziecko mówi...,mowa,item_564
+2.35223213564535,-2.0857609654989,zaraz,OKREŚLENIA CZASU: Czy dziecko mówi...,mowa,item_565
+2.61018969583154,-1.80444056537365,dużo,OKREŚLENIA MIARY: Czy dziecko mówi...,mowa,item_580
+2.73167786379202,-2.27384632648084,mało,OKREŚLENIA MIARY: Czy dziecko mówi...,mowa,item_581
+2.44539902531912,-1.7224517073253,jeszcze,"OKREŚLENIA MIARY (w takich zdaniach jak np. „Jeszcze mleka!”, „Jeszcze jedną truskawkę mi daj!”):: Czy dziecko mówi...",mowa,item_585
+3.1263306162108,-4.27717344798458,inny,OKREŚLENIA MIARY: Czy dziecko mówi...,mowa,item_587
+3.17132496483667,-3.98974122703822,drugi,OKREŚLENIA MIARY: Czy dziecko mówi...,mowa,item_588
+2.65394598955992,-1.45090134764712,mój,ZAIMKI: Czy dziecko mówi...,mowa,item_609
+3.00696159761327,-2.12253313881192,twój,ZAIMKI: Czy dziecko mówi...,mowa,item_610
+3.20133711395767,-3.81472446172222,nasz,ZAIMKI: Czy dziecko mówi...,mowa,item_613
+2.59395759840163,-1.46648430025715,to,ZAIMKI: Czy dziecko mówi...,mowa,item_617
+2.97574893816209,-3.72106769614408,coś,ZAIMKI: Czy dziecko mówi...,mowa,item_618
+2.91404673353261,-2.53867914361305,nic,ZAIMKI: Czy dziecko mówi...,mowa,item_620
+2.88202186803746,-2.88250956157803,ten,ZAIMKI: Czy dziecko mówi...,mowa,item_622
+2.7270172786881,-3.59483419010865,tamten,ZAIMKI: Czy dziecko mówi...,mowa,item_623
+2.94267179484157,-3.70689499627038,taki,ZAIMKI: Czy dziecko mówi...,mowa,item_624
