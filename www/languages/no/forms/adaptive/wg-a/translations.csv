@@ -1,0 +1,21 @@
+text_type;text
+cdiNameSufix;Wersja adaptatywna dla rodziców młodszych dzieci
+noGender;Hvilket kjønn har barnet?
+fillerLabel;Hvilken relasjon har du til barnet?
+fillers;mor, far, annet svar (vennligst skriv inn):
+noFiller;Velg hvem som skal fylle ut spørreskjemaet.
+sidebarInstr;Kryss av for «ja» eller «nei».
+alreadyFilled;Dette spørreskjemaet er allerede fylt ut av deg.
+rozumienieHeader;Forståelse
+gestyHeader;Handlinger og gester
+mowaHeader;Tale
+continueBtn;Neste
+longText;"<p>Spørreskjemaet brukes til å studere de tidlige stadiene av språkutviklingen hos små barn. Når du svarer på spørsmålene, skal du ikke teste barnet ditt, be det gjenta enkeltord eller prøve å lære det «nye ord». Stol på intuisjonen din, og observer barnet ditt hvis det er nødvendig.</p><p>Możesz wrócić do wypełniania później, skorzystaj z tego samego linku. Postęp zapisuje się po każdej zakończonej sekcji. Jeśli zatrzymasz się w połowie sekcji, po powrocie zaczniesz ją od początku. Żeby zakończyć wypełnianie, musisz zatwierdzić każdą sekcję.</p><p><b>UWAGA: Każde słowo zaprezentujemy Ci tylko raz. Po zaznaczeniu, czy dziecko używa danego słowa, nie będzie już możliwości powrotu do niego. Prosimy o uważne zaznaczenie odpowiedzi.</b></p><p>Svar på de tre spørsmålene nedenfor og klikk på «Bekreft»-knappen.</p>"
+mowaLongText;"<p>På de neste sidene kommer det en liste over typiske ord som små barn kjenner til.</p><p> <strong>Zaznacz „tak”</strong>, jeśli Twoje dziecko <strong>wypowiada je samo z siebie</strong>, spontanicznie (pamiętaj, że dzieci rozumieją więcej słów, niż same wypowiadają; nie chodzi nam też o słowa, które Twoje dziecko jest w stanie powtórzyć).</p><p>Merk av «ja» også når:<strong><br /></strong></p><ul><li>barnet ditt bruker en annen form, f.eks. en barneform «vov-vov» i stedet for «hund», eller en dialektform, f.eks. «ronse» eller «disse» i stedet for «huske»,</li><li>barnet ditt uttaler det annerledes, f.eks. «fue» i stedet for «flue» eller «djuej» i stedet for «druer»,,</li><li>barnet ditt bruker sitt eget uttrykk, f.eks. «esketti» i stedet for «spagetti»,</li><li>familien din bruker et annet ord enn det som er oppgitt i spørreskjemaet.</li></ul><p>I delen «Merknader» nederst på hver side kan du legge til andre former eller barnets eller familiens egne uttrykk for ordene fra listen.</p><p><b>VIKTIG: Spørreskjemaet er beregnet på barn i ulike aldre, så ikke bli bekymret dersom barnet ditt bare kan noen få av ordene akkurat nå.</b></p>"
+gestyLongText;"<p>Kiedy dzieci uczą się porozumiewać z innymi ludźmi, często posługują się gestami, aby wyrazić swoje pragnienia. Często też naśladują dorosłych nie tylko w mowie, ale również w zabawie, udając np. czynności opiekuńcze.</p><p>Przy każdym z gestów i każdej z czynności, które pojawią się na kolejnych stronach, zaznacz „tak” przy tym określeniu, które pasuje do tego, co Twoje dziecko aktualnie robi. Na końcu pojawi się pole, które możesz wykorzystać, żeby podzielić się z nami swoimi uwagami.</p>"
+rozumienieLongText;"<p>På de neste sidene kommer det en liste over typiske ord som små barn kjenner til.</p><p><b>Zaznacz „tak”</b>, jeśli Twoje dziecko <b>je rozumie.</b></p><p>W polu „Uwagi”, które znajduje się na końcu sekcji, możesz dopisać inne formy lub możesz dopisać inne formy wyrazów z listy lub własne określenia używane przez dziecko lub rodzinę.</p>"
+endText;Naciśnij „Zatwierdź”, aby zakończyć tę część.
+endBtn;Bekreft
+thanksMsgTitle;Viktig!
+thanksMsgText;"Po kliknięciu przycisku „Dalej” nastąpi przekierowanie do drugiej części. Odśwież stronę, jeśli będzie trwało to zbyt długo."
+redirectionBtn;Neste
