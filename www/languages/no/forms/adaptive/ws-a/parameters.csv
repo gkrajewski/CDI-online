@@ -1,0 +1,12 @@
+parameter;value
+email;no
+database;yes
+additionalEndMessageFromDatabase;no
+redirectionURL;https://apps.multilada.pl/cdi/?lang=pl&type=static
+redirectionParams;id,run,form
+ProdMirtMethod;ML
+ProdMirtCriteria;MI
+ProdminItemNr;1
+ProdmaxItemNr;42
+ProdMirtSeTheta;0.095
+groups;Prod
