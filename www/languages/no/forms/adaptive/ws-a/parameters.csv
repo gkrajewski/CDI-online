@@ -2,7 +2,7 @@ parameter;value
 email;no
 database;yes
 additionalEndMessageFromDatabase;no
-redirectionURL;https://apps.multilada.pl/cdi/?lang=pl&type=static
+redirectionURL;https://apps.multilada.pl/cdi/?lang=no&type=static
 redirectionParams;id,run,form
 ProdMirtMethod;ML
 ProdMirtCriteria;MI
