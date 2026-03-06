@@ -7,7 +7,7 @@ startBtn;Start
 noGender;Hvilket kjønn har barnet?
 modalTitle;Advarsel!
 sidebarInstr;Kryss av for «ja» eller «nei».
-firstPageSidebarInstr;Prosimy o cierpliwość. Uruchomienie formularza może zająć kilka sekund.
+firstPageSidebarInstr;Vær tålmodig. Det kan ta noen sekunder før skjemaet lastes inn.
 choiceNames;nei, ja
 thanksMsgTitle;Slutt!
 alreadyFilled;Dette spørreskjemaet er allerede fylt ut av deg.
@@ -17,5 +17,5 @@ noFiller;Velg hvem som skal fylle ut spørreskjemaet.
 error;Du har mistet forbindelsen. Oppdater siden og prøv igjen. Hvis du fortsatt er frakoblet, vennligst ta et skjermbilde og send det til multilada@psych.uw.edu.pl.
 refresh;Oppdater
 commentLabel;Andre kommentarer
-endText;Proszę nacisnąć „Zakończ”, aby zakończyć.
+endText;Klikk på «Bekreft» for å fullføre denne delen.
 endBtn;Avslutt
