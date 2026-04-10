@@ -1,11 +1,11 @@
 a1,d,item,question,group,id
-2.63731127413097,3.49587329827818,Vinker ‘ha det’ på egen hånd når noen drar?,De første kommuniserende gestene: ,Gest,item_430
-1.63899722797893,1.44001329828406,Rister på hodet for ‘nei’?,De første kommuniserende gestene: ,Gest,item_432
-2.0072388571659,-0.437284383428507,Nikker til ‘ja?’,De første kommuniserende gestene: ,Gest,item_433
-2.51719859048418,-2.16112485980921,Gestikulerer ‘hys’j ved fingeren mot munnen?,De første kommuniserende gestene: ,Gest,item_434
-0.930623979056424,1.65886535596753,Smatter med leppene – nam-nam – for å vise at noe smaker godt?,De første kommuniserende gestene: ,Gest,item_437
-0.896567439187026,1.22774589735007,Leker ‘bake kake søte’ eller andre leker med hender og fingre.,Leker og rutiner: ,Gest,item_440
-0.746341327706721,1.44517387933174,Leker hvor stor er du — sååååååå stor.,Leker og rutiner: ,Gest,item_441
+2.63731127413097,3.49587329827818,Vinker ‘ha det’ på egen hånd når noen drar?,De første kommuniserende gestene: Gjør barnet ditt dette?,Gest,item_430
+1.63899722797893,1.44001329828406,Rister på hodet for ‘nei’?,De første kommuniserende gestene: Gjør barnet ditt dette?,Gest,item_432
+2.0072388571659,-0.437284383428507,Nikker til ‘ja?’,De første kommuniserende gestene: Gjør barnet ditt dette?,Gest,item_433
+2.51719859048418,-2.16112485980921,Gestikulerer ‘hys’j ved fingeren mot munnen?,De første kommuniserende gestene: Gjør barnet ditt dette?,Gest,item_434
+0.930623979056424,1.65886535596753,Smatter med leppene – nam-nam – for å vise at noe smaker godt?,De første kommuniserende gestene: Gjør barnet ditt dette?,Gest,item_437
+0.896567439187026,1.22774589735007,Leker ‘bake kake søte’ eller andre leker med hender og fingre.,Leker og rutiner: Gjør barnet ditt dette?,Gest,item_440
+0.746341327706721,1.44517387933174,Leker hvor stor er du — sååååååå stor.,Leker og rutiner: Gjør barnet ditt dette?,Gest,item_441
 2.14320897509109,-2.21198822594497,fisk,Navn på dyr (virkelige eller lekedyr): Forstår barnet…,Comp,item_51
 3.26520491078438,-1.3728786254744,fisk,Navn på dyr (virkelige eller lekedyr): Sier barnet…,Prod,item_51
 2.97937705114575,-3.26925481468623,kylling,Navn på dyr (virkelige eller lekedyr): Forstår barnet…,Comp,item_63
@@ -37,62 +37,62 @@ a1,d,item,question,group,id
 1.94823220411008,2.10972550742126,nam-nam,Lydeffekter og dyrelyder: Sier barnet…,Prod,item_40
 2.68097888026109,1.29608684944123,drikke,Mat og drikke: Sier barnet…,Prod,item_101
 3.38115786741881,1.74962669323985,drikke,Verb: Sier barnet…,Prod,item_292
-2.13258206870723,3.15503218935832,Strekker armen for å vise noe i hånden?,De første kommuniserende gestene: ,Gest,item_427
-2.36173466435718,4.7386731834848,Rekker deg en leke hun/han holder?,De første kommuniserende gestene: ,Gest,item_428
-2.5226888232284,2.58067593252412,Peker på noe som fanger oppmerksomheten?,De første kommuniserende gestene: ,Gest,item_429
-1.92590655470834,5.16058841715633,Strekker armene opp for å bli løftet?,De første kommuniserende gestene: ,Gest,item_431
-1.02583964092614,1.70364502723823,Vil ha noe ved å strekke armen og åpne og lukke hånden?,De første kommuniserende gestene: ,Gest,item_435
-2.02179391025871,-1.02566651943677,Sender slengkyss?,De første kommuniserende gestene: ,Gest,item_436
-1.65895686783828,-3.32418284510868,Trekker på skuldrene for å vise at man ikke vet?,De første kommuniserende gestene: ,Gest,item_438
-1.50783216959663,2.25198449948357,Leker hvor er _____? Der er _____! (Gjemmer ansiktet bak hendene og tar hendene bort),Leker og rutiner: ,Gest,item_439
-1.53802638840443,1.16956671620088,Leker at man prøver å fange hverandre.,Leker og rutiner: ,Gest,item_442
-1.00461157001668,0.681875001632508,Synger.,Leker og rutiner: ,Gest,item_443
-1.92333790495396,2.78866569437624,Danser.,Leker og rutiner: ,Gest,item_444
-2.79456498368562,0.956140137635466,Spiser med skje eller gaffel.,Handling med objekter: ,Gest,item_445
-1.28371454395316,2.01695605659045,Drikker fra en kopp.,Handling med objekter: ,Gest,item_446
-2.39597131828114,-0.592038133986913,Børster eller grer håret sitt selv.,Handling med objekter: ,Gest,item_447
-1.61609532308439,0.82124849387275,Pusser tennene.,Handling med objekter: ,Gest,item_448
-2.78282884145003,-0.719827943146414,Vasker seg i ansiktet eller hendene med en klut.,Handling med objekter: ,Gest,item_449
-2.5761746849835,-0.618902793736204,Setter på seg lue/solhatt selv.,Handling med objekter: ,Gest,item_450
-2.49499725415611,-1.9615229869038,Tar på seg en sko eller sokk selv.,Handling med objekter: ,Gest,item_451
-2.07483257464315,-1.87921586323842,Tar på seg halsbånd eller andre pyntesaker selv.,Handling med objekter: ,Gest,item_452
-1.82529726954181,-2.25971870109765,Legger hodet på samlede hender og kniper øynene for å late som om hun/han sover.,Handling med objekter: ,Gest,item_453
-3.31890323639421,-1.0908368547742,Blåser for å vise at noe er varmt.,Handling med objekter: ,Gest,item_454
-1.73624174640762,-2.44111077051982,Holder et lekefly i hånda og later som om det flyr.,Handling med objekter: ,Gest,item_455
-3.55541604536208,2.57817512112885,Tar telefonen til øret.,Handling med objekter: ,Gest,item_456
-2.35563935431334,-1.7586885772483,Lukter på blomstene.,Handling med objekter: ,Gest,item_457
-2.34991812378348,1.52186378946764,Dytter lekebiler rundt på gulvet og later som om de kjører.,Handling med objekter: ,Gest,item_458
-2.15925404817963,2.08163330916235,Kaster ball.,Handling med objekter: ,Gest,item_459
-2.42211165496338,-1.77751404412927,Later som om man heller noe flytende fra en beholder til en annen.,Handling med objekter: ,Gest,item_460
-2.5464458770882,-0.182616597206411,Later som om man rører med en skje i en gryte eller kopp.,Handling med objekter: ,Gest,item_461
-3.67128654943679,-3.09337163216388,Legger dem i senga for å sove.,Å leke at man er mor eller far: ,Gest,item_462
-4.06465460777072,-3.52022687957402,Tar dyne over.,Å leke at man er mor eller far: ,Gest,item_463
-2.66359467240017,-2.12878811951702,Mater med en flaske.,Å leke at man er mor eller far: ,Gest,item_464
-2.82527610150398,-2.06325855512572,Mater med en skje.,Å leke at man er mor eller far: ,Gest,item_465
-2.41650385823073,-2.89563036192334,Børster/grer håret.,Å leke at man er mor eller far: ,Gest,item_466
-2.25166615649987,-5.69397682976022,Klapper barnet på ryggen for å få en rap.,Å leke at man er mor eller far: ,Gest,item_467
-3.11764360122169,-1.22963014710652,Triller i vogn.,Å leke at man er mor eller far: ,Gest,item_468
-2.18907895068882,-3.02994847915911,Vugger/rugger det i armene.,Å leke at man er mor eller far: ,Gest,item_469
-2.17195090213634,-0.538386402116538,Kysser eller klemmer på det.,Å leke at man er mor eller far: ,Gest,item_470
-2.68467279978496,-2.53828815478742,Prøver å kle på det.,Å leke at man er mor eller far: ,Gest,item_471
-2.63709765992513,-3.26907264825815,Tørker det i ansiktet eller hendene.,Å leke at man er mor eller far: ,Gest,item_472
-1.8747762783059,-1.78071799502392,Snakker til det.,Å leke at man er mor eller far: ,Gest,item_473
-3.2280356428268,-4.61325822397907,Prøver å ta på bleie.,Å leke at man er mor eller far: ,Gest,item_474
-2.64531185359328,-0.888021865887403,Feier med en kost.,Herme etter det de voksne gjør: ,Gest,item_475
-2.15534981967439,-0.924671700711882,Putter nøkkel i nøkkelhullet (eller i nærheten av det).,Herme etter det de voksne gjør: ,Gest,item_476
-1.30446274968825,0.194983138825314,Banker med en hammer.,Herme etter det de voksne gjør: ,Gest,item_477
-1.75629717901317,-3.10790444800242,Prøver å sage.,Herme etter det de voksne gjør: ,Gest,item_478
-1.47690731420264,0.363991287976514,Skriver på et tastatur.,Herme etter det de voksne gjør: ,Gest,item_479
-2.91471842504717,3.8159286070521,Leser (åpner bøker og blar i sidene).,Herme etter det de voksne gjør: ,Gest,item_480
-1.86875852008928,-0.843321487363431,Støvsuger.,Herme etter det de voksne gjør: ,Gest,item_481
-2.12493566574639,-3.30299360328909,Vanner planter.,Herme etter det de voksne gjør: ,Gest,item_482
-1.43235470869059,0.248354522397567,Spiller på musikkinstrumenter.,Herme etter det de voksne gjør: ,Gest,item_483
-1.50397843490557,-0.996392829083379,Kjører bil ved å styre med et ratt.,Herme etter det de voksne gjør: ,Gest,item_484
-2.14929228822733,-2.95189908168,Vasker opp.,Herme etter det de voksne gjør: ,Gest,item_485
-2.62497215189565,-0.80284856317429,Gjør rent med klut eller tørker støv.,Herme etter det de voksne gjør: ,Gest,item_486
-3.59418201326394,0.368321481752955,"Skriver/tegner med blyant, tusj eller fargestifter.",Herme etter det de voksne gjør: ,Gest,item_487
-3.51991279242794,0.338863451047805,Graver med en spade (i sandkassen).,Herme etter det de voksne gjør: ,Gest,item_488
-2.84360586745513,-1.12246489268405,Tar på seg (sol)briller.,Herme etter det de voksne gjør: ,Gest,item_489
+2.13258206870723,3.15503218935832,Strekker armen for å vise noe i hånden?,De første kommuniserende gestene: Gjør barnet ditt dette?,Gest,item_427
+2.36173466435718,4.7386731834848,Rekker deg en leke hun/han holder?,De første kommuniserende gestene: Gjør barnet ditt dette?,Gest,item_428
+2.5226888232284,2.58067593252412,Peker på noe som fanger oppmerksomheten?,De første kommuniserende gestene: Gjør barnet ditt dette?,Gest,item_429
+1.92590655470834,5.16058841715633,Strekker armene opp for å bli løftet?,De første kommuniserende gestene: Gjør barnet ditt dette?,Gest,item_431
+1.02583964092614,1.70364502723823,Vil ha noe ved å strekke armen og åpne og lukke hånden?,De første kommuniserende gestene: Gjør barnet ditt dette?,Gest,item_435
+2.02179391025871,-1.02566651943677,Sender slengkyss?,De første kommuniserende gestene: Gjør barnet ditt dette?,Gest,item_436
+1.65895686783828,-3.32418284510868,Trekker på skuldrene for å vise at man ikke vet?,De første kommuniserende gestene: Gjør barnet ditt dette?,Gest,item_438
+1.50783216959663,2.25198449948357,Leker hvor er _____? Der er _____! (Gjemmer ansiktet bak hendene og tar hendene bort),Leker og rutiner: Gjør barnet ditt dette?,Gest,item_439
+1.53802638840443,1.16956671620088,Leker at man prøver å fange hverandre.,Leker og rutiner: Gjør barnet ditt dette?,Gest,item_442
+1.00461157001668,0.681875001632508,Synger.,Leker og rutiner: Gjør barnet ditt dette?,Gest,item_443
+1.92333790495396,2.78866569437624,Danser.,Leker og rutiner: Gjør barnet ditt dette?,Gest,item_444
+2.79456498368562,0.956140137635466,Spiser med skje eller gaffel.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_445
+1.28371454395316,2.01695605659045,Drikker fra en kopp.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_446
+2.39597131828114,-0.592038133986913,Børster eller grer håret sitt selv.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_447
+1.61609532308439,0.82124849387275,Pusser tennene.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_448
+2.78282884145003,-0.719827943146414,Vasker seg i ansiktet eller hendene med en klut.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_449
+2.5761746849835,-0.618902793736204,Setter på seg lue/solhatt selv.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_450
+2.49499725415611,-1.9615229869038,Tar på seg en sko eller sokk selv.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_451
+2.07483257464315,-1.87921586323842,Tar på seg halsbånd eller andre pyntesaker selv.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_452
+1.82529726954181,-2.25971870109765,Legger hodet på samlede hender og kniper øynene for å late som om hun/han sover.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_453
+3.31890323639421,-1.0908368547742,Blåser for å vise at noe er varmt.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_454
+1.73624174640762,-2.44111077051982,Holder et lekefly i hånda og later som om det flyr.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_455
+3.55541604536208,2.57817512112885,Tar telefonen til øret.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_456
+2.35563935431334,-1.7586885772483,Lukter på blomstene.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_457
+2.34991812378348,1.52186378946764,Dytter lekebiler rundt på gulvet og later som om de kjører.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_458
+2.15925404817963,2.08163330916235,Kaster ball.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_459
+2.42211165496338,-1.77751404412927,Later som om man heller noe flytende fra en beholder til en annen.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_460
+2.5464458770882,-0.182616597206411,Later som om man rører med en skje i en gryte eller kopp.,"Handling med objekter: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_461
+3.67128654943679,-3.09337163216388,Legger dem i senga for å sove.,Å leke at man er mor eller far: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_462
+4.06465460777072,-3.52022687957402,Tar dyne over.,Å leke at man er mor eller far: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_463
+2.66359467240017,-2.12878811951702,Mater med en flaske.,Å leke at man er mor eller far: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_464
+2.82527610150398,-2.06325855512572,Mater med en skje.,Å leke at man er mor eller far: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_465
+2.41650385823073,-2.89563036192334,Børster/grer håret.,Å leke at man er mor eller far: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_466
+2.25166615649987,-5.69397682976022,Klapper barnet på ryggen for å få en rap.,Å leke at man er mor eller far: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_467
+3.11764360122169,-1.22963014710652,Triller i vogn.,Å leke at man er mor eller far: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_468
+2.18907895068882,-3.02994847915911,Vugger/rugger det i armene.,Å leke at man er mor eller far: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_469
+2.17195090213634,-0.538386402116538,Kysser eller klemmer på det.,Å leke at man er mor eller far: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_470
+2.68467279978496,-2.53828815478742,Prøver å kle på det.,Å leke at man er mor eller far: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_471
+2.63709765992513,-3.26907264825815,Tørker det i ansiktet eller hendene.,Å leke at man er mor eller far: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_472
+1.8747762783059,-1.78071799502392,Snakker til det.,Å leke at man er mor eller far: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_473
+3.2280356428268,-4.61325822397907,Prøver å ta på bleie.,Å leke at man er mor eller far: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_474
+2.64531185359328,-0.888021865887403,Feier med en kost.,"Herme etter det de voksne gjør: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_475
+2.15534981967439,-0.924671700711882,Putter nøkkel i nøkkelhullet (eller i nærheten av det).,"Herme etter det de voksne gjør: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_476
+1.30446274968825,0.194983138825314,Banker med en hammer.,"Herme etter det de voksne gjør: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_477
+1.75629717901317,-3.10790444800242,Prøver å sage.,"Herme etter det de voksne gjør: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_478
+1.47690731420264,0.363991287976514,Skriver på et tastatur.,"Herme etter det de voksne gjør: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_479
+2.91471842504717,3.8159286070521,Leser (åpner bøker og blar i sidene).,"Herme etter det de voksne gjør: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_480
+1.86875852008928,-0.843321487363431,Støvsuger.,"Herme etter det de voksne gjør: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_481
+2.12493566574639,-3.30299360328909,Vanner planter.,"Herme etter det de voksne gjør: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_482
+1.43235470869059,0.248354522397567,Spiller på musikkinstrumenter.,"Herme etter det de voksne gjør: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_483
+1.50397843490557,-0.996392829083379,Kjører bil ved å styre med et ratt.,"Herme etter det de voksne gjør: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_484
+2.14929228822733,-2.95189908168,Vasker opp.,"Herme etter det de voksne gjør: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_485
+2.62497215189565,-0.80284856317429,Gjør rent med klut eller tørker støv.,"Herme etter det de voksne gjør: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_486
+3.59418201326394,0.368321481752955,"Skriver/tegner med blyant, tusj eller fargestifter.","Herme etter det de voksne gjør: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_487
+3.51991279242794,0.338863451047805,Graver med en spade (i sandkassen).,"Herme etter det de voksne gjør: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_488
+2.84360586745513,-1.12246489268405,Tar på seg (sol)briller.,"Herme etter det de voksne gjør: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_489
 0.283810765671309,-0.83090981024477,au,Lydeffekter og dyrelyder: Forstår barnet…,Comp,item_32
 0.179435468855083,-1.77896606467659,brrr (bil-lyd),Lydeffekter og dyrelyder: Forstår barnet…,Comp,item_34
 0.721473621278894,-1.26738382569908,gakk gakk,Lydeffekter og dyrelyder: Forstår barnet…,Comp,item_35
