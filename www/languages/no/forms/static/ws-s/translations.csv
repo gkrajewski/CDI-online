@@ -1,5 +1,6 @@
 text_type;text;item_type;category
 cdiNameSufix;Ord og setninger;;
+fillers;mor, far, annet svar (vennligst skriv inn);;
 longText;"<p>Spørreskjemaet brukes til å studere de tidlige stadiene av språkutviklingen hos små barn. Når du svarer på spørsmålene, skal du ikke teste barnet ditt, be det gjenta enkeltord eller prøve å lære det «nye ord». Stol på intuisjonen din, og observer barnet ditt hvis det er nødvendig.</p><p>Svar på de tre spørsmålene nedenfor og klikk på «Bekreft»-knappen. Hvis du mener det er noe mer vi bør vite om barnet ditt (f.eks. helseproblemer, eksponering for andre språk), kan du bruke kommentarfeltet til å fortelle oss det.</p>";start;
 warning;Du kan gå tilbake til spørreskjemaet senere uten å miste dine tidligere svar: bare bruk samme lenke. For å fullføre må du bekrefte hver seksjon.;start;
 menuButton;Ord;word;
