@@ -2,20 +2,20 @@ text_type;text
 cdiNamePrefix;Foreldrerapport om kommunikativ utvikling
 dateLabel;Barnets fødselsdato
 genderLabel;Barnets kjønn
-genders;jente, gutt
-startBtn;Start
+genders;jente,gutt
 noGender;Hvilket kjønn har barnet?
-modalTitle;Advarsel!
-sidebarInstr;Kryss av for «ja» eller «nei».
-firstPageSidebarInstr;Vær tålmodig. Det kan ta noen sekunder før skjemaet lastes inn.
-choiceNames;nei, ja
-thanksMsgTitle;Slutt!
-alreadyFilled;Dette spørreskjemaet er allerede fylt ut av deg.
 fillerLabel;Hvilken relasjon har du til barnet?
-fillers;mor, far, annet svar (vennligst skriv inn):
+fillers;mor,far,annet svar (vennligst skriv inn):
 noFiller;Velg hvem som skal fylle ut spørreskjemaet.
+sidebarInstr;Kryss av for «ja» eller «nei».
+alreadyFilled;Dette spørreskjemaet er allerede fylt ut av deg.
+startBtn;Start
+continueBtn;Neste
+modalTitle;Advarsel!
+firstPageSidebarInstr;Vær tålmodig. Det kan ta noen sekunder før skjemaet lastes inn.
+choiceNames;nei,ja
 error;Du har mistet forbindelsen. Oppdater siden og prøv igjen. Hvis du fortsatt er frakoblet, vennligst ta et skjermbilde og send det til multilada@psych.uw.edu.pl.
 refresh;Oppdater
 commentLabel;Andre kommentarer
 endText;Klikk på «Bekreft» for å fullføre denne delen.
-endBtn;Avslutt
+endBtn;Bekreft
