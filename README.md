@@ -1,7 +1,5 @@
 # CDI online
-Currently deployed version: v1.11 <br>
 Documentation: https://docs.google.com/document/d/1-jqseaOw0QnvK7eQfRKUZTedJ4jp7Y9-YTqJgnltQb0/edit#heading=h.cfni66gw85m0 <br>
-Making a renv snapshot: renv::snapshot()
 
 ## Changes
 
