@@ -1,0 +1,809 @@
+a1,d,item,question,group,id
+2.63731127413097,3.49587329827818,Vinker ‘ha det’ på egen hånd når noen drar?,DE FØRSTE KOMMUNISERENDE GESTENE: Gjør barnet ditt dette?,Gest,item_430
+1.63899722797893,1.44001329828406,Rister på hodet for ‘nei’?,DE FØRSTE KOMMUNISERENDE GESTENE: Gjør barnet ditt dette?,Gest,item_432
+2.0072388571659,-0.437284383428507,Nikker til ‘ja?’,DE FØRSTE KOMMUNISERENDE GESTENE: Gjør barnet ditt dette?,Gest,item_433
+2.51719859048418,-2.16112485980921,Gestikulerer ‘hys’j ved fingeren mot munnen?,DE FØRSTE KOMMUNISERENDE GESTENE: Gjør barnet ditt dette?,Gest,item_434
+0.930623979056424,1.65886535596753,Smatter med leppene – nam-nam – for å vise at noe smaker godt?,DE FØRSTE KOMMUNISERENDE GESTENE: Gjør barnet ditt dette?,Gest,item_437
+0.896567439187026,1.22774589735007,Leker ‘bake kake søte’ eller andre leker med hender og fingre.,LEKER OG RUTINER: Gjør barnet ditt dette?,Gest,item_440
+0.746341327706721,1.44517387933174,Leker hvor stor er du — sååååååå stor.,LEKER OG RUTINER: Gjør barnet ditt dette?,Gest,item_441
+2.14320897509109,-2.21198822594497,fisk,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_51
+3.26520491078438,-1.3728786254744,fisk,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_51
+2.97937705114575,-3.26925481468623,kylling,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_63
+2.9811211093985,-2.79004326063632,kylling,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_63
+1.81534158044843,-0.579510019338118,leke,LEKER: Forstår barnet...,Comp,item_93
+2.86158038144854,0.157965401817525,leke,LEKER: Sier barnet...,Prod,item_93
+3.21187552611448,-3.76525599296179,fisk,MAT OG DRIKKE: Forstår barnet...,Comp,item_104
+4.09122545766934,-2.83076556109908,fisk,MAT OG DRIKKE: Sier barnet...,Prod,item_104
+3.60143155307805,-4.7246921945716,kylling,MAT OG DRIKKE: Forstår barnet...,Comp,item_113
+3.74432287279081,-4.58359721488487,kylling,MAT OG DRIKKE: Sier barnet...,Prod,item_113
+0.822602190747937,-0.149062693516262,vann,MAT OG DRIKKE: Forstår barnet...,Comp,item_123
+2.46154591831615,1.12588087262774,vann,MAT OG DRIKKE: Sier barnet...,Prod,item_123
+2.83314255676345,-2.18066135626894,huske,TING UTENDØRS: Forstår barnet...,Comp,item_224
+3.23141915923717,-1.46818297279296,huske,TING UTENDØRS: Sier barnet...,Prod,item_224
+2.00148514105638,-1.2861246609927,ute,TING UTENDØRS: Forstår barnet...,Comp,item_234
+3.27843586861934,-0.533916041544565,ute,TING UTENDØRS: Sier barnet...,Prod,item_234
+2.20684062648291,-1.46687586893169,vann,TING UTENDØRS: Forstår barnet...,Comp,item_235
+3.9858429527689,-0.611966631030352,vann,TING UTENDØRS: Sier barnet...,Prod,item_235
+0.725103637118802,0.201231467277596,ikke,LEKER OG RUTINER: Forstår barnet...,Comp,item_276
+1.65288254177585,1.0729469160103,ikke,LEKER OG RUTINER: Sier barnet...,Prod,item_276
+2.57188088989881,-2.58892025479686,huske,VERB: Forstår barnet...,Comp,item_306
+2.64349316828743,-1.95695904950111,huske,VERB: Sier barnet...,Prod,item_306
+2.48887420611948,-0.813038550298501,leke,VERB: Forstår barnet...,Comp,item_313
+3.16164402895095,-0.138560040336669,leke,VERB: Sier barnet...,Prod,item_313
+2.70655234925592,-1.99412923480207,ute,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_417
+2.82161286621015,-1.28893943068928,ute,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_417
+1.44640500936264,-0.807422349184695,ikke,MENGDEORD OG BESTEMMERORD: Forstår barnet...,Comp,item_420
+2.01364420771049,-0.349461323996799,ikke,MENGDEORD OG BESTEMMERORD: Sier barnet...,Prod,item_420
+1.94823220411008,2.10972550742126,nam-nam,LYDEFFEKTER OG DYRELYDER: Sier barnet...,Prod,item_40
+2.68097888026109,1.29608684944123,drikke,MAT OG DRIKKE: Sier barnet...,Prod,item_101
+3.38115786741881,1.74962669323985,drikke,VERB: Sier barnet...,Prod,item_292
+2.13258206870723,3.15503218935832,Strekker armen for å vise noe i hånden?,DE FØRSTE KOMMUNISERENDE GESTENE: Gjør barnet ditt dette?,Gest,item_427
+2.36173466435718,4.7386731834848,Rekker deg en leke hun/han holder?,DE FØRSTE KOMMUNISERENDE GESTENE: Gjør barnet ditt dette?,Gest,item_428
+2.5226888232284,2.58067593252412,Peker på noe som fanger oppmerksomheten?,DE FØRSTE KOMMUNISERENDE GESTENE: Gjør barnet ditt dette?,Gest,item_429
+1.92590655470834,5.16058841715633,Strekker armene opp for å bli løftet?,DE FØRSTE KOMMUNISERENDE GESTENE: Gjør barnet ditt dette?,Gest,item_431
+1.02583964092614,1.70364502723823,Vil ha noe ved å strekke armen og åpne og lukke hånden?,DE FØRSTE KOMMUNISERENDE GESTENE: Gjør barnet ditt dette?,Gest,item_435
+2.02179391025871,-1.02566651943677,Sender slengkyss?,DE FØRSTE KOMMUNISERENDE GESTENE: Gjør barnet ditt dette?,Gest,item_436
+1.65895686783828,-3.32418284510868,Trekker på skuldrene for å vise at man ikke vet?,DE FØRSTE KOMMUNISERENDE GESTENE: Gjør barnet ditt dette?,Gest,item_438
+1.50783216959663,2.25198449948357,Leker hvor er _____? Der er _____! (Gjemmer ansiktet bak hendene og tar hendene bort),LEKER OG RUTINER: Gjør barnet ditt dette?,Gest,item_439
+1.53802638840443,1.16956671620088,Leker at man prøver å fange hverandre.,LEKER OG RUTINER: Gjør barnet ditt dette?,Gest,item_442
+1.00461157001668,0.681875001632508,Synger.,LEKER OG RUTINER: Gjør barnet ditt dette?,Gest,item_443
+1.92333790495396,2.78866569437624,Danser.,LEKER OG RUTINER: Gjør barnet ditt dette?,Gest,item_444
+2.79456498368562,0.956140137635466,Spiser med skje eller gaffel.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_445
+1.28371454395316,2.01695605659045,Drikker fra en kopp.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_446
+2.39597131828114,-0.592038133986913,Børster eller grer håret sitt selv.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_447
+1.61609532308439,0.82124849387275,Pusser tennene.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_448
+2.78282884145003,-0.719827943146414,Vasker seg i ansiktet eller hendene med en klut.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_449
+2.5761746849835,-0.618902793736204,Setter på seg lue/solhatt selv.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_450
+2.49499725415611,-1.9615229869038,Tar på seg en sko eller sokk selv.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_451
+2.07483257464315,-1.87921586323842,Tar på seg halsbånd eller andre pyntesaker selv.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_452
+1.82529726954181,-2.25971870109765,Legger hodet på samlede hender og kniper øynene for å late som om hun/han sover.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_453
+3.31890323639421,-1.0908368547742,Blåser for å vise at noe er varmt.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_454
+1.73624174640762,-2.44111077051982,Holder et lekefly i hånda og later som om det flyr.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_455
+3.55541604536208,2.57817512112885,Tar telefonen til øret.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_456
+2.35563935431334,-1.7586885772483,Lukter på blomstene.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_457
+2.34991812378348,1.52186378946764,Dytter lekebiler rundt på gulvet og later som om de kjører.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_458
+2.15925404817963,2.08163330916235,Kaster ball.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_459
+2.42211165496338,-1.77751404412927,Later som om man heller noe flytende fra en beholder til en annen.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_460
+2.5464458770882,-0.182616597206411,Later som om man rører med en skje i en gryte eller kopp.,"HANDLING MED OBJEKTER: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_461
+3.67128654943679,-3.09337163216388,Legger dem i senga for å sove.,Å LEKE AT MAN ER MOR ELLER FAR: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_462
+4.06465460777072,-3.52022687957402,Tar dyne over.,Å LEKE AT MAN ER MOR ELLER FAR: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_463
+2.66359467240017,-2.12878811951702,Mater med en flaske.,Å LEKE AT MAN ER MOR ELLER FAR: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_464
+2.82527610150398,-2.06325855512572,Mater med en skje.,Å LEKE AT MAN ER MOR ELLER FAR: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_465
+2.41650385823073,-2.89563036192334,Børster/grer håret.,Å LEKE AT MAN ER MOR ELLER FAR: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_466
+2.25166615649987,-5.69397682976022,Klapper barnet på ryggen for å få en rap.,Å LEKE AT MAN ER MOR ELLER FAR: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_467
+3.11764360122169,-1.22963014710652,Triller i vogn.,Å LEKE AT MAN ER MOR ELLER FAR: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_468
+2.18907895068882,-3.02994847915911,Vugger/rugger det i armene.,Å LEKE AT MAN ER MOR ELLER FAR: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_469
+2.17195090213634,-0.538386402116538,Kysser eller klemmer på det.,Å LEKE AT MAN ER MOR ELLER FAR: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_470
+2.68467279978496,-2.53828815478742,Prøver å kle på det.,Å LEKE AT MAN ER MOR ELLER FAR: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_471
+2.63709765992513,-3.26907264825815,Tørker det i ansiktet eller hendene.,Å LEKE AT MAN ER MOR ELLER FAR: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_472
+1.8747762783059,-1.78071799502392,Snakker til det.,Å LEKE AT MAN ER MOR ELLER FAR: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_473
+3.2280356428268,-4.61325822397907,Prøver å ta på bleie.,Å LEKE AT MAN ER MOR ELLER FAR: Har De observert følgende handling i lek med en dukke eller en bamse?,Gest,item_474
+2.64531185359328,-0.888021865887403,Feier med en kost.,"HERME ETTER DET DE VOKSNE GJØR: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_475
+2.15534981967439,-0.924671700711882,Putter nøkkel i nøkkelhullet (eller i nærheten av det).,"HERME ETTER DET DE VOKSNE GJØR: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_476
+1.30446274968825,0.194983138825314,Banker med en hammer.,"HERME ETTER DET DE VOKSNE GJØR: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_477
+1.75629717901317,-3.10790444800242,Prøver å sage.,"HERME ETTER DET DE VOKSNE GJØR: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_478
+1.47690731420264,0.363991287976514,Skriver på et tastatur.,"HERME ETTER DET DE VOKSNE GJØR: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_479
+2.91471842504717,3.8159286070521,Leser (åpner bøker og blar i sidene).,"HERME ETTER DET DE VOKSNE GJØR: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_480
+1.86875852008928,-0.843321487363431,Støvsuger.,"HERME ETTER DET DE VOKSNE GJØR: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_481
+2.12493566574639,-3.30299360328909,Vanner planter.,"HERME ETTER DET DE VOKSNE GJØR: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_482
+1.43235470869059,0.248354522397567,Spiller på musikkinstrumenter.,"HERME ETTER DET DE VOKSNE GJØR: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_483
+1.50397843490557,-0.996392829083379,Kjører bil ved å styre med et ratt.,"HERME ETTER DET DE VOKSNE GJØR: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_484
+2.14929228822733,-2.95189908168,Vasker opp.,"HERME ETTER DET DE VOKSNE GJØR: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_485
+2.62497215189565,-0.80284856317429,Gjør rent med klut eller tørker støv.,"HERME ETTER DET DE VOKSNE GJØR: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_486
+3.59418201326394,0.368321481752955,"Skriver/tegner med blyant, tusj eller fargestifter.","HERME ETTER DET DE VOKSNE GJØR: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_487
+3.51991279242794,0.338863451047805,Graver med en spade (i sandkassen).,"HERME ETTER DET DE VOKSNE GJØR: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_488
+2.84360586745513,-1.12246489268405,Tar på seg (sol)briller.,"HERME ETTER DET DE VOKSNE GJØR: Gjør barnet ditt dette, eller prøver han/hun å gjøre det?",Gest,item_489
+0.283810765671309,-0.83090981024477,au,LYDEFFEKTER OG DYRELYDER: Forstår barnet...,Comp,item_32
+0.179435468855083,-1.77896606467659,brrr (bil-lyd),LYDEFFEKTER OG DYRELYDER: Forstår barnet...,Comp,item_34
+0.721473621278894,-1.26738382569908,gakk gakk,LYDEFFEKTER OG DYRELYDER: Forstår barnet...,Comp,item_35
+1.3430237788028,-1.95864608138922,grr,LYDEFFEKTER OG DYRELYDER: Forstår barnet...,Comp,item_36
+1.75700731872435,-1.38999627388165,kykeliky,LYDEFFEKTER OG DYRELYDER: Forstår barnet...,Comp,item_37
+0.495301180918195,-0.666133494037415,mjau,LYDEFFEKTER OG DYRELYDER: Forstår barnet...,Comp,item_38
+0.502494582631279,-1.35382190714213,møø,LYDEFFEKTER OG DYRELYDER: Forstår barnet...,Comp,item_39
+2.14665780756048,-1.9217912138234,tøff-tøff,LYDEFFEKTER OG DYRELYDER: Forstår barnet...,Comp,item_41
+2.32698220265185,-1.98173252976632,and,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_43
+3.16881872804922,-4.89470944855331,(meite)mark,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_44
+2.53156751535428,-2.60781780699414,ape(katt),NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_45
+2.67610232073508,-2.70904199336401,bjørn,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_46
+2.92524497014322,-2.57385487515611,dyr,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_47
+2.76162194478339,-3.80153867682023,ekorn,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_48
+2.80677151387611,-2.65387574622096,elefant,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_49
+2.6760241822349,-4.25044486965458,elg,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_50
+2.649191390666,-3.44820555398862,flue,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_52
+2.57533174190217,-3.1198979583641,frosk,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_53
+1.89120365500475,-1.60067117083692,fugl,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_54
+2.59464411924604,-3.80867418412199,gås,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_55
+1.76554033932793,-1.35882964542887,gris,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_56
+1.49569796232285,-1.37462417967496,hest,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_57
+1.0561589032984,-0.531984133883922,hund,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_58
+2.18613586843309,-2.3410316683671,kanin,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_59
+0.80356376562518,-0.436672470612831,katt,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_60
+2.20766042869565,-2.88568983582196,kattunge,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_61
+1.63721270394808,-1.16988911118477,ku,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_62
+2.27929893810886,-2.58192163298377,lam,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_64
+1.22396311892346,-0.921426073101811,(leke)bamse,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_65
+2.51736020555935,-2.56030647052695,løve,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_66
+2.50152279181184,-2.92585600667012,mus,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_67
+3.13314728212526,-4.56897930120762,pingvin,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_68
+2.63620718337686,-4.59563296188347,reinsdyr,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_69
+3.00404938364742,-4.0346565811469,rev,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_70
+1.692444122296,-1.0349372318726,sau,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_71
+2.97598124804803,-3.5900694339709,sjiraff,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_72
+2.61006395643872,-4.03067934898836,skilpadde,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_73
+3.0109193750136,-3.47692402393743,sommerfugl,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_74
+2.64936117902505,-3.09992004389992,tiger,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_75
+2.38732773429279,-3.56903559300461,ugle,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_76
+2.69503187926547,-3.60798621577064,valp,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_77
+2.59602956236392,-3.77632963350674,veps,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Forstår barnet...,Comp,item_78
+2.12914235773277,-0.583778485258751,barnevogn,KJØRETØY (VIRKELIGE ELLER LEKETØY): Forstår barnet...,Comp,item_79
+2.81586790128531,-3.19468989569638,brannbil,KJØRETØY (VIRKELIGE ELLER LEKETØY): Forstår barnet...,Comp,item_81
+1.93799889267856,-2.53677095154907,buss,KJØRETØY (VIRKELIGE ELLER LEKETØY): Forstår barnet...,Comp,item_82
+2.07210128032279,-2.32966647172494,fly,KJØRETØY (VIRKELIGE ELLER LEKETØY): Forstår barnet...,Comp,item_83
+2.56817255304086,-2.46380554058004,lastebil,KJØRETØY (VIRKELIGE ELLER LEKETØY): Forstår barnet...,Comp,item_84
+3.01152306665302,-3.59653603638883,motorsykkel,KJØRETØY (VIRKELIGE ELLER LEKETØY): Forstår barnet...,Comp,item_85
+3.80435656377679,-3.52559748707387,sykkel,KJØRETØY (VIRKELIGE ELLER LEKETØY): Forstår barnet...,Comp,item_86
+2.28357203877536,-2.41455802647061,tog,KJØRETØY (VIRKELIGE ELLER LEKETØY): Forstår barnet...,Comp,item_87
+1.85636688098581,-1.47224844675499,ballong,LEKER: Forstår barnet...,Comp,item_89
+2.51837341940359,-1.09841978696595,klosser,LEKER: Forstår barnet...,Comp,item_91
+1.58588267857356,-1.2270647740354,dukke,LEKER: Forstår barnet...,Comp,item_92
+3.85623103440053,-2.73102003066148,(farge)blyant,LEKER: Forstår barnet...,Comp,item_94
+2.68644758055171,-3.20697819838495,såpebobler,LEKER: Forstår barnet...,Comp,item_95
+2.60968155620638,-2.28100095142173,appelsin,MAT OG DRIKKE: Forstår barnet...,Comp,item_96
+0.615602160853898,-0.467780626361281,banan,MAT OG DRIKKE: Forstår barnet...,Comp,item_97
+1.92614005387738,-1.78473794145354,bolle,MAT OG DRIKKE: Forstår barnet...,Comp,item_98
+1.63312611507836,-0.514188657169949,brød,MAT OG DRIKKE: Forstår barnet...,Comp,item_99
+2.69613722827469,-4.16755492478395,corn flakes,MAT OG DRIKKE: Forstår barnet...,Comp,item_100
+2.90130703195492,-3.60184002985543,egg,MAT OG DRIKKE: Forstår barnet...,Comp,item_102
+1.56850465451139,-1.37991682877089,eple,MAT OG DRIKKE: Forstår barnet...,Comp,item_103
+2.65430656654074,-4.14775539250426,frokostblanding,MAT OG DRIKKE: Forstår barnet...,Comp,item_105
+3.08481864648026,-2.66637086365418,gulrot,MAT OG DRIKKE: Forstår barnet...,Comp,item_106
+1.22591963721254,-1.90202354537711,is,MAT OG DRIKKE: Forstår barnet...,Comp,item_107
+2.24988404602358,-2.68209937616586,juice,MAT OG DRIKKE: Forstår barnet...,Comp,item_108
+3.08468251486267,-3.35703624366463,kaffe,MAT OG DRIKKE: Forstår barnet...,Comp,item_109
+2.12466782354599,-2.44116128638792,kake,MAT OG DRIKKE: Forstår barnet...,Comp,item_110
+1.51528829610112,-1.52912886326937,kjeks,MAT OG DRIKKE: Forstår barnet...,Comp,item_111
+3.6560052004523,-4.6139180753682,kjøtt,MAT OG DRIKKE: Forstår barnet...,Comp,item_112
+0.785498995994063,-0.299635834401095,mat,MAT OG DRIKKE: Forstår barnet...,Comp,item_114
+0.767411369803125,-0.366574956449805,melk,MAT OG DRIKKE: Forstår barnet...,Comp,item_115
+2.46761699926178,-2.43517457968409,ost,MAT OG DRIKKE: Forstår barnet...,Comp,item_116
+3.29315222319704,-4.1076281599664,pasta,MAT OG DRIKKE: Forstår barnet...,Comp,item_117
+2.24730373372541,-1.99290337798185,rosiner,MAT OG DRIKKE: Forstår barnet...,Comp,item_119
+4.12698461002539,-4.68747330103871,smør,MAT OG DRIKKE: Forstår barnet...,Comp,item_120
+3.27857021481667,-3.80176558550666,spagetti,MAT OG DRIKKE: Forstår barnet...,Comp,item_121
+2.9081883882366,-4.04233151377695,sukkertøy,MAT OG DRIKKE: Forstår barnet...,Comp,item_122
+2.87800189451494,-1.41573663024133,bukse,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_125
+3.83931941566314,-1.81704972001615,genser,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_126
+2.96226934843982,-3.68339732484936,glidelås,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_127
+3.1751711673049,-4.0794822234191,halskjede,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_128
+2.94801632239457,-1.6050485840789,jakke,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_129
+3.2459753186908,-3.53196110267773,kjole,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_130
+3.18252040809924,-3.2319172649762,knapp,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_131
+1.84315287192465,-0.907012300481314,lue,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_132
+2.70834035056988,-1.49107376881771,pysjamas,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_133
+3.6047371035697,-5.48140043519983,shorts,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_135
+1.26258491206589,-0.898164370866206,sko,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_136
+2.14518931617746,-1.17038395531454,smekke,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_137
+2.49026986656773,-1.46063197269644,sokker,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_139
+3.96018683865744,-3.05747772472638,støvler,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_140
+4.31042637507252,-2.46316336163645,strømpebukse,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_141
+3.91116046753708,-4.73547403418364,t-skjorte,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_142
+3.41794413853236,-2.13012829525973,votter,KLÆR OG TILBEHØR: Forstår barnet...,Comp,item_143
+3.66005636293124,-2.40465413540235,ansikt,KROPPSDELER: Forstår barnet...,Comp,item_144
+3.89415159546393,-2.60638413572945,arm,KROPPSDELER: Forstår barnet...,Comp,item_145
+3.69712352239625,-2.72575712402159,bein,KROPPSDELER: Forstår barnet...,Comp,item_146
+3.30337890536684,-1.99097962306229,finger,KROPPSDELER: Forstår barnet...,Comp,item_147
+2.11700887284479,-0.947508033750055,fot,KROPPSDELER: Forstår barnet...,Comp,item_148
+2.24889416016375,-0.830638431633569,hånd,KROPPSDELER: Forstår barnet...,Comp,item_149
+2.57541953294319,-1.31022629977682,hår,KROPPSDELER: Forstår barnet...,Comp,item_150
+2.61520434319402,-1.42194095514132,hode,KROPPSDELER: Forstår barnet...,Comp,item_151
+3.37466808450186,-2.88083539779436,kinn,KROPPSDELER: Forstår barnet...,Comp,item_152
+2.53491104542489,-1.32734283857278,mage,KROPPSDELER: Forstår barnet...,Comp,item_154
+1.87416028687846,-1.00264074846279,munn,KROPPSDELER: Forstår barnet...,Comp,item_155
+2.89395487905655,-2.48411666536346,navle,KROPPSDELER: Forstår barnet...,Comp,item_156
+1.30237903107738,-0.693793889553757,nese,KROPPSDELER: Forstår barnet...,Comp,item_157
+2.06867696863973,-1.58091941080398,øre,KROPPSDELER: Forstår barnet...,Comp,item_158
+1.66801221823565,-1.12937075111082,øye,KROPPSDELER: Forstår barnet...,Comp,item_159
+2.4470521656178,-2.00982494791066,tå,KROPPSDELER: Forstår barnet...,Comp,item_160
+3.06598634985627,-1.6044964705494,tenner,KROPPSDELER: Forstår barnet...,Comp,item_161
+2.26429378193251,-2.49879220657993,tiss,KROPPSDELER: Forstår barnet...,Comp,item_162
+3.43997602797542,-3.18491645056563,tunge,KROPPSDELER: Forstår barnet...,Comp,item_163
+2.63761978638635,-1.7928967058476,bilde,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_164
+3.12382475840596,-2.11815160498512,børste,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_165
+2.40107061743137,-1.8008579350352,briller,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_166
+3.62923388308474,-2.18556304788654,dyne,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_167
+3.89174359573245,-4.19231457480632,eske,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_168
+1.98494844635673,-0.807722845988875,flaske,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_169
+4.04966812824858,-2.94317145592307,gaffel,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_170
+3.53603190319799,-2.18477233131859,glass,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_171
+3.09129030352986,-3.86802031947787,hammer,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_172
+4.53444215815451,-3.84611210922671,håndkle,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_173
+2.24126901206971,-2.57599614845786,klokke,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_175
+4.44768080321479,-4.03832592227108,kniv,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_176
+1.9006493200494,-0.656946141585738,kopp,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_177
+3.7869299546983,-4.16486670803391,kost,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_178
+3.31440478381011,-3.07573939127539,lampe,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_179
+3.07757394298047,-3.98553239445544,lommebok,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_180
+0.945062532959729,-1.34313416883857,lys,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_181
+3.00178148839716,-4.25199506962716,medisin,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_182
+3.25602237848125,-2.15167684472488,nøkler,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_183
+4.00645798141966,-3.56129334535132,papir,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_184
+4.39462033361548,-5.70225771714928,penger,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_185
+3.21494289961191,-3.8008805720351,plante,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_186
+3.2707107276381,-2.4912114169672,pute,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_187
+3.36786126597156,-3.867374442438,radio,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_188
+4.06877669359446,-4.67781615099548,saks,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_189
+4.96245358587382,-4.23079824504118,såpe,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_190
+3.59964015266538,-3.91485220418164,skål,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_191
+2.28552480155126,-1.07797784898533,skje,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_192
+3.6271703087174,-3.00111111546833,søppel,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_193
+2.8441996117199,-1.8502621762129,støvsuger,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_194
+4.36656579061515,-2.84793555796641,tallerken,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_195
+2.46039904396111,-0.308678619241964,tannbørste,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_196
+2.08002901408369,-0.395618338137729,telefon,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_197
+3.8489572872557,-3.34227318952263,teppe,SMÅ GJENSTANDER I HUSET: Forstår barnet...,Comp,item_198
+1.33470618218131,-0.435991625297514,bad,ROM OG MØBLER: Forstår barnet...,Comp,item_199
+2.13910636744454,-1.03847407452434,badekar,ROM OG MØBLER: Forstår barnet...,Comp,item_200
+2.79445131029986,-1.59867615195385,barnestol,ROM OG MØBLER: Forstår barnet...,Comp,item_201
+4.28537870902388,-1.96714779715186,bord,ROM OG MØBLER: Forstår barnet...,Comp,item_202
+4.00867277233599,-1.75235842060695,dør,ROM OG MØBLER: Forstår barnet...,Comp,item_203
+3.19600221616631,-5.14459619344554,gyngestol,ROM OG MØBLER: Forstår barnet...,Comp,item_205
+3.86232236282122,-1.7270477969508,kjøkken,ROM OG MØBLER: Forstår barnet...,Comp,item_206
+4.36547586770672,-2.4004622207669,kjøleskap,ROM OG MØBLER: Forstår barnet...,Comp,item_207
+3.90103864604816,-3.62872842807229,komfyr,ROM OG MØBLER: Forstår barnet...,Comp,item_208
+1.8060523090439,-2.93017898266916,lekegrind,ROM OG MØBLER: Forstår barnet...,Comp,item_209
+3.67575246699426,-2.72400469973885,ovn,ROM OG MØBLER: Forstår barnet...,Comp,item_210
+2.50384779498639,-3.45724295882079,potte,ROM OG MØBLER: Forstår barnet...,Comp,item_211
+2.47494816879774,-0.392263162966599,seng,ROM OG MØBLER: Forstår barnet...,Comp,item_212
+4.15348619383218,-3.70931057671391,skuff,ROM OG MØBLER: Forstår barnet...,Comp,item_213
+4.76871624558515,-2.47560929967256,sofa,ROM OG MØBLER: Forstår barnet...,Comp,item_214
+3.53937998723033,-2.21540983789093,soverom,ROM OG MØBLER: Forstår barnet...,Comp,item_215
+3.06425445336435,-1.78074112600765,stol,ROM OG MØBLER: Forstår barnet...,Comp,item_216
+4.70082009062078,-3.23480984985872,stue,ROM OG MØBLER: Forstår barnet...,Comp,item_217
+3.50953190975598,-2.03123427870662,trapp,ROM OG MØBLER: Forstår barnet...,Comp,item_218
+2.9049828686524,-0.928655904618867,TV,ROM OG MØBLER: Forstår barnet...,Comp,item_219
+5.27594686914905,-4.37125554082067,vask,ROM OG MØBLER: Forstår barnet...,Comp,item_220
+4.48853309930893,-3.05126657294154,vindu,ROM OG MØBLER: Forstår barnet...,Comp,item_221
+2.78433178105516,-2.49032733612023,blomst,TING UTENDØRS: Forstår barnet...,Comp,item_222
+3.76482944900439,-4.00217664579212,himmel,TING UTENDØRS: Forstår barnet...,Comp,item_223
+3.51766090250666,-4.5078707225722,måne,TING UTENDØRS: Forstår barnet...,Comp,item_225
+4.31229697677392,-3.89791274523055,regn,TING UTENDØRS: Forstår barnet...,Comp,item_226
+3.33362459723235,-2.88119788497085,sklie,TING UTENDØRS: Forstår barnet...,Comp,item_227
+2.5528002703285,-2.43212661481814,snø,TING UTENDØRS: Forstår barnet...,Comp,item_228
+3.41147979150921,-3.22512144231581,sol,TING UTENDØRS: Forstår barnet...,Comp,item_229
+3.2110942556792,-2.51642992096578,spade,TING UTENDØRS: Forstår barnet...,Comp,item_230
+4.03175914535505,-3.46602906165468,stein,TING UTENDØRS: Forstår barnet...,Comp,item_231
+4.31464071751848,-5.81027259751773,stjerner,TING UTENDØRS: Forstår barnet...,Comp,item_232
+4.32357176296285,-3.9111673812382,tre,TING UTENDØRS: Forstår barnet...,Comp,item_233
+3.57284708196881,-2.51294131355165,butikk,STEDER Å DRA TIL: Forstår barnet...,Comp,item_236
+3.01730516393808,-5.87150110149267,dyrehage,STEDER Å DRA TIL: Forstår barnet...,Comp,item_237
+3.94826686650771,-6.61567727617912,fest,STEDER Å DRA TIL: Forstår barnet...,Comp,item_238
+3.88001036596771,-4.47203697668265,hage,STEDER Å DRA TIL: Forstår barnet...,Comp,item_239
+2.4546964593757,-0.706637766930302,hjem,STEDER Å DRA TIL: Forstår barnet...,Comp,item_240
+3.69612181195722,-3.37975623040748,hus,STEDER Å DRA TIL: Forstår barnet...,Comp,item_241
+3.16205379568427,-3.60372377418746,jobb,STEDER Å DRA TIL: Forstår barnet...,Comp,item_242
+3.66356450122529,-6.57552828822667,kirke,STEDER Å DRA TIL: Forstår barnet...,Comp,item_243
+2.91795884683759,-4.89159048411665,park,STEDER Å DRA TIL: Forstår barnet...,Comp,item_244
+3.04985247370292,-4.85767597506379,skole,STEDER Å DRA TIL: Forstår barnet...,Comp,item_245
+3.7485932786368,-6.00067659937826,strand,STEDER Å DRA TIL: Forstår barnet...,Comp,item_246
+2.16726293990612,-3.76274612970329,svømmehall,STEDER Å DRA TIL: Forstår barnet...,Comp,item_247
+0.752993327694644,-0.866491663174939,baby,MENNESKER: Forstår barnet...,Comp,item_248
+2.32604213318005,-1.85824471963896,barn,MENNESKER: Forstår barnet...,Comp,item_249
+3.74980125157008,-3.79227305841461,dame,MENNESKER: Forstår barnet...,Comp,item_254
+3.07903716062134,-3.22821189991571,gutt,MENNESKER: Forstår barnet...,Comp,item_257
+3.27653082375119,-3.23787293094867,jente,MENNESKER: Forstår barnet...,Comp,item_258
+3.13263210138824,-3.66479499053687,mann,MENNESKER: Forstår barnet...,Comp,item_260
+4.12648485394922,-6.04056759557171,menneske,MENNESKER: Forstår barnet...,Comp,item_261
+1.8867829397009,-3.29501002670763,oldefar,MENNESKER: Forstår barnet...,Comp,item_264
+1.83203160344719,-2.59518265318278,oldemor,MENNESKER: Forstår barnet...,Comp,item_265
+1.69301273406836,-1.72290091651948,onkel,MENNESKER: Forstår barnet...,Comp,item_266
+1.18138498929145,-1.43727417165428,tante,MENNESKER: Forstår barnet...,Comp,item_269
+2.64171320770973,-1.0236787722301,frokost,LEKER OG RUTINER: Forstår barnet...,Comp,item_271
+0.704214846477499,-1.15200317348145,hysj,LEKER OG RUTINER: Forstår barnet...,Comp,item_275
+2.44873970645638,-2.56403463056867,lunsj,LEKER OG RUTINER: Forstår barnet...,Comp,item_280
+2.55049097600364,-0.86834147793616,middag,LEKER OG RUTINER: Forstår barnet...,Comp,item_281
+1.58282306322635,-0.573795554430653,sovetid,LEKER OG RUTINER: Forstår barnet...,Comp,item_283
+0.152082386992733,-1.04253100463138,takk,LEKER OG RUTINER: Forstår barnet...,Comp,item_284
+3.02972353192112,-3.03135377922226,vær så snill,LEKER OG RUTINER: Forstår barnet...,Comp,item_285
+3.13180879944568,-2.78957465971525,vil,LEKER OG RUTINER: Forstår barnet...,Comp,item_287
+2.42669072015567,-1.27759347885359,bite,VERB: Forstår barnet...,Comp,item_288
+2.65217477080767,-1.74430467745299,blåse,VERB: Forstår barnet...,Comp,item_289
+1.58243621018748,-0.243588739818178,danse,VERB: Forstår barnet...,Comp,item_290
+3.38800276778051,-3.23450559527042,dra,VERB: Forstår barnet...,Comp,item_291
+3.41291393446057,-3.23484258616959,dytte,VERB: Forstår barnet...,Comp,item_293
+3.43735967948836,-5.10544704859807,elske,VERB: Forstår barnet...,Comp,item_294
+1.89042686197809,-0.878988885187713,få,VERB: Forstår barnet...,Comp,item_295
+3.57359745183234,-2.90529111753793,falle,VERB: Forstår barnet...,Comp,item_296
+3.16564353125041,-3.38918555994661,forte seg,VERB: Forstår barnet...,Comp,item_297
+2.99542615225383,-1.29957057609491,gi,VERB: Forstår barnet...,Comp,item_299
+3.08343548124071,-4.30006477143684,gjøre seg ferdig,VERB: Forstår barnet...,Comp,item_300
+3.80048992377445,-2.22762797570468,gråte,VERB: Forstår barnet...,Comp,item_301
+2.97311671242765,-1.03517409559495,hente,VERB: Forstår barnet...,Comp,item_302
+3.51220392709871,-2.63719755815874,hjelpe,VERB: Forstår barnet...,Comp,item_303
+3.20495209772711,-5.29280320006929,holde øye med,VERB: Forstår barnet...,Comp,item_304
+1.67407825076202,-1.51418072453536,hoppe,VERB: Forstår barnet...,Comp,item_305
+2.56433315743352,-1.07613656018621,kaste,VERB: Forstår barnet...,Comp,item_307
+2.92770193560547,-2.36933390432198,kile,VERB: Forstår barnet...,Comp,item_308
+3.21680178617019,-1.70835995656893,kjøre,VERB: Forstår barnet...,Comp,item_309
+1.66041546457554,-0.692600042969691,kysse,VERB: Forstår barnet...,Comp,item_311
+2.60510690755383,-1.02406949900815,legge,VERB: Forstår barnet...,Comp,item_312
+2.14327135883763,-0.766751035027587,lese,VERB: Forstår barnet...,Comp,item_314
+3.93145403890273,-2.84472641439874,løpe,VERB: Forstår barnet...,Comp,item_315
+3.64253294063195,-2.76507741057233,lukke,VERB: Forstår barnet...,Comp,item_316
+3.04419240028704,-2.86067405717164,mate,VERB: Forstår barnet...,Comp,item_317
+3.72784895143743,-3.93549896228157,ødelegge,VERB: Forstår barnet...,Comp,item_318
+2.07625871929709,-1.09358471219077,plaske,VERB: Forstår barnet...,Comp,item_319
+3.02130749086994,-4.20220578740394,ri,VERB: Forstår barnet...,Comp,item_320
+3.84705694969434,-2.66320144669517,rydde,VERB: Forstår barnet...,Comp,item_321
+0.616511067101043,-0.473893479948239,se,VERB: Forstår barnet...,Comp,item_322
+2.05048533271646,-1.40941378344387,se på,VERB: Forstår barnet...,Comp,item_323
+3.11360658227726,-2.55794933865521,si,VERB: Forstår barnet...,Comp,item_324
+3.47716714410511,-2.3823971542205,slå,VERB: Forstår barnet...,Comp,item_326
+2.46191442436792,-1.62001584228688,smile,VERB: Forstår barnet...,Comp,item_327
+1.78771597791722,-0.0154309782424574,sove,VERB: Forstår barnet...,Comp,item_328
+3.63303317289905,-3.62014119637466,sparke,VERB: Forstår barnet...,Comp,item_329
+1.64326877258704,0.0340711484829618,spise,VERB: Forstår barnet...,Comp,item_330
+3.66954840538818,-3.35192665427058,stoppe,VERB: Forstår barnet...,Comp,item_331
+2.05033111135316,-3.24105354237067,svømme,VERB: Forstår barnet...,Comp,item_332
+2.69731422136871,-1.33880429877127,synge,VERB: Forstår barnet...,Comp,item_333
+2.83085777258259,-2.32720271801069,ta,VERB: Forstår barnet...,Comp,item_334
+2.98966579986138,-2.27399493967029,ta på,VERB: Forstår barnet...,Comp,item_335
+3.11584395471398,-2.5446372279126,tegne,VERB: Forstår barnet...,Comp,item_336
+3.3759224991214,-2.54882875708788,tørke,VERB: Forstår barnet...,Comp,item_337
+2.98308150141762,-1.22982436761522,vaske,VERB: Forstår barnet...,Comp,item_338
+3.57396728435322,-3.1091160969846,vise,VERB: Forstår barnet...,Comp,item_339
+3.46807628598588,-2.25429792061531,åpne,VERB: Forstår barnet...,Comp,item_340
+3.23213171268422,-5.77087121564219,blå,BESKRIVENDE ORD: Forstår barnet...,Comp,item_341
+0.954322000261268,-0.536933689012148,borte,BESKRIVENDE ORD: Forstår barnet...,Comp,item_342
+2.06595739537582,-1.08100804938223,bra,BESKRIVENDE ORD: Forstår barnet...,Comp,item_343
+2.3795496316731,-2.85233052951805,ekkelt,BESKRIVENDE ORD: Forstår barnet...,Comp,item_344
+2.40723917847428,-1.46433464696815,fin,BESKRIVENDE ORD: Forstår barnet...,Comp,item_345
+2.29066373322769,-0.784244721835495,forsiktig,BESKRIVENDE ORD: Forstår barnet...,Comp,item_346
+3.90896913077518,-3.91438136866297,fort,BESKRIVENDE ORD: Forstår barnet...,Comp,item_347
+4.43618430457361,-7.13626908958698,gammel,BESKRIVENDE ORD: Forstår barnet...,Comp,item_349
+3.3323026043564,-2.65982304207933,glad,BESKRIVENDE ORD: Forstår barnet...,Comp,item_350
+3.13926838390895,-4.12822814991268,grei,BESKRIVENDE ORD: Forstår barnet...,Comp,item_351
+4.85858770914491,-6.61451818334176,hard,BESKRIVENDE ORD: Forstår barnet...,Comp,item_352
+3.92074470462823,-3.20243428640021,kald,BESKRIVENDE ORD: Forstår barnet...,Comp,item_353
+4.43599964346934,-4.58093109031883,liten,BESKRIVENDE ORD: Forstår barnet...,Comp,item_354
+3.38481956544605,-3.72509418171914,myk,BESKRIVENDE ORD: Forstår barnet...,Comp,item_356
+3.8951418412750902,-4.01876035729412,ødelagt,BESKRIVENDE ORD: Forstår barnet...,Comp,item_357
+3.27496892283696,-4.69675909922813,pen,BESKRIVENDE ORD: Forstår barnet...,Comp,item_358
+3.82980160931448,-4.92118620628413,redd,BESKRIVENDE ORD: Forstår barnet...,Comp,item_359
+4.34555229281953,-5.08736825644735,ren,BESKRIVENDE ORD: Forstår barnet...,Comp,item_360
+3.34161258793865,-5.77753281835686,rød,BESKRIVENDE ORD: Forstår barnet...,Comp,item_361
+3.88958009645865,-3.78881648360287,skitten,BESKRIVENDE ORD: Forstår barnet...,Comp,item_362
+2.24018387108504,-4.10054640809834,skjønn,BESKRIVENDE ORD: Forstår barnet...,Comp,item_363
+3.0539129244775,-4.15868653837963,slem,BESKRIVENDE ORD: Forstår barnet...,Comp,item_364
+3.12219402119424,-3.87535147493236,sliten,BESKRIVENDE ORD: Forstår barnet...,Comp,item_365
+2.68890112415931,-3.39890658830053,søt,BESKRIVENDE ORD: Forstår barnet...,Comp,item_366
+1.50468517847697,-1.4084776164432,stor,BESKRIVENDE ORD: Forstår barnet...,Comp,item_367
+2.23498486509919,-0.942401878748659,sulten,BESKRIVENDE ORD: Forstår barnet...,Comp,item_368
+4.0759337189064,-5.26354991404618,syk,BESKRIVENDE ORD: Forstår barnet...,Comp,item_369
+2.51722473917361,-2.73561036922324,tom,BESKRIVENDE ORD: Forstår barnet...,Comp,item_370
+5.4007779816822,-6.75548946275397,tørr,BESKRIVENDE ORD: Forstår barnet...,Comp,item_371
+1.57826038260886,-0.611020521635475,tørst,BESKRIVENDE ORD: Forstår barnet...,Comp,item_372
+2.23855268208373,-1.10843871793257,trøtt,BESKRIVENDE ORD: Forstår barnet...,Comp,item_373
+3.06803535396346,-2.8970713542788,varm,BESKRIVENDE ORD: Forstår barnet...,Comp,item_374
+4.39855077169299,-3.92220650813761,våt,BESKRIVENDE ORD: Forstår barnet...,Comp,item_375
+2.48953838858571,-2.07051145062788,vondt,BESKRIVENDE ORD: Forstår barnet...,Comp,item_376
+3.09455635748932,-4.07732929361772,dag,ORD OM TID: Forstår barnet...,Comp,item_377
+3.33031345154674,-4.77367434891523,i dag,ORD OM TID: Forstår barnet...,Comp,item_378
+3.10684392586649,-5.37911809262024,i kveld,ORD OM TID: Forstår barnet...,Comp,item_379
+2.94439613250695,-5.23336619907529,i morgen,ORD OM TID: Forstår barnet...,Comp,item_380
+2.83989119276628,-4.73866539801311,morgen,ORD OM TID: Forstår barnet...,Comp,item_381
+3.58553083683936,-3.92533524611654,nå,ORD OM TID: Forstår barnet...,Comp,item_382
+1.85347460850786,-1.61254564799345,natt,ORD OM TID: Forstår barnet...,Comp,item_383
+3.2441775774665502,-4.19671385023995,senere,ORD OM TID: Forstår barnet...,Comp,item_384
+1.28922749069883,-1.85361398791121,den,PRONOMEN: Forstår barnet...,Comp,item_385
+2.26007428392199,-2.98368721848554,denne,PRONOMEN: Forstår barnet...,Comp,item_386
+2.23732659303336,-3.04914765274212,det,PRONOMEN: Forstår barnet...,Comp,item_387
+2.8120988628839,-3.86861857161626,dette,PRONOMEN: Forstår barnet...,Comp,item_388
+2.70120980301333,-2.19669577067612,din,PRONOMEN: Forstår barnet...,Comp,item_389
+2.63679058531909,-2.54163110063372,du,PRONOMEN: Forstår barnet...,Comp,item_390
+3.06962435325945,-3.39346623013789,hans,PRONOMEN: Forstår barnet...,Comp,item_391
+2.85439906472677,-3.31834491893697,hennes,PRONOMEN: Forstår barnet...,Comp,item_392
+2.83138436798,-3.07059338324738,jeg,PRONOMEN: Forstår barnet...,Comp,item_393
+2.9554403041085,-3.85389243689274,meg,PRONOMEN: Forstår barnet...,Comp,item_394
+1.79920522723017,-1.86693199778461,min,PRONOMEN: Forstår barnet...,Comp,item_395
+2.69273167512179,-2.65813509119113,hva,SPØRREORD: Forstår barnet...,Comp,item_396
+2.5192853588422,-1.98718654812863,hvem,SPØRREORD: Forstår barnet...,Comp,item_397
+1.68667150985944,-0.873622167312149,hvor,SPØRREORD: Forstår barnet...,Comp,item_398
+3.18248189730071,-5.43957935569878,hvordan,SPØRREORD: Forstår barnet...,Comp,item_399
+3.3593376985094,-5.81324020139372,hvorfor,SPØRREORD: Forstår barnet...,Comp,item_400
+3.33675924203978,-6.05826879267502,når,SPØRREORD: Forstår barnet...,Comp,item_401
+2.8953486407785,-3.82943351834232,av,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_402
+3.55454964153093,-3.16714539152781,bak,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_403
+2.31500815963223,-2.84587657692473,bort,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_404
+0.929343246644087,-1.24912613421553,der,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_405
+3.12418356645121,-3.5336053339596,i,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_406
+3.14187196175692,-3.03460461157343,inn,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_407
+3.50498292375223,-3.36294937113535,inne,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_408
+2.61643878420879,-2.31641948430986,inni,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_409
+2.9882507045506,-2.81860158877779,ned,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_410
+3.39694518697831,-3.63743798696762,nede,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_411
+2.17676641372103,-2.06459295080516,opp,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_412
+2.88952556225872,-3.02546500244812,oppe,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_413
+3.60528410381719,-3.30620731983101,på,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_414
+3.62940115047567,-2.79175854400871,under,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_415
+1.93965284939311,-1.80439795342473,ut,PREPOSISJONER OG STEDSANGIVELSER: Forstår barnet...,Comp,item_416
+3.49939648490872,-4.18528996074659,alle,MENGDEORD OG BESTEMMERORD: Forstår barnet...,Comp,item_418
+3.17483371957035,-5.07672690617778,en annen,MENGDEORD OG BESTEMMERORD: Forstår barnet...,Comp,item_419
+2.99055973731408,-3.8100341105357,ingen,MENGDEORD OG BESTEMMERORD: Forstår barnet...,Comp,item_421
+2.91376415916162,-2.86361860598948,ingenting,MENGDEORD OG BESTEMMERORD: Forstår barnet...,Comp,item_422
+1.10581547689159,-1.57872410137163,mer,MENGDEORD OG BESTEMMERORD: Forstår barnet...,Comp,item_423
+3.41935184948224,-5.33667829723656,noe,MENGDEORD OG BESTEMMERORD: Forstår barnet...,Comp,item_424
+3.18463253353955,-4.94108994064949,noen,MENGDEORD OG BESTEMMERORD: Forstår barnet...,Comp,item_425
+3.47867418737232,-5.29906940481773,samme,MENGDEORD OG BESTEMMERORD: Forstår barnet...,Comp,item_426
+2.31075174202029,1.2506934974479,au,LYDEFFEKTER OG DYRELYDER: Sier barnet...,Prod,item_32
+2.79167266466551,1.11887813928463,bææ,LYDEFFEKTER OG DYRELYDER: Sier barnet...,Prod,item_33
+2.05460363779597,1.42034224468791,brrr (bil-lyd),LYDEFFEKTER OG DYRELYDER: Sier barnet...,Prod,item_34
+2.59375007796872,0.401898222894117,gakk gakk,LYDEFFEKTER OG DYRELYDER: Sier barnet...,Prod,item_35
+2.18490093740721,-0.651855050065459,grr,LYDEFFEKTER OG DYRELYDER: Sier barnet...,Prod,item_36
+2.74962576621083,-0.7187167453388,kykeliky,LYDEFFEKTER OG DYRELYDER: Sier barnet...,Prod,item_37
+2.62162119997177,1.26429677975633,mjau,LYDEFFEKTER OG DYRELYDER: Sier barnet...,Prod,item_38
+2.93621483358715,0.838617766527038,møø,LYDEFFEKTER OG DYRELYDER: Sier barnet...,Prod,item_39
+2.93669379548041,-1.236964888548,tøff-tøff,LYDEFFEKTER OG DYRELYDER: Sier barnet...,Prod,item_41
+2.80162138719399,1.38688905603476,voff voff,LYDEFFEKTER OG DYRELYDER: Sier barnet...,Prod,item_42
+2.67615247662132,-1.47497945083902,and,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_43
+3.07773996557679,-4.74824884767427,(meite)mark,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_44
+3.07807180417035,-2.0001282443364,ape(katt),NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_45
+3.04208571907241,-2.28131893928293,bjørn,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_46
+2.92703373968702,-2.07982480595526,dyr,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_47
+2.93484894586934,-3.63290889955995,ekorn,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_48
+3.25997440859994,-2.17029639397594,elefant,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_49
+2.71036547263041,-3.90442790341025,elg,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_50
+3.06357024540426,-2.97330624713531,flue,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_52
+2.82409432175908,-2.71544336360807,frosk,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_53
+3.16241868824524,-0.906488042440226,fugl,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_54
+2.61815894702489,-3.55763922497274,gås,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_55
+3.35961868299106,-0.455728396025557,gris,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_56
+3.37841664930227,-0.335068265740496,hest,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_57
+2.74231164419775,0.631724526574642,hund,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_58
+2.57134747201019,-1.71204396337204,kanin,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_59
+2.46334180799855,0.950385475000847,katt,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_60
+2.42348306162671,-2.71695534972461,kattunge,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_61
+3.27242001129384,-0.284267928285343,ku,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_62
+2.50185510831168,-1.95938356231671,lam,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_64
+2.7060167268313,-9.9167147037605e-4,(leke)bamse,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_65
+2.8342500778958,-1.99262905200716,løve,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_66
+3.1957555020535,-2.32791489159108,mus,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_67
+2.99534304733698,-4.10328568265725,pingvin,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_68
+3.20986168845368,-5.32161774704497,reinsdyr,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_69
+3.00538813765507,-3.65135382543489,rev,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_70
+2.9149305595112,-0.306407825727463,sau,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_71
+3.06335522435131,-3.02409859392895,sjiraff,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_72
+2.86286515421867,-4.07297735041445,skilpadde,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_73
+3.04548966424482,-3.19627807348295,sommerfugl,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_74
+2.86322509436889,-2.58439121162703,tiger,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_75
+2.66979215143242,-3.21635737895886,ugle,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_76
+2.4411337690315,-3.08311223323113,valp,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_77
+2.73499192665515,-3.5218956650499,veps,NAVN PÅ DYR (VIRKELIGE ELLER LEKEDYR): Sier barnet...,Prod,item_78
+2.93679057184585,0.0461741796204527,barnevogn,KJØRETØY (VIRKELIGE ELLER LEKETØY): Sier barnet...,Prod,item_79
+3.64521650021942,2.00804572250132,bil,KJØRETØY (VIRKELIGE ELLER LEKETØY): Sier barnet...,Prod,item_80
+2.85116299338614,-2.72846668444246,brannbil,KJØRETØY (VIRKELIGE ELLER LEKETØY): Sier barnet...,Prod,item_81
+2.99976141174381,-1.8403058040457,buss,KJØRETØY (VIRKELIGE ELLER LEKETØY): Sier barnet...,Prod,item_82
+3.28301848969022,-1.55380606469486,fly,KJØRETØY (VIRKELIGE ELLER LEKETØY): Sier barnet...,Prod,item_83
+2.90525561947918,-2.02484229673162,lastebil,KJØRETØY (VIRKELIGE ELLER LEKETØY): Sier barnet...,Prod,item_84
+3.13629552303024,-3.34695881358975,motorsykkel,KJØRETØY (VIRKELIGE ELLER LEKETØY): Sier barnet...,Prod,item_85
+4.24392122444769,-2.83608388404657,sykkel,KJØRETØY (VIRKELIGE ELLER LEKETØY): Sier barnet...,Prod,item_86
+2.89192242799256,-1.71874938904434,tog,KJØRETØY (VIRKELIGE ELLER LEKETØY): Sier barnet...,Prod,item_87
+3.00047896760026,2.51514657174163,ball,LEKER: Sier barnet...,Prod,item_88
+3.08236817979997,-0.752648680250009,ballong,LEKER: Sier barnet...,Prod,item_89
+3.20210746440601,2.05578304833344,bok,LEKER: Sier barnet...,Prod,item_90
+2.88902972190474,-0.5408077247756,klosser,LEKER: Sier barnet...,Prod,item_91
+2.6190787667298,-0.421093556586076,dukke,LEKER: Sier barnet...,Prod,item_92
+4.08403439204487,-2.07554936380536,(farge)blyant,LEKER: Sier barnet...,Prod,item_94
+2.82719285821009,-3.054222143075,såpebobler,LEKER: Sier barnet...,Prod,item_95
+3.27352119199611,-1.69947558299488,appelsin,MAT OG DRIKKE: Sier barnet...,Prod,item_96
+2.93662715898321,1.34174698750634,banan,MAT OG DRIKKE: Sier barnet...,Prod,item_97
+3.30035956290224,-0.983690613524194,bolle,MAT OG DRIKKE: Sier barnet...,Prod,item_98
+3.37898579017799,0.471592363130293,brød,MAT OG DRIKKE: Sier barnet...,Prod,item_99
+2.75311164156765,-4.26838814036491,corn flakes,MAT OG DRIKKE: Sier barnet...,Prod,item_100
+3.5170672140741,-2.81479866087634,egg,MAT OG DRIKKE: Sier barnet...,Prod,item_102
+3.85090406253597,-0.346489520169335,eple,MAT OG DRIKKE: Sier barnet...,Prod,item_103
+2.5156708786444,-4.07185751815341,frokostblanding,MAT OG DRIKKE: Sier barnet...,Prod,item_105
+3.40426915768085,-2.22785880156201,gulrot,MAT OG DRIKKE: Sier barnet...,Prod,item_106
+3.2331884914408,-0.831448319141191,is,MAT OG DRIKKE: Sier barnet...,Prod,item_107
+3.26436946079679,-1.97303238254098,juice,MAT OG DRIKKE: Sier barnet...,Prod,item_108
+2.92968981820902,-2.50052284667391,kaffe,MAT OG DRIKKE: Sier barnet...,Prod,item_109
+3.80714117511473,-1.45138772824639,kake,MAT OG DRIKKE: Sier barnet...,Prod,item_110
+3.18011970446493,-0.657028995900626,kjeks,MAT OG DRIKKE: Sier barnet...,Prod,item_111
+3.70786230428952,-4.39757704629028,kjøtt,MAT OG DRIKKE: Sier barnet...,Prod,item_112
+2.371771580685,0.939940653975839,mat,MAT OG DRIKKE: Sier barnet...,Prod,item_114
+2.3370507829025,0.855303292268683,melk,MAT OG DRIKKE: Sier barnet...,Prod,item_115
+3.62277465454175,-1.57482454229737,ost,MAT OG DRIKKE: Sier barnet...,Prod,item_116
+3.18996656688411,-3.65272326916149,pasta,MAT OG DRIKKE: Sier barnet...,Prod,item_117
+3.65301964704556,-3.3528613518733,pizza,MAT OG DRIKKE: Sier barnet...,Prod,item_118
+2.48677630086604,-1.44618688779787,rosiner,MAT OG DRIKKE: Sier barnet...,Prod,item_119
+4.06634814843502,-4.03863251373369,smør,MAT OG DRIKKE: Sier barnet...,Prod,item_120
+3.14779289045483,-3.26565537474405,spagetti,MAT OG DRIKKE: Sier barnet...,Prod,item_121
+2.47375812345717,-3.45864475101486,sukkertøy,MAT OG DRIKKE: Sier barnet...,Prod,item_122
+3.8020573939499,2.2061404600034,bleie,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_124
+5.8078123678158,-0.42439666417585,bukse,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_125
+5.26982590099704,-0.897950700856835,genser,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_126
+3.30336977398424,-3.81599992859297,glidelås,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_127
+3.0940635176619,-3.72391429835422,halskjede,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_128
+5.1194324699338,-0.671238200895264,jakke,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_129
+2.96719946966199,-2.80004096643632,kjole,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_130
+3.35025072613273,-2.440474556075,knapp,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_131
+4.39404360220436,0.205487669803458,lue,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_132
+3.64609292743724,-0.674172149739265,pysjamas,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_133
+4.29886137059798,-4.13408844128782,regntøy,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_134
+4.38608645495102,-6.45523379344977,shorts,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_135
+4.26900568678656,0.610006756530746,sko,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_136
+2.69001844979451,-0.540856964694005,smekke,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_137
+1.47609088115793,0.52964789826298,smokk,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_138
+4.19196762300172,-0.559494122312802,sokker,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_139
+4.49849824596261,-2.40140219678472,støvler,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_140
+4.12046693834255,-1.60841670809937,strømpebukse,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_141
+4.02622379737244,-4.763521908084,t-skjorte,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_142
+4.28126564562685,-1.28447593159008,votter,KLÆR OG TILBEHØR: Sier barnet...,Prod,item_143
+3.46960883971704,-1.76590763310803,ansikt,KROPPSDELER: Sier barnet...,Prod,item_144
+4.20006773290037,-1.94770042888578,arm,KROPPSDELER: Sier barnet...,Prod,item_145
+3.75467977598684,-2.04947997031034,bein,KROPPSDELER: Sier barnet...,Prod,item_146
+3.49509107246776,-1.298101645647,finger,KROPPSDELER: Sier barnet...,Prod,item_147
+3.1958521077086,-0.234638540584399,fot,KROPPSDELER: Sier barnet...,Prod,item_148
+3.07639009769825,-0.149659518744313,hånd,KROPPSDELER: Sier barnet...,Prod,item_149
+3.76959700028903,-0.521922280154401,hår,KROPPSDELER: Sier barnet...,Prod,item_150
+3.50825195237945,-0.675907751325831,hode,KROPPSDELER: Sier barnet...,Prod,item_151
+3.49288017009222,-2.33587403260689,kinn,KROPPSDELER: Sier barnet...,Prod,item_152
+3.74874654162972,-3.82210332784666,kne,KROPPSDELER: Sier barnet...,Prod,item_153
+4.22377766891746,-0.467690921027117,mage,KROPPSDELER: Sier barnet...,Prod,item_154
+3.75388897261708,-0.0438648843989746,munn,KROPPSDELER: Sier barnet...,Prod,item_155
+3.10615311562966,-1.86242767854061,navle,KROPPSDELER: Sier barnet...,Prod,item_156
+3.20694856479781,0.434388666015658,nese,KROPPSDELER: Sier barnet...,Prod,item_157
+3.56704314861866,-0.747298253529409,øre,KROPPSDELER: Sier barnet...,Prod,item_158
+3.56366503454707,-0.139619336913664,øye,KROPPSDELER: Sier barnet...,Prod,item_159
+2.88888381445811,-1.45648144466079,tå,KROPPSDELER: Sier barnet...,Prod,item_160
+3.45776423653464,-0.885019149345458,tenner,KROPPSDELER: Sier barnet...,Prod,item_161
+3.26275916842823,-1.62015737801292,tiss,KROPPSDELER: Sier barnet...,Prod,item_162
+3.50177938777869,-2.77617732106454,tunge,KROPPSDELER: Sier barnet...,Prod,item_163
+3.28466420845893,-1.07032749905458,bilde,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_164
+3.10125176101049,-1.43838449870967,børste,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_165
+2.73569777377519,-1.20352143105554,briller,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_166
+3.99250569962514,-1.41321716791447,dyne,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_167
+3.90383583013641,-3.95016384813881,eske,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_168
+2.62197823443223,-0.21456684916263,flaske,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_169
+4.33230858526522,-2.20052424883142,gaffel,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_170
+4.25737013370212,-1.47600737510474,glass,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_171
+2.99560894012073,-3.49218441363414,hammer,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_172
+4.15863714512009,-3.13881259746768,håndkle,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_173
+2.72045723408295,-3.12075783252466,kam,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_174
+2.74745156813063,-1.71300590066791,klokke,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_175
+4.44395736114138,-3.38710745529746,kniv,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_176
+3.64403693844918,0.319614966696825,kopp,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_177
+3.46801122267746,-3.48005256172771,kost,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_178
+3.19474608353403,-2.31442984706078,lampe,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_179
+2.69165734365021,-3.61193297308176,lommebok,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_180
+2.63866611743246,0.0919131371675065,lys,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_181
+2.7133208119063,-3.81534245290561,medisin,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_182
+3.35568076722773,-1.47155221001332,nøkler,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_183
+3.8035312852383,-2.78759544874705,papir,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_184
+4.27091105311622,-5.27486042534339,penger,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_185
+2.95651832224702,-3.30276491751706,plante,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_186
+3.51554584107617,-1.72732320343928,pute,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_187
+3.09905345603226,-3.45833208532884,radio,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_188
+4.36315685641876,-4.57869199310743,saks,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_189
+4.94777070147868,-3.39280314222089,såpe,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_190
+3.15770478715164,-3.30079063112542,skål,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_191
+3.24339877941294,-0.355986067974949,skje,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_192
+3.80895706372936,-2.23231772761615,søppel,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_193
+2.80977837769108,-1.26724129710543,støvsuger,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_194
+4.05691713599299,-1.93005358944887,tallerken,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_195
+3.44746349864448,0.430057618773602,tannbørste,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_196
+3.53215388482962,0.539805952273083,telefon,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_197
+3.64866388123736,-2.42382608396572,teppe,SMÅ GJENSTANDER I HUSET: Sier barnet...,Prod,item_198
+3.02648711558165,0.664919278525081,bad,ROM OG MØBLER: Sier barnet...,Prod,item_199
+2.30997705262769,-0.566579605120313,badekar,ROM OG MØBLER: Sier barnet...,Prod,item_200
+2.7135074314392,-1.09422927840168,barnestol,ROM OG MØBLER: Sier barnet...,Prod,item_201
+4.83407609521348,-0.97838238643848,bord,ROM OG MØBLER: Sier barnet...,Prod,item_202
+4.57297532720913,-0.865860251588132,dør,ROM OG MØBLER: Sier barnet...,Prod,item_203
+3.45601379062477,-4.45521515062337,garasje,ROM OG MØBLER: Sier barnet...,Prod,item_204
+2.93072727859959,-5.04424197321235,gyngestol,ROM OG MØBLER: Sier barnet...,Prod,item_205
+3.70908985681018,-0.916823103850127,kjøkken,ROM OG MØBLER: Sier barnet...,Prod,item_206
+3.96245853542125,-1.63657653424865,kjøleskap,ROM OG MØBLER: Sier barnet...,Prod,item_207
+3.69075372083319,-3.27440806548716,komfyr,ROM OG MØBLER: Sier barnet...,Prod,item_208
+1.56473664264844,-2.71616263228772,lekegrind,ROM OG MØBLER: Sier barnet...,Prod,item_209
+3.33096821483126,-1.95522263687594,ovn,ROM OG MØBLER: Sier barnet...,Prod,item_210
+2.32886003973854,-2.72904049291321,potte,ROM OG MØBLER: Sier barnet...,Prod,item_211
+3.62795368091453,0.447424304927411,seng,ROM OG MØBLER: Sier barnet...,Prod,item_212
+3.42932169020477,-2.90194473679832,skuff,ROM OG MØBLER: Sier barnet...,Prod,item_213
+4.58671352444976,-1.42556393632318,sofa,ROM OG MØBLER: Sier barnet...,Prod,item_214
+3.21696663282965,-1.61721388694066,soverom,ROM OG MØBLER: Sier barnet...,Prod,item_215
+3.99897159119346,-1.01639574151791,stol,ROM OG MØBLER: Sier barnet...,Prod,item_216
+4.1644838791396,-2.26332573666444,stue,ROM OG MØBLER: Sier barnet...,Prod,item_217
+3.85855470243201,-1.30583918080143,trapp,ROM OG MØBLER: Sier barnet...,Prod,item_218
+3.57917457021334,-0.165250066522728,TV,ROM OG MØBLER: Sier barnet...,Prod,item_219
+4.68870207319978,-3.40986981725452,vask,ROM OG MØBLER: Sier barnet...,Prod,item_220
+3.85896767891136,-2.08397528483274,vindu,ROM OG MØBLER: Sier barnet...,Prod,item_221
+3.83731745909098,-1.65992254740382,blomst,TING UTENDØRS: Sier barnet...,Prod,item_222
+3.44223082727444,-3.45504225593851,himmel,TING UTENDØRS: Sier barnet...,Prod,item_223
+3.51848935199414,-3.42515931926048,måne,TING UTENDØRS: Sier barnet...,Prod,item_225
+4.16854031467814,-3.11806155866357,regn,TING UTENDØRS: Sier barnet...,Prod,item_226
+3.60979783443458,-2.21881643806513,sklie,TING UTENDØRS: Sier barnet...,Prod,item_227
+3.08075307560227,-1.88999382921351,snø,TING UTENDØRS: Sier barnet...,Prod,item_228
+3.84647623204514,-2.62672419868316,sol,TING UTENDØRS: Sier barnet...,Prod,item_229
+3.68591072237767,-1.68714041698387,spade,TING UTENDØRS: Sier barnet...,Prod,item_230
+3.95271466697644,-2.50666306010616,stein,TING UTENDØRS: Sier barnet...,Prod,item_231
+3.66309565100926,-4.6720949196454296,stjerner,TING UTENDØRS: Sier barnet...,Prod,item_232
+4.20851371192662,-3.04093990027707,tre,TING UTENDØRS: Sier barnet...,Prod,item_233
+3.47198426568201,-1.7999080008748,butikk,STEDER Å DRA TIL: Sier barnet...,Prod,item_236
+3.02987077123303,-6.39113366718933,dyrehage,STEDER Å DRA TIL: Sier barnet...,Prod,item_237
+3.93968066649983,-7.20905536299662,fest,STEDER Å DRA TIL: Sier barnet...,Prod,item_238
+3.60181433481964,-4.0698583594394,hage,STEDER Å DRA TIL: Sier barnet...,Prod,item_239
+3.24858842835489,-0.0167401357864665,hjem,STEDER Å DRA TIL: Sier barnet...,Prod,item_240
+4.27424713919398,-2.61268895919504,hus,STEDER Å DRA TIL: Sier barnet...,Prod,item_241
+3.22456967110646,-3.11065761579351,jobb,STEDER Å DRA TIL: Sier barnet...,Prod,item_242
+3.15780983652639,-6.48275623636504,kirke,STEDER Å DRA TIL: Sier barnet...,Prod,item_243
+2.55374683581925,-4.6284040015221,park,STEDER Å DRA TIL: Sier barnet...,Prod,item_244
+2.61117265182224,-4.39956836592497,skole,STEDER Å DRA TIL: Sier barnet...,Prod,item_245
+4.07987717025655,-6.77314327911144,strand,STEDER Å DRA TIL: Sier barnet...,Prod,item_246
+2.12040816230815,-3.71811827173269,svømmehall,STEDER Å DRA TIL: Sier barnet...,Prod,item_247
+2.45224372379308,0.506751826664027,baby,MENNESKER: Sier barnet...,Prod,item_248
+2.28407231255577,-1.41641812255005,barn,MENNESKER: Sier barnet...,Prod,item_249
+1.22312641922413,1.72508214357632,barnets navn,MENNESKER: Sier barnet...,Prod,item_250
+0.633129170278494,-1.06876893510097,bror,MENNESKER: Sier barnet...,Prod,item_253
+3.531118690496,-2.83334005635502,dame,MENNESKER: Sier barnet...,Prod,item_254
+3.25010448775748,-2.54014878532126,gutt,MENNESKER: Sier barnet...,Prod,item_257
+3.19244354702394,-2.56026250517808,jente,MENNESKER: Sier barnet...,Prod,item_258
+1.95401868804619,4.15468741217482,mamma,MENNESKER: Sier barnet...,Prod,item_259
+3.99147190396209,-2.80328569925105,mann,MENNESKER: Sier barnet...,Prod,item_260
+3.34406006909185,-5.54451422236844,menneske,MENNESKER: Sier barnet...,Prod,item_261
+1.01760208513148,-0.907734374904237,morfar,MENNESKER: Sier barnet...,Prod,item_262
+1.07500727424283,-0.0805164711448744,mormor,MENNESKER: Sier barnet...,Prod,item_263
+1.65137481339642,-2.99170960745804,oldefar,MENNESKER: Sier barnet...,Prod,item_264
+1.65599480359634,-2.18088936282097,oldemor,MENNESKER: Sier barnet...,Prod,item_265
+2.01742027232073,-1.3006859597246,onkel,MENNESKER: Sier barnet...,Prod,item_266
+1.34448005212283,3.00151393051418,pappa,MENNESKER: Sier barnet...,Prod,item_267
+0.525835546034289,-1.00641506823786,søster,MENNESKER: Sier barnet...,Prod,item_268
+1.8180626653107,-0.696519827817316,tante,MENNESKER: Sier barnet...,Prod,item_269
+2.63818207573431,2.69967841385544,bade,LEKER OG RUTINER: Sier barnet...,Prod,item_270
+2.69587399773522,-0.472947446349735,frokost,LEKER OG RUTINER: Sier barnet...,Prod,item_271
+2.14222931319858,2.11334018341168,god natt,LEKER OG RUTINER: Sier barnet...,Prod,item_272
+2.27796208423067,3.57358639538325,ha det,LEKER OG RUTINER: Sier barnet...,Prod,item_273
+1.94315055621894,2.8109708987788,hei,LEKER OG RUTINER: Sier barnet...,Prod,item_274
+2.14210291684348,0.0298807679834485,hysj,LEKER OG RUTINER: Sier barnet...,Prod,item_275
+2.25339499835612,1.83048723236847,ja,LEKER OG RUTINER: Sier barnet...,Prod,item_277
+1.57464738228671,3.2761829055816998,Borte! (lek hvor ansikt gjemmes og plutselig vises),LEKER OG RUTINER: Sier barnet...,Prod,item_279
+1.94618923065869,-2.06943588009723,lunsj,LEKER OG RUTINER: Sier barnet...,Prod,item_280
+3.12781849544891,-0.176187120533164,middag,LEKER OG RUTINER: Sier barnet...,Prod,item_281
+1.77445084176479,3.14659353216175,nei,LEKER OG RUTINER: Sier barnet...,Prod,item_282
+1.8366580398691,-0.254165571509409,sovetid,LEKER OG RUTINER: Sier barnet...,Prod,item_283
+2.2877411091834,1.67712663465585,takk,LEKER OG RUTINER: Sier barnet...,Prod,item_284
+2.69135269063879,-2.57936890665927,vær så snill,LEKER OG RUTINER: Sier barnet...,Prod,item_285
+2.73199679224183,-1.02233443475573,vent,LEKER OG RUTINER: Sier barnet...,Prod,item_286
+3.01001092055675,-2.11093262906546,vil,LEKER OG RUTINER: Sier barnet...,Prod,item_287
+2.44261018598767,-0.805156042069113,bite,VERB: Sier barnet...,Prod,item_288
+3.49602981772926,-1.07192438419054,blåse,VERB: Sier barnet...,Prod,item_289
+2.81239175212559,0.584237027610573,danse,VERB: Sier barnet...,Prod,item_290
+2.99387738153853,-2.66663581186141,dra,VERB: Sier barnet...,Prod,item_291
+3.18147280894373,-2.64052922347235,dytte,VERB: Sier barnet...,Prod,item_293
+2.95431429938423,-4.75695493947758,elske,VERB: Sier barnet...,Prod,item_294
+2.64568437593372,-0.3181471579182,få,VERB: Sier barnet...,Prod,item_295
+3.54330318946011,-1.94013801907838,falle,VERB: Sier barnet...,Prod,item_296
+2.92238403467032,-3.02308470701776,forte seg,VERB: Sier barnet...,Prod,item_297
+3.30317121330779,0.629099023894873,gå,VERB: Sier barnet...,Prod,item_298
+3.09864363111841,-0.767154295836051,gi,VERB: Sier barnet...,Prod,item_299
+3.2709550687265,-4.37864638455273,gjøre seg ferdig,VERB: Sier barnet...,Prod,item_300
+3.5419554373667,-1.4346651140748,gråte,VERB: Sier barnet...,Prod,item_301
+3.59046934756441,-0.385523924880511,hente,VERB: Sier barnet...,Prod,item_302
+3.76236662234807,-1.92096411569,hjelpe,VERB: Sier barnet...,Prod,item_303
+3.37118741745946,-5.8563696835749,holde øye med,VERB: Sier barnet...,Prod,item_304
+2.71280923461681,-0.922875219731405,hoppe,VERB: Sier barnet...,Prod,item_305
+3.22777035620616,-0.439714816705743,kaste,VERB: Sier barnet...,Prod,item_307
+2.86487183146013,-1.73279500867461,kile,VERB: Sier barnet...,Prod,item_308
+3.55650301875308,-1.06471448780541,kjøre,VERB: Sier barnet...,Prod,item_309
+2.29184388959426,0.86772815396007,klemme,VERB: Sier barnet...,Prod,item_310
+1.94168233369398,-0.330341327630238,kysse,VERB: Sier barnet...,Prod,item_311
+2.86775286002358,-0.475302811269409,legge,VERB: Sier barnet...,Prod,item_312
+3.23381191071163,-0.0954900145187767,lese,VERB: Sier barnet...,Prod,item_314
+3.80868155693072,-2.13262717262199,løpe,VERB: Sier barnet...,Prod,item_315
+3.226096104479,-2.01603069120963,lukke,VERB: Sier barnet...,Prod,item_316
+2.77555529136462,-2.38235305097269,mate,VERB: Sier barnet...,Prod,item_317
+3.70838493541979,-3.65464469861281,ødelegge,VERB: Sier barnet...,Prod,item_318
+2.12400092312878,-0.707065705741284,plaske,VERB: Sier barnet...,Prod,item_319
+2.54375466890809,-3.67637501885561,ri,VERB: Sier barnet...,Prod,item_320
+3.73571532554886,-1.95299668408745,rydde,VERB: Sier barnet...,Prod,item_321
+1.96741605201046,1.05346525622693,se,VERB: Sier barnet...,Prod,item_322
+2.18788646164012,-0.938381233653088,se på,VERB: Sier barnet...,Prod,item_323
+3.23282161025228,-2.16047884689361,si,VERB: Sier barnet...,Prod,item_324
+3.46885666605849,-4.65185643659735,skrive,VERB: Sier barnet...,Prod,item_325
+3.31437493387366,-1.77276557853663,slå,VERB: Sier barnet...,Prod,item_326
+2.27206932633705,-1.1825657073205,smile,VERB: Sier barnet...,Prod,item_327
+2.96020811958538,0.830558639009415,sove,VERB: Sier barnet...,Prod,item_328
+3.1876491583256,-3.00247745987631,sparke,VERB: Sier barnet...,Prod,item_329
+3.00043849697311,0.983125618211187,spise,VERB: Sier barnet...,Prod,item_330
+3.34814417991641,-2.82535731596389,stoppe,VERB: Sier barnet...,Prod,item_331
+2.04249180957971,-3.05487325031688,svømme,VERB: Sier barnet...,Prod,item_332
+2.97952230554473,-0.775325325055234,synge,VERB: Sier barnet...,Prod,item_333
+2.87724299341545,-1.84038474997037,ta,VERB: Sier barnet...,Prod,item_334
+2.63603611495258,-1.68788918472873,ta på,VERB: Sier barnet...,Prod,item_335
+3.97601855278873,-1.80196515424623,tegne,VERB: Sier barnet...,Prod,item_336
+3.1799073411812,-1.884748521864,tørke,VERB: Sier barnet...,Prod,item_337
+3.60849325092755,-0.521605101383449,vaske,VERB: Sier barnet...,Prod,item_338
+3.21917393484765,-2.53544343419353,vise,VERB: Sier barnet...,Prod,item_339
+3.54787560844799,-1.5059581919363,åpne,VERB: Sier barnet...,Prod,item_340
+2.82477024274381,-5.05430370936407,blå,BESKRIVENDE ORD: Sier barnet...,Prod,item_341
+2.12855499218072,0.477554554608881,borte,BESKRIVENDE ORD: Sier barnet...,Prod,item_342
+2.12067913981107,-0.68322586406085,bra,BESKRIVENDE ORD: Sier barnet...,Prod,item_343
+2.11322053386389,-2.24808842062724,ekkelt,BESKRIVENDE ORD: Sier barnet...,Prod,item_344
+2.56903774450163,-0.947919386263149,fin,BESKRIVENDE ORD: Sier barnet...,Prod,item_345
+2.32884919342223,-0.39313993327348,forsiktig,BESKRIVENDE ORD: Sier barnet...,Prod,item_346
+3.51737118329116,-3.29549583429682,fort,BESKRIVENDE ORD: Sier barnet...,Prod,item_347
+4.46504933621592,-9.17808197257663,frekk,BESKRIVENDE ORD: Sier barnet...,Prod,item_348
+4.18200772441158,-7.45017211078984,gammel,BESKRIVENDE ORD: Sier barnet...,Prod,item_349
+2.64839829483832,-1.93296739266212,glad,BESKRIVENDE ORD: Sier barnet...,Prod,item_350
+2.6453998538171,-3.69123213421803,grei,BESKRIVENDE ORD: Sier barnet...,Prod,item_351
+3.93219505650902,-5.87382308511721,hard,BESKRIVENDE ORD: Sier barnet...,Prod,item_352
+4.02768764297496,-2.32117134144917,kald,BESKRIVENDE ORD: Sier barnet...,Prod,item_353
+4.10567326347441,-3.99036910315636,liten,BESKRIVENDE ORD: Sier barnet...,Prod,item_354
+3.96463352761727,-3.33510228898471,mørkt,BESKRIVENDE ORD: Sier barnet...,Prod,item_355
+2.67970761082917,-3.07456711470373,myk,BESKRIVENDE ORD: Sier barnet...,Prod,item_356
+3.74306116929074,-3.52594375056885,ødelagt,BESKRIVENDE ORD: Sier barnet...,Prod,item_357
+2.7851440260341,-4.21589966284699,pen,BESKRIVENDE ORD: Sier barnet...,Prod,item_358
+3.34463542906768,-4.52570545403381,redd,BESKRIVENDE ORD: Sier barnet...,Prod,item_359
+3.77671866873103,-4.5303950072428,ren,BESKRIVENDE ORD: Sier barnet...,Prod,item_360
+3.40033207432217,-5.96460337875965,rød,BESKRIVENDE ORD: Sier barnet...,Prod,item_361
+3.54002820939522,-3.12839826032465,skitten,BESKRIVENDE ORD: Sier barnet...,Prod,item_362
+2.05508178741721,-4.05302293457932,skjønn,BESKRIVENDE ORD: Sier barnet...,Prod,item_363
+2.73627366450435,-3.91957714564297,slem,BESKRIVENDE ORD: Sier barnet...,Prod,item_364
+2.70918426401749,-3.45017464577959,sliten,BESKRIVENDE ORD: Sier barnet...,Prod,item_365
+2.25005269581744,-2.93633019970646,søt,BESKRIVENDE ORD: Sier barnet...,Prod,item_366
+1.7702206156068,-1.03718468008835,stor,BESKRIVENDE ORD: Sier barnet...,Prod,item_367
+2.33913602705404,-0.485108618980313,sulten,BESKRIVENDE ORD: Sier barnet...,Prod,item_368
+3.1930730078721,-4.39294968803455,syk,BESKRIVENDE ORD: Sier barnet...,Prod,item_369
+2.72430854523494,-1.92948946102253,tom,BESKRIVENDE ORD: Sier barnet...,Prod,item_370
+3.87247170438869,-5.37700094561224,tørr,BESKRIVENDE ORD: Sier barnet...,Prod,item_371
+2.52791800521204,0.0892161602823986,tørst,BESKRIVENDE ORD: Sier barnet...,Prod,item_372
+2.40274433667973,-0.628543741906438,trøtt,BESKRIVENDE ORD: Sier barnet...,Prod,item_373
+3.12966423313234,-2.1197400797622,varm,BESKRIVENDE ORD: Sier barnet...,Prod,item_374
+4.14678722898312,-3.07778345129891,våt,BESKRIVENDE ORD: Sier barnet...,Prod,item_375
+2.8491500358677,-1.53471367717144,vondt,BESKRIVENDE ORD: Sier barnet...,Prod,item_376
+2.41914053400202,-3.44032454589729,dag,ORD OM TID: Sier barnet...,Prod,item_377
+2.96231178256957,-4.54904089631594,i dag,ORD OM TID: Sier barnet...,Prod,item_378
+3.78327502572719,-6.62221595175432,i kveld,ORD OM TID: Sier barnet...,Prod,item_379
+3.21757545364448,-5.87781389045524,i morgen,ORD OM TID: Sier barnet...,Prod,item_380
+2.58702358915496,-4.6016975339698,morgen,ORD OM TID: Sier barnet...,Prod,item_381
+2.95476501325958,-3.17348960203663,nå,ORD OM TID: Sier barnet...,Prod,item_382
+2.02900977415484,-1.24740419984355,natt,ORD OM TID: Sier barnet...,Prod,item_383
+3.03788226123041,-4.00850371318697,senere,ORD OM TID: Sier barnet...,Prod,item_384
+2.03576942349328,-0.759356255903886,den,PRONOMEN: Sier barnet...,Prod,item_385
+2.20910823405209,-2.30564177174955,denne,PRONOMEN: Sier barnet...,Prod,item_386
+1.78449917585428,-2.10694803065692,det,PRONOMEN: Sier barnet...,Prod,item_387
+2.4528396185812,-3.50837977149783,dette,PRONOMEN: Sier barnet...,Prod,item_388
+2.50671559354316,-1.61919599220335,din,PRONOMEN: Sier barnet...,Prod,item_389
+2.36998778044498,-2.08572525860514,du,PRONOMEN: Sier barnet...,Prod,item_390
+2.5502202790178,-2.94912894262133,hans,PRONOMEN: Sier barnet...,Prod,item_391
+2.400620798565,-2.93495252215652,hennes,PRONOMEN: Sier barnet...,Prod,item_392
+2.55083296707125,-2.40030016762322,jeg,PRONOMEN: Sier barnet...,Prod,item_393
+2.60520007890609,-3.26511403031037,meg,PRONOMEN: Sier barnet...,Prod,item_394
+2.75022904577987,-0.980477840498733,min,PRONOMEN: Sier barnet...,Prod,item_395
+2.51946911176743,-2.22486297110581,hva,SPØRREORD: Sier barnet...,Prod,item_396
+2.22812249272496,-1.64026192122808,hvem,SPØRREORD: Sier barnet...,Prod,item_397
+1.64219151378035,-0.603336736852977,hvor,SPØRREORD: Sier barnet...,Prod,item_398
+3.31262528219945,-6.05481557015875,hvordan,SPØRREORD: Sier barnet...,Prod,item_399
+3.46020367613992,-6.46617315342773,hvorfor,SPØRREORD: Sier barnet...,Prod,item_400
+3.63480506681209,-7.15348799563687,når,SPØRREORD: Sier barnet...,Prod,item_401
+2.41110864631565,-3.16805336881092,av,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_402
+2.85434907401112,-2.42911723641817,bak,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_403
+2.31085330233371,-2.25647797877622,bort,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_404
+1.70707266488486,-0.0590085716509019,der,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_405
+2.6827762957645,-2.97165031732041,i,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_406
+2.79698958903848,-2.19949626731947,inn,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_407
+3.1199824582819,-2.62571011151971,inne,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_408
+2.17659911548268,-1.75233545303013,inni,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_409
+2.83877850977372,-1.96769210586526,ned,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_410
+2.85019353521474,-2.98247341948043,nede,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_411
+2.79575007980408,-1.36381772386484,opp,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_412
+2.4874216474497,-2.35769900586035,oppe,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_413
+2.97369685260605,-2.50500922741725,på,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_414
+2.87139078303165,-2.0193804828145,under,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_415
+2.56978104348736,-1.15730366426167,ut,PREPOSISJONER OG STEDSANGIVELSER: Sier barnet...,Prod,item_416
+3.12574407835474,-3.66492993053272,alle,MENGDEORD OG BESTEMMERORD: Sier barnet...,Prod,item_418
+3.35801136208746,-5.48544754393326,en annen,MENGDEORD OG BESTEMMERORD: Sier barnet...,Prod,item_419
+2.75562887242565,-3.50654236387543,ingen,MENGDEORD OG BESTEMMERORD: Sier barnet...,Prod,item_421
+2.30550619392516,-2.28985242504999,ingenting,MENGDEORD OG BESTEMMERORD: Sier barnet...,Prod,item_422
+2.37349154457664,-0.555235991934768,mer,MENGDEORD OG BESTEMMERORD: Sier barnet...,Prod,item_423
+3.92136024028388,-6.23791841272131,noe,MENGDEORD OG BESTEMMERORD: Sier barnet...,Prod,item_424
+3.30092410739402,-5.33728240646176,noen,MENGDEORD OG BESTEMMERORD: Sier barnet...,Prod,item_425
+3.50476567254583,-5.53238183620742,samme,MENGDEORD OG BESTEMMERORD: Sier barnet...,Prod,item_426

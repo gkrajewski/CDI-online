@@ -1,0 +1,10 @@
+parameter;value
+email;no
+database;yes
+additionalEndMessageFromDatabase;no
+ProdMirtMethod;ML
+ProdMirtCriteria;MI
+ProdminItemNr;1
+ProdmaxItemNr;42
+ProdMirtSeTheta;0.095
+groups;Prod
