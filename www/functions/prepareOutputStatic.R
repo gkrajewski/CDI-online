@@ -1,4 +1,4 @@
-prepareOutputStatic <- function(answers, id, lang, form, run, endDate, stringLimit){
+prepareOutputStatic <- function(answers, id, lang, form, run, endDate, typeItems, stringLimit){
   
   startDate = answers[answers$type=="none", "answer"]
   startDate = as.POSIXct(startDate)
@@ -8,10 +8,10 @@ prepareOutputStatic <- function(answers, id, lang, form, run, endDate, stringLim
     if (answer_type=="oneCheckboxGroup") {
       answer = strsplit(answer, " ")
     }
-    else if(answer_type=="sentences" |answer_type=="demographic") {
+    else if(answer_type=="sentences" | answer_type=="demographic") {
       answer = strsplit(answer, "#")
     }
-    else if(answer_type=="radio" |answer_type=="radioAlt" | answer_type=="checkboxAlt" |
+    else if(answer_type=="radio" | answer_type=="radioAlt" | answer_type=="checkboxAlt" |
             answer_type=="manyCheckboxGroups" ) {
       answer = strsplit(answer, ",")
     }
@@ -19,6 +19,9 @@ prepareOutputStatic <- function(answers, id, lang, form, run, endDate, stringLim
   }
   
   answers$answer = mapply(split_by_type, answers$answer_type, answers$answer)
+  
+  #reversing answers order
+  answers <- answers[nrow(answers):1, ]
   
   a = answers %>% mutate(question_id = row_number()) %>% unnest(answer)
   
@@ -30,7 +33,7 @@ prepareOutputStatic <- function(answers, id, lang, form, run, endDate, stringLim
   a$answer2[(a$answer_type=="manyCheckboxGroups" | a$answer_type=="checkboxAlt" ) & 
               (a$answer1=="1 2" | a$answer1=="2")] = 1
   a$answer2[(a$answer_type=="manyCheckboxGroups" | a$answer_type=="checkboxAlt" ) & 
-              (a$answer1=="1") ] = 0
+              (a$answer1=="1" | a$answer1=="0") ] = 0
   a$answer1[(a$answer_type=="manyCheckboxGroups" | a$answer_type=="checkboxAlt" ) & 
               (a$answer1=="1 2" | a$answer1=="1")] = 1
   a$answer1[(a$answer_type=="manyCheckboxGroups" | a$answer_type=="checkboxAlt" ) & 
@@ -38,7 +41,7 @@ prepareOutputStatic <- function(answers, id, lang, form, run, endDate, stringLim
   
   a$answer=NULL
   
-  a$answer_id = as.character(a$answer_id )
+  a$answer_id = as.character(a$answer_id)
   a[a$answer_id==1 & a$answer_type=="demographic", "answer_id"] = "birth_date"
   a[a$answer_id==2 & a$answer_type=="demographic", "answer_id"] = "sex"
   a[a$answer_id==3 & a$answer_type=="demographic", "answer_id"] = "guardian"
